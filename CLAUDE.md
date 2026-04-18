@@ -47,11 +47,19 @@ accident-path/
 | Tools | `docs/strategy/TOOLS-SPEC.md` | 10 interactive tool specifications |
 | Plan | `docs/strategy/MASTER-PLAN.md` | Full implementation plan |
 
+## Source of Truth
+
+**Git repo is the single source of truth for all code and strategy docs.**
+- **Repo:** `git@github.com:thecometcompanies/accident-path.git`
+- **Never edit strategy docs in Google Drive** — only edit in this repo and push.
+- **Notion** is for task tracking only (statuses, assignments, priorities).
+
 ## Task Tracking
 
 All tasks are in the Notion Master Pipeline database.
-- **DB ID:** `346917dc-7b83-81e3-be62-dea1a5250217`
-- **Phases DB:** `346917dc-7b83-81a3-82f9-f9eaf51a875e`
+- **Master Pipeline:** [Open](https://www.notion.so/346917dc7b8381e3be62dea1a5250217) (DB ID: `346917dc-7b83-81e3-be62-dea1a5250217`)
+- **Phases:** [Open](https://www.notion.so/346917dc7b8381a382f9f9eaf51a875e) (DB ID: `346917dc-7b83-81a3-82f9-f9eaf51a875e`)
+- **Notion page:** [AccidentPath](https://www.notion.so/m7dtla/LRS-AccidentPath-com-328917dc7b8380b29f18c67de494adc0)
 
 Filter by Owner = "Claude" for autonomous tasks.
 Each DEV-XX task has a full execution prompt in its Notion page body.
