@@ -103,13 +103,28 @@ Accident Types | Injuries | What To Do Next | Tools | Find Help | State Guides |
 /tools/state-next-steps           → State-specific next-step generator
 ```
 
-### State Pages
+### State + City Pages
 
 ```
 /states                           → State selector/map
 /states/california                → California guide
+/states/california/los-angeles    → LA city page (unique local data)
+/states/california/san-diego      → San Diego city page
+/states/california/san-jose       → San Jose city page
+/states/california/san-francisco  → San Francisco city page
+/states/california/fresno         → Fresno city page
+/states/california/sacramento     → Sacramento city page
+/states/california/long-beach     → Long Beach city page
+/states/california/oakland        → Oakland city page
+/states/california/bakersfield    → Bakersfield city page
+/states/california/anaheim        → Anaheim city page
 /states/arizona                   → Arizona guide
-/states/[state-slug]              → Dynamic state pages
+/states/arizona/phoenix           → Phoenix city page
+/states/arizona/tucson            → Tucson city page
+/states/arizona/mesa              → Mesa city page
+/states/arizona/chandler          → Chandler city page
+/states/arizona/scottsdale        → Scottsdale city page
+/states/arizona/gilbert           → Gilbert city page
 ```
 
 ### Find Help Flow
@@ -118,6 +133,60 @@ Accident Types | Injuries | What To Do Next | Tools | Find Help | State Guides |
 /find-help                        → Start intake/matching
 /find-help/results                → Match results page
 /find-help/thank-you              → Confirmation/next steps
+```
+
+### Blog (NEW)
+
+```
+/blog                             → Blog index (paginated)
+/blog/[slug]                      → Individual blog posts
+```
+
+### Attorney Directory (NEW — Rogelio)
+
+```
+/directory                        → Search/filter page
+/directory/[state]                → State directory index
+/directory/[state]/[city]         → City landing page
+/directory/[state]/[slug]         → Individual attorney profile
+```
+
+### Legal Funding (NEW)
+
+```
+/legal-funding                    → Legal funding overview
+/legal-funding/how-it-works       → Process explanation
+/legal-funding/calculator         → Funding estimator
+```
+
+### Compliance Pages
+
+```
+/privacy                          → Privacy policy (includes CCPA disclosures)
+/privacy#do-not-sell              → CCPA "Do Not Sell" section
+/terms                            → Terms of service
+/disclaimers                      → Legal disclaimers
+/cookie-policy                    → Cookie consent details
+```
+
+### Spanish (Bilingual — `/es/` prefix)
+
+```
+/es/                              → Spanish home
+/es/accidentes/auto               → Car accidents (ES)
+/es/accidentes/camion             → Truck accidents (ES)
+/es/accidentes/motocicleta        → Motorcycle accidents (ES)
+/es/guias/despues-accidente-auto  → After car accident guide (ES)
+/es/herramientas/lista-evidencia  → Evidence checklist (ES)
+/es/buscar-ayuda                  → Find help (ES)
+/es/estados/california            → CA guide (ES)
+```
+
+### Error Pages
+
+```
+/404                              → Custom 404 with nav to key hubs
+/500                              → Custom error page
 ```
 
 ---

@@ -178,10 +178,105 @@ The platform must maintain a compliance matrix for each state covering:
 
 ---
 
-## 8. Reminders for All Agents
+## 8. CCPA / Privacy Regulation Compliance (NEW)
+
+The site uses GA4, Microsoft Clarity heatmaps, call tracking, and potentially retargeting pixels. California Consumer Privacy Act (CCPA) and California Privacy Rights Act (CPRA) requirements apply.
+
+### Required Elements
+
+| Requirement | Implementation |
+|-------------|---------------|
+| "Do Not Sell or Share My Personal Information" link | Footer on every page, links to `/privacy#do-not-sell` |
+| Privacy policy with CCPA-specific disclosures | Categories of data collected, purposes, third parties, consumer rights |
+| Right to delete personal information | Process for users to request data deletion |
+| Right to know what data is collected | Accessible disclosure of all data collection |
+| Opt-out of sale/sharing | Functional opt-out mechanism (cookie consent banner) |
+| Cookie consent banner | Display on first visit, record consent, respect choices |
+| GPC (Global Privacy Control) | Honor browser-level opt-out signals |
+| Data retention policy | Define how long intake data, analytics data, and journal data are retained |
+
+### Cookie Consent Implementation
+
+```
+1. On first visit: display banner with "Accept" / "Manage Preferences" / "Reject All"
+2. Categories: Essential (always on), Analytics (GA4, Clarity), Marketing (retargeting)
+3. If user rejects: do NOT load GA4, Clarity, or marketing pixels
+4. Store consent choice in cookie (12-month expiry)
+5. Provide "Cookie Settings" link in footer to change preferences
+```
+
+### Privacy Considerations for Tools
+
+- **Injury Journal (Tool 4):** Photos uploaded to local storage have privacy implications. If Supabase sync is added, this becomes HIPAA-adjacent. Add explicit consent before any cloud storage.
+- **Intake Wizard:** Contact information collected requires TCPA consent AND CCPA disclosure. Both must be in the language the user is viewing.
+- **All tools:** No data sent to server until user explicitly consents.
+
+---
+
+## 9. TCPA Consent Language (FINALIZED)
+
+**English:**
+```
+By submitting this form, I consent to receive calls, text messages, and emails
+from AccidentPath and its attorney partners regarding my inquiry. I understand
+that calls may be made using automated technology. Message and data rates may
+apply. I understand this service is free and I am not obligated to retain any
+attorney. I may revoke consent at any time by contacting us at [email/phone].
+```
+
+**Spanish:**
+```
+Al enviar este formulario, doy mi consentimiento para recibir llamadas, mensajes
+de texto y correos electrónicos de AccidentPath y sus abogados asociados sobre
+mi consulta. Entiendo que las llamadas pueden realizarse mediante tecnología
+automatizada. Pueden aplicarse tarifas de mensajes y datos. Entiendo que este
+servicio es gratuito y no estoy obligado a contratar a ningún abogado. Puedo
+revocar mi consentimiento en cualquier momento contactándonos en [email/teléfono].
+```
+
+**Requirements:**
+- Consent checkbox must be unchecked by default
+- Must be visible and readable (not hidden in fine print)
+- Must be in the language the user is viewing (EN or ES)
+- Record timestamp, IP, and consent text version for audit trail
+- Legal counsel must approve final language before launch
+
+---
+
+## 10. Technical Compliance Automation (NEW)
+
+### Automated Compliance Lint Rules
+
+Every page must pass these automated checks in CI/CD:
+
+| Check | Rule | Implementation |
+|-------|------|----------------|
+| Disclaimer presence | Every page has footer disclaimer block | Zod schema: `disclaimer` field required |
+| Attorney review badge | Every content page has `reviewedBy` + `reviewDate` | Zod schema: build refuses without these fields |
+| Safe language check | No prohibited phrases in content JSONs | CI lint rule scans for prohibited patterns |
+| TCPA consent | Intake pages include consent checkbox component | Component required in intake flow |
+| Emergency banner | Pages mentioning injury/medical have 911 guidance | Automated check for EmergencyBanner component |
+| Min word count | Hub pages ≥ 2,500 words, guides ≥ 1,500 | Zod schema with word count validation |
+| Unique meta | No two pages share title or description | Build-time check across all content JSONs |
+
+### Compliance Audit Schedule
+
+| Frequency | Audit | Owner |
+|-----------|-------|-------|
+| Every PR | Automated lint checks (CI) | Claude / Developer |
+| Monthly | Manual review of 10 random pages | Legal Counsel |
+| Quarterly | Full compliance review of all published pages | Legal Counsel |
+| Per state expansion | Complete state-specific compliance review | Legal Counsel |
+
+---
+
+## 11. Reminders for All Agents
 
 1. **The safest rule:** Generate demand and educate. Do not present yourself as making "expert recommendations."
 2. **Do not** present tools as legal advice engines — present them as educational tools and intake aids with clear disclaimers.
 3. **Do not** route legal problems unless the structure supports it.
 4. **Always** escalate to a licensed lawyer for anything that could be construed as legal analysis.
 5. **When in doubt**, use more disclaimers, not fewer.
+6. **Disclaimers must NOT be included in structured data** (schema.org) answer text.
+7. **CCPA compliance** is required on every page — cookie consent, Do Not Sell link, privacy disclosures.
+8. **TCPA consent** must be collected before any contact information is stored or shared.

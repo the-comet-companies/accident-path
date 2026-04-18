@@ -255,6 +255,97 @@ State-specific legal information MUST be reviewed by an attorney in that state. 
 
 ---
 
+## Tool 11: Statute of Limitations Countdown (NEW)
+
+**Route:** `/tools/statute-countdown`
+**Purpose:** "How long do I have to file a claim?"
+
+### Why This Tool
+
+"Statute of limitations for car accident in [state]" is one of the most searched PI queries. No competitor has an interactive countdown tool. This is a high-volume, low-competition keyword with strong conversion intent.
+
+### User Flow
+
+1. Select your state (CA, AZ — expandable)
+2. Select accident/claim type (car accident, truck accident, medical malpractice, wrongful death, etc.)
+3. Enter the date of the accident
+4. Were you a minor at the time?
+5. Was a government entity involved?
+
+### Output
+
+- **Countdown timer** showing days remaining until statute expires
+- **Key date** displayed prominently: "Your deadline is [Date]"
+- **State-specific statute citation** (e.g., "California CCP § 335.1 — 2 years for personal injury")
+- **Exceptions listed** (minor tolling, government claims shorter deadlines, discovery rule)
+- **Warning levels:**
+  - Green (>6 months remaining): "You have time, but don't wait"
+  - Yellow (3-6 months): "Your deadline is approaching"
+  - Red (<3 months): "URGENT: Your deadline is very close. Consider speaking with an attorney soon."
+  - Expired: "The general deadline for your claim type may have passed. Some exceptions may apply — consult an attorney immediately."
+- **CTA:** "Want to discuss your timeline with a lawyer?"
+
+### Data Model
+
+```typescript
+interface StatuteData {
+  state: string
+  claimType: string
+  generalDeadlineYears: number
+  statuteCitation: string
+  exceptions: StatuteException[]
+  governmentClaimDeadlineDays?: number
+  minorTollingAge?: number
+}
+
+interface StatuteException {
+  condition: string
+  effect: string
+  citation: string
+}
+```
+
+### Compliance Notes
+
+- This tool shows GENERAL statutory deadlines only
+- Must display: "Statutes of limitations have many exceptions. The deadline for your specific situation may differ. Consult a licensed attorney to understand your exact deadline."
+- Government claims have shorter deadlines (6 months in CA) — must highlight prominently
+- Discovery rule exceptions for delayed-onset injuries — note but do not calculate
+- **Attorney review required** for all state deadline data before launch
+
+### Schema Markup
+
+Use `SoftwareApplication` schema:
+```json
+{
+  "@type": "SoftwareApplication",
+  "name": "Statute of Limitations Countdown",
+  "applicationCategory": "UtilitiesApplication",
+  "description": "Check the deadline to file a personal injury claim in your state"
+}
+```
+
+### SEO Value
+
+- Primary keyword: "statute of limitations personal injury [state]" (high volume, medium KD)
+- Secondary: "how long to file car accident claim california"
+- Featured snippet opportunity: clear, direct answer format
+- AI Overview citation opportunity: structured state-specific data
+
+---
+
+## Tool Page SEO Requirements (All Tools)
+
+Every tool page must have:
+
+1. **800+ words of supporting content** around the interactive widget (Google cannot index JS tool outputs)
+2. **Relevant schema markup** (HowTo, SoftwareApplication where applicable)
+3. **FAQ content block** below the tool (targets People Also Ask)
+4. **Shareable results URL** (e.g., `/tools/evidence-checklist/results/[hash]`) for link building
+5. **Internal links** to 3+ related hub/guide pages
+
+---
+
 ## Technical Requirements (All Tools)
 
 ### Architecture

@@ -1,5 +1,7 @@
 # 90-Day Rollout Plan
 
+> **SUPERSEDED:** This document has been superseded by `MASTER-PLAN.md` which contains the authoritative implementation plan with 37-day MVP target, detailed phase breakdown, cost estimates, and team assignments. This file is kept for historical reference only.
+
 ## Overview
 
 ```

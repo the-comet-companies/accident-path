@@ -4,6 +4,20 @@
 
 Build topical depth through content clusters. Each cluster has a pillar page, spoke pages, and supporting tools/guides. All content must be original, substantial, and people-first.
 
+**CRITICAL:** Every page must have an assigned target keyword from `docs/seo/KEYWORD-MAP.md` before content writing begins. See `SEO-STRATEGY.md` Section 0 for the keyword map format.
+
+### Minimum Content Depth Requirements
+
+| Page Type | Min. Words | Differentiators Required (pick 2+) |
+|-----------|----------:|------------------------------------|
+| Accident hub | 2,500 | Embedded tool, attorney review badge, video, PDF download |
+| Guide page | 1,500 | FAQ content block (PAA-optimized), checklist, state-specific section |
+| Tool page | 800 | Interactive tool (primary), supporting educational content |
+| City page | 1,200 | Local data (hospitals, courts, roads), accident stats, local attorneys |
+| State page | 2,000 | Law overview, deadlines table, state-specific tools, attorney review |
+| Blog post | 1,000 | Timeliness, original angle, internal links to hub pages |
+| Comparison page | 1,500 | Side-by-side table, pros/cons, decision framework |
+
 ---
 
 ## 1. Accident Type Content Hubs
@@ -82,6 +96,9 @@ These standalone content modules can be used across multiple pages:
 | Dealing with insurance adjusters | "how to talk to insurance adjuster" |
 | Protecting your claim | "mistakes after car accident" |
 | Getting your police report | "how to get accident police report" |
+| **Am I at fault? (NEW)** | "am I at fault car accident", "comparative fault california" |
+| **Settlement vs. lawsuit (NEW)** | "settlement vs lawsuit personal injury", "should I settle or go to court" |
+| **Should I talk to a lawyer? (NEW)** | "do I need a lawyer after accident", "is my case worth pursuing" |
 
 ### State-Specific Guides (`/states/*`)
 
@@ -121,27 +138,39 @@ For each launch state, create:
 ## 5. Content Production Workflow
 
 ### Phase 1: Cornerstone Content (Days 16-35)
-Publish 25 cornerstone pages:
+
+Publish 25+ cornerstone pages:
+
 - Home page
 - 5 highest-volume accident type hubs (car, truck, motorcycle, slip/fall, workplace)
-- 5 core guide pages
-- 5 tool pages
-- 3 state pages (launch states)
+- 5 core guide pages (including "Am I at fault?" and "Settlement vs. Lawsuit")
+- 5 tool pages + Statute of Limitations Countdown
+- 3 state pages (CA, AZ)
 - About / How It Works
 - Contact / Intake
-- Privacy + Terms + Disclaimers
+- Privacy + Terms + Disclaimers + CCPA "Do Not Sell" page
+- **5-10 blog posts targeting long-tail keywords from Reddit harvester**
+- **2-3 downloadable PDF lead magnets** (post-accident checklist, insurance call script, evidence guide)
 
 ### Phase 2: Expansion (Days 36-60)
+
 - Remaining 10 accident type hubs
 - 5 additional guide pages
 - Injury type pages
 - State-specific guides reviewed by counsel
+- **16 city pages with unique local data**
+- **Spanish Tier 1: Bilingual UI + intake wizard**
+- **8-12 additional blog posts**
 
 ### Phase 3: Depth (Days 61-90)
+
 - Additional spoke content for each cluster
-- Blog/news section
+- **Sustained blog publishing: 3 posts/week (Reddit harvester + news)**
 - Linkable assets (infographics, data studies)
 - Downloadable PDF resources
+- **Spanish content: translate top 5 accident hubs**
+- **Video content: 60-90 second explainers for top 5 hubs**
+- **Comparison page series** (settlement vs trial, PI vs workers comp, etc.)
 
 ---
 

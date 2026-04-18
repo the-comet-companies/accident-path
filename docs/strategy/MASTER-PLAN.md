@@ -84,18 +84,22 @@ These run alongside development. **They are blocking dependencies.**
 | Configure GA4 + GSC | Michael | 2 |
 | Folder structure + data models | Claude | 4 |
 
-### Phase 1: Design System + CMS (Day 3-6) — 28h
+### Phase 1: Design System + CMS + SEO Foundation (Day 3-6) — 32h
+
+**SEO is embedded in every phase from here forward — not a separate Phase 6.**
 
 | Task | Owner | Hours |
 |------|-------|-------|
-| Tailwind theme tokens | Claude | 2 |
+| Tailwind theme tokens (finalized palette — see DESIGN-SYSTEM.md) | Claude | 2 |
 | Header (mega-menu) | Claude | 4 |
-| Footer (disclaimers) | Claude | 3 |
+| Footer (disclaimers + CCPA "Do Not Sell" link) | Claude | 3 |
 | MobileNav | Claude | 3 |
 | Core UI components (5) | Claude | 4 |
 | StateSelector (CA + AZ cities) | Claude | 2 |
-| JSON CMS loader + Zod | Claude | 3 |
-| SEO primitives (3 components) | Claude | 3 |
+| JSON CMS loader + Zod (with min word count validation) | Claude | 3 |
+| **SEO primitives (SchemaOrg, MetaTags, CanonicalUrl, Hreflang)** | Claude | 4 |
+| **BreadcrumbList component (every page from Day 1)** | Claude | 1 |
+| **Dynamic sitemap.xml (app/sitemap.ts)** | Claude | 2 |
 | Compliance wrapper HOC | Claude | 2 |
 | Brand logo + icons | Designer | 12 |
 
@@ -163,16 +167,19 @@ These run alongside development. **They are blocking dependencies.**
 | **Legal counsel reviews** | — | Legal Counsel | **14** | CA content, AZ content, disclaimers |
 | Meta titles/descriptions | 39 | SEO Specialist | 6 | Unique per page, no templates |
 
-### Phase 6: SEO (Day 26-30) — 14h
+### Phase 6: SEO Polish + Blog Launch (Day 26-30) — 18h
+
+**Note:** Core SEO (schema, meta, sitemap, breadcrumbs) is now embedded in Phase 1-2 templates. Phase 6 covers polish, blog launch, and internal linking optimization.
 
 | Task | Owner | Hours |
 |------|-------|-------|
-| BreadcrumbList on every page | Claude | 2 |
-| Organization schema | Claude | 1 |
-| QAPage schema | Claude | 2 |
-| Dynamic sitemap.xml (partitioned) | Claude | 3 |
-| Internal linking engine | Claude | 4 |
+| Internal linking engine (hub↔injuries↔tools↔state↔city) | Claude | 4 |
 | Place schema on city pages | Claude | 2 |
+| Blog section setup (/blog with 5-10 launch posts) | Claude | 4 |
+| FAQ content blocks on top 5 hub pages (PAA-optimized) | Claude | 3 |
+| Google Search Console submission + priority URL inspection | Claude | 1 |
+| IndexNow integration via Vercel | Claude | 1 |
+| AI Overview optimization pass on all hub pages | Claude | 3 |
 
 ### Phase 7: Integrations (Day 28-32) — 18h
 
