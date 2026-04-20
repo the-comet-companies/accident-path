@@ -733,9 +733,11 @@ All 13 accident type JSON files created, Zod-validated, attorney-review pending 
 - **Home page slug mismatch:** `FEATURED_ACCIDENTS` slugs in `app/page.tsx` were `car-accidents`, `truck-accidents`, `motorcycle-accidents`, `workplace-injuries` — corrected to `car`, `truck`, `motorcycle`, `workplace` to match CMS file names and hub route slugs.
 - **metaDescription Zod validation:** 5 files had descriptions over 160 chars — trimmed to comply with schema.
 
-### Architecture Note
+### Architecture Notes
 
-"Load from CMS" means JSON file system, not a database. `cms.getAccident(slug)` reads `content/accidents/{slug}.json` at **build time** — pages are pre-rendered as static HTML. No runtime database query. Supabase is reserved for user-generated runtime data (intake sessions, tool submissions, journal entries).
+**"Load from CMS"** means JSON file system, not a database. `cms.getAccident(slug)` reads `content/accidents/{slug}.json` at **build time** — pages are pre-rendered as static HTML. No runtime database query. Supabase is reserved for user-generated runtime data (intake sessions, tool submissions, journal entries).
+
+**`generateStaticParams`** tells Next.js which URL slugs to pre-build at build time. It calls `cms.getAllAccidents()`, gets back `[{slug:'car'}, {slug:'truck'}, ...]`, and Next.js pre-renders all 13 pages as static HTML during the build. When a user visits `/accidents/car` they get a pre-built file instantly — no server processing. This is why the build output listed all 13 paths under `● /accidents/[slug]`.
 
 ### Verification
 - `npx tsc --noEmit` — clean
