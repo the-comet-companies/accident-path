@@ -497,6 +497,88 @@ Three exports for flexibility — all use `usePathname()` to detect route:
 | StateSelector (CA/AZ two-step) | ✓ |
 | ComplianceWrapper + withCompliance HOC | ✓ |
 
+---
+
+## DEV-09: Home Page Template
+
+### New Components
+
+#### `components/content/AccidentCard.tsx`
+Reusable card for accident type navigation.
+- Props: `title`, `description`, `href`, `icon: React.ReactNode`
+- Arrow icon animates on hover (`group-hover:translate-x-1`)
+- 44px-compliant touch targets, `focus-visible` ring
+
+#### `components/content/ToolCard.tsx`
+Reusable card for interactive tool previews.
+- Props: `title`, `description`, `href`, `icon`, `ctaText` (default: "Try It Free")
+- Amber icon container (`bg-amber-50 text-amber-600`) per design system secondary color
+- Text link CTA with ArrowRight icon, aria-label for accessibility
+
+### `app/page.tsx` — 8 Sections in PRD-specified order
+
+| Section | Implementation |
+|---------|---------------|
+| 1. Hero | `bg-primary-900`, h1 Inter Bold 4xl–6xl, Merriweather body, 2 CTAs, compliance footnote |
+| 2. Trust Row | 4× TrustBadge (shield/lock/clock/badge), flex-wrap, `border-b` separator |
+| 3. How It Works | 3-step grid, numbered circles + icon pairs, `bg-surface-page` |
+| 4. Accident Grid | 5× AccidentCard (car/truck/motorcycle/slip-fall/workplace), `xl:grid-cols-5` |
+| 5. Featured Tools | 5× ToolCard on `bg-surface-info`, `xl:grid-cols-5` |
+| 6. Educational Teaser | 3 guide cards, hover state `bg-primary-50`, readTime badge |
+| 7. State Selector | Existing StateSelector with `navigateOnSelect`, `bg-primary-50` section |
+| 8. Footer | Already in `app/layout.tsx` |
+
+### Compliance
+- Hero footnote: exact educational-purposes-only language from COMPLIANCE.md §3
+- State selector section footer: §4 state-specific disclaimer language
+- All tool descriptions use safe language ("understand", "educational", "informational only")
+- No prohibited language on any section
+
+### Verification
+- `npx tsc --noEmit` — clean
+- `npm run build` — clean (static `/` route)
+- Committed and pushed to `origin/main` (commit `bcde0d0`)
+
+---
+
+## Current State
+
+| Item | Status |
+|------|--------|
+| Next.js 16 App Router | ✓ |
+| TypeScript strict | ✓ |
+| Tailwind v4 + design tokens | ✓ |
+| Inter + Merriweather fonts | ✓ |
+| zod / lucide-react / supabase | ✓ |
+| .gitignore | ✓ |
+| staging branch (pushed) | ✓ |
+| Merged to main | ✓ |
+| Folder structure (all routes) | ✓ |
+| Zod type modules (6 files) | ✓ |
+| JSON CMS loader | ✓ |
+| Supabase project connected | ✓ |
+| intake_sessions table + RLS | ✓ |
+| tool_submissions table + RLS | ✓ |
+| journal_entries table + RLS | ✓ |
+| CTAButton component | ✓ |
+| TrustBadge component | ✓ |
+| DisclaimerBanner (4 variants) | ✓ |
+| EmergencyBanner (dismissible) | ✓ |
+| Breadcrumb + JSON-LD | ✓ |
+| Header (desktop, mega-menu) | ✓ |
+| MobileNav (slide-out, focus trap) | ✓ |
+| Bottom-fixed mobile CTA bar | ✓ |
+| Footer (4-col, compliance disclaimers) | ✓ |
+| SchemaOrg component | ✓ |
+| lib/seo.ts (4 schema builders) | ✓ |
+| MetaTags + CanonicalUrl helpers | ✓ |
+| Organization schema on every page | ✓ |
+| StateSelector (CA/AZ two-step) | ✓ |
+| ComplianceWrapper + withCompliance HOC | ✓ |
+| AccidentCard component | ✓ |
+| ToolCard component | ✓ |
+| Home page (all 8 sections) | ✓ |
+
 ## Next Steps
 
-Per `docs/strategy/MASTER-PLAN.md` — foundation layer complete (DEV-01 through DEV-08). Ready to build page templates (accident hubs, injury pages, state/city pages) and populate `content/` JSON files.
+Ready to build page templates: accident hub pages (DEV-10), then populate `content/accidents/*.json` CMS files.
