@@ -204,6 +204,50 @@ export const supabase = createClient(
 
 ---
 
+---
+
+## DEV-04: Core UI Components
+
+**Compliance note:** All user-facing text was sourced from exact §4 language in `docs/strategy/COMPLIANCE.md` before any component was written.
+
+### Components Built
+
+#### `components/ui/CTAButton.tsx`
+- Variants: `primary` (solid teal-blue) / `secondary` (outlined)
+- Sizes: `sm` / `md` / `lg` — all enforce `min-h-[44px] min-w-[44px]` touch targets
+- Renders as `<Link>` when `href` is passed, `<button>` otherwise
+- Props: `variant`, `size`, `href`, `onClick`, `type`, `disabled`, `fullWidth`, `className`
+
+#### `components/ui/TrustBadge.tsx`
+- Variants: `shield` / `lock` / `clock` / `badge` (lucide-react icons)
+- Props: `variant`, `text`, `subtext` (optional second line), `className`
+
+#### `components/ui/DisclaimerBanner.tsx`
+- 4 variants with **exact COMPLIANCE.md §4 language**:
+  - `default` — every page footer ("AccidentPath is not a law firm…")
+  - `intake` — matching pages ("…attorneys in our network may pay a fee…")
+  - `tool` — tool pages ("…informational and educational purposes only…")
+  - `state` — state pages ("Laws vary by state…")
+
+#### `components/ui/EmergencyBanner.tsx`
+- `'use client'` — checks `sessionStorage` on mount, hidden if already dismissed
+- Renders 911 notice with a `tel:911` link
+- Dismiss button sets `sessionStorage` key `ap_emergency_dismissed`
+- 44px dismiss button, `role="alert"`, `aria-live="polite"`
+
+#### `components/layout/Breadcrumb.tsx`
+- `nav > ol > li` semantic structure
+- Auto-prepends Home (`/`) to every breadcrumb trail
+- `aria-current="page"` on last item
+- Injects `BreadcrumbList` JSON-LD via `<Script id="breadcrumb-jsonld">`
+- Domain hardcoded to `https://accidentpath.com` in schema URLs
+
+### Verification
+- `npx tsc --noEmit` — clean
+- Committed and pushed to `origin/staging`
+
+---
+
 ## Current State (End of Session)
 
 | Item | Status |
@@ -223,7 +267,12 @@ export const supabase = createClient(
 | intake_sessions table + RLS | ✓ |
 | tool_submissions table + RLS | ✓ |
 | journal_entries table + RLS | ✓ |
+| CTAButton component | ✓ |
+| TrustBadge component | ✓ |
+| DisclaimerBanner (4 variants) | ✓ |
+| EmergencyBanner (dismissible) | ✓ |
+| Breadcrumb + JSON-LD | ✓ |
 
 ## Next Steps
 
-Per `docs/strategy/MASTER-PLAN.md` — ready to build shared layout components (Header, Footer, Breadcrumb) and begin populating `content/` JSON files.
+Per `docs/strategy/MASTER-PLAN.md` — ready to build Header, Footer, and MobileNav layout components, then begin populating `content/` JSON files.
