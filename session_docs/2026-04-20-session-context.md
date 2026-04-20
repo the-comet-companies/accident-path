@@ -308,7 +308,71 @@ export const supabase = createClient(
 | Header (desktop, mega-menu) | ✓ |
 | MobileNav (slide-out, focus trap) | ✓ |
 | Bottom-fixed mobile CTA bar | ✓ |
+| Footer (4-col, compliance disclaimers) | ✓ |
+
+---
+
+## DEV-06: Footer with Compliance Disclaimers
+
+### `components/layout/Footer.tsx`
+
+4-column grid on `primary-900` dark background:
+
+| Column | Contents |
+|--------|----------|
+| Brand | Logo, tagline, TrustBadge ×3 (shield/lock/clock) |
+| Accident Types | 6 top links + "View All Accident Types" |
+| Resources | Guides, injuries, tools, CA/AZ state pages, find help |
+| Company | About, For Attorneys, Privacy, **Do Not Sell My Info** (amber), Terms, Disclaimers, Cookie Policy |
+
+**Disclaimer block** (below columns) — exact §4 + §3 COMPLIANCE.md language in 3 paragraphs:
+1. Not a law firm / educational purposes only / no attorney-client relationship / 911
+2. Network attorneys may pay fee / no endorsement / availability varies
+3. Every case is different / consult licensed attorney / results may vary
+
+**Bottom bar:**
+- Emergency 911 link (`tel:911`)
+- Copyright line
+- Second "Do Not Sell My Info" CCPA link (amber) per §8 requirement
+
+### `app/layout.tsx` update
+- `<Footer />` added below `<main>`
+
+### Verification
+- `npx tsc --noEmit` — clean
+- Committed and pushed to `origin/staging`
+
+---
+
+## Current State (End of Session)
+
+| Item | Status |
+|------|--------|
+| Next.js 16 App Router | ✓ |
+| TypeScript strict | ✓ |
+| Tailwind v4 + design tokens | ✓ |
+| Inter + Merriweather fonts | ✓ |
+| zod / lucide-react / supabase | ✓ |
+| .gitignore | ✓ |
+| staging branch (pushed) | ✓ |
+| Merged to main | ✓ |
+| Folder structure (all routes) | ✓ |
+| Zod type modules (6 files) | ✓ |
+| JSON CMS loader | ✓ |
+| Supabase project connected | ✓ |
+| intake_sessions table + RLS | ✓ |
+| tool_submissions table + RLS | ✓ |
+| journal_entries table + RLS | ✓ |
+| CTAButton component | ✓ |
+| TrustBadge component | ✓ |
+| DisclaimerBanner (4 variants) | ✓ |
+| EmergencyBanner (dismissible) | ✓ |
+| Breadcrumb + JSON-LD | ✓ |
+| Header (desktop, mega-menu) | ✓ |
+| MobileNav (slide-out, focus trap) | ✓ |
+| Bottom-fixed mobile CTA bar | ✓ |
+| Footer (4-col, compliance disclaimers) | ✓ |
 
 ## Next Steps
 
-Per `docs/strategy/MASTER-PLAN.md` — ready to build Footer component, then begin populating `content/` JSON files and page templates.
+Per `docs/strategy/MASTER-PLAN.md` — ready to begin populating `content/` JSON files and building page templates (accident hubs, injury pages, state/city pages).
