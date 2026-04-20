@@ -22,6 +22,7 @@ import { StateSelector } from '@/components/ui/StateSelector'
 import { AccidentCard } from '@/components/content/AccidentCard'
 import { ToolCard } from '@/components/content/ToolCard'
 import { buildMetaTags } from '@/components/seo/MetaTags'
+import { HomeAnimations } from '@/components/home/HomeAnimations'
 
 export const metadata: Metadata = buildMetaTags({
   title: 'AccidentPath — Get Clear Next Steps After an Accident',
@@ -161,13 +162,18 @@ const HOW_IT_WORKS = [
 export default function Home() {
   return (
     <>
+      <HomeAnimations />
+
       {/* ── 1. Hero ───────────────────────────────────────────────────────── */}
       <section className="bg-primary-900 text-white" aria-labelledby="hero-heading">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Left: copy + CTAs */}
             <div>
-              <p className="text-primary-300 text-sm font-medium uppercase tracking-wider mb-4 font-sans">
+              <p
+                data-animate="hero-eyebrow"
+                className="text-primary-300 text-sm font-medium uppercase tracking-wider mb-4 font-sans"
+              >
                 Free guidance — no obligation
               </p>
               <h1
@@ -176,11 +182,14 @@ export default function Home() {
               >
                 Get Clear Next Steps After an Accident
               </h1>
-              <p className="font-serif text-lg sm:text-xl text-primary-100 leading-relaxed mb-8">
+              <p
+                data-animate="hero-body"
+                className="font-serif text-lg sm:text-xl text-primary-100 leading-relaxed mb-8"
+              >
                 Learn what to do, what evidence to keep, and whether speaking with a lawyer could
                 help. Educational guidance for California and Arizona.
               </p>
-              <div className="flex flex-row flex-wrap gap-3">
+              <div data-animate="hero-ctas" className="flex flex-row flex-wrap gap-3">
                 <CTAButton href="/find-help" size="md">
                   Start Free Accident Check
                 </CTAButton>
@@ -201,6 +210,7 @@ export default function Home() {
 
             {/* Right: What You'll Get card */}
             <div
+              data-animate="hero-card"
               className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-7"
               aria-label="What you'll get"
             >
@@ -222,7 +232,7 @@ export default function Home() {
                     desc: 'Matched to your case. You decide who to talk to.',
                   },
                 ].map(({ title, desc }, i) => (
-                  <li key={i} className="flex items-start gap-4">
+                  <li key={i} data-animate="hero-card-item" className="flex items-start gap-4">
                     <span className="w-7 h-7 rounded-full bg-amber-500 text-white text-xs font-bold font-sans flex items-center justify-center shrink-0 mt-0.5">
                       {i + 1}
                     </span>
@@ -246,26 +256,16 @@ export default function Home() {
       <section className="bg-surface-card border-b border-neutral-100" aria-label="Trust indicators">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-wrap gap-x-8 gap-y-4 items-center justify-center lg:justify-between">
-            <TrustBadge
-              variant="shield"
-              text="Attorney-Reviewed Content"
-              subtext="Reviewed for accuracy and compliance"
-            />
-            <TrustBadge
-              variant="lock"
-              text="Secure & Private"
-              subtext="Your information stays with you"
-            />
-            <TrustBadge
-              variant="clock"
-              text="Free — No Obligation"
-              subtext="No pressure, no signup required"
-            />
-            <TrustBadge
-              variant="badge"
-              text="California & Arizona"
-              subtext="State-specific guidance"
-            />
+            {[
+              { variant: 'shield' as const, text: 'Attorney-Reviewed Content',  subtext: 'Reviewed for accuracy and compliance' },
+              { variant: 'lock'   as const, text: 'Secure & Private',           subtext: 'Your information stays with you'      },
+              { variant: 'clock'  as const, text: 'Free — No Obligation',       subtext: 'No pressure, no signup required'      },
+              { variant: 'badge'  as const, text: 'California & Arizona',       subtext: 'State-specific guidance'              },
+            ].map(({ variant, text, subtext }) => (
+              <div key={text} data-animate="trust-badge">
+                <TrustBadge variant={variant} text={text} subtext={subtext} />
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -291,6 +291,7 @@ export default function Home() {
             {HOW_IT_WORKS.map(({ step, icon, title, description }) => (
               <div
                 key={step}
+                data-animate="step-item"
                 className="flex flex-col items-center text-center md:items-start md:text-left gap-4"
               >
                 <div className="flex items-center gap-3">
@@ -346,13 +347,14 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
             {FEATURED_ACCIDENTS.map((accident) => (
-              <AccidentCard
-                key={accident.slug}
-                title={accident.title}
-                description={accident.description}
-                href={`/accidents/${accident.slug}`}
-                icon={accident.icon}
-              />
+              <div key={accident.slug} data-animate="accident-card">
+                <AccidentCard
+                  title={accident.title}
+                  description={accident.description}
+                  href={`/accidents/${accident.slug}`}
+                  icon={accident.icon}
+                />
+              </div>
             ))}
           </div>
         </div>
@@ -384,13 +386,14 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
             {FEATURED_TOOLS.map((tool) => (
-              <ToolCard
-                key={tool.slug}
-                title={tool.title}
-                description={tool.description}
-                href={`/tools/${tool.slug}`}
-                icon={tool.icon}
-              />
+              <div key={tool.slug} data-animate="tool-card">
+                <ToolCard
+                  title={tool.title}
+                  description={tool.description}
+                  href={`/tools/${tool.slug}`}
+                  icon={tool.icon}
+                />
+              </div>
             ))}
           </div>
         </div>
@@ -424,6 +427,7 @@ export default function Home() {
               <Link
                 key={guide.href}
                 href={guide.href}
+                data-animate="guide-card"
                 className="group flex flex-col gap-3 rounded-xl bg-surface-page border border-neutral-100 p-6 hover:bg-primary-50 hover:border-primary-100 transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500"
               >
                 <div className="flex items-center justify-between">
@@ -455,7 +459,7 @@ export default function Home() {
         aria-labelledby="state-selector-heading"
       >
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-xl mx-auto text-center">
+          <div data-animate="state-section" className="max-w-xl mx-auto text-center">
             <h2
               id="state-selector-heading"
               className="font-sans font-semibold text-3xl text-neutral-950 mb-3"
