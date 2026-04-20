@@ -5,6 +5,8 @@ import { Header } from "@/components/layout/Header";
 import { MobileNav } from "@/components/layout/MobileNav";
 import { Footer } from "@/components/layout/Footer";
 import { EmergencyBanner } from "@/components/ui/EmergencyBanner";
+import { SchemaOrg } from "@/components/seo/SchemaOrg";
+import { organizationSchema } from "@/lib/seo";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -37,6 +39,7 @@ export default function RootLayout({
       className={`${inter.variable} ${merriweather.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col font-sans bg-surface-page">
+        <SchemaOrg schema={organizationSchema()} id="org-schema" />
         <EmergencyBanner />
         {/* Desktop header */}
         <div className="hidden lg:block">
