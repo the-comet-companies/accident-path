@@ -1,0 +1,115 @@
+{
+  "slug": "workplace",
+  "title": "Workplace Injuries",
+  "shortTitle": "Workplace Injuries",
+  "description": "Workplace injuries are covered by workers' compensation in California and Arizona, but workers may also have claims against third parties. Understanding the difference between workers' comp and civil liability can significantly affect the compensation available to you.",
+  "metaTitle": "Workplace Injury Guide — Workers' Comp & Your Legal Rights",
+  "metaDescription": "What to do after a workplace injury in California or Arizona. Workers' comp, third-party claims, reporting deadlines, and when to speak with an attorney.",
+  "icon": "workplace",
+  "commonCauses": [
+    { "title": "Slip, Trip, and Fall Accidents", "description": "Wet floors, uneven surfaces, poor lighting, and obstacles in work areas are a leading cause of workplace injuries across all industries." },
+    { "title": "Overexertion and Repetitive Strain", "description": "Lifting, pushing, pulling, and repetitive motion injuries account for a significant percentage of workers' compensation claims." },
+    { "title": "Struck-By Accidents", "description": "Workers struck by falling objects, moving equipment, or vehicles in warehouses and industrial settings." },
+    { "title": "Machinery and Equipment Accidents", "description": "Contact with unguarded machinery, power tools, or conveyor systems can cause severe lacerations, crush injuries, and amputations." },
+    { "title": "Vehicle Accidents on the Job", "description": "Workers injured while driving company vehicles or operating forklifts and other industrial vehicles." },
+    { "title": "Workplace Violence", "description": "Assaults by coworkers, customers, or third parties on the job can qualify for workers' compensation coverage." },
+    { "title": "Chemical and Toxic Exposure", "description": "Exposure to hazardous chemicals, fumes, and substances without adequate PPE can cause acute injuries and long-term illness." }
+  ],
+  "likelyInjuries": [
+    { "slug": "soft-tissue", "title": "Soft Tissue and Repetitive Strain", "severity": "moderate" },
+    { "slug": "broken-bones", "title": "Broken Bones", "severity": "moderate" },
+    { "slug": "traumatic-brain", "title": "Traumatic Brain Injury", "severity": "severe" },
+    { "slug": "spinal", "title": "Spinal Injuries", "severity": "catastrophic" },
+    { "slug": "burns", "title": "Burns and Chemical Injuries", "severity": "severe" }
+  ],
+  "immediateSteps": [
+    { "step": 1, "title": "Get emergency medical care if needed", "description": "Call 911 for serious injuries. For less severe injuries, see a workers' comp-approved physician or go to urgent care.", "urgency": "critical" },
+    { "step": 2, "title": "Report the injury to your supervisor immediately", "description": "Notify your employer or direct supervisor the same day the injury occurs. Delayed reporting can jeopardize your workers' comp claim.", "urgency": "critical" },
+    { "step": 3, "title": "Document the scene and circumstances", "description": "Photograph the exact location, any equipment or hazards involved, and anything that contributed to the injury. Do this before the scene is cleaned or changed.", "urgency": "critical" },
+    { "step": 4, "title": "File a workers' compensation claim form", "description": "In California, complete a DWC-1 form. In Arizona, submit a workers' comp claim to your employer's insurer. Request a copy of the filed claim.", "urgency": "critical" },
+    { "step": 5, "title": "Identify witnesses", "description": "Names and contact information of coworkers or others who witnessed the injury.", "urgency": "important" },
+    { "step": 6, "title": "See an authorized workers' comp physician", "description": "Workers' comp requires treatment by authorized providers in most cases. Using a non-authorized provider without permission may affect your benefits.", "urgency": "important" },
+    { "step": 7, "title": "Keep records of all treatment and communications", "description": "Document all medical visits, prescriptions, and any communications with your employer or the workers' comp insurer.", "urgency": "important" },
+    { "step": 8, "title": "Consider whether any third party is responsible", "description": "If a contractor, customer, equipment manufacturer, or anyone other than your employer contributed to the injury, a civil claim may be available alongside workers' comp.", "urgency": "helpful" }
+  ],
+  "evidenceChecklist": [
+    {
+      "category": "At the Scene",
+      "priority": "critical",
+      "items": [
+        "Photos of the accident location and any hazards",
+        "Photos of any equipment, tools, or materials involved",
+        "Photos of any visible injuries",
+        "Names and contact info of witnesses",
+        "Copy of employer's incident report"
+      ]
+    },
+    {
+      "category": "Workers' Comp Documentation",
+      "priority": "critical",
+      "items": [
+        "Copy of DWC-1 form (California) or equivalent claim form (Arizona)",
+        "Workers' comp claim confirmation number",
+        "Authorized treating physician information",
+        "All medical records and treatment notes from authorized providers"
+      ]
+    },
+    {
+      "category": "Medical Documentation",
+      "priority": "critical",
+      "items": [
+        "All physician and specialist visit notes",
+        "Imaging reports (X-ray, MRI, CT scan)",
+        "Physical and occupational therapy records",
+        "Prescription records",
+        "Ongoing symptom and recovery journal"
+      ]
+    },
+    {
+      "category": "Employment Records",
+      "priority": "important",
+      "items": [
+        "Pay stubs showing pre-injury earnings",
+        "Documentation of missed work and lost wages",
+        "Any prior safety complaints or reports filed",
+        "Employment agreement or classification documents"
+      ]
+    },
+    {
+      "category": "Third-Party Evidence",
+      "priority": "helpful",
+      "items": [
+        "Information on any contractor, vendor, or third party present at the time of injury",
+        "Equipment manufacturer information if a defective product was involved",
+        "OSHA inspection or violation records"
+      ]
+    }
+  ],
+  "timelineRisks": [
+    { "period": "Same Day", "risk": "Workers' comp employer reporting deadline", "action": "Report your injury to your employer the same day. Unreported injuries can create disputes about causation and timeliness." },
+    { "period": "Within 30 Days (California)", "risk": "Workers' comp claim filing deadline", "action": "California requires filing a workers' comp claim within 30 days of injury to preserve all benefits. File DWC-1 immediately." },
+    { "period": "Within 1 Year (Arizona)", "risk": "Workers' comp claim filing deadline", "action": "Arizona requires filing a workers' comp claim within 1 year of injury. Do not wait." },
+    { "period": "Within 2 Years", "risk": "Third-party civil claim deadline", "action": "If a third party contributed to your injury, you generally have 2 years to file a civil claim. Workers' comp does not prevent these claims." },
+    { "period": "Ongoing", "risk": "Permanent disability determination", "action": "Workers' comp permanent disability ratings affect long-term benefits. Ensure you have an independent medical evaluation before accepting a final rating." }
+  ],
+  "insuranceIssues": [
+    { "issue": "Workers' comp is no-fault", "explanation": "Workers' compensation covers medical treatment and partial lost wages regardless of who caused the accident. However, benefits are limited and do not include pain and suffering." },
+    { "issue": "Employer retaliation is prohibited", "explanation": "California and Arizona law prohibit retaliation against workers who file workers' comp claims. Termination or adverse action after a claim is a separate legal violation." },
+    { "issue": "Independent contractor exclusions", "explanation": "Workers classified as independent contractors may not be covered by workers' comp. Misclassification is common — the actual working relationship matters, not just the label." },
+    { "issue": "Third-party claims are separate", "explanation": "If a non-employer (vendor, contractor, equipment maker) contributed to your injury, you may have a civil claim that allows recovery of pain and suffering beyond workers' comp." },
+    { "issue": "Settlement of workers' comp claims", "explanation": "Workers' comp cases can be settled via a Compromise and Release (C&R) or Stipulated Award. C&R closes all future workers' comp rights for the injury. Understand the implications before signing." }
+  ],
+  "whenToGetLawyer": [
+    "Your injury requires surgery, hospitalization, or long-term medical care",
+    "Your workers' comp claim was denied or disputed",
+    "Your employer is disputing that the injury occurred at work",
+    "A third party (contractor, equipment manufacturer) may have contributed",
+    "You have been offered a workers' comp settlement",
+    "Your employer has taken adverse action after your claim",
+    "You are unsure whether your employment classification affects your rights"
+  ],
+  "relatedAccidents": ["construction", "premises", "product", "slip-and-fall"],
+  "relatedInjuries": ["soft-tissue", "broken-bones", "traumatic-brain", "spinal", "burns"],
+  "relatedGuides": ["evidence-checklist", "insurance-claims", "hiring-a-lawyer"],
+  "relatedTools": ["accident-case-quiz", "lost-wages-estimator", "settlement-readiness"]
+}

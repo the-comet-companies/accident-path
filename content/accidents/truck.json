@@ -1,0 +1,124 @@
+{
+  "slug": "truck",
+  "title": "Truck Accidents",
+  "shortTitle": "Truck Accidents",
+  "description": "Accidents involving commercial trucks, semi-trucks, and 18-wheelers are among the most serious on the road. Federal regulations, multiple liable parties, and severe injuries make these cases significantly more complex than standard car accidents.",
+  "metaTitle": "Truck Accident Guide — What To Do After a Semi-Truck Crash",
+  "metaDescription": "What to do after a truck accident in California or Arizona. Steps, evidence checklist, federal regulation issues, and when to speak with an attorney.",
+  "icon": "truck",
+  "commonCauses": [
+    { "title": "Driver Fatigue", "description": "Federal Hours of Service regulations limit driving time, but violations are common. Drowsy truck drivers have significantly impaired reaction times." },
+    { "title": "Distracted Driving", "description": "Cell phone use, dispatching devices, and other distractions are particularly dangerous at commercial vehicle speeds and weights." },
+    { "title": "Improper Loading", "description": "Overloaded or improperly secured cargo can cause trucks to tip, jackknife, or shed debris onto the roadway." },
+    { "title": "Brake Failure", "description": "Commercial trucks require significantly more stopping distance. Brake maintenance failures are a leading mechanical cause of accidents." },
+    { "title": "Speeding and Aggressive Driving", "description": "Delivery and schedule pressure can push drivers to speed or drive aggressively, especially on highways." },
+    { "title": "Inadequate Training", "description": "Improperly trained drivers may be unprepared for adverse weather, emergency maneuvers, or hazardous cargo handling." },
+    { "title": "DUI / Impairment", "description": "Commercial drivers are held to a lower legal BAC limit (0.04%) than non-commercial drivers, but violations still occur." }
+  ],
+  "likelyInjuries": [
+    { "slug": "traumatic-brain", "title": "Traumatic Brain Injury", "severity": "severe" },
+    { "slug": "spinal", "title": "Spinal Injuries", "severity": "catastrophic" },
+    { "slug": "broken-bones", "title": "Broken Bones", "severity": "moderate" },
+    { "slug": "internal", "title": "Internal Injuries", "severity": "severe" },
+    { "slug": "soft-tissue", "title": "Soft Tissue Injuries", "severity": "moderate" }
+  ],
+  "immediateSteps": [
+    { "step": 1, "title": "Call 911 immediately", "description": "Truck accidents frequently involve serious injuries. Call 911 even if you believe injuries are minor — symptoms can be delayed.", "urgency": "critical" },
+    { "step": 2, "title": "Do not move injured parties", "description": "Spinal injuries are common in truck accidents. Avoid moving anyone unless they are in immediate danger.", "urgency": "critical" },
+    { "step": 3, "title": "Photograph everything before vehicles are moved", "description": "Trucks are often moved quickly for traffic management. Document skid marks, final vehicle positions, road conditions, and all damage before anything is cleared.", "urgency": "critical" },
+    { "step": 4, "title": "Get the truck's DOT number and carrier information", "description": "Located on the truck's door or cab. This identifies the carrier and is essential for investigating insurance and regulatory compliance.", "urgency": "important" },
+    { "step": 5, "title": "Request the driver's log book information", "description": "Federal law requires commercial drivers to keep Hours of Service logs. This is critical evidence that can disappear quickly.", "urgency": "important" },
+    { "step": 6, "title": "Identify any witnesses", "description": "Other drivers, passengers, or bystanders who saw the accident. Independent witness accounts are especially important when dealing with large carriers.", "urgency": "important" },
+    { "step": 7, "title": "Seek immediate medical evaluation", "description": "Truck accident injuries are often severe. Even if you feel functional, internal injuries and traumatic brain injuries may not be immediately apparent.", "urgency": "critical" },
+    { "step": 8, "title": "Preserve all records", "description": "Keep everything — medical bills, repair estimates, rental records, and documentation of any lost work.", "urgency": "helpful" }
+  ],
+  "evidenceChecklist": [
+    {
+      "category": "At the Scene",
+      "priority": "critical",
+      "items": [
+        "Photos of all vehicles (all angles, before anything moves)",
+        "Truck's DOT number, license plate, and company name",
+        "Driver's name, CDL number, and contact information",
+        "Carrier/trucking company contact information",
+        "Photos of skid marks, road conditions, and debris",
+        "Police report number",
+        "Names and contact info of all witnesses"
+      ]
+    },
+    {
+      "category": "Truck-Specific Evidence",
+      "priority": "critical",
+      "items": [
+        "Driver's Hours of Service logbook (request via attorney)",
+        "Electronic logging device (ELD) data",
+        "Truck's black box / event data recorder",
+        "Cargo manifest and weight documentation",
+        "Truck maintenance and inspection records",
+        "Driver's employment and training records"
+      ]
+    },
+    {
+      "category": "Medical Documentation",
+      "priority": "critical",
+      "items": [
+        "Emergency room records",
+        "All specialist and follow-up visit notes",
+        "Imaging reports (X-ray, MRI, CT scan)",
+        "Physical and occupational therapy records",
+        "Prescription records",
+        "Ongoing symptom journal"
+      ]
+    },
+    {
+      "category": "Financial Records",
+      "priority": "important",
+      "items": [
+        "All medical bills",
+        "Vehicle repair or total loss documentation",
+        "Lost wages documentation from employer",
+        "Rental vehicle receipts",
+        "Any other accident-related out-of-pocket expenses"
+      ]
+    },
+    {
+      "category": "Additional Evidence",
+      "priority": "helpful",
+      "items": [
+        "Dashcam or traffic camera footage",
+        "Weigh station records for the vehicle",
+        "Weather and road condition reports",
+        "Photos of the accident scene taken after the fact"
+      ]
+    }
+  ],
+  "timelineRisks": [
+    { "period": "Within 24-48 Hours", "risk": "Critical truck data can be overwritten", "action": "Electronic logging device data and black box recordings may be overwritten within days. An attorney can send a spoliation letter to preserve this evidence." },
+    { "period": "Within 72 Hours", "risk": "Trucking company begins its own investigation", "action": "Carriers dispatch investigators and attorneys quickly after serious accidents. Documenting your account and evidence early is essential." },
+    { "period": "Within 30 Days", "risk": "Insurance reporting deadlines", "action": "Report the accident to your insurer promptly. Avoid giving recorded statements to the trucking company's insurer without legal guidance." },
+    { "period": "Within 6 Months", "risk": "Witnesses become unavailable", "action": "Collect and preserve witness statements. Obtain the police report once available." },
+    { "period": "2 Years (California)", "risk": "Statute of limitations for personal injury", "action": "California generally allows 2 years from the accident date to file a personal injury lawsuit. Claims against government entities may have shorter deadlines." },
+    { "period": "2 Years (Arizona)", "risk": "Statute of limitations for personal injury", "action": "Arizona also has a 2-year statute of limitations for personal injury claims. Consult an attorney early to protect your options." }
+  ],
+  "insuranceIssues": [
+    { "issue": "Multiple liable parties", "explanation": "Truck accidents may involve the driver, the trucking company, the cargo loader, a maintenance contractor, or the truck manufacturer. Identifying all responsible parties is complex and consequential." },
+    { "issue": "Higher insurance minimums", "explanation": "Commercial trucks are required to carry significantly higher liability insurance than passenger vehicles — often $750,000 to $5 million. This also means carriers have experienced claims teams." },
+    { "issue": "Aggressive carrier defense", "explanation": "Large trucking companies often have dedicated legal and claims teams. They may contact you quickly after an accident with settlement offers. Early offers are typically below the full value of damages." },
+    { "issue": "Independent contractor complications", "explanation": "Some truck drivers operate as independent contractors rather than employees, which can affect which insurance policies apply and who bears liability." },
+    { "issue": "Federal regulations exposure", "explanation": "FMCSA violations (hours of service, drug testing, maintenance requirements) can establish negligence. These records must be requested before they are destroyed." }
+  ],
+  "whenToGetLawyer": [
+    "You or any passenger sustained injuries requiring medical treatment",
+    "The trucking company or its insurer contacted you directly after the accident",
+    "You received a settlement offer before fully understanding your injuries",
+    "The truck driver was fatigued, impaired, or in violation of federal regulations",
+    "There are multiple potentially liable parties (driver, carrier, cargo loader)",
+    "Your injuries have caused significant lost wages or long-term disability",
+    "The truck was operated by a government entity",
+    "You are unsure how to preserve electronic evidence before it is overwritten"
+  ],
+  "relatedAccidents": ["car", "motorcycle", "uber-lyft", "workplace"],
+  "relatedInjuries": ["traumatic-brain", "spinal", "broken-bones", "internal", "soft-tissue"],
+  "relatedGuides": ["evidence-checklist", "insurance-claims", "hiring-a-lawyer"],
+  "relatedTools": ["accident-case-quiz", "evidence-checklist", "lost-wages-estimator"]
+}

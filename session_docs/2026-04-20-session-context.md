@@ -674,6 +674,94 @@ Steps updated to match PRD spec:
 - Moved `sticky top-0 z-50` from `<header>` in `Header.tsx` to the wrapper `<div>` in `app/layout.tsx`
 - Removed redundant `sticky top-0 z-50` from `Header.tsx` `<header>` tag
 
+---
+
+## DEV-10: Accident Hub Pages
+
+### New Components
+
+#### `components/content/ChecklistBlock.tsx`
+- `'use client'` interactive checklist
+- Props: `items: AccidentType['evidenceChecklist']`
+- Progress bar showing items checked / total
+- Priority-color categories: critical=red, important=amber, helpful=teal
+- Checkboxes with React state; completed items get strikethrough
+
+#### `components/content/TimelineBlock.tsx`
+- Server component visual timeline
+- Props: `items: AccidentType['timelineRisks']`
+- Numbered dots connected by vertical line, card per entry with period label, risk (amber warning icon), and action
+
+### New Routes
+
+#### `app/accidents/page.tsx`
+- Static index page listing all accident types from `cms.getAllAccidents()`
+- Slug → lucide icon map for all 13 accident types
+- Dark teal hero header with compliance footnote
+- Responsive grid: 1 → 2 → 3 → 4 cols
+
+#### `app/accidents/[slug]/page.tsx`
+- `generateStaticParams` from `cms.getAllAccidents()`
+- `generateMetadata` with `buildMetaTags()` per accident
+- Article JSON-LD schema via `SchemaOrg`
+- 9 sections: Hero (stats card), Common Causes, Likely Injuries, Immediate Steps, Evidence Checklist, Timeline Risks, Insurance Issues, When to See a Lawyer, State-Specific Notes (CA + AZ)
+- Sticky sidebar (desktop): page anchor nav, CTA card, related accident links
+- `DisclaimerBanner variant="default"` at bottom
+
+### CMS Content Files (`content/accidents/`)
+
+All 13 accident type JSON files created, Zod-validated, attorney-review pending before publish:
+
+| File | Title |
+|------|-------|
+| `car.json` | Car Accidents |
+| `truck.json` | Truck Accidents |
+| `motorcycle.json` | Motorcycle Accidents |
+| `uber-lyft.json` | Uber & Lyft Accidents |
+| `pedestrian.json` | Pedestrian Accidents |
+| `bicycle.json` | Bicycle Accidents |
+| `slip-and-fall.json` | Slip & Fall Accidents |
+| `dog-bite.json` | Dog Bite Injuries |
+| `construction.json` | Construction Injuries |
+| `workplace.json` | Workplace Injuries |
+| `wrongful-death.json` | Wrongful Death |
+| `premises.json` | Premises Liability |
+| `product.json` | Product Liability |
+
+### Bug Fixes
+
+- **Home page slug mismatch:** `FEATURED_ACCIDENTS` slugs in `app/page.tsx` were `car-accidents`, `truck-accidents`, `motorcycle-accidents`, `workplace-injuries` — corrected to `car`, `truck`, `motorcycle`, `workplace` to match CMS file names and hub route slugs.
+- **metaDescription Zod validation:** 5 files had descriptions over 160 chars — trimmed to comply with schema.
+
+### Architecture Note
+
+"Load from CMS" means JSON file system, not a database. `cms.getAccident(slug)` reads `content/accidents/{slug}.json` at **build time** — pages are pre-rendered as static HTML. No runtime database query. Supabase is reserved for user-generated runtime data (intake sessions, tool submissions, journal entries).
+
+### Verification
+- `npx tsc --noEmit` — clean
+- `npm run build` — clean, 13 accident hub pages statically generated
+
+## Current State
+
+| Item | Status |
+|------|--------|
+| AccidentCard component | ✓ |
+| ToolCard component | ✓ |
+| ChecklistBlock component | ✓ |
+| TimelineBlock component | ✓ |
+| Home page (all 8 sections) | ✓ |
+| "What You'll Get" hero card | ✓ |
+| GSAP animations (hero + scroll) | ✓ |
+| Hero buttons responsive + no-wrap | ✓ |
+| TrustBadge `size="lg"` variant | ✓ |
+| Trust row larger (grid, py-16) | ✓ |
+| How It Works copy updated | ✓ |
+| Featured Tools heading | ✓ |
+| Sticky header fix | ✓ |
+| `/accidents` index page | ✓ |
+| `/accidents/[slug]` hub template | ✓ |
+| All 13 accident CMS JSON files | ✓ (attorney review pending) |
+
 ## Next Steps
 
-Ready to build page templates: accident hub pages (DEV-10), then populate `content/accidents/*.json` CMS files.
+DEV-11: Guide pages (`/guides/[slug]`) or injury hub pages (`/injuries/[slug]`) — both follow a similar CMS-driven template pattern.

@@ -1,0 +1,115 @@
+{
+  "slug": "slip-and-fall",
+  "title": "Slip & Fall Accidents",
+  "shortTitle": "Slip & Fall",
+  "description": "Slip and fall accidents on someone else's property fall under premises liability law. Property owners have a legal duty to maintain safe conditions. If a dangerous condition caused your fall, prompt documentation and medical evaluation are the most important steps you can take.",
+  "metaTitle": "Slip & Fall Accident Guide — Premises Liability Steps & Rights",
+  "metaDescription": "What to do after a slip and fall in California or Arizona. Document the hazard, get medical care, and understand your premises liability rights.",
+  "icon": "slip-and-fall",
+  "commonCauses": [
+    { "title": "Wet or Slippery Floors", "description": "Spills, freshly mopped floors, and wet entryways without adequate warning signs are a leading cause of slip and fall accidents in commercial properties." },
+    { "title": "Uneven Surfaces", "description": "Cracked sidewalks, uneven flooring transitions, raised tiles, and damaged walkways create tripping hazards." },
+    { "title": "Inadequate Lighting", "description": "Poorly lit stairwells, parking lots, and corridors make it difficult to see hazards in time to avoid them." },
+    { "title": "Missing or Defective Handrails", "description": "Stairs and ramps without proper handrails, or with loose or broken ones, significantly increase fall risk." },
+    { "title": "Debris and Obstacles in Walkways", "description": "Items left in hallways, store aisles, or on stairs create unexpected tripping hazards." },
+    { "title": "Weather Conditions", "description": "Ice, snow, and rain create slippery conditions. Property owners are responsible for timely remediation of foreseeable weather hazards on their property." },
+    { "title": "Defective Stairs or Escalators", "description": "Broken steps, missing treads, and malfunctioning escalators or elevators are mechanical hazards that property owners are responsible for maintaining." }
+  ],
+  "likelyInjuries": [
+    { "slug": "broken-bones", "title": "Broken Bones", "severity": "moderate" },
+    { "slug": "traumatic-brain", "title": "Traumatic Brain Injury", "severity": "severe" },
+    { "slug": "soft-tissue", "title": "Soft Tissue Injuries", "severity": "mild" },
+    { "slug": "spinal", "title": "Spinal Injuries", "severity": "catastrophic" },
+    { "slug": "whiplash", "title": "Whiplash", "severity": "moderate" }
+  ],
+  "immediateSteps": [
+    { "step": 1, "title": "Seek medical help if needed", "description": "If you are injured, call for help or have someone call 911. Do not try to get up quickly if you feel pain in your back, neck, or head.", "urgency": "critical" },
+    { "step": 2, "title": "Photograph the hazard immediately", "description": "Take photos of exactly what caused your fall before it is cleaned up or repaired. This is the most critical piece of evidence in a premises liability case.", "urgency": "critical" },
+    { "step": 3, "title": "Report the incident to the property owner or manager", "description": "Request that an incident report be completed. Ask for a copy — most businesses are required to provide one. If refused, note the name of the person you spoke with.", "urgency": "critical" },
+    { "step": 4, "title": "Get witness information", "description": "Names and contact details from anyone who saw you fall or was aware of the hazard.", "urgency": "important" },
+    { "step": 5, "title": "Preserve your footwear", "description": "The shoes you were wearing at the time of the fall are evidence. Do not discard or replace them.", "urgency": "important" },
+    { "step": 6, "title": "Seek medical evaluation promptly", "description": "Even if you feel okay, get evaluated. Fall injuries — especially hip fractures in older adults and head injuries — may not be immediately apparent.", "urgency": "critical" },
+    { "step": 7, "title": "Document your injuries over time", "description": "Photograph bruising, swelling, and other visible injuries in the days following the fall. Progress photos are valuable evidence.", "urgency": "important" },
+    { "step": 8, "title": "Keep records of everything", "description": "Save the incident report copy, all medical bills, and any communications from the property owner or their insurer.", "urgency": "helpful" }
+  ],
+  "evidenceChecklist": [
+    {
+      "category": "At the Scene",
+      "priority": "critical",
+      "items": [
+        "Photos of the exact hazard that caused the fall (wet floor, crack, debris, etc.)",
+        "Photos of any warning signs present (or absent)",
+        "Photos of the surrounding area and lighting conditions",
+        "Copy of the incident report (request one)",
+        "Names and contact info of witnesses",
+        "Name of the property manager or employee you reported to"
+      ]
+    },
+    {
+      "category": "Physical Evidence",
+      "priority": "critical",
+      "items": [
+        "The shoes you were wearing (preserve — do not discard)",
+        "Photos of injuries taken at the scene and over the following days",
+        "Clothing worn at the time (preserve if damaged)"
+      ]
+    },
+    {
+      "category": "Property Records",
+      "priority": "important",
+      "items": [
+        "Business name, address, and property owner information",
+        "Any prior complaints or incidents at the same location (may require legal request)",
+        "Maintenance logs or inspection records (may require legal request)"
+      ]
+    },
+    {
+      "category": "Medical Documentation",
+      "priority": "critical",
+      "items": [
+        "Emergency room or urgent care records",
+        "All physician and specialist notes",
+        "Imaging reports (X-ray, MRI, CT scan)",
+        "Physical therapy records",
+        "Prescription records and ongoing symptom journal"
+      ]
+    },
+    {
+      "category": "Financial Records",
+      "priority": "important",
+      "items": [
+        "All medical bills",
+        "Lost wages documentation",
+        "Any accident-related out-of-pocket expenses"
+      ]
+    }
+  ],
+  "timelineRisks": [
+    { "period": "Within Hours", "risk": "The hazard may be cleaned up or repaired", "action": "Photograph everything immediately. Once the hazard is removed, it is much harder to prove it existed." },
+    { "period": "Within 24-48 Hours", "risk": "Surveillance footage overwritten", "action": "Security cameras at commercial properties often overwrite within 24-72 hours. An attorney can send a preservation letter immediately." },
+    { "period": "Within 30 Days", "risk": "Insurer for the property begins its investigation", "action": "The property owner's insurer will begin investigating. Having documented the scene early gives you a stronger position." },
+    { "period": "6 Months (Government Property)", "risk": "Government entity claim notice deadline", "action": "If you fell on government property (city sidewalk, public park, government building), California and Arizona require formal notice of claim within 6 months. This is a hard deadline." },
+    { "period": "2 Years (California)", "risk": "Statute of limitations for personal injury on private property", "action": "California has a 2-year personal injury statute of limitations for private property falls." },
+    { "period": "2 Years (Arizona)", "risk": "Statute of limitations for personal injury on private property", "action": "Arizona has a 2-year statute of limitations for personal injury claims." }
+  ],
+  "insuranceIssues": [
+    { "issue": "Property owner's liability insurance", "explanation": "Most commercial properties and homeowners carry liability insurance that covers slip and fall claims. The insurer will investigate and may make settlement offers." },
+    { "issue": "Invitee vs. licensee vs. trespasser", "explanation": "Your legal status on the property affects the duty of care owed to you. Customers and invited guests (invitees) are owed the highest duty. This distinction affects your claim." },
+    { "issue": "Comparative fault defenses", "explanation": "Property owners and their insurers frequently argue the injured person was not paying attention, was wearing inappropriate footwear, or ignored obvious hazards. Both states use pure comparative fault." },
+    { "issue": "Notice requirement", "explanation": "A key element of premises liability claims is proving the property owner knew (or should have known) about the hazard. Evidence of prior incidents or delayed cleanup supports this." },
+    { "issue": "Government property special rules", "explanation": "Slip and falls on city sidewalks, government buildings, and public parks involve government entities with special procedures, shorter deadlines, and damage caps." }
+  ],
+  "whenToGetLawyer": [
+    "You sustained injuries requiring medical treatment",
+    "The property owner is denying the hazard existed or disputing fault",
+    "The fall occurred on government property",
+    "Surveillance footage needs immediate preservation",
+    "The property owner's insurer contacted you with a settlement offer",
+    "Your injuries resulted in significant medical bills or lost wages",
+    "You are unsure how to document a prior notice argument"
+  ],
+  "relatedAccidents": ["premises", "construction", "workplace", "dog-bite"],
+  "relatedInjuries": ["broken-bones", "traumatic-brain", "soft-tissue", "spinal", "whiplash"],
+  "relatedGuides": ["evidence-checklist", "insurance-claims", "hiring-a-lawyer"],
+  "relatedTools": ["accident-case-quiz", "evidence-checklist", "lost-wages-estimator"]
+}

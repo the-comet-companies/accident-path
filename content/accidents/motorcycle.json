@@ -1,0 +1,120 @@
+{
+  "slug": "motorcycle",
+  "title": "Motorcycle Accidents",
+  "shortTitle": "Motorcycle Accidents",
+  "description": "Motorcycle accidents often result in serious injuries because riders lack the physical protection of an enclosed vehicle. Unique legal challenges — including bias against motorcyclists — make documentation and prompt action especially important.",
+  "metaTitle": "Motorcycle Accident Guide — Steps, Rights & What to Know",
+  "metaDescription": "What to do after a motorcycle accident in California or Arizona. Evidence checklist, immediate steps, and guidance on speaking with an attorney.",
+  "icon": "motorcycle",
+  "commonCauses": [
+    { "title": "Left-Turn Collisions", "description": "The most common type of motorcycle accident — a car turning left in front of an oncoming motorcycle at an intersection or driveway." },
+    { "title": "Lane Change Accidents", "description": "Motorcycles are easily missed in blind spots. Drivers changing lanes without checking are a leading cause of serious motorcycle collisions." },
+    { "title": "Rear-End Collisions", "description": "Motorcycles stop faster than cars but are more vulnerable when struck from behind. Following-too-close drivers pose a significant risk." },
+    { "title": "Distracted Driving", "description": "Drivers using phones or otherwise distracted are less likely to notice motorcycles, particularly at intersections and on highways." },
+    { "title": "Road Hazards", "description": "Gravel, potholes, oil slicks, and uneven pavement that are minor nuisances to cars can cause a motorcyclist to lose control." },
+    { "title": "Speeding", "description": "Both driver and rider speeding reduce reaction time. High-speed motorcycle crashes carry a high risk of catastrophic injury." },
+    { "title": "DUI / Impairment", "description": "Impaired drivers have reduced ability to detect motorcycles and respond in time, making them disproportionately involved in fatal motorcycle crashes." }
+  ],
+  "likelyInjuries": [
+    { "slug": "traumatic-brain", "title": "Traumatic Brain Injury", "severity": "severe" },
+    { "slug": "spinal", "title": "Spinal Injuries", "severity": "catastrophic" },
+    { "slug": "broken-bones", "title": "Broken Bones", "severity": "moderate" },
+    { "slug": "soft-tissue", "title": "Road Rash / Soft Tissue", "severity": "moderate" },
+    { "slug": "internal", "title": "Internal Injuries", "severity": "severe" }
+  ],
+  "immediateSteps": [
+    { "step": 1, "title": "Call 911", "description": "Motorcycle accidents frequently result in serious injury. Call 911 even if you feel okay — many serious injuries have delayed symptoms.", "urgency": "critical" },
+    { "step": 2, "title": "Stay at the scene and stay calm", "description": "Do not remove your helmet unless there is an immediate airway obstruction and a trained person is present. Stay still if you feel neck or back pain.", "urgency": "critical" },
+    { "step": 3, "title": "Document everything before the scene is cleared", "description": "Photograph vehicle positions, damage, road conditions, skid marks, and any defects in the road that may have contributed to the accident.", "urgency": "critical" },
+    { "step": 4, "title": "Get the other driver's information", "description": "Name, license number, insurance company, policy number, and contact details. Do not discuss fault at the scene.", "urgency": "important" },
+    { "step": 5, "title": "Identify witnesses", "description": "Get names and contact information from anyone who saw the accident. Bias against motorcyclists makes independent witnesses especially important.", "urgency": "important" },
+    { "step": 6, "title": "Preserve your helmet and gear", "description": "Your helmet, jacket, gloves, and footwear are physical evidence of the accident's severity. Do not discard or repair them.", "urgency": "important" },
+    { "step": 7, "title": "Seek medical evaluation immediately", "description": "Even minor-seeming impacts can cause internal bleeding or traumatic brain injury. Get evaluated the same day.", "urgency": "critical" },
+    { "step": 8, "title": "Notify your insurer", "description": "Report the accident to your insurance company. Avoid admitting fault or speculating about injuries.", "urgency": "helpful" }
+  ],
+  "evidenceChecklist": [
+    {
+      "category": "At the Scene",
+      "priority": "critical",
+      "items": [
+        "Photos of all vehicles from every angle (before moving)",
+        "Photos of road conditions, skid marks, and debris",
+        "Photos of your motorcycle damage",
+        "Other driver's license, insurance, and contact info",
+        "Police report number",
+        "Names and contact info of witnesses"
+      ]
+    },
+    {
+      "category": "Physical Evidence",
+      "priority": "critical",
+      "items": [
+        "Your helmet (preserved — do not clean or repair)",
+        "Your riding jacket, gloves, and boots",
+        "Photos of road rash, bruising, and visible injuries at the scene",
+        "Motorcycle repair estimate or total loss documentation"
+      ]
+    },
+    {
+      "category": "Medical Documentation",
+      "priority": "critical",
+      "items": [
+        "Emergency room or trauma center records",
+        "All follow-up physician and specialist notes",
+        "Imaging reports (X-ray, MRI, CT scan)",
+        "Physical therapy records",
+        "Prescription receipts",
+        "Ongoing symptom and recovery journal"
+      ]
+    },
+    {
+      "category": "Financial Records",
+      "priority": "important",
+      "items": [
+        "All medical bills",
+        "Motorcycle repair or replacement documentation",
+        "Lost wages documentation from employer",
+        "Rental or transportation costs during recovery",
+        "Any accident-related out-of-pocket expenses"
+      ]
+    },
+    {
+      "category": "Additional Evidence",
+      "priority": "helpful",
+      "items": [
+        "Dashcam or traffic camera footage",
+        "Surveillance video from nearby businesses",
+        "Weather and road condition reports for that day",
+        "Any prior complaints about the road hazard (if applicable)"
+      ]
+    }
+  ],
+  "timelineRisks": [
+    { "period": "Immediately", "risk": "Helmet and gear may be discarded", "action": "Preserve all riding gear — it is physical evidence of the crash's severity. Store it in a safe place and do not repair or clean it." },
+    { "period": "Within 24-48 Hours", "risk": "Delayed injury symptoms", "action": "Seek a full medical evaluation, including neurological screening. Traumatic brain injury and internal injuries often present later." },
+    { "period": "Within 30 Days", "risk": "Insurance reporting windows close", "action": "Report to your insurer promptly. Avoid recorded statements to the opposing driver's insurer without guidance." },
+    { "period": "Within 6 Months", "risk": "Witness memories fade", "action": "Secure written witness statements. Download any available dashcam or surveillance footage." },
+    { "period": "2 Years (California)", "risk": "Statute of limitations for personal injury", "action": "California generally provides 2 years from the accident date to file a personal injury claim. Missing this deadline typically bars the claim." },
+    { "period": "2 Years (Arizona)", "risk": "Statute of limitations for personal injury", "action": "Arizona also has a 2-year personal injury statute of limitations. Contact an attorney well before this deadline." }
+  ],
+  "insuranceIssues": [
+    { "issue": "Anti-motorcyclist bias in claims", "explanation": "Insurance adjusters may attempt to attribute fault to the motorcyclist by suggesting speeding, lane-splitting, or recklessness, even without evidence. Strong documentation counters this." },
+    { "issue": "Helmet use and comparative fault", "explanation": "In California and Arizona, helmet use can affect comparative fault arguments. California requires helmets; Arizona does not for riders over 18, but lack of a helmet may be raised in damages arguments." },
+    { "issue": "Underinsured motorists", "explanation": "Motorcyclists are frequently hit by underinsured or uninsured drivers. Your own UM/UIM coverage may be critical to recovering full compensation." },
+    { "issue": "Quick low-ball settlement offers", "explanation": "Motorcycle injuries often involve lengthy recovery. Accepting a quick settlement before understanding the full extent of injuries can leave you without recourse for future medical needs." },
+    { "issue": "Medical payment coverage gaps", "explanation": "Many motorcycle insurance policies have different MedPay or medical payment terms than auto policies. Review your coverage carefully." }
+  ],
+  "whenToGetLawyer": [
+    "You sustained injuries requiring medical treatment",
+    "The other driver's insurer is disputing fault or blaming you",
+    "You received a settlement offer before your treatment is complete",
+    "The accident involved a road defect or government-maintained roadway",
+    "Your injuries have caused extended lost wages or disability",
+    "The other driver was uninsured or underinsured",
+    "You are unsure how to counter anti-motorcyclist bias in the claims process"
+  ],
+  "relatedAccidents": ["car", "truck", "bicycle", "pedestrian"],
+  "relatedInjuries": ["traumatic-brain", "spinal", "broken-bones", "soft-tissue", "internal"],
+  "relatedGuides": ["evidence-checklist", "insurance-claims", "hiring-a-lawyer"],
+  "relatedTools": ["accident-case-quiz", "evidence-checklist", "lost-wages-estimator"]
+}

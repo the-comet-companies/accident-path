@@ -1,0 +1,108 @@
+{
+  "slug": "wrongful-death",
+  "title": "Wrongful Death",
+  "shortTitle": "Wrongful Death",
+  "description": "When a person dies as a result of another party's negligence or wrongful act, surviving family members may have a wrongful death claim. California and Arizona both allow qualified survivors to seek compensation for their loss. This is a deeply sensitive area of law that requires careful, compassionate guidance.",
+  "metaTitle": "Wrongful Death Claims — What Families Need to Know in CA & AZ",
+  "metaDescription": "What families should know about wrongful death claims in California and Arizona. Who can file, what damages are available, and when to speak with an attorney.",
+  "icon": "wrongful-death",
+  "commonCauses": [
+    { "title": "Motor Vehicle Accidents", "description": "Car, truck, and motorcycle accidents are among the most common causes of wrongful death claims." },
+    { "title": "Workplace Accidents", "description": "Fatal construction site accidents, industrial accidents, and workplace violence can give rise to wrongful death claims alongside workers' compensation." },
+    { "title": "Medical Malpractice", "description": "Deaths caused by healthcare provider negligence — including surgical errors, misdiagnosis, and medication errors — may support wrongful death claims." },
+    { "title": "Premises Liability", "description": "Fatal slip and fall accidents, drownings, and other property-related deaths due to a property owner's negligence." },
+    { "title": "Defective Products", "description": "Deaths caused by defective vehicles, consumer products, pharmaceuticals, or medical devices." },
+    { "title": "Criminal Acts", "description": "A wrongful death civil claim can be filed even if criminal charges are also pursued. The standards of proof differ." }
+  ],
+  "likelyInjuries": [
+    { "slug": "traumatic-brain", "title": "Traumatic Brain Injury (fatal)", "severity": "catastrophic" },
+    { "slug": "spinal", "title": "Spinal Injuries (fatal)", "severity": "catastrophic" },
+    { "slug": "internal", "title": "Internal Injuries (fatal)", "severity": "catastrophic" }
+  ],
+  "immediateSteps": [
+    { "step": 1, "title": "Focus on your family's immediate needs first", "description": "There is no single right way to respond in the immediate aftermath of losing a loved one. Take care of yourselves and your family before any legal steps.", "urgency": "critical" },
+    { "step": 2, "title": "Preserve all potential evidence", "description": "If possible, photograph the scene or preserve any physical evidence related to the death. Evidence lost early can be difficult to reconstruct.", "urgency": "important" },
+    { "step": 3, "title": "Request the official death certificate", "description": "The death certificate is essential documentation for any legal claim and estate matters.", "urgency": "important" },
+    { "step": 4, "title": "Request a copy of any incident or accident report", "description": "Police reports, employer incident reports, and hospital records document the circumstances of the death.", "urgency": "important" },
+    { "step": 5, "title": "Identify and preserve financial records", "description": "Employment records, income documentation, and financial statements establish the economic damages claimable in a wrongful death case.", "urgency": "helpful" },
+    { "step": 6, "title": "Consult with a personal injury attorney early", "description": "Wrongful death claims involve complex legal standing rules, shorter deadlines in some cases, and coordination with estates. Early consultation is strongly advisable.", "urgency": "critical" },
+    { "step": 7, "title": "Avoid signing anything from an insurer without legal advice", "description": "Insurers may approach surviving family members quickly. Do not sign releases, accept settlements, or give recorded statements without consulting an attorney.", "urgency": "critical" },
+    { "step": 8, "title": "Coordinate with the estate", "description": "Some wrongful death damages flow through the estate. Understanding how your state's laws coordinate estate and survivor claims is important.", "urgency": "helpful" }
+  ],
+  "evidenceChecklist": [
+    {
+      "category": "Official Records",
+      "priority": "critical",
+      "items": [
+        "Death certificate",
+        "Police or incident report",
+        "Autopsy or coroner's report",
+        "Hospital and emergency records",
+        "Any prior medical records relevant to the cause of death"
+      ]
+    },
+    {
+      "category": "Scene and Liability Evidence",
+      "priority": "critical",
+      "items": [
+        "Photos of the accident or incident scene (if accessible)",
+        "Witness names and contact information",
+        "Names of all potentially liable parties",
+        "Insurance policy information for liable parties"
+      ]
+    },
+    {
+      "category": "Financial and Economic Records",
+      "priority": "important",
+      "items": [
+        "Tax returns and W-2s for the deceased (last 2-3 years)",
+        "Pay stubs and employment records",
+        "Documentation of benefits, pension, or future earning potential",
+        "Records of financial support provided to surviving family members"
+      ]
+    },
+    {
+      "category": "Relationship Documentation",
+      "priority": "important",
+      "items": [
+        "Marriage certificates (for spouse claimants)",
+        "Birth certificates (for parent/child claimants)",
+        "Evidence of financial dependency",
+        "Documentation of the relationship and companionship lost"
+      ]
+    },
+    {
+      "category": "Communications",
+      "priority": "helpful",
+      "items": [
+        "Any communications from insurers or responsible parties",
+        "Any settlement offers received in writing",
+        "All correspondence with the deceased's employer if work-related"
+      ]
+    }
+  ],
+  "timelineRisks": [
+    { "period": "Within 30 Days", "risk": "Insurers may approach family members", "action": "Do not sign any releases or accept any settlements without consulting an attorney. Early settlements in wrongful death cases are typically far below the full value of the claim." },
+    { "period": "Within 6 Months (Government Defendants)", "risk": "Government entity claim notice deadline", "action": "If a government entity, employee, or vehicle caused the death, California and Arizona have 6-month notice-of-claim requirements. This is a hard deadline." },
+    { "period": "2 Years (California)", "risk": "Statute of limitations for wrongful death claims", "action": "California's wrongful death statute of limitations is 2 years from the date of death. Missing this deadline typically bars the claim." },
+    { "period": "2 Years (Arizona)", "risk": "Statute of limitations for wrongful death claims", "action": "Arizona also has a 2-year wrongful death statute of limitations. Consult an attorney promptly to protect the family's rights." }
+  ],
+  "insuranceIssues": [
+    { "issue": "Who can file a wrongful death claim", "explanation": "In California, a wrongful death claim may be brought by the surviving spouse, domestic partner, children, or — if none — those who would inherit under intestate succession. In Arizona, similar rules apply. The specifics matter for who receives what." },
+    { "issue": "Survival claims vs. wrongful death claims", "explanation": "California allows both a wrongful death claim (for survivors' losses) and a survival action (for the deceased's own pain and suffering and economic losses before death). These are separate and can be pursued together." },
+    { "issue": "Estate coordination", "explanation": "Survival claims flow through the deceased's estate. If you are a surviving family member but not the estate representative, coordination is required." },
+    { "issue": "Workers' comp and wrongful death", "explanation": "If the death occurred at work, workers' compensation death benefits may be available to dependents. Third-party wrongful death claims may also be available alongside or instead of workers' comp, depending on circumstances." }
+  ],
+  "whenToGetLawyer": [
+    "A family member died as a result of another party's negligence or wrongful act",
+    "An insurer has contacted surviving family members with a settlement offer",
+    "The death occurred due to a workplace accident, defective product, or medical error",
+    "A government entity may have been involved",
+    "You are unsure who has legal standing to file a claim",
+    "You need guidance on coordinating a wrongful death claim with the estate"
+  ],
+  "relatedAccidents": ["car", "truck", "motorcycle", "workplace", "construction", "premises"],
+  "relatedInjuries": ["traumatic-brain", "spinal", "internal"],
+  "relatedGuides": ["hiring-a-lawyer", "timeline-expectations", "insurance-claims"],
+  "relatedTools": ["accident-case-quiz", "lost-wages-estimator", "settlement-readiness"]
+}

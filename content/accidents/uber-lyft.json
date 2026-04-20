@@ -1,0 +1,115 @@
+{
+  "slug": "uber-lyft",
+  "title": "Uber & Lyft Accidents",
+  "shortTitle": "Rideshare Accidents",
+  "description": "Accidents involving Uber, Lyft, or other rideshare vehicles are complicated by layered insurance coverage, app status at the time of the crash, and questions of driver employment status. Understanding which policy applies is critical to protecting your claim.",
+  "metaTitle": "Uber & Lyft Accident Guide — Rideshare Injury Claims Explained",
+  "metaDescription": "What to do after an Uber or Lyft accident in California or Arizona. Learn how rideshare insurance layers work, your rights as a passenger, and next steps.",
+  "icon": "uber-lyft",
+  "commonCauses": [
+    { "title": "Distracted Driving", "description": "Rideshare drivers frequently check their apps for navigation, new ride requests, and ratings while driving — a significant distraction risk." },
+    { "title": "Fatigue from Extended Shifts", "description": "Many rideshare drivers work long hours across multiple platforms. Driver fatigue is a significant and underreported cause of rideshare accidents." },
+    { "title": "Unfamiliarity with the Area", "description": "Drivers relying heavily on GPS navigation may make sudden stops, unexpected turns, or lane changes to follow route guidance." },
+    { "title": "Reckless Driving for Ratings / Income", "description": "Pressure to complete more rides and maintain high ratings can push drivers to speed or accept rides in unsafe conditions." },
+    { "title": "Other Driver Negligence", "description": "The at-fault party in a rideshare accident may be another driver, not the rideshare driver. Insurance complexity still applies." },
+    { "title": "Pick-Up and Drop-Off Hazards", "description": "Stopping in traffic lanes, sudden door openings, and erratic pulling over create risks for other vehicles, cyclists, and pedestrians." }
+  ],
+  "likelyInjuries": [
+    { "slug": "whiplash", "title": "Whiplash", "severity": "moderate" },
+    { "slug": "traumatic-brain", "title": "Traumatic Brain Injury", "severity": "severe" },
+    { "slug": "broken-bones", "title": "Broken Bones", "severity": "moderate" },
+    { "slug": "soft-tissue", "title": "Soft Tissue Injuries", "severity": "mild" },
+    { "slug": "spinal", "title": "Spinal Injuries", "severity": "catastrophic" }
+  ],
+  "immediateSteps": [
+    { "step": 1, "title": "Call 911 if anyone is injured", "description": "Emergency services should be called for any injuries, even minor ones. A police report establishes the official accident record.", "urgency": "critical" },
+    { "step": 2, "title": "Screenshot the trip details in the app immediately", "description": "Open your Uber or Lyft app and screenshot the trip — driver name, vehicle information, trip ID, and time. This establishes the app was active and the driver was on a trip.", "urgency": "critical" },
+    { "step": 3, "title": "Document the scene thoroughly", "description": "Photograph all vehicles, damage, license plates, road conditions, and any injuries. Note the rideshare company's logo or decal if visible.", "urgency": "important" },
+    { "step": 4, "title": "Get driver and vehicle information", "description": "Name, license, insurance, vehicle make/model/plate. The app already captures some of this, but get it directly as backup.", "urgency": "important" },
+    { "step": 5, "title": "Get witness information", "description": "Names and contact details from other passengers, bystanders, or other drivers who witnessed the accident.", "urgency": "important" },
+    { "step": 6, "title": "Report the accident through the app", "description": "Both Uber and Lyft have in-app accident reporting. Submit a report promptly — this creates an official record with the company.", "urgency": "important" },
+    { "step": 7, "title": "Seek medical evaluation", "description": "Even minor accidents can cause delayed-onset injuries. Get evaluated as soon as possible and keep all records.", "urgency": "critical" },
+    { "step": 8, "title": "Keep all documentation organized", "description": "Save the app screenshot, the police report number, all medical records, and any communications from Uber/Lyft.", "urgency": "helpful" }
+  ],
+  "evidenceChecklist": [
+    {
+      "category": "App & Ride Documentation",
+      "priority": "critical",
+      "items": [
+        "Screenshot of the active trip in the Uber/Lyft app (driver name, vehicle, trip ID)",
+        "Screenshot of the trip receipt after the accident",
+        "In-app accident report confirmation number",
+        "Driver's rating and any prior complaints (can be requested)"
+      ]
+    },
+    {
+      "category": "At the Scene",
+      "priority": "critical",
+      "items": [
+        "Photos of all vehicles from every angle",
+        "Photos of rideshare decal/placard on the vehicle",
+        "Driver's personal insurance information",
+        "Police report number",
+        "Names and contact info of all witnesses and passengers"
+      ]
+    },
+    {
+      "category": "Medical Documentation",
+      "priority": "critical",
+      "items": [
+        "Emergency room or urgent care records",
+        "All follow-up physician and specialist notes",
+        "Imaging reports (X-ray, MRI, CT scan)",
+        "Physical therapy records",
+        "Prescription receipts and ongoing symptom journal"
+      ]
+    },
+    {
+      "category": "Financial Records",
+      "priority": "important",
+      "items": [
+        "All medical bills",
+        "Lost wages documentation",
+        "Transportation costs during recovery",
+        "Any accident-related out-of-pocket expenses"
+      ]
+    },
+    {
+      "category": "Communications",
+      "priority": "helpful",
+      "items": [
+        "All emails or in-app messages from Uber/Lyft regarding the accident",
+        "Any settlement offers received in writing from any insurer",
+        "Correspondence with any insurance adjusters"
+      ]
+    }
+  ],
+  "timelineRisks": [
+    { "period": "Immediately", "risk": "App data may not be preserved", "action": "Screenshot your trip details, receipt, and driver information immediately. This digital evidence can be critical to establishing the driver was on an active trip." },
+    { "period": "Within 24-48 Hours", "risk": "Delayed injury symptoms", "action": "Seek a full medical evaluation even if you feel fine. Document all symptoms in writing from day one." },
+    { "period": "Within 30 Days", "risk": "Insurance reporting windows", "action": "Report to your own insurer. File an in-app accident report if not already done. Avoid recorded statements to Uber/Lyft's insurer without guidance." },
+    { "period": "Within 6 Months", "risk": "Evidence and witness availability decline", "action": "Collect written witness statements and download any available surveillance footage." },
+    { "period": "2 Years (California)", "risk": "Statute of limitations for personal injury", "action": "California has a 2-year personal injury statute of limitations. The layered insurance structure makes early action advisable." },
+    { "period": "2 Years (Arizona)", "risk": "Statute of limitations for personal injury", "action": "Arizona also has a 2-year statute of limitations. Contact an attorney to understand which insurance policies apply before the deadline." }
+  ],
+  "insuranceIssues": [
+    { "issue": "Three-phase insurance coverage", "explanation": "Uber and Lyft coverage depends on driver app status: (1) app off — driver's personal insurance only; (2) app on, waiting for ride — limited contingency coverage; (3) ride accepted or passenger in car — full commercial policy ($1M+ liability)." },
+    { "issue": "Driver's personal insurance may deny claims", "explanation": "Most personal auto insurance policies exclude commercial rideshare use. If the driver was in Phase 1, they may have no coverage for a rideshare accident." },
+    { "issue": "Multiple claims to file", "explanation": "You may need to file claims with the rideshare company's insurer, the driver's personal insurer, and your own insurer. Coordinating these claims is complex." },
+    { "issue": "Independent contractor classification", "explanation": "Uber and Lyft classify drivers as independent contractors, not employees. This limits direct employer liability but does not necessarily eliminate claims against the platform." },
+    { "issue": "As a passenger, you have additional protections", "explanation": "Passengers in an active Uber or Lyft trip are typically covered under the full commercial policy regardless of fault. This is a stronger starting position than a driver-to-driver claim." }
+  ],
+  "whenToGetLawyer": [
+    "You were injured as a passenger, pedestrian, or other driver in a rideshare accident",
+    "The app status at the time of the crash is disputed",
+    "Multiple insurance companies are involved and disputing coverage",
+    "The rideshare company's insurer offered a quick settlement",
+    "Your injuries resulted in significant medical bills or lost wages",
+    "The driver's personal insurance denied your claim",
+    "You are unsure which insurance policies apply to your situation"
+  ],
+  "relatedAccidents": ["car", "truck", "pedestrian", "bicycle"],
+  "relatedInjuries": ["whiplash", "traumatic-brain", "broken-bones", "soft-tissue", "spinal"],
+  "relatedGuides": ["evidence-checklist", "insurance-claims", "hiring-a-lawyer"],
+  "relatedTools": ["accident-case-quiz", "evidence-checklist", "lost-wages-estimator"]
+}

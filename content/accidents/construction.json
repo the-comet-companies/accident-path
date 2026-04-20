@@ -1,0 +1,118 @@
+{
+  "slug": "construction",
+  "title": "Construction Injuries",
+  "shortTitle": "Construction Injuries",
+  "description": "Construction sites are among the most hazardous work environments. Workers injured on a job site may have options beyond workers' compensation — including third-party claims against general contractors, subcontractors, equipment manufacturers, and property owners.",
+  "metaTitle": "Construction Injury Guide — Workers' Comp vs. Third-Party Claims",
+  "metaDescription": "What to do after a construction site injury in California or Arizona. Understand workers' comp, third-party liability, OSHA reporting, and your rights.",
+  "icon": "construction",
+  "commonCauses": [
+    { "title": "Falls from Heights", "description": "Falls from scaffolding, ladders, roofs, and elevated platforms are the leading cause of construction fatalities and serious injuries." },
+    { "title": "Struck-By Accidents", "description": "Workers struck by falling tools, equipment, or vehicles on active job sites. Overhead work creates significant struck-by hazards." },
+    { "title": "Caught-In/Between Accidents", "description": "Workers caught in or between heavy equipment, machinery, or collapsing structures. These accidents are frequently fatal or catastrophic." },
+    { "title": "Electrocution", "description": "Contact with live wires, inadequate lockout/tagout procedures, and proximity to power lines are leading electrical hazards on construction sites." },
+    { "title": "Defective Equipment or Tools", "description": "Malfunctioning power tools, defective scaffolding components, and faulty equipment can cause serious injuries independent of worker error." },
+    { "title": "Trench and Excavation Collapse", "description": "Unprotected trenches and excavations can collapse suddenly, burying workers. OSHA has specific shoring and protective system requirements." },
+    { "title": "Exposure to Hazardous Materials", "description": "Asbestos, silica dust, lead, and other construction materials pose serious long-term health risks without adequate protective equipment." }
+  ],
+  "likelyInjuries": [
+    { "slug": "traumatic-brain", "title": "Traumatic Brain Injury", "severity": "severe" },
+    { "slug": "spinal", "title": "Spinal Injuries", "severity": "catastrophic" },
+    { "slug": "broken-bones", "title": "Broken Bones", "severity": "moderate" },
+    { "slug": "internal", "title": "Internal Injuries", "severity": "severe" },
+    { "slug": "burns", "title": "Burns", "severity": "severe" }
+  ],
+  "immediateSteps": [
+    { "step": 1, "title": "Get emergency medical care", "description": "Construction injuries can be severe. Call 911 or have a coworker call immediately. Do not downplay symptoms.", "urgency": "critical" },
+    { "step": 2, "title": "Report the injury to your employer immediately", "description": "Notify your employer or site supervisor as soon as possible. This is required to preserve workers' compensation rights in both California and Arizona.", "urgency": "critical" },
+    { "step": 3, "title": "Document the scene before it changes", "description": "Construction sites change rapidly. Photograph the exact location of the accident, the equipment involved, any defects, and safety violations before the site is modified.", "urgency": "critical" },
+    { "step": 4, "title": "Identify witnesses", "description": "Names and contact information of coworkers or others who witnessed the accident.", "urgency": "important" },
+    { "step": 5, "title": "Preserve any defective equipment", "description": "If a tool or piece of equipment failed, preserve it as evidence. Do not allow it to be repaired, discarded, or returned.", "urgency": "important" },
+    { "step": 6, "title": "Document any OSHA violations observed", "description": "Note any safety requirements that were not followed at the time of the accident. OSHA violations can support third-party liability claims.", "urgency": "important" },
+    { "step": 7, "title": "File a workers' compensation claim", "description": "File with your employer's workers' comp carrier promptly. Missing reporting deadlines can jeopardize your benefits.", "urgency": "critical" },
+    { "step": 8, "title": "Keep records of everything", "description": "All medical bills, lost wage documentation, and communications with your employer, insurer, or any third parties.", "urgency": "helpful" }
+  ],
+  "evidenceChecklist": [
+    {
+      "category": "At the Scene",
+      "priority": "critical",
+      "items": [
+        "Photos of the exact accident location",
+        "Photos of any equipment, tools, or materials involved",
+        "Photos of any safety violations or missing safeguards",
+        "Names and contact info of witnesses",
+        "Incident report number from employer"
+      ]
+    },
+    {
+      "category": "Equipment and Materials",
+      "priority": "critical",
+      "items": [
+        "Preserve any defective tool or equipment (do not repair or discard)",
+        "Manufacturer name and model number of involved equipment",
+        "Maintenance logs for the equipment (request via attorney)",
+        "Safety data sheets for any hazardous materials involved"
+      ]
+    },
+    {
+      "category": "Employment and Claims Records",
+      "priority": "important",
+      "items": [
+        "Workers' compensation claim number",
+        "Employer's written injury report",
+        "OSHA report (if filed)",
+        "Employment contract or agreement",
+        "Contractor and subcontractor information for the job site"
+      ]
+    },
+    {
+      "category": "Medical Documentation",
+      "priority": "critical",
+      "items": [
+        "Emergency room and all follow-up records",
+        "Specialist notes (orthopedic, neurological, etc.)",
+        "Imaging reports (X-ray, MRI, CT scan)",
+        "Physical and occupational therapy records",
+        "Records of any surgical treatment",
+        "Ongoing symptom and recovery journal"
+      ]
+    },
+    {
+      "category": "Financial Records",
+      "priority": "important",
+      "items": [
+        "All medical bills",
+        "Documentation of lost wages",
+        "Records of any workers' comp payments received",
+        "Any accident-related out-of-pocket expenses"
+      ]
+    }
+  ],
+  "timelineRisks": [
+    { "period": "Immediately", "risk": "Scene is altered and evidence is lost", "action": "Construction sites change rapidly. Document everything before the site is modified, equipment is repaired, or scaffolding is dismantled." },
+    { "period": "Within 24-48 Hours", "risk": "Workers' comp reporting deadline at risk", "action": "California and Arizona workers' compensation systems require prompt employer notification. Delay can complicate or jeopardize your claim." },
+    { "period": "Within 30 Days", "risk": "OSHA investigation may conclude", "action": "OSHA may investigate serious construction accidents. Cooperate with investigators and preserve your own documentation." },
+    { "period": "Within 1 Year (Workers' Comp)", "risk": "Workers' compensation claim filing deadline", "action": "California requires filing a workers' compensation claim within 1 year of injury. Arizona has a 1-year filing deadline for most workers' comp claims." },
+    { "period": "2 Years (Third-Party Claims)", "risk": "Statute of limitations for third-party personal injury claims", "action": "If a third party (contractor, equipment manufacturer) is liable, you generally have 2 years to file a civil claim. Workers' comp does not prevent third-party claims." }
+  ],
+  "insuranceIssues": [
+    { "issue": "Workers' comp vs. third-party claims", "explanation": "Workers' compensation typically covers medical costs and lost wages but limits total recovery. If a third party (general contractor, equipment manufacturer, property owner) contributed to the accident, a separate civil claim may be available." },
+    { "issue": "Independent contractor status", "explanation": "Workers classified as independent contractors may not be covered by the employer's workers' comp. However, misclassification is common and may be challenged." },
+    { "issue": "Multiple potentially liable parties", "explanation": "Construction site injuries may involve the general contractor, multiple subcontractors, property owners, equipment manufacturers, and architects. Identifying all parties is complex but consequential." },
+    { "issue": "Equipment manufacturer liability", "explanation": "If a defective tool or machine caused the injury, the manufacturer may be liable under product liability laws — separate from and in addition to any workers' comp claim." },
+    { "issue": "OSHA violations as evidence", "explanation": "Documented OSHA violations at the time of the accident can support both workers' comp claims and third-party lawsuits by establishing negligence." }
+  ],
+  "whenToGetLawyer": [
+    "Your injuries required surgery, hospitalization, or long-term medical care",
+    "A third party (contractor, equipment maker, property owner) may have contributed to the accident",
+    "Your employer is disputing the workers' comp claim or your employment status",
+    "Defective equipment was involved",
+    "OSHA violations were present at the time of the accident",
+    "You have been offered a workers' comp settlement",
+    "Your injuries have caused permanent disability or significant lost wages"
+  ],
+  "relatedAccidents": ["workplace", "premises", "product", "slip-and-fall"],
+  "relatedInjuries": ["traumatic-brain", "spinal", "broken-bones", "internal", "burns"],
+  "relatedGuides": ["evidence-checklist", "insurance-claims", "hiring-a-lawyer"],
+  "relatedTools": ["accident-case-quiz", "lost-wages-estimator", "settlement-readiness"]
+}

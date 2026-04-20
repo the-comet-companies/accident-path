@@ -1,0 +1,121 @@
+{
+  "slug": "car",
+  "title": "Car Accidents",
+  "shortTitle": "Car Accidents",
+  "description": "Car accidents are the most common type of personal injury case in California and Arizona. Whether you were rear-ended, T-boned, or involved in a multi-vehicle collision, understanding your rights and next steps can protect your health and your claim.",
+  "metaTitle": "Car Accident Guide — What To Do After a Car Crash",
+  "metaDescription": "What to do after a car accident in California or Arizona. Get clear steps, evidence checklists, timeline risks, and guidance on when to speak with an attorney.",
+  "icon": "car",
+  "commonCauses": [
+    { "title": "Distracted Driving", "description": "Cell phone use, eating, or other distractions that take a driver's attention off the road." },
+    { "title": "Speeding", "description": "Driving over the posted speed limit or too fast for road conditions." },
+    { "title": "Drunk or Impaired Driving", "description": "Alcohol, drugs, or prescription medications that impair reaction time and judgment." },
+    { "title": "Running Red Lights or Stop Signs", "description": "Failing to obey traffic signals, often causing T-bone or intersection collisions." },
+    { "title": "Tailgating", "description": "Following too closely, leaving insufficient stopping distance." },
+    { "title": "Unsafe Lane Changes", "description": "Merging without checking blind spots or using turn signals." },
+    { "title": "Road Rage", "description": "Aggressive driving behaviors including cutting off, brake-checking, and deliberate collisions." }
+  ],
+  "likelyInjuries": [
+    { "slug": "whiplash", "title": "Whiplash", "severity": "moderate" },
+    { "slug": "traumatic-brain", "title": "Traumatic Brain Injury", "severity": "severe" },
+    { "slug": "broken-bones", "title": "Broken Bones", "severity": "moderate" },
+    { "slug": "soft-tissue", "title": "Soft Tissue Injuries", "severity": "mild" },
+    { "slug": "spinal", "title": "Spinal Injuries", "severity": "catastrophic" }
+  ],
+  "immediateSteps": [
+    { "step": 1, "title": "Call 911 if anyone is injured", "description": "If there are injuries — even minor ones — call 911 immediately. Do not move injured people unless there is an immediate danger.", "urgency": "critical" },
+    { "step": 2, "title": "Move to safety if possible", "description": "If the vehicles are drivable and blocking traffic, move them to the shoulder. Turn on hazard lights.", "urgency": "critical" },
+    { "step": 3, "title": "Document the scene with photos", "description": "Before moving anything, photograph all vehicles, damage, skid marks, road conditions, and any visible injuries.", "urgency": "important" },
+    { "step": 4, "title": "Exchange information with other driver(s)", "description": "Get name, license number, insurance company, policy number, and contact information from all drivers involved.", "urgency": "important" },
+    { "step": 5, "title": "Get witness information", "description": "Ask any bystanders for their name and phone number. Independent witnesses can be critical if fault is disputed.", "urgency": "important" },
+    { "step": 6, "title": "Seek medical evaluation within 24-48 hours", "description": "Even if you feel fine, see a doctor. Delayed symptoms (whiplash, concussion) are common. A medical record establishes a connection between the accident and your injuries.", "urgency": "critical" },
+    { "step": 7, "title": "Notify your insurance company", "description": "Report the accident to your insurer promptly. Stick to the facts — avoid speculating about fault or the extent of injuries.", "urgency": "important" },
+    { "step": 8, "title": "Keep records of everything", "description": "Save all medical bills, repair estimates, rental car receipts, and any documentation of lost wages.", "urgency": "helpful" }
+  ],
+  "evidenceChecklist": [
+    {
+      "category": "At the Scene",
+      "priority": "critical",
+      "items": [
+        "Photos of all vehicle damage (all angles)",
+        "Photos of the accident location and road conditions",
+        "Photos of any visible injuries",
+        "Police report number",
+        "Other driver's license, insurance, and contact info",
+        "Names and contact info of witnesses"
+      ]
+    },
+    {
+      "category": "Medical Documentation",
+      "priority": "critical",
+      "items": [
+        "Emergency room or urgent care visit records",
+        "All physician and specialist notes",
+        "Diagnostic imaging reports (X-ray, MRI, CT scan)",
+        "Physical therapy records",
+        "Prescription receipts",
+        "Ongoing symptom journal"
+      ]
+    },
+    {
+      "category": "Financial Records",
+      "priority": "important",
+      "items": [
+        "All medical bills and invoices",
+        "Vehicle repair estimates and invoices",
+        "Rental car receipts",
+        "Employer letter or pay stubs documenting missed work",
+        "Any out-of-pocket expense receipts related to the accident"
+      ]
+    },
+    {
+      "category": "Insurance & Legal",
+      "priority": "important",
+      "items": [
+        "Your own insurance policy documents",
+        "All correspondence with insurance adjusters (written and logged calls)",
+        "Any settlement offers received in writing",
+        "Copy of the police report (order once available)"
+      ]
+    },
+    {
+      "category": "Additional Evidence",
+      "priority": "helpful",
+      "items": [
+        "Dashcam footage (yours or nearby traffic cameras)",
+        "Surveillance video from nearby businesses",
+        "Screenshots of any relevant social media posts",
+        "Weather reports for the day and location"
+      ]
+    }
+  ],
+  "timelineRisks": [
+    { "period": "Within 24-48 Hours", "risk": "Delayed injury symptoms may go undocumented", "action": "Seek a medical evaluation even if you feel fine. Establish a medical record connecting the accident to any injuries." },
+    { "period": "Within 3-10 Days", "risk": "Scene evidence disappears", "action": "Return to the accident location for additional photos if needed. Download dashcam footage before it overwrites." },
+    { "period": "Within 30 Days", "risk": "Insurance reporting windows", "action": "Most policies require prompt reporting. Notify your insurer within the first week to avoid coverage issues." },
+    { "period": "Within 6 Months", "risk": "Memory fades, witnesses become unreachable", "action": "Write a detailed account of the accident and your injuries while your memory is fresh. Collect witness statements." },
+    { "period": "2 Years (California)", "risk": "Statute of limitations for personal injury", "action": "You generally have 2 years from the date of the accident to file a personal injury lawsuit in California. Missing this deadline typically bars your claim." },
+    { "period": "2 Years (Arizona)", "risk": "Statute of limitations for personal injury", "action": "Arizona also has a 2-year statute of limitations for personal injury claims. Government vehicles may have shorter notice requirements." }
+  ],
+  "insuranceIssues": [
+    { "issue": "Quick settlement offers", "explanation": "Insurance adjusters may contact you within days with a settlement offer. Early offers are typically low and made before the full extent of injuries is known. You are not required to accept." },
+    { "issue": "Recorded statement requests", "explanation": "The other driver's insurer may ask you to give a recorded statement. You generally are not required to comply with the opposing insurer's requests. Consult with an attorney before agreeing." },
+    { "issue": "Disputed liability", "explanation": "Insurers may argue about who was at fault or assign shared blame to reduce their payout. California uses pure comparative fault — your recovery is reduced by your percentage of fault." },
+    { "issue": "Underinsured or uninsured drivers", "explanation": "If the at-fault driver lacks sufficient insurance, your own uninsured/underinsured motorist (UM/UIM) coverage may apply. Review your policy carefully." },
+    { "issue": "Medical payment coverage (MedPay)", "explanation": "Some California policies include MedPay, which covers medical expenses regardless of fault. This can help cover immediate costs while your claim is being resolved." }
+  ],
+  "whenToGetLawyer": [
+    "You or any passenger sustained injuries requiring medical treatment",
+    "The other driver was uninsured or underinsured",
+    "Fault is disputed or you were partially blamed",
+    "You received a quick settlement offer before fully understanding your injuries",
+    "A commercial vehicle (truck, bus, rideshare) was involved",
+    "The accident involved a government vehicle or unsafe road conditions",
+    "An insurance adjuster is pressuring you to settle quickly",
+    "Your injuries have caused significant lost wages or long-term disability"
+  ],
+  "relatedAccidents": ["truck", "motorcycle", "uber-lyft", "pedestrian"],
+  "relatedInjuries": ["whiplash", "traumatic-brain", "broken-bones", "soft-tissue", "spinal"],
+  "relatedGuides": ["after-car-accident", "evidence-checklist", "insurance-claims"],
+  "relatedTools": ["accident-case-quiz", "evidence-checklist", "lost-wages-estimator"]
+}

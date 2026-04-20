@@ -1,0 +1,112 @@
+{
+  "slug": "premises",
+  "title": "Premises Liability",
+  "shortTitle": "Premises Liability",
+  "description": "Premises liability covers injuries caused by dangerous conditions on someone else's property. Whether the injury occurred at a store, apartment complex, parking lot, or private home, property owners have a legal duty to maintain reasonably safe conditions for people lawfully on the premises.",
+  "metaTitle": "Premises Liability Guide — Injury on Someone Else's Property",
+  "metaDescription": "What to do after a premises liability injury in California or Arizona. Slip and falls, inadequate security, pool accidents, and how to document your claim.",
+  "icon": "premises",
+  "commonCauses": [
+    { "title": "Wet, Slippery, or Uneven Floors", "description": "Spills, recently mopped floors, and uneven flooring are among the most common property hazards that cause visitor injuries." },
+    { "title": "Inadequate Security", "description": "Property owners who fail to provide adequate security measures — lighting, locks, cameras, security personnel — may be liable when visitors are assaulted or harmed." },
+    { "title": "Swimming Pool Accidents", "description": "Pool owners are responsible for fencing, safety equipment, and supervision. Drownings and near-drowning injuries are serious premises liability claims." },
+    { "title": "Parking Lot Hazards", "description": "Poorly lit parking areas, cracked pavement, and inadequate traffic controls create injury risks for pedestrians and drivers alike." },
+    { "title": "Stairway and Elevator Defects", "description": "Broken steps, missing handrails, and malfunctioning elevators or escalators are maintenance failures that property owners are responsible for correcting." },
+    { "title": "Toxic Exposure on Property", "description": "Mold, asbestos, lead paint, and other environmental hazards on a property can cause serious health injuries for tenants or visitors." },
+    { "title": "Fire and Electrical Hazards", "description": "Properties with inadequate fire safety measures, defective electrical systems, or blocked fire exits may be liable for resulting injuries." }
+  ],
+  "likelyInjuries": [
+    { "slug": "broken-bones", "title": "Broken Bones", "severity": "moderate" },
+    { "slug": "traumatic-brain", "title": "Traumatic Brain Injury", "severity": "severe" },
+    { "slug": "soft-tissue", "title": "Soft Tissue Injuries", "severity": "mild" },
+    { "slug": "spinal", "title": "Spinal Injuries", "severity": "catastrophic" },
+    { "slug": "burns", "title": "Burns", "severity": "severe" }
+  ],
+  "immediateSteps": [
+    { "step": 1, "title": "Get medical help", "description": "Seek emergency care for serious injuries. For any injury, see a doctor the same day or within 24 hours to create a timely medical record.", "urgency": "critical" },
+    { "step": 2, "title": "Document the hazard before it is addressed", "description": "Photograph the exact condition that caused your injury immediately. Property owners typically remediate hazards quickly after an incident.", "urgency": "critical" },
+    { "step": 3, "title": "Report the incident to the property owner or manager", "description": "Notify the property owner or on-site manager. Request a written incident report and ask for a copy.", "urgency": "critical" },
+    { "step": 4, "title": "Identify witnesses", "description": "Names and contact information from anyone who saw the incident or was aware of the hazard.", "urgency": "important" },
+    { "step": 5, "title": "Preserve your footwear and clothing", "description": "The shoes and clothing you were wearing are physical evidence. Do not discard or wash them.", "urgency": "important" },
+    { "step": 6, "title": "Note the security camera locations", "description": "Identify any surveillance cameras covering the area. Footage typically overwrites within 24-72 hours and must be preserved quickly.", "urgency": "important" },
+    { "step": 7, "title": "Document your injuries over time", "description": "Photograph bruising, swelling, and other visible injuries in the days following the incident.", "urgency": "important" },
+    { "step": 8, "title": "Keep all records", "description": "Save the incident report copy, all medical bills, and any communications from the property owner or their insurer.", "urgency": "helpful" }
+  ],
+  "evidenceChecklist": [
+    {
+      "category": "Hazard Documentation",
+      "priority": "critical",
+      "items": [
+        "Photos of the exact hazard (taken immediately)",
+        "Photos of any warning signs present or absent",
+        "Photos of the surrounding area and lighting conditions",
+        "Copy of the incident report"
+      ]
+    },
+    {
+      "category": "Property Information",
+      "priority": "important",
+      "items": [
+        "Property owner's name and contact information",
+        "Business name (if commercial property)",
+        "Property management company information",
+        "Names and contact info of witnesses"
+      ]
+    },
+    {
+      "category": "Medical Documentation",
+      "priority": "critical",
+      "items": [
+        "All emergency and follow-up medical records",
+        "Imaging reports (X-ray, MRI, CT scan)",
+        "Physical therapy records",
+        "Prescription records and symptom journal"
+      ]
+    },
+    {
+      "category": "Financial Records",
+      "priority": "important",
+      "items": [
+        "All medical bills",
+        "Lost wages documentation",
+        "Any accident-related out-of-pocket expenses"
+      ]
+    },
+    {
+      "category": "Surveillance and Prior Notice",
+      "priority": "helpful",
+      "items": [
+        "Security camera footage (request immediately — overwrites quickly)",
+        "Evidence of prior complaints or incidents at the same property",
+        "Maintenance or inspection records showing knowledge of the hazard"
+      ]
+    }
+  ],
+  "timelineRisks": [
+    { "period": "Within Hours", "risk": "Hazard is remediated and footage is overwritten", "action": "Document the hazard and request surveillance footage preservation immediately. Both can disappear within hours." },
+    { "period": "Within 30 Days", "risk": "Property owner's insurer begins investigation", "action": "The property's liability insurer will investigate. Having your own documentation early strengthens your position." },
+    { "period": "6 Months (Government Property)", "risk": "Government claims notice deadline", "action": "Injuries on public property (city sidewalks, government buildings, parks) require formal notice of claim within 6 months in California and Arizona." },
+    { "period": "2 Years (California)", "risk": "Statute of limitations for premises liability claims", "action": "California's personal injury statute of limitations is 2 years from the date of injury on private property." },
+    { "period": "2 Years (Arizona)", "risk": "Statute of limitations for premises liability claims", "action": "Arizona also has a 2-year personal injury statute of limitations for private property claims." }
+  ],
+  "insuranceIssues": [
+    { "issue": "Property owner's liability insurance", "explanation": "Most commercial properties carry general liability insurance, and homeowners carry homeowner insurance. These policies typically cover premises liability claims." },
+    { "issue": "Notice of hazard requirement", "explanation": "To establish liability, it often helps to show the property owner knew or should have known about the hazard. Prior complaints, length of time the hazard existed, and maintenance logs are relevant." },
+    { "issue": "Comparative fault", "explanation": "Property owners frequently argue visitors were not watching where they were going, ignored visible warnings, or were in an area not open to the public. Both states use pure comparative fault." },
+    { "issue": "Government property rules", "explanation": "Injuries on government-owned property involve special procedures, shorter deadlines, and damage caps. These claims must be handled differently." },
+    { "issue": "Tenant vs. property owner liability", "explanation": "In rental properties, liability may fall on the property owner, the tenant, a property management company, or some combination — depending on who controlled the hazardous condition." }
+  ],
+  "whenToGetLawyer": [
+    "You sustained injuries requiring medical treatment",
+    "The hazard was the result of inadequate maintenance or prior complaints",
+    "The injury occurred on government property",
+    "Surveillance footage needs immediate preservation",
+    "The property owner or insurer is denying liability",
+    "Your injuries resulted in significant medical bills or lost wages",
+    "Inadequate security contributed to an assault or criminal act"
+  ],
+  "relatedAccidents": ["slip-and-fall", "construction", "workplace", "dog-bite"],
+  "relatedInjuries": ["broken-bones", "traumatic-brain", "soft-tissue", "spinal", "burns"],
+  "relatedGuides": ["evidence-checklist", "insurance-claims", "hiring-a-lawyer"],
+  "relatedTools": ["accident-case-quiz", "evidence-checklist", "lost-wages-estimator"]
+}

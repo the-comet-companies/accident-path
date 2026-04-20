@@ -1,0 +1,112 @@
+{
+  "slug": "dog-bite",
+  "title": "Dog Bite Injuries",
+  "shortTitle": "Dog Bites",
+  "description": "California is a strict liability state for dog bites — meaning the dog owner is liable regardless of whether the dog had previously shown aggression. Arizona has similar protections. If you were bitten or attacked by a dog, prompt medical care and documentation are critical.",
+  "metaTitle": "Dog Bite Injury Guide — Strict Liability Laws in CA & AZ",
+  "metaDescription": "What to do after a dog bite in California or Arizona. Strict liability laws, evidence checklist, medical documentation, and when to speak with an attorney.",
+  "icon": "dog-bite",
+  "commonCauses": [
+    { "title": "Lack of Owner Control", "description": "Dogs allowed to roam without a leash, or left unattended in public spaces, pose a direct risk to others." },
+    { "title": "Failure to Warn Visitors", "description": "Property owners who do not warn guests about an aggressive or unpredictable dog may bear additional liability." },
+    { "title": "Provocation (Disputed)", "description": "Owners sometimes claim the victim provoked the dog. California and Arizona strict liability applies regardless of provocation in most cases, though this is a common defense argument." },
+    { "title": "Escaped or Unsecured Dogs", "description": "Dogs that escape fenced yards or break free from restraints and bite passersby on public property." },
+    { "title": "Delivery and Service Workers", "description": "Mail carriers, package delivery workers, and utility workers face elevated dog bite risk due to regular home access." },
+    { "title": "Children Left Unattended with Dogs", "description": "Children are disproportionately the victims of serious dog bites, often from dogs known to the family." }
+  ],
+  "likelyInjuries": [
+    { "slug": "soft-tissue", "title": "Puncture Wounds and Lacerations", "severity": "moderate" },
+    { "slug": "broken-bones", "title": "Broken Bones", "severity": "moderate" },
+    { "slug": "traumatic-brain", "title": "Traumatic Brain Injury (severe attacks)", "severity": "severe" },
+    { "slug": "soft-tissue", "title": "Nerve Damage", "severity": "severe" },
+    { "slug": "soft-tissue", "title": "Infection / Rabies Risk", "severity": "moderate" }
+  ],
+  "immediateSteps": [
+    { "step": 1, "title": "Seek medical care immediately", "description": "Dog bites carry high infection risk, including rabies. Wash the wound thoroughly and go to urgent care or an ER the same day, even if the wound appears minor.", "urgency": "critical" },
+    { "step": 2, "title": "Identify the dog and its owner", "description": "Get the owner's name, address, and phone number. Ask for proof of rabies vaccination. If the owner is unknown, report to animal control.", "urgency": "critical" },
+    { "step": 3, "title": "Report the bite to animal control", "description": "File a report with your local animal control agency. This creates an official record and triggers a quarantine or observation period for the dog.", "urgency": "critical" },
+    { "step": 4, "title": "Photograph the wound before and after treatment", "description": "Document the severity of the injury with photos taken at the scene and throughout your recovery.", "urgency": "important" },
+    { "step": 5, "title": "Get witness information", "description": "Names and contact details from anyone who saw the attack.", "urgency": "important" },
+    { "step": 6, "title": "Photograph the location", "description": "Document where the bite occurred — public sidewalk, park, the owner's property — along with any fencing, signage, or leash conditions.", "urgency": "important" },
+    { "step": 7, "title": "Keep all medical records and bills", "description": "Document every medical visit related to the bite, including follow-up wound care, rabies prophylaxis, and any psychological treatment.", "urgency": "important" },
+    { "step": 8, "title": "Document emotional impact", "description": "Dog bites can cause lasting psychological distress, especially in children. Keep a journal of any anxiety, sleep disruption, or fear of dogs.", "urgency": "helpful" }
+  ],
+  "evidenceChecklist": [
+    {
+      "category": "Dog and Owner Information",
+      "priority": "critical",
+      "items": [
+        "Owner's name, address, and phone number",
+        "Dog's breed, description, and name",
+        "Proof of rabies vaccination (request from owner)",
+        "Animal control report number"
+      ]
+    },
+    {
+      "category": "Injury Documentation",
+      "priority": "critical",
+      "items": [
+        "Photos of wounds immediately after the bite",
+        "Photos of wounds throughout recovery (daily if significant)",
+        "Emergency room and follow-up visit records",
+        "Records of rabies prophylaxis or any vaccinations administered",
+        "Records of any surgical treatment or wound care"
+      ]
+    },
+    {
+      "category": "Scene Documentation",
+      "priority": "important",
+      "items": [
+        "Photos of the location where the attack occurred",
+        "Photos of any fencing, gate, or restraint that failed",
+        "Names and contact info of any witnesses"
+      ]
+    },
+    {
+      "category": "Financial Records",
+      "priority": "important",
+      "items": [
+        "All medical bills related to the bite",
+        "Lost wages documentation",
+        "Costs of psychological or counseling treatment",
+        "Any other out-of-pocket expenses"
+      ]
+    },
+    {
+      "category": "Prior Incidents",
+      "priority": "helpful",
+      "items": [
+        "Any prior animal control reports involving the same dog",
+        "Neighbor or witness accounts of the dog's prior aggressive behavior"
+      ]
+    }
+  ],
+  "timelineRisks": [
+    { "period": "Immediately", "risk": "Infection and rabies exposure", "action": "Wash the wound and seek medical care the same day. If the dog's rabies status is unknown, post-exposure prophylaxis must begin promptly." },
+    { "period": "Within 24-48 Hours", "risk": "Animal control report must be filed", "action": "File an animal control report promptly to trigger dog quarantine. This also creates an official record of the incident." },
+    { "period": "Within 30 Days", "risk": "Homeowner insurer begins investigation", "action": "Most dog bite claims go through the dog owner's homeowner or renter insurance. The insurer will investigate." },
+    { "period": "Within 6 Months", "risk": "Government property deadline", "action": "If the bite occurred on government property or involved a government-owned animal, shorter claims deadlines apply." },
+    { "period": "2 Years (California)", "risk": "Statute of limitations for dog bite personal injury claims", "action": "California has a 2-year statute of limitations for personal injury claims, including dog bites." },
+    { "period": "1-2 Years (Arizona)", "risk": "Statute of limitations for dog bite claims", "action": "Arizona has a 1-year statute of limitations specifically for dog bite claims under its strict liability statute. Consult an attorney promptly." }
+  ],
+  "insuranceIssues": [
+    { "issue": "Homeowner and renter insurance coverage", "explanation": "Most dog bite claims are paid through the dog owner's homeowner or renter insurance liability coverage. Many policies cover $100,000-$300,000 in liability." },
+    { "issue": "Breed exclusions", "explanation": "Some homeowner policies exclude certain breeds (pit bulls, Rottweilers) from coverage. If the dog owner's breed is excluded, recovering compensation may require alternative approaches." },
+    { "issue": "California strict liability", "explanation": "Under California Civil Code 3342, dog owners are strictly liable for bites that occur in public places or lawfully in private places — regardless of the dog's prior history." },
+    { "issue": "Arizona strict liability", "explanation": "Arizona has a similar strict liability dog bite statute. The owner is liable if the bitten person was in a public place or lawfully in a private place." },
+    { "issue": "Provocation defense", "explanation": "While strict liability applies broadly, owners may argue the victim provoked the dog. This is frequently raised and requires factual response." }
+  ],
+  "whenToGetLawyer": [
+    "Your injuries required medical treatment beyond basic first aid",
+    "The wound required stitches, surgery, or resulted in scarring",
+    "The dog owner's insurer denied coverage or disputed liability",
+    "The bite has caused lasting psychological impact or fear",
+    "The bite occurred to a child",
+    "The dog had prior incidents of aggression",
+    "You are unsure how to navigate the homeowner insurance claim"
+  ],
+  "relatedAccidents": ["slip-and-fall", "premises", "workplace"],
+  "relatedInjuries": ["soft-tissue", "broken-bones", "traumatic-brain"],
+  "relatedGuides": ["evidence-checklist", "insurance-claims", "hiring-a-lawyer"],
+  "relatedTools": ["accident-case-quiz", "evidence-checklist", "lost-wages-estimator"]
+}

@@ -1,0 +1,115 @@
+{
+  "slug": "pedestrian",
+  "title": "Pedestrian Accidents",
+  "shortTitle": "Pedestrian Accidents",
+  "description": "Pedestrians struck by vehicles face some of the most severe injuries of any accident type. California and Arizona laws provide important protections for pedestrians, but prompt action, strong documentation, and medical evaluation are critical to protecting your health and your options.",
+  "metaTitle": "Pedestrian Accident Guide — What To Do After Being Hit by a Car",
+  "metaDescription": "What to do after a pedestrian accident in California or Arizona. Immediate steps, evidence checklist, legal rights, and when to speak with an attorney.",
+  "icon": "pedestrian",
+  "commonCauses": [
+    { "title": "Failure to Yield at Crosswalks", "description": "Drivers are required to yield to pedestrians in marked and unmarked crosswalks. Failure to do so is a leading cause of pedestrian accidents." },
+    { "title": "Distracted Driving", "description": "Drivers using phones or otherwise distracted are less likely to see pedestrians, particularly at intersections and in parking areas." },
+    { "title": "Running Red Lights and Stop Signs", "description": "Traffic violations that allow a vehicle to enter a pedestrian's right-of-way unexpectedly and at speed." },
+    { "title": "Speeding", "description": "Higher vehicle speeds dramatically increase the severity of pedestrian injuries. A pedestrian struck at 40 mph has a much lower survival rate than one struck at 20 mph." },
+    { "title": "Left and Right Turns", "description": "Drivers making turns often focus on traffic rather than pedestrians in the crosswalk. Turning vehicles are responsible for a large percentage of pedestrian crashes." },
+    { "title": "Backing Vehicles", "description": "Backing cars in driveways, parking lots, and loading areas frequently fail to detect pedestrians, especially children." },
+    { "title": "Poor Lighting or Visibility", "description": "Night-time, poor weather, and inadequate street lighting reduce pedestrian visibility to drivers." }
+  ],
+  "likelyInjuries": [
+    { "slug": "traumatic-brain", "title": "Traumatic Brain Injury", "severity": "severe" },
+    { "slug": "spinal", "title": "Spinal Injuries", "severity": "catastrophic" },
+    { "slug": "broken-bones", "title": "Broken Bones", "severity": "moderate" },
+    { "slug": "internal", "title": "Internal Injuries", "severity": "severe" },
+    { "slug": "soft-tissue", "title": "Soft Tissue Injuries", "severity": "moderate" }
+  ],
+  "immediateSteps": [
+    { "step": 1, "title": "Call 911", "description": "Pedestrian accidents frequently involve serious injuries. Call for emergency services immediately.", "urgency": "critical" },
+    { "step": 2, "title": "Do not get up if you feel neck or back pain", "description": "Spinal injuries are common in pedestrian accidents. Stay still until emergency responders arrive unless you are in immediate danger from traffic.", "urgency": "critical" },
+    { "step": 3, "title": "Ask someone to document the scene", "description": "If you are unable to take photos, ask a bystander to photograph vehicle positions, the crosswalk, traffic signals, and road conditions.", "urgency": "critical" },
+    { "step": 4, "title": "Get the driver's information", "description": "Name, license number, insurance company, and contact information. Do not discuss fault.", "urgency": "important" },
+    { "step": 5, "title": "Get witness information", "description": "Names and contact details from bystanders. Multiple witnesses strengthen a pedestrian's account significantly.", "urgency": "important" },
+    { "step": 6, "title": "Note the traffic signal status and crosswalk type", "description": "Was the light green? Was there a walk signal? Was it a marked or unmarked crosswalk? These details matter for establishing right-of-way.", "urgency": "important" },
+    { "step": 7, "title": "Seek emergency medical evaluation", "description": "Accept ambulance transport if offered. Internal injuries and brain injuries from pedestrian impacts are often not immediately apparent.", "urgency": "critical" },
+    { "step": 8, "title": "Keep all clothing and personal items", "description": "Torn clothing, damaged shoes, and broken glasses are physical evidence. Preserve them rather than discarding.", "urgency": "helpful" }
+  ],
+  "evidenceChecklist": [
+    {
+      "category": "At the Scene",
+      "priority": "critical",
+      "items": [
+        "Photos of the vehicle that struck you and all damage",
+        "Photos of the crosswalk, intersection, and traffic signals",
+        "Photos of any visible injuries",
+        "Driver's license, insurance, and contact information",
+        "Police report number",
+        "Names and contact info of all witnesses"
+      ]
+    },
+    {
+      "category": "Physical Evidence",
+      "priority": "critical",
+      "items": [
+        "Torn or damaged clothing (preserve, do not wash)",
+        "Damaged personal items (glasses, bags, phone)",
+        "Photos of injuries taken at the scene and over the following days"
+      ]
+    },
+    {
+      "category": "Medical Documentation",
+      "priority": "critical",
+      "items": [
+        "Emergency room records and ambulance transport records",
+        "All physician and specialist notes",
+        "Imaging reports (X-ray, MRI, CT scan)",
+        "Physical and occupational therapy records",
+        "Prescription records and symptom journal"
+      ]
+    },
+    {
+      "category": "Scene and Roadway",
+      "priority": "important",
+      "items": [
+        "Traffic camera or surveillance video (request quickly — footage is often overwritten)",
+        "Photos of the accident location taken afterward",
+        "Documentation of crosswalk condition, visibility, or signage defects"
+      ]
+    },
+    {
+      "category": "Financial Records",
+      "priority": "important",
+      "items": [
+        "All medical bills",
+        "Lost wages documentation",
+        "Transportation costs during recovery",
+        "Any accident-related out-of-pocket expenses"
+      ]
+    }
+  ],
+  "timelineRisks": [
+    { "period": "Within 24-48 Hours", "risk": "Surveillance footage is overwritten", "action": "Traffic cameras and nearby business security footage typically overwrite within 24-72 hours. An attorney can send a preservation request quickly." },
+    { "period": "Within 72 Hours", "risk": "Delayed injury symptoms", "action": "Get a full medical evaluation even if you feel functional. Internal injuries and traumatic brain injuries can emerge over days." },
+    { "period": "Within 30 Days", "risk": "Insurance reporting deadlines", "action": "Notify your own insurer. If the at-fault driver is uninsured, your own uninsured motorist coverage may apply." },
+    { "period": "Within 6 Months", "risk": "Witnesses become unavailable", "action": "Collect written witness statements while memories are fresh." },
+    { "period": "6 Months (Government Vehicles)", "risk": "Government claims notice requirement", "action": "If a government vehicle (bus, city car) struck you, California and Arizona have shorter claim notice deadlines — as short as 6 months. This is a hard deadline." },
+    { "period": "2 Years (California / Arizona)", "risk": "Statute of limitations for personal injury", "action": "Both states have a 2-year personal injury statute of limitations from the date of injury for non-government defendants." }
+  ],
+  "insuranceIssues": [
+    { "issue": "Uninsured drivers", "explanation": "Pedestrians are particularly vulnerable to being struck by uninsured drivers. Your own auto insurance UM/UIM coverage can apply even if you were not in a vehicle." },
+    { "issue": "Comparative fault arguments", "explanation": "Insurance adjusters may argue the pedestrian was jaywalking, not in the crosswalk, or not paying attention. California and Arizona both use pure comparative fault, so even partial fault does not bar recovery." },
+    { "issue": "Government vehicle claims", "explanation": "If struck by a city bus, police vehicle, or other government vehicle, special claims procedures and shorter deadlines apply. These must be handled differently than private party claims." },
+    { "issue": "Quick settlement offers", "explanation": "Pedestrian injuries are often severe and long-term. Accepting a quick settlement before the full extent of injuries is known may leave significant compensation on the table." }
+  ],
+  "whenToGetLawyer": [
+    "You sustained injuries requiring medical treatment",
+    "The driver was uninsured or fled the scene",
+    "Fault is being disputed or shared blame is suggested",
+    "A government vehicle (bus, city car) was involved",
+    "Your injuries involved a hospital stay or long recovery",
+    "You received a quick settlement offer before understanding your full injuries",
+    "Surveillance footage needs to be preserved before it is overwritten"
+  ],
+  "relatedAccidents": ["car", "bicycle", "uber-lyft", "motorcycle"],
+  "relatedInjuries": ["traumatic-brain", "spinal", "broken-bones", "internal", "soft-tissue"],
+  "relatedGuides": ["evidence-checklist", "insurance-claims", "hiring-a-lawyer"],
+  "relatedTools": ["accident-case-quiz", "evidence-checklist", "lost-wages-estimator"]
+}

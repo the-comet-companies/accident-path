@@ -1,0 +1,113 @@
+{
+  "slug": "product",
+  "title": "Product Liability",
+  "shortTitle": "Product Liability",
+  "description": "When a defective product causes injury, the manufacturer, distributor, or retailer may be liable under product liability law. California and Arizona recognize three theories of defect: design defects, manufacturing defects, and failure to warn. You do not need to prove negligence — strict liability applies in many product injury cases.",
+  "metaTitle": "Product Liability Guide — Injured by a Defective Product in CA & AZ",
+  "metaDescription": "Injured by a defective product in California or Arizona? Learn about strict liability, evidence preservation, and when to speak with an attorney.",
+  "icon": "product",
+  "commonCauses": [
+    { "title": "Manufacturing Defects", "description": "An error in the manufacturing process causes a specific product to deviate from its intended design, creating a dangerous condition." },
+    { "title": "Design Defects", "description": "The entire product line is inherently dangerous because of a flaw in the design itself — even if manufactured exactly as intended." },
+    { "title": "Failure to Warn", "description": "A product that poses non-obvious dangers without adequate warnings, instructions, or safety labels can create liability for the manufacturer." },
+    { "title": "Defective Vehicle Components", "description": "Tire blowouts, brake failures, airbag malfunctions, and other automotive defects cause serious accidents and injuries." },
+    { "title": "Dangerous Consumer Products", "description": "Household appliances, power tools, children's toys, and electronics that malfunction and cause burns, lacerations, or other injuries." },
+    { "title": "Pharmaceutical and Medical Device Defects", "description": "Dangerous drug side effects inadequately disclosed, and defective medical devices implanted in patients, are significant sources of product liability claims." },
+    { "title": "Food Contamination", "description": "Foodborne illness caused by contaminated food products can support product liability claims against manufacturers and distributors." }
+  ],
+  "likelyInjuries": [
+    { "slug": "burns", "title": "Burns and Chemical Injuries", "severity": "severe" },
+    { "slug": "broken-bones", "title": "Broken Bones", "severity": "moderate" },
+    { "slug": "traumatic-brain", "title": "Traumatic Brain Injury", "severity": "severe" },
+    { "slug": "soft-tissue", "title": "Lacerations and Soft Tissue", "severity": "moderate" },
+    { "slug": "internal", "title": "Internal Injuries", "severity": "severe" }
+  ],
+  "immediateSteps": [
+    { "step": 1, "title": "Seek medical care", "description": "Get evaluated and treated for your injuries. Document the cause of injury in your medical records as specifically as possible.", "urgency": "critical" },
+    { "step": 2, "title": "Preserve the defective product", "description": "This is the most critical step. Do not discard, repair, or alter the product that caused your injury. It is the primary piece of evidence in a product liability case.", "urgency": "critical" },
+    { "step": 3, "title": "Preserve all packaging and documentation", "description": "Keep the original packaging, instructions, warranty cards, and any receipts or purchase records.", "urgency": "critical" },
+    { "step": 4, "title": "Photograph everything", "description": "Document the product, the defect (if visible), your injuries, and any damage to property. Photograph from multiple angles.", "urgency": "important" },
+    { "step": 5, "title": "Check for recalls", "description": "Search the product on the CPSC recall database (cpsc.gov) and the manufacturer's website. An existing recall can significantly support your claim.", "urgency": "important" },
+    { "step": 6, "title": "Identify other potential victims", "description": "If you are aware of others injured by the same product, documenting this can support a pattern-of-defect argument or connect you to a broader litigation.", "urgency": "helpful" },
+    { "step": 7, "title": "Report to the appropriate agency", "description": "Report consumer product injuries to the CPSC (saferproducts.gov). Report pharmaceutical or medical device injuries to the FDA.", "urgency": "helpful" },
+    { "step": 8, "title": "Keep all medical and financial records", "description": "Document all treatment costs, lost wages, and any other expenses related to the product injury.", "urgency": "important" }
+  ],
+  "evidenceChecklist": [
+    {
+      "category": "Product Evidence",
+      "priority": "critical",
+      "items": [
+        "The defective product itself (do not repair or discard)",
+        "Original packaging and instructions",
+        "Purchase receipt or proof of purchase",
+        "Warranty documentation",
+        "Serial number, lot number, and manufacturing date (if visible)"
+      ]
+    },
+    {
+      "category": "Incident Documentation",
+      "priority": "critical",
+      "items": [
+        "Photos of the product and visible defect",
+        "Photos of all injuries",
+        "Photos of any property damage caused by the product",
+        "Written account of exactly how the product was being used when the injury occurred"
+      ]
+    },
+    {
+      "category": "Recall and Safety Records",
+      "priority": "important",
+      "items": [
+        "CPSC recall search results for the product",
+        "Any manufacturer safety notices or bulletins",
+        "Evidence of other reported injuries (online reviews, recall databases)"
+      ]
+    },
+    {
+      "category": "Medical Documentation",
+      "priority": "critical",
+      "items": [
+        "Emergency room or urgent care records",
+        "All follow-up physician and specialist notes",
+        "Imaging reports",
+        "Physical therapy and rehabilitation records",
+        "Prescription records and symptom journal"
+      ]
+    },
+    {
+      "category": "Financial Records",
+      "priority": "important",
+      "items": [
+        "All medical bills",
+        "Lost wages documentation",
+        "Cost of the product",
+        "Any other accident-related out-of-pocket expenses"
+      ]
+    }
+  ],
+  "timelineRisks": [
+    { "period": "Immediately", "risk": "Product may be discarded or repaired", "action": "Preserve the defective product exactly as it was at the time of injury. This is the most critical step and cannot be undone if missed." },
+    { "period": "Within 30 Days", "risk": "Product recall investigation windows", "action": "Check for existing recalls. Report your injury to CPSC or FDA as applicable to create an official record." },
+    { "period": "Within 2 Years (California)", "risk": "Statute of limitations for product liability personal injury", "action": "California has a 2-year personal injury statute of limitations from the date of injury." },
+    { "period": "Within 2 Years (Arizona)", "risk": "Statute of limitations for product liability personal injury", "action": "Arizona also has a 2-year personal injury statute of limitations for product liability claims." },
+    { "period": "10 Years (Statute of Repose)", "risk": "Some states have an outer time limit regardless of discovery", "action": "Some product liability claims have an outer statute of repose independent of when you discovered the injury. Consult an attorney for your specific situation." }
+  ],
+  "insuranceIssues": [
+    { "issue": "Strict liability — no negligence required", "explanation": "In California and Arizona, manufacturers can be held strictly liable for defective products that cause injury. You do not have to prove the manufacturer was careless — only that the product was defective and caused your injury." },
+    { "issue": "Multiple parties in the supply chain", "explanation": "Liability can extend to designers, manufacturers, component part makers, distributors, and retailers. Identifying the right parties is a key step." },
+    { "issue": "Defense of misuse or modification", "explanation": "Manufacturers may argue the product was used in an unintended way or was altered by the user. Documenting the normal and intended use of the product at the time of injury counters this defense." },
+    { "issue": "Class actions and mass tort litigation", "explanation": "If many people have been injured by the same product, class action or mass tort litigation may be pending. An attorney can advise whether joining existing litigation makes sense." }
+  ],
+  "whenToGetLawyer": [
+    "You were injured by a product that malfunctioned or was defective",
+    "The product has an active recall you were not notified about",
+    "Your injuries required medical treatment or resulted in significant expenses",
+    "A pharmaceutical drug or medical device caused unexpected harm",
+    "You want to preserve the evidence before it is compromised",
+    "You are aware of others injured by the same product"
+  ],
+  "relatedAccidents": ["car", "construction", "workplace", "premises"],
+  "relatedInjuries": ["burns", "broken-bones", "traumatic-brain", "soft-tissue", "internal"],
+  "relatedGuides": ["evidence-checklist", "hiring-a-lawyer", "insurance-claims"],
+  "relatedTools": ["accident-case-quiz", "evidence-checklist", "settlement-readiness"]
+}

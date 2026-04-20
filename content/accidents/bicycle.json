@@ -1,0 +1,116 @@
+{
+  "slug": "bicycle",
+  "title": "Bicycle Accidents",
+  "shortTitle": "Bicycle Accidents",
+  "description": "Cyclists are among the most vulnerable road users. When a bicycle is struck by a vehicle, the injuries can be severe. Knowing your rights, documenting the scene, and understanding how liability works are essential first steps after a bicycle accident.",
+  "metaTitle": "Bicycle Accident Guide — Rights, Steps & Claims After a Crash",
+  "metaDescription": "What to do after a bicycle accident in California or Arizona. Evidence checklist, immediate steps, and guidance on speaking with an attorney.",
+  "icon": "bicycle",
+  "commonCauses": [
+    { "title": "Dooring Accidents", "description": "A parked car occupant opens a door into a cyclist's path, causing a sudden collision. Common in urban areas with bike lanes adjacent to parked cars." },
+    { "title": "Failure to Yield at Intersections", "description": "Drivers turning or pulling out of driveways may fail to yield to cyclists in the bike lane or roadway." },
+    { "title": "Rear-End Collisions", "description": "Drivers following too closely or distracted may strike cyclists from behind, often resulting in serious injuries." },
+    { "title": "Left-Cross Accidents", "description": "A driver turning left across the path of an oncoming cyclist — one of the most common causes of serious bicycle accidents." },
+    { "title": "Road Hazards", "description": "Potholes, debris, rail tracks, and uneven pavement can cause cyclists to lose control and crash, sometimes without vehicle involvement." },
+    { "title": "Distracted Driving", "description": "Drivers using phones or otherwise distracted are more likely to miss cyclists, especially at intersections and in bike lanes." },
+    { "title": "Driving Under the Influence", "description": "Impaired drivers have reduced ability to detect and respond to cyclists sharing the road." }
+  ],
+  "likelyInjuries": [
+    { "slug": "traumatic-brain", "title": "Traumatic Brain Injury", "severity": "severe" },
+    { "slug": "broken-bones", "title": "Broken Bones", "severity": "moderate" },
+    { "slug": "soft-tissue", "title": "Road Rash / Soft Tissue", "severity": "moderate" },
+    { "slug": "spinal", "title": "Spinal Injuries", "severity": "catastrophic" },
+    { "slug": "internal", "title": "Internal Injuries", "severity": "severe" }
+  ],
+  "immediateSteps": [
+    { "step": 1, "title": "Call 911", "description": "Request emergency services. A police report is essential documentation even if injuries seem minor.", "urgency": "critical" },
+    { "step": 2, "title": "Stay at the scene", "description": "Do not move your bicycle or allow the vehicle to be moved before photos are taken. If you are on the road, move to a safe location while waiting for police.", "urgency": "critical" },
+    { "step": 3, "title": "Preserve your helmet and gear", "description": "Your helmet, gloves, and clothing are physical evidence. Do not discard, wash, or repair them.", "urgency": "critical" },
+    { "step": 4, "title": "Document the scene thoroughly", "description": "Photograph all vehicles, your bicycle, damage, road conditions, the bike lane or road markings, and any visible injuries.", "urgency": "important" },
+    { "step": 5, "title": "Get the driver's information", "description": "Name, license number, insurance company, and contact details. Note the vehicle make, model, and plate.", "urgency": "important" },
+    { "step": 6, "title": "Get witness information", "description": "Names and contact details from anyone who saw the accident.", "urgency": "important" },
+    { "step": 7, "title": "Seek medical evaluation immediately", "description": "Bicycle accidents can cause significant head and internal injuries. Accept ambulance transport if offered, or go to urgent care or an ER the same day.", "urgency": "critical" },
+    { "step": 8, "title": "Report to your insurer", "description": "Notify your insurer. If you have uninsured motorist coverage, it may apply. Keep all records organized.", "urgency": "helpful" }
+  ],
+  "evidenceChecklist": [
+    {
+      "category": "At the Scene",
+      "priority": "critical",
+      "items": [
+        "Photos of the vehicle and your bicycle (before moving anything)",
+        "Photos of the road, bike lane, and any road defects",
+        "Photos of any visible injuries",
+        "Driver's license, insurance, and contact information",
+        "Police report number",
+        "Names and contact info of witnesses"
+      ]
+    },
+    {
+      "category": "Physical Evidence",
+      "priority": "critical",
+      "items": [
+        "Your bicycle (preserve for damage assessment)",
+        "Your helmet (do not discard — it shows impact severity)",
+        "Your clothing, gloves, and shoes (do not wash)",
+        "Photos of damage to your gear"
+      ]
+    },
+    {
+      "category": "Medical Documentation",
+      "priority": "critical",
+      "items": [
+        "Emergency room or urgent care records",
+        "All follow-up physician and specialist notes",
+        "Imaging reports (X-ray, MRI, CT scan)",
+        "Physical therapy records",
+        "Prescription records and ongoing symptom journal"
+      ]
+    },
+    {
+      "category": "Financial Records",
+      "priority": "important",
+      "items": [
+        "All medical bills",
+        "Bicycle repair or replacement estimate",
+        "Lost wages documentation",
+        "Any accident-related out-of-pocket expenses"
+      ]
+    },
+    {
+      "category": "Additional Evidence",
+      "priority": "helpful",
+      "items": [
+        "Dashcam or traffic camera footage",
+        "Surveillance video from nearby businesses",
+        "Any prior complaints about the road hazard (if applicable)"
+      ]
+    }
+  ],
+  "timelineRisks": [
+    { "period": "Immediately", "risk": "Helmet and gear may be discarded", "action": "Preserve all riding gear as physical evidence. Store safely and do not clean or repair." },
+    { "period": "Within 24-48 Hours", "risk": "Surveillance footage overwritten", "action": "Traffic and business cameras typically overwrite within 24-72 hours. An attorney can send a preservation request immediately." },
+    { "period": "Within 30 Days", "risk": "Insurance reporting windows", "action": "Report to your insurer promptly. Review your policy for uninsured motorist coverage that may cover bicycle accidents." },
+    { "period": "6 Months (Government Road Defect)", "risk": "Government entity claim notice deadline", "action": "If a road defect maintained by a government agency caused or contributed to the accident, California and Arizona have shorter notice-of-claim deadlines." },
+    { "period": "2 Years (California)", "risk": "Statute of limitations for personal injury", "action": "California generally allows 2 years from the date of accident for personal injury claims." },
+    { "period": "2 Years (Arizona)", "risk": "Statute of limitations for personal injury", "action": "Arizona has the same 2-year personal injury statute of limitations. Contact an attorney well before this deadline." }
+  ],
+  "insuranceIssues": [
+    { "issue": "Personal auto UM/UIM coverage for cyclists", "explanation": "Many auto insurance policies extend uninsured/underinsured motorist coverage to policyholders even when they are on a bicycle. Review your policy carefully." },
+    { "issue": "Homeowner or renter insurance", "explanation": "In some cases, your own homeowner or renter insurance may cover bicycle accident injuries or property damage. Check your policy." },
+    { "issue": "Comparative fault in bike accidents", "explanation": "Insurers may argue you were not following traffic laws, riding without a light at night, or otherwise contributing to the accident. Both states use pure comparative fault." },
+    { "issue": "Road defect claims against municipalities", "explanation": "If a pothole or road defect contributed to your accident, a government entity may be partially liable. These claims have special procedures and shorter deadlines." }
+  ],
+  "whenToGetLawyer": [
+    "You sustained injuries requiring medical treatment",
+    "The driver was uninsured or fled the scene",
+    "Fault is being disputed",
+    "A road defect or poorly maintained infrastructure contributed to the accident",
+    "Your injuries resulted in significant medical bills or lost wages",
+    "You received a quick settlement offer before understanding your full injuries",
+    "Surveillance footage needs immediate preservation"
+  ],
+  "relatedAccidents": ["car", "motorcycle", "pedestrian", "uber-lyft"],
+  "relatedInjuries": ["traumatic-brain", "broken-bones", "soft-tissue", "spinal", "internal"],
+  "relatedGuides": ["evidence-checklist", "insurance-claims", "hiring-a-lawyer"],
+  "relatedTools": ["accident-case-quiz", "evidence-checklist", "lost-wages-estimator"]
+}

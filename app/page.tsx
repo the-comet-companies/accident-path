@@ -35,21 +35,21 @@ export const metadata: Metadata = buildMetaTags({
 
 const FEATURED_ACCIDENTS = [
   {
-    slug: 'car-accidents',
+    slug: 'car',
     title: 'Car Accidents',
     description:
       'Learn what steps to take, what to document, and what your options may be after a car accident.',
     icon: <Car className="w-5 h-5" aria-hidden="true" />,
   },
   {
-    slug: 'truck-accidents',
+    slug: 'truck',
     title: 'Truck Accidents',
     description:
       'Commercial truck crashes involve multiple parties. Learn how these cases differ from standard car accidents.',
     icon: <Truck className="w-5 h-5" aria-hidden="true" />,
   },
   {
-    slug: 'motorcycle-accidents',
+    slug: 'motorcycle',
     title: 'Motorcycle Accidents',
     description:
       'Motorcyclists face unique risks and legal considerations. Understand your options after a crash.',
@@ -63,7 +63,7 @@ const FEATURED_ACCIDENTS = [
     icon: <AlertTriangle className="w-5 h-5" aria-hidden="true" />,
   },
   {
-    slug: 'workplace-injuries',
+    slug: 'workplace',
     title: 'Workplace Injuries',
     description:
       "Workers' comp and third-party claims have different rules. Understand your options.",
