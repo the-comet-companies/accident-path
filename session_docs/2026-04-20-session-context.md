@@ -423,7 +423,80 @@ Generic JSON-LD injector. Accepts any `schema` object or array and renders a `<S
 | lib/seo.ts (4 schema builders) | ✓ |
 | MetaTags + CanonicalUrl helpers | ✓ |
 | Organization schema on every page | ✓ |
+| StateSelector (CA/AZ two-step) | ✓ |
+| ComplianceWrapper + withCompliance HOC | ✓ |
+
+---
+
+## DEV-08: StateSelector + Compliance HOC
+
+### `components/ui/StateSelector.tsx`
+Two-step `'use client'` dropdown component for state + city selection.
+
+- Step 1: CA or AZ state dropdown
+- Step 2: city dropdown populates based on selected state (disabled until state chosen)
+- **CA cities:** Los Angeles, San Diego, San Jose, San Francisco, Fresno, Sacramento, Long Beach, Oakland, Bakersfield, Anaheim
+- **AZ cities:** Phoenix, Tucson, Mesa, Chandler, Scottsdale, Gilbert
+- `navigateOnSelect` prop — when `true`, navigates to `/states/[state]/[city]` on city pick
+- `onChange` emits `{ state, city, citySlug }` for use in intake wizard or routing
+- All selects 44px min-height, labeled for accessibility
+
+### `components/ui/ComplianceWrapper.tsx`
+Three exports for flexibility — all use `usePathname()` to detect route:
+
+| Export | How to use |
+|--------|-----------|
+| `<ComplianceWrapper>` | Wrap page JSX — auto-appends correct `DisclaimerBanner` below content |
+| `withCompliance(Component)` | HOC — wraps an entire page component |
+| `useDisclaimerVariant()` | Hook — returns variant string for manual banner placement |
+
+**Route → variant mapping:**
+- `/tools/*` → `tool`
+- `/find-help/*` → `intake`
+- `/states/*` → `state`
+- everything else → `default`
+
+### Verification
+- `npx tsc --noEmit` — clean
+- Committed and pushed to `origin/staging`
+
+---
+
+## Current State (End of Session)
+
+| Item | Status |
+|------|--------|
+| Next.js 16 App Router | ✓ |
+| TypeScript strict | ✓ |
+| Tailwind v4 + design tokens | ✓ |
+| Inter + Merriweather fonts | ✓ |
+| zod / lucide-react / supabase | ✓ |
+| .gitignore | ✓ |
+| staging branch (pushed) | ✓ |
+| Merged to main | ✓ |
+| Folder structure (all routes) | ✓ |
+| Zod type modules (6 files) | ✓ |
+| JSON CMS loader | ✓ |
+| Supabase project connected | ✓ |
+| intake_sessions table + RLS | ✓ |
+| tool_submissions table + RLS | ✓ |
+| journal_entries table + RLS | ✓ |
+| CTAButton component | ✓ |
+| TrustBadge component | ✓ |
+| DisclaimerBanner (4 variants) | ✓ |
+| EmergencyBanner (dismissible) | ✓ |
+| Breadcrumb + JSON-LD | ✓ |
+| Header (desktop, mega-menu) | ✓ |
+| MobileNav (slide-out, focus trap) | ✓ |
+| Bottom-fixed mobile CTA bar | ✓ |
+| Footer (4-col, compliance disclaimers) | ✓ |
+| SchemaOrg component | ✓ |
+| lib/seo.ts (4 schema builders) | ✓ |
+| MetaTags + CanonicalUrl helpers | ✓ |
+| Organization schema on every page | ✓ |
+| StateSelector (CA/AZ two-step) | ✓ |
+| ComplianceWrapper + withCompliance HOC | ✓ |
 
 ## Next Steps
 
-Per `docs/strategy/MASTER-PLAN.md` — foundation layer complete. Ready to build page templates (accident hubs, injury pages, state/city pages) and populate `content/` JSON files.
+Per `docs/strategy/MASTER-PLAN.md` — foundation layer complete (DEV-01 through DEV-08). Ready to build page templates (accident hubs, injury pages, state/city pages) and populate `content/` JSON files.
