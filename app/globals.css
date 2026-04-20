@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  /* Primary: Deep Teal-Blue */
+  --color-primary-50: #EAF6FB;
+  --color-primary-100: #D4ECF7;
+  --color-primary-200: #A8D9EF;
+  --color-primary-300: #78C1E2;
+  --color-primary-400: #4BA8D4;
+  --color-primary-500: #2891C7;
+  --color-primary-600: #2179A8;
+  --color-primary-700: #1A5F85;
+  --color-primary-800: #134561;
+  --color-primary-900: #0C2D3E;
+
+  /* Secondary: Warm Amber */
+  --color-amber-50: #FDF7EE;
+  --color-amber-500: #E08A2E;
+  --color-amber-600: #C97420;
+  --color-amber-700: #AB5F1C;
+
+  /* Success: Healing Green */
+  --color-success-50: #ECFAF2;
+  --color-success-500: #2AB07E;
+  --color-success-700: #1A7A4C;
+
+  /* Warning: Measured Gold */
+  --color-warning-50: #FDF8EB;
+  --color-warning-500: #CC9629;
+
+  /* Danger: Restrained Red */
+  --color-danger-50: #FDECEC;
+  --color-danger-500: #E04545;
+
+  /* Neutral: Cool Slate */
+  --color-neutral-50: #F3F6F9;
+  --color-neutral-100: #E8EEF4;
+  --color-neutral-200: #D2DCEA;
+  --color-neutral-300: #B5C3D2;
+  --color-neutral-500: #728AA0;
+  --color-neutral-700: #435166;
+  --color-neutral-900: #1A2332;
+  --color-neutral-950: #0F1720;
+
+  /* Surfaces */
+  --color-surface-page: #F3F6F9;
+  --color-surface-card: #FFFFFF;
+  --color-surface-warm: #FDF7EE;
+  --color-surface-info: #EAF6FB;
+
+  /* Typography */
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-merriweather);
+}
+
+:root {
+  --background: #F3F6F9;
+  --foreground: #0F1720;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0F1720;
+    --foreground: #F3F6F9;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
