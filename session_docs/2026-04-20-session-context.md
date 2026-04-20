@@ -344,6 +344,53 @@ export const supabase = createClient(
 
 ---
 
+---
+
+## DEV-07: SEO Primitives
+
+### Purpose
+Infrastructure that multiplies the value of every page built going forward. Every page template uses these utilities to generate structured data, metadata, and canonical URLs automatically.
+
+### `components/seo/SchemaOrg.tsx`
+Generic JSON-LD injector. Accepts any `schema` object or array and renders a `<Script type="application/ld+json">` with a unique `id`. Used by `Breadcrumb`, `layout.tsx`, and all future page templates.
+
+```tsx
+<SchemaOrg schema={organizationSchema()} id="org-schema" />
+```
+
+### `lib/seo.ts` — Schema Builders
+
+| Function | Output | Used On |
+|----------|--------|---------|
+| `organizationSchema()` | Organization — site identity | Every page (layout.tsx) |
+| `breadcrumbSchema(items)` | BreadcrumbList — nav trail | Every page with Breadcrumb |
+| `articleSchema(page)` | Article — with reviewedBy person | Guides, accident hubs, injury pages |
+| `faqSchema(items)` | FAQPage — Q&A rich results | Pages with FAQ sections |
+
+### `components/seo/MetaTags.tsx`
+`buildMetaTags()` returns a typed Next.js `Metadata` object including title, description, canonical URL, Open Graph tags, and Twitter card. Page templates call this from `generateMetadata()`.
+
+### `components/seo/CanonicalUrl.tsx`
+- `buildCanonicalUrl(path)` — resolves full URL from path
+- `buildAlternates(path)` — returns `en-US` + `es-US` language alternates (pre-wired for Spanish bilingual strategy)
+
+### Updates
+- `Breadcrumb.tsx` refactored to use `SchemaOrg` + `breadcrumbSchema` from lib/seo
+- `app/layout.tsx` — `organizationSchema()` injected on every page via `<SchemaOrg>`
+
+### Why It Matters
+- Organization schema on every page builds Google E-E-A-T (trust/authority signal for legal content)
+- BreadcrumbList JSON-LD enables rich breadcrumb display in search results
+- `buildMetaTags()` ensures every page has correct OG + Twitter cards for social sharing
+- Canonical URLs prevent duplicate content penalties (e.g. UTM-tagged URLs)
+- `es-US` alternate pre-wired so adding Spanish pages later doesn't require touching existing pages
+
+### Verification
+- `npx tsc --noEmit` — clean
+- Committed and pushed to `origin/staging`
+
+---
+
 ## Current State (End of Session)
 
 | Item | Status |
@@ -372,7 +419,11 @@ export const supabase = createClient(
 | MobileNav (slide-out, focus trap) | ✓ |
 | Bottom-fixed mobile CTA bar | ✓ |
 | Footer (4-col, compliance disclaimers) | ✓ |
+| SchemaOrg component | ✓ |
+| lib/seo.ts (4 schema builders) | ✓ |
+| MetaTags + CanonicalUrl helpers | ✓ |
+| Organization schema on every page | ✓ |
 
 ## Next Steps
 
-Per `docs/strategy/MASTER-PLAN.md` — ready to begin populating `content/` JSON files and building page templates (accident hubs, injury pages, state/city pages).
+Per `docs/strategy/MASTER-PLAN.md` — foundation layer complete. Ready to build page templates (accident hubs, injury pages, state/city pages) and populate `content/` JSON files.
