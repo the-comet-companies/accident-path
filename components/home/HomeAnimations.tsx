@@ -22,56 +22,63 @@ export function HomeAnimations() {
           opacity: 0, x: 18, duration: 0.4, stagger: 0.13,
         }, '-=0.45')
 
+      // helper so every scroll animation fires once and uses a consistent threshold
+      const st = (trigger: string) => ({
+        trigger,
+        start: 'top 95%',
+        once: true,
+      })
+
       // ── Trust badges ─────────────────────────────────────────────────────
       gsap.from('[data-animate="trust-badge"]', {
         opacity: 0, y: 14, duration: 0.4, stagger: 0.1, ease: 'power2.out',
-        scrollTrigger: { trigger: '[data-animate="trust-badge"]', start: 'top 90%' },
+        scrollTrigger: st('[data-animate="trust-badge"]'),
       })
 
       // ── How It Works: heading then steps ─────────────────────────────────
       gsap.from('#how-it-works-heading', {
         opacity: 0, y: 20, duration: 0.5, ease: 'power2.out',
-        scrollTrigger: { trigger: '#how-it-works-heading', start: 'top 85%' },
+        scrollTrigger: st('#how-it-works-heading'),
       })
       gsap.from('[data-animate="step-item"]', {
         opacity: 0, y: 32, duration: 0.55, stagger: 0.15, ease: 'power2.out',
-        scrollTrigger: { trigger: '[data-animate="step-item"]', start: 'top 85%' },
+        scrollTrigger: st('[data-animate="step-item"]'),
       })
 
       // ── Accident cards ───────────────────────────────────────────────────
       gsap.from('#accident-types-heading', {
         opacity: 0, y: 20, duration: 0.5, ease: 'power2.out',
-        scrollTrigger: { trigger: '#accident-types-heading', start: 'top 85%' },
+        scrollTrigger: st('#accident-types-heading'),
       })
       gsap.from('[data-animate="accident-card"]', {
         opacity: 0, y: 26, duration: 0.45, stagger: 0.09, ease: 'power2.out',
-        scrollTrigger: { trigger: '[data-animate="accident-card"]', start: 'top 85%' },
+        scrollTrigger: st('[data-animate="accident-card"]'),
       })
 
       // ── Tool cards ───────────────────────────────────────────────────────
       gsap.from('#tools-heading', {
         opacity: 0, y: 20, duration: 0.5, ease: 'power2.out',
-        scrollTrigger: { trigger: '#tools-heading', start: 'top 85%' },
+        scrollTrigger: st('#tools-heading'),
       })
       gsap.from('[data-animate="tool-card"]', {
         opacity: 0, y: 26, duration: 0.45, stagger: 0.09, ease: 'power2.out',
-        scrollTrigger: { trigger: '[data-animate="tool-card"]', start: 'top 85%' },
+        scrollTrigger: st('[data-animate="tool-card"]'),
       })
 
       // ── Guide cards ──────────────────────────────────────────────────────
       gsap.from('#guides-heading', {
         opacity: 0, y: 20, duration: 0.5, ease: 'power2.out',
-        scrollTrigger: { trigger: '#guides-heading', start: 'top 85%' },
+        scrollTrigger: st('#guides-heading'),
       })
       gsap.from('[data-animate="guide-card"]', {
         opacity: 0, y: 22, duration: 0.45, stagger: 0.12, ease: 'power2.out',
-        scrollTrigger: { trigger: '[data-animate="guide-card"]', start: 'top 85%' },
+        scrollTrigger: st('[data-animate="guide-card"]'),
       })
 
       // ── State selector ───────────────────────────────────────────────────
       gsap.from('[data-animate="state-section"]', {
         opacity: 0, y: 24, duration: 0.6, ease: 'power2.out',
-        scrollTrigger: { trigger: '[data-animate="state-section"]', start: 'top 85%' },
+        scrollTrigger: st('[data-animate="state-section"]'),
       })
     })
 
