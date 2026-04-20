@@ -73,6 +73,74 @@ First development session for AccidentPath. Scaffolded the full Next.js project 
 | staging branch | ✓ |
 | Merged to main | ✓ |
 
+---
+
+## DEV-02: Folder Structure + Zod Data Models + CMS Loader
+
+### Folder Structure Created
+
+All directories scaffolded per `docs/strategy/SITE-ARCHITECTURE.md`:
+
+- `components/{layout,ui,content,intake,seo}/`
+- `lib/`
+- `types/`
+- `content/{accidents,injuries,guides,states,cities,tools}/`
+- `app/accidents/[slug]/`, `app/injuries/[slug]/`, `app/guides/[slug]/`
+- `app/states/[state]/`, `app/states/[state]/[city]/`
+- `app/tools/[slug]/`
+- `app/find-help/results/`, `app/find-help/thank-you/`
+- `app/about/how-it-works/`
+- `public/icons/`
+
+### Zod Type Modules
+
+| File | Schema(s) | Key Constraints |
+|------|-----------|-----------------|
+| `types/accident.ts` | `AccidentTypeSchema` | commonCauses min 3, urgency/severity enums |
+| `types/injury.ts` | `InjuryTypeSchema` | description min 100 chars |
+| `types/state.ts` | `StateDataSchema`, `CityDataSchema` | CA/AZ only enum, hospitals min 2, courts min 1 |
+| `types/intake.ts` | `IntakeFormSchema` | state CA/AZ enum, email validation, consent flag |
+| `types/tool.ts` | `ToolConfigSchema`, `ToolOutput` interface | step type enum, priority enum |
+| `types/content.ts` | `GuideSchema` | sections min 3, content min 50 chars |
+
+### CMS Loader (`lib/cms.ts`)
+
+Type-safe JSON file loader with two internal helpers:
+- `loadAndValidate<T>` — loads single file by slug, parses + validates with Zod
+- `loadAll<T>` — reads entire directory, validates each file
+
+Public API:
+```ts
+cms.getAccident(slug)        cms.getAllAccidents()
+cms.getInjury(slug)          cms.getAllInjuries()
+cms.getState(slug)           cms.getAllStates()
+cms.getCity(slug)            cms.getAllCities()
+cms.getCitiesByState(slug)   // filtered by stateSlug
+cms.getGuide(slug)           cms.getAllGuides()
+```
+
+### Verification
+- `npx tsc --noEmit` — clean
+- Committed and pushed to `origin/staging`
+
+---
+
+## Current State (End of Session)
+
+| Item | Status |
+|------|--------|
+| Next.js 16 App Router | ✓ |
+| TypeScript strict | ✓ |
+| Tailwind v4 + design tokens | ✓ |
+| Inter + Merriweather fonts | ✓ |
+| zod / lucide-react / supabase | ✓ |
+| .gitignore | ✓ |
+| staging branch (pushed) | ✓ |
+| Merged to main | ✓ |
+| Folder structure (all routes) | ✓ |
+| Zod type modules (6 files) | ✓ |
+| JSON CMS loader | ✓ |
+
 ## Next Steps
 
-Per `docs/strategy/MASTER-PLAN.md` — ready to begin building app routes, components, and JSON CMS content system.
+Per `docs/strategy/MASTER-PLAN.md` — ready to build shared layout components (Header, Footer, Breadcrumb) and begin populating `content/` JSON files.
