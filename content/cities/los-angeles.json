@@ -1,0 +1,75 @@
+{
+  "slug": "los-angeles",
+  "name": "Los Angeles",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Los Angeles Accident Guide — Local Hospitals, Courts & Rights",
+  "metaDescription": "Injured in Los Angeles? Find local emergency hospitals, courts, and understand your rights under California personal injury law.",
+  "population": "3.9 million (city); 10 million+ (county)",
+  "description": "Los Angeles is the largest city in California and one of the most traffic-congested cities in the United States. Its sprawling freeway system — including the I-405, I-10, US-101, and I-710 — sees millions of daily commuters, making it one of the highest-risk areas for vehicle accidents in the country. Pedestrian and bicycle accidents are also significant concerns, particularly in dense neighborhoods like Downtown LA, Hollywood, Koreatown, and along major boulevards. Los Angeles County courts handle a high volume of personal injury litigation, and both city and county government entities are frequently involved as defendants in premises and sidewalk cases. Acting quickly to preserve evidence and meet government claim filing deadlines is critical for anyone injured in Los Angeles.",
+  "hospitals": [
+    {
+      "name": "Cedars-Sinai Medical Center",
+      "address": "8700 Beverly Blvd, Los Angeles, CA 90048",
+      "phone": "(310) 423-3277",
+      "erAvailable": true
+    },
+    {
+      "name": "Ronald Reagan UCLA Medical Center",
+      "address": "757 Westwood Plaza, Los Angeles, CA 90095",
+      "phone": "(310) 825-9111",
+      "erAvailable": true
+    },
+    {
+      "name": "LAC+USC Medical Center",
+      "address": "2051 Marengo St, Los Angeles, CA 90033",
+      "phone": "(323) 409-1000",
+      "erAvailable": true
+    },
+    {
+      "name": "Keck Hospital of USC",
+      "address": "1500 San Pablo St, Los Angeles, CA 90033",
+      "phone": "(323) 442-8500",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Los Angeles Superior Court — Stanley Mosk Courthouse",
+      "address": "111 N Hill St, Los Angeles, CA 90012",
+      "phone": "(213) 830-0803",
+      "type": "General civil and personal injury"
+    },
+    {
+      "name": "Los Angeles Superior Court — Spring Street Courthouse",
+      "address": "312 N Spring St, Los Angeles, CA 90012",
+      "phone": "(213) 310-7000",
+      "type": "Civil (complex litigation)"
+    },
+    {
+      "name": "Los Angeles Superior Court — Airport Courthouse",
+      "address": "11701 S La Cienega Blvd, Los Angeles, CA 90045",
+      "phone": "(310) 725-3000",
+      "type": "Civil — West LA and LAX area"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Freeway rear-end and multi-vehicle accidents (I-405, I-10, I-110)",
+    "Pedestrian accidents on high-traffic boulevards (Sunset, Wilshire, Venice)",
+    "Bicycle accidents in bike lane networks and urban corridors",
+    "Rideshare (Uber/Lyft) accidents — high concentration of TNC drivers",
+    "Slip and fall accidents at commercial properties and entertainment venues",
+    "Construction site accidents in an active development environment"
+  ],
+  "notableCorridors": [
+    "I-405 (San Diego Freeway) — among the most congested freeways in the US",
+    "I-10 (Santa Monica Freeway) — major east-west corridor, high accident volume",
+    "US-101 (Hollywood Freeway) — urban segment with complex interchanges",
+    "I-710 (Long Beach Freeway) — heavy truck and freight traffic near ports",
+    "Wilshire Boulevard — pedestrian and cyclist high-risk corridor",
+    "Lincoln Boulevard (SR-1) — pedestrian accidents near beach communities"
+  ],
+  "localNotes": "Los Angeles County has strict 6-month government claim deadlines for accidents involving city or county property, sidewalks, or vehicles. LAPD traffic collision reports can be obtained online or at a traffic bureau. The LA County Metropolitan Transportation Authority (Metro) is a frequent defendant in transit-related injury cases.",
+  "reviewedBy": "Pending Attorney Review",
+  "reviewDate": "2026-04-20"
+}

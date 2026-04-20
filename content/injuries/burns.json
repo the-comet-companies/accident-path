@@ -1,0 +1,46 @@
+{
+  "slug": "burns",
+  "title": "Burns and Chemical Injuries",
+  "metaTitle": "Burn Injuries — Accident Causes, Treatment & Legal Rights CA/AZ",
+  "metaDescription": "Burn injuries from accidents and defective products can be severe and disfiguring. Learn about degrees of burns, treatment, and your rights.",
+  "description": "Burns and chemical injuries caused by accidents can range from minor to life-threatening. Severe burns require specialized care, multiple surgeries, and extensive rehabilitation. They can leave permanent scarring, disfigurement, and functional limitations that affect a person's quality of life and livelihood.",
+  "symptoms": [
+    "First-degree: redness, minor swelling, pain at the surface layer",
+    "Second-degree: blistering, deep red or mottled appearance, severe pain",
+    "Third-degree: white, brown, or black charred skin; may be painless due to nerve destruction",
+    "Chemical burns: progressive tissue damage that may worsen even after the chemical is removed",
+    "Inhalation burns: coughing, hoarseness, shortness of breath, soot in the airway",
+    "Swelling of affected areas and surrounding tissue"
+  ],
+  "longTermEffects": [
+    "Permanent scarring and disfigurement",
+    "Contractures — tightened scar tissue limiting movement of joints",
+    "Chronic pain and hypersensitivity at burn sites",
+    "Psychological trauma including PTSD, depression, and body image issues",
+    "Increased infection risk in scarred areas",
+    "Respiratory complications from inhalation injury",
+    "Functional limitations in hands, face, or other affected areas",
+    "Need for ongoing reconstructive surgeries"
+  ],
+  "treatmentOptions": [
+    "Emergency cooling and removal of the burning source or chemical",
+    "Specialized burn center care for second- and third-degree burns",
+    "Wound debridement and skin grafting surgery",
+    "Hyperbaric oxygen therapy in select cases",
+    "Compression garments and scar management therapy",
+    "Physical and occupational therapy for functional recovery",
+    "Reconstructive and plastic surgery",
+    "Psychological counseling and burn survivor support programs",
+    "Long-term pain management"
+  ],
+  "commonCauses": [
+    "Car accidents involving fuel ignition or fire",
+    "Workplace chemical and industrial accidents",
+    "Defective products — appliances, electronics, and machinery",
+    "Construction site electrical and fire hazards",
+    "Gas explosions and building fires",
+    "Chemical exposure without adequate PPE"
+  ],
+  "relatedAccidents": ["car", "workplace", "construction", "product"],
+  "relatedTools": ["accident-case-quiz", "lost-wages-estimator"]
+}

@@ -1,0 +1,44 @@
+{
+  "slug": "whiplash",
+  "title": "Whiplash",
+  "metaTitle": "Whiplash Injury — Symptoms, Treatment & Compensation Rights",
+  "metaDescription": "Whiplash from car accidents causes neck pain, headaches, and cognitive issues. Learn what to document and your rights in California and Arizona.",
+  "description": "Whiplash occurs when the neck is rapidly forced forward and backward, straining or tearing the muscles, tendons, and ligaments. Most commonly caused by rear-end car accidents, whiplash can produce debilitating symptoms that last weeks, months, or longer — and is frequently underestimated by insurers.",
+  "symptoms": [
+    "Neck pain and stiffness, often worsening over the 24-48 hours following the accident",
+    "Headaches, typically originating at the base of the skull",
+    "Reduced range of motion in the neck",
+    "Shoulder, upper back, or arm pain",
+    "Tingling or numbness in the arms",
+    "Fatigue and sleep disturbances",
+    "Dizziness and difficulty with balance",
+    "Cognitive difficulties — difficulty concentrating or memory problems (whiplash-associated disorder)"
+  ],
+  "longTermEffects": [
+    "Chronic neck pain persisting months to years after the injury",
+    "Whiplash-associated disorder (WAD) — a spectrum of symptoms affecting physical and cognitive function",
+    "Cervical disc herniation from the trauma",
+    "Temporomandibular joint (TMJ) dysfunction",
+    "Increased headache frequency, including cervicogenic headaches",
+    "Psychological effects including anxiety, depression, and heightened pain sensitivity"
+  ],
+  "treatmentOptions": [
+    "Pain management with NSAIDs and muscle relaxants",
+    "Ice and heat therapy during acute phase",
+    "Physical therapy and gentle range-of-motion exercises",
+    "Cervical collar — typically short-term use only",
+    "Chiropractic treatment for cervical joint dysfunction",
+    "Trigger point injections or nerve blocks for persistent pain",
+    "Cognitive behavioral therapy for associated psychological effects",
+    "Cervical spine imaging (MRI) for disc or nerve involvement"
+  ],
+  "commonCauses": [
+    "Rear-end car accidents — the most common cause",
+    "Side-impact (T-bone) collisions",
+    "Sports contacts and collision injuries",
+    "Slip and fall accidents with sudden head movement",
+    "Physical assault or sudden impact trauma"
+  ],
+  "relatedAccidents": ["car", "truck", "motorcycle", "slip-and-fall"],
+  "relatedTools": ["accident-case-quiz", "lost-wages-estimator"]
+}

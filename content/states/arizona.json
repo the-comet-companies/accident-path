@@ -1,0 +1,68 @@
+{
+  "slug": "arizona",
+  "name": "Arizona",
+  "abbreviation": "AZ",
+  "metaTitle": "Arizona Personal Injury Law — Deadlines & Legal Rights",
+  "metaDescription": "Arizona personal injury laws, statute of limitations, fault rules, and insurance minimums. Educational guide for accident victims in AZ.",
+  "statuteOfLimitations": {
+    "personalInjury": "2 years from the date of injury (A.R.S. § 12-542)",
+    "propertyDamage": "2 years from the date of damage (A.R.S. § 12-542)",
+    "wrongfulDeath": "2 years from the date of death (A.R.S. § 12-542)"
+  },
+  "faultRule": {
+    "type": "pure_comparative",
+    "description": "Arizona follows pure comparative fault (Fault system codified in A.R.S. § 12-2505). An injured party may recover damages regardless of their share of fault, but recovery is reduced in proportion to their own fault. There is no threshold percentage that bars recovery."
+  },
+  "reportingDeadlines": [
+    {
+      "type": "Car accident — police report",
+      "deadline": "Immediately (at the scene) or within 24 hours",
+      "details": "Arizona requires drivers involved in accidents resulting in injury, death, or property damage to report to law enforcement at the scene. If police do not respond, a written report must be filed with ADOT within 24 hours."
+    },
+    {
+      "type": "Government entity claim",
+      "deadline": "Within 180 days",
+      "details": "Claims against Arizona state agencies or political subdivisions must be filed within 180 days under A.R.S. § 12-821.01. Claims against cities and towns: within 180 days. Strict compliance required."
+    },
+    {
+      "type": "Workers' compensation",
+      "deadline": "Within 1 year of injury",
+      "details": "In Arizona, a workers' compensation claim must be filed with the Industrial Commission of Arizona (ICA) within 1 year of the injury or the last benefit payment. Notify your employer as soon as possible."
+    },
+    {
+      "type": "Uninsured motorist claim",
+      "deadline": "Per your policy terms",
+      "details": "Report promptly per your policy requirements. The general personal injury statute of limitations (2 years) applies to UM/UIM lawsuits."
+    }
+  ],
+  "insuranceMinimums": {
+    "bodilyInjuryPerPerson": "$25,000",
+    "bodilyInjuryPerAccident": "$50,000",
+    "propertyDamage": "$15,000",
+    "uninsuredMotorist": "Must be offered; may be waived in writing"
+  },
+  "keyLaws": [
+    {
+      "name": "Pure Comparative Fault (A.R.S. § 12-2505)",
+      "description": "Arizona codified pure comparative fault, eliminating the contributory negligence bar. An injured party's damages are reduced proportionally by their share of fault, but recovery is not barred regardless of fault percentage."
+    },
+    {
+      "name": "Non-Economic Damages — No General Cap",
+      "description": "Arizona does not cap non-economic damages (pain and suffering) in general personal injury cases, unlike some states. Medical malpractice caps were struck down by the Arizona Supreme Court as unconstitutional."
+    },
+    {
+      "name": "Dram Shop Liability (A.R.S. § 4-311)",
+      "description": "Arizona holds licensed alcohol vendors liable for injuries caused by serving alcohol to a visibly intoxicated person or a person under 21. This extends potential liability in drunk driving accident cases."
+    },
+    {
+      "name": "Government Tort Claims (A.R.S. § 12-820 et seq.)",
+      "description": "Claims against the state, counties, or municipalities require pre-suit notice within 180 days. There are caps on damages against government entities in Arizona."
+    },
+    {
+      "name": "Workers' Compensation — Arizona Industrial Commission",
+      "description": "Arizona workers' compensation is administered by the Industrial Commission of Arizona. It covers medical treatment and lost wages for workplace injuries, regardless of fault. Claims must be filed within 1 year."
+    }
+  ],
+  "reviewedBy": "Pending Attorney Review",
+  "reviewDate": "2026-04-20"
+}

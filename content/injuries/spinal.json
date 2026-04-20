@@ -1,0 +1,47 @@
+{
+  "slug": "spinal",
+  "title": "Spinal Cord Injuries",
+  "metaTitle": "Spinal Cord Injuries — Catastrophic Accident Injuries CA & AZ",
+  "metaDescription": "Spinal cord injuries from accidents can cause paralysis and permanent disability. Understand symptoms, treatment costs, and your legal rights.",
+  "description": "Spinal cord injuries are among the most severe and life-altering injuries that can result from an accident. Damage to the spinal cord can cause partial or complete loss of motor function, sensation, and autonomic control below the injury level — with effects that may be permanent and require lifetime care.",
+  "symptoms": [
+    "Loss of movement (partial or complete) below the injury level",
+    "Loss of sensation, including the ability to feel heat, cold, or touch",
+    "Loss of bowel or bladder control",
+    "Intense stinging or burning sensations",
+    "Muscle spasms or exaggerated reflexes",
+    "Pain or pressure in the neck, back, or head",
+    "Difficulty breathing without assistance in high cervical injuries",
+    "Sexual dysfunction"
+  ],
+  "longTermEffects": [
+    "Paraplegia (loss of function in lower body) in thoracic and lumbar injuries",
+    "Quadriplegia/tetraplegia (loss of function in all four limbs) in cervical injuries",
+    "Chronic pain syndromes — neuropathic pain is common",
+    "Secondary complications including pressure sores, respiratory infections, and blood clots",
+    "Spasticity and muscle contractures requiring ongoing management",
+    "Psychological effects including depression, PTSD, and adjustment disorder",
+    "Lifetime dependence on assistive equipment, personal care attendants, or medical devices"
+  ],
+  "treatmentOptions": [
+    "Emergency immobilization and stabilization at the scene",
+    "High-dose corticosteroids (methylprednisolone) in select acute cases",
+    "Surgical decompression and spinal stabilization",
+    "Intensive rehabilitation program (inpatient and outpatient)",
+    "Physical therapy for preserved function and strength",
+    "Occupational therapy for adaptive skills and equipment",
+    "Respiratory therapy for high-level cervical injuries",
+    "Pain management including medications, nerve blocks, and spinal cord stimulators",
+    "Psychological counseling and peer support programs"
+  ],
+  "commonCauses": [
+    "High-speed car, truck, and motorcycle accidents",
+    "Diving accidents and sports impacts",
+    "Falls from height on construction sites and elsewhere",
+    "Pedestrian accidents involving vehicle impact",
+    "Acts of violence including gunshot wounds",
+    "Medical or surgical complications"
+  ],
+  "relatedAccidents": ["car", "truck", "motorcycle", "construction", "pedestrian", "workplace"],
+  "relatedTools": ["accident-case-quiz", "lost-wages-estimator"]
+}

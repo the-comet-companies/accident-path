@@ -1,0 +1,44 @@
+{
+  "slug": "broken-bones",
+  "title": "Broken Bones and Fractures",
+  "metaTitle": "Broken Bones & Fractures — Accident Injuries in CA & AZ",
+  "metaDescription": "Broken bones from accidents can require surgery and months of recovery. Learn about fracture types, treatment, and your compensation rights.",
+  "description": "Fractures and broken bones are serious injuries that can require surgery, extended immobilization, and months of physical therapy. High-impact accidents — car crashes, falls, and construction accidents — are leading causes of fractures, and the financial impact can be substantial.",
+  "symptoms": [
+    "Intense, localized pain at the fracture site",
+    "Visible deformity, angulation, or shortening of a limb",
+    "Swelling and bruising around the injury",
+    "Inability or severe difficulty using the injured area",
+    "A cracking or snapping sensation at the moment of injury",
+    "Numbness or tingling if nearby nerves are affected",
+    "Bone protruding through skin in open (compound) fractures"
+  ],
+  "longTermEffects": [
+    "Malunion — fracture heals in an abnormal position, affecting function",
+    "Post-traumatic arthritis in joints near the fracture site",
+    "Avascular necrosis (bone death) in severe hip and femoral fractures",
+    "Chronic pain at the fracture site",
+    "Reduced strength, mobility, or range of motion",
+    "Permanent hardware (plates, rods, screws) left in the body",
+    "Psychological effects including fear of re-injury"
+  ],
+  "treatmentOptions": [
+    "Immobilization with cast, splint, or brace for stable fractures",
+    "Closed reduction (manual repositioning) under sedation",
+    "Open reduction and internal fixation (ORIF) surgery with hardware",
+    "External fixation for complex or open fractures",
+    "Physical and occupational therapy during and after healing",
+    "Pain management including medication and nerve blocks",
+    "Follow-up imaging (X-ray, CT scan) to monitor healing"
+  ],
+  "commonCauses": [
+    "High-impact car, truck, and motorcycle accidents",
+    "Slip and fall accidents, especially in older adults (hip fractures)",
+    "Pedestrian accidents involving vehicle impact",
+    "Construction site falls from height or falling object strikes",
+    "Workplace machinery and equipment accidents",
+    "Sports and recreational impact injuries"
+  ],
+  "relatedAccidents": ["car", "truck", "motorcycle", "slip-and-fall", "construction", "pedestrian"],
+  "relatedTools": ["accident-case-quiz", "lost-wages-estimator"]
+}

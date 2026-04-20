@@ -1,0 +1,63 @@
+{
+  "slug": "tucson",
+  "name": "Tucson",
+  "stateSlug": "arizona",
+  "stateAbbreviation": "AZ",
+  "metaTitle": "Tucson Accident Guide — Local Hospitals, Courts & Rights",
+  "metaDescription": "Injured in Tucson? Find local emergency hospitals, courts, and understand your rights under Arizona personal injury law.",
+  "population": "545,000 (city); 1 million+ (metro area)",
+  "description": "Tucson is Arizona's second-largest city, home to the University of Arizona and a significant military and aerospace presence at Davis-Monthan Air Force Base. The city's road network is characterized by wide arterial boulevards — Oracle Road, Speedway, Broadway, and Grant Road — that carry high traffic volumes and create hazardous crossing conditions for pedestrians and cyclists. Tucson has a large student population and one of the most extensive urban bicycle networks in Arizona, resulting in higher-than-average bicycle accident rates. I-10 passes through the heart of the city and is a frequent site of vehicle accidents, including commercial trucking incidents from US-Mexico trade routes. Government claims involving the City of Tucson or Pima County must be filed within 180 days under A.R.S. § 12-821.01.",
+  "hospitals": [
+    {
+      "name": "Banner — University Medical Center Tucson",
+      "address": "1501 N Campbell Ave, Tucson, AZ 85724",
+      "phone": "(520) 694-0111",
+      "erAvailable": true
+    },
+    {
+      "name": "Tucson Medical Center",
+      "address": "5301 E Grant Rd, Tucson, AZ 85712",
+      "phone": "(520) 327-5461",
+      "erAvailable": true
+    },
+    {
+      "name": "Carondelet St. Mary's Hospital",
+      "address": "1601 W St Mary's Rd, Tucson, AZ 85745",
+      "phone": "(520) 872-3000",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Pima County Superior Court",
+      "address": "110 W Congress St, Tucson, AZ 85701",
+      "phone": "(520) 724-3200",
+      "type": "General civil and personal injury"
+    },
+    {
+      "name": "Pima County Justice Court — Precinct 1",
+      "address": "240 N Stone Ave, Tucson, AZ 85701",
+      "phone": "(520) 724-4000",
+      "type": "Small claims and limited jurisdiction civil"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Pedestrian accidents on arterial roads near the University of Arizona",
+    "Bicycle accidents on the urban cycling network (2nd Street, 4th Avenue corridors)",
+    "Freeway accidents on I-10 through the urban core and near the airport",
+    "Commercial trucking accidents on I-10 and I-19 (US-Mexico trade route)",
+    "DUI-related accidents — high weekend volume near entertainment districts",
+    "Slip and fall accidents at University of Arizona facilities and Old Town Tucson venues"
+  ],
+  "notableCorridors": [
+    "I-10 (Tucson section) — urban freeway with high accident concentration near downtown",
+    "I-19 — US-Mexico commercial freight corridor to Nogales",
+    "Oracle Road (US-89) — north-south arterial with mixed commercial and residential access",
+    "Speedway Boulevard — east-west arterial with pedestrian crossing hazards",
+    "4th Avenue — pedestrian-heavy entertainment and retail corridor",
+    "Broadway Boulevard — major arterial connecting downtown to midtown"
+  ],
+  "localNotes": "Tucson's large student population and active cycling community mean bicycle accident cases are common. The Sun Link streetcar system operates through downtown and the University of Arizona area — transit accident claims against the Sun Tran system require government claim notice within 180 days. Tucson PD traffic reports are available through the Records Bureau. The I-19 corridor to the Mexico border carries significant commercial truck traffic, and accidents involving Mexican-plated vehicles may involve special cross-border insurance considerations.",
+  "reviewedBy": "Pending Attorney Review",
+  "reviewDate": "2026-04-20"
+}

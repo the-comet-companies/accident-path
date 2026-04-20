@@ -1,0 +1,49 @@
+{
+  "slug": "traumatic-brain",
+  "title": "Traumatic Brain Injury (TBI)",
+  "metaTitle": "Traumatic Brain Injury (TBI) — Accident Causes & Legal Rights",
+  "metaDescription": "Traumatic brain injuries from accidents range from concussion to severe TBI. Learn symptoms, long-term effects, and your rights in CA and AZ.",
+  "description": "Traumatic brain injuries range from mild concussions to severe, life-altering brain damage. TBI can occur without any visible head wound — rapid acceleration and deceleration alone can cause serious injury. TBI is one of the most complex and costly accident injuries, with effects that may not fully appear for days or weeks.",
+  "symptoms": [
+    "Headache or pressure in the head",
+    "Loss of consciousness (brief or extended)",
+    "Confusion, disorientation, or feeling 'foggy'",
+    "Memory loss — before, during, or after the injury",
+    "Nausea or vomiting",
+    "Sensitivity to light and noise",
+    "Sleep disturbances — difficulty sleeping or sleeping excessively",
+    "Mood changes, irritability, anxiety, or depression",
+    "Seizures in moderate-to-severe cases"
+  ],
+  "longTermEffects": [
+    "Post-concussion syndrome — symptoms persisting weeks or months",
+    "Chronic traumatic encephalopathy (CTE) from repeated brain trauma",
+    "Cognitive impairment affecting memory, attention, and executive function",
+    "Personality changes and emotional dysregulation",
+    "Increased risk of Alzheimer's disease and other neurodegenerative conditions",
+    "Epilepsy or seizure disorder",
+    "Permanent physical disability in severe cases",
+    "Inability to return to work or maintain prior level of function"
+  ],
+  "treatmentOptions": [
+    "Immediate emergency stabilization for severe TBI",
+    "CT scan and MRI imaging to assess injury extent",
+    "Cognitive rest and graduated return to activity for mild TBI",
+    "Medication for symptoms including headache, nausea, seizures, and mood",
+    "Cognitive rehabilitation therapy",
+    "Speech and language therapy for communication impairments",
+    "Occupational therapy for daily function recovery",
+    "Psychological counseling for mood and emotional effects",
+    "Long-term neurological monitoring and follow-up"
+  ],
+  "commonCauses": [
+    "Car, truck, and motorcycle accidents (leading cause of TBI in adults)",
+    "Pedestrian accidents involving vehicle impact",
+    "Slip and fall accidents, especially head impacts",
+    "Construction site accidents from falls or struck-by objects",
+    "Sports and recreational head impacts",
+    "Workplace accidents involving blunt force or falls"
+  ],
+  "relatedAccidents": ["car", "truck", "motorcycle", "slip-and-fall", "construction", "pedestrian"],
+  "relatedTools": ["accident-case-quiz", "lost-wages-estimator"]
+}

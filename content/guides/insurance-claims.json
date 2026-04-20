@@ -1,0 +1,57 @@
+{
+  "slug": "insurance-claims",
+  "title": "Navigating Insurance Claims After an Accident",
+  "metaTitle": "Insurance Claims Guide — What to Know After an Accident",
+  "metaDescription": "Understand how to file and navigate insurance claims after an accident in California or Arizona. Know your rights before talking to adjusters.",
+  "description": "Dealing with insurance companies after an accident can be confusing and stressful. Adjusters work for the insurer — not for you. Understanding how the claims process works, what to say, and when to be cautious can meaningfully affect the outcome of your claim.",
+  "sections": [
+    {
+      "heading": "Understanding Who the Insurance Adjuster Works For",
+      "content": "Insurance adjusters are employees or contractors of the insurance company. Their job is to investigate claims and resolve them for as little as possible. This is not personal — it is their professional role. When an adjuster contacts you shortly after an accident, they may seem sympathetic, but recorded statements, quick settlement offers, and requests for medical authorization are tools used to manage costs. You are not required to give a recorded statement to the other party's insurer. Knowing this early protects your options.",
+      "tips": [
+        "You are not legally required to give a recorded statement to the other driver's insurance company",
+        "Never accept the first settlement offer without understanding the full extent of your injuries",
+        "If in doubt about what to say, tell the adjuster you will respond in writing"
+      ]
+    },
+    {
+      "heading": "Your Own Insurance vs. the Other Party's Insurance",
+      "content": "In many accident cases, you may deal with two insurers — your own and the at-fault party's. Your own insurer may cover your immediate medical costs through MedPay or personal injury protection (PIP) coverage, regardless of fault. The at-fault party's liability insurer is responsible for compensating you for damages caused by their insured. In California and Arizona, both states follow pure comparative fault rules, meaning your recovery can be reduced if you were partially at fault. Understanding coverage types — liability, uninsured/underinsured motorist, MedPay — is essential before settling.",
+      "tips": [
+        "Review your own policy's MedPay and UM/UIM limits before settling any claim",
+        "California requires drivers to carry $15,000/$30,000 in bodily injury liability minimums",
+        "Arizona requires $25,000/$50,000 in bodily injury liability minimums"
+      ]
+    },
+    {
+      "heading": "Filing a Claim: The Basic Process",
+      "content": "After an accident, notify your own insurance company promptly — most policies require timely notice. If you are filing against the at-fault party, contact their insurer to open a claim. Provide factual information about the accident (what happened, when, where) without speculating about fault or the extent of your injuries. Request a claim number and the adjuster's direct contact information. Document every conversation with the date, time, adjuster's name, and a summary of what was discussed. Request everything significant in writing.",
+      "tips": [
+        "Report the accident to your own insurer even if you plan to file against the other party",
+        "Get a claim number at first contact and reference it in all communications",
+        "Keep a log of every phone call with date, time, adjuster name, and summary"
+      ]
+    },
+    {
+      "heading": "Medical Treatment and Claim Documentation",
+      "content": "Insurance companies evaluate claims based on documented medical treatment. Gaps in treatment — periods where you did not see a doctor — are often used to argue that your injuries were not serious or were caused by something other than the accident. Follow your doctor's treatment plan consistently and attend all appointments. Do not sign a medical authorization that gives the insurer unlimited access to your entire medical history — request that authorizations be limited to records related to the accident injury.",
+      "tips": [
+        "Follow all medical recommendations and attend every scheduled appointment",
+        "Do not sign a blanket medical authorization — limit it to accident-related records",
+        "Keep a symptom journal documenting your pain, limitations, and recovery progress"
+      ]
+    },
+    {
+      "heading": "When a Settlement Offer Arrives",
+      "content": "Insurance companies often make early settlement offers before the full extent of your injuries is known. Once you accept a settlement and sign a release, you typically cannot go back for more compensation — even if your condition worsens or new complications arise. Before accepting any offer, ensure your treatment is complete or the long-term prognosis is established, all medical bills are accounted for, lost wages are documented, and any non-economic damages (pain and suffering) are considered. If an offer seems low or you are unsure, speaking with a personal injury attorney about the claim value is a reasonable step.",
+      "tips": [
+        "Never accept a settlement while still in active treatment or before a prognosis is established",
+        "A signed release is usually final — be certain before you sign",
+        "Personal injury consultations are typically free and can clarify whether an offer is fair"
+      ]
+    }
+  ],
+  "relatedAccidents": ["car", "truck", "motorcycle", "slip-and-fall", "workplace"],
+  "relatedTools": ["accident-case-quiz", "settlement-readiness"],
+  "relatedGuides": ["evidence-checklist", "hiring-a-lawyer"]
+}

@@ -1,0 +1,69 @@
+{
+  "slug": "phoenix",
+  "name": "Phoenix",
+  "stateSlug": "arizona",
+  "stateAbbreviation": "AZ",
+  "metaTitle": "Phoenix Accident Guide — Local Hospitals, Courts & Rights",
+  "metaDescription": "Injured in Phoenix? Find local emergency hospitals, courts, and understand your rights under Arizona personal injury law.",
+  "population": "1.6 million (city); 5 million+ (Metro area)",
+  "description": "Phoenix is the largest city in Arizona and one of the fastest-growing major cities in the United States. Its expansive grid of arterial roads and freeway system — including the I-10, US-60, Loop 101, Loop 202, and SR-51 — carries enormous daily traffic. Phoenix has a high rate of pedestrian fatalities, consistently ranking among the most dangerous cities in the nation for pedestrians due to wide, high-speed roads and significant heat-related visibility issues. The city's booming construction sector also means a steady volume of workplace and construction site accidents. Government claims against the City of Phoenix or Maricopa County must be filed within 180 days under Arizona law (A.R.S. § 12-821.01). Phoenix also has a large rideshare and delivery vehicle presence contributing to urban accident volume.",
+  "hospitals": [
+    {
+      "name": "Banner University Medical Center Phoenix",
+      "address": "1111 E McDowell Rd, Phoenix, AZ 85006",
+      "phone": "(602) 839-2000",
+      "erAvailable": true
+    },
+    {
+      "name": "Valleywise Health Medical Center",
+      "address": "2601 E Roosevelt St, Phoenix, AZ 85008",
+      "phone": "(602) 344-5011",
+      "erAvailable": true
+    },
+    {
+      "name": "HonorHealth Scottsdale Osborn Medical Center",
+      "address": "7400 E Osborn Rd, Scottsdale, AZ 85251",
+      "phone": "(480) 882-4000",
+      "erAvailable": true
+    },
+    {
+      "name": "Dignity Health St. Joseph's Hospital and Medical Center",
+      "address": "350 W Thomas Rd, Phoenix, AZ 85013",
+      "phone": "(602) 406-3000",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Maricopa County Superior Court",
+      "address": "201 W Jefferson St, Phoenix, AZ 85003",
+      "phone": "(602) 506-3204",
+      "type": "General civil and personal injury"
+    },
+    {
+      "name": "Maricopa County Superior Court — Southeast Facility",
+      "address": "222 E Javelina Ave, Mesa, AZ 85210",
+      "phone": "(602) 506-3204",
+      "type": "Civil — East Valley cases"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Pedestrian accidents on high-speed arterial roads (Camelback, Van Buren, Indian School)",
+    "Freeway accidents on I-10 and Loop 101 interchanges",
+    "Rear-end accidents at traffic signals on major grid roads",
+    "Construction site accidents in the active development corridor",
+    "DUI-related accidents — Arizona has among the nation's strictest DUI laws",
+    "Rideshare and delivery vehicle accidents in the urban core"
+  ],
+  "notableCorridors": [
+    "I-10 (Maricopa Freeway) — primary east-west corridor, high truck and commuter volume",
+    "Loop 101 (Pima Freeway / Price Freeway) — suburban beltway with high accident frequency",
+    "US-60 (Superstition Freeway) — East Valley commuter corridor",
+    "SR-51 (Piestewa Freeway) — north-south urban freeway through central Phoenix",
+    "Van Buren Street — pedestrian high-risk corridor through downtown Phoenix",
+    "Camelback Road — major arterial with mixed pedestrian and high-speed vehicle traffic"
+  ],
+  "localNotes": "Phoenix has a 180-day deadline for government entity claims under Arizona law. Phoenix PD traffic accident reports are available through the Records Management Bureau. The Valley Metro light rail system is a common government defendant in transit injury cases. Arizona's extreme heat creates specific hazard conditions — melting road markings, heat shimmer affecting visibility, and increased tire blowout rates — that may be relevant to accident liability.",
+  "reviewedBy": "Pending Attorney Review",
+  "reviewDate": "2026-04-20"
+}

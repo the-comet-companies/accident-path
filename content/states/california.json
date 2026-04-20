@@ -1,0 +1,68 @@
+{
+  "slug": "california",
+  "name": "California",
+  "abbreviation": "CA",
+  "metaTitle": "California Personal Injury Law — Deadlines & Legal Rights",
+  "metaDescription": "California personal injury laws, statute of limitations, fault rules, and insurance minimums. Educational guide for accident victims in CA.",
+  "statuteOfLimitations": {
+    "personalInjury": "2 years from the date of injury (CCP § 335.1)",
+    "propertyDamage": "3 years from the date of damage (CCP § 338)",
+    "wrongfulDeath": "2 years from the date of death (CCP § 335.1)"
+  },
+  "faultRule": {
+    "type": "pure_comparative",
+    "description": "California follows pure comparative fault (Li v. Yellow Cab Co., 1975). An injured person can recover damages even if they were 99% at fault, but their recovery is reduced by their percentage of fault. There is no bar to recovery based on the injured party's degree of fault."
+  },
+  "reportingDeadlines": [
+    {
+      "type": "Car accident — police report",
+      "deadline": "Within 10 days",
+      "details": "If a car accident results in injury, death, or property damage over $1,000, it must be reported to the DMV within 10 days using the SR-1 form."
+    },
+    {
+      "type": "Government entity claim",
+      "deadline": "Within 6 months",
+      "details": "Claims against California state or local government entities must be filed using the Government Claims Program within 6 months of the incident. Failure to comply is a hard bar to recovery."
+    },
+    {
+      "type": "Workers' compensation",
+      "deadline": "Within 30 days to employer; 1 year to file",
+      "details": "Report the workplace injury to your employer within 30 days. File a formal workers' compensation claim (DWC-1) within 1 year of the injury date."
+    },
+    {
+      "type": "Uninsured motorist claim",
+      "deadline": "Per your policy terms",
+      "details": "Review your policy. Most UM/UIM claims must be reported promptly. A lawsuit must be filed within 2 years under California law."
+    }
+  ],
+  "insuranceMinimums": {
+    "bodilyInjuryPerPerson": "$15,000",
+    "bodilyInjuryPerAccident": "$30,000",
+    "propertyDamage": "$5,000",
+    "uninsuredMotorist": "Must be offered; may be waived in writing"
+  },
+  "keyLaws": [
+    {
+      "name": "Pure Comparative Fault (Li v. Yellow Cab, 1975)",
+      "description": "California abolished contributory negligence in favor of pure comparative fault, allowing recovery even when the plaintiff is primarily at fault, with damages reduced proportionally."
+    },
+    {
+      "name": "MICRA (Medical Injury Compensation Reform Act)",
+      "description": "California caps non-economic damages in medical malpractice cases at $350,000 for injuries and $500,000 for wrongful death (as of 2023, with annual increases). Does not apply to general personal injury cases."
+    },
+    {
+      "name": "Proposition 213 — Uninsured Motorist Limitations",
+      "description": "Drivers operating a vehicle without insurance at the time of an accident may not recover non-economic damages (pain and suffering) even if the other driver was at fault."
+    },
+    {
+      "name": "Government Claims Act (Gov. Code § 810 et seq.)",
+      "description": "Before suing a California government entity, a formal claim must be filed within 6 months of the incident. Strict compliance is required — courts have limited ability to excuse late filings."
+    },
+    {
+      "name": "California Labor Code § 3600 — Workers' Compensation Exclusivity",
+      "description": "Workers' compensation is generally the exclusive remedy against an employer for workplace injuries. Third-party civil claims remain available against non-employer defendants."
+    }
+  ],
+  "reviewedBy": "Pending Attorney Review",
+  "reviewDate": "2026-04-20"
+}

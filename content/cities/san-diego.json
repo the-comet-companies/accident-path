@@ -1,0 +1,69 @@
+{
+  "slug": "san-diego",
+  "name": "San Diego",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "San Diego Accident Guide — Local Hospitals, Courts & Rights",
+  "metaDescription": "Injured in San Diego? Find local emergency hospitals, courts, and understand your rights under California personal injury law.",
+  "population": "1.4 million (city); 3.3 million (county)",
+  "description": "San Diego is California's second-largest city and a major hub for military, biotech, tourism, and cross-border commerce. Its freeway network — particularly the I-5, I-8, SR-163, and SR-94 — experiences high traffic volumes and frequent accidents. The city's extensive coastal amenities, active pedestrian zones in areas like the Gaslamp Quarter, Mission Valley, and Pacific Beach, and growing cycling infrastructure all contribute to a diverse range of personal injury scenarios. San Diego also has a significant military presence, and accidents involving federal government vehicles or personnel carry special jurisdictional rules. Government entity claims against the City of San Diego or San Diego County must be filed within 6 months of the incident under the California Government Claims Act.",
+  "hospitals": [
+    {
+      "name": "UC San Diego Health — Hillcrest",
+      "address": "200 W Arbor Dr, San Diego, CA 92103",
+      "phone": "(619) 543-6400",
+      "erAvailable": true
+    },
+    {
+      "name": "Scripps Mercy Hospital San Diego",
+      "address": "4077 5th Ave, San Diego, CA 92103",
+      "phone": "(619) 294-8111",
+      "erAvailable": true
+    },
+    {
+      "name": "Sharp Memorial Hospital",
+      "address": "7901 Frost St, San Diego, CA 92123",
+      "phone": "(858) 939-3400",
+      "erAvailable": true
+    },
+    {
+      "name": "Rady Children's Hospital — San Diego",
+      "address": "3020 Children's Way, San Diego, CA 92123",
+      "phone": "(858) 576-1700",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "San Diego Superior Court — Hall of Justice",
+      "address": "330 W Broadway, San Diego, CA 92101",
+      "phone": "(619) 450-7060",
+      "type": "General civil and personal injury"
+    },
+    {
+      "name": "San Diego Superior Court — Kearny Mesa Courthouse",
+      "address": "8950 Clairemont Mesa Blvd, San Diego, CA 92123",
+      "phone": "(858) 634-1600",
+      "type": "Civil — North County cases"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Freeway accidents on I-5 and I-8 interchange areas",
+    "Pedestrian accidents in tourist and entertainment districts",
+    "Bicycle accidents along coastal paths and Mission Bay",
+    "Military vehicle and government property accidents (special jurisdiction)",
+    "Slip and fall accidents at restaurants, hotels, and beach access points",
+    "Cross-border commercial trucking accidents near the US-Mexico port of entry"
+  ],
+  "notableCorridors": [
+    "I-5 (San Diego Freeway) — high-volume north-south corridor",
+    "I-8 — major east-west route connecting coastal and inland areas",
+    "SR-94 — urban freeway through Mission Hills and City Heights",
+    "SR-163 — connecting Balboa Park to Mission Valley, known for accident concentration",
+    "Mission Boulevard — pedestrian and cycling corridor along Mission Beach",
+    "Harbor Drive — commercial and pedestrian activity near the waterfront"
+  ],
+  "localNotes": "San Diego has a high concentration of military personnel and federal government vehicles. Accidents involving federal employees or vehicles may require filing under the Federal Tort Claims Act (FTCA), which has different procedures and a 2-year administrative deadline. SDPD traffic reports are available through the Records Division. The San Diego MTS (bus and trolley system) is a common government defendant in transit injury cases.",
+  "reviewedBy": "Pending Attorney Review",
+  "reviewDate": "2026-04-20"
+}

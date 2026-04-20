@@ -1,0 +1,57 @@
+{
+  "slug": "hiring-a-lawyer",
+  "title": "How to Find and Hire a Personal Injury Lawyer",
+  "metaTitle": "How to Hire a Personal Injury Lawyer in CA or AZ",
+  "metaDescription": "What to know before hiring a personal injury attorney in California or Arizona. Contingency fees, questions to ask, and red flags to avoid.",
+  "description": "Hiring the right personal injury attorney can make a significant difference in the outcome of your case. Most personal injury lawyers work on contingency — meaning no upfront cost to you. Understanding how the process works helps you make an informed choice and ask the right questions.",
+  "sections": [
+    {
+      "heading": "Do You Actually Need a Lawyer?",
+      "content": "Not every accident requires an attorney. Minor accidents with no injuries, no significant property damage, and a straightforward insurance claim may be resolved without legal representation. However, you are more likely to benefit from an attorney if your injuries required medical treatment, if fault is disputed, if the insurance company is offering less than your damages are worth, if a government entity is involved, if you were partially at fault but believe the other party bears greater responsibility, or if the accident involved serious or permanent injuries. Personal injury consultations are almost always free, which makes getting an opinion low-risk.",
+      "tips": [
+        "If you are unsure whether you need a lawyer, a free consultation costs you nothing",
+        "Serious injuries, disputed fault, and low settlement offers are common reasons to consult an attorney",
+        "You can start a claim yourself and bring in an attorney later if it becomes necessary"
+      ]
+    },
+    {
+      "heading": "How Contingency Fee Arrangements Work",
+      "content": "Most personal injury attorneys work on a contingency fee basis — they take a percentage of any recovery you receive, and charge nothing if there is no recovery. Typical contingency fees range from 25% to 40% of the recovery, depending on whether the case settles before or after filing a lawsuit. In California, attorney fee agreements must be in writing. In addition to the fee percentage, you should understand how costs — filing fees, expert witnesses, medical record retrieval — are handled. Some attorneys deduct costs from the recovery before calculating the fee; others do it after. Understand the arrangement before signing.",
+      "tips": [
+        "Ask specifically how costs are handled — before or after the fee is calculated",
+        "Get the fee agreement in writing before signing anything",
+        "Pre-litigation settlements typically carry a lower contingency percentage than trial cases"
+      ]
+    },
+    {
+      "heading": "Questions to Ask During a Consultation",
+      "content": "A free consultation is your opportunity to evaluate the attorney and understand your options. Good questions include: How many cases like mine have you handled? What is your assessment of my case's strengths and weaknesses? Will you personally handle my case, or will it be assigned to a paralegal or junior attorney? How do you communicate with clients — phone, email, portal? What is the likely timeline? What do you estimate my case may be worth, and why? How are costs handled? What happens if we lose? An attorney who gives you confident, clear answers — and acknowledges honest uncertainty where it exists — is a better sign than one who promises outcomes.",
+      "tips": [
+        "Ask specifically who will handle day-to-day communications on your case",
+        "An attorney who explains the weaknesses of your case is being helpful, not discouraging",
+        "Request a written summary of your case evaluation after the consultation"
+      ]
+    },
+    {
+      "heading": "Red Flags to Watch For",
+      "content": "Most personal injury attorneys are ethical professionals. But some warning signs are worth watching for: Guaranteeing a specific outcome or settlement amount (no ethical attorney can promise this); pressure to sign a fee agreement immediately without time to review; limited or no direct communication with the attorney after signing; excessive case volume with little personal attention; asking you to exaggerate your injuries or withhold information. State bar websites in California (calbar.ca.gov) and Arizona (azbar.org) allow you to verify a lawyer's license status and disciplinary history.",
+      "tips": [
+        "Verify your attorney's license and disciplinary history on the state bar website",
+        "Never sign anything without reading it — ask for time to review the fee agreement",
+        "If you feel ignored or pressured, you have the right to terminate the representation"
+      ]
+    },
+    {
+      "heading": "What Happens After You Hire a Lawyer",
+      "content": "After retaining an attorney, they will typically gather and review your medical records, communicate directly with insurance companies on your behalf, investigate the accident and identify all potentially liable parties, and determine the full value of your damages. You will be asked to provide documentation and will need to attend any medical examinations required by the insurer. Your attorney should keep you informed about significant developments. Most personal injury cases settle before trial — but being prepared for litigation gives you more leverage in negotiations. Stay responsive, keep attending medical appointments, and follow your attorney's guidance.",
+      "tips": [
+        "Continue following your doctor's treatment plan throughout the case",
+        "Respond promptly when your attorney needs documents or your input",
+        "Do not discuss the case on social media — opposing parties review public posts"
+      ]
+    }
+  ],
+  "relatedAccidents": ["car", "truck", "motorcycle", "workplace", "slip-and-fall"],
+  "relatedTools": ["accident-case-quiz", "settlement-readiness"],
+  "relatedGuides": ["evidence-checklist", "insurance-claims"]
+}

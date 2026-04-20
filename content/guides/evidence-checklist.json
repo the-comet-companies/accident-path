@@ -1,0 +1,57 @@
+{
+  "slug": "evidence-checklist",
+  "title": "Evidence Checklist: What to Collect After an Accident",
+  "metaTitle": "Evidence Checklist — What to Collect After an Accident",
+  "metaDescription": "A step-by-step guide to gathering and preserving evidence after an accident in California or Arizona. Protect your claim from day one.",
+  "description": "Evidence is the foundation of any personal injury claim. What you collect in the hours and days following an accident can determine whether your claim succeeds or fails. This guide walks through what to gather, how to preserve it, and why each item matters.",
+  "sections": [
+    {
+      "heading": "Why Evidence Collection Matters",
+      "content": "Insurance companies and opposing parties have teams of investigators working quickly after an accident. Evidence disappears fast — surveillance footage is overwritten, skid marks fade, witnesses forget details, and hazards get repaired. The window to capture strong evidence is often just 24 to 72 hours. Acting early and systematically puts you in a much stronger position, whether you pursue an insurance claim or a civil lawsuit.",
+      "tips": [
+        "Photograph everything before leaving the scene if it is safe to do so",
+        "Request that an incident report be filed immediately",
+        "Never assume the other party's insurer will preserve evidence on your behalf"
+      ]
+    },
+    {
+      "heading": "At-the-Scene Evidence",
+      "content": "The scene itself is your most time-sensitive evidence source. Photographs of the physical location, any hazard or vehicle positions, road conditions, traffic signals, and visible injuries should be taken from multiple angles and distances. If you were in a car accident, photograph license plates, vehicle damage, and any debris on the road. For a slip and fall, photograph the exact hazard — the wet floor, the uneven pavement, the missing handrail — before it is cleaned up or repaired. Collect the names, phone numbers, and license plate numbers of any witnesses.",
+      "tips": [
+        "Take wide shots for context and close-ups for detail",
+        "Include timestamps in your photos if your phone allows",
+        "Note weather, lighting, and road conditions in writing"
+      ]
+    },
+    {
+      "heading": "Medical Documentation",
+      "content": "Your medical records are the direct link between the accident and your injuries. Seek evaluation promptly — even if you feel okay — because many serious injuries (including traumatic brain injuries, internal bleeding, and spinal damage) are not immediately apparent. Request copies of all records from emergency rooms, urgent care clinics, primary care physicians, specialists, and physical therapists. Keep a personal injury journal documenting your symptoms, pain levels, and how the injury is affecting your daily life and work.",
+      "tips": [
+        "Tell every healthcare provider exactly how and when the injury occurred",
+        "Keep all bills, prescriptions, and receipts organized by date",
+        "Photograph visible injuries over the following days to document progression"
+      ]
+    },
+    {
+      "heading": "Financial and Employment Records",
+      "content": "Recoverable damages include more than just medical bills. Lost wages, reduced earning capacity, and out-of-pocket expenses are also compensable in personal injury claims. Gather pay stubs showing your pre-injury earnings, documentation of any missed work days from your employer, and records of any accident-related expenses including transportation to medical appointments, hired help for tasks you can no longer perform, and assistive equipment. Self-employed individuals should document income through tax returns, invoices, and client communications.",
+      "tips": [
+        "Request a letter from your employer documenting missed work and lost income",
+        "Keep receipts for every accident-related expense, no matter how small",
+        "If self-employed, document lost client engagements or project cancellations"
+      ]
+    },
+    {
+      "heading": "Preserving Digital and Physical Evidence",
+      "content": "Digital evidence — surveillance footage, dashcam recordings, cell phone records, social media posts — can be critical but is often lost quickly. An attorney can send a legal hold letter or spoliation notice requiring parties to preserve specific evidence before it is destroyed. Physical evidence should be stored safely — the shoes you were wearing in a slip and fall, a damaged bicycle helmet, a defective product — and never repaired or discarded. Avoid posting about the accident on social media, as opposing parties routinely review public posts during litigation.",
+      "tips": [
+        "Back up all photos and documents to cloud storage immediately",
+        "Do not post about the accident, your injuries, or your recovery on social media",
+        "An attorney can send a preservation letter for surveillance footage within 24 hours"
+      ]
+    }
+  ],
+  "relatedAccidents": ["car", "truck", "slip-and-fall", "workplace", "construction"],
+  "relatedTools": ["accident-case-quiz", "evidence-checklist"],
+  "relatedGuides": ["insurance-claims", "hiring-a-lawyer"]
+}

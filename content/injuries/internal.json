@@ -1,0 +1,46 @@
+{
+  "slug": "internal",
+  "title": "Internal Injuries",
+  "metaTitle": "Internal Injuries from Accidents — Symptoms & Legal Rights",
+  "metaDescription": "Internal injuries from accidents are life-threatening and often not immediately apparent. Learn symptoms, emergency treatment, and your rights.",
+  "description": "Internal injuries — including organ damage, internal bleeding, and thoracic and abdominal trauma — are among the most dangerous accident injuries because they are not always visible or immediately apparent. Delayed diagnosis can be life-threatening, making prompt medical evaluation critical after any high-impact accident.",
+  "symptoms": [
+    "Abdominal pain, tenderness, or rigidity",
+    "Shoulder pain (referred pain from diaphragm irritation — can signal internal bleeding)",
+    "Lightheadedness, dizziness, or fainting",
+    "Rapid heart rate and low blood pressure (signs of hemorrhagic shock)",
+    "Blood in urine, vomit, or stool",
+    "Deep bruising of the abdomen or chest without obvious external cause",
+    "Chest pain or difficulty breathing (pneumothorax, hemothorax)",
+    "Swelling or firmness of the abdomen"
+  ],
+  "longTermEffects": [
+    "Organ damage requiring surgical repair or removal (splenectomy, bowel resection)",
+    "Chronic abdominal or chest pain",
+    "Increased infection risk after organ damage or surgery",
+    "Diabetes or hormonal imbalances following pancreatic trauma",
+    "Chronic kidney dysfunction following renal injury",
+    "Psychological trauma from life-threatening injury and hospitalization",
+    "Reduced quality of life due to dietary restrictions or ongoing medical management"
+  ],
+  "treatmentOptions": [
+    "Emergency stabilization and fluid resuscitation for hemorrhagic shock",
+    "CT scan, ultrasound (FAST exam), or diagnostic peritoneal lavage for assessment",
+    "Emergency exploratory laparotomy or thoracotomy for severe injuries",
+    "Angioembolization to control arterial bleeding non-surgically",
+    "Intensive care unit (ICU) monitoring during critical phase",
+    "Non-operative management with careful monitoring for select solid organ injuries",
+    "Pain management and post-surgical care",
+    "Long-term follow-up with specialist surgeons and physicians"
+  ],
+  "commonCauses": [
+    "High-speed car, truck, and motorcycle accidents",
+    "Seatbelt compression injuries in severe crashes",
+    "Pedestrian accidents involving vehicle impact",
+    "Falls from significant height",
+    "Construction site accidents",
+    "Blunt force trauma from defective products or equipment"
+  ],
+  "relatedAccidents": ["car", "truck", "motorcycle", "pedestrian", "construction", "product"],
+  "relatedTools": ["accident-case-quiz", "lost-wages-estimator"]
+}

@@ -1,0 +1,42 @@
+{
+  "slug": "soft-tissue",
+  "title": "Soft Tissue Injuries",
+  "metaTitle": "Soft Tissue Injuries — Symptoms, Treatment & Legal Rights",
+  "metaDescription": "Soft tissue injuries from accidents include sprains, strains, and contusions. Learn symptoms, treatment options, and your rights in CA and AZ.",
+  "description": "Soft tissue injuries — including sprains, strains, muscle tears, and contusions — are among the most common injuries in accidents. Despite being frequently dismissed as 'minor,' severe soft tissue damage can cause chronic pain, limit mobility, and result in significant medical costs and lost wages.",
+  "symptoms": [
+    "Localized pain or tenderness at the injury site",
+    "Swelling, bruising, or discoloration",
+    "Reduced range of motion in affected joints or muscles",
+    "Muscle weakness or instability",
+    "Pain that worsens with movement or activity",
+    "Stiffness, especially in the mornings or after inactivity",
+    "Numbness or tingling if nerves are involved"
+  ],
+  "longTermEffects": [
+    "Chronic pain syndromes if injuries are not properly treated",
+    "Scar tissue formation leading to restricted movement",
+    "Re-injury risk due to weakened ligaments or tendons",
+    "Fibromyalgia-like symptoms in severe or repeated trauma cases",
+    "Psychological effects including anxiety related to pain and activity limitations"
+  ],
+  "treatmentOptions": [
+    "RICE protocol (rest, ice, compression, elevation) for acute injuries",
+    "Physical therapy and targeted rehabilitation exercises",
+    "Anti-inflammatory medications (NSAIDs)",
+    "Corticosteroid injections for severe inflammation",
+    "Massage therapy and myofascial release",
+    "Ultrasound or electrical stimulation therapy",
+    "Surgery for complete ligament or tendon ruptures"
+  ],
+  "commonCauses": [
+    "Rear-end and side-impact car accidents",
+    "Slip and fall accidents on wet or uneven surfaces",
+    "Workplace overexertion and repetitive motion injuries",
+    "Sports and recreational accidents",
+    "Pedestrian and bicycle accidents",
+    "Construction site falls and equipment accidents"
+  ],
+  "relatedAccidents": ["car", "truck", "slip-and-fall", "workplace", "bicycle", "pedestrian"],
+  "relatedTools": ["accident-case-quiz", "lost-wages-estimator"]
+}
