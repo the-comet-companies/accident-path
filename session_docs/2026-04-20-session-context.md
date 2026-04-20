@@ -248,6 +248,39 @@ export const supabase = createClient(
 
 ---
 
+---
+
+## DEV-05: Header + MobileNav
+
+### `components/layout/Header.tsx` (desktop)
+- Sticky, `z-50`, `bg-surface-card`, shadow
+- Logo + 8-item nav + `Get Help Now` CTA button
+- **Mega-menu: Accident Types** — 13 links, 4-column grid, `aria-expanded` trigger
+- **Mega-menu: State Guides** — CA + AZ each with 6 city links
+- Click-outside (`mousedown` listener) and Escape both close open menus
+- `Find Help` nav item highlighted in amber to stand out
+
+### `components/layout/MobileNav.tsx` (mobile)
+- `'use client'` — hamburger button (44px) opens full-screen slide-out drawer from right
+- Accordion sections for Accident Types (13 items) and State Guides
+- **Focus trap** — `Tab` / `Shift+Tab` cycles only within the open drawer
+- **Escape key** closes drawer and returns focus to hamburger button
+- Body scroll locked (`overflow: hidden`) while drawer is open
+- Backdrop overlay closes drawer on click
+- **Bottom-fixed `Get Help Now` bar** (`lg:hidden`) — present on every mobile page
+
+### `app/layout.tsx` updates
+- `EmergencyBanner` mounted at top of every page
+- Desktop: full `<Header />` component
+- Mobile: logo + `<MobileNav />` hamburger in a sticky `h-16` shell
+- `<main className="pb-20 lg:pb-0">` — bottom padding reserves space above mobile fixed CTA bar
+
+### Verification
+- `npx tsc --noEmit` — clean
+- Committed and pushed to `origin/staging`
+
+---
+
 ## Current State (End of Session)
 
 | Item | Status |
@@ -272,7 +305,10 @@ export const supabase = createClient(
 | DisclaimerBanner (4 variants) | ✓ |
 | EmergencyBanner (dismissible) | ✓ |
 | Breadcrumb + JSON-LD | ✓ |
+| Header (desktop, mega-menu) | ✓ |
+| MobileNav (slide-out, focus trap) | ✓ |
+| Bottom-fixed mobile CTA bar | ✓ |
 
 ## Next Steps
 
-Per `docs/strategy/MASTER-PLAN.md` — ready to build Header, Footer, and MobileNav layout components, then begin populating `content/` JSON files.
+Per `docs/strategy/MASTER-PLAN.md` — ready to build Footer component, then begin populating `content/` JSON files and page templates.
