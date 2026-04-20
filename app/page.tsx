@@ -164,37 +164,80 @@ export default function Home() {
       {/* ── 1. Hero ───────────────────────────────────────────────────────── */}
       <section className="bg-primary-900 text-white" aria-labelledby="hero-heading">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
-          <div className="max-w-2xl">
-            <p className="text-primary-300 text-sm font-medium uppercase tracking-wider mb-4 font-sans">
-              Free guidance — no obligation
-            </p>
-            <h1
-              id="hero-heading"
-              className="font-sans font-bold text-4xl sm:text-5xl lg:text-6xl leading-tight tracking-tight mb-6"
-            >
-              Get Clear Next Steps After an Accident
-            </h1>
-            <p className="font-serif text-lg sm:text-xl text-primary-100 leading-relaxed mb-8 max-w-xl">
-              Learn what to do, what evidence to keep, and whether speaking with a lawyer could
-              help. Educational guidance for California and Arizona.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3">
-              <CTAButton href="/find-help" size="lg">
-                Start Free Accident Check
-              </CTAButton>
-              <CTAButton
-                href="/guides"
-                size="lg"
-                variant="secondary"
-                className="border-white/40 text-white hover:bg-white/10 hover:border-white/60"
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            {/* Left: copy + CTAs */}
+            <div>
+              <p className="text-primary-300 text-sm font-medium uppercase tracking-wider mb-4 font-sans">
+                Free guidance — no obligation
+              </p>
+              <h1
+                id="hero-heading"
+                className="font-sans font-bold text-4xl sm:text-5xl lg:text-6xl leading-tight tracking-tight mb-6"
               >
-                Explore Accident Guides
-              </CTAButton>
+                Get Clear Next Steps After an Accident
+              </h1>
+              <p className="font-serif text-lg sm:text-xl text-primary-100 leading-relaxed mb-8">
+                Learn what to do, what evidence to keep, and whether speaking with a lawyer could
+                help. Educational guidance for California and Arizona.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <CTAButton href="/find-help" size="lg">
+                  Start Free Accident Check
+                </CTAButton>
+                <CTAButton
+                  href="/guides"
+                  size="lg"
+                  variant="secondary"
+                  className="border-white/40 text-white hover:bg-white/10 hover:border-white/60"
+                >
+                  Explore Accident Guides
+                </CTAButton>
+              </div>
+              <p className="mt-5 text-xs text-primary-300 font-serif">
+                This information is for educational purposes only and does not constitute legal
+                advice.
+              </p>
             </div>
-            <p className="mt-5 text-xs text-primary-300 font-serif">
-              This information is for educational purposes only and does not constitute legal
-              advice.
-            </p>
+
+            {/* Right: What You'll Get card */}
+            <div
+              className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-7"
+              aria-label="What you'll get"
+            >
+              <p className="text-xs font-semibold font-sans uppercase tracking-widest text-primary-300 mb-5">
+                What You&apos;ll Get
+              </p>
+              <ol className="flex flex-col gap-5" role="list">
+                {[
+                  {
+                    title: 'A clear checklist of next steps',
+                    desc: 'Specific to your accident type and state.',
+                  },
+                  {
+                    title: 'Your statute-of-limitations deadline',
+                    desc: "We'll flag the date you can't miss.",
+                  },
+                  {
+                    title: 'A shortlist of lawyers — if you need one',
+                    desc: 'Matched to your case. You decide who to talk to.',
+                  },
+                ].map(({ title, desc }, i) => (
+                  <li key={i} className="flex items-start gap-4">
+                    <span className="w-7 h-7 rounded-full bg-amber-500 text-white text-xs font-bold font-sans flex items-center justify-center shrink-0 mt-0.5">
+                      {i + 1}
+                    </span>
+                    <div>
+                      <p className="font-sans font-semibold text-white text-base leading-snug">
+                        {title}
+                      </p>
+                      <p className="font-serif text-sm text-primary-200 mt-0.5 leading-relaxed">
+                        {desc}
+                      </p>
+                    </div>
+                  </li>
+                ))}
+              </ol>
+            </div>
           </div>
         </div>
       </section>
