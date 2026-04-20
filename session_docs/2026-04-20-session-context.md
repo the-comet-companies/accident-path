@@ -660,6 +660,19 @@ Steps updated to match PRD spec:
 | Trust row larger (grid, py-16) | ✓ |
 | How It Works copy updated | ✓ |
 | Featured Tools heading | ✓ |
+| Sticky header fix | ✓ |
+
+---
+
+## Sticky Header Fix
+
+**Problem:** Desktop header was not staying visible on scroll.
+
+**Root cause:** `sticky` was on the `<header>` element inside a `<div className="hidden lg:block">` wrapper. CSS `sticky` only works on the element itself relative to its scroll container — a non-sticky parent wrapper breaks it.
+
+**Fix:**
+- Moved `sticky top-0 z-50` from `<header>` in `Header.tsx` to the wrapper `<div>` in `app/layout.tsx`
+- Removed redundant `sticky top-0 z-50` from `Header.tsx` `<header>` tag
 
 ## Next Steps
 

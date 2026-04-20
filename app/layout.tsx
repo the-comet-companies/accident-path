@@ -42,7 +42,7 @@ export default function RootLayout({
         <SchemaOrg schema={organizationSchema()} id="org-schema" />
         <EmergencyBanner />
         {/* Desktop header */}
-        <div className="hidden lg:block">
+        <div className="hidden lg:block sticky top-0 z-50">
           <Header />
         </div>
         {/* Mobile header */}
