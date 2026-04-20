@@ -180,13 +180,13 @@ export default function Home() {
                 Learn what to do, what evidence to keep, and whether speaking with a lawyer could
                 help. Educational guidance for California and Arizona.
               </p>
-              <div className="flex flex-col sm:flex-row gap-3">
-                <CTAButton href="/find-help" size="lg">
+              <div className="flex flex-row flex-wrap gap-3">
+                <CTAButton href="/find-help" size="md">
                   Start Free Accident Check
                 </CTAButton>
                 <CTAButton
                   href="/guides"
-                  size="lg"
+                  size="md"
                   variant="secondary"
                   className="border-white/40 text-white hover:bg-white/10 hover:border-white/60"
                 >
