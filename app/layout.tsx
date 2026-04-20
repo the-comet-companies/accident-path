@@ -3,6 +3,7 @@ import { Inter, Merriweather } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { MobileNav } from "@/components/layout/MobileNav";
+import { Footer } from "@/components/layout/Footer";
 import { EmergencyBanner } from "@/components/ui/EmergencyBanner";
 
 const inter = Inter({
@@ -54,6 +55,7 @@ export default function RootLayout({
         </div>
         {/* Main content — pb-20 on mobile reserves space above fixed CTA bar */}
         <main className="flex-1 pb-20 lg:pb-0">{children}</main>
+        <Footer />
       </body>
     </html>
   );
