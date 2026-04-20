@@ -137,23 +137,23 @@ const HOW_IT_WORKS = [
   {
     step: 1,
     icon: <Search className="w-6 h-6" aria-hidden="true" />,
-    title: 'Describe Your Situation',
+    title: 'Tell Us What Happened',
     description:
-      'Tell us about your accident type, when it happened, and where. Takes about 2 minutes.',
+      'Answer a few questions about your accident type, when it happened, and where. Takes about 2 minutes.',
   },
   {
     step: 2,
     icon: <CheckCircle className="w-6 h-6" aria-hidden="true" />,
-    title: 'Get Your Next Steps',
+    title: 'Get Personalized Guidance',
     description:
-      'Receive a personalized checklist: what to document, key deadlines, and educational resources relevant to your situation.',
+      'Receive a clear checklist of next steps, key deadlines to know about, and educational resources specific to your situation.',
   },
   {
     step: 3,
     icon: <Users className="w-6 h-6" aria-hidden="true" />,
-    title: 'Connect If You Choose',
+    title: 'Connect With Help if Needed',
     description:
-      "If you'd like to speak with a lawyer experienced in your situation, we can help connect you — no obligation.",
+      "If you'd like to speak with a lawyer experienced in your situation, we can help connect you. No pressure, no obligation.",
   },
 ]
 
@@ -190,14 +190,14 @@ export default function Home() {
                 help. Educational guidance for California and Arizona.
               </p>
               <div data-animate="hero-ctas" className="flex flex-row flex-wrap gap-3">
-                <CTAButton href="/find-help" size="md">
+                <CTAButton href="/find-help" size="md" className="whitespace-nowrap">
                   Start Free Accident Check
                 </CTAButton>
                 <CTAButton
                   href="/guides"
                   size="md"
                   variant="secondary"
-                  className="border-white/40 text-white hover:bg-white/10 hover:border-white/60"
+                  className="whitespace-nowrap border-white/40 text-white hover:bg-white/10 hover:border-white/60"
                 >
                   Explore Accident Guides
                 </CTAButton>
@@ -254,8 +254,8 @@ export default function Home() {
 
       {/* ── 2. Trust Row ──────────────────────────────────────────────────── */}
       <section className="bg-surface-card border-b border-neutral-100" aria-label="Trust indicators">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="flex flex-wrap gap-x-8 gap-y-4 items-center justify-center lg:justify-between">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
             {[
               { variant: 'shield' as const, text: 'Attorney-Reviewed Content',  subtext: 'Reviewed for accuracy and compliance' },
               { variant: 'lock'   as const, text: 'Secure & Private',           subtext: 'Your information stays with you'      },
@@ -263,7 +263,7 @@ export default function Home() {
               { variant: 'badge'  as const, text: 'California & Arizona',       subtext: 'State-specific guidance'              },
             ].map(({ variant, text, subtext }) => (
               <div key={text} data-animate="trust-badge">
-                <TrustBadge variant={variant} text={text} subtext={subtext} />
+                <TrustBadge variant={variant} text={text} subtext={subtext} size="lg" />
               </div>
             ))}
           </div>
@@ -369,10 +369,10 @@ export default function Home() {
                 id="tools-heading"
                 className="font-sans font-semibold text-3xl lg:text-4xl text-neutral-950 mb-2"
               >
-                Free Interactive Tools
+                Featured Tools
               </h2>
               <p className="font-serif text-neutral-500 text-lg max-w-lg">
-                Educational tools to help you understand your situation. For informational purposes
+                Interactive tools to help you understand your situation. For informational purposes
                 only — not legal advice.
               </p>
             </div>

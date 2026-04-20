@@ -579,6 +579,88 @@ Reusable card for interactive tool previews.
 | ToolCard component | ✓ |
 | Home page (all 8 sections) | ✓ |
 
+---
+
+## Post DEV-09: UI Polish + GSAP Animations
+
+### Hero "What You'll Get" Card
+- Hero section converted to 2-column grid (`lg:grid-cols-2`)
+- Right column: glass card (`bg-white/5 border-white/10 backdrop-blur-sm`) with amber-numbered checklist of 3 deliverables
+- Matches reference design from competitor research
+
+### GSAP Animations (`components/home/HomeAnimations.tsx`)
+Client component (renders `null`) — all animation side effects isolated here.
+
+**Dependencies:** `gsap` (npm package, added to package.json)
+
+**Hero timeline** (plays on load, no scroll):
+- Eyebrow → H1 → body → CTAs → card slides in from right (x:32) → card items stagger left
+
+**Scroll-triggered sections** (all use `fromTo` + `immediateRender: false` + `start: 'top bottom'` + `once: true`):
+- Trust badges: stagger fade+rise
+- How It Works heading + step items: stagger
+- Accident cards, Tool cards, Guide cards: stagger fade+rise
+- State selector section: fade+rise
+
+**Key fix applied:** Switched from `gsap.from()` to `gsap.fromTo()` with `immediateRender: false`. Root cause: `from()` sets `opacity: 0` immediately on mount; if the user has scrolled past the trigger threshold before `useEffect` runs, elements stay permanently invisible. `immediateRender: false` prevents hiding until the tween actually plays. `ScrollTrigger.refresh()` called after setup. Respects `prefers-reduced-motion`.
+
+### Hero Button Fixes
+- **Text wrap fix:** Added `whitespace-nowrap` to both hero CTAs — prevents "Start Free Accident\nCheck" break at intermediate screen widths
+- **Responsive layout:** Container uses `flex flex-row flex-wrap gap-3`; buttons size to content and wrap only when there's genuinely no room
+
+### Current State
+
+| Item | Status |
+|------|--------|
+| AccidentCard component | ✓ |
+| ToolCard component | ✓ |
+| Home page (all 8 sections) | ✓ |
+| "What You'll Get" hero card | ✓ |
+| GSAP animations (hero + scroll) | ✓ |
+| Hero buttons responsive + no-wrap | ✓ |
+
+---
+
+## Home Page Content + UI Polish (continued)
+
+### Trust Row — Larger (`size="lg"`)
+- Added `size` prop to `TrustBadge` (`'sm'` default | `'lg'`)
+- `lg` variant: icon in `w-12 h-12` teal circle, `text-base font-semibold` label, centered column layout
+- Trust row section: padding `py-12 lg:py-16`, layout `grid grid-cols-2 lg:grid-cols-4`
+- Existing `size="sm"` default unchanged — no impact on other usages
+
+### How It Works — Updated Step Copy
+Steps updated to match PRD spec:
+1. **Tell Us What Happened** — "Answer a few questions about your accident type, when it happened, and where."
+2. **Get Personalized Guidance** — "Receive a clear checklist of next steps, key deadlines, and educational resources specific to your situation."
+3. **Connect With Help if Needed** — "No pressure, no obligation."
+
+### Featured Tools Section
+- Heading changed from "Free Interactive Tools" → **"Featured Tools"**
+- "Free" removed from subtext as well
+- Matches PRD §3 spec: "Featured tools: cards for 5 P0 tools"
+
+### Hero Button Fixes (from prior session)
+- `whitespace-nowrap` on both CTAs prevents text wrap at intermediate widths
+- Container: `flex flex-row flex-wrap gap-3`
+
+---
+
+## Current State
+
+| Item | Status |
+|------|--------|
+| AccidentCard component | ✓ |
+| ToolCard component | ✓ |
+| Home page (all 8 sections) | ✓ |
+| "What You'll Get" hero card | ✓ |
+| GSAP animations (hero + scroll) | ✓ |
+| Hero buttons responsive + no-wrap | ✓ |
+| TrustBadge `size="lg"` variant | ✓ |
+| Trust row larger (grid, py-16) | ✓ |
+| How It Works copy updated | ✓ |
+| Featured Tools heading | ✓ |
+
 ## Next Steps
 
 Ready to build page templates: accident hub pages (DEV-10), then populate `content/accidents/*.json` CMS files.
