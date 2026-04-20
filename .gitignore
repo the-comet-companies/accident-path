@@ -44,3 +44,6 @@ Thumbs.db
 # Supabase local
 supabase/.branches/
 supabase/.temp/
+
+# Claude local settings (contains secrets)
+.claude/settings.local.json
