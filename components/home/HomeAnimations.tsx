@@ -22,64 +22,55 @@ export function HomeAnimations() {
           opacity: 0, x: 18, duration: 0.4, stagger: 0.13,
         }, '-=0.45')
 
-      // helper so every scroll animation fires once and uses a consistent threshold
-      const st = (trigger: string) => ({
-        trigger,
-        start: 'top 95%',
-        once: true,
-      })
+      // fromTo with immediateRender:false prevents GSAP from hiding elements on
+      // mount — they only become invisible right as their animation starts playing.
+      // 'top bottom' fires as soon as any edge of the trigger enters the viewport.
+      const reveal = (
+        selector: string,
+        vars: gsap.TweenVars = {},
+        triggerSelector?: string,
+      ) =>
+        gsap.fromTo(
+          selector,
+          { opacity: 0, y: vars.y ?? 22 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: vars.duration ?? 0.5,
+            stagger: vars.stagger,
+            ease: 'power2.out',
+            immediateRender: false,
+            scrollTrigger: {
+              trigger: triggerSelector ?? selector,
+              start: 'top bottom',
+              once: true,
+            },
+          },
+        )
 
       // ── Trust badges ─────────────────────────────────────────────────────
-      gsap.from('[data-animate="trust-badge"]', {
-        opacity: 0, y: 14, duration: 0.4, stagger: 0.1, ease: 'power2.out',
-        scrollTrigger: st('[data-animate="trust-badge"]'),
-      })
+      reveal('[data-animate="trust-badge"]', { y: 14, duration: 0.4, stagger: 0.1 })
 
-      // ── How It Works: heading then steps ─────────────────────────────────
-      gsap.from('#how-it-works-heading', {
-        opacity: 0, y: 20, duration: 0.5, ease: 'power2.out',
-        scrollTrigger: st('#how-it-works-heading'),
-      })
-      gsap.from('[data-animate="step-item"]', {
-        opacity: 0, y: 32, duration: 0.55, stagger: 0.15, ease: 'power2.out',
-        scrollTrigger: st('[data-animate="step-item"]'),
-      })
+      // ── How It Works ─────────────────────────────────────────────────────
+      reveal('#how-it-works-heading', { y: 20 })
+      reveal('[data-animate="step-item"]', { y: 32, duration: 0.55, stagger: 0.15 })
 
       // ── Accident cards ───────────────────────────────────────────────────
-      gsap.from('#accident-types-heading', {
-        opacity: 0, y: 20, duration: 0.5, ease: 'power2.out',
-        scrollTrigger: st('#accident-types-heading'),
-      })
-      gsap.from('[data-animate="accident-card"]', {
-        opacity: 0, y: 26, duration: 0.45, stagger: 0.09, ease: 'power2.out',
-        scrollTrigger: st('[data-animate="accident-card"]'),
-      })
+      reveal('#accident-types-heading', { y: 20 })
+      reveal('[data-animate="accident-card"]', { y: 26, duration: 0.45, stagger: 0.09 })
 
       // ── Tool cards ───────────────────────────────────────────────────────
-      gsap.from('#tools-heading', {
-        opacity: 0, y: 20, duration: 0.5, ease: 'power2.out',
-        scrollTrigger: st('#tools-heading'),
-      })
-      gsap.from('[data-animate="tool-card"]', {
-        opacity: 0, y: 26, duration: 0.45, stagger: 0.09, ease: 'power2.out',
-        scrollTrigger: st('[data-animate="tool-card"]'),
-      })
+      reveal('#tools-heading', { y: 20 })
+      reveal('[data-animate="tool-card"]', { y: 26, duration: 0.45, stagger: 0.09 })
 
       // ── Guide cards ──────────────────────────────────────────────────────
-      gsap.from('#guides-heading', {
-        opacity: 0, y: 20, duration: 0.5, ease: 'power2.out',
-        scrollTrigger: st('#guides-heading'),
-      })
-      gsap.from('[data-animate="guide-card"]', {
-        opacity: 0, y: 22, duration: 0.45, stagger: 0.12, ease: 'power2.out',
-        scrollTrigger: st('[data-animate="guide-card"]'),
-      })
+      reveal('#guides-heading', { y: 20 })
+      reveal('[data-animate="guide-card"]', { y: 22, duration: 0.45, stagger: 0.12 })
 
       // ── State selector ───────────────────────────────────────────────────
-      gsap.from('[data-animate="state-section"]', {
-        opacity: 0, y: 24, duration: 0.6, ease: 'power2.out',
-        scrollTrigger: st('[data-animate="state-section"]'),
-      })
+      reveal('[data-animate="state-section"]', { y: 24, duration: 0.6 })
+
+      ScrollTrigger.refresh()
     })
 
     return () => ctx.revert()
