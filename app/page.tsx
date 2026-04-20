@@ -1,65 +1,435 @@
-import Image from "next/image";
+import type { Metadata } from 'next'
+import Link from 'next/link'
+import {
+  Car,
+  Truck,
+  Bike,
+  AlertTriangle,
+  Briefcase,
+  Calculator,
+  ClipboardList,
+  DollarSign,
+  FileText,
+  BookOpen,
+  CheckCircle,
+  Search,
+  Users,
+  ChevronRight,
+} from 'lucide-react'
+import { CTAButton } from '@/components/ui/CTAButton'
+import { TrustBadge } from '@/components/ui/TrustBadge'
+import { StateSelector } from '@/components/ui/StateSelector'
+import { AccidentCard } from '@/components/content/AccidentCard'
+import { ToolCard } from '@/components/content/ToolCard'
+import { buildMetaTags } from '@/components/seo/MetaTags'
+
+export const metadata: Metadata = buildMetaTags({
+  title: 'AccidentPath — Get Clear Next Steps After an Accident',
+  description:
+    'Accident guidance for California and Arizona. Learn what to do, what evidence to keep, and whether speaking with a lawyer could help. Free, no obligation.',
+  canonical: '/',
+})
+
+// ─── Static featured data ────────────────────────────────────────────────────
+
+const FEATURED_ACCIDENTS = [
+  {
+    slug: 'car-accidents',
+    title: 'Car Accidents',
+    description:
+      'Learn what steps to take, what to document, and what your options may be after a car accident.',
+    icon: <Car className="w-5 h-5" aria-hidden="true" />,
+  },
+  {
+    slug: 'truck-accidents',
+    title: 'Truck Accidents',
+    description:
+      'Commercial truck crashes involve multiple parties. Learn how these cases differ from standard car accidents.',
+    icon: <Truck className="w-5 h-5" aria-hidden="true" />,
+  },
+  {
+    slug: 'motorcycle-accidents',
+    title: 'Motorcycle Accidents',
+    description:
+      'Motorcyclists face unique risks and legal considerations. Understand your options after a crash.',
+    icon: <Bike className="w-5 h-5" aria-hidden="true" />,
+  },
+  {
+    slug: 'slip-and-fall',
+    title: 'Slip & Fall',
+    description:
+      'Premises liability cases hinge on evidence. Learn what to document and when to act.',
+    icon: <AlertTriangle className="w-5 h-5" aria-hidden="true" />,
+  },
+  {
+    slug: 'workplace-injuries',
+    title: 'Workplace Injuries',
+    description:
+      "Workers' comp and third-party claims have different rules. Understand your options.",
+    icon: <Briefcase className="w-5 h-5" aria-hidden="true" />,
+  },
+]
+
+const FEATURED_TOOLS = [
+  {
+    slug: 'statute-of-limitations',
+    title: 'Statute of Limitations Calculator',
+    description:
+      'Understand the filing deadlines that may apply to your accident type in California or Arizona.',
+    icon: <Calculator className="w-5 h-5" aria-hidden="true" />,
+  },
+  {
+    slug: 'evidence-checklist',
+    title: 'Evidence Checklist Generator',
+    description:
+      'Get a personalized checklist of evidence to gather based on your specific accident type.',
+    icon: <ClipboardList className="w-5 h-5" aria-hidden="true" />,
+  },
+  {
+    slug: 'medical-cost-estimator',
+    title: 'Medical Cost Estimator',
+    description:
+      'Understand the range of typical medical costs associated with common injury types.',
+    icon: <DollarSign className="w-5 h-5" aria-hidden="true" />,
+  },
+  {
+    slug: 'insurance-claim-tracker',
+    title: 'Insurance Claim Tracker',
+    description:
+      'Track your claim status, deadlines, and communications with your insurance company.',
+    icon: <FileText className="w-5 h-5" aria-hidden="true" />,
+  },
+  {
+    slug: 'injury-journal',
+    title: 'Injury Journal',
+    description:
+      'Document your symptoms, treatments, and daily impact. Detailed records can matter in your recovery.',
+    icon: <BookOpen className="w-5 h-5" aria-hidden="true" />,
+  },
+]
+
+const FEATURED_GUIDES = [
+  {
+    title: 'What to Do in the First 24 Hours After an Accident',
+    excerpt:
+      'The steps you take immediately after an accident can significantly impact your ability to document what happened. This guide walks you through each critical action.',
+    href: '/guides/what-to-do-first-24-hours',
+    readTime: '8 min read',
+  },
+  {
+    title: 'How to Document Your Injuries After an Accident',
+    excerpt:
+      'Thorough documentation supports your medical care and may be important if you decide to explore legal options. Learn what to record and how.',
+    href: '/guides/how-to-document-injuries',
+    readTime: '6 min read',
+  },
+  {
+    title: 'Understanding When to Speak With a Personal Injury Lawyer',
+    excerpt:
+      'Not every accident requires legal help, but some situations benefit from a consultation. This guide helps you understand the questions to ask.',
+    href: '/guides/when-to-speak-with-a-lawyer',
+    readTime: '7 min read',
+  },
+]
+
+const HOW_IT_WORKS = [
+  {
+    step: 1,
+    icon: <Search className="w-6 h-6" aria-hidden="true" />,
+    title: 'Describe Your Situation',
+    description:
+      'Tell us about your accident type, when it happened, and where. Takes about 2 minutes.',
+  },
+  {
+    step: 2,
+    icon: <CheckCircle className="w-6 h-6" aria-hidden="true" />,
+    title: 'Get Your Next Steps',
+    description:
+      'Receive a personalized checklist: what to document, key deadlines, and educational resources relevant to your situation.',
+  },
+  {
+    step: 3,
+    icon: <Users className="w-6 h-6" aria-hidden="true" />,
+    title: 'Connect If You Choose',
+    description:
+      "If you'd like to speak with a lawyer experienced in your situation, we can help connect you — no obligation.",
+  },
+]
+
+// ─── Page ────────────────────────────────────────────────────────────────────
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+    <>
+      {/* ── 1. Hero ───────────────────────────────────────────────────────── */}
+      <section className="bg-primary-900 text-white" aria-labelledby="hero-heading">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+          <div className="max-w-2xl">
+            <p className="text-primary-300 text-sm font-medium uppercase tracking-wider mb-4 font-sans">
+              Free guidance — no obligation
+            </p>
+            <h1
+              id="hero-heading"
+              className="font-sans font-bold text-4xl sm:text-5xl lg:text-6xl leading-tight tracking-tight mb-6"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+              Get Clear Next Steps After an Accident
+            </h1>
+            <p className="font-serif text-lg sm:text-xl text-primary-100 leading-relaxed mb-8 max-w-xl">
+              Learn what to do, what evidence to keep, and whether speaking with a lawyer could
+              help. Educational guidance for California and Arizona.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <CTAButton href="/find-help" size="lg">
+                Start Free Accident Check
+              </CTAButton>
+              <CTAButton
+                href="/guides"
+                size="lg"
+                variant="secondary"
+                className="border-white/40 text-white hover:bg-white/10 hover:border-white/60"
+              >
+                Explore Accident Guides
+              </CTAButton>
+            </div>
+            <p className="mt-5 text-xs text-primary-300 font-serif">
+              This information is for educational purposes only and does not constitute legal
+              advice.
+            </p>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+      </section>
+
+      {/* ── 2. Trust Row ──────────────────────────────────────────────────── */}
+      <section className="bg-surface-card border-b border-neutral-100" aria-label="Trust indicators">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          <div className="flex flex-wrap gap-x-8 gap-y-4 items-center justify-center lg:justify-between">
+            <TrustBadge
+              variant="shield"
+              text="Attorney-Reviewed Content"
+              subtext="Reviewed for accuracy and compliance"
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+            <TrustBadge
+              variant="lock"
+              text="Secure & Private"
+              subtext="Your information stays with you"
+            />
+            <TrustBadge
+              variant="clock"
+              text="Free — No Obligation"
+              subtext="No pressure, no signup required"
+            />
+            <TrustBadge
+              variant="badge"
+              text="California & Arizona"
+              subtext="State-specific guidance"
+            />
+          </div>
         </div>
-      </main>
-    </div>
-  );
+      </section>
+
+      {/* ── 3. How It Works ───────────────────────────────────────────────── */}
+      <section
+        className="bg-surface-page py-16 lg:py-24"
+        aria-labelledby="how-it-works-heading"
+      >
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2
+              id="how-it-works-heading"
+              className="font-sans font-semibold text-3xl lg:text-4xl text-neutral-950 mb-3"
+            >
+              How AccidentPath Works
+            </h2>
+            <p className="font-serif text-neutral-500 text-lg max-w-xl mx-auto">
+              Three simple steps to go from confusion to clarity after an accident.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+            {HOW_IT_WORKS.map(({ step, icon, title, description }) => (
+              <div
+                key={step}
+                className="flex flex-col items-center text-center md:items-start md:text-left gap-4"
+              >
+                <div className="flex items-center gap-3">
+                  <span className="w-8 h-8 rounded-full bg-primary-500 text-white text-sm font-bold font-sans flex items-center justify-center shrink-0">
+                    {step}
+                  </span>
+                  <div className="w-10 h-10 rounded-lg bg-primary-50 text-primary-500 flex items-center justify-center">
+                    {icon}
+                  </div>
+                </div>
+                <div>
+                  <h3 className="font-sans font-semibold text-lg text-neutral-950 mb-2">
+                    {title}
+                  </h3>
+                  <p className="font-serif text-neutral-500 leading-relaxed">{description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="mt-12 text-center">
+            <CTAButton href="/find-help" size="lg">
+              Start Your Free Accident Check
+            </CTAButton>
+          </div>
+        </div>
+      </section>
+
+      {/* ── 4. Accident Type Grid ─────────────────────────────────────────── */}
+      <section
+        className="bg-surface-card py-16 lg:py-24"
+        aria-labelledby="accident-types-heading"
+      >
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
+            <div>
+              <h2
+                id="accident-types-heading"
+                className="font-sans font-semibold text-3xl lg:text-4xl text-neutral-950 mb-2"
+              >
+                Accident Type Guides
+              </h2>
+              <p className="font-serif text-neutral-500 text-lg">
+                In-depth educational resources for the most common accident types.
+              </p>
+            </div>
+            <Link
+              href="/accidents"
+              className="inline-flex items-center gap-1.5 text-sm font-medium text-primary-600 hover:text-primary-700 transition-colors shrink-0 min-h-[44px] sm:min-h-0"
+            >
+              View all accident types
+              <ChevronRight className="w-4 h-4" aria-hidden="true" />
+            </Link>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+            {FEATURED_ACCIDENTS.map((accident) => (
+              <AccidentCard
+                key={accident.slug}
+                title={accident.title}
+                description={accident.description}
+                href={`/accidents/${accident.slug}`}
+                icon={accident.icon}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── 5. Featured Tools ─────────────────────────────────────────────── */}
+      <section className="bg-surface-info py-16 lg:py-24" aria-labelledby="tools-heading">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
+            <div>
+              <h2
+                id="tools-heading"
+                className="font-sans font-semibold text-3xl lg:text-4xl text-neutral-950 mb-2"
+              >
+                Free Interactive Tools
+              </h2>
+              <p className="font-serif text-neutral-500 text-lg max-w-lg">
+                Educational tools to help you understand your situation. For informational purposes
+                only — not legal advice.
+              </p>
+            </div>
+            <Link
+              href="/tools"
+              className="inline-flex items-center gap-1.5 text-sm font-medium text-primary-600 hover:text-primary-700 transition-colors shrink-0 min-h-[44px] sm:min-h-0"
+            >
+              View all tools
+              <ChevronRight className="w-4 h-4" aria-hidden="true" />
+            </Link>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+            {FEATURED_TOOLS.map((tool) => (
+              <ToolCard
+                key={tool.slug}
+                title={tool.title}
+                description={tool.description}
+                href={`/tools/${tool.slug}`}
+                icon={tool.icon}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── 6. Educational Content Teaser ─────────────────────────────────── */}
+      <section className="bg-surface-card py-16 lg:py-24" aria-labelledby="guides-heading">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
+            <div>
+              <h2
+                id="guides-heading"
+                className="font-sans font-semibold text-3xl lg:text-4xl text-neutral-950 mb-2"
+              >
+                Step-by-Step Accident Guides
+              </h2>
+              <p className="font-serif text-neutral-500 text-lg">
+                Educational content reviewed for accuracy by legal professionals.
+              </p>
+            </div>
+            <Link
+              href="/guides"
+              className="inline-flex items-center gap-1.5 text-sm font-medium text-primary-600 hover:text-primary-700 transition-colors shrink-0 min-h-[44px] sm:min-h-0"
+            >
+              View all guides
+              <ChevronRight className="w-4 h-4" aria-hidden="true" />
+            </Link>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {FEATURED_GUIDES.map((guide) => (
+              <Link
+                key={guide.href}
+                href={guide.href}
+                className="group flex flex-col gap-3 rounded-xl bg-surface-page border border-neutral-100 p-6 hover:bg-primary-50 hover:border-primary-100 transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500"
+              >
+                <div className="flex items-center justify-between">
+                  <span className="text-xs font-medium font-sans text-primary-600 bg-primary-50 group-hover:bg-white px-2.5 py-1 rounded-full transition-colors">
+                    {guide.readTime}
+                  </span>
+                  <ChevronRight
+                    className="w-4 h-4 text-neutral-300 group-hover:text-primary-500 transition-colors"
+                    aria-hidden="true"
+                  />
+                </div>
+                <div>
+                  <h3 className="font-sans font-semibold text-base text-neutral-950 leading-snug mb-2">
+                    {guide.title}
+                  </h3>
+                  <p className="font-serif text-sm text-neutral-500 leading-relaxed">
+                    {guide.excerpt}
+                  </p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── 7. State Selector ─────────────────────────────────────────────── */}
+      <section
+        className="bg-primary-50 py-16 lg:py-20"
+        aria-labelledby="state-selector-heading"
+      >
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-xl mx-auto text-center">
+            <h2
+              id="state-selector-heading"
+              className="font-sans font-semibold text-3xl text-neutral-950 mb-3"
+            >
+              Find Resources in Your State
+            </h2>
+            <p className="font-serif text-neutral-500 text-lg mb-8">
+              State-specific laws, deadlines, and guidance for California and Arizona.
+            </p>
+            <StateSelector navigateOnSelect className="max-w-md mx-auto" />
+            <p className="mt-4 text-xs text-neutral-500 font-serif">
+              Laws vary by state. The information provided is general in nature. Consult a licensed
+              attorney in your state for specific guidance.
+            </p>
+          </div>
+        </div>
+      </section>
+    </>
+  )
 }
