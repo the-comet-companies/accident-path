@@ -125,6 +125,85 @@ cms.getGuide(slug)           cms.getAllGuides()
 
 ---
 
+---
+
+## DEV-03: Supabase Schema (Leads, Tools, Journal)
+
+### Supabase Project
+- **Project:** `accident-path` (`ccprakxoshdfqpipcyvo`) — `us-east-1`, ACTIVE_HEALTHY
+- **URL:** `https://ccprakxoshdfqpipcyvo.supabase.co`
+- **Credentials:** stored in `.env.local` (gitignored)
+
+### Tables Applied
+
+#### `intake_sessions`
+Lead capture from the Find Help wizard.
+
+| Column | Type | Notes |
+|--------|------|-------|
+| id | uuid | PK, auto-generated |
+| accident_type | text | not null |
+| accident_date | text | |
+| city | text | |
+| state | text | check: CA or AZ |
+| injuries | text[] | |
+| medical | text | |
+| police_report | boolean | |
+| insurance | text | |
+| work_impact | text | |
+| urgency_factors | text[] | |
+| name / email / phone | text | nullable |
+| consent | boolean | not null, default false |
+| utm_source/medium/campaign/content/term | text | UTM tracking |
+| created_at | timestamptz | auto |
+
+#### `tool_submissions`
+Records every interactive tool interaction.
+
+| Column | Type | Notes |
+|--------|------|-------|
+| id | uuid | PK |
+| tool_slug | text | not null |
+| answers | jsonb | not null, default `{}` |
+| result_summary | text | |
+| created_at | timestamptz | auto |
+
+#### `journal_entries`
+Daily injury/treatment journal entries.
+
+| Column | Type | Notes |
+|--------|------|-------|
+| id | uuid | PK |
+| session_id | uuid | FK → intake_sessions, on delete set null |
+| date | date | not null |
+| pain_level | integer | not null, check 1–10 |
+| symptoms / treatments / medications / limitations | text[] | |
+| notes | text | |
+| created_at | timestamptz | auto |
+
+### Indexes
+- `intake_sessions`: state, accident_type, created_at
+- `tool_submissions`: tool_slug, created_at
+- `journal_entries`: session_id, created_at
+
+### RLS
+All three tables have Row Level Security enabled with a `"allow public inserts"` policy granting `anon` role insert access.
+
+### Client (`lib/supabase.ts`)
+```ts
+import { createClient } from '@supabase/supabase-js'
+export const supabase = createClient(
+  process.env.NEXT_PUBLIC_SUPABASE_URL!,
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+)
+```
+
+### Verification
+- `npx tsc --noEmit` — clean
+- Committed and pushed to `origin/staging`
+
+---
+
 ## Current State (End of Session)
 
 | Item | Status |
@@ -140,6 +219,10 @@ cms.getGuide(slug)           cms.getAllGuides()
 | Folder structure (all routes) | ✓ |
 | Zod type modules (6 files) | ✓ |
 | JSON CMS loader | ✓ |
+| Supabase project connected | ✓ |
+| intake_sessions table + RLS | ✓ |
+| tool_submissions table + RLS | ✓ |
+| journal_entries table + RLS | ✓ |
 
 ## Next Steps
 
