@@ -331,7 +331,7 @@ export default function Home() {
           <div className="mt-12 text-center pt-8 border-t border-white/10">
             <Link
               href="/find-help"
-              className="inline-flex items-center justify-center gap-2 rounded-lg font-sans font-semibold px-8 py-4 text-lg min-h-[52px] bg-white text-primary-900 hover:bg-primary-50 transition-colors duration-150"
+              className="inline-flex items-center justify-center gap-2 rounded-lg font-sans font-semibold px-8 py-4 text-lg min-h-[52px] border border-white/25 text-white/80 bg-transparent hover:bg-white/10 hover:border-white/40 transition-colors duration-150"
             >
               Start Your Free Accident Check
             </Link>
