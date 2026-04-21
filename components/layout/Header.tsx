@@ -61,6 +61,7 @@ type OpenMenu = 'accidents' | 'states' | null
 export function Header() {
   const [openMenu, setOpenMenu] = useState<OpenMenu>(null)
   const menuRef = useRef<HTMLDivElement>(null)
+  const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
@@ -76,8 +77,22 @@ export function Header() {
     return () => {
       document.removeEventListener('mousedown', handleClickOutside)
       document.removeEventListener('keydown', handleEscape)
+      if (closeTimer.current) clearTimeout(closeTimer.current)
     }
   }, [])
+
+  function openOnHover(menu: OpenMenu) {
+    if (closeTimer.current) clearTimeout(closeTimer.current)
+    setOpenMenu(menu)
+  }
+
+  function scheduleClose() {
+    closeTimer.current = setTimeout(() => setOpenMenu(null), 180)
+  }
+
+  function cancelClose() {
+    if (closeTimer.current) clearTimeout(closeTimer.current)
+  }
 
   function toggle(menu: OpenMenu) {
     setOpenMenu(prev => (prev === menu ? null : menu))
@@ -103,6 +118,8 @@ export function Header() {
               aria-expanded={openMenu === 'accidents'}
               aria-haspopup="true"
               onClick={() => toggle('accidents')}
+              onMouseEnter={() => openOnHover('accidents')}
+              onMouseLeave={scheduleClose}
               className="flex items-center gap-1 px-3 py-2 text-sm font-medium text-neutral-700 hover:text-primary-600 rounded-md hover:bg-primary-50 transition-colors"
             >
               Accident Types
@@ -136,6 +153,8 @@ export function Header() {
               aria-expanded={openMenu === 'states'}
               aria-haspopup="true"
               onClick={() => toggle('states')}
+              onMouseEnter={() => openOnHover('states')}
+              onMouseLeave={scheduleClose}
               className="flex items-center gap-1 px-3 py-2 text-sm font-medium text-neutral-700 hover:text-primary-600 rounded-md hover:bg-primary-50 transition-colors"
             >
               State Guides
@@ -168,6 +187,8 @@ export function Header() {
           <div
             role="region"
             aria-label="Accident types menu"
+            onMouseEnter={cancelClose}
+            onMouseLeave={scheduleClose}
             className="absolute left-0 right-0 top-16 bg-surface-card border-b border-neutral-100 shadow-lg z-40 hidden lg:block"
           >
             <div className="max-w-7xl mx-auto px-8 py-6">
@@ -205,6 +226,8 @@ export function Header() {
           <div
             role="region"
             aria-label="State guides menu"
+            onMouseEnter={cancelClose}
+            onMouseLeave={scheduleClose}
             className="absolute left-0 right-0 top-16 bg-surface-card border-b border-neutral-100 shadow-lg z-40 hidden lg:block"
           >
             <div className="max-w-7xl mx-auto px-8 py-6">
