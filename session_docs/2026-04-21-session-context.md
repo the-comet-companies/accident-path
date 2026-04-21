@@ -189,6 +189,27 @@ Yesterday's session (April 20) completed DEV-10 and DEV-11 — a full sweep of a
 
 **Commits pushed:** `8cf6d38` → `f3793de` (5 commits on main)
 
+---
+
+### Featured Tools Redesign
+
+- **Brainstormed** via visual companion — 6 options shown (A–F), approved Option E (Full-Width Rows) with plain text CTA links
+- **Spec:** `docs/superpowers/specs/2026-04-21-featured-tools-redesign.md`
+- **Plan:** `docs/superpowers/plans/2026-04-21-featured-tools-redesign.md`
+- **Executed** via subagent-driven development (1 task, 2-stage review)
+- **`app/page.tsx`** — Featured Tools section fully replaced:
+  - `FEATURED_TOOLS` array trimmed to `{ slug, title, description }` — `icon` field removed
+  - `FeaturedTool` interface added for type safety
+  - `TOOL_ICONS: Record<string, React.ReactNode>` lookup added (mirrors `ACCIDENT_ICONS` pattern)
+  - `ToolCard` import removed (component untouched, still used on `/tools` index)
+  - Section markup: `flex flex-col gap-3` horizontal rows on `bg-surface-info`
+  - Amber eyebrow "Free Tools" with flanking lines; `<h2>` "Interactive Accident Tools"
+  - Each row: `<Link>` with `aria-label`, teal icon tile (`bg-primary-50 border-primary-100 rounded-xl w-[46px] h-[46px]`), bold title, serif italic description, plain "Try It Free →" text CTA (`text-primary-600`)
+  - Hover: `border-primary-200 shadow-[0_4px_16px_rgba(40,145,199,0.09)]`
+  - `data-animate="tool-card"` preserved — GSAP stagger unchanged
+
+**Commits pushed:** `6f78698` → `f9d51d9` (2 commits on main)
+
 ## Architecture Reminders (Key Decisions)
 
 - **HeroVisual is purely decorative** — all content (h1, CTAs, copy) remains in `app/page.tsx`, fully accessible without JS
@@ -196,6 +217,7 @@ Yesterday's session (April 20) completed DEV-10 and DEV-11 — a full sweep of a
 - **Trust Row partial-height dividers** — use absolutely-positioned `<span>` (not `border-r`) so dividers don't span the full grid cell height.
 - **Accident Grid orphan fix** — `last:col-span-2 sm:last:col-span-1` on card `<Link>` centers the 5th card on 2-col mobile grid without affecting sm/lg layouts.
 - **react-icons vs lucide-react** — lucide-react for UI icons (header, tools, etc.), react-icons FA Solid for accident-type icons where silhouette distinction matters (car vs truck).
+- **Featured Tools rows** — each row is a `<Link>` (not a ToolCard wrapper). `aria-label` added for screen reader clarity. Design tokens (`bg-primary-50`, `border-primary-100`) used instead of hardcoded hex.
 
 ---
 
