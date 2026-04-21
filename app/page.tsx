@@ -49,7 +49,13 @@ const ACCIDENT_ICONS: Record<string, React.ReactNode> = {
   workplace:       <FaHardHat       className="w-5 h-5" aria-hidden="true" />,
 }
 
-const FEATURED_TOOLS = [
+interface FeaturedTool {
+  slug: string
+  title: string
+  description: string
+}
+
+const FEATURED_TOOLS: FeaturedTool[] = [
   { slug: 'statute-of-limitations', title: 'Statute of Limitations Calculator', description: 'Understand the filing deadlines that may apply to your accident type in California or Arizona.' },
   { slug: 'evidence-checklist',     title: 'Evidence Checklist Generator',      description: 'Get a personalized checklist of evidence to gather based on your specific accident type.'   },
   { slug: 'medical-cost-estimator', title: 'Medical Cost Estimator',            description: 'Understand the range of typical medical costs associated with common injury types.'           },
@@ -58,11 +64,11 @@ const FEATURED_TOOLS = [
 ]
 
 const TOOL_ICONS: Record<string, React.ReactNode> = {
-  'statute-of-limitations':  <Calculator    className="w-[19px] h-[19px]" aria-hidden="true" />,
-  'evidence-checklist':      <ClipboardList className="w-[19px] h-[19px]" aria-hidden="true" />,
-  'medical-cost-estimator':  <DollarSign    className="w-[19px] h-[19px]" aria-hidden="true" />,
-  'insurance-claim-tracker': <FileText      className="w-[19px] h-[19px]" aria-hidden="true" />,
-  'injury-journal':          <BookOpen      className="w-[19px] h-[19px]" aria-hidden="true" />,
+  'statute-of-limitations':  <Calculator    className="w-5 h-5" aria-hidden="true" />,
+  'evidence-checklist':      <ClipboardList className="w-5 h-5" aria-hidden="true" />,
+  'medical-cost-estimator':  <DollarSign    className="w-5 h-5" aria-hidden="true" />,
+  'insurance-claim-tracker': <FileText      className="w-5 h-5" aria-hidden="true" />,
+  'injury-journal':          <BookOpen      className="w-5 h-5" aria-hidden="true" />,
 }
 
 const FEATURED_GUIDES = [
@@ -393,16 +399,17 @@ export default function Home() {
                 key={tool.slug}
                 href={`/tools/${tool.slug}`}
                 data-animate="tool-card"
-                className="group flex items-center gap-4 bg-white border border-[#ddeef7] rounded-[14px] px-[22px] py-[18px] hover:border-primary-200 hover:shadow-[0_4px_16px_rgba(40,145,199,0.09)] transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500"
+                aria-label={`${tool.title} — Try it free`}
+                className="group flex items-center gap-4 bg-white border border-primary-100 rounded-2xl px-5 py-4 hover:border-primary-200 hover:shadow-[0_4px_16px_rgba(40,145,199,0.09)] transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500"
               >
-                <div className="w-[46px] h-[46px] rounded-[12px] bg-[#eff8fd] border border-[#cce9f6] flex items-center justify-center shrink-0 text-primary-500">
+                <div className="w-[46px] h-[46px] rounded-xl bg-primary-50 border border-primary-100 flex items-center justify-center shrink-0 text-primary-500">
                   {TOOL_ICONS[tool.slug]}
                 </div>
                 <div className="flex-1 min-w-0">
                   <p className="font-sans font-bold text-sm text-neutral-950 leading-snug">
                     {tool.title}
                   </p>
-                  <p className="font-serif text-xs text-neutral-500 leading-relaxed mt-0.5">
+                  <p className="font-serif italic text-xs text-neutral-500 leading-relaxed mt-0.5">
                     {tool.description}
                   </p>
                 </div>
