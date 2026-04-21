@@ -267,7 +267,7 @@ export default function Home() {
       {/* ── 3. How It Works ───────────────────────────────────────────────── */}
       <section
         className="text-white py-16 lg:py-24"
-        style={{ background: 'linear-gradient(180deg, #2e6a88 0%, #1b4a63 50%, #2e6a88 100%)' }}
+        style={{ background: 'linear-gradient(180deg, #0C2D3E 0%, #0f3d55 50%, #1a5470 100%)' }}
         aria-labelledby="how-it-works-heading"
       >
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
