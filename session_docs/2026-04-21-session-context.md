@@ -133,6 +133,37 @@ Yesterday's session (April 20) completed DEV-10 and DEV-11 — a full sweep of a
 
 ---
 
+### Header Hover Dropdowns
+
+- **`components/layout/Header.tsx`** — Accident Types and State Guides dropdowns now open on hover (not click-only)
+- `openOnHover(menu)` / `scheduleClose()` / `cancelClose()` pattern with 180ms grace period timer
+- `onMouseEnter` on each trigger button + each dropdown panel; `onMouseLeave` schedules close
+- Click + Escape still work (accessibility preserved)
+- Timer cleaned up on unmount
+
+**Commit:** `b2d73dd`
+
+---
+
+### How It Works Redesign
+
+- **Brainstormed** via visual companion — approved: layout B (icon-centered dark columns) + gradient bridge bg + white/frosted icon tiles
+- **Spec:** `docs/superpowers/specs/2026-04-21-how-it-works-redesign.md`
+- **Plan:** `docs/superpowers/plans/2026-04-21-how-it-works-redesign.md`
+- **Executed** via subagent-driven development (2 tasks, 2-stage review each)
+- **`app/page.tsx`** — How It Works section fully replaced:
+  - Background: `linear-gradient(180deg, #0C2D3E 0%, #0f3d55 50%, #1a5470 100%)` — starts at primary-900 (seamless from trust row), gentle lift downward
+  - Amber eyebrow "How It Works" with flanking `<span>` lines
+  - New heading: "From Accident to Clarity in 3 Steps"
+  - 3 centered columns: amber step badge → frosted white icon tile (`bg-white/[0.08]`, `border-white/[0.18]`, `rounded-[16px]`) → title → Merriweather italic description
+  - Partial-height dividers `bg-white/10`, `max-md:hidden`
+  - CTA: ghost button matching hero secondary style (`border-white/25 text-white/80 hover:bg-white/10 hover:border-white/40`)
+  - `HOW_IT_WORKS` data array removed (inlined)
+  - `data-animate="hiw-heading"` on heading block
+- **`components/home/HomeAnimations.tsx`** — replaced old `reveal()` calls with explicit `gsap.fromTo` blocks for `hiw-heading` (fade up) and `step-item` (spring up with scale, stagger 0.12)
+
+**Commits pushed:** `109908a` → `d37b8fd` (5 commits on main)
+
 ## Architecture Reminders (Key Decisions)
 
 - **HeroVisual is purely decorative** — all content (h1, CTAs, copy) remains in `app/page.tsx`, fully accessible without JS
