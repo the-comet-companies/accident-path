@@ -260,11 +260,20 @@ export default function Home() {
                 key={title}
                 data-animate="trust-item"
                 className={[
-                  'flex flex-col items-center text-center gap-4 px-6 py-12 lg:py-16',
-                  i < 3 ? `border-r border-white/[0.07]${i === 1 ? ' max-lg:border-r-0' : ''}` : '',
+                  'relative flex flex-col items-center text-center gap-4 px-6 py-12 lg:py-16',
                   i < 2 ? 'border-b lg:border-b-0 border-white/[0.07]' : '',
                 ].filter(Boolean).join(' ')}
               >
+                {/* Partial-height vertical divider */}
+                {i < 3 && (
+                  <span
+                    aria-hidden="true"
+                    className={[
+                      'absolute right-0 top-[20%] h-[60%] w-px bg-white/[0.07]',
+                      i === 1 ? 'max-lg:hidden' : '',
+                    ].filter(Boolean).join(' ')}
+                  />
+                )}
                 <div className="w-[52px] h-[52px] rounded-[14px] bg-amber-500/12 border border-amber-500/25 flex items-center justify-center shrink-0">
                   <Icon className="w-[22px] h-[22px] text-amber-500" aria-hidden="true" />
                 </div>
