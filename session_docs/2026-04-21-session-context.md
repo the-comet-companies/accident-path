@@ -164,11 +164,38 @@ Yesterday's session (April 20) completed DEV-10 and DEV-11 — a full sweep of a
 
 **Commits pushed:** `109908a` → `d37b8fd` (5 commits on main)
 
+---
+
+### Accident Type Grid Redesign
+
+- **Brainstormed** via visual companion — approved: Option C "Dramatic Reveal" gradient bridge, compact icon+title cards in a lifted white panel
+- **Key decisions:**
+  - Eyebrow: "What Happened?" (conversational, user-first)
+  - Icons: `react-icons` Font Awesome Solid (`FaCar`, `FaTruck`, `FaMotorcycle`, `FaPersonFalling`, `FaHardHat`) — distinct car vs truck silhouettes
+  - Cards: compact `<Link>` (icon tile + title + hover arrow `→`) — no description, no `AccidentCard` component
+- **Spec:** `docs/superpowers/specs/2026-04-21-accident-grid-redesign.md`
+- **Plan:** `docs/superpowers/plans/2026-04-21-accident-grid-redesign.md`
+- **Executed** via subagent-driven development (2 tasks, 2-stage review each)
+- **`package.json`** — added `react-icons` dependency (v5.6.0, tree-shakeable)
+- **`app/page.tsx`** — Accident Type Grid section fully replaced:
+  - Background: `linear-gradient(180deg, #1a5470 0%, #1a5470 14%, #1f6b90 28%, #9dc9e2 50%, #d4eaf5 66%, #EAF6FB 80%, #f3f6f9 100%)` — dramatic dark→light sweep, seamlessly bridges from HIW bottom (#1a5470) to Featured Tools (`bg-surface-info #EAF6FB`)
+  - Heading block: amber eyebrow, white h2, Merriweather italic subtext
+  - Lifted white card panel: `bg-white rounded-2xl shadow-[0_12px_40px_rgba(0,0,0,0.13)] border border-white/60 p-6`
+  - Grid: `grid-cols-2 sm:grid-cols-3 lg:grid-cols-5` — 5th card gets `last:col-span-2 sm:last:col-span-1` to center orphan on mobile
+  - `FEATURED_ACCIDENTS` array trimmed to `{ slug, title }` only; `ACCIDENT_ICONS` record added for slug→icon lookup
+  - Removed 5 unused Lucide imports (`Car, Truck, Bike, AlertTriangle, Briefcase`) and `AccidentCard` import
+  - `data-animate="accident-card"` preserved — existing GSAP stagger still works
+  - "View all" link: `text-primary-700` (contrast on light bg), `min-h-[44px] sm:min-h-0` (WCAG touch target)
+
+**Commits pushed:** `8cf6d38` → `f3793de` (5 commits on main)
+
 ## Architecture Reminders (Key Decisions)
 
 - **HeroVisual is purely decorative** — all content (h1, CTAs, copy) remains in `app/page.tsx`, fully accessible without JS
 - **No Three.js** — CSS 3D + SVG + GSAP only. Keeps Lighthouse 90+ target intact.
 - **Trust Row partial-height dividers** — use absolutely-positioned `<span>` (not `border-r`) so dividers don't span the full grid cell height.
+- **Accident Grid orphan fix** — `last:col-span-2 sm:last:col-span-1` on card `<Link>` centers the 5th card on 2-col mobile grid without affecting sm/lg layouts.
+- **react-icons vs lucide-react** — lucide-react for UI icons (header, tools, etc.), react-icons FA Solid for accident-type icons where silhouette distinction matters (car vs truck).
 
 ---
 
