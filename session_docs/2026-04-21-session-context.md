@@ -233,6 +233,23 @@ Yesterday's session (April 20) completed DEV-10 and DEV-11 — a full sweep of a
 
 **Commits pushed:** `f26f721` (guides redesign, merged to main)
 
+---
+
+### State Selector Redesign
+
+- **Brainstormed** via visual companion — 4 options (A: two state cards, B: split panel, C: dark centered, D: upgraded dropdown). Approved Option D1 (no icons, state name pills above existing StateSelector dropdown)
+- **`app/page.tsx`** — State Selector section updated:
+  - Background: `bg-primary-50` (#EAF6FB) → `bg-surface-page` (#F3F6F9) — seamless continuation from guides section above
+  - Added amber eyebrow "Your State" with flanking `<span>` lines
+  - Heading: `font-semibold text-3xl` → `font-bold text-3xl leading-tight tracking-tight`
+  - Subtext: `font-serif text-lg` → `font-serif italic text-sm` (consistent with all other sections)
+  - Two `<Link>` pill buttons ("California" / "Arizona") above the dropdown — direct navigation to `/states/california` and `/states/arizona`, styled `bg-surface-card border-primary-100 rounded-full`, hover `bg-primary-50 border-primary-200`
+  - "or" text separator between pills (`text-xs text-neutral-500 font-semibold`)
+  - `StateSelector navigateOnSelect` preserved unchanged below the pills
+  - Disclaimer: added `italic`
+
+**Commits pushed:** `2fcfcc8` (state selector redesign, merged to main)
+
 ## Architecture Reminders (Key Decisions)
 
 - **HeroVisual is purely decorative** — all content (h1, CTAs, copy) remains in `app/page.tsx`, fully accessible without JS
