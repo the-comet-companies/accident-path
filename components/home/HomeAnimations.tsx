@@ -17,10 +17,6 @@ export function HomeAnimations() {
         .from('#hero-heading',                 { opacity: 0, y: 28, duration: 0.6  }, '-=0.2')
         .from('[data-animate="hero-body"]',    { opacity: 0, y: 18, duration: 0.5  }, '-=0.3')
         .from('[data-animate="hero-ctas"]',    { opacity: 0, y: 14, duration: 0.4  }, '-=0.25')
-        .from('[data-animate="hero-card"]',    { opacity: 0, x: 32, duration: 0.7  }, '-=0.55')
-        .from('[data-animate="hero-card-item"]', {
-          opacity: 0, x: 18, duration: 0.4, stagger: 0.13,
-        }, '-=0.45')
 
       // fromTo with immediateRender:false prevents GSAP from hiding elements on
       // mount — they only become invisible right as their animation starts playing.
