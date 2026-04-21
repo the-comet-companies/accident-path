@@ -227,21 +227,21 @@ export default function Home() {
           {/* Left panel — brand statement */}
           <div
             data-animate="trust-left"
-            className="lg:w-[28%] flex-shrink-0 flex flex-col justify-center gap-4 px-8 lg:px-10 py-12 lg:py-16 border-b lg:border-b-0 lg:border-r border-white/[0.08]"
+            className="lg:w-[28%] shrink-0 flex flex-col justify-center gap-4 px-8 lg:px-10 py-12 lg:py-16 border-b lg:border-b-0 lg:border-r border-white/[0.08]"
           >
             <div className="flex items-center gap-2 text-amber-500 text-xs font-semibold uppercase tracking-widest font-sans">
               <span className="w-5 h-px bg-amber-500 shrink-0" aria-hidden="true" />
               Why AccidentPath
             </div>
-            <p className="font-sans font-bold text-xl lg:text-2xl text-white leading-tight tracking-tight">
+            <h2 className="font-sans font-bold text-xl lg:text-2xl text-white leading-tight tracking-tight">
               Your path to recovery starts here.
-            </p>
+            </h2>
             <p className="font-serif italic text-sm text-white/45 leading-relaxed">
               Clear guidance, smart next steps, and help finding the right lawyer if you need one.
             </p>
             <Link
               href="/find-help"
-              className="inline-flex items-center gap-2 text-primary-300 text-sm font-semibold font-sans group w-fit"
+              className="inline-flex items-center gap-2 text-primary-300 hover:text-white transition-colors text-sm font-semibold font-sans group w-fit"
             >
               Start Free Accident Check
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
@@ -261,11 +261,11 @@ export default function Home() {
                 data-animate="trust-item"
                 className={[
                   'flex flex-col items-center text-center gap-4 px-6 py-12 lg:py-16',
-                  i < 3 ? 'border-r border-white/[0.07]' : '',
+                  i < 3 ? `border-r border-white/[0.07]${i === 1 ? ' max-lg:border-r-0' : ''}` : '',
                   i < 2 ? 'border-b lg:border-b-0 border-white/[0.07]' : '',
                 ].filter(Boolean).join(' ')}
               >
-                <div className="w-[52px] h-[52px] rounded-[14px] bg-amber-500/[0.12] border border-amber-500/25 flex items-center justify-center shrink-0">
+                <div className="w-[52px] h-[52px] rounded-[14px] bg-amber-500/12 border border-amber-500/25 flex items-center justify-center shrink-0">
                   <Icon className="w-[22px] h-[22px] text-amber-500" aria-hidden="true" />
                 </div>
                 <div>
