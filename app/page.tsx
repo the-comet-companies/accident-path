@@ -267,7 +267,7 @@ export default function Home() {
       {/* ── 3. How It Works ───────────────────────────────────────────────── */}
       <section
         className="text-white py-16 lg:py-24"
-        style={{ background: 'linear-gradient(180deg, #0a2535 0%, #1b4a63 40%, #2e6a88 100%)' }}
+        style={{ background: 'linear-gradient(180deg, #2e6a88 0%, #1b4a63 50%, #2e6a88 100%)' }}
         aria-labelledby="how-it-works-heading"
       >
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -310,8 +310,8 @@ export default function Home() {
                   />
                 )}
                 {/* Step badge */}
-                <div className="w-7 h-7 rounded-full bg-white/10 border border-white/25 flex items-center justify-center shrink-0 mb-4">
-                  <span className="text-white text-xs font-bold font-sans">{step}</span>
+                <div className="w-7 h-7 rounded-full bg-amber-500/[0.12] border border-amber-500/25 flex items-center justify-center shrink-0 mb-4">
+                  <span className="text-amber-500 text-xs font-bold font-sans">{step}</span>
                 </div>
                 {/* Icon tile */}
                 <div className="w-[58px] h-[58px] rounded-[16px] bg-white/[0.08] border border-white/[0.18] flex items-center justify-center shrink-0 mb-4">
