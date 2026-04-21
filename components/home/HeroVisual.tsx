@@ -121,7 +121,7 @@ export function HeroVisual() {
         {/* Glow halo */}
         <div
           ref={haloRef}
-          className="absolute w-64 h-64 rounded-full"
+          className="absolute w-80 h-80 rounded-full"
           style={{
             background: 'radial-gradient(circle, rgba(40,145,199,0.2) 0%, transparent 70%)',
             opacity: 0.7,
@@ -131,7 +131,7 @@ export function HeroVisual() {
         {/* Orbit ring 1 — teal, clockwise */}
         <div
           ref={orbit1Ref}
-          className="absolute w-[210px] h-[210px] rounded-full border border-primary-500/[0.15]"
+          className="absolute w-[270px] h-[270px] rounded-full border border-primary-500/[0.15]"
         >
           <div
             className="absolute w-1.5 h-1.5 rounded-full bg-primary-400"
@@ -142,7 +142,7 @@ export function HeroVisual() {
         {/* Orbit ring 2 — amber, counter-clockwise */}
         <div
           ref={orbit2Ref}
-          className="absolute w-[290px] h-[290px] rounded-full border border-amber-500/[0.10]"
+          className="absolute w-[370px] h-[370px] rounded-full border border-amber-500/[0.10]"
         >
           <div
             className="absolute w-1.5 h-1.5 rounded-full bg-amber-500"
@@ -159,7 +159,7 @@ export function HeroVisual() {
             transformStyle: 'preserve-3d',
           }}
         >
-          <svg width="148" height="178" viewBox="0 0 140 168" fill="none" aria-hidden="true">
+          <svg width="200" height="240" viewBox="0 0 140 168" fill="none" aria-hidden="true">
             <defs>
               <linearGradient id="hv-sg1" x1="0" y1="0" x2="1" y2="1">
                 <stop offset="0%"   stopColor="#4BA8D4" />
