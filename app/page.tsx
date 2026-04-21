@@ -221,7 +221,7 @@ export default function Home() {
       </section>
 
       {/* ── 2. Trust Row ──────────────────────────────────────────────────── */}
-      <section className="bg-primary-900 text-white" aria-label="Trust indicators">
+      <section className="bg-primary-900 text-white border-t border-white/[0.08]" aria-label="Trust indicators">
         <div className="flex flex-col lg:flex-row">
 
           {/* Left panel — brand statement */}
