@@ -1,11 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import {
-  Car,
-  Truck,
-  Bike,
-  AlertTriangle,
-  Briefcase,
   Calculator,
   ClipboardList,
   DollarSign,
@@ -21,9 +16,10 @@ import {
   BadgeCheck,
   ArrowRight,
 } from 'lucide-react'
+import { FaCar, FaTruck, FaMotorcycle, FaHardHat } from 'react-icons/fa'
+import { FaPersonFalling } from 'react-icons/fa6'
 import { CTAButton } from '@/components/ui/CTAButton'
 import { StateSelector } from '@/components/ui/StateSelector'
-import { AccidentCard } from '@/components/content/AccidentCard'
 import { ToolCard } from '@/components/content/ToolCard'
 import { buildMetaTags } from '@/components/seo/MetaTags'
 import { HomeAnimations } from '@/components/home/HomeAnimations'
@@ -39,42 +35,20 @@ export const metadata: Metadata = buildMetaTags({
 // ─── Static featured data ────────────────────────────────────────────────────
 
 const FEATURED_ACCIDENTS = [
-  {
-    slug: 'car',
-    title: 'Car Accidents',
-    description:
-      'Learn what steps to take, what to document, and what your options may be after a car accident.',
-    icon: <Car className="w-5 h-5" aria-hidden="true" />,
-  },
-  {
-    slug: 'truck',
-    title: 'Truck Accidents',
-    description:
-      'Commercial truck crashes involve multiple parties. Learn how these cases differ from standard car accidents.',
-    icon: <Truck className="w-5 h-5" aria-hidden="true" />,
-  },
-  {
-    slug: 'motorcycle',
-    title: 'Motorcycle Accidents',
-    description:
-      'Motorcyclists face unique risks and legal considerations. Understand your options after a crash.',
-    icon: <Bike className="w-5 h-5" aria-hidden="true" />,
-  },
-  {
-    slug: 'slip-and-fall',
-    title: 'Slip & Fall',
-    description:
-      'Premises liability cases hinge on evidence. Learn what to document and when to act.',
-    icon: <AlertTriangle className="w-5 h-5" aria-hidden="true" />,
-  },
-  {
-    slug: 'workplace',
-    title: 'Workplace Injuries',
-    description:
-      "Workers' comp and third-party claims have different rules. Understand your options.",
-    icon: <Briefcase className="w-5 h-5" aria-hidden="true" />,
-  },
+  { slug: 'car',           title: 'Car Accidents'      },
+  { slug: 'truck',         title: 'Truck Accidents'    },
+  { slug: 'motorcycle',    title: 'Motorcycle'         },
+  { slug: 'slip-and-fall', title: 'Slip & Fall'        },
+  { slug: 'workplace',     title: 'Workplace Injuries' },
 ]
+
+const ACCIDENT_ICONS: Record<string, React.ReactNode> = {
+  car:             <FaCar           className="w-5 h-5" aria-hidden="true" />,
+  truck:           <FaTruck         className="w-5 h-5" aria-hidden="true" />,
+  motorcycle:      <FaMotorcycle    className="w-5 h-5" aria-hidden="true" />,
+  'slip-and-fall': <FaPersonFalling className="w-5 h-5" aria-hidden="true" />,
+  workplace:       <FaHardHat       className="w-5 h-5" aria-hidden="true" />,
+}
 
 const FEATURED_TOOLS = [
   {
@@ -342,42 +316,65 @@ export default function Home() {
 
       {/* ── 4. Accident Type Grid ─────────────────────────────────────────── */}
       <section
-        className="bg-surface-card py-16 lg:py-24"
+        className="py-16 lg:py-24"
+        style={{ background: 'linear-gradient(180deg, #1a5470 0%, #1a5470 14%, #1f6b90 28%, #9dc9e2 50%, #d4eaf5 66%, #EAF6FB 80%, #f3f6f9 100%)' }}
         aria-labelledby="accident-types-heading"
       >
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
-            <div>
-              <h2
-                id="accident-types-heading"
-                className="font-sans font-semibold text-3xl lg:text-4xl text-neutral-950 mb-2"
-              >
-                Accident Type Guides
-              </h2>
-              <p className="font-serif text-neutral-500 text-lg">
-                In-depth educational resources for the most common accident types.
-              </p>
+
+          {/* Heading block */}
+          <div className="text-center mb-10">
+            <div className="flex items-center justify-center gap-2 text-amber-500 text-xs font-semibold uppercase tracking-widest font-sans mb-4">
+              <span className="w-5 h-px bg-amber-500 shrink-0" aria-hidden="true" />
+              What Happened?
+              <span className="w-5 h-px bg-amber-500 shrink-0" aria-hidden="true" />
             </div>
+            <h2
+              id="accident-types-heading"
+              className="font-sans font-bold text-3xl lg:text-4xl text-white leading-tight tracking-tight mb-3"
+            >
+              Accident Type Guides
+            </h2>
+            <p className="font-serif italic text-base text-white/45 leading-relaxed max-w-xl mx-auto">
+              In-depth educational resources for the most common accident types.
+            </p>
+          </div>
+
+          {/* Lifted white card panel */}
+          <div className="bg-white rounded-2xl shadow-[0_12px_40px_rgba(0,0,0,0.13)] border border-white/60 p-6">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2">
+              {FEATURED_ACCIDENTS.map((accident) => (
+                <Link
+                  key={accident.slug}
+                  href={`/accidents/${accident.slug}`}
+                  data-animate="accident-card"
+                  className="group flex flex-col items-center text-center gap-2 p-4 rounded-xl hover:bg-primary-50 transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500"
+                >
+                  <div className="w-11 h-11 rounded-[11px] bg-primary-50 group-hover:bg-white flex items-center justify-center text-primary-500 shrink-0 transition-colors">
+                    {ACCIDENT_ICONS[accident.slug]}
+                  </div>
+                  <span className="font-sans font-semibold text-sm text-neutral-950 leading-snug">
+                    {accident.title}
+                  </span>
+                  <span className="text-[10px] text-neutral-300 group-hover:text-primary-500 transition-colors" aria-hidden="true">
+                    →
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* View all link */}
+          <div className="text-center mt-6">
             <Link
               href="/accidents"
-              className="inline-flex items-center gap-1.5 text-sm font-medium text-primary-600 hover:text-primary-700 transition-colors shrink-0 min-h-[44px] sm:min-h-0"
+              className="inline-flex items-center gap-1.5 text-sm font-semibold font-sans text-primary-600 hover:text-primary-700 transition-colors"
             >
-              View all accident types
+              View all 13 accident types
               <ChevronRight className="w-4 h-4" aria-hidden="true" />
             </Link>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
-            {FEATURED_ACCIDENTS.map((accident) => (
-              <div key={accident.slug} data-animate="accident-card">
-                <AccidentCard
-                  title={accident.title}
-                  description={accident.description}
-                  href={`/accidents/${accident.slug}`}
-                  icon={accident.icon}
-                />
-              </div>
-            ))}
-          </div>
+
         </div>
       </section>
 
