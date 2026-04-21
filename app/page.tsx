@@ -516,21 +516,6 @@ export default function Home() {
             <p className="font-serif italic text-sm text-neutral-500 mb-8">
               State-specific laws, deadlines, and guidance for California and Arizona.
             </p>
-            <div className="flex items-center justify-center gap-3 mb-5 flex-wrap">
-              <Link
-                href="/states/california"
-                className="bg-surface-card border border-primary-100 rounded-full px-6 py-2.5 text-sm font-semibold font-sans text-neutral-950 hover:border-primary-200 hover:bg-primary-50 transition-colors"
-              >
-                California
-              </Link>
-              <span className="text-xs text-neutral-500 font-semibold font-sans">or</span>
-              <Link
-                href="/states/arizona"
-                className="bg-surface-card border border-primary-100 rounded-full px-6 py-2.5 text-sm font-semibold font-sans text-neutral-950 hover:border-primary-200 hover:bg-primary-50 transition-colors"
-              >
-                Arizona
-              </Link>
-            </div>
             <StateSelector navigateOnSelect className="max-w-md mx-auto" />
             <p className="mt-4 text-xs text-neutral-500 font-serif italic">
               Laws vary by state. The information provided is general in nature. Consult a licensed
