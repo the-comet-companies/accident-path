@@ -1,0 +1,121 @@
+{
+  "slug": "spinal",
+  "title": "Spinal Injuries",
+  "shortTitle": "Spinal Injuries",
+  "description": "Spinal cord and vertebral injuries are among the most serious consequences of accidents — potentially causing partial or complete paralysis, chronic pain, and lifelong disability. Whether caused by a car crash, fall, or workplace incident, the steps you take immediately after a spinal injury can have lasting consequences for your health and your legal options.",
+  "metaTitle": "Spinal Injury Accident Guide — Steps, Evidence & Legal Options",
+  "metaDescription": "Suffered a spinal injury in an accident? Get guidance on immediate steps, evidence to collect, insurance issues, and when to speak with an attorney.",
+  "icon": "zap",
+  "commonCauses": [
+    { "title": "Motor Vehicle Accidents", "description": "Car, truck, and motorcycle crashes account for nearly half of all spinal cord injuries — the violent force of impact compresses, fractures, or dislocates vertebrae." },
+    { "title": "Slip and Fall Accidents", "description": "Falls from heights or onto hard surfaces are a leading cause of vertebral fractures, especially in older adults and construction workers." },
+    { "title": "Construction and Workplace Accidents", "description": "Falls from scaffolding, ladders, or rooftops — and being struck by heavy equipment — frequently result in serious spinal trauma." },
+    { "title": "Diving and Swimming Accidents", "description": "Diving into shallow water or striking the bottom of a pool can cause catastrophic cervical spine injuries in seconds." },
+    { "title": "Sports and Recreational Injuries", "description": "Contact sports, ATV accidents, and high-impact recreational activities carry significant risk of vertebral injury." },
+    { "title": "Acts of Violence", "description": "Gunshot wounds and physical assaults are a cause of spinal cord injury and may support both criminal and civil legal action." }
+  ],
+  "likelyInjuries": [
+    { "slug": "traumatic-brain", "title": "Traumatic Brain Injury", "severity": "severe" },
+    { "slug": "broken-bones", "title": "Vertebral Fractures", "severity": "catastrophic" },
+    { "slug": "soft-tissue", "title": "Disc Herniation", "severity": "severe" },
+    { "slug": "whiplash", "title": "Whiplash", "severity": "moderate" }
+  ],
+  "immediateSteps": [
+    { "step": 1, "title": "Do not move the injured person — call 911", "description": "Suspected spinal injuries require immediate immobilization. Moving someone with a spinal injury before trained responders arrive can cause or worsen paralysis. Call 911 and keep the person still.", "urgency": "critical" },
+    { "step": 2, "title": "Do not remove helmets or restraints", "description": "If the person is wearing a helmet or is in a vehicle, do not attempt to remove them without professional guidance. Improper movement can cause permanent cord damage.", "urgency": "critical" },
+    { "step": 3, "title": "Ensure a medical record is created at the scene", "description": "Let paramedics evaluate and document the injury on-site. Their report links the incident to the injury and becomes part of the medical record.", "urgency": "critical" },
+    { "step": 4, "title": "Document the scene if you are physically able", "description": "If you or a bystander can safely do so, photograph the accident location, contributing hazards, vehicles, and any conditions that caused the injury.", "urgency": "important" },
+    { "step": 5, "title": "Collect witness information", "description": "Witnesses who saw the incident can provide independent accounts of how the injury occurred. Get names and contact information before anyone leaves the scene.", "urgency": "important" },
+    { "step": 6, "title": "Request copies of all emergency medical records", "description": "Emergency room records, paramedic reports, and imaging results from the day of the incident are foundational documents in any spinal injury claim.", "urgency": "critical" },
+    { "step": 7, "title": "Follow up with a spinal specialist immediately", "description": "ER care stabilizes the injury. You will need evaluation by a neurosurgeon or orthopedic spine specialist to fully assess the extent of the damage.", "urgency": "critical" },
+    { "step": 8, "title": "Begin documenting functional limitations", "description": "Keep a daily record of pain levels, mobility limitations, tasks you cannot perform, and assistance you require. This supports future claims for lost wages, care costs, and quality of life.", "urgency": "helpful" }
+  ],
+  "evidenceChecklist": [
+    {
+      "category": "Emergency & Acute Medical Records",
+      "priority": "critical",
+      "items": [
+        "Paramedic and ambulance reports from day of incident",
+        "Emergency room records and physician notes",
+        "MRI and CT scan reports of spine and surrounding structures",
+        "X-ray results showing vertebral alignment or fractures",
+        "Neurological assessment findings",
+        "Surgical records if spinal surgery was performed"
+      ]
+    },
+    {
+      "category": "At the Scene",
+      "priority": "critical",
+      "items": [
+        "Photos of the accident location and contributing hazards",
+        "Photos of the vehicle, equipment, or surface involved",
+        "Police or incident report number",
+        "Names and contact information of all witnesses",
+        "Surveillance or dashcam footage if available"
+      ]
+    },
+    {
+      "category": "Ongoing Medical Documentation",
+      "priority": "critical",
+      "items": [
+        "All spinal specialist, neurosurgeon, and orthopedic surgeon notes",
+        "Physical therapy and occupational therapy records",
+        "Pain management specialist records",
+        "Rehabilitation facility records",
+        "Adaptive equipment prescriptions and costs",
+        "Long-term care and life care plan from treating physicians"
+      ]
+    },
+    {
+      "category": "Functional & Financial Impact",
+      "priority": "important",
+      "items": [
+        "Employer documentation of missed work and inability to return",
+        "Pay stubs and earnings records for wage loss calculation",
+        "In-home care costs and caregiver invoices",
+        "Home modification costs (ramps, wheelchair access)",
+        "Vehicle modification costs",
+        "Lost future earning capacity documentation"
+      ]
+    },
+    {
+      "category": "Insurance & Legal",
+      "priority": "important",
+      "items": [
+        "All insurance policies (health, auto, workers' comp, disability)",
+        "All written correspondence with insurance adjusters",
+        "Any settlement offers received in writing",
+        "Workers' compensation claim documentation if workplace-related"
+      ]
+    }
+  ],
+  "timelineRisks": [
+    { "period": "Immediately", "risk": "Improper movement causes permanent damage", "action": "Do not move an injured person. Call 911 and keep them still until trained responders arrive. This is a life-safety issue, not just a legal one." },
+    { "period": "Within 24-72 Hours", "risk": "Secondary injury and incomplete diagnosis", "action": "Spinal cord injuries can worsen in the hours after trauma as swelling increases. Ensure the injured person is monitored in a medical facility with spinal injury expertise." },
+    { "period": "Within 30 Days", "risk": "Insurance reporting windows", "action": "Notify all relevant insurers promptly. For workplace injuries, workers' compensation reporting deadlines may be as short as 30 days." },
+    { "period": "Within 6 Months", "risk": "Evidence and witnesses become unavailable", "action": "Secure scene photographs, surveillance footage, and witness statements. Physical evidence at the scene will be altered or removed quickly." },
+    { "period": "1 Year (Government entities)", "risk": "Government claims notice requirement", "action": "If a government agency, vehicle, or property was involved, California requires a government tort claim to be filed within 6 months. Missing this deadline typically bars the claim." },
+    { "period": "2 Years (California & Arizona)", "risk": "Statute of limitations for personal injury", "action": "Both states have a 2-year statute of limitations for most personal injury claims. Spinal injury cases require extensive preparation — do not wait to consult an attorney." }
+  ],
+  "insuranceIssues": [
+    { "issue": "Catastrophic injury settlement pressure", "explanation": "Insurers may offer a large but inadequate lump-sum settlement early in the claim, before the full lifetime cost of a spinal injury is understood. Accepting prematurely closes all future claims." },
+    { "issue": "Disputed causation", "explanation": "Insurers may argue that a spinal injury was pre-existing, degenerative, or caused by a prior incident. Pre-injury imaging and expert medical testimony are often needed to counter these claims." },
+    { "issue": "Independent medical examinations (IMEs)", "explanation": "Insurers may require evaluation by a physician of their choosing. IME doctors in catastrophic injury cases frequently minimize the extent and permanence of the injury." },
+    { "issue": "Lifetime cost underestimation", "explanation": "The long-term cost of spinal cord injury — including care, equipment, home modification, and lost earnings — can exceed several million dollars. Insurers typically undervalue these figures significantly." },
+    { "issue": "Workers' compensation vs. third-party claims", "explanation": "If the injury occurred at work, workers' comp may not be the only option. If a third party (contractor, equipment manufacturer, property owner) contributed to the injury, a separate civil claim may also be available." }
+  ],
+  "whenToGetLawyer": [
+    "You or a family member sustained any spinal cord injury, vertebral fracture, or disc herniation in an accident",
+    "There is any possibility of partial or complete paralysis",
+    "The injury resulted in surgery, hospitalization, or long-term rehabilitation",
+    "You are unable to return to your prior occupation or any gainful employment",
+    "An insurer is disputing the severity or cause of the spinal injury",
+    "You received an early settlement offer before completing your medical treatment",
+    "The injury occurred at a workplace, on someone else's property, or involved a commercial vehicle",
+    "Long-term or lifetime care costs are anticipated"
+  ],
+  "relatedAccidents": ["car", "truck", "slip-and-fall", "construction", "workplace"],
+  "relatedInjuries": ["traumatic-brain", "broken-bones", "soft-tissue"],
+  "relatedGuides": ["evidence-checklist", "after-car-accident", "when-to-hire-lawyer"],
+  "relatedTools": ["accident-case-quiz", "evidence-checklist", "lost-wages-estimator"]
+}

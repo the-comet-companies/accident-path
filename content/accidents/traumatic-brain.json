@@ -1,0 +1,119 @@
+{
+  "slug": "traumatic-brain",
+  "title": "Traumatic Brain Injury",
+  "shortTitle": "Brain Injury",
+  "description": "Traumatic brain injuries can result from car accidents, falls, workplace incidents, or any event involving a blow to the head. TBI symptoms can be delayed, misdiagnosed, or worsen over time — making early medical evaluation and thorough documentation essential to protecting your health and your claim.",
+  "metaTitle": "Traumatic Brain Injury Guide — Steps, Evidence & Legal Options",
+  "metaDescription": "Suffered a traumatic brain injury in an accident? Get guidance on immediate steps, evidence to collect, insurance issues, and when to speak with an attorney.",
+  "icon": "brain",
+  "commonCauses": [
+    { "title": "Motor Vehicle Accidents", "description": "Car, truck, and motorcycle crashes are the leading cause of TBI — the sudden force of impact causes the brain to move inside the skull." },
+    { "title": "Slip and Fall Accidents", "description": "Falls are the second leading cause of TBI, especially on hard surfaces or from elevated heights." },
+    { "title": "Workplace Accidents", "description": "Construction sites, warehouses, and industrial settings carry high risk of head trauma from falling objects or equipment strikes." },
+    { "title": "Struck by an Object", "description": "Being hit by a falling, thrown, or moving object — common in construction and sports — can cause significant brain trauma." },
+    { "title": "Assault or Physical Altercation", "description": "Intentional blows to the head can result in TBI and may support both criminal and civil claims." },
+    { "title": "Sports and Recreational Activities", "description": "Contact sports, cycling without a helmet, and high-impact activities carry TBI risk, though these cases differ in legal liability." }
+  ],
+  "likelyInjuries": [
+    { "slug": "concussion", "title": "Concussion", "severity": "moderate" },
+    { "slug": "spinal", "title": "Spinal Injuries", "severity": "catastrophic" },
+    { "slug": "broken-bones", "title": "Skull Fracture", "severity": "severe" },
+    { "slug": "soft-tissue", "title": "Neck Soft Tissue Injuries", "severity": "moderate" }
+  ],
+  "immediateSteps": [
+    { "step": 1, "title": "Call 911 or go to the emergency room immediately", "description": "Any suspected head injury should be evaluated by emergency medical professionals. Do not wait for symptoms to worsen — some TBIs are not obvious at the scene.", "urgency": "critical" },
+    { "step": 2, "title": "Do not leave the scene without medical documentation", "description": "If paramedics respond, let them evaluate you. Their report becomes part of your medical record and links the incident to the injury.", "urgency": "critical" },
+    { "step": 3, "title": "Document the incident scene", "description": "If safe, photograph the location, any hazards, vehicles involved, and anything that caused or contributed to the head impact.", "urgency": "important" },
+    { "step": 4, "title": "Start a symptom journal immediately", "description": "TBI symptoms — headaches, memory gaps, confusion, mood changes, sleep disruption — may appear or worsen over days. Log every symptom with dates and severity.", "urgency": "critical" },
+    { "step": 5, "title": "Follow up with a neurologist or specialist", "description": "An ER visit may not capture the full extent of a TBI. Request a referral for neurological evaluation, MRI, or cognitive testing.", "urgency": "critical" },
+    { "step": 6, "title": "Notify your insurance company", "description": "Report the incident to your insurer promptly. Stick to facts — do not minimize symptoms or speculate about severity.", "urgency": "important" },
+    { "step": 7, "title": "Avoid giving recorded statements without legal guidance", "description": "TBI claims often involve disputed causation. Before speaking with any opposing insurer, consider consulting with a personal injury attorney.", "urgency": "important" },
+    { "step": 8, "title": "Preserve evidence of lost function", "description": "Document missed work, tasks you can no longer perform, and any assistance you require. This supports future wage loss and quality-of-life claims.", "urgency": "helpful" }
+  ],
+  "evidenceChecklist": [
+    {
+      "category": "Medical Documentation",
+      "priority": "critical",
+      "items": [
+        "Emergency room or urgent care records from date of incident",
+        "All neurologist and specialist evaluation notes",
+        "MRI, CT scan, and EEG reports",
+        "Neuropsychological testing results",
+        "Physical therapy and occupational therapy records",
+        "Prescription records for TBI-related medications",
+        "Ongoing symptom journal (dates, symptoms, severity)"
+      ]
+    },
+    {
+      "category": "At the Scene or Incident Location",
+      "priority": "critical",
+      "items": [
+        "Photos of the location where the head injury occurred",
+        "Photos of any object, vehicle, or hazard that caused the impact",
+        "Police or incident report number",
+        "Names and contact information of witnesses",
+        "Surveillance or dashcam footage if available"
+      ]
+    },
+    {
+      "category": "Functional Impact Records",
+      "priority": "important",
+      "items": [
+        "Employer documentation of missed work days",
+        "Pay stubs and earnings records to calculate lost wages",
+        "Records of tasks you can no longer perform",
+        "Statements from family members about changes in behavior or function",
+        "Documentation of any in-home care or assistance required"
+      ]
+    },
+    {
+      "category": "Insurance & Legal",
+      "priority": "important",
+      "items": [
+        "Your health insurance and auto insurance policy documents",
+        "All correspondence with insurance adjusters",
+        "Any settlement offers received in writing",
+        "Copy of any police, workplace, or incident report"
+      ]
+    },
+    {
+      "category": "Long-Term Evidence",
+      "priority": "helpful",
+      "items": [
+        "Records of ongoing cognitive or memory difficulties",
+        "Documented impact on personal relationships",
+        "Future medical cost estimates from treating physicians",
+        "Life care plan if long-term care is anticipated"
+      ]
+    }
+  ],
+  "timelineRisks": [
+    { "period": "Within 24-72 Hours", "risk": "Delayed TBI symptoms may go undiagnosed", "action": "Seek neurological evaluation even if initial ER findings appear mild. Concussions and diffuse axonal injuries are often underdetected in early imaging." },
+    { "period": "Within 1-2 Weeks", "risk": "Cognitive symptoms may be attributed to stress rather than injury", "action": "Begin your symptom journal. Follow up with a specialist and request neuropsychological testing if symptoms persist." },
+    { "period": "Within 30 Days", "risk": "Insurance reporting windows close", "action": "Notify all relevant insurers promptly. Delays can create coverage disputes." },
+    { "period": "Within 6 Months", "risk": "Witness memories fade, scene evidence is gone", "action": "Secure statements from witnesses and collect any available surveillance footage before it is overwritten or deleted." },
+    { "period": "2 Years (California)", "risk": "Statute of limitations for personal injury", "action": "California generally requires a personal injury lawsuit to be filed within 2 years of the injury date. TBI cases involving government entities may have much shorter deadlines." },
+    { "period": "2 Years (Arizona)", "risk": "Statute of limitations for personal injury", "action": "Arizona has a 2-year statute of limitations for personal injury claims. Do not wait — TBI cases require extensive preparation and medical documentation." }
+  ],
+  "insuranceIssues": [
+    { "issue": "Causation disputes", "explanation": "Insurers frequently argue that a TBI was pre-existing, caused by a different event, or is less severe than claimed. Thorough and timely medical documentation is essential to counter these arguments." },
+    { "issue": "Pressure to settle quickly", "explanation": "TBI cases often have long-term consequences that are not apparent in the early weeks. Accepting a settlement before you understand the full extent of your injury can permanently close your claim." },
+    { "issue": "Independent medical examinations (IMEs)", "explanation": "Insurers may require you to be evaluated by a physician of their choosing. These IME doctors are paid by the insurer and their findings often favor a quick resolution." },
+    { "issue": "Wage loss and future earnings disputes", "explanation": "Insurers may challenge the amount of income lost due to your injury. Vocational experts and life care planners are often needed to document long-term economic impact." },
+    { "issue": "Non-economic damage limitations", "explanation": "TBI cases often involve significant pain, suffering, and loss of enjoyment of life. These non-economic damages can be substantial but are subject to negotiation and — in some contexts — legal caps." }
+  ],
+  "whenToGetLawyer": [
+    "You were diagnosed with any grade of concussion, brain bleed, or traumatic brain injury",
+    "Symptoms persisted beyond 2 weeks or worsened over time",
+    "You missed significant work or are unable to return to your prior occupation",
+    "An insurer is disputing whether the injury was caused by the accident",
+    "You received an early settlement offer before completing your medical treatment",
+    "You are being required to attend an insurer-arranged independent medical examination",
+    "Your injury has affected your cognitive function, memory, personality, or relationships",
+    "The incident involved a commercial vehicle, employer, or property owner"
+  ],
+  "relatedAccidents": ["car", "truck", "slip-and-fall", "construction", "workplace"],
+  "relatedInjuries": ["spinal", "concussion", "soft-tissue"],
+  "relatedGuides": ["evidence-checklist", "after-car-accident", "when-to-hire-lawyer"],
+  "relatedTools": ["accident-case-quiz", "evidence-checklist"]
+}

@@ -83,7 +83,7 @@ Yesterday's session (April 20) completed DEV-10 and DEV-11 — a full sweep of a
 | AccidentCard + ToolCard + ChecklistBlock + TimelineBlock | ✓ |
 | Home page (all 8 sections, GSAP animations) | ✓ |
 | HeroVisual — particle canvas + CSS 3D floating shield | ✓ |
-| `/accidents` index + `/accidents/[slug]` hub (13 pages) | ✓ |
+| `/accidents` index + `/accidents/[slug]` hub (15 pages) | ✓ |
 | `/injuries` index + `/injuries/[slug]` (7 pages) | ✓ |
 | `/guides` index + `/guides/[slug]` (3 pages) | ✓ |
 | `/states` index + `/states/[state]` (CA + AZ) | ✓ |
@@ -249,6 +249,35 @@ Yesterday's session (April 20) completed DEV-10 and DEV-11 — a full sweep of a
   - Disclaimer: added `italic`
 
 **Commits pushed:** `2fcfcc8` (state selector redesign, merged to main)
+
+**Follow-up:** CA/AZ pill `<Link>` buttons subsequently removed (redundant with the StateSelector dropdown below). Commit `1792c75`.
+
+---
+
+### Accidents Hub Page Redesign
+
+- **Brainstormed** via visual companion — 7 options shown across two mockup screens (A–G), approved Option F2 (two-tone sidebar filter, fully icon-free)
+- **Layout:** Dark left rail with text-only category tabs + right card panel with 2-col grid. Fixed `h-[520px]` card so height doesn't change when switching categories. Right panel is `overflow-y-auto`.
+- **Rail categories:** All (15) · Vehicle (6) · Premises (3) · Workplace (2) · Injury Type (2) · Other (2). "All" is the default.
+- **Cards:** No icons. Teal gradient bar at top, optional "Most Common" amber badge (car, slip-and-fall), title, serif italic description, step count + evidence item count in footer, "View guide →" CTA.
+- **`app/accidents/page.tsx`** — fully replaced:
+  - Removed icon map (`ICON_MAP`, 15 Lucide imports), `AccidentCard` import
+  - Added amber eyebrow "All Accident Types" with flanking lines, `font-serif italic` description, attorney-reviewed badge
+  - Two-tone layout wrapped in `max-w-6xl mx-auto` + white rounded card (`bg-surface-card rounded-2xl shadow-sm border border-neutral-100 overflow-hidden`)
+  - `AccidentsHubClient` renders inside the card
+- **`components/content/AccidentsHubClient.tsx`** (new client component):
+  - `'use client'` — category filter state
+  - `CATEGORIES` array with all/vehicle/premises/workplace/injury/other slugs
+  - `MOST_COMMON` Set — `car`, `slip-and-fall`
+  - Mobile: horizontal tabs (overflow-x-auto). Desktop: vertical rail.
+  - Active tab: `text-white border-l-[3px] border-primary-500 bg-white/5`. Inactive: `text-neutral-500`.
+  - Count badge: active `text-white/50`, inactive `text-white/25`
+
+**New CMS Content — 2 missing accident hubs added:**
+- `content/accidents/traumatic-brain.json` — Traumatic Brain Injury: 6 causes, 8 steps, 5 evidence categories, 6 timeline risks, 5 insurance issues, 8 lawyer triggers
+- `content/accidents/spinal.json` — Spinal Injuries: 6 causes, 8 steps, 5 evidence categories, 6 timeline risks, 5 insurance issues, 8 lawyer triggers
+
+**All 15 accident type hubs now covered** (was 13). Build state updated accordingly.
 
 ## Architecture Reminders (Key Decisions)
 

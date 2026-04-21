@@ -1,21 +1,5 @@
-import type { ReactNode } from 'react'
-import {
-  Car,
-  Truck,
-  Bike,
-  PersonStanding,
-  AlertTriangle,
-  Dog,
-  HardHat,
-  Briefcase,
-  Scale,
-  Package,
-  MapPin,
-  Brain,
-  Zap,
-} from 'lucide-react'
 import { cms } from '@/lib/cms'
-import { AccidentCard } from '@/components/content/AccidentCard'
+import { AccidentsHubClient } from '@/components/content/AccidentsHubClient'
 import { Breadcrumb } from '@/components/layout/Breadcrumb'
 import { buildMetaTags } from '@/components/seo/MetaTags'
 
@@ -26,26 +10,6 @@ export const metadata = buildMetaTags({
   canonical: '/accidents',
 })
 
-const ICON_MAP: Record<string, ReactNode> = {
-  car: <Car className="w-5 h-5" />,
-  truck: <Truck className="w-5 h-5" />,
-  motorcycle: <Bike className="w-5 h-5" />,
-  'uber-lyft': <Car className="w-5 h-5" />,
-  pedestrian: <PersonStanding className="w-5 h-5" />,
-  bicycle: <Bike className="w-5 h-5" />,
-  'slip-and-fall': <AlertTriangle className="w-5 h-5" />,
-  'dog-bite': <Dog className="w-5 h-5" />,
-  construction: <HardHat className="w-5 h-5" />,
-  workplace: <Briefcase className="w-5 h-5" />,
-  'wrongful-death': <Scale className="w-5 h-5" />,
-  premises: <MapPin className="w-5 h-5" />,
-  product: <Package className="w-5 h-5" />,
-  'traumatic-brain': <Brain className="w-5 h-5" />,
-  spinal: <Zap className="w-5 h-5" />,
-}
-
-const DEFAULT_ICON = <AlertTriangle className="w-5 h-5" />
-
 export default function AccidentsPage() {
   const accidents = cms.getAllAccidents()
 
@@ -55,32 +19,32 @@ export default function AccidentsPage() {
       <div className="bg-primary-900 py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Breadcrumb items={[{ label: 'Accident Types' }]} />
-          <h1 className="font-sans font-bold text-3xl sm:text-4xl text-white mt-3 leading-tight">
+          <div className="flex items-center gap-2 text-amber-500 text-xs font-semibold uppercase tracking-widest font-sans mt-4 mb-3">
+            <span className="w-5 h-px bg-amber-500 shrink-0" aria-hidden="true" />
+            All Accident Types
+            <span className="w-5 h-px bg-amber-500 shrink-0" aria-hidden="true" />
+          </div>
+          <h1 className="font-sans font-bold text-3xl sm:text-4xl text-white leading-tight">
             Accident Type Guides
           </h1>
-          <p className="mt-3 text-primary-200 text-lg max-w-2xl leading-relaxed">
+          <p className="mt-3 font-serif italic text-primary-200 text-lg max-w-2xl leading-relaxed">
             Find guidance specific to your type of accident — evidence checklists, immediate steps,
             timeline risks, and educational resources to help you understand your situation.
           </p>
-          <p className="mt-3 text-primary-400 text-sm">
+          <div className="mt-4 inline-flex items-center gap-1.5 text-xs font-semibold font-sans text-success-500">
+            <span aria-hidden="true">✓</span> Attorney-reviewed content
+          </div>
+          <p className="mt-2 text-primary-400 text-xs">
             This information is for educational purposes only and does not constitute legal advice.
           </p>
         </div>
       </div>
 
-      {/* Accident grid */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+      {/* Two-tone filter layout */}
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-14">
         {accidents.length > 0 ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
-            {accidents.map(accident => (
-              <AccidentCard
-                key={accident.slug}
-                title={accident.title}
-                description={accident.description.slice(0, 120) + '\u2026'}
-                href={`/accidents/${accident.slug}`}
-                icon={ICON_MAP[accident.slug] ?? DEFAULT_ICON}
-              />
-            ))}
+          <div className="bg-surface-card rounded-2xl shadow-sm border border-neutral-100 overflow-hidden">
+            <AccidentsHubClient accidents={accidents} />
           </div>
         ) : (
           <p className="text-neutral-500 text-center py-16 text-sm">
