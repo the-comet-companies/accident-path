@@ -210,6 +210,29 @@ Yesterday's session (April 20) completed DEV-10 and DEV-11 — a full sweep of a
 
 **Commits pushed:** `6f78698` → `f9d51d9` (2 commits on main)
 
+---
+
+### Educational Guides Redesign
+
+- **Brainstormed** via visual companion — 5 options shown (A–E), approved Option D (Article Preview Cards with teal accent bar + "Attorney-reviewed" badge)
+- **Background selected:** `bg-surface-page` (#F3F6F9 gray) after reviewing transition from the teal `bg-surface-info` tools section above — cleaner break than pure white, white cards pop off the gray base
+- **`app/page.tsx`** — Educational Content Teaser section fully replaced:
+  - Background changed from `bg-surface-card` (white) → `bg-surface-page` (#F3F6F9)
+  - Added amber eyebrow "Educational Guides" with flanking `<span>` lines (consistent with all other sections)
+  - Heading upgraded: `font-bold tracking-tight leading-tight` (was `font-semibold`)
+  - Subtext changed to "Attorney-reviewed educational content — not legal advice." — `font-serif italic text-sm`
+  - "View all guides" link: upgraded to `font-semibold` (was `font-medium`)
+  - Cards replaced: `bg-surface-card border border-neutral-100 rounded-xl overflow-hidden` — no padding on outer, avoids clipping the accent bar
+  - Top teal accent bar: `h-[3px] bg-gradient-to-r from-primary-500 to-primary-800`
+  - Badge row: read-time pill (`bg-primary-50 text-primary-600 rounded-full`) + "✓ Attorney-reviewed" (`text-success-500` checkmark, `text-neutral-500` label)
+  - Title: `font-sans font-semibold text-base text-neutral-950`
+  - Excerpt: `font-serif italic text-sm text-neutral-500 flex-1` (flex-1 pushes footer down)
+  - Card footer: `border-t border-neutral-100 pt-4 mt-4` with "Read guide →" + `ArrowRight` CTA
+  - Hover: `border-primary-100 shadow-[0_4px_20px_rgba(40,145,199,0.09)]`
+  - `data-animate="guide-card"` preserved — GSAP stagger unchanged
+
+**Commits pushed:** `f26f721` (guides redesign, merged to main)
+
 ## Architecture Reminders (Key Decisions)
 
 - **HeroVisual is purely decorative** — all content (h1, CTAs, copy) remains in `app/page.tsx`, fully accessible without JS
