@@ -192,19 +192,19 @@ export default function Home() {
                 help. Educational guidance for California and Arizona.
               </p>
               <div data-animate="hero-ctas" className="flex flex-row flex-wrap gap-3">
-                <CTAButton href="/find-help" size="md" className="whitespace-nowrap">
+                <CTAButton href="/find-help" size="md" className="whitespace-nowrap shadow-[0_4px_20px_rgba(40,145,199,0.4)]">
                   Start Free Accident Check
                 </CTAButton>
                 <CTAButton
                   href="/guides"
                   size="md"
                   variant="secondary"
-                  className="whitespace-nowrap border-white/40 text-white hover:bg-white/10 hover:border-white/60"
+                  className="whitespace-nowrap border border-white/25 text-white/80 hover:bg-white/10 hover:border-white/40"
                 >
                   Explore Accident Guides
                 </CTAButton>
               </div>
-              <p className="mt-5 text-xs text-primary-300 font-serif">
+              <p className="mt-5 text-xs text-primary-300 font-serif italic">
                 This information is for educational purposes only and does not constitute legal
                 advice.
               </p>
