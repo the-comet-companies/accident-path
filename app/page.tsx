@@ -425,56 +425,73 @@ export default function Home() {
       </section>
 
       {/* ── 6. Educational Content Teaser ─────────────────────────────────── */}
-      <section className="bg-surface-card py-16 lg:py-24" aria-labelledby="guides-heading">
+      <section className="bg-surface-page py-16 lg:py-24" aria-labelledby="guides-heading">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
+
+          {/* Heading row */}
+          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8">
             <div>
+              <div className="flex items-center gap-2 text-amber-500 text-xs font-semibold uppercase tracking-widest font-sans mb-3">
+                <span className="w-5 h-px bg-amber-500 shrink-0" aria-hidden="true" />
+                Educational Guides
+                <span className="w-5 h-px bg-amber-500 shrink-0" aria-hidden="true" />
+              </div>
               <h2
                 id="guides-heading"
-                className="font-sans font-semibold text-3xl lg:text-4xl text-neutral-950 mb-2"
+                className="font-sans font-bold text-3xl lg:text-4xl text-neutral-950 leading-tight tracking-tight"
               >
                 Step-by-Step Accident Guides
               </h2>
-              <p className="font-serif text-neutral-500 text-lg">
-                Educational content reviewed for accuracy by legal professionals.
+              <p className="font-serif italic text-sm text-neutral-500 mt-1">
+                Attorney-reviewed educational content — not legal advice.
               </p>
             </div>
             <Link
               href="/guides"
-              className="inline-flex items-center gap-1.5 text-sm font-medium text-primary-600 hover:text-primary-700 transition-colors shrink-0 min-h-[44px] sm:min-h-0"
+              className="inline-flex items-center gap-1.5 text-sm font-semibold font-sans text-primary-600 hover:text-primary-700 transition-colors shrink-0 min-h-[44px] sm:min-h-0"
             >
               View all guides
               <ChevronRight className="w-4 h-4" aria-hidden="true" />
             </Link>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+          {/* Guide cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {FEATURED_GUIDES.map((guide) => (
               <Link
                 key={guide.href}
                 href={guide.href}
                 data-animate="guide-card"
-                className="group flex flex-col gap-3 rounded-xl bg-surface-page border border-neutral-100 p-6 hover:bg-primary-50 hover:border-primary-100 transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500"
+                className="group flex flex-col bg-surface-card border border-neutral-100 rounded-xl overflow-hidden hover:border-primary-100 hover:shadow-[0_4px_20px_rgba(40,145,199,0.09)] transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500"
               >
-                <div className="flex items-center justify-between">
-                  <span className="text-xs font-medium font-sans text-primary-600 bg-primary-50 group-hover:bg-white px-2.5 py-1 rounded-full transition-colors">
-                    {guide.readTime}
-                  </span>
-                  <ChevronRight
-                    className="w-4 h-4 text-neutral-300 group-hover:text-primary-500 transition-colors"
-                    aria-hidden="true"
-                  />
-                </div>
-                <div>
+                <div className="h-[3px] bg-gradient-to-r from-primary-500 to-primary-800 shrink-0" aria-hidden="true" />
+                <div className="flex flex-col flex-1 p-5">
+                  <div className="flex items-center gap-2 mb-4 flex-wrap">
+                    <span className="text-xs font-semibold font-sans text-primary-600 bg-primary-50 rounded-full px-2.5 py-1">
+                      {guide.readTime}
+                    </span>
+                    <span className="text-xs text-neutral-500 flex items-center gap-1">
+                      <span className="text-success-500" aria-hidden="true">✓</span>
+                      Attorney-reviewed
+                    </span>
+                  </div>
                   <h3 className="font-sans font-semibold text-base text-neutral-950 leading-snug mb-2">
                     {guide.title}
                   </h3>
-                  <p className="font-serif text-sm text-neutral-500 leading-relaxed">
+                  <p className="font-serif italic text-sm text-neutral-500 leading-relaxed flex-1">
                     {guide.excerpt}
                   </p>
+                  <div className="pt-4 mt-4 border-t border-neutral-100">
+                    <span className="text-sm font-semibold font-sans text-primary-600 group-hover:text-primary-700 transition-colors inline-flex items-center gap-1">
+                      Read guide
+                      <ArrowRight className="w-3.5 h-3.5" aria-hidden="true" />
+                    </span>
+                  </div>
                 </div>
               </Link>
             ))}
           </div>
+
         </div>
       </section>
 
