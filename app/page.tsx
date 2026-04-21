@@ -356,7 +356,7 @@ export default function Home() {
                   <span className="font-sans font-semibold text-sm text-neutral-950 leading-snug">
                     {accident.title}
                   </span>
-                  <span className="text-[10px] text-neutral-300 group-hover:text-primary-500 transition-colors" aria-hidden="true">
+                  <span className="text-[10px] text-neutral-300 group-hover:text-primary-500 transition-colors duration-200" aria-hidden="true">
                     →
                   </span>
                 </Link>
