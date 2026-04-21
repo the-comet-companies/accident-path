@@ -44,9 +44,27 @@ export function HomeAnimations() {
           },
         )
 
-      // ── Trust badges ─────────────────────────────────────────────────────
-      reveal('[data-animate="trust-left"]', { y: 16, duration: 0.5 })
-      reveal('[data-animate="trust-item"]', { y: 14, duration: 0.4, stagger: 0.1 })
+      // ── Trust row ────────────────────────────────────────────────────────
+      gsap.fromTo(
+        '[data-animate="trust-left"]',
+        { opacity: 0, x: -40 },
+        {
+          opacity: 1, x: 0,
+          duration: 0.7, ease: 'power3.out',
+          immediateRender: false,
+          scrollTrigger: { trigger: '[data-animate="trust-left"]', start: 'top 85%', once: true },
+        },
+      )
+      gsap.fromTo(
+        '[data-animate="trust-item"]',
+        { opacity: 0, y: 36, scale: 0.94 },
+        {
+          opacity: 1, y: 0, scale: 1,
+          duration: 0.55, ease: 'back.out(1.4)', stagger: 0.12,
+          immediateRender: false,
+          scrollTrigger: { trigger: '[data-animate="trust-item"]', start: 'top 85%', once: true },
+        },
+      )
 
       // ── How It Works ─────────────────────────────────────────────────────
       reveal('#how-it-works-heading', { y: 20 })
