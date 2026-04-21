@@ -350,7 +350,7 @@ export default function Home() {
                   data-animate="accident-card"
                   className="group flex flex-col items-center text-center gap-2 p-4 rounded-xl hover:bg-primary-50 transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500"
                 >
-                  <div className="w-11 h-11 rounded-[11px] bg-primary-50 group-hover:bg-white flex items-center justify-center text-primary-500 shrink-0 transition-colors">
+                  <div className="w-11 h-11 rounded-[11px] bg-primary-50 group-hover:bg-white flex items-center justify-center text-primary-500 shrink-0 transition-colors duration-200">
                     {ACCIDENT_ICONS[accident.slug]}
                   </div>
                   <span className="font-sans font-semibold text-sm text-neutral-950 leading-snug">
@@ -368,7 +368,7 @@ export default function Home() {
           <div className="text-center mt-6">
             <Link
               href="/accidents"
-              className="inline-flex items-center gap-1.5 text-sm font-semibold font-sans text-primary-600 hover:text-primary-700 transition-colors"
+              className="inline-flex items-center gap-1.5 text-sm font-semibold font-sans text-primary-700 hover:text-primary-800 transition-colors min-h-[44px] sm:min-h-0"
             >
               View all 13 accident types
               <ChevronRight className="w-4 h-4" aria-hidden="true" />
