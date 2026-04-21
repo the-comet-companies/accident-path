@@ -497,22 +497,42 @@ export default function Home() {
 
       {/* ── 7. State Selector ─────────────────────────────────────────────── */}
       <section
-        className="bg-primary-50 py-16 lg:py-20"
+        className="bg-surface-page py-16 lg:py-20"
         aria-labelledby="state-selector-heading"
       >
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div data-animate="state-section" className="max-w-xl mx-auto text-center">
+          <div data-animate="state-section" className="max-w-lg mx-auto text-center">
+            <div className="flex items-center justify-center gap-2 text-amber-500 text-xs font-semibold uppercase tracking-widest font-sans mb-3">
+              <span className="w-5 h-px bg-amber-500 shrink-0" aria-hidden="true" />
+              Your State
+              <span className="w-5 h-px bg-amber-500 shrink-0" aria-hidden="true" />
+            </div>
             <h2
               id="state-selector-heading"
-              className="font-sans font-semibold text-3xl text-neutral-950 mb-3"
+              className="font-sans font-bold text-3xl text-neutral-950 leading-tight tracking-tight mb-2"
             >
               Find Resources in Your State
             </h2>
-            <p className="font-serif text-neutral-500 text-lg mb-8">
+            <p className="font-serif italic text-sm text-neutral-500 mb-8">
               State-specific laws, deadlines, and guidance for California and Arizona.
             </p>
+            <div className="flex items-center justify-center gap-3 mb-5 flex-wrap">
+              <Link
+                href="/states/california"
+                className="bg-surface-card border border-primary-100 rounded-full px-6 py-2.5 text-sm font-semibold font-sans text-neutral-950 hover:border-primary-200 hover:bg-primary-50 transition-colors"
+              >
+                California
+              </Link>
+              <span className="text-xs text-neutral-500 font-semibold font-sans">or</span>
+              <Link
+                href="/states/arizona"
+                className="bg-surface-card border border-primary-100 rounded-full px-6 py-2.5 text-sm font-semibold font-sans text-neutral-950 hover:border-primary-200 hover:bg-primary-50 transition-colors"
+              >
+                Arizona
+              </Link>
+            </div>
             <StateSelector navigateOnSelect className="max-w-md mx-auto" />
-            <p className="mt-4 text-xs text-neutral-500 font-serif">
+            <p className="mt-4 text-xs text-neutral-500 font-serif italic">
               Laws vary by state. The information provided is general in nature. Consult a licensed
               attorney in your state for specific guidance.
             </p>
