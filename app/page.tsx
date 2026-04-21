@@ -23,6 +23,7 @@ import { AccidentCard } from '@/components/content/AccidentCard'
 import { ToolCard } from '@/components/content/ToolCard'
 import { buildMetaTags } from '@/components/seo/MetaTags'
 import { HomeAnimations } from '@/components/home/HomeAnimations'
+import { HeroVisual } from '@/components/home/HeroVisual'
 
 export const metadata: Metadata = buildMetaTags({
   title: 'AccidentPath — Get Clear Next Steps After an Accident',
@@ -165,8 +166,9 @@ export default function Home() {
       <HomeAnimations />
 
       {/* ── 1. Hero ───────────────────────────────────────────────────────── */}
-      <section className="bg-primary-900 text-white" aria-labelledby="hero-heading">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+      <section className="bg-primary-900 text-white relative overflow-hidden" aria-labelledby="hero-heading">
+        <HeroVisual />
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Left: copy + CTAs */}
             <div>
@@ -208,46 +210,8 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Right: What You'll Get card */}
-            <div
-              data-animate="hero-card"
-              className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-7"
-              aria-label="What you'll get"
-            >
-              <p className="text-xs font-semibold font-sans uppercase tracking-widest text-primary-300 mb-5">
-                What You&apos;ll Get
-              </p>
-              <ol className="flex flex-col gap-5" role="list">
-                {[
-                  {
-                    title: 'A clear checklist of next steps',
-                    desc: 'Specific to your accident type and state.',
-                  },
-                  {
-                    title: 'Your statute-of-limitations deadline',
-                    desc: "We'll flag the date you can't miss.",
-                  },
-                  {
-                    title: 'A shortlist of lawyers — if you need one',
-                    desc: 'Matched to your case. You decide who to talk to.',
-                  },
-                ].map(({ title, desc }, i) => (
-                  <li key={i} data-animate="hero-card-item" className="flex items-start gap-4">
-                    <span className="w-7 h-7 rounded-full bg-amber-500 text-white text-xs font-bold font-sans flex items-center justify-center shrink-0 mt-0.5">
-                      {i + 1}
-                    </span>
-                    <div>
-                      <p className="font-sans font-semibold text-white text-base leading-snug">
-                        {title}
-                      </p>
-                      <p className="font-serif text-sm text-primary-200 mt-0.5 leading-relaxed">
-                        {desc}
-                      </p>
-                    </div>
-                  </li>
-                ))}
-              </ol>
-            </div>
+            {/* Right: spacer — HeroVisual renders the shield absolutely */}
+            <div className="hidden lg:block" aria-hidden="true" />
           </div>
         </div>
       </section>
