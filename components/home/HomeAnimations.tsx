@@ -67,8 +67,26 @@ export function HomeAnimations() {
       )
 
       // ── How It Works ─────────────────────────────────────────────────────
-      reveal('#how-it-works-heading', { y: 20 })
-      reveal('[data-animate="step-item"]', { y: 32, duration: 0.55, stagger: 0.15 })
+      gsap.fromTo(
+        '[data-animate="hiw-heading"]',
+        { opacity: 0, y: 20 },
+        {
+          opacity: 1, y: 0,
+          duration: 0.55, ease: 'power2.out',
+          immediateRender: false,
+          scrollTrigger: { trigger: '[data-animate="hiw-heading"]', start: 'top 85%', once: true },
+        },
+      )
+      gsap.fromTo(
+        '[data-animate="step-item"]',
+        { opacity: 0, y: 36, scale: 0.94 },
+        {
+          opacity: 1, y: 0, scale: 1,
+          duration: 0.55, ease: 'back.out(1.4)', stagger: 0.12,
+          immediateRender: false,
+          scrollTrigger: { trigger: '[data-animate="step-item"]', start: 'top 85%', once: true },
+        },
+      )
 
       // ── Accident cards ───────────────────────────────────────────────────
       reveal('#accident-types-heading', { y: 20 })
