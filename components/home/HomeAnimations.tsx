@@ -45,7 +45,8 @@ export function HomeAnimations() {
         )
 
       // ── Trust badges ─────────────────────────────────────────────────────
-      reveal('[data-animate="trust-badge"]', { y: 14, duration: 0.4, stagger: 0.1 })
+      reveal('[data-animate="trust-left"]', { y: 16, duration: 0.5 })
+      reveal('[data-animate="trust-item"]', { y: 14, duration: 0.4, stagger: 0.1 })
 
       // ── How It Works ─────────────────────────────────────────────────────
       reveal('#how-it-works-heading', { y: 20 })
