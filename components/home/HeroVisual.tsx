@@ -86,16 +86,30 @@ export function HeroVisual() {
     window.addEventListener('resize', onResize)
 
     if (!reduced) {
-      gsap.to(shieldRef.current, {
-        y: -14, rotateY: 7, rotateX: -2,
-        duration: 5, ease: 'sine.inOut', yoyo: true, repeat: -1,
+      gsap.set(shieldRef.current,  { opacity: 0, y: 40, scale: 0.82 })
+      gsap.set(haloRef.current,    { opacity: 0, scale: 0.55 })
+      gsap.set(orbit1Ref.current,  { opacity: 0 })
+      gsap.set(orbit2Ref.current,  { opacity: 0 })
+
+      const tl = gsap.timeline({
+        onComplete() {
+          gsap.to(shieldRef.current, {
+            y: -14, rotateY: 7, rotateX: -2,
+            duration: 5, ease: 'sine.inOut', yoyo: true, repeat: -1,
+          })
+          gsap.to(haloRef.current, {
+            scale: 1.2, opacity: 1,
+            duration: 4, ease: 'sine.inOut', yoyo: true, repeat: -1,
+          })
+          gsap.to(orbit1Ref.current, { rotation: 360,  duration: 20, ease: 'none', repeat: -1 })
+          gsap.to(orbit2Ref.current, { rotation: -360, duration: 32, ease: 'none', repeat: -1 })
+        },
       })
-      gsap.to(haloRef.current, {
-        scale: 1.2, opacity: 1,
-        duration: 4, ease: 'sine.inOut', yoyo: true, repeat: -1,
-      })
-      gsap.to(orbit1Ref.current, { rotation: 360,  duration: 20, ease: 'none', repeat: -1 })
-      gsap.to(orbit2Ref.current, { rotation: -360, duration: 32, ease: 'none', repeat: -1 })
+
+      tl.to(haloRef.current,   { opacity: 0.7, scale: 1,   duration: 0.7, ease: 'power2.out' }, 0.1)
+      tl.to(orbit1Ref.current, { opacity: 1,               duration: 0.5, ease: 'power2.out' }, 0.25)
+      tl.to(orbit2Ref.current, { opacity: 1,               duration: 0.5, ease: 'power2.out' }, 0.45)
+      tl.to(shieldRef.current, { opacity: 1, y: 0, scale: 1, duration: 0.9, ease: 'back.out(1.5)' }, 0.2)
     }
 
     return () => {
