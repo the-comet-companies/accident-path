@@ -348,7 +348,7 @@ export default function Home() {
                   key={accident.slug}
                   href={`/accidents/${accident.slug}`}
                   data-animate="accident-card"
-                  className="group flex flex-col items-center text-center gap-2 p-4 rounded-xl hover:bg-primary-50 transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500"
+                  className="group flex flex-col items-center text-center gap-2 p-4 rounded-xl hover:bg-primary-50 transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500 last:col-span-2 sm:last:col-span-1"
                 >
                   <div className="w-11 h-11 rounded-[11px] bg-primary-50 group-hover:bg-white flex items-center justify-center text-primary-500 shrink-0 transition-colors duration-200">
                     {ACCIDENT_ICONS[accident.slug]}
