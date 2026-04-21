@@ -114,10 +114,30 @@ Yesterday's session (April 20) completed DEV-10 and DEV-11 — a full sweep of a
 
 ---
 
+### Trust Row Redesign
+
+- **Brainstormed** via visual companion — approved split-layout (dark left panel 28% + 4 amber-icon columns 72%)
+- **Spec:** `docs/superpowers/specs/2026-04-21-trust-row-redesign.md`
+- **Plan:** `docs/superpowers/plans/2026-04-21-trust-row-redesign.md`
+- **`app/page.tsx`** — Trust Row section fully replaced:
+  - `bg-primary-900` throughout, seamless continuation of the hero dark zone
+  - `border-t border-white/[0.08]` divider between hero and trust row
+  - Left panel: amber eyebrow with leading line, Inter 700 heading (`<h2>`), Merriweather italic subtext, text-link CTA → `/find-help` with `ArrowRight` + hover translate
+  - Right panel: 4 columns, amber rounded-square icon tiles (52px, `rounded-[14px]`, `bg-amber-500/12`, `border-amber-500/25`), white title, `text-white/40` subtext
+  - Partial-height vertical dividers: absolutely-positioned `<span>` (top 20%, height 60%) instead of full `border-r` — `max-lg:hidden` on item index 1 to prevent bleed in 2-col mobile grid
+  - Mobile: left panel stacks above, right grid becomes 2×2 (`grid-cols-2 lg:grid-cols-4`), `border-b` on top row items
+- **`components/home/HomeAnimations.tsx`** — swapped `trust-badge` selector for `trust-left` + `trust-item`
+- **New lucide-react imports added:** `Shield`, `Lock`, `Clock`, `BadgeCheck`, `ArrowRight`
+
+**Commits pushed:** `f3af971` (trust row redesign) → `9a8f36a` (partial-height dividers)
+
+---
+
 ## Architecture Reminders (Key Decisions)
 
 - **HeroVisual is purely decorative** — all content (h1, CTAs, copy) remains in `app/page.tsx`, fully accessible without JS
 - **No Three.js** — CSS 3D + SVG + GSAP only. Keeps Lighthouse 90+ target intact.
+- **Trust Row partial-height dividers** — use absolutely-positioned `<span>` (not `border-r`) so dividers don't span the full grid cell height.
 
 ---
 
