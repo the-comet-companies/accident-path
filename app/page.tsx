@@ -20,7 +20,6 @@ import { FaCar, FaTruck, FaMotorcycle, FaHardHat } from 'react-icons/fa'
 import { FaPersonFalling } from 'react-icons/fa6'
 import { CTAButton } from '@/components/ui/CTAButton'
 import { StateSelector } from '@/components/ui/StateSelector'
-import { ToolCard } from '@/components/content/ToolCard'
 import { buildMetaTags } from '@/components/seo/MetaTags'
 import { HomeAnimations } from '@/components/home/HomeAnimations'
 import { HeroVisual } from '@/components/home/HeroVisual'
@@ -51,42 +50,20 @@ const ACCIDENT_ICONS: Record<string, React.ReactNode> = {
 }
 
 const FEATURED_TOOLS = [
-  {
-    slug: 'statute-of-limitations',
-    title: 'Statute of Limitations Calculator',
-    description:
-      'Understand the filing deadlines that may apply to your accident type in California or Arizona.',
-    icon: <Calculator className="w-5 h-5" aria-hidden="true" />,
-  },
-  {
-    slug: 'evidence-checklist',
-    title: 'Evidence Checklist Generator',
-    description:
-      'Get a personalized checklist of evidence to gather based on your specific accident type.',
-    icon: <ClipboardList className="w-5 h-5" aria-hidden="true" />,
-  },
-  {
-    slug: 'medical-cost-estimator',
-    title: 'Medical Cost Estimator',
-    description:
-      'Understand the range of typical medical costs associated with common injury types.',
-    icon: <DollarSign className="w-5 h-5" aria-hidden="true" />,
-  },
-  {
-    slug: 'insurance-claim-tracker',
-    title: 'Insurance Claim Tracker',
-    description:
-      'Track your claim status, deadlines, and communications with your insurance company.',
-    icon: <FileText className="w-5 h-5" aria-hidden="true" />,
-  },
-  {
-    slug: 'injury-journal',
-    title: 'Injury Journal',
-    description:
-      'Document your symptoms, treatments, and daily impact. Detailed records can matter in your recovery.',
-    icon: <BookOpen className="w-5 h-5" aria-hidden="true" />,
-  },
+  { slug: 'statute-of-limitations', title: 'Statute of Limitations Calculator', description: 'Understand the filing deadlines that may apply to your accident type in California or Arizona.' },
+  { slug: 'evidence-checklist',     title: 'Evidence Checklist Generator',      description: 'Get a personalized checklist of evidence to gather based on your specific accident type.'   },
+  { slug: 'medical-cost-estimator', title: 'Medical Cost Estimator',            description: 'Understand the range of typical medical costs associated with common injury types.'           },
+  { slug: 'insurance-claim-tracker',title: 'Insurance Claim Tracker',           description: 'Track your claim status, deadlines, and communications with your insurance company.'        },
+  { slug: 'injury-journal',         title: 'Injury Journal',                    description: 'Document your symptoms, treatments, and daily impact. Detailed records can matter in your recovery.' },
 ]
+
+const TOOL_ICONS: Record<string, React.ReactNode> = {
+  'statute-of-limitations':  <Calculator    className="w-[19px] h-[19px]" aria-hidden="true" />,
+  'evidence-checklist':      <ClipboardList className="w-[19px] h-[19px]" aria-hidden="true" />,
+  'medical-cost-estimator':  <DollarSign    className="w-[19px] h-[19px]" aria-hidden="true" />,
+  'insurance-claim-tracker': <FileText      className="w-[19px] h-[19px]" aria-hidden="true" />,
+  'injury-journal':          <BookOpen      className="w-[19px] h-[19px]" aria-hidden="true" />,
+}
 
 const FEATURED_GUIDES = [
   {
@@ -381,39 +358,62 @@ export default function Home() {
       {/* ── 5. Featured Tools ─────────────────────────────────────────────── */}
       <section className="bg-surface-info py-16 lg:py-24" aria-labelledby="tools-heading">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
+
+          {/* Heading row */}
+          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-6">
             <div>
+              <div className="flex items-center gap-2 text-amber-500 text-xs font-semibold uppercase tracking-widest font-sans mb-3">
+                <span className="w-5 h-px bg-amber-500 shrink-0" aria-hidden="true" />
+                Free Tools
+                <span className="w-5 h-px bg-amber-500 shrink-0" aria-hidden="true" />
+              </div>
               <h2
                 id="tools-heading"
-                className="font-sans font-semibold text-3xl lg:text-4xl text-neutral-950 mb-2"
+                className="font-sans font-bold text-3xl lg:text-4xl text-neutral-950 leading-tight tracking-tight"
               >
-                Featured Tools
+                Interactive Accident Tools
               </h2>
-              <p className="font-serif text-neutral-500 text-lg max-w-lg">
-                Interactive tools to help you understand your situation. For informational purposes
-                only — not legal advice.
+              <p className="font-serif italic text-sm text-neutral-500 mt-1">
+                For informational purposes only — not legal advice.
               </p>
             </div>
             <Link
               href="/tools"
-              className="inline-flex items-center gap-1.5 text-sm font-medium text-primary-600 hover:text-primary-700 transition-colors shrink-0 min-h-[44px] sm:min-h-0"
+              className="inline-flex items-center gap-1.5 text-sm font-semibold font-sans text-primary-600 hover:text-primary-700 transition-colors shrink-0 min-h-[44px] sm:min-h-0"
             >
               View all tools
               <ChevronRight className="w-4 h-4" aria-hidden="true" />
             </Link>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+
+          {/* Tool rows */}
+          <div className="flex flex-col gap-3">
             {FEATURED_TOOLS.map((tool) => (
-              <div key={tool.slug} data-animate="tool-card">
-                <ToolCard
-                  title={tool.title}
-                  description={tool.description}
-                  href={`/tools/${tool.slug}`}
-                  icon={tool.icon}
-                />
-              </div>
+              <Link
+                key={tool.slug}
+                href={`/tools/${tool.slug}`}
+                data-animate="tool-card"
+                className="group flex items-center gap-4 bg-white border border-[#ddeef7] rounded-[14px] px-[22px] py-[18px] hover:border-primary-200 hover:shadow-[0_4px_16px_rgba(40,145,199,0.09)] transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500"
+              >
+                <div className="w-[46px] h-[46px] rounded-[12px] bg-[#eff8fd] border border-[#cce9f6] flex items-center justify-center shrink-0 text-primary-500">
+                  {TOOL_ICONS[tool.slug]}
+                </div>
+                <div className="flex-1 min-w-0">
+                  <p className="font-sans font-bold text-sm text-neutral-950 leading-snug">
+                    {tool.title}
+                  </p>
+                  <p className="font-serif text-xs text-neutral-500 leading-relaxed mt-0.5">
+                    {tool.description}
+                  </p>
+                </div>
+                <span className="inline-flex items-center gap-1 text-sm font-semibold font-sans text-primary-600 group-hover:text-primary-700 transition-colors whitespace-nowrap shrink-0">
+                  Try It Free
+                  <ArrowRight className="w-3.5 h-3.5" aria-hidden="true" />
+                </span>
+              </Link>
             ))}
           </div>
+
         </div>
       </section>
 
