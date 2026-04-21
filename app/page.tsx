@@ -15,9 +15,13 @@ import {
   Search,
   Users,
   ChevronRight,
+  Shield,
+  Lock,
+  Clock,
+  BadgeCheck,
+  ArrowRight,
 } from 'lucide-react'
 import { CTAButton } from '@/components/ui/CTAButton'
-import { TrustBadge } from '@/components/ui/TrustBadge'
 import { StateSelector } from '@/components/ui/StateSelector'
 import { AccidentCard } from '@/components/content/AccidentCard'
 import { ToolCard } from '@/components/content/ToolCard'
@@ -217,20 +221,61 @@ export default function Home() {
       </section>
 
       {/* ── 2. Trust Row ──────────────────────────────────────────────────── */}
-      <section className="bg-surface-card border-b border-neutral-100" aria-label="Trust indicators">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
+      <section className="bg-primary-900 text-white" aria-label="Trust indicators">
+        <div className="flex flex-col lg:flex-row">
+
+          {/* Left panel — brand statement */}
+          <div
+            data-animate="trust-left"
+            className="lg:w-[28%] flex-shrink-0 flex flex-col justify-center gap-4 px-8 lg:px-10 py-12 lg:py-16 border-b lg:border-b-0 lg:border-r border-white/[0.08]"
+          >
+            <div className="flex items-center gap-2 text-amber-500 text-xs font-semibold uppercase tracking-widest font-sans">
+              <span className="w-5 h-px bg-amber-500 shrink-0" aria-hidden="true" />
+              Why AccidentPath
+            </div>
+            <p className="font-sans font-bold text-xl lg:text-2xl text-white leading-tight tracking-tight">
+              Your path to recovery starts here.
+            </p>
+            <p className="font-serif italic text-sm text-white/45 leading-relaxed">
+              Clear guidance, smart next steps, and help finding the right lawyer if you need one.
+            </p>
+            <Link
+              href="/find-help"
+              className="inline-flex items-center gap-2 text-primary-300 text-sm font-semibold font-sans group w-fit"
+            >
+              Start Free Accident Check
+              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+            </Link>
+          </div>
+
+          {/* Right panel — 4 trust columns */}
+          <div className="flex-1 grid grid-cols-2 lg:grid-cols-4">
             {[
-              { variant: 'shield' as const, text: 'Attorney-Reviewed Content',  subtext: 'Reviewed for accuracy and compliance' },
-              { variant: 'lock'   as const, text: 'Secure & Private',           subtext: 'Your information stays with you'      },
-              { variant: 'clock'  as const, text: 'Free — No Obligation',       subtext: 'No pressure, no signup required'      },
-              { variant: 'badge'  as const, text: 'California & Arizona',       subtext: 'State-specific guidance'              },
-            ].map(({ variant, text, subtext }) => (
-              <div key={text} data-animate="trust-badge">
-                <TrustBadge variant={variant} text={text} subtext={subtext} size="lg" />
+              { Icon: Shield,     title: 'Attorney-Reviewed Content', sub: 'Reviewed for accuracy and compliance' },
+              { Icon: Lock,       title: 'Secure & Private',          sub: 'Your information stays with you'      },
+              { Icon: Clock,      title: 'Free — No Obligation',      sub: 'No pressure, no signup required'      },
+              { Icon: BadgeCheck, title: 'California & Arizona',      sub: 'State-specific guidance'              },
+            ].map(({ Icon, title, sub }, i) => (
+              <div
+                key={title}
+                data-animate="trust-item"
+                className={[
+                  'flex flex-col items-center text-center gap-4 px-6 py-12 lg:py-16',
+                  i < 3 ? 'border-r border-white/[0.07]' : '',
+                  i < 2 ? 'border-b lg:border-b-0 border-white/[0.07]' : '',
+                ].filter(Boolean).join(' ')}
+              >
+                <div className="w-[52px] h-[52px] rounded-[14px] bg-amber-500/[0.12] border border-amber-500/25 flex items-center justify-center shrink-0">
+                  <Icon className="w-[22px] h-[22px] text-amber-500" aria-hidden="true" />
+                </div>
+                <div>
+                  <p className="font-sans font-semibold text-sm text-white leading-snug mb-1">{title}</p>
+                  <p className="text-[11px] text-white/40 leading-relaxed">{sub}</p>
+                </div>
               </div>
             ))}
           </div>
+
         </div>
       </section>
 
