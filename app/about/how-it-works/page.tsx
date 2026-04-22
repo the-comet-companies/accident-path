@@ -67,7 +67,7 @@ export default function HowItWorksPage() {
               className="bg-surface-card rounded-2xl shadow-sm border border-neutral-100 p-8 lg:p-10"
             >
               <div className="flex gap-6 items-start">
-                <div className="shrink-0 w-12 h-12 rounded-xl bg-primary-900 flex items-center justify-center">
+                <div className="shrink-0 w-12 h-12 rounded-xl bg-primary-900 flex items-center justify-center" aria-hidden="true">
                   <span className="font-sans font-bold text-amber-400 text-sm">{step.number}</span>
                 </div>
                 <div className="flex-1 min-w-0">
@@ -77,7 +77,7 @@ export default function HowItWorksPage() {
                     href={step.cta.href}
                     className="inline-flex items-center gap-1 text-sm font-semibold font-sans text-primary-600 hover:text-primary-700 transition-colors"
                   >
-                    {step.cta.label} →
+                    {step.cta.label} <span aria-hidden="true">→</span>
                   </Link>
                 </div>
               </div>
@@ -94,7 +94,7 @@ export default function HowItWorksPage() {
             href="/find-help"
             className="inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-700 text-white font-sans font-semibold text-sm px-6 py-3 rounded-xl transition-colors"
           >
-            Get Free Guidance →
+            Get Free Guidance <span aria-hidden="true">→</span>
           </Link>
         </div>
       </div>
