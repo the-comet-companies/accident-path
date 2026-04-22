@@ -11,6 +11,7 @@ export interface StepProps {
 
 export function monthsAgo(dateStr: string): number {
   const date = new Date(dateStr)
+  if (isNaN(date.getTime())) return 0
   const now = new Date()
   return (
     (now.getFullYear() - date.getFullYear()) * 12 +
