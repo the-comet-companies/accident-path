@@ -283,8 +283,8 @@ Full intake wizard built and confirmed writing to Supabase.
 
 | Task | Est. Hours | Status |
 |------|-----------|--------|
+| **DEV-14:** State rules engine (CA+AZ) + find-help flow refinement + Server Actions | 6 | Not started |
 | DEV-15: Tool interactivity (ToolEngine live — step inputs, results, Supabase `tool_submissions`) | 8 | Not started |
-| Phase 3: State rules engine (CA/AZ routing logic in `lib/intake.ts`) | 4 | Not started |
 | More city pages (12 additional CA/AZ cities) | 3 | Not started |
 | Attorney review of all content before go-live | — | Pending |
 
