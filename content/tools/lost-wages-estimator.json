@@ -1,0 +1,85 @@
+{
+  "slug": "lost-wages-estimator",
+  "title": "Lost Wages Estimator",
+  "metaTitle": "Lost Wages Estimator — Accident Income Loss Calculator",
+  "metaDescription": "Estimate income you may have lost due to accident injuries. Understand what documentation supports a lost wages claim before consulting with an attorney.",
+  "description": "An injury that keeps you out of work — or limits your ability to work — can have serious financial consequences. This educational tool helps you understand the components of a lost wages claim, estimate potential losses, and identify the documentation you will need to support a claim.",
+  "disclaimer": "This estimator provides rough calculations for educational purposes only. Actual lost wage claims depend on employment records, medical documentation, the nature of your employment, and applicable law. Consult a licensed attorney and your accountant for guidance specific to your situation.",
+  "steps": [
+    {
+      "id": "employment-type",
+      "question": "What is your employment status?",
+      "type": "select"
+    },
+    {
+      "id": "income",
+      "question": "What is your income amount? (hourly rate or annual salary)",
+      "type": "number"
+    },
+    {
+      "id": "days-missed",
+      "question": "How many days of work have you missed due to your injuries?",
+      "type": "number"
+    },
+    {
+      "id": "reduced-hours",
+      "question": "Have you returned to work with reduced hours or capacity?",
+      "type": "select"
+    },
+    {
+      "id": "ongoing",
+      "question": "Are you still unable to return to full work capacity?",
+      "type": "select"
+    }
+  ],
+  "supportingContent": [
+    {
+      "heading": "What Are Lost Wages in a Personal Injury Case?",
+      "content": "Lost wages — also called lost income or lost earnings — refer to the income you have lost because your injuries prevented you from working. This includes wages you would have earned from your regular job, self-employment income, gig work income, bonuses you missed, vacation or sick days you were forced to use, and income lost due to reduced work capacity even if you returned to work. In serious cases, lost future earning capacity may also be recoverable if your injuries affect your ability to work long-term.",
+      "tips": [
+        "Lost wages cover all income types: W-2 wages, self-employment income, and gig work",
+        "Vacation or sick leave used due to the injury may be includable",
+        "Reduced earning capacity — working fewer hours or a lower-paying job — is also compensable"
+      ]
+    },
+    {
+      "heading": "Documentation Required to Support a Lost Wages Claim",
+      "content": "To support a lost wages claim, you typically need documentation showing your pre-accident income, proof of the days or hours you missed, and medical evidence confirming that your injuries prevented you from working. Common documents include pay stubs, W-2 forms, tax returns (especially for self-employed individuals), a letter from your employer confirming missed time and your regular pay rate, and a note from your treating physician stating that your condition prevented you from working. Self-employed individuals often need additional documentation such as invoices, contracts, or client correspondence showing lost business.",
+      "tips": [
+        "Gather at least three months of pay stubs before the accident as baseline income proof",
+        "Ask your employer to provide a written statement of your pay rate and missed days",
+        "Keep records of all business income you lost if you are self-employed or a freelancer"
+      ]
+    },
+    {
+      "heading": "Lost Earning Capacity vs. Lost Wages",
+      "content": "Lost wages and lost earning capacity are distinct concepts in personal injury law. Lost wages refers to specific income you have already lost due to time missed from work. Lost earning capacity refers to the reduction in your ability to earn income in the future as a result of your injuries — for example, if you can no longer perform your previous job and must take a lower-paying position, or if chronic pain or disability will limit your earning power for years to come. Claims for future earning capacity typically require expert testimony from vocational rehabilitation specialists and economists.",
+      "tips": [
+        "Document how your injuries have changed your ability to do your specific job duties",
+        "Note any promotions, raises, or career opportunities you missed due to your injury",
+        "Future earning capacity claims are common in cases involving serious or permanent injuries"
+      ]
+    },
+    {
+      "heading": "Special Considerations for Self-Employed and Gig Workers",
+      "content": "Calculating lost wages for self-employed individuals, freelancers, and gig workers is more complex than for traditional employees, but lost income is still recoverable. The key is demonstrating your typical earnings through tax returns, bank statements, invoices, contracts, client communications, and platform earning records (such as Uber, DoorDash, or Upwork statements). Lost gig income may require showing your historical earnings over the same period in prior years as a baseline. An attorney or accountant experienced with self-employment income can help structure this documentation effectively."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Can I recover lost wages if I used sick leave or vacation time while I was injured?",
+      "answer": "In many personal injury cases, yes. If you were forced to use accrued sick days or vacation time because of your injuries, the value of that leave — which you otherwise would have had available — may be recoverable as part of your lost wages claim. Keep records of how much leave you used and when."
+    },
+    {
+      "question": "What if I am self-employed and my income varies from month to month?",
+      "answer": "Self-employed claimants typically use prior year tax returns, bank statements, and invoices to establish their average monthly income as a baseline. A comparison to the same period in prior years can help demonstrate income lost during recovery. An attorney can help structure this evidence for your specific situation."
+    },
+    {
+      "question": "How are lost wages calculated for part-time workers?",
+      "answer": "Lost wages for part-time workers are typically calculated based on your actual hourly rate and the hours you would have worked during the period you were unable to work. Pay stubs and employer documentation showing your typical schedule and rate are the key evidence. Lost overtime and tips may also be included if they were a regular part of your income."
+    }
+  ],
+  "relatedTools": ["injury-journal", "settlement-readiness", "record-request"],
+  "relatedGuides": ["after-car-accident", "insurance-claims"],
+  "relatedAccidents": ["car", "truck", "motorcycle", "slip-fall", "bicycle"]
+}

@@ -1,0 +1,80 @@
+{
+  "slug": "lawyer-type-matcher",
+  "title": "Lawyer Type Matcher",
+  "metaTitle": "Lawyer Type Matcher — Find Your Attorney Specialty",
+  "metaDescription": "Answer a few questions to learn what type of personal injury attorney typically handles cases like yours in California and Arizona, for educational purposes.",
+  "description": "Not all personal injury attorneys handle every type of case. Some specialize in motor vehicle accidents, others in premises liability, workers' compensation, product liability, or wrongful death. This educational tool helps you understand what type of attorney is typically best suited to cases like yours — so you know what to look for when consulting legal counsel.",
+  "disclaimer": "This tool provides general educational information to help you understand attorney specializations. It does not constitute a legal referral or recommendation. AccidentPath does not evaluate the qualifications of specific attorneys. Consult a licensed personal injury attorney to discuss your individual situation.",
+  "steps": [
+    {
+      "id": "accident-type",
+      "question": "What type of accident were you involved in?",
+      "type": "select"
+    },
+    {
+      "id": "injuries",
+      "question": "What types of injuries did you sustain? (Select all that apply)",
+      "type": "checklist"
+    },
+    {
+      "id": "employment-status",
+      "question": "Were you injured while working or on the job?",
+      "type": "select"
+    },
+    {
+      "id": "at-fault",
+      "question": "Was another party clearly at fault for your accident?",
+      "type": "select"
+    }
+  ],
+  "supportingContent": [
+    {
+      "heading": "Motor Vehicle Accident Attorneys",
+      "content": "Attorneys who specialize in motor vehicle accidents — including car crashes, truck accidents, motorcycle collisions, bicycle accidents, and pedestrian knockdowns — handle claims against at-fault drivers, commercial carriers, and their insurers. These attorneys are experienced in accident reconstruction, insurance policy interpretation, negotiating with claims adjusters, and litigating in personal injury courts. In cases involving commercial trucking, federal regulations (FMCSA rules) may apply, and attorneys with trucking-specific experience are particularly valuable.",
+      "tips": [
+        "For truck accidents, seek attorneys with specific commercial trucking litigation experience",
+        "Rideshare accident cases (Uber, Lyft) involve unique insurance layer complexities",
+        "Motorcycle and bicycle cases often involve higher injury severity and may require specialist attorneys"
+      ]
+    },
+    {
+      "heading": "Premises Liability Attorneys",
+      "content": "Premises liability cases involve injuries that occur on someone else's property due to unsafe conditions — slip-and-falls, inadequate lighting, broken stairs, dog bites, swimming pool accidents, or negligent security. These attorneys are experienced with property owner duties of care, notice requirements (proving the owner knew or should have known of the hazard), and working with accident reconstruction experts and medical experts. Premises liability cases involving government-owned property (public sidewalks, parks, government buildings) may require special procedural steps such as government tort claims.",
+      "tips": [
+        "Government property cases often have 6-month administrative claim deadlines",
+        "Security inadequacy cases may involve criminal history research about the property",
+        "Landlord liability for tenant injuries is a distinct subspecialty within premises liability"
+      ]
+    },
+    {
+      "heading": "Workers' Compensation and Workplace Injury Attorneys",
+      "content": "If you were injured while working, your case may involve the workers' compensation system rather than — or in addition to — a personal injury claim. Workers' compensation provides benefits for work-related injuries without requiring you to prove fault, but benefits are limited. If a third party (other than your employer) caused your workplace injury, a separate personal injury claim may also be possible. Workers' compensation attorneys specialize in navigating the administrative system, disputing denied claims, and maximizing your benefits. They work alongside — not instead of — personal injury attorneys when third-party claims exist.",
+      "tips": [
+        "Workers' compensation and personal injury claims can sometimes proceed simultaneously",
+        "Report workplace injuries to your employer immediately — delays can jeopardize your claim",
+        "A third-party claim may be available if your injury involved a contractor, driver, or defective equipment"
+      ]
+    },
+    {
+      "heading": "Product Liability and Defective Product Attorneys",
+      "content": "When a defective product — a faulty vehicle part, dangerous medication, defective equipment, or unsafe consumer product — causes an injury, product liability law may hold the manufacturer, distributor, or retailer responsible. Product liability cases are highly technical, often requiring engineering experts, product testing, recall history research, and complex litigation against large corporations. Attorneys who specialize in product liability typically have experience with class actions, multi-district litigation (MDL), and working with technical expert witnesses."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Do I need a specialist attorney or can any personal injury attorney handle my case?",
+      "answer": "Many personal injury attorneys handle a broad range of accident types, and general experience is often sufficient for straightforward cases. However, cases involving commercial trucking, complex product liability, serious brain or spinal injuries, or government entities often benefit from attorneys with specific experience in those areas. During your initial consultation, ask about the attorney's experience with cases similar to yours."
+    },
+    {
+      "question": "What should I look for when choosing a personal injury attorney?",
+      "answer": "Look for an attorney with experience handling cases similar to yours, a clear contingency fee agreement (typically 33–40% of any recovery), responsiveness and clear communication, a track record of both settlements and trial verdicts, and state bar membership in good standing. Free initial consultations are standard in personal injury — use them to assess whether the attorney is a good fit."
+    },
+    {
+      "question": "What is a contingency fee and how does it work?",
+      "answer": "A contingency fee means the attorney only receives a fee if they recover money for you. The fee is a percentage of your settlement or verdict — typically between 33% and 40%, though this varies by attorney and case complexity. If there is no recovery, you owe no attorney's fees, though you may still be responsible for case costs (filing fees, expert fees, etc.). Always confirm the fee arrangement in writing before signing an engagement agreement."
+    }
+  ],
+  "relatedTools": ["accident-case-quiz", "statute-countdown", "settlement-readiness"],
+  "relatedGuides": ["after-car-accident"],
+  "relatedAccidents": ["car", "truck", "motorcycle", "slip-fall", "bicycle", "dog-bite"]
+}

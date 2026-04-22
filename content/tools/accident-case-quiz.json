@@ -1,0 +1,94 @@
+{
+  "slug": "accident-case-quiz",
+  "title": "What Kind of Accident Case Do I Have?",
+  "metaTitle": "What Kind of Accident Case Do I Have? — Free Quiz",
+  "metaDescription": "Answer a few questions about your accident to learn what type of case you may have and what educational next steps typically apply to your situation.",
+  "description": "Different accidents give rise to different types of personal injury claims, each with its own rules, timelines, and considerations. This educational quiz helps you understand the general category of your situation and points you toward the most relevant guidance — it is not a substitute for legal advice.",
+  "disclaimer": "This quiz provides general educational information only. It is not legal advice and does not evaluate the merits of any potential legal claim. Results are for informational purposes only. Consult a licensed attorney to understand your specific legal situation.",
+  "steps": [
+    {
+      "id": "accident-type",
+      "question": "What type of accident were you involved in?",
+      "type": "select"
+    },
+    {
+      "id": "what-happened",
+      "question": "Which of the following best describes what happened?",
+      "type": "multiselect"
+    },
+    {
+      "id": "injuries",
+      "question": "Which injuries did you sustain? (Select all that apply)",
+      "type": "checklist"
+    },
+    {
+      "id": "timeline",
+      "question": "When did the accident happen?",
+      "type": "select"
+    }
+  ],
+  "supportingContent": [
+    {
+      "heading": "Types of Personal Injury Cases",
+      "content": "Personal injury law covers a wide range of accidents and incidents, from car crashes and slip-and-fall accidents to workplace injuries and dog bites. The type of case you have determines which laws apply, who might be liable, what damages you may be able to seek, and how long you have to take action. Understanding your case type is an important first step toward knowing what resources and professional guidance are most relevant to your situation.",
+      "tips": [
+        "Motor vehicle accidents are among the most common personal injury cases",
+        "Premises liability covers slip-and-falls at businesses, homes, and public spaces",
+        "Product liability may apply if a defective product caused your injury"
+      ]
+    },
+    {
+      "heading": "How Motor Vehicle Accident Cases Work",
+      "content": "Car, truck, motorcycle, bicycle, and pedestrian accident cases typically involve claims of negligence — meaning that another party failed to exercise reasonable care and that failure caused your injuries. In California and Arizona, the at-fault driver's insurance is generally responsible for compensating victims. The severity of your injuries, available insurance coverage, and the clarity of fault all affect how a motor vehicle accident case may proceed. Consulting with an attorney early helps preserve evidence and protect your rights.",
+      "tips": [
+        "Gather the other driver's insurance information at the scene if possible",
+        "Seek medical care promptly — delays can be used to question injury severity",
+        "Document all costs: medical bills, lost income, transportation to appointments"
+      ]
+    },
+    {
+      "heading": "Premises Liability and Slip-and-Fall Cases",
+      "content": "When an injury occurs on someone else's property — a store, restaurant, apartment building, or private home — premises liability law may apply. Property owners have a duty to maintain reasonably safe conditions for visitors. To have a viable premises liability claim, you generally need to show that a hazardous condition existed, that the property owner knew or should have known about it, and that it caused your injury. These cases often hinge on evidence like incident reports, surveillance footage, and medical records.",
+      "tips": [
+        "Report the incident to the property manager and request a written incident report",
+        "Photograph the hazard, the area, and your injuries immediately if you are able",
+        "Seek medical care the same day — it documents the injury's connection to the incident"
+      ]
+    },
+    {
+      "heading": "Dog Bites and Animal Attacks",
+      "content": "California follows strict liability for dog bites, meaning an owner is liable for injuries caused by their dog even if the dog has never bitten anyone before. Arizona follows a similar strict liability rule. Dog bite cases may involve medical expenses, scarring, psychological trauma, and lost income. Identifying the dog's owner and gathering documentation of the incident promptly is important. Animal control reports and witness accounts can strengthen a claim.",
+      "tips": [
+        "Seek medical attention immediately — dog bites carry infection risk",
+        "Identify the dog owner and request proof of rabies vaccination",
+        "File a report with local animal control to create an official record"
+      ]
+    },
+    {
+      "heading": "When to Consult a Personal Injury Attorney",
+      "content": "While many minor accidents are resolved directly with insurance companies, more serious injuries, disputed liability, or claims involving significant medical expenses often benefit from legal representation. A personal injury attorney can evaluate the strength of your claim, handle communications with insurance adjusters, preserve evidence, and help you understand the full range of damages you may be entitled to seek. Most personal injury attorneys offer free initial consultations and work on contingency, meaning no upfront fees.",
+      "tips": [
+        "Consult an attorney before giving a recorded statement to any insurance company",
+        "An attorney can identify liable parties you may not have considered",
+        "Early consultation helps preserve evidence that can be lost over time"
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "What is the difference between a personal injury claim and a lawsuit?",
+      "answer": "A personal injury claim typically refers to a demand for compensation made directly to an insurance company, while a lawsuit is a formal legal action filed in court. Most personal injury cases are resolved through insurance claims or settlement negotiations without ever going to trial."
+    },
+    {
+      "question": "How do I know if I have a strong personal injury case?",
+      "answer": "The strength of a personal injury case generally depends on whether another party was at fault, the severity and documentation of your injuries, available insurance coverage, and how well your damages are documented. An attorney can evaluate these factors for your specific situation."
+    },
+    {
+      "question": "Can I have more than one type of claim from the same accident?",
+      "answer": "Yes. A single accident can give rise to multiple claims — for example, a car accident caused by a defective brake part might support both a negligence claim against the driver and a product liability claim against the manufacturer."
+    }
+  ],
+  "relatedTools": ["statute-countdown", "evidence-checklist", "lawyer-type-matcher"],
+  "relatedGuides": ["after-car-accident", "insurance-claims"],
+  "relatedAccidents": ["car", "truck", "motorcycle", "bicycle", "slip-fall", "dog-bite"]
+}

@@ -1,0 +1,75 @@
+{
+  "slug": "state-next-steps",
+  "title": "State-Specific Next Steps",
+  "metaTitle": "State-Specific Next Steps — CA & AZ Accident Guide",
+  "metaDescription": "Get state-specific guidance on deadlines, next steps, and important rules for accident victims in California and Arizona. Educational information only.",
+  "description": "Personal injury rules and deadlines differ between California and Arizona. This tool helps you understand the key differences — filing deadlines, no-fault insurance rules, comparative fault standards, and government claim requirements — so you know what state-specific factors may be relevant to your situation.",
+  "disclaimer": "This tool provides general educational information about California and Arizona personal injury rules. It is not legal advice. Laws change, and their application depends on your specific facts and circumstances. Consult a licensed personal injury attorney in the applicable state for guidance on your individual situation.",
+  "steps": [
+    {
+      "id": "state",
+      "question": "Which state did the accident occur in?",
+      "type": "select"
+    },
+    {
+      "id": "accident-type",
+      "question": "What type of accident were you involved in?",
+      "type": "select"
+    },
+    {
+      "id": "accident-date",
+      "question": "When did the accident happen?",
+      "type": "date"
+    }
+  ],
+  "supportingContent": [
+    {
+      "heading": "California: Key Rules for Accident Victims",
+      "content": "California is a fault-based (tort) state for auto insurance, meaning the at-fault party's insurance is responsible for damages. California follows a pure comparative fault rule — you can recover compensation even if you were partially at fault, but your recovery is reduced by your percentage of fault. The statute of limitations for personal injury claims is generally two years from the date of injury. Claims against government entities require a formal government tort claim within six months. California requires all drivers to carry minimum liability insurance of $15,000 per person and $30,000 per occurrence.",
+      "tips": [
+        "Pure comparative fault means even 99% at-fault parties can seek some recovery",
+        "Government tort claims have a strict 6-month deadline — do not confuse with the 2-year lawsuit deadline",
+        "California's Uninsured Motorist (UM) coverage protects you from drivers without insurance"
+      ]
+    },
+    {
+      "heading": "Arizona: Key Rules for Accident Victims",
+      "content": "Arizona is also a fault-based state for auto insurance. Like California, Arizona follows pure comparative fault — partial fault on your part reduces your recovery proportionally but does not bar you from suing. The general personal injury statute of limitations in Arizona is also two years from the date of injury. Claims against cities and counties typically require notice within 60 days; claims against state agencies require notice within 180 days. Arizona's minimum required auto liability coverage is $25,000 per person and $50,000 per occurrence.",
+      "tips": [
+        "Arizona's government claim deadlines are stricter than California's — 60 days for cities and counties",
+        "Arizona has no personal injury protection (PIP) requirement, unlike some no-fault states",
+        "Uninsured motorist coverage is important in Arizona given high rates of uninsured drivers"
+      ]
+    },
+    {
+      "heading": "Claims Against Government Entities: Critical Deadlines",
+      "content": "When your accident involves a government-owned vehicle, government employee, or a hazard on government property (a pothole, a broken traffic light, a dangerous sidewalk), special claim procedures apply before you can sue. In California, you must file a government tort claim with the relevant agency within six months of the date of injury. In Arizona, the deadline is 180 days for state agencies and 60 days for cities and counties. Missing these administrative claim deadlines can bar your lawsuit entirely — they are separate from and shorter than the general two-year statute of limitations.",
+      "tips": [
+        "File immediately if a government vehicle or property is involved — do not wait",
+        "The government entity's response (or failure to respond) triggers additional deadlines",
+        "An attorney experienced with government claims is strongly recommended for these cases"
+      ]
+    },
+    {
+      "heading": "How Comparative Fault Affects Your Claim",
+      "content": "Both California and Arizona follow the 'pure comparative fault' rule, which means that your compensation is reduced by your share of fault for the accident — but you are not completely barred from recovery even if you were significantly at fault. For example, if you are found 30% at fault and your damages are $100,000, you would recover $70,000. Insurance adjusters may try to assign you a higher percentage of fault to reduce the amount they owe. Having strong evidence — including a police report, witness accounts, and photos — is important to counter attempts to unfairly allocate fault to you."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Does it matter which state the accident happened in if I live in a different state?",
+      "answer": "Yes. Personal injury claims are generally governed by the law of the state where the accident occurred, not where you live. This includes which statute of limitations applies, fault rules, and government claim requirements. If you were injured in California or Arizona but live elsewhere, the applicable deadlines and procedures are those of the state where the accident occurred."
+    },
+    {
+      "question": "What is the difference between a fault state and a no-fault state for insurance?",
+      "answer": "In fault states like California and Arizona, the at-fault driver's insurance is responsible for compensating victims. In no-fault states, each driver's own insurance covers their injuries regardless of fault. California and Arizona are both fault states — meaning you can pursue a claim against the at-fault party and their insurer, rather than being limited to your own coverage."
+    },
+    {
+      "question": "What is comparative fault and how does it affect how much I can recover?",
+      "answer": "Comparative fault means that if you share some responsibility for the accident, your recovery is reduced by your percentage of fault. Under California's and Arizona's pure comparative fault system, you can still recover compensation even if you were more than 50% at fault — your award is simply reduced proportionally. For example, 25% fault on your part reduces a $100,000 recovery to $75,000."
+    }
+  ],
+  "relatedTools": ["statute-countdown", "accident-case-quiz", "lawyer-type-matcher"],
+  "relatedGuides": ["after-car-accident", "insurance-claims"],
+  "relatedAccidents": ["car", "truck", "motorcycle", "bicycle", "pedestrian", "slip-fall"]
+}

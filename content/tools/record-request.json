@@ -1,0 +1,70 @@
+{
+  "slug": "record-request",
+  "title": "Record Request Checklist",
+  "metaTitle": "Record Request Checklist — After an Accident",
+  "metaDescription": "Know which records to request after your accident, who to contact for each, and the typical timelines and costs involved in gathering your documentation.",
+  "description": "Building a complete documentary record after an accident is one of the most important things you can do to protect your options. This checklist identifies the types of records commonly needed in personal injury cases, who has them, and how to request them before deadlines pass or records are destroyed.",
+  "disclaimer": "This checklist provides general educational information about record types commonly relevant in personal injury cases. It is not legal advice. The specific records that matter in your case depend on your individual circumstances. An attorney can advise you on which records to prioritize.",
+  "steps": [
+    {
+      "id": "accident-type",
+      "question": "What type of accident were you involved in?",
+      "type": "select"
+    },
+    {
+      "id": "records-needed",
+      "question": "Which types of records are you looking to obtain? (Select all that apply)",
+      "type": "checklist"
+    }
+  ],
+  "supportingContent": [
+    {
+      "heading": "Police and Accident Reports",
+      "content": "The official accident or incident report filed by law enforcement is one of the most important documents in a personal injury case. It contains the officer's observations, the parties' contact and insurance information, any citations issued, witness information, and the officer's preliminary assessment of what occurred. In California, you can request a copy from the responding agency — city police department, county sheriff, or California Highway Patrol — typically 3 to 10 days after the incident. In Arizona, reports are available through the Arizona Department of Public Safety or the local agency. There is typically a fee, and you can request the report in person, by mail, or online.",
+      "tips": [
+        "Request the report from the specific agency that responded, not a generic portal",
+        "If you were involved in a hit-and-run, request any supplemental reports filed as investigation continues",
+        "Your attorney can also request certified copies directly from law enforcement"
+      ]
+    },
+    {
+      "heading": "Medical Records and Bills",
+      "content": "Complete medical records from every provider who treated your accident-related injuries are essential. This includes emergency room records, hospital admission records, imaging reports (X-rays, CT scans, MRI), treating physician notes, specialist consultations, physical therapy records, chiropractic records, mental health treatment records, and all associated billing statements. Request itemized bills rather than summary statements — itemized bills show each service rendered and its cost, which is more useful for documenting damages. Most providers charge a fee for records; submit a written HIPAA-compliant request to each provider.",
+      "tips": [
+        "Request records from every provider, even those you saw only once",
+        "Ask for both the narrative clinical notes and the billing records",
+        "Keep copies of all records in a secure location and provide copies to your attorney"
+      ]
+    },
+    {
+      "heading": "Employment and Income Records",
+      "content": "To document lost wages, you need records showing both your pre-accident income and the income you lost due to missed work. Key documents include recent pay stubs (covering at least three months before the accident), W-2 forms or 1099 forms from the prior one to two years, a letter from your employer confirming your position, pay rate, and dates of absence, and documentation of any bonuses, commissions, or benefits you missed. Self-employed individuals should gather tax returns, bank statements, client invoices, and contracts showing typical earnings.",
+      "tips": [
+        "Request a formal letter from your employer on company letterhead confirming your absence",
+        "Gather documentation of overtime, tips, and commissions if they were part of your regular income",
+        "Two years of tax returns provides a strong baseline for self-employment income claims"
+      ]
+    },
+    {
+      "heading": "Sending Preservation Requests for Time-Sensitive Evidence",
+      "content": "Some records are deleted or overwritten on short retention schedules and must be formally preserved before they are lost. Surveillance and security camera footage at businesses and intersections is often overwritten within 24 to 72 hours. Dashcam footage from rideshare or delivery vehicles may also be on a short retention cycle. Red light and traffic camera footage is typically controlled by city or state transportation agencies. To preserve this evidence, send a written preservation letter — by certified mail or via attorney — to the business or agency immediately after the accident, clearly describing the footage you need, the date and time, and requesting that it not be destroyed."
+    }
+  ],
+  "faq": [
+    {
+      "question": "How long does it take to get my medical records?",
+      "answer": "Under HIPAA, healthcare providers have 30 days to respond to a records request, with the option of a 30-day extension. Some providers respond faster; large hospital systems may take the full 30 days. Request records as early as possible to allow time for delays, especially if you have a case timeline or statute of limitations approaching."
+    },
+    {
+      "question": "What is a HIPAA authorization form and do I need one?",
+      "answer": "A HIPAA authorization form is a document that grants permission for a healthcare provider to release your medical records to a specified recipient — such as you, your attorney, or an insurance company. Most providers have their own forms; you sign and submit the form along with your records request. Your attorney will also typically have you sign a general HIPAA authorization that allows them to request records on your behalf."
+    },
+    {
+      "question": "Can I get records from a business that does not want to provide them?",
+      "answer": "If a business refuses to voluntarily provide records or surveillance footage, your attorney can issue a subpoena compelling production if litigation has been filed. Before litigation, a formal preservation letter from an attorney may prompt compliance. Police agencies can sometimes obtain certain records through their investigation that are not otherwise publicly available."
+    }
+  ],
+  "relatedTools": ["evidence-checklist", "insurance-call-prep", "settlement-readiness"],
+  "relatedGuides": ["after-car-accident", "getting-your-police-report"],
+  "relatedAccidents": ["car", "truck", "motorcycle", "slip-fall", "bicycle", "pedestrian"]
+}

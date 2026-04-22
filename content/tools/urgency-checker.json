@@ -1,0 +1,80 @@
+{
+  "slug": "urgency-checker",
+  "title": "Do I Need Medical Care Now?",
+  "metaTitle": "Do I Need Medical Care Now? — Accident Urgency Check",
+  "metaDescription": "Answer questions about your accident and symptoms to understand whether seeking medical attention soon may be beneficial for your health and your legal claim.",
+  "description": "After an accident, adrenaline and shock can mask serious injuries. This educational tool helps you think through your symptoms and circumstances so you can make an informed decision about seeking medical care — and understand why prompt evaluation matters for your health and your options.",
+  "disclaimer": "This tool is for educational purposes only. It is not medical advice. If you are experiencing a medical emergency, call 911 immediately. Always consult a qualified healthcare provider for any medical concerns following an accident.",
+  "steps": [
+    {
+      "id": "accident-type",
+      "question": "What type of accident were you involved in?",
+      "type": "select"
+    },
+    {
+      "id": "symptoms",
+      "question": "Are you experiencing any of the following? (Select all that apply)",
+      "type": "checklist"
+    },
+    {
+      "id": "when",
+      "question": "When did the accident happen?",
+      "type": "select"
+    },
+    {
+      "id": "seen-doctor",
+      "question": "Have you seen a doctor since the accident?",
+      "type": "select"
+    }
+  ],
+  "supportingContent": [
+    {
+      "heading": "Why Delayed Symptoms Are Common After Accidents",
+      "content": "The human body releases adrenaline and cortisol immediately following a traumatic event, which can mask pain signals for hours or even days. Conditions such as whiplash, traumatic brain injury, internal bleeding, and soft tissue injuries frequently do not produce obvious symptoms at the scene of an accident. By the time pain or dysfunction becomes apparent, the injury may have worsened — and the delay in seeking care may be used by insurance companies to argue that your injuries were not caused by the accident.",
+      "tips": [
+        "Neck and back pain from whiplash can appear 24 to 72 hours after a collision",
+        "Concussion symptoms including confusion and headache may not emerge immediately",
+        "Internal abdominal injuries can be life-threatening with minimal initial symptoms"
+      ]
+    },
+    {
+      "heading": "Symptoms That Require Immediate Emergency Care",
+      "content": "Certain symptoms following an accident require immediate emergency medical attention — do not wait. These include loss of consciousness or confusion, severe head or neck pain, chest pain or difficulty breathing, numbness or tingling in the extremities, abdominal pain or tenderness, uncontrolled bleeding, and visible bone deformity. If you or anyone at the accident scene is experiencing these symptoms, call 911 or go directly to an emergency room without delay.",
+      "tips": [
+        "Loss of consciousness, even brief, warrants immediate emergency evaluation",
+        "Chest pain after impact may indicate internal trauma — do not self-diagnose",
+        "Never drive yourself to the ER if you have any neurological symptoms"
+      ]
+    },
+    {
+      "heading": "The Medical and Legal Importance of Prompt Evaluation",
+      "content": "Seeing a doctor promptly after an accident serves two purposes: it protects your health by identifying injuries early, and it creates a documented medical record that connects your injuries to the accident. Insurance adjusters and defense attorneys look closely at gaps in medical care. A significant delay between the accident and your first doctor visit can be presented as evidence that your injuries were not serious or were caused by something else. Even if you feel relatively well, a same-day or next-day evaluation is generally advisable.",
+      "tips": [
+        "Document every symptom at your medical visit — even minor ones",
+        "Tell the treating provider the exact date, time, and circumstances of the accident",
+        "Follow through with all recommended follow-up appointments"
+      ]
+    },
+    {
+      "heading": "What to Tell the Doctor After an Accident",
+      "content": "When you see a doctor after an accident, provide a complete account of how the accident happened and every symptom you are experiencing — even those that seem minor. Tell the provider about any pre-existing conditions so they can distinguish new injuries from prior ones. Do not downplay your pain out of politeness or concern about cost. Your medical records are a primary source of evidence in any insurance or legal proceeding, and incomplete records can limit your options. Ask for copies of all records and imaging reports."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Should I go to the emergency room or urgent care after a car accident?",
+      "answer": "If you have any symptoms suggesting serious injury — head pain, loss of consciousness, chest pain, numbness, or difficulty breathing — go to an emergency room immediately. For less urgent symptoms, an urgent care clinic or primary care provider can conduct an initial evaluation and refer you for imaging or specialist care if needed."
+    },
+    {
+      "question": "What if I feel fine after the accident?",
+      "answer": "Feeling fine immediately after an accident does not mean you are uninjured. Adrenaline can suppress pain, and many significant injuries — including whiplash, concussion, and soft tissue damage — develop symptoms gradually over the following hours or days. A medical evaluation within 24 to 72 hours is generally recommended even if you feel well."
+    },
+    {
+      "question": "Does seeking medical care affect my insurance claim?",
+      "answer": "Yes — in a positive way. Prompt medical care creates a documented record that ties your injuries to the accident. Gaps in care or delays in treatment can be used by insurance companies to dispute the severity or cause of your injuries. Consistent medical documentation typically supports a stronger claim."
+    }
+  ],
+  "relatedTools": ["injury-journal", "evidence-checklist", "accident-case-quiz"],
+  "relatedGuides": ["after-car-accident"],
+  "relatedAccidents": ["car", "truck", "motorcycle", "bicycle", "pedestrian", "slip-fall"]
+}
