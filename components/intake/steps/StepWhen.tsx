@@ -14,7 +14,11 @@ export function StepWhen({ data, onChange, onNext, onBack }: StepProps) {
       <p className="text-neutral-500 text-sm mb-6">
         The date affects your legal timeline. California and Arizona both have a 2-year statute of limitations for most personal injury claims.
       </p>
+      <label htmlFor="accident-date" className="sr-only">
+        Date of accident
+      </label>
       <input
+        id="accident-date"
         type="date"
         value={data.accidentDate ?? ''}
         max={today}

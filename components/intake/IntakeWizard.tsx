@@ -93,7 +93,7 @@ export function IntakeWizard() {
       state: data.state ?? '',
     })
     // Keep data in localStorage for results page
-    router.push('/find-help/results')
+    router.push('/find-help/thank-you')
   }
 
   const stepProps = { data, onChange, onNext: goNext, onBack: goBack }
