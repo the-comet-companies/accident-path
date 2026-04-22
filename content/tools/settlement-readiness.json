@@ -1,0 +1,80 @@
+{
+  "slug": "settlement-readiness",
+  "title": "Settlement Readiness Checklist",
+  "metaTitle": "Settlement Readiness Checklist — Are You Ready?",
+  "metaDescription": "Assess whether you may be ready to discuss settlement. Identify what documentation you should have in place before entering any settlement conversation.",
+  "description": "Settling a personal injury claim before you are ready can result in compensation that does not reflect your actual losses. This educational checklist helps you identify whether the most important elements are typically in place before settlement discussions begin — and what may still be missing.",
+  "disclaimer": "This checklist provides general educational information about settlement preparation and is not legal advice. The right time to settle depends on your individual medical situation, case facts, and legal circumstances. Consult a licensed personal injury attorney before accepting any settlement offer.",
+  "steps": [
+    {
+      "id": "medical-status",
+      "question": "What is the current status of your medical treatment?",
+      "type": "select"
+    },
+    {
+      "id": "records-gathered",
+      "question": "Which of the following records do you currently have? (Select all that apply)",
+      "type": "checklist"
+    },
+    {
+      "id": "wages-documented",
+      "question": "Have you documented your lost wages and other economic losses?",
+      "type": "select"
+    },
+    {
+      "id": "attorney-consulted",
+      "question": "Have you consulted with a personal injury attorney?",
+      "type": "select"
+    }
+  ],
+  "supportingContent": [
+    {
+      "heading": "Why Settling Too Early Can Undermine Your Claim",
+      "content": "Insurance companies often present early settlement offers that seem reasonable but do not account for the full extent of your injuries, long-term medical needs, or future lost income. Once you sign a settlement release, you typically waive your right to seek additional compensation — even if your injuries turn out to be more serious than initially apparent. Settling before you have reached maximum medical improvement and documented all your losses means you may be giving up rights you cannot reclaim. Most personal injury attorneys counsel clients not to settle until medical treatment is complete or the prognosis is clearly established.",
+      "tips": [
+        "Do not accept an offer until your medical treatment is complete or maximum improvement is reached",
+        "Signing a release is permanent — you cannot reopen a claim after settling",
+        "A quick settlement offer often signals that the insurer believes your claim is worth more"
+      ]
+    },
+    {
+      "heading": "What Does 'Maximum Medical Improvement' Mean?",
+      "content": "Maximum medical improvement (MMI) is the point at which your treating physicians determine that your condition has stabilized and further significant improvement is unlikely, even with continued treatment. Reaching MMI does not mean you are fully recovered — it means your condition has plateaued. Settling before MMI carries significant risk because the full cost of your future medical needs, ongoing limitations, and long-term impact on your life may not yet be known. An attorney can advise you on how MMI applies to your specific injuries and prognosis.",
+      "tips": [
+        "Ask your treating physician directly whether you have reached maximum medical improvement",
+        "Get any long-term care recommendations from your doctor in writing",
+        "Permanent impairment or disability ratings may be part of your MMI evaluation"
+      ]
+    },
+    {
+      "heading": "The Full Picture: Economic and Non-Economic Damages",
+      "content": "A complete settlement should account for all categories of recoverable damages: medical bills (past and future), lost wages (past and future earning capacity), property damage, out-of-pocket expenses, pain and suffering, loss of enjoyment of life, emotional distress, and — in cases involving egregious conduct — potentially punitive damages. Many accident victims focus only on their medical bills and miss other significant components. A personal injury attorney can help you identify and document all applicable damages before you enter settlement negotiations.",
+      "tips": [
+        "Non-economic damages like pain and suffering can exceed medical bills in serious cases",
+        "Future medical costs require a medical expert's estimate, not your own projection",
+        "Document every out-of-pocket expense: transportation, equipment, home modifications"
+      ]
+    },
+    {
+      "heading": "Should You Hire an Attorney Before Settling?",
+      "content": "Studies and industry experience consistently show that personal injury claimants represented by attorneys typically recover more — even after legal fees — than those who negotiate on their own. An attorney can identify damages you may have overlooked, negotiate from a position of legal knowledge, prevent common mistakes in the settlement process, and advise you on the tax implications of different components of a settlement award. Most personal injury attorneys work on contingency, meaning no upfront fees — they are paid only if they recover money for you."
+    }
+  ],
+  "faq": [
+    {
+      "question": "How do I know if a settlement offer is fair?",
+      "answer": "Evaluating a settlement offer requires knowing the full value of your claim — which includes all past and future medical costs, lost income, pain and suffering, and other damages. Insurance adjusters calculate settlements based on their own formulas; an experienced personal injury attorney can independently evaluate the offer against the actual value of your claim and advise you on whether to accept, counter, or continue negotiating."
+    },
+    {
+      "question": "What happens after I sign a settlement agreement?",
+      "answer": "After signing a settlement release, you receive the agreed payment and your claim is closed. You permanently waive your right to seek additional compensation from the settling parties for that incident — even if your injuries worsen, you discover additional damages, or you incur future medical expenses related to the same accident. This is why it is so important to be confident your damages are fully documented before signing."
+    },
+    {
+      "question": "Can I negotiate a higher settlement amount?",
+      "answer": "Yes. Initial offers from insurance companies are typically negotiable. You or your attorney can counter with a demand letter documenting your damages and explaining why a higher amount is warranted. Multiple rounds of negotiation are common. Having strong documentation — medical records, wage loss evidence, and a detailed account of how the injury has affected your life — strengthens your negotiating position significantly."
+    }
+  ],
+  "relatedTools": ["lost-wages-estimator", "injury-journal", "record-request"],
+  "relatedGuides": ["after-car-accident", "insurance-claims"],
+  "relatedAccidents": ["car", "truck", "motorcycle", "slip-fall", "bicycle"]
+}
