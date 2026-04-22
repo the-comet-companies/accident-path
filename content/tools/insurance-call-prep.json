@@ -1,0 +1,75 @@
+{
+  "slug": "insurance-call-prep",
+  "title": "Insurance Call Prep Tool",
+  "metaTitle": "Insurance Call Prep Tool — Accident Victims Guide",
+  "metaDescription": "Prepare for your insurance call with a customized script, key questions to ask, information to gather, and common mistakes to avoid before you dial.",
+  "description": "Calls with insurance adjusters after an accident can feel high-stakes — because they are. What you say and how you say it matters. This tool helps you organize what to have on hand, what questions to ask, and what to avoid saying, so you can approach the call with more confidence.",
+  "disclaimer": "This tool provides general educational information about common insurance claim practices. It is not legal advice. Insurance policies and claims processes vary significantly. Before giving any recorded statement to any insurance company, consider consulting a licensed personal injury attorney.",
+  "steps": [
+    {
+      "id": "caller-type",
+      "question": "Who are you calling?",
+      "type": "select"
+    },
+    {
+      "id": "call-purpose",
+      "question": "What is the purpose of your call?",
+      "type": "select"
+    },
+    {
+      "id": "info-available",
+      "question": "What information do you currently have available? (Select all that apply)",
+      "type": "checklist"
+    }
+  ],
+  "supportingContent": [
+    {
+      "heading": "Your Insurance vs. the Other Party's Insurance",
+      "content": "There are two very different types of insurance calls you may need to make after an accident. Calls to your own insurance company are governed by your contractual obligations — you generally must report the accident promptly and cooperate with your own insurer. Calls to the other party's insurance company are a different matter: you have no contractual obligation to their adjuster, they represent the adverse party's interests, and you are not required to give a recorded statement. Understanding which type of call you are making shapes everything about how you should approach it.",
+      "tips": [
+        "Report to your own insurer promptly — your policy requires timely notice",
+        "You are generally not required to give a recorded statement to the other driver's insurer",
+        "Ask for the adjuster's name, direct number, and claim number at the start of every call"
+      ]
+    },
+    {
+      "heading": "Information to Have Ready Before You Call",
+      "content": "Before calling any insurance company, gather: your policy number and declarations page, the official police report number (if available), the other driver's name, license plate, and insurance information, the names and contact information of any witnesses, photos of the damage and scene, a chronological summary of events (written beforehand so you stay consistent), your medical provider names and any treatment you have received, and a list of any expenses you have incurred. Being organized prevents you from providing incomplete information or making inconsistent statements across multiple calls.",
+      "tips": [
+        "Write a brief factual summary of the accident before the call and stick to it",
+        "Do not guess about details you do not know — 'I do not know' is a valid answer",
+        "Take notes during every call: date, time, adjuster's name, what was said"
+      ]
+    },
+    {
+      "heading": "What Not to Say to an Insurance Adjuster",
+      "content": "Insurance adjusters are trained to gather information that can be used to minimize or deny your claim. Avoid these common mistakes: do not apologize or say anything that could be interpreted as admitting fault; do not say you are 'feeling fine' or 'okay' — these statements are used to dispute injury severity; do not agree to a recorded statement without first consulting an attorney, especially for the other driver's insurer; do not accept a settlement offer without understanding the full extent of your injuries and damages; and do not speculate about the cause of the accident or about your own injuries.",
+      "tips": [
+        "Never say 'I feel fine' — it can be used to dispute your injuries later",
+        "Stick to facts you know with certainty; avoid speculating",
+        "You can always say 'I need to call you back' if you feel unprepared or pressured"
+      ]
+    },
+    {
+      "heading": "Handling Lowball Settlement Offers",
+      "content": "Insurance companies often make early, low settlement offers to injured parties who have not yet fully understood their injuries, medical costs, or legal options. Once you accept a settlement and sign a release, you typically cannot seek additional compensation — even if your injuries turn out to be more serious than expected. Before accepting any settlement offer, ensure your medical treatment is complete or that you have reached maximum medical improvement, that you have documented all your economic losses, and that you have consulted with a personal injury attorney who can evaluate whether the offer reflects the actual value of your claim."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Do I have to give a recorded statement to the other driver's insurance company?",
+      "answer": "In most cases, no. You are generally not required to give a recorded statement to the adverse party's insurance company. They represent the other driver's interests, not yours. You may politely decline and state that you prefer to have the matter handled in writing or through your attorney. Your own insurance company may require a statement under your policy obligations."
+    },
+    {
+      "question": "What should I do if the adjuster pressures me to settle quickly?",
+      "answer": "Do not feel pressured to accept an early offer. Early settlement offers are often below the true value of a claim, particularly before the full extent of your injuries is known. You have the right to take time to consult an attorney, complete your medical treatment, and fully document your damages before making any settlement decisions."
+    },
+    {
+      "question": "Should I get a lawyer before talking to insurance companies?",
+      "answer": "Consulting a personal injury attorney before giving any recorded statement — particularly to the other party's insurer — is generally advisable in cases involving significant injuries, disputed liability, or complex circumstances. Most personal injury attorneys offer free initial consultations, and their guidance can protect your claim from early missteps."
+    }
+  ],
+  "relatedTools": ["evidence-checklist", "record-request", "accident-case-quiz"],
+  "relatedGuides": ["after-car-accident", "insurance-claims"],
+  "relatedAccidents": ["car", "truck", "motorcycle", "uber-lyft", "bicycle"]
+}
