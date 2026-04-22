@@ -74,16 +74,15 @@ export function IntakeWizard() {
         city: data.city ?? null,
         state: data.state ?? null,
         injuries: data.injuries ?? [],
-        medical_treatment: data.medicalTreatment ?? null,
+        medical: data.medicalTreatment ?? null,
         police_report: data.policeReport ?? null,
-        insurance_status: data.insuranceStatus ?? null,
+        insurance: data.insuranceStatus ?? null,
         work_impact: data.workImpact ?? null,
         urgency_factors: urgencyFactors,
         name: data.name ?? null,
         email: data.email ?? null,
         phone: data.phone ?? null,
         consent: data.consent ?? false,
-        submitted_at: new Date().toISOString(),
       })
     } catch {
       // Don't block the user flow on Supabase errors
