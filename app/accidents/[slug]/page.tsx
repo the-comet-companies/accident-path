@@ -103,6 +103,7 @@ export default async function AccidentHubPage({
               { label: 'Accident Types', href: '/accidents' },
               { label: accident.title },
             ]}
+            variant="dark"
           />
           <div className="mt-4 lg:flex lg:items-start lg:justify-between lg:gap-12">
             <div className="max-w-2xl">

@@ -10,16 +10,24 @@ export interface BreadcrumbItem {
 
 interface BreadcrumbProps {
   items: BreadcrumbItem[]
+  variant?: 'light' | 'dark'
 }
 
-export function Breadcrumb({ items }: BreadcrumbProps) {
+export function Breadcrumb({ items, variant = 'light' }: BreadcrumbProps) {
   const withHome: BreadcrumbItem[] = [{ label: 'Home', href: '/' }, ...items]
+
+  const isDark = variant === 'dark'
+  const baseColor = isDark ? 'text-white/50' : 'text-neutral-500'
+  const currentColor = isDark ? 'text-white/90 font-medium' : 'text-neutral-950 font-medium'
+  const linkHover = isDark
+    ? 'hover:text-white transition-colors underline-offset-2 hover:underline'
+    : 'hover:text-primary-600 transition-colors underline-offset-2 hover:underline'
 
   return (
     <>
       <SchemaOrg schema={breadcrumbSchema(items)} id="breadcrumb-jsonld" />
       <nav aria-label="Breadcrumb" className="py-3">
-        <ol className="flex flex-wrap items-center gap-1 text-sm text-neutral-500">
+        <ol className={`flex flex-wrap items-center gap-1 text-sm ${baseColor}`}>
           {withHome.map((item, index) => {
             const isLast = index === withHome.length - 1
             return (
@@ -29,16 +37,13 @@ export function Breadcrumb({ items }: BreadcrumbProps) {
                 )}
                 {isLast || !item.href ? (
                   <span
-                    className="text-neutral-950 font-medium"
+                    className={currentColor}
                     aria-current={isLast ? 'page' : undefined}
                   >
                     {item.label}
                   </span>
                 ) : (
-                  <Link
-                    href={item.href}
-                    className="hover:text-primary-600 transition-colors underline-offset-2 hover:underline"
-                  >
+                  <Link href={item.href} className={linkHover}>
                     {item.label}
                   </Link>
                 )}

@@ -18,7 +18,7 @@ export default function AccidentsPage() {
       {/* Page header */}
       <div className="bg-primary-900 py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Breadcrumb items={[{ label: 'Accident Types' }]} />
+          <Breadcrumb items={[{ label: 'Accident Types' }]} variant="dark" />
           <div className="flex items-center gap-2 text-amber-500 text-xs font-semibold uppercase tracking-widest font-sans mt-4 mb-3">
             <span className="w-5 h-px bg-amber-500 shrink-0" aria-hidden="true" />
             All Accident Types
