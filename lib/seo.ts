@@ -99,3 +99,39 @@ export function faqSchema(items: FAQItem[]) {
     })),
   }
 }
+
+// ─── SoftwareApplication ─────────────────────────────────────────────────────
+
+export interface SoftwareApplicationSchemaInput {
+  name: string
+  description: string
+  url: string
+  applicationCategory?: string
+}
+
+export function softwareApplicationSchema({
+  name,
+  description,
+  url,
+  applicationCategory = 'LegalService',
+}: SoftwareApplicationSchemaInput) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name,
+    description,
+    url: `${BASE_URL}${url}`,
+    applicationCategory,
+    operatingSystem: 'Web',
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'USD',
+    },
+    provider: {
+      '@type': 'Organization',
+      name: 'AccidentPath',
+      url: BASE_URL,
+    },
+  }
+}
