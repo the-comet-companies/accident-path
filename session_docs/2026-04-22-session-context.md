@@ -1,5 +1,25 @@
 # Session Context — April 22, 2026
 
+## Where We Left Off (read this first in a new session)
+
+**Last completed task: DEV-13 — IntakeWizard** ✅
+- 9-step intake wizard live at `/find-help`
+- Saves to Supabase `intake_sessions` — confirmed working in production
+- Flow: `/find-help` → 9 steps → `/find-help/thank-you` → `/find-help/results`
+
+**Next task: DEV-14 — State rules engine (CA+AZ) + find-help flow + Server Actions**, ~6h, P0
+- Defined in `scripts/create-master-pipeline-db.py` line 278
+- Depends on DEV-03 (Supabase schema ✅) + DEV-13 (IntakeWizard ✅)
+- Scope: CA/AZ routing logic, urgency-based next steps per state, Server Actions for form submission
+
+**Task reference file:** `scripts/create-master-pipeline-db.py` — all 28 DEV tasks defined here as Python dicts (DEV-01 through DEV-28). This is the canonical task list, not any Notion page.
+
+**Active branch:** `main` — all work on main, no open PRs. Last commit: `967507a`.
+
+**Build state:** 71 static pages. TypeScript strict, lint clean.
+
+---
+
 ## Summary
 
 Yesterday's session (April 21) completed a full UI/UX pass across the home page and the accidents hub — redesigning the hero, trust row, how-it-works, accident grid, featured tools, educational guides, state selector, and accidents hub listing page. All 15 accident type hubs are now in CMS. Today's session (April 22) focused on the `/guides` section — fixing breadcrumb contrast, building out all 10 missing guide CMS files, and redesigning the guides listing page to match the two-tone filter layout from `/accidents`.
