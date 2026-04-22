@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { Breadcrumb } from '@/components/layout/Breadcrumb'
 import { buildMetaTags } from '@/components/seo/MetaTags'
 
@@ -106,18 +107,18 @@ export default function ContactPage() {
               — our guides and tools are the best place to start.
             </p>
             <div className="flex flex-wrap justify-center gap-3">
-              <a
+              <Link
                 href="/guides"
                 className="inline-flex items-center gap-1 text-sm font-semibold font-sans text-primary-600 hover:text-primary-700 transition-colors"
               >
                 Browse Guides <span aria-hidden="true">→</span>
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/tools"
                 className="inline-flex items-center gap-1 text-sm font-semibold font-sans text-neutral-500 hover:text-neutral-700 transition-colors"
               >
                 Use Free Tools <span aria-hidden="true">→</span>
-              </a>
+              </Link>
             </div>
           </div>
 

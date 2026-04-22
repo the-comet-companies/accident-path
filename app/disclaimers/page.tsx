@@ -94,7 +94,7 @@ export default function DisclaimersPage() {
 
             <nav aria-label="Disclaimer sections" className="mb-10">
               <p className="font-sans font-semibold text-sm text-neutral-950 mb-3">Contents</p>
-              <ol className="space-y-1">
+              <ul className="space-y-1">
                 {DISCLAIMERS.map((d) => (
                   <li key={d.id}>
                     <a
@@ -105,7 +105,7 @@ export default function DisclaimersPage() {
                     </a>
                   </li>
                 ))}
-              </ol>
+              </ul>
             </nav>
 
             <div className="space-y-10">

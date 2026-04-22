@@ -126,13 +126,13 @@ export default function AboutPage() {
                 href="/about/how-it-works"
                 className="inline-flex items-center gap-1 text-sm font-semibold font-sans text-primary-600 hover:text-primary-700 transition-colors"
               >
-                How AccidentPath Works →
+                How AccidentPath Works <span aria-hidden="true">→</span>
               </Link>
               <Link
                 href="/contact"
                 className="inline-flex items-center gap-1 text-sm font-semibold font-sans text-neutral-500 hover:text-neutral-700 transition-colors"
               >
-                Contact Us →
+                Contact Us <span aria-hidden="true">→</span>
               </Link>
             </div>
 
