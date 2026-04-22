@@ -1,0 +1,57 @@
+{
+  "slug": "getting-your-police-report",
+  "title": "How to Get Your Accident Police Report",
+  "metaTitle": "How to Get Your Accident Police Report — CA and AZ",
+  "metaDescription": "Your police report is essential for any insurance claim. Learn how to get it in California or Arizona, what it contains, and how to correct any errors.",
+  "description": "The police report from your accident is one of the most important documents in any insurance claim or lawsuit. It is the official record created by a neutral third party — law enforcement — and it contains facts, witness information, and sometimes a preliminary fault determination. Knowing how to get it, read it, and correct any errors can meaningfully affect your claim.",
+  "sections": [
+    {
+      "heading": "Why the Police Report Matters",
+      "content": "Insurance companies use the police report as a foundational document when evaluating claims. It establishes the basic facts of the accident — date, time, location, parties, vehicles, and observed conditions — from a neutral source. A fault notation by the responding officer, while not legally binding, carries weight in claim negotiations. The report also identifies witnesses who were present but may be harder to locate later. Having your own copy ensures you can verify that the information is accurate and challenge any errors that could harm your claim.",
+      "tips": [
+        "Get the report number at the scene so you can request the full report quickly",
+        "Insurance adjusters will obtain and review the police report — you should read it first",
+        "Witness names in the police report can be used to gather supporting statements later"
+      ]
+    },
+    {
+      "heading": "How to Get Your Police Report in California",
+      "content": "In California, police reports are handled by the agency that responded to the accident — California Highway Patrol (CHP), the local police department, or the county sheriff. CHP reports can be requested online through the CHP website, by mail, or in person at the responding CHP office. Most CHP reports are available within 10 days of the accident. Local police department reports are requested directly from the department. The fee is typically $10 to $25. Bring your case or event number, the date of the accident, and valid identification. Processing times vary by agency — call ahead to confirm.",
+      "tips": [
+        "CHP reports: request online at sar.chp.ca.gov or at the responding CHP office",
+        "Local police accidents: contact the responding department's records division directly",
+        "Allow 7 to 14 days from the accident date before requesting — reports take time to finalize"
+      ]
+    },
+    {
+      "heading": "How to Get Your Police Report in Arizona",
+      "content": "In Arizona, accident reports are filed by the responding agency — the Arizona Department of Public Safety (DPS) for highway accidents, or the local police or sheriff for city and county roads. DPS reports can be requested online through the Arizona DPS Crash Report Portal, by mail, or in person. Local agency reports are requested through the records divisions of the corresponding department. Typical fees are $5 to $15. Reports are generally available within 7 to 10 business days of the accident. Arizona law requires drivers to file their own report if law enforcement did not file one for accidents involving injury or damage over $1,000.",
+      "tips": [
+        "AZ DPS crash reports: available through the AZ DPS online portal or by mail",
+        "If police did not respond, Arizona drivers must file their own report for accidents involving injury or damage over $1,000",
+        "Reports typically take 7 to 10 business days to be finalized and available"
+      ]
+    },
+    {
+      "heading": "What the Police Report Contains",
+      "content": "A standard accident police report includes the date, time, and location of the accident; names, contact information, driver's license numbers, and insurance information for all drivers; vehicle descriptions and damage summaries; a diagram of the accident scene; weather and road conditions; statements from drivers and witnesses; any citations issued; and the officer's observations and preliminary fault notation if made. Read each section carefully. Errors in names, addresses, insurance information, or the accident narrative can affect your claim and should be corrected promptly.",
+      "tips": [
+        "Review the officer's narrative section — this is where fault observations are noted",
+        "Check all personal information, insurance details, and vehicle descriptions for accuracy",
+        "Note whether any citations were issued to either driver and for what violations"
+      ]
+    },
+    {
+      "heading": "How to Correct Errors in a Police Report",
+      "content": "Police reports can contain factual errors — misspelled names, wrong vehicle descriptions, or inaccurate narratives. Contact the reporting officer or the agency's records division to request a correction or addendum. In California and Arizona, agencies can add a supplemental report or make corrections to factual errors. You generally cannot change the officer's subjective observations or fault notation, but factual errors are correctable. If you believe the report significantly misrepresents the accident, your attorney can submit a written dispute to the file.",
+      "tips": [
+        "Contact the records division of the reporting agency to request factual corrections",
+        "Corrections are typically made as addendums, not changes to the original document",
+        "An attorney can submit a written letter disputing significant factual inaccuracies"
+      ]
+    }
+  ],
+  "relatedAccidents": ["car", "truck", "motorcycle", "slip-and-fall"],
+  "relatedTools": ["accident-case-quiz", "evidence-checklist"],
+  "relatedGuides": ["after-car-accident", "evidence-checklist", "insurance-claims"]
+}

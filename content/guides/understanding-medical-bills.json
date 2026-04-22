@@ -1,0 +1,57 @@
+{
+  "slug": "understanding-medical-bills",
+  "title": "Understanding Your Medical Bills After an Accident",
+  "metaTitle": "Accident Medical Bills Explained — What to Know",
+  "metaDescription": "Medical bills after an accident are confusing and often negotiable. Learn what each charge means, who pays, and how to protect yourself from billing errors.",
+  "description": "Medical bills following an accident can be overwhelming — multiple providers, unfamiliar codes, and unexpected amounts. Understanding what you are being billed for, who is responsible for paying, and what can be negotiated is essential to protecting both your health and your financial recovery.",
+  "sections": [
+    {
+      "heading": "Why Medical Bills After an Accident Are So Confusing",
+      "content": "After an accident, you may receive separate bills from the hospital, emergency room physicians, radiologists, anesthesiologists, specialists, and physical therapists — even though your care happened in one place. Each is an independent provider that bills separately. You may also receive Explanations of Benefits (EOBs) from your health insurer that look like bills but are not. The billed amount, the insurer's negotiated rate, and what you actually owe can be three very different numbers. Do not assume that any figure you see on an initial bill is final or non-negotiable.",
+      "tips": [
+        "Ask each provider for an itemized bill — not just a summary",
+        "An EOB from your health insurer is not a bill — it shows what the insurer agreed to pay",
+        "Request the 'contracted rate' your insurer negotiated, not just the billed amount"
+      ]
+    },
+    {
+      "heading": "Who Pays Your Medical Bills While Your Claim Is Pending",
+      "content": "There is often a gap between when care is provided and when an insurance claim resolves. During that time, medical bills still come due. Several sources may help cover costs during this period: your own health insurance, MedPay coverage on your auto policy (in California and Arizona), personal injury protection (PIP) if applicable, and in some cases medical providers will place bills in lien — agreeing to be paid from any settlement or verdict rather than billing you immediately. Understanding which coverage applies to your situation early can prevent your bills from going to collections.",
+      "tips": [
+        "Check your auto policy for MedPay — it pays medical bills regardless of fault",
+        "Some medical providers will hold billing in exchange for a lien on your future settlement",
+        "Do not let bills go unpaid without informing your attorney or exploring lien options"
+      ]
+    },
+    {
+      "heading": "Medical Billing Errors Are Common — Review Every Bill",
+      "content": "Studies consistently show that a significant percentage of medical bills contain errors — duplicate charges, upcoded procedures, services that were ordered but not performed, and administrative mistakes. Request an itemized bill for every provider and review each line. Compare the description to what you actually received. If a code or charge does not match your care, request a correction in writing. Your health insurer's billing dispute process provides another avenue to challenge errors. These corrections directly affect what you owe and what appears in your medical records.",
+      "tips": [
+        "Request itemized bills from every provider — a one-page summary is not enough to verify accuracy",
+        "Look for duplicate charges, phantom charges, or services you do not recognize",
+        "Dispute errors in writing and keep copies of all correspondence"
+      ]
+    },
+    {
+      "heading": "Medical Liens and How They Affect Your Settlement",
+      "content": "If your health insurer, Medicare, Medi-Cal, or a medical provider paid for your accident-related care, they may have a right to be reimbursed from your settlement — this is called a lien or subrogation right. You cannot simply pocket a full settlement and ignore outstanding medical bills; unresolved liens can follow you and result in collection actions. An attorney handling your personal injury claim will typically negotiate these liens as part of the settlement process, often reducing them significantly. Understanding that lienholders will be paid from your recovery helps set realistic expectations about your net payout.",
+      "tips": [
+        "Notify your attorney of all healthcare providers who treated you for the accident",
+        "Medicare and Medi-Cal have strong lien rights that must be addressed before settling",
+        "Liens are often negotiable — an attorney can reduce what lienholders receive"
+      ]
+    },
+    {
+      "heading": "Your Medical Bills as Evidence of Damages",
+      "content": "In a personal injury claim, your medical bills serve dual purpose: they are expenses you are entitled to recover, and they are evidence of the seriousness of your injuries. Keep every bill, receipt, and payment record organized by date and provider. The total of your medical expenses — past and future — is one of the primary factors in calculating your compensation. Future medical expenses (ongoing treatment, surgeries, rehabilitation) require documentation from your treating physicians, and in significant cases, expert life care planners may be needed to project long-term costs.",
+      "tips": [
+        "Keep every medical bill, receipt, and co-pay record organized in one place",
+        "Ask your doctor to document the expected future course of treatment in writing",
+        "Future medical costs are recoverable — do not settle before a prognosis is established"
+      ]
+    }
+  ],
+  "relatedAccidents": ["car", "truck", "motorcycle", "slip-and-fall", "workplace"],
+  "relatedTools": ["accident-case-quiz", "settlement-readiness"],
+  "relatedGuides": ["insurance-claims", "hiring-a-lawyer", "protecting-your-claim"]
+}

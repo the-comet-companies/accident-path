@@ -1,0 +1,57 @@
+{
+  "slug": "protecting-your-claim",
+  "title": "Common Mistakes That Hurt Your Accident Claim",
+  "metaTitle": "Mistakes After a Car Accident That Hurt Your Claim",
+  "metaDescription": "Small mistakes after an accident can cost you thousands. Learn the 10 most common errors accident victims make and how to avoid them from day one.",
+  "description": "Most accident claims are not lost in court — they are weakened in the days and weeks after the crash through avoidable mistakes. Insurance companies are experienced at finding reasons to reduce or deny claims. Understanding what those reasons are, and how to avoid them, keeps your claim as strong as possible.",
+  "sections": [
+    {
+      "heading": "Not Calling the Police or Filing a Report",
+      "content": "A police report is an official, neutral record of the accident. It documents the date, time, location, parties involved, basic facts about what happened, and often an initial determination of fault. Without it, the accident can become a 'he said, she said' dispute — which typically benefits the insurer. In many states, including California and Arizona, accidents involving injury or significant property damage must be reported. Even in minor accidents where police do not respond in person, filing a report with your local DMV or police department creates the foundational document for your claim.",
+      "tips": [
+        "Always call 911 after an accident — a police report protects your claim",
+        "If police do not respond, file a DMV report within 10 days for accidents over $1,000 in California",
+        "Request the report number at the scene and get the full report within 7 to 10 days"
+      ]
+    },
+    {
+      "heading": "Admitting Fault or Apologizing at the Scene",
+      "content": "The impulse to apologize after an accident is human and understandable. But statements like 'I'm sorry,' 'I didn't see you,' or 'this was my fault' made at the scene can be used as admissions against you in a claim or lawsuit. You cannot fully assess fault in the immediate aftermath of an accident — road conditions, mechanical failure, the other party's behavior, and other factors may have contributed. Limit your conversation at the scene to exchanging required information, cooperating with police, and ensuring anyone injured receives help. Let investigators and insurers make fault determinations based on evidence.",
+      "tips": [
+        "Do not say 'I'm sorry,' 'I didn't see you,' or 'this was my fault' at the scene",
+        "Fault is a legal and factual determination — you are not the right person to make it in the moment",
+        "Cooperate with police factually: what happened, where, when — not who was to blame"
+      ]
+    },
+    {
+      "heading": "Delaying or Skipping Medical Care",
+      "content": "Insurers look for gaps in medical treatment as evidence that your injuries were minor or caused by something other than the accident. If you wait days or weeks to see a doctor, the insurer will argue that a genuinely injured person would have sought care immediately. Go to an emergency room or urgent care facility within 24 to 72 hours of the accident, even if you feel okay. Follow every referral and attend every appointment. If you stop treatment before your doctor releases you, that too will be used against you.",
+      "tips": [
+        "Seek medical evaluation within 24 to 72 hours — delays create gaps that hurt your claim",
+        "Attend every scheduled appointment and all referred specialist visits",
+        "Tell your doctor every symptom, including ones that seem minor"
+      ]
+    },
+    {
+      "heading": "Posting About the Accident on Social Media",
+      "content": "Insurance companies and defense attorneys routinely search social media for posts that contradict injury claims. A photo of you hiking, dancing at a wedding, or playing with your children — even if taken during a 'good day' that does not reflect your typical pain level — can be presented as evidence that your injuries are not as serious as claimed. The safest approach during any active claim is to refrain from posting about the accident, your injuries, your treatment, or your daily activities. Lock your accounts to private, and ask friends and family not to tag you in photos.",
+      "tips": [
+        "Do not post anything about the accident, your injuries, or your activities during an active claim",
+        "Set all social media accounts to private",
+        "Ask friends not to tag you in photos or posts while your claim is open"
+      ]
+    },
+    {
+      "heading": "Accepting the First Settlement Offer",
+      "content": "Early settlement offers from insurance companies are typically low and made before the full extent of your injuries is known. Once you sign a settlement release, your claim is closed permanently — even if you later develop complications, require surgery, or cannot return to work as expected. Before accepting any offer, ensure your treatment is complete or a clear prognosis has been established, all medical bills are documented, lost wages are calculated, and non-economic damages (pain and suffering, loss of enjoyment) are considered. A free consultation with a personal injury attorney can help you evaluate whether an offer is reasonable.",
+      "tips": [
+        "Never settle while you are still in active medical treatment",
+        "A signed release is almost always final — there are very few ways to reopen a settled claim",
+        "Get a free consultation from an attorney before accepting any settlement offer"
+      ]
+    }
+  ],
+  "relatedAccidents": ["car", "truck", "motorcycle", "slip-and-fall", "workplace"],
+  "relatedTools": ["accident-case-quiz", "settlement-readiness"],
+  "relatedGuides": ["evidence-checklist", "dealing-with-insurance-adjusters", "should-i-talk-to-a-lawyer"]
+}

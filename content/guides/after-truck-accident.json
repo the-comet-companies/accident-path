@@ -1,0 +1,57 @@
+{
+  "slug": "after-truck-accident",
+  "title": "What To Do After a Truck Accident",
+  "metaTitle": "What To Do After a Truck Accident — Step-by-Step",
+  "metaDescription": "Truck accidents involve federal regulations, multiple liable parties, and complex insurance layers. Learn what to do immediately to protect your options.",
+  "description": "Truck accidents are fundamentally different from car accidents. Commercial trucks are governed by federal regulations, carry multiple layers of insurance, and often involve several potentially liable parties — the driver, trucking company, cargo loader, and vehicle manufacturer. Acting quickly and correctly after a truck crash can be the difference between a strong claim and a lost one.",
+  "sections": [
+    {
+      "heading": "Why Truck Accidents Are Different From Car Accidents",
+      "content": "Commercial trucking accidents involve federal law (FMCSA regulations), state law, and complex liability chains that do not exist in typical car accidents. The trucking company, not just the driver, is often the primary responsible party — and large carriers maintain teams of adjusters and attorneys who begin investigating immediately after a crash. Evidence like the truck's electronic logging device (ELD), black box data, driver logs, inspection records, and camera footage must be preserved quickly or it will be overwritten, discarded, or lost. The stakes are also higher: trucks can weigh up to 80,000 pounds, making catastrophic or fatal injuries far more common.",
+      "tips": [
+        "Do not accept any quick settlement from a trucking company's insurer without legal review",
+        "Trucking companies are required by law to maintain specific records — these can be subpoenaed",
+        "Ask a witness to take a photo of the truck's DOT number on the side of the cab"
+      ]
+    },
+    {
+      "heading": "Immediate Steps at the Scene",
+      "content": "Call 911 immediately and seek medical help for all injured parties. Document the truck's license plate, DOT number (displayed on the cab door), trucking company name, and the driver's commercial driver's license (CDL) information. Photograph all vehicle positions, road conditions, skid marks, and any cargo that has spilled. Gather witness contact information. Do not speak directly with representatives of the trucking company or their insurer at the scene beyond basic information exchange. The trucking company's team may arrive at the scene quickly — their goal is to assess and contain their liability.",
+      "tips": [
+        "Photograph the DOT number on the truck's cab — it identifies the carrier and their safety record",
+        "Note whether the driver seems impaired, fatigued, or injured",
+        "Do not sign anything presented by trucking company representatives at the scene"
+      ]
+    },
+    {
+      "heading": "Identify All Potentially Liable Parties",
+      "content": "Liability in a truck accident can extend beyond the driver. The trucking company may be liable for driver negligence, inadequate training, or hours-of-service violations. The cargo loading company may be responsible if improperly secured cargo contributed to the crash. The truck manufacturer or maintenance company may bear liability if mechanical failure played a role. Identifying all responsible parties is critical to ensuring full compensation — each has separate insurance policies, and failing to name a liable party can limit your recovery.",
+      "tips": [
+        "The trucking company, driver, cargo loader, and maintenance provider can each be liable",
+        "Federal regulations require trucking companies to maintain minimum insurance coverage",
+        "A thorough investigation often requires an attorney to send immediate preservation letters"
+      ]
+    },
+    {
+      "heading": "Critical Evidence That Disappears Quickly",
+      "content": "Trucks equipped with electronic logging devices (ELDs) and black boxes capture speed, braking, location, and hours driven. Federal law requires ELD data to be retained for six months, but companies are not always diligent — and in litigation, data must be specifically demanded. Driver logs showing hours of service can reveal violations of rest requirements. Maintenance and inspection records may show prior mechanical issues that the company knew about. Dashcam and cargo camera footage may exist and should be specifically requested or demanded within days of the crash.",
+      "tips": [
+        "ELD black box data may only be preserved for 30 days before being overwritten",
+        "An attorney can send a legal hold letter within 24 hours to preserve electronic evidence",
+        "Request the truck driver's logbook and hours-of-service records through counsel"
+      ]
+    },
+    {
+      "heading": "Medical Care and Long-Term Documentation",
+      "content": "Truck accident injuries are often severe — traumatic brain injuries, spinal cord damage, multiple fractures, and internal injuries are common. Seek emergency care immediately and follow all medical recommendations carefully. Document every treatment, every symptom, every limitation, and every expense. If your injuries are catastrophic, long-term damages including future medical costs, rehabilitation, lost earning capacity, and home modification may be significant components of your claim. These require expert analysis and comprehensive documentation over time.",
+      "tips": [
+        "Photograph all visible injuries immediately and continue documenting healing progress",
+        "Keep records of every appointment, prescription, and out-of-pocket expense",
+        "Catastrophic injuries may require life care planning experts to document future costs"
+      ]
+    }
+  ],
+  "relatedAccidents": ["truck", "car", "workplace", "construction"],
+  "relatedTools": ["accident-case-quiz", "evidence-checklist", "statute-of-limitations"],
+  "relatedGuides": ["after-car-accident", "evidence-checklist", "insurance-claims"]
+}

@@ -1,0 +1,57 @@
+{
+  "slug": "am-i-at-fault",
+  "title": "Am I At Fault for My Accident?",
+  "metaTitle": "Am I At Fault for My Accident? Comparative Fault Explained",
+  "metaDescription": "Partial fault doesn't bar you from compensation. Learn how comparative fault works in California and Arizona and what it means for your claim.",
+  "description": "One of the most common concerns accident victims have is whether they were partially responsible for what happened. The good news: in California and Arizona, being partly at fault does not eliminate your right to compensation. Understanding how fault is determined and what comparative fault means for your specific situation is an important first step.",
+  "sections": [
+    {
+      "heading": "How Fault Is Determined After an Accident",
+      "content": "Fault in an accident is a legal and factual determination based on negligence — whether a party failed to act with reasonable care under the circumstances. It is not simply a matter of who hit whom. Insurers, attorneys, and courts consider the police report, physical evidence, witness statements, traffic laws, dashcam footage, and expert reconstruction when assessing fault. In many accidents, fault is shared between multiple parties. A driver who ran a red light may be primarily at fault, but a driver who was speeding when they entered the intersection may share partial responsibility.",
+      "tips": [
+        "Do not assume fault based only on who hit whom — the full picture matters",
+        "The police report's fault notation is not legally binding but carries significant weight",
+        "Multiple parties can be found at fault in a single accident"
+      ]
+    },
+    {
+      "heading": "California's Pure Comparative Fault Rule",
+      "content": "California follows a pure comparative fault system. This means that even if you were 99% at fault for an accident, you can still recover 1% of your damages from the other party. More practically, if you were 30% at fault and your total damages are $100,000, you can recover $70,000 from the other party. This is one of the most plaintiff-friendly systems in the country. Your percentage of fault is determined through negotiation, mediation, or if necessary, a jury verdict. Insurers will use any evidence of your contributory fault to argue for a lower settlement.",
+      "tips": [
+        "California's pure comparative fault rule means partial fault does not bar recovery",
+        "Your recovery is reduced proportionally by your share of fault",
+        "Insurers will look for evidence of your fault to reduce the settlement amount"
+      ]
+    },
+    {
+      "heading": "Arizona's Pure Comparative Fault Rule",
+      "content": "Arizona also follows pure comparative fault, identical in structure to California's system. You can recover compensation even if you bear significant responsibility for the accident — your award is simply reduced by your percentage of fault. Arizona courts have applied this rule to find that plaintiffs who were 80% or more at fault can still receive compensation from the remaining at-fault parties. This framework makes it particularly important not to assume you have no claim simply because you believe you may have contributed to the accident.",
+      "tips": [
+        "Arizona's pure comparative fault is the same framework as California's",
+        "Even if you are mostly at fault, you may still recover from other at-fault parties",
+        "Do not forgo a consultation just because you think you were partly responsible"
+      ]
+    },
+    {
+      "heading": "What Counts as Negligence in an Accident Claim",
+      "content": "Negligence is defined as a failure to exercise the level of care that a reasonable person would exercise in similar circumstances. In vehicle accidents, negligence commonly includes distracted driving, speeding, running red lights or stop signs, failing to yield, driving impaired, or violating traffic laws. In premises liability, it includes failure to maintain safe conditions. In truck accidents, it includes violations of federal hours-of-service regulations. Establishing the other party's negligence is the foundation of your claim — and the stronger the evidence, the stronger your position in negotiations.",
+      "tips": [
+        "Negligence = failure to exercise reasonable care under the circumstances",
+        "Traffic violations at the time of the accident are strong evidence of negligence",
+        "Document the other party's behavior at the scene — violations, admissions, phone use"
+      ]
+    },
+    {
+      "heading": "What to Do If You Think You Were Partly at Fault",
+      "content": "If you believe you may have been partially responsible for the accident, do not assume you have no claim — and do not admit fault to the other driver, their insurer, or anyone other than your own attorney. The actual percentage of fault is rarely as simple as it seems at the scene, and a thorough investigation often reveals factors that shift the analysis. Consult with a personal injury attorney before making any statements about fault. Most personal injury consultations are free, and an attorney can give you a realistic assessment of your liability exposure and potential recovery. This is educational information, not legal advice.",
+      "tips": [
+        "Do not admit fault to the other party's insurer — even if you think you were partly responsible",
+        "A free attorney consultation can clarify your realistic liability exposure",
+        "Fault determinations often shift after a thorough investigation — do not assume the worst"
+      ]
+    }
+  ],
+  "relatedAccidents": ["car", "truck", "motorcycle", "bicycle", "pedestrian", "slip-and-fall"],
+  "relatedTools": ["accident-case-quiz", "fault-analyzer"],
+  "relatedGuides": ["after-car-accident", "should-i-talk-to-a-lawyer", "settlement-vs-lawsuit"]
+}

@@ -1,0 +1,57 @@
+{
+  "slug": "after-car-accident",
+  "title": "What To Do After a Car Accident",
+  "metaTitle": "What To Do After a Car Accident — Step-by-Step",
+  "metaDescription": "A clear, step-by-step guide on what to do after a car accident in California or Arizona. Protect your health, rights, and options from minute one.",
+  "description": "The moments after a car accident are chaotic. Knowing exactly what to do — and what not to do — can protect your health, preserve your legal options, and prevent costly mistakes. This guide walks you through the critical first minutes, the following 24 hours, and the days ahead.",
+  "sections": [
+    {
+      "heading": "The First 15 Minutes: Safety and Documentation",
+      "content": "Your first priority is safety. Move to a safe location if you can do so without risking further injury, and turn on your hazard lights. Call 911 — even in minor accidents, a police report creates an official record that is valuable for insurance claims. Do not admit fault or apologize at the scene; statements made immediately after an accident can be used against you. Exchange insurance information, driver's license numbers, and license plates with all involved drivers. Take as many photographs as possible of all vehicles, the road, any visible injuries, and the surrounding scene from multiple angles.",
+      "tips": [
+        "Call 911 even if the accident seems minor — a police report protects you",
+        "Do not move injured people unless there is immediate danger (fire, traffic)",
+        "Photograph everything before vehicles are moved if it is safe to do so"
+      ]
+    },
+    {
+      "heading": "Seek Medical Evaluation — Even If You Feel Fine",
+      "content": "Adrenaline masks pain. Many serious injuries — whiplash, traumatic brain injuries, internal bleeding, and spinal damage — do not produce noticeable symptoms in the immediate aftermath of a crash. Seeking evaluation within 24 to 72 hours creates a documented medical record that directly connects your injuries to the accident. Delays in seeking care give insurers a basis to argue that your injuries were caused by something else or are not serious. Tell every healthcare provider exactly when and how the accident occurred.",
+      "tips": [
+        "Go to an emergency room or urgent care even if you feel okay",
+        "Document every symptom, no matter how minor, in your medical visit",
+        "Do not tell the doctor or insurer that you feel 'fine' at the scene"
+      ]
+    },
+    {
+      "heading": "Notify Your Insurance Company",
+      "content": "Contact your own insurance company to report the accident promptly. Most policies require timely notice, and delays can complicate your own coverage. Provide factual information about what happened, but avoid speculating about fault or minimizing your injuries. Do not give a recorded statement to the other party's insurer without first understanding your rights — you are generally not required to do so. Your own insurer may provide MedPay or uninsured/underinsured motorist coverage that can help with immediate medical costs regardless of who was at fault.",
+      "tips": [
+        "Report to your own insurer promptly — delays can affect your coverage",
+        "You are not required to give a recorded statement to the other driver's insurer",
+        "Ask your insurer about MedPay coverage for immediate medical bills"
+      ]
+    },
+    {
+      "heading": "Document Everything in the Days That Follow",
+      "content": "In the days following the accident, continue building your record. Keep all medical bills, prescriptions, and receipts organized by date. Request a copy of the official police report as soon as it is available — typically within 3 to 10 days of the accident. Keep a daily journal documenting your symptoms, pain levels, activities you cannot perform, and how the injury is affecting your work and daily life. These details become important when calculating non-economic damages like pain and suffering.",
+      "tips": [
+        "Start a symptom journal the same day as the accident and update it daily",
+        "Request the police report as soon as it is available through the reporting agency",
+        "Keep every receipt related to the accident: medical, transportation, equipment"
+      ]
+    },
+    {
+      "heading": "Know the Deadlines That Apply to Your Claim",
+      "content": "In both California and Arizona, the statute of limitations for personal injury claims from a car accident is generally two years from the date of injury. Missing this deadline typically means losing your right to pursue compensation entirely. Certain situations — claims against government entities, accidents involving minors, or delayed injury discovery — may have different deadlines. Insurance claims have their own internal deadlines as well. Understanding these time limits early ensures you do not inadvertently lose your options.",
+      "tips": [
+        "California and Arizona both have a 2-year statute of limitations for car accident injury claims",
+        "Claims against government entities (city buses, state vehicles) may have a 6-month claim filing deadline",
+        "Do not assume you have time — consult with an attorney to understand the deadlines for your specific situation"
+      ]
+    }
+  ],
+  "relatedAccidents": ["car", "truck", "motorcycle", "uber-lyft"],
+  "relatedTools": ["accident-case-quiz", "evidence-checklist", "statute-of-limitations"],
+  "relatedGuides": ["evidence-checklist", "insurance-claims", "getting-your-police-report"]
+}

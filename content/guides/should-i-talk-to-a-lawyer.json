@@ -1,0 +1,57 @@
+{
+  "slug": "should-i-talk-to-a-lawyer",
+  "title": "Should I Talk to a Lawyer After My Accident?",
+  "metaTitle": "Should I Talk to a Lawyer After an Accident?",
+  "metaDescription": "Not every accident requires a lawyer, but many people wait too long to consult one. Learn when it makes sense to speak with a personal injury attorney.",
+  "description": "Not every accident requires a personal injury attorney. Minor fender-benders with no injuries and quick insurer resolution may not need one. But for many people, the question is not whether to eventually involve an attorney — it is whether they waited too long. Understanding when a consultation makes sense, what it costs, and what an attorney actually does helps you make an informed decision for your situation.",
+  "sections": [
+    {
+      "heading": "You Are Not Required to Hire an Attorney",
+      "content": "It is important to be clear: hiring an attorney is your choice, and there are situations where self-representation in an insurance claim is entirely reasonable. If you were in a minor accident, your injuries are limited to mild soft tissue soreness that resolved quickly, the other driver's fault is clear and undisputed, and the insurer's offer fairly covers your out-of-pocket costs, you may not need an attorney to resolve your claim. The question is whether the complexity, disputed liability, severity of injuries, or potential damages make professional representation valuable. This is educational information — not legal advice.",
+      "tips": [
+        "Minor claims with clear fault and quick recovery may not require an attorney",
+        "An attorney's value increases with injury severity, disputed liability, and claim complexity",
+        "You can consult an attorney for free and still decide not to retain one"
+      ]
+    },
+    {
+      "heading": "Situations Where Consulting an Attorney Makes Sense",
+      "content": "Several factors signal that a free consultation with a personal injury attorney is worth your time: you suffered injuries that required medical treatment (emergency care, hospitalization, specialist visits, imaging); your injuries have caused you to miss work or may affect your future earning capacity; liability is disputed and the other party or their insurer is contesting fault; you have received a settlement offer that seems low relative to your medical bills and other damages; the insurer is delaying, denying, or acting in bad faith; you were in a truck accident, a rideshare accident, or any incident involving complex liability or multiple parties; or the statute of limitations deadline is approaching.",
+      "tips": [
+        "If you needed any medical treatment, a free consultation is worth scheduling",
+        "Disputed fault, multiple parties, and complex insurance layers all increase the value of legal advice",
+        "Do not wait until the statute of limitations is near — that limits an attorney's options"
+      ]
+    },
+    {
+      "heading": "What a Consultation Actually Involves",
+      "content": "A personal injury consultation is typically free and lasts 30 to 60 minutes. You describe the accident, your injuries, your treatment, and any interactions you have had with insurers. The attorney reviews your situation and gives you an assessment of the strength of your claim, the potential value, and whether they believe representation makes sense. You are under no obligation to retain the attorney after a consultation. Bring whatever you have — the police report, medical records, bills, photos, and any correspondence from insurers. The more information you can share, the more useful the assessment.",
+      "tips": [
+        "Consultations are typically free — bring the police report, medical records, and insurer correspondence",
+        "You are not obligated to hire the attorney after a consultation",
+        "Consulting multiple attorneys is perfectly reasonable before deciding who to work with"
+      ]
+    },
+    {
+      "heading": "How Personal Injury Attorneys Are Paid",
+      "content": "Personal injury attorneys almost universally work on a contingency fee basis. This means they are paid a percentage of your recovery — typically 33% if settled before trial and a higher percentage if the case goes to trial — and they receive nothing if your case does not result in compensation. Costs such as filing fees, expert witnesses, and investigation expenses may be advanced by the attorney and repaid from the settlement, or may be forgiven if the case is unsuccessful depending on the agreement. There is no upfront payment required, which means financial barriers to legal representation are low in this area of law.",
+      "tips": [
+        "Personal injury attorneys typically charge 33% of settlements before trial",
+        "No recovery, no fee — you pay nothing upfront",
+        "Understand whether case costs are deducted from the gross settlement or net of attorney fees"
+      ]
+    },
+    {
+      "heading": "What an Attorney Does That You Cannot Easily Do Yourself",
+      "content": "An experienced personal injury attorney brings several capabilities that are difficult to replicate without legal training: knowledge of the true settlement value of claims with specific injury types; experience negotiating with insurance adjusters who deal with lawyers daily; ability to send legal preservation letters for evidence that would otherwise disappear; access to accident reconstructionists, medical experts, and life care planners who can establish damages; and the ability to file and prosecute a lawsuit if negotiations fail. Even in cases that ultimately settle without trial, the presence of an attorney typically produces meaningfully higher settlement amounts that more than offset the contingency fee.",
+      "tips": [
+        "Attorneys know what similar cases have settled for — giving them leverage in negotiations",
+        "Legal preservation letters can prevent critical evidence from being destroyed",
+        "Studies consistently show represented claimants recover significantly more than unrepresented ones"
+      ]
+    }
+  ],
+  "relatedAccidents": ["car", "truck", "motorcycle", "slip-and-fall", "workplace", "wrongful-death"],
+  "relatedTools": ["accident-case-quiz"],
+  "relatedGuides": ["hiring-a-lawyer", "settlement-vs-lawsuit", "protecting-your-claim"]
+}
