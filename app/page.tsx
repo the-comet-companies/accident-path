@@ -56,19 +56,19 @@ interface FeaturedTool {
 }
 
 const FEATURED_TOOLS: FeaturedTool[] = [
-  { slug: 'statute-of-limitations', title: 'Statute of Limitations Calculator', description: 'Understand the filing deadlines that may apply to your accident type in California or Arizona.' },
-  { slug: 'evidence-checklist',     title: 'Evidence Checklist Generator',      description: 'Get a personalized checklist of evidence to gather based on your specific accident type.'   },
-  { slug: 'medical-cost-estimator', title: 'Medical Cost Estimator',            description: 'Understand the range of typical medical costs associated with common injury types.'           },
-  { slug: 'insurance-claim-tracker',title: 'Insurance Claim Tracker',           description: 'Track your claim status, deadlines, and communications with your insurance company.'        },
-  { slug: 'injury-journal',         title: 'Injury Journal',                    description: 'Document your symptoms, treatments, and daily impact. Detailed records can matter in your recovery.' },
+  { slug: 'statute-countdown',   title: 'Statute of Limitations Countdown',  description: 'Find the filing deadline that may apply to your accident type in California or Arizona.' },
+  { slug: 'evidence-checklist',  title: 'Evidence Collection Checklist',     description: 'Get a personalized checklist of evidence to gather based on your specific accident type.'  },
+  { slug: 'lost-wages-estimator',title: 'Lost Wages Estimator',              description: 'Estimate the income you may have lost due to your injury and time away from work.'          },
+  { slug: 'insurance-call-prep', title: 'Insurance Call Prep Tool',          description: 'Prepare for calls with insurance adjusters — know what to say and what to avoid.'          },
+  { slug: 'injury-journal',      title: 'Injury & Treatment Journal',        description: 'Document your symptoms, treatments, and daily impact. Detailed records can matter in your recovery.' },
 ]
 
 const TOOL_ICONS: Record<string, React.ReactNode> = {
-  'statute-of-limitations':  <Calculator    className="w-5 h-5" aria-hidden="true" />,
-  'evidence-checklist':      <ClipboardList className="w-5 h-5" aria-hidden="true" />,
-  'medical-cost-estimator':  <DollarSign    className="w-5 h-5" aria-hidden="true" />,
-  'insurance-claim-tracker': <FileText      className="w-5 h-5" aria-hidden="true" />,
-  'injury-journal':          <BookOpen      className="w-5 h-5" aria-hidden="true" />,
+  'statute-countdown':    <Calculator    className="w-5 h-5" aria-hidden="true" />,
+  'evidence-checklist':   <ClipboardList className="w-5 h-5" aria-hidden="true" />,
+  'lost-wages-estimator': <DollarSign    className="w-5 h-5" aria-hidden="true" />,
+  'insurance-call-prep':  <FileText      className="w-5 h-5" aria-hidden="true" />,
+  'injury-journal':       <BookOpen      className="w-5 h-5" aria-hidden="true" />,
 }
 
 const FEATURED_GUIDES = [
