@@ -154,6 +154,64 @@ Full tools section built and shipped — 17 files, 10 tasks via subagent-driven 
 
 ---
 
+## Today's Work (continued) — DEV-13: IntakeWizard
+
+### What Was Built (16 files, 9 subagent tasks, commits `2761a88` → `7d8e394`)
+
+Full intake wizard built and confirmed writing to Supabase.
+
+**`lib/intake.ts`** (new) — pure utility module:
+- `INTAKE_STORAGE_KEY` — localStorage key `'accident-path-intake-v1'`
+- `StepProps` interface — shared props type for all step components
+- `monthsAgo(dateStr)` — months elapsed from date string to now (guards against invalid dates)
+- `computeUrgency(data)` — scores low/medium/high based on medical treatment, work impact, accident age
+- `suggestLawyerType(data)` — maps accident type to lawyer type string
+- `computeUrgencyFactors(data)` — returns `['serious_medical', 'lost_income', 'no_police_report', 'statute_risk']` subset
+- `suggestResources(data)` — up to 4 guide/tool links based on accident type
+- `trackEvent(name, params)` — wraps `window.gtag`, no-ops on SSR
+
+**Step components** in `components/intake/steps/`:
+
+| File | Step | UX Pattern |
+|------|------|-----------|
+| `StepAccidentType.tsx` | 1 | 9-option grid, auto-advances on click |
+| `StepWhen.tsx` | 2 | Date input + statute-risk warning if > 18 months |
+| `StepWhere.tsx` | 3 | CA/AZ toggle + city text input (both required) |
+| `StepInjuries.tsx` | 4 | Multi-select with `aria-pressed`, at least 1 required |
+| `StepMedical.tsx` | 5 | 5-option single-select, auto-advances |
+| `StepPoliceReport.tsx` | 6 | Yes/No cards (`min-h-[64px]`), tip box if No |
+| `StepInsurance.tsx` | 7 | 3-option single-select, auto-advances |
+| `StepWorkImpact.tsx` | 8 | 4-option single-select, auto-advances |
+| `StepContact.tsx` | 9 | ConsentCheckbox (unchecked default) + gated name/email/phone + Submit |
+
+**Shared components:**
+- `components/intake/ProgressBar.tsx` — `role="progressbar"` with aria attrs, amber fill, step X of 9 + %
+- `components/intake/ConsentCheckbox.tsx` — sr-only real `<input>`, custom visual div, full TCPA text
+
+**`components/intake/IntakeWizard.tsx`** — orchestrator:
+- localStorage: read on mount, write on every `data` change
+- `trackEvent('intake_started')` on mount
+- `trackEvent('step_completed', { step_number, step_name })` on each advance
+- `trackEvent('intake_submitted', { accident_type, state })` on submit
+- Supabase insert to `intake_sessions` on submit (errors swallowed, never blocks user)
+- Navigates to `/find-help/thank-you` → `/find-help/results` after submit
+
+**Pages:**
+- `app/find-help/page.tsx` — server component, dark hero + white card wrapper + `<IntakeWizard />`
+- `app/find-help/results/page.tsx` — `'use client'`, reads localStorage, shows urgency banner + lawyer type suggestion + resource links + CTAs
+- `app/find-help/thank-you/page.tsx` — static server component, confirmation + "What Happens Next?" list, `noIndex: true`
+
+**Supabase column fix (commit `7d8e394`):** Discovered 3 column name mismatches between insert code and actual schema. Fixed:
+- `medical_treatment` → `medical`
+- `insurance_status` → `insurance`
+- Removed `submitted_at` (table uses `created_at` with `now()` default)
+
+**Confirmed working:** user tested end-to-end — rows saving to `intake_sessions` in production Supabase project.
+
+**Compliance enforced:** all warnings include "educational information only, not legal advice", TCPA consent unchecked by default, no prohibited phrases in any of the 16 files.
+
+---
+
 ## Current Build State
 
 | Item | Status |
@@ -189,11 +247,12 @@ Full tools section built and shipped — 17 files, 10 tasks via subagent-driven 
 | `/disclaimers` (real legal copy, 7 sections, indexable) | ✓ |
 | `/for-attorneys` (partnership pitch, benefits, practice areas) | ✓ |
 | `/contact` (4 contact topics by email, response expectations) | ✓ |
-| All 68 pages statically generated | ✓ |
+| `/find-help` (9-step IntakeWizard, localStorage + Supabase) | ✓ |
+| `/find-help/results` (personalized urgency + lawyer type + resources) | ✓ |
+| `/find-help/thank-you` (confirmation, `noIndex`) | ✓ |
+| All 71 pages statically generated | ✓ |
 | **DEV-15: Tool interactivity (ToolEngine live)** | ✗ Not started |
-| **Phase 3: IntakeWizard** | ✗ Not started |
 | **Phase 3: State rules engine** | ✗ Not started |
-| **Phase 3: Find Help flow** | ✗ Not started |
 
 ---
 
@@ -220,31 +279,14 @@ Full tools section built and shipped — 17 files, 10 tasks via subagent-driven 
 
 ---
 
-## What's Next — Phase 3: Intake + State Rules Engine
+## What's Next
 
-Per `docs/strategy/MASTER-PLAN.md` Phase 3 (~20h):
-
-| Task | Est. Hours |
-|------|-----------|
-| IntakeWizard — 9-step multi-step form | 8 |
-| State routing rules engine (CA/AZ logic) | 4 |
-| Lead scoring / urgency detection | 4 |
-| Find Help flow (wizard, results, thank-you pages) | 4 |
-
-**Key routes to build:**
-- `app/find-help/page.tsx` — intake wizard entry point
-- `app/find-help/results/page.tsx` — match results
-- `app/find-help/thank-you/page.tsx` — confirmation
-
-**Key lib to build:**
-- `lib/intake.ts` — state routing rules, urgency scoring, form state management
-- Supabase write: `intake_sessions` table insert on wizard completion
-
-**Compliance requirements for intake flow:**
-- Every step must show intake-variant DisclaimerBanner
-- Step asking about legal representation: must not imply endorsement
-- Matching results: use safe language ("lawyers who typically handle matters like this include...")
-- No "you have a case" language anywhere in the flow
+| Task | Est. Hours | Status |
+|------|-----------|--------|
+| DEV-15: Tool interactivity (ToolEngine live — step inputs, results, Supabase `tool_submissions`) | 8 | Not started |
+| Phase 3: State rules engine (CA/AZ routing logic in `lib/intake.ts`) | 4 | Not started |
+| More city pages (12 additional CA/AZ cities) | 3 | Not started |
+| Attorney review of all content before go-live | — | Pending |
 
 ---
 
