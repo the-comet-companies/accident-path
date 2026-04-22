@@ -48,3 +48,6 @@ supabase/.temp/
 # Claude local settings (contains secrets)
 .claude/settings.local.json
 .mcp.json
+
+# Superpowers brainstorm temp data
+.superpowers/
