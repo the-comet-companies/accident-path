@@ -1,0 +1,88 @@
+{
+  "slug": "statute-countdown",
+  "title": "Statute of Limitations Countdown",
+  "metaTitle": "Statute of Limitations Countdown — CA & AZ",
+  "metaDescription": "Find out how much time you may have left to file a personal injury claim in California or Arizona. Enter your accident date and get your estimated deadline.",
+  "description": "The statute of limitations sets a strict legal deadline on your right to pursue compensation after an accident. This tool helps you understand how much time may remain and what steps you should consider before your deadline approaches.",
+  "disclaimer": "This tool provides estimated deadline information for educational purposes only. It is not legal advice. Deadlines vary based on your specific circumstances, including who was at fault and whether government entities are involved. Consult an attorney to understand your actual filing deadline.",
+  "steps": [
+    {
+      "id": "accident-date",
+      "question": "When did your accident happen?",
+      "type": "date"
+    },
+    {
+      "id": "accident-type",
+      "question": "What type of accident was it?",
+      "type": "select"
+    },
+    {
+      "id": "state",
+      "question": "Which state did the accident occur in?",
+      "type": "select"
+    }
+  ],
+  "supportingContent": [
+    {
+      "heading": "What Is the Statute of Limitations?",
+      "content": "The statute of limitations is a legal deadline that limits how long you have to file a lawsuit after an injury. Once this deadline passes, courts will generally refuse to hear your case, regardless of how strong your evidence is or how serious your injuries were. This rule exists to ensure that cases are resolved while evidence and witness memories are still fresh and reliable.",
+      "tips": [
+        "The clock typically starts on the date of the accident — not when you first notice symptoms",
+        "Missing the deadline usually means losing your right to compensation permanently",
+        "Some circumstances can pause or extend the deadline — consult an attorney to be sure"
+      ]
+    },
+    {
+      "heading": "California Statute of Limitations for Injury Claims",
+      "content": "In California, most personal injury claims — including car accidents, slip and falls, and dog bites — have a two-year statute of limitations starting from the date of injury. However, claims against government entities in California have a much shorter window: you must file a government tort claim within six months of the incident before you can sue. Minors and victims who were not immediately aware of their injuries may have different deadlines under the discovery rule.",
+      "tips": [
+        "Standard personal injury: 2 years from the date of injury",
+        "Government entity claims: 6-month administrative claim deadline",
+        "Delayed discovery: clock may start when injury was discovered or should have been"
+      ]
+    },
+    {
+      "heading": "Arizona Statute of Limitations for Injury Claims",
+      "content": "Arizona also sets a two-year statute of limitations for most personal injury claims arising from accidents. Similar to California, claims involving government entities require timely notice — typically within 180 days for state agencies and 60 days for city or county entities. If the injured party was a minor at the time of the accident, the clock may not begin running until they reach the age of majority.",
+      "tips": [
+        "Standard personal injury: 2 years from the date of injury",
+        "City and county claims: notice may be required within 60 days",
+        "Minors: limitations period may begin at age 18"
+      ]
+    },
+    {
+      "heading": "What Happens If You Miss the Filing Deadline?",
+      "content": "If you attempt to file a lawsuit after the statute of limitations has expired, the defendant will almost certainly file a motion to dismiss, and the court will grant it. This means you lose your right to pursue compensation through the courts permanently — even if the other party was clearly at fault and your injuries were severe. Insurance companies track these deadlines carefully, and missing the deadline eliminates much of your negotiating leverage even in settlement discussions.",
+      "tips": [
+        "Missing the deadline typically bars your case in court with no exceptions",
+        "Even pre-litigation insurance negotiations are affected by an expired deadline",
+        "Do not wait until close to the deadline to consult an attorney"
+      ]
+    },
+    {
+      "heading": "Exceptions That May Extend Your Deadline",
+      "content": "Certain circumstances may toll — or pause — the statute of limitations in California and Arizona. Common examples include cases where the injured party was a minor at the time of the accident, where the defendant left the state and was unavailable to be served, or where the injury was not discovered until later (the 'discovery rule'). Fraud by the defendant may also toll the clock. These exceptions are narrow and require legal analysis specific to your situation — do not assume an extension applies without consulting an attorney."
+    }
+  ],
+  "faq": [
+    {
+      "question": "How long do I have to file a personal injury claim in California?",
+      "answer": "In California, the general statute of limitations for personal injury claims is two years from the date of injury. Claims against government entities have a much shorter deadline — typically six months to file an administrative tort claim."
+    },
+    {
+      "question": "How long do I have to file a personal injury claim in Arizona?",
+      "answer": "Arizona's general personal injury statute of limitations is two years from the date of the accident or injury. For claims against government entities, notice requirements are often 60 to 180 days depending on the entity involved."
+    },
+    {
+      "question": "What is the discovery rule and how does it affect my deadline?",
+      "answer": "The discovery rule provides that the statute of limitations begins when you discovered — or reasonably should have discovered — your injury, rather than on the date of the accident. This can apply when injuries such as internal damage or traumatic brain injury are not immediately apparent."
+    },
+    {
+      "question": "Does the statute of limitations pause if I was injured as a minor?",
+      "answer": "In both California and Arizona, the statute of limitations for personal injury claims is generally tolled — or paused — when the injured person was a minor at the time of the accident, and may not begin running until they reach the age of majority."
+    }
+  ],
+  "relatedTools": ["accident-case-quiz", "evidence-checklist", "lawyer-type-matcher"],
+  "relatedGuides": ["after-car-accident", "insurance-claims"],
+  "relatedAccidents": ["car", "truck", "motorcycle", "bicycle", "pedestrian"]
+}
