@@ -1,0 +1,80 @@
+{
+  "slug": "injury-journal",
+  "title": "Injury & Treatment Journal",
+  "metaTitle": "Injury & Treatment Journal — Track Your Recovery",
+  "metaDescription": "Track daily symptoms, pain levels, and treatments after your accident. A complete injury journal supports your medical record and helps document your recovery.",
+  "description": "Documenting your injuries consistently from the day of the accident through your recovery creates a powerful record of how your life has been affected. This tool guides you through what to track each day — symptoms, pain levels, treatments, limitations, and impact on daily activities — information that may be valuable to medical providers, insurers, and attorneys.",
+  "disclaimer": "This journal is an educational tool to help you organize and document your personal experience after an accident. It is not a medical record and is not a substitute for professional medical care. Consult your healthcare providers about your treatment. Consult a licensed attorney for legal guidance.",
+  "steps": [
+    {
+      "id": "injury-type",
+      "question": "What type of injuries are you tracking?",
+      "type": "checklist"
+    },
+    {
+      "id": "pain-level",
+      "question": "What is your overall pain level today? (1 = minimal, 10 = severe)",
+      "type": "number"
+    },
+    {
+      "id": "symptoms",
+      "question": "Which symptoms are you experiencing today? (Select all that apply)",
+      "type": "checklist"
+    },
+    {
+      "id": "treatments",
+      "question": "What treatments or appointments did you have today?",
+      "type": "checklist"
+    }
+  ],
+  "supportingContent": [
+    {
+      "heading": "Why a Daily Injury Journal Matters After an Accident",
+      "content": "When an insurance company or attorney evaluates a personal injury claim, one of the key questions is: how did this accident affect the injured person's daily life? A contemporaneous journal — one written at the time events occurred, not reconstructed from memory months later — provides compelling evidence of pain, suffering, and functional limitations. Courts and insurance adjusters give considerable weight to detailed, consistent records kept from the time of the accident through recovery.",
+      "tips": [
+        "Start your journal the same day as the accident, even if your entries are brief",
+        "Write entries daily — even short entries are better than nothing",
+        "Note specific activities you could not do that you could do before the accident"
+      ]
+    },
+    {
+      "heading": "What to Record Each Day",
+      "content": "Each daily entry should include your pain level on a scale of 1 to 10, any new or ongoing symptoms (headache, dizziness, neck stiffness, back pain, numbness, difficulty sleeping), medical appointments and provider names, medications taken and any side effects, physical therapy or other treatments, activities you were unable to perform due to pain or limitation (driving, cooking, exercising, playing with children), how the injury is affecting your work, and any emotional or psychological impact such as anxiety, depression, or sleep disruption.",
+      "tips": [
+        "Use consistent pain scale language so your entries are comparable over time",
+        "Record the names and specialties of every healthcare provider you see",
+        "Note when you had to ask others for help with tasks you normally do independently"
+      ]
+    },
+    {
+      "heading": "Documenting Activity Limitations and Lost Enjoyment",
+      "content": "In personal injury cases, damages are not limited to medical bills and lost wages — they can also include compensation for pain and suffering, loss of enjoyment of life, and emotional distress. A detailed record of activities you have been unable to do since the accident — hobbies, exercise, family activities, social engagements, sexual activity, parenting tasks — helps document these non-economic losses. Specific, concrete examples are more persuasive than general statements, so describe what you missed and why it mattered to you.",
+      "tips": [
+        "List specific events you had to skip — a child's soccer game, a vacation, a gym routine",
+        "Note when you had a particularly bad day and what made it difficult",
+        "Photograph visible injuries such as bruising, swelling, and scars regularly"
+      ]
+    },
+    {
+      "heading": "Keeping Your Journal Accurate and Credible",
+      "content": "Your injury journal is most valuable when it is honest and consistent. Avoid exaggerating symptoms, which can undermine your credibility if your journal is reviewed by an opposing party. Also avoid minimizing symptoms out of habit — many accident victims downplay their pain even in private notes. Write what you actually experienced each day. If you had a good day, say so — a record that shows ups and downs is more believable than one that is uniformly dire, and genuine good days do not diminish the validity of your bad ones."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Can my injury journal be used as evidence in my case?",
+      "answer": "Yes. A contemporaneous injury journal can be used as evidence to document the nature, severity, and duration of your pain and limitations. It may be reviewed by insurance adjusters, used in mediation, or submitted as evidence in litigation. Writing honest, detailed, dated entries from the start of your injury is advisable."
+    },
+    {
+      "question": "Should I share my injury journal with my attorney?",
+      "answer": "Yes. Sharing your injury journal with your attorney helps them understand the full picture of how the accident has affected you, supports calculation of non-economic damages like pain and suffering, and may identify information gaps to address. Your attorney can advise you on how to use it most effectively."
+    },
+    {
+      "question": "How long should I keep my injury journal?",
+      "answer": "Keep your injury journal until your case is fully resolved — whether through settlement, trial, or the expiration of the limitations period. Even after you feel recovered, the journal documents the duration and course of your injuries, which is relevant to damages. Store digital copies in a secure backup location."
+    }
+  ],
+  "relatedTools": ["urgency-checker", "lost-wages-estimator", "settlement-readiness"],
+  "relatedGuides": ["after-car-accident"],
+  "relatedAccidents": ["car", "truck", "motorcycle", "slip-fall", "bicycle"]
+}

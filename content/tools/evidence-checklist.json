@@ -1,0 +1,94 @@
+{
+  "slug": "evidence-checklist",
+  "title": "Evidence Collection Checklist",
+  "metaTitle": "Evidence Collection Checklist — Accident Victims",
+  "metaDescription": "Get a customized evidence checklist for your accident type. Know what to gather, photograph, and request before critical evidence disappears or becomes unavailable.",
+  "description": "The evidence you collect — or fail to collect — in the hours and days after an accident can significantly affect your options. This checklist helps you understand what types of evidence typically matter for your situation and prioritizes them so you know where to focus first.",
+  "disclaimer": "This checklist provides educational information about common types of evidence in personal injury cases. It is not legal advice. The specific evidence that matters in your case depends on your individual circumstances. Consult an attorney for guidance tailored to your situation.",
+  "steps": [
+    {
+      "id": "accident-type",
+      "question": "What type of accident were you involved in?",
+      "type": "select"
+    },
+    {
+      "id": "location-type",
+      "question": "Where did the accident occur?",
+      "type": "select"
+    },
+    {
+      "id": "witnesses",
+      "question": "Were there witnesses at the scene?",
+      "type": "select"
+    },
+    {
+      "id": "police-report",
+      "question": "Was a police report filed?",
+      "type": "select"
+    },
+    {
+      "id": "photos",
+      "question": "Did you take photos at the scene?",
+      "type": "select"
+    }
+  ],
+  "supportingContent": [
+    {
+      "heading": "Why Evidence Collection Matters Immediately After an Accident",
+      "content": "Evidence in accident cases can disappear quickly. Skid marks fade, surveillance footage gets overwritten, witnesses scatter, and physical conditions at the scene change. Vehicle damage gets repaired. Businesses claim they have no camera footage. The window for gathering the most critical evidence is often just 24 to 72 hours. Understanding what to look for — and acting promptly — can make a meaningful difference in your ability to document what happened.",
+      "tips": [
+        "Photograph the scene before anything is moved if it is safe to do so",
+        "Surveillance footage at businesses is often overwritten within 24 to 48 hours",
+        "Preserving a damaged vehicle before repairs is critical for product liability claims"
+      ]
+    },
+    {
+      "heading": "Scene and Physical Evidence",
+      "content": "At the scene of the accident, photograph everything you can safely reach: all vehicles involved (from multiple angles including damage, license plates, and position on the road), road conditions, skid marks, traffic signals, signage, weather conditions, and any visible hazards that contributed to the accident. If you were injured in a fall, photograph the exact location of the hazard — a wet floor, cracked pavement, missing handrail, or uneven surface — before it is corrected. More photos are always better than fewer.",
+      "tips": [
+        "Photograph your own injuries at the scene and daily for several weeks after",
+        "Note street names, cross streets, and landmarks so the exact location is documented",
+        "If there is a business nearby, ask if they have outdoor cameras that captured the event"
+      ]
+    },
+    {
+      "heading": "Documents and Records to Request",
+      "content": "Key documents in an accident case include the official police report (typically available 3 to 10 days after the incident through the filing agency), medical records and bills for all treatment received, the other party's insurance information and policy documents, your own insurance declarations page, any incident reports filed with a business or property owner, and employment records documenting missed work. Requesting records proactively — rather than waiting to see if they become relevant — is advisable, as some records have fees and processing time.",
+      "tips": [
+        "Request the police report from the specific agency that responded (city police, county sheriff, CHP)",
+        "Ask your medical providers for itemized billing statements, not just summary totals",
+        "Request incident reports in writing so there is a record of your request"
+      ]
+    },
+    {
+      "heading": "Witness Information and Statements",
+      "content": "Witness accounts can be among the most persuasive evidence in an accident case, particularly when liability is disputed. At the scene, ask anyone who saw the accident for their name, phone number, and a brief description of what they observed. Do not pressure witnesses, but do capture their contact information before they leave. If a witness is willing to provide a written statement or speak with your attorney, that can be valuable. Witnesses can also include bystanders who arrived after the accident but observed the scene or your injuries.",
+      "tips": [
+        "Get full name and at least one phone number from each witness immediately",
+        "Note what each witness told you they saw — details are easier to recall immediately",
+        "Witnesses to your injuries and their visible severity are also valuable, not just those who saw the impact"
+      ]
+    },
+    {
+      "heading": "Digital and Electronic Evidence",
+      "content": "Modern accident cases increasingly involve digital evidence. Dashcam footage from your vehicle or nearby vehicles can be decisive. Rideshare app data (Uber, Lyft) records trip details and driver behavior. Red light camera and traffic monitoring footage may exist. Businesses along the route may have external security cameras. Your own phone records may confirm that the other driver was distracted. Surveillance footage in particular is time-sensitive — send a written preservation request to any business that may have relevant camera footage as soon as possible after the accident."
+    }
+  ],
+  "faq": [
+    {
+      "question": "How do I get the official police report from my accident?",
+      "answer": "You can typically request a copy of the police report from the law enforcement agency that responded — city police department, county sheriff, or the California Highway Patrol (CHP). Reports are usually available 3 to 10 days after the incident. In California, you can often request them online through the agency's records portal or in person. There is usually a small fee."
+    },
+    {
+      "question": "What should I do if a business claims to have no surveillance footage?",
+      "answer": "Send a written preservation request to the business — by certified mail if possible — immediately after the accident, before footage is overwritten. State the date, time, and location of the incident and request that all footage from relevant cameras be preserved. If you have an attorney, they can send a formal preservation letter on your behalf, which creates a legal obligation to retain the evidence."
+    },
+    {
+      "question": "Is it too late to gather evidence if it has been a few days since the accident?",
+      "answer": "Some evidence will already be lost, but much can still be obtained. Police reports, medical records, employment records, witness contact information, and your own photographs of injuries taken in the days following the accident are still valuable. An attorney can send formal preservation letters and subpoena records that you may not be able to access on your own."
+    }
+  ],
+  "relatedTools": ["accident-case-quiz", "record-request", "insurance-call-prep"],
+  "relatedGuides": ["after-car-accident", "getting-your-police-report"],
+  "relatedAccidents": ["car", "truck", "motorcycle", "slip-fall", "bicycle", "pedestrian"]
+}
