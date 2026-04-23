@@ -2,7 +2,12 @@
 
 ## Where We Left Off (read this first in a new session)
 
-**Last completed task: DEV-21 — Guide content expansion** ✅
+**Last completed task: DEV-23 — CA + AZ state page JSONs** ✅
+- Both `content/states/california.json` and `content/states/arizona.json` were already fully implemented in a prior session
+- All DEV-23 spec requirements already present: CA (2yr PI SOL, 3yr property, pure comparative, SR-1 10 days, 15/30/5, Prop 213), AZ (2yr all, pure comparative, 25/50/15, no no-fault)
+- Only change: updated `reviewedBy` from `"Pending Attorney Review"` → `"Pending Legal Review"` per spec — commit `9830e0c`
+
+**Previous task: DEV-21 — Guide content expansion** ✅
 - All 13 guides now at 1400–1660 words with 8–9 sections each
 - DEV-21 spec covered 5 guides: `after-car-accident`, `evidence-checklist`, `insurance-claims`, `hiring-a-lawyer`, `common-mistakes` (new)
 - Additional follow-up: all 9 DEV-11 guides (created April 22 at ~700 words) expanded to match same quality bar
@@ -23,7 +28,7 @@
 
 **Task reference file:** `scripts/create-master-pipeline-db.py` — all 28 DEV tasks defined here as Python dicts (DEV-01 through DEV-28). Canonical task list.
 
-**Active branch:** `main` — all work on main, no open PRs. Last commit: `8ec6d79`.
+**Active branch:** `main` — all work on main, no open PRs. Last commit: `9830e0c`.
 
 ---
 
@@ -118,6 +123,7 @@ The JSON files had different step IDs than the TOOLS-SPEC.md spec. Actual IDs (w
 | **DEV-19: Injury Journal + Lawyer Type Matcher** | ✓ Complete |
 | **DEV-20: Accident hub content JSONs (5 files)** | ✓ Complete (pre-session) |
 | **DEV-21: Guide content JSONs (13 guides, all 1400–1660 words)** | ✓ Complete |
+| **DEV-23: CA + AZ state page JSONs** | ✓ Complete (pre-existing + reviewedBy fix) |
 
 ---
 
@@ -158,6 +164,7 @@ The JSON files had different step IDs than the TOOLS-SPEC.md spec. Actual IDs (w
 | Task | Est. Hours | Status |
 |------|-----------|--------|
 | DEV-22 | — | Awaiting authorization |
+| DEV-23 | — | ✓ Complete |
 | More city pages (12 additional CA/AZ cities) | 3 | Not started |
 | Attorney review of all content before go-live | — | Pending |
 
@@ -165,4 +172,4 @@ The JSON files had different step IDs than the TOOLS-SPEC.md spec. Actual IDs (w
 
 ## Active Branch
 
-`main` — all work pushed to `origin/main`. No open PRs. Last commit: `8ec6d79`.
+`main` — all work pushed to `origin/main`. No open PRs. Last commit: `9830e0c`.
