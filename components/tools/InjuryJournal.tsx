@@ -211,7 +211,7 @@ export function InjuryJournal({ tool }: InjuryJournalProps) {
       </div>
 
       {/* View tabs */}
-      <div className="flex gap-2" aria-label="Journal views">
+      <div className="flex gap-2 print-hide" aria-label="Journal views">
         {(['list', 'calendar', 'add'] as const).map(v => (
           <button
             key={v}
@@ -243,7 +243,7 @@ export function InjuryJournal({ tool }: InjuryJournalProps) {
             <button
               type="button"
               onClick={() => typeof window !== 'undefined' && window.print()}
-              className="flex items-center gap-1.5 px-3 py-2 rounded-lg border border-neutral-200 bg-surface-card text-sm text-neutral-600 hover:bg-neutral-100 transition-colors"
+              className="print-hide flex items-center gap-1.5 px-3 py-2 rounded-lg border border-neutral-200 bg-surface-card text-sm text-neutral-600 hover:bg-neutral-100 transition-colors"
               aria-label="Print journal"
             >
               <Printer className="w-4 h-4" aria-hidden="true" />

@@ -64,7 +64,7 @@ export default async function ToolDetailPage({
       />
 
       {/* Hero */}
-      <div className="bg-primary-900 py-12 lg:py-16">
+      <div className="bg-primary-900 py-12 lg:py-16 print-hide">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Breadcrumb
             items={[
@@ -100,96 +100,96 @@ export default async function ToolDetailPage({
                 <ToolEngine tool={tool} />
               )}
 
-              {/* Supporting content */}
-              {tool.supportingContent.map((section, index) => (
-                <section key={index} aria-labelledby={`section-${index}`}>
-                  <h2
-                    id={`section-${index}`}
-                    className="font-sans font-bold text-2xl text-neutral-950 mb-4"
-                  >
-                    {section.heading}
-                  </h2>
-                  <p className="text-neutral-600 leading-relaxed text-base font-serif mb-5">
-                    {section.content}
-                  </p>
-                  {section.tips && section.tips.length > 0 && (
-                    <div className="rounded-xl border border-primary-200 bg-primary-50 p-5">
-                      <ul className="flex flex-col gap-2.5">
-                        {section.tips.map((tip, tipIndex) => (
-                          <li key={tipIndex} className="flex items-start gap-2.5">
+              {/* Supporting content, FAQ, related, CTA — hidden on print */}
+              <div className="print-hide flex flex-col gap-10">
+                {tool.supportingContent.map((section, index) => (
+                  <section key={index} aria-labelledby={`section-${index}`}>
+                    <h2
+                      id={`section-${index}`}
+                      className="font-sans font-bold text-2xl text-neutral-950 mb-4"
+                    >
+                      {section.heading}
+                    </h2>
+                    <p className="text-neutral-600 leading-relaxed text-base font-serif mb-5">
+                      {section.content}
+                    </p>
+                    {section.tips && section.tips.length > 0 && (
+                      <div className="rounded-xl border border-primary-200 bg-primary-50 p-5">
+                        <ul className="flex flex-col gap-2.5">
+                          {section.tips.map((tip, tipIndex) => (
+                            <li key={tipIndex} className="flex items-start gap-2.5">
+                              <ArrowRight
+                                className="w-4 h-4 text-primary-500 shrink-0 mt-0.5"
+                                aria-hidden="true"
+                              />
+                              <span className="text-sm text-primary-800 leading-relaxed">{tip}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </section>
+                ))}
+
+                {tool.faq.length > 0 && (
+                  <section aria-labelledby="faq-heading">
+                    <h2
+                      id="faq-heading"
+                      className="font-sans font-bold text-2xl text-neutral-950 mb-4"
+                    >
+                      Frequently Asked Questions
+                    </h2>
+                    <div className="flex flex-col gap-2">
+                      {tool.faq.map((item, index) => (
+                        <details
+                          key={index}
+                          className="group rounded-xl border border-neutral-100 bg-surface-card"
+                        >
+                          <summary className="flex cursor-pointer items-center justify-between gap-4 px-5 py-4 font-sans font-semibold text-sm text-neutral-950 list-none">
+                            {item.question}
                             <ArrowRight
-                              className="w-4 h-4 text-primary-500 shrink-0 mt-0.5"
+                              className="w-4 h-4 text-neutral-400 shrink-0 transition-transform group-open:rotate-90"
                               aria-hidden="true"
                             />
-                            <span className="text-sm text-primary-800 leading-relaxed">{tip}</span>
-                          </li>
-                        ))}
-                      </ul>
+                          </summary>
+                          <div className="px-5 pb-4">
+                            <p className="text-neutral-600 text-sm leading-relaxed font-serif">
+                              {item.answer}
+                            </p>
+                          </div>
+                        </details>
+                      ))}
                     </div>
-                  )}
-                </section>
-              ))}
+                  </section>
+                )}
 
-              {/* FAQ accordion */}
-              {tool.faq.length > 0 && (
-                <section aria-labelledby="faq-heading">
-                  <h2
-                    id="faq-heading"
-                    className="font-sans font-bold text-2xl text-neutral-950 mb-4"
-                  >
-                    Frequently Asked Questions
-                  </h2>
-                  <div className="flex flex-col gap-2">
-                    {tool.faq.map((item, index) => (
-                      <details
-                        key={index}
-                        className="group rounded-xl border border-neutral-100 bg-surface-card"
-                      >
-                        <summary className="flex cursor-pointer items-center justify-between gap-4 px-5 py-4 font-sans font-semibold text-sm text-neutral-950 list-none">
-                          {item.question}
-                          <ArrowRight
-                            className="w-4 h-4 text-neutral-400 shrink-0 transition-transform group-open:rotate-90"
-                            aria-hidden="true"
-                          />
-                        </summary>
-                        <div className="px-5 pb-4">
-                          <p className="text-neutral-600 text-sm leading-relaxed font-serif">
-                            {item.answer}
-                          </p>
-                        </div>
-                      </details>
-                    ))}
-                  </div>
-                </section>
-              )}
+                {tool.relatedAccidents.length > 0 && (
+                  <section aria-labelledby="related-accidents-heading">
+                    <h2
+                      id="related-accidents-heading"
+                      className="font-sans font-bold text-xl text-neutral-950 mb-4"
+                    >
+                      Related Accident Types
+                    </h2>
+                    <div className="flex flex-wrap gap-3">
+                      {tool.relatedAccidents.map(accSlug => (
+                        <Link
+                          key={accSlug}
+                          href={`/accidents/${accSlug}`}
+                          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-neutral-200 bg-surface-card text-sm text-neutral-700 hover:border-primary-300 hover:text-primary-700 transition-colors"
+                        >
+                          {accSlug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())}
+                          <ArrowRight className="w-3 h-3" aria-hidden="true" />
+                        </Link>
+                      ))}
+                    </div>
+                  </section>
+                )}
 
-              {/* Related accident type pills */}
-              {tool.relatedAccidents.length > 0 && (
-                <section aria-labelledby="related-accidents-heading">
-                  <h2
-                    id="related-accidents-heading"
-                    className="font-sans font-bold text-xl text-neutral-950 mb-4"
-                  >
-                    Related Accident Types
-                  </h2>
-                  <div className="flex flex-wrap gap-3">
-                    {tool.relatedAccidents.map(accSlug => (
-                      <Link
-                        key={accSlug}
-                        href={`/accidents/${accSlug}`}
-                        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-neutral-200 bg-surface-card text-sm text-neutral-700 hover:border-primary-300 hover:text-primary-700 transition-colors"
-                      >
-                        {accSlug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())}
-                        <ArrowRight className="w-3 h-3" aria-hidden="true" />
-                      </Link>
-                    ))}
-                  </div>
-                </section>
-              )}
-
-              <CTAButton href="/find-help" size="md">
-                Get Free Guidance
-              </CTAButton>
+                <CTAButton href="/find-help" size="md">
+                  Get Free Guidance
+                </CTAButton>
+              </div>
             </div>
 
             {/* Sidebar */}
