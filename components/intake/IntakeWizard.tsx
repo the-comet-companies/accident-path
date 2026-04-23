@@ -3,7 +3,6 @@
 import { useState, useEffect, useCallback } from 'react'
 import { useRouter } from 'next/navigation'
 import type { IntakeForm } from '@/types/intake'
-import { getSupabase } from '@/lib/supabase'
 import { INTAKE_STORAGE_KEY, computeUrgencyFactors, trackEvent } from '@/lib/intake'
 import { ProgressBar } from '@/components/intake/ProgressBar'
 import { StepAccidentType } from '@/components/intake/steps/StepAccidentType'
@@ -66,30 +65,21 @@ export function IntakeWizard() {
     setSubmitting(true)
     const urgencyFactors = computeUrgencyFactors(data)
     try {
-      await getSupabase().from('intake_sessions').insert({
-        accident_type: data.accidentType ?? null,
-        accident_date: data.accidentDate ?? null,
-        city: data.city ?? null,
-        state: data.state ?? null,
-        injuries: data.injuries ?? [],
-        medical: data.medicalTreatment ?? null,
-        police_report: data.policeReport ?? null,
-        insurance: data.insuranceStatus ?? null,
-        work_impact: data.workImpact ?? null,
-        urgency_factors: urgencyFactors,
-        name: data.name ?? null,
-        email: data.email ?? null,
-        phone: data.phone ?? null,
-        consent: data.consent ?? false,
+      await fetch('/api/intake', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          ...data,
+          urgencyFactors,
+        }),
       })
     } catch {
-      // Don't block the user flow on Supabase errors
+      // Don't block the user flow on network errors
     }
     trackEvent('intake_submitted', {
       accident_type: data.accidentType ?? '',
       state: data.state ?? '',
     })
-    // Keep data in localStorage for results page
     router.push('/find-help/thank-you')
   }
 
