@@ -1,0 +1,57 @@
+{
+  "slug": "oakland",
+  "name": "Oakland",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Oakland Accident Guide — Local Hospitals, Courts & Rights",
+  "metaDescription": "Injured in Oakland? Find local trauma hospitals, Alameda County courts, and California personal injury deadlines for East Bay accident victims.",
+  "population": "~440,000 (Alameda County seat; largest city in the East Bay)",
+  "description": "Oakland is the largest city in the East Bay and a major logistics, transit, and cultural hub for Northern California. The I-880 (Nimitz Freeway) runs the full length of the city carrying heavy commercial traffic to and from the Port of Oakland — the fifth-busiest container port in the United States — making truck-involved collisions a significant category of personal injury litigation. International Boulevard, running through East Oakland for miles, has one of the highest pedestrian fatality rates per mile of any urban arterial in California, generating a disproportionate share of pedestrian injury and wrongful death cases. Oakland is also a major BART (Bay Area Rapid Transit) hub, with multiple stations generating pedestrian traffic and transit-related accident exposure. The MacArthur Maze interchange — where I-880, I-580, and I-80 converge — is one of the most complex and accident-prone freeway junctions in Northern California.",
+  "hospitals": [
+    {
+      "name": "Highland Hospital (Alameda Health System)",
+      "address": "1411 E 31st St, Oakland, CA 94602",
+      "phone": "(510) 437-4800",
+      "erAvailable": true
+    },
+    {
+      "name": "UCSF Benioff Children's Hospital Oakland",
+      "address": "747 52nd St, Oakland, CA 94609",
+      "phone": "(510) 428-3000",
+      "erAvailable": true
+    },
+    {
+      "name": "Alta Bates Summit Medical Center — Summit Campus",
+      "address": "350 Hawthorne Ave, Oakland, CA 94609",
+      "phone": "(510) 655-4000",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Rene C. Davidson Alameda County Courthouse",
+      "address": "1225 Fallon St, Oakland, CA 94612",
+      "phone": "(510) 267-6946",
+      "type": "Civil and personal injury (Alameda County)"
+    }
+  ],
+  "commonAccidentTypes": [
+    "I-880 (Nimitz Freeway) high-speed and multi-vehicle collisions — elevated truck volume serving Port of Oakland",
+    "Pedestrian accidents on International Blvd — among California's most dangerous pedestrian corridors per mile",
+    "BART station, platform, and transit access accidents at Fruitvale, Coliseum, and other Oakland stations",
+    "Port of Oakland maritime and dockworker injuries — longshore and vessel-related accidents",
+    "MacArthur Maze (I-880/I-580/I-80 junction) freeway interchange collisions",
+    "Bicycle accidents in urban cycling corridors and near BART station access routes"
+  ],
+  "notableCorridors": [
+    "I-880 (Nimitz Freeway) — primary freight and port access corridor; consistently high accident rate throughout Oakland",
+    "International Blvd (East Oakland) — among California's highest pedestrian fatality rates per mile",
+    "MacArthur Maze (I-880/I-580/I-80 interchange) — complex multi-freeway junction with high collision concentration",
+    "I-580 (MacArthur Freeway) — major commute route with congestion-driven accidents near Bay Bridge junction",
+    "SR-24 (Caldecott Tunnel approach) — congested commuter corridor toward Contra Costa County",
+    "MacArthur Blvd — long urban arterial with documented pedestrian and intersection accident history"
+  ],
+  "localNotes": "Alameda County enforces California's 6-month government claim deadline for accidents involving BART, AC Transit buses, Oakland city vehicles, and public sidewalks or infrastructure. BART is a frequent defendant in platform slip-and-fall, escalator, and train-related injury cases. Highland Hospital (Alameda Health System) is the primary Level II Trauma Center serving Oakland and East Alameda County. The Rene C. Davidson Courthouse handles all civil personal injury litigation for Alameda County.",
+  "reviewedBy": "Pending Legal Review",
+  "reviewDate": "2026-04-23"
+}

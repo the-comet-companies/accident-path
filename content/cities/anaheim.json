@@ -1,0 +1,63 @@
+{
+  "slug": "anaheim",
+  "name": "Anaheim",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Anaheim Accident Guide — Local Hospitals, Courts & Rights",
+  "metaDescription": "Injured in Anaheim? Find local hospitals, Orange County courts, and California personal injury rights for accident victims in this high-traffic city.",
+  "population": "~346,000 (Orange County's largest city; home to Disneyland Resort and major sports venues)",
+  "description": "Anaheim is Orange County's largest city and one of California's most visited destinations, anchored by Disneyland Resort, Angel Stadium of Anaheim, the Honda Center, and the Anaheim Convention Center. This combination of high tourist pedestrian density, major sports and entertainment event crowds, and one of the highest rideshare vehicle concentrations in Southern California creates a uniquely complex accident environment. The I-5 (Santa Ana Freeway), SR-57 (Orange Freeway), and SR-91 (Riverside Freeway) all converge near Anaheim in a tightly packed interchange system that generates consistent high-volume accident exposure. Harbor Boulevard, Katella Avenue, and Ball Road experience extreme pedestrian and vehicle conflict near entertainment venues. ARTIC (Anaheim Regional Transportation Intermodal Center) is a major transit hub adding to pedestrian exposure at the Harbor/Katella corridor. Personal injury cases are handled at Orange County Superior Court — either the Central Justice Center in Santa Ana or the North Justice Center in Fullerton.",
+  "hospitals": [
+    {
+      "name": "UCI Health — Anaheim (formerly Anaheim Regional Medical Center)",
+      "address": "1111 W La Palma Ave, Anaheim, CA 92801",
+      "phone": "(714) 774-1450",
+      "erAvailable": true
+    },
+    {
+      "name": "Kaiser Permanente Anaheim Medical Center",
+      "address": "3440 E La Palma Ave, Anaheim, CA 92806",
+      "phone": "(714) 644-2000",
+      "erAvailable": true
+    },
+    {
+      "name": "Providence St. Jude Medical Center",
+      "address": "101 E Valencia Mesa Dr, Fullerton, CA 92835",
+      "phone": "(714) 992-3000",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Orange County Superior Court — Central Justice Center",
+      "address": "700 W Civic Center Dr, Santa Ana, CA 92701",
+      "phone": "(657) 622-5300",
+      "type": "Civil and personal injury (primary OC civil court)"
+    },
+    {
+      "name": "Orange County Superior Court — North Justice Center",
+      "address": "1275 N Berkeley Ave, Fullerton, CA 92832",
+      "phone": "(657) 622-6878",
+      "type": "Civil (North Orange County, including Anaheim)"
+    }
+  ],
+  "commonAccidentTypes": [
+    "I-5 / SR-57 / SR-91 interchange collisions — one of Southern California's most complex freeway junctions",
+    "Tourist pedestrian accidents near Disneyland Resort on Harbor Blvd and Katella Ave",
+    "Rideshare (Uber/Lyft) accidents — extremely high TNC concentration near Disneyland and event venues",
+    "Hotel, resort, and amusement park premises liability (slip and fall, attraction incidents)",
+    "Intersection accidents on Ball Road, Lincoln Avenue, and Anaheim Blvd",
+    "Event-day pedestrian accidents near Angel Stadium and Honda Center on game and concert days"
+  ],
+  "notableCorridors": [
+    "I-5 / SR-57 / SR-91 interchange (Anaheim split) — one of the busiest and most complex freeway junctions in Southern California",
+    "Harbor Blvd (near Disneyland Resort) — extreme tourist pedestrian volume; rideshare pickup/dropoff congestion",
+    "Katella Ave — major east-west arterial connecting Disneyland, Honda Center, and Angel Stadium",
+    "Ball Road — high commercial and tourist vehicle volume; frequent intersection accidents",
+    "SR-91 (Riverside Freeway) — severe peak-hour congestion and documented high rear-end accident rate",
+    "Lincoln Avenue — retail and residential corridor with intersection accident history"
+  ],
+  "localNotes": "Orange County enforces California's 6-month government claim deadline for accidents involving OCTA (Orange County Transportation Authority) buses, City of Anaheim vehicles, and public infrastructure. The high density of rideshare vehicles near Disneyland Resort creates complex insurance coverage issues — drivers may be in 'app on' or 'app off' status at the time of an accident, which determines which insurance applies. Resort and amusement attraction premises liability cases often involve specialized defense teams; early evidence preservation is critical.",
+  "reviewedBy": "Pending Legal Review",
+  "reviewDate": "2026-04-23"
+}

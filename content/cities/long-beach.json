@@ -1,0 +1,57 @@
+{
+  "slug": "long-beach",
+  "name": "Long Beach",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Long Beach Accident Guide — Local Hospitals, Courts & Rights",
+  "metaDescription": "Injured in Long Beach? Find local hospitals, courts, and California personal injury rights for accident victims in this major port city.",
+  "population": "~466,000 (California's seventh-largest city; home to the Port of Long Beach)",
+  "description": "Long Beach is one of California's largest cities and home to one of the busiest seaports in the world. The Port of Long Beach, together with the adjacent Port of Los Angeles, handles approximately 40% of all US container imports, driving an extraordinary volume of heavy commercial truck traffic on the I-710 (Long Beach Freeway). The I-710 corridor is consistently among the most dangerous in California for truck-involved accidents and has been the subject of major ongoing infrastructure studies. Pacific Coast Highway runs through the city's waterfront neighborhoods, creating a high pedestrian and cyclist exposure zone. Long Beach's dense urban core, active nightlife district, and significant rideshare presence generate frequent vehicle accident litigation. Personal injury cases in Long Beach are handled at the city's own branch of the Los Angeles County Superior Court — the Governor George Deukmejian Courthouse — rather than the downtown LA courts.",
+  "hospitals": [
+    {
+      "name": "Long Beach Medical Center (MemorialCare)",
+      "address": "2801 Atlantic Ave, Long Beach, CA 90806",
+      "phone": "(562) 933-2000",
+      "erAvailable": true
+    },
+    {
+      "name": "St. Mary Medical Center (Dignity Health)",
+      "address": "1050 Linden Ave, Long Beach, CA 90813",
+      "phone": "(562) 491-9000",
+      "erAvailable": true
+    },
+    {
+      "name": "College Medical Center",
+      "address": "2776 Pacific Ave, Long Beach, CA 90806",
+      "phone": "(562) 595-1911",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Long Beach Superior Court — Governor George Deukmejian Courthouse",
+      "address": "275 Magnolia Ave, Long Beach, CA 90802",
+      "phone": "(562) 435-0505",
+      "type": "Civil and personal injury (LA County — Long Beach branch)"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Port truck accidents on I-710 (Long Beach Freeway) — among the highest commercial vehicle volumes in the US",
+    "Pedestrian and bicycle accidents on Pacific Coast Highway (SR-1) along the waterfront",
+    "Intersection accidents on Anaheim Street, Atlantic Avenue, and Long Beach Blvd",
+    "Port of Long Beach worker injuries — maritime and dockside occupational accidents",
+    "Rideshare (Uber/Lyft) accidents near downtown, the convention center, and entertainment venues",
+    "Slip and fall accidents at commercial properties, piers, and beach-adjacent venues"
+  ],
+  "notableCorridors": [
+    "I-710 (Long Beach Freeway) — highest port truck traffic volume in California; frequent multi-vehicle collisions",
+    "Pacific Coast Highway (SR-1) — pedestrian and cyclist high-risk coastal corridor through beach communities",
+    "I-405 / I-710 interchange — significant accident concentration at this major junction near Lakewood border",
+    "Anaheim Street — commercial arterial with frequent intersection accidents and pedestrian exposure",
+    "Atlantic Avenue — primary north-south urban arterial; high accident frequency in commercial zones",
+    "Ocean Blvd — downtown and waterfront pedestrian exposure; rideshare congestion near Aquarium and Convention Center"
+  ],
+  "localNotes": "Long Beach operates its own city attorney's office — accidents involving Long Beach Transit buses, City of Long Beach vehicles, or city-maintained property require a government claim filed within 6 months. The Port of Long Beach is a distinct public entity with its own claims process separate from the city. MemorialCare Long Beach Medical Center functions as the primary trauma resource for the southern Los Angeles County area.",
+  "reviewedBy": "Pending Legal Review",
+  "reviewDate": "2026-04-23"
+}

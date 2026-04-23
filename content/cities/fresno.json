@@ -1,0 +1,57 @@
+{
+  "slug": "fresno",
+  "name": "Fresno",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Fresno Accident Guide — Local Hospitals, Courts & Rights",
+  "metaDescription": "Injured in Fresno? Learn about local hospitals, courts, and California personal injury deadlines that apply to accidents in the Central Valley.",
+  "population": "~545,000 (California's fifth-largest city; largest inland city in the state)",
+  "description": "Fresno is the largest city in California's Central Valley and a major hub for agriculture, logistics, and regional commerce. State Route 99 — the primary north-south corridor through the valley — passes directly through Fresno and is consistently among the most dangerous highways in California due to heavy commercial truck volumes, rural driving behavior at freeway speeds, and severe tule fog that reduces visibility to near zero during winter months. Blackstone Avenue and Shaw Avenue are the city's primary commercial arterials and generate frequent intersection accidents involving pedestrians, cyclists, and commercial vehicles. Agricultural equipment operating near city boundaries creates additional risk, and Fresno County's large distribution and warehouse presence generates substantial truck traffic. Community Regional Medical Center serves as the area's Level I Trauma Center. Fresno County Superior Court handles all civil personal injury litigation.",
+  "hospitals": [
+    {
+      "name": "Community Regional Medical Center",
+      "address": "2823 Fresno St, Fresno, CA 93721",
+      "phone": "(559) 459-6000",
+      "erAvailable": true
+    },
+    {
+      "name": "Saint Agnes Medical Center",
+      "address": "1303 E Herndon Ave, Fresno, CA 93720",
+      "phone": "(559) 450-3000",
+      "erAvailable": true
+    },
+    {
+      "name": "Clovis Community Medical Center",
+      "address": "2755 Herndon Ave, Clovis, CA 93611",
+      "phone": "(559) 324-4000",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Fresno County Superior Court — Civil Division",
+      "address": "1130 O St, Fresno, CA 93721",
+      "phone": "(559) 457-1900",
+      "type": "Civil and personal injury"
+    }
+  ],
+  "commonAccidentTypes": [
+    "SR-99 high-speed and multi-vehicle collisions (year-round danger; significantly increased in winter tule fog)",
+    "Agricultural equipment accidents on county roads and roads bordering active farmland",
+    "Intersection accidents on Blackstone Avenue and Shaw Avenue commercial corridors",
+    "Truck accidents near distribution centers and SR-99 interchange areas",
+    "Pedestrian accidents in downtown Fresno and lower-income residential corridors",
+    "Workplace injuries in agricultural, warehouse, and food processing industries"
+  ],
+  "notableCorridors": [
+    "SR-99 (Fresno segment) — highest accident and fatality rate of any Central Valley corridor; severe fog risk Nov–Feb",
+    "Blackstone Avenue — primary commercial arterial with consistently high intersection accident frequency",
+    "Shaw Avenue — major east-west commercial strip with significant pedestrian exposure in commercial zones",
+    "SR-41 (Yosemite Freeway) — links downtown Fresno to north Fresno and Madera County",
+    "SR-180 (Kings Canyon Road) — connects Fresno to Kings Canyon and Sierra Nevada; truck and commuter volume",
+    "Ventura Avenue — industrial corridor with railroad crossings and freight vehicle activity"
+  ],
+  "localNotes": "Fresno County enforces California's 6-month government claim deadline for accidents involving city or county vehicles, public roads, and infrastructure. Tule fog — a ground-level radiation fog common in the Central Valley from November through February — dramatically increases accident risk on SR-99 and surrounding highways; multi-vehicle pileups involving dozens of vehicles are a documented recurring event. Community Regional Medical Center is the only Level I Trauma Center serving a large portion of the Central Valley.",
+  "reviewedBy": "Pending Legal Review",
+  "reviewDate": "2026-04-23"
+}

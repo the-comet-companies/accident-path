@@ -1,0 +1,57 @@
+{
+  "slug": "san-jose",
+  "name": "San Jose",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "San Jose Accident Guide — Local Hospitals, Courts & Rights",
+  "metaDescription": "Injured in San Jose? Find local emergency hospitals, superior courts, and understand your rights after an accident under California law.",
+  "population": "~1.03 million (California's third-largest city; Silicon Valley's urban core)",
+  "description": "San Jose is California's third-largest city and the heart of Silicon Valley, with a dense commuter population and one of the most heavily traveled freeway systems in the Bay Area. The US-101/I-880 interchange is a persistent high-accident zone where tech-campus commuters, freight trucks, and rideshare drivers converge daily. San Jose also has an extensive light rail network operated by the Santa Clara Valley Transportation Authority (VTA), which introduces significant transit-related injury exposure throughout the city. Downtown San Jose, the Japantown corridor, and major arterials like Story Road and Tully Road in East San Jose see high pedestrian and bicycle accident volumes. Santa Clara County courts handle a substantial volume of civil personal injury litigation, and California's strict 6-month government claim deadline applies when city or county infrastructure is involved.",
+  "hospitals": [
+    {
+      "name": "Santa Clara Valley Medical Center",
+      "address": "751 S Bascom Ave, San Jose, CA 95128",
+      "phone": "(408) 885-5000",
+      "erAvailable": true
+    },
+    {
+      "name": "Regional Medical Center of San Jose",
+      "address": "225 N Jackson Ave, San Jose, CA 95116",
+      "phone": "(408) 259-5000",
+      "erAvailable": true
+    },
+    {
+      "name": "Good Samaritan Hospital",
+      "address": "2425 Samaritan Dr, San Jose, CA 95124",
+      "phone": "(408) 559-2011",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Santa Clara County Superior Court — Downtown Courthouse",
+      "address": "191 N First St, San Jose, CA 95113",
+      "phone": "(408) 882-2100",
+      "type": "Civil and personal injury"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Freeway collisions at the US-101/I-880 interchange and I-280 merge zones",
+    "VTA light rail and bus accidents on transit corridors throughout the city",
+    "Pedestrian accidents on Story Road, Tully Road, and Capitol Expressway in East San Jose",
+    "Bicycle accidents in the downtown core, Japantown, and designated bike corridors",
+    "Rideshare (Uber/Lyft) accidents near tech campuses and transit hubs",
+    "Construction zone accidents in active tech campus and infrastructure development areas"
+  ],
+  "notableCorridors": [
+    "US-101 — major north-south freeway with high daily volume through the city center",
+    "I-880 (Nimitz Freeway) — heavy truck and commuter traffic; high accident rate near downtown",
+    "I-280 — frequent rear-end accidents near Cupertino border interchanges",
+    "SR-87 (Guadalupe Pkwy) — urban expressway with limited pedestrian infrastructure and merge exposure",
+    "Story Road — documented high pedestrian accident frequency in East San Jose",
+    "Tully Road — significant intersection accident volume in southeast residential areas"
+  ],
+  "localNotes": "Santa Clara County enforces a strict 6-month government claim deadline for accidents involving city or county vehicles, public roads, and sidewalks. VTA (Valley Transportation Authority) light rail and bus accidents require a separate government claim filing against the transit authority. Traffic collision reports can be obtained from the San Jose Police Department or California Highway Patrol depending on incident location.",
+  "reviewedBy": "Pending Legal Review",
+  "reviewDate": "2026-04-23"
+}

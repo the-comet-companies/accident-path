@@ -1,0 +1,63 @@
+{
+  "slug": "chandler",
+  "name": "Chandler",
+  "stateSlug": "arizona",
+  "stateAbbreviation": "AZ",
+  "metaTitle": "Chandler Accident Guide — Local Hospitals, Courts & Rights",
+  "metaDescription": "Injured in Chandler? Find local hospitals, courts, and Arizona personal injury rights for accident victims in this fast-growing Maricopa County city.",
+  "population": "~275,000 (one of Arizona's fastest-growing and most economically dynamic cities)",
+  "description": "Chandler is one of Arizona's most economically dynamic cities, home to major technology and semiconductor manufacturing operations including Intel's Ocotillo campus, TSMC's new Arizona facility nearby, and significant PayPal and financial services operations. This high-tech employment base drives substantial commuter traffic on Loop 101 (Price Freeway) and Loop 202 (Santan Freeway), both of which form Chandler's western and southern freeway borders. Chandler's rapid suburban growth has created an ongoing pattern of commercial development outpacing roadway infrastructure, generating construction zone accident risk and intersection accidents where traffic volumes have grown faster than signal timing and road capacity can accommodate. Chandler Blvd, Ray Road, and McClintock Drive are primary arterials with documented high accident frequency. The Chandler Fashion Center and surrounding retail area generates high pedestrian exposure. All civil personal injury matters are handled at Maricopa County Superior Court.",
+  "hospitals": [
+    {
+      "name": "Chandler Regional Medical Center (Dignity Health)",
+      "address": "1955 W Frye Rd, Chandler, AZ 85224",
+      "phone": "(480) 728-3000",
+      "erAvailable": true
+    },
+    {
+      "name": "Dignity Health Mercy Gilbert Medical Center",
+      "address": "3555 S Val Vista Dr, Gilbert, AZ 85297",
+      "phone": "(480) 728-8000",
+      "erAvailable": true
+    },
+    {
+      "name": "Banner Ocotillo Medical Center",
+      "address": "6750 E Elliot Rd, Chandler, AZ 85224",
+      "phone": "(480) 882-5900",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Maricopa County Superior Court — Southeast Regional Court Center",
+      "address": "222 E Javelina Ave, Mesa, AZ 85210",
+      "phone": "(480) 344-3000",
+      "type": "Civil and personal injury (East Valley)"
+    },
+    {
+      "name": "Chandler Municipal Court",
+      "address": "240 E Chicago St, Chandler, AZ 85225",
+      "phone": "(480) 782-4130",
+      "type": "Municipal (traffic and limited civil)"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Loop 101 (Price Freeway) and Loop 202 (Santan Freeway) high-speed collisions along city boundaries",
+    "Tech campus commuter accidents on Chandler Blvd, Price Road, and Dobson Road corridors",
+    "Construction zone accidents in active commercial and residential development areas",
+    "Intersection accidents on Ray Road, McClintock Drive, and Arizona Avenue",
+    "Distracted driving accidents in suburban residential and retail corridors near Fashion Center",
+    "Bicycle and pedestrian accidents near the Price Corridor tech park and adjacent trails"
+  ],
+  "notableCorridors": [
+    "Loop 101 (Price Freeway, western Chandler border) — high-speed freeway with tech corridor commuter traffic and merge conflicts",
+    "Loop 202 (Santan Freeway, southern/eastern Chandler) — growing commuter and commercial volume with interchange accident exposure",
+    "Chandler Blvd — primary east-west commercial arterial with high intersection accident frequency",
+    "Ray Road — suburban commercial corridor with documented rear-end and pedestrian exposure",
+    "McClintock Drive — north-south connector with active tech campus and retail strip development",
+    "Arizona Avenue — older commercial corridor with higher pedestrian activity and aging signal infrastructure"
+  ],
+  "localNotes": "Arizona's 180-day government claim deadline (A.R.S. § 12-821.01) applies to accidents involving City of Chandler vehicles, public roads, and facilities. Chandler's rapid growth has created road design and signal timing gaps where infrastructure has not kept pace with development — these conditions can be relevant in establishing municipal liability. Chandler Regional Medical Center (Dignity Health) is the primary Level I Trauma Center serving south Chandler, south Gilbert, and surrounding communities.",
+  "reviewedBy": "Pending Legal Review",
+  "reviewDate": "2026-04-23"
+}

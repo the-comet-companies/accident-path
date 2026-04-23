@@ -1,0 +1,57 @@
+{
+  "slug": "bakersfield",
+  "name": "Bakersfield",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Bakersfield Accident Guide — Local Hospitals, Courts & Rights",
+  "metaDescription": "Injured in Bakersfield? Find local hospitals, Kern County courts, and California personal injury law for accidents in the Central Valley.",
+  "population": "~407,000 (Kern County seat; California's ninth-largest city)",
+  "description": "Bakersfield is the largest city in Kern County and a critical node in California's highway, agricultural, and energy infrastructure. State Route 99 passes through the city carrying heavy commercial traffic between Los Angeles and the northern Central Valley, and the nearby I-5 Grapevine segment is notorious for weather-related accidents caused by tule fog and, occasionally, ice on the steep mountain grade. Agricultural equipment accidents on farm roads surrounding the city are a consistent source of serious personal injury litigation. Kern County is California's leading oil-producing county — making oilfield worker injuries a significant and legally complex category of occupational accident claims that often involve multiple employer and contractor relationships. Major commercial corridors including Rosedale Highway, Ming Avenue, White Lane, and Coffee Road see frequent intersection and rear-end accidents as the city has expanded outward.",
+  "hospitals": [
+    {
+      "name": "Kern Medical Center",
+      "address": "1700 Mount Vernon Ave, Bakersfield, CA 93306",
+      "phone": "(661) 326-2000",
+      "erAvailable": true
+    },
+    {
+      "name": "Dignity Health Mercy Hospital Downtown Bakersfield",
+      "address": "2215 Truxtun Ave, Bakersfield, CA 93301",
+      "phone": "(661) 327-4647",
+      "erAvailable": true
+    },
+    {
+      "name": "Adventist Health Bakersfield",
+      "address": "2615 Chester Ave, Bakersfield, CA 93301",
+      "phone": "(661) 862-5000",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Kern County Superior Court — Metropolitan Division",
+      "address": "1415 Truxtun Ave, Bakersfield, CA 93301",
+      "phone": "(661) 868-5100",
+      "type": "Civil and personal injury"
+    }
+  ],
+  "commonAccidentTypes": [
+    "SR-99 high-speed collisions and multi-vehicle accidents — heavy truck traffic and tule fog create year-round danger",
+    "I-5 Grapevine weather-related accidents (tule fog, occasional ice, steep grade north of the city)",
+    "Agricultural equipment accidents on county roads near active farmland at city boundaries",
+    "Oil and gas field worker injuries (Kern County leads California in oil production)",
+    "Intersection accidents on Rosedale Hwy, Ming Ave, White Lane, and Coffee Rd",
+    "Truck accidents near distribution centers and the SR-99/SR-58 interchange area"
+  ],
+  "notableCorridors": [
+    "SR-99 (Bakersfield segment) — major freight and commuter corridor with one of California's highest rural accident rates",
+    "I-5 (Grapevine) — steep mountain grade with severe fog and weather hazards; frequent multi-vehicle pileups",
+    "SR-58 (Rosedale Highway, west of Bakersfield) — high-speed arterial transitioning into commercial development",
+    "Ming Avenue — primary east-west suburban commercial corridor with documented intersection accident volume",
+    "White Lane — east-west connector across southern Bakersfield with rear-end and pedestrian accident exposure",
+    "Coffee Road — active development corridor with construction zone and new intersection accident risk"
+  ],
+  "localNotes": "Kern County enforces California's 6-month government claim deadline for accidents involving city or county vehicles, public roads, and infrastructure. Tule fog from November through February dramatically increases accident risk on SR-99 and I-5 — multi-vehicle pileups involving dozens of vehicles have occurred in zero-visibility conditions. Oilfield worker injury claims often involve multiple employers and contractors; third-party civil claims may be available alongside workers' compensation. Kern Medical Center is the primary trauma center serving Bakersfield and surrounding Kern County.",
+  "reviewedBy": "Pending Legal Review",
+  "reviewDate": "2026-04-23"
+}

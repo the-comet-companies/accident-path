@@ -1,0 +1,63 @@
+{
+  "slug": "scottsdale",
+  "name": "Scottsdale",
+  "stateSlug": "arizona",
+  "stateAbbreviation": "AZ",
+  "metaTitle": "Scottsdale Accident Guide — Local Hospitals, Courts & Rights",
+  "metaDescription": "Injured in Scottsdale? Find local hospitals, courts, and Arizona personal injury deadlines for accident victims in this major entertainment city.",
+  "population": "~258,000 (extends from South Scottsdale to the McDowell Sonoran Preserve in the north)",
+  "description": "Scottsdale is one of Arizona's most affluent and geographically expansive cities, stretching from dense urban South Scottsdale — adjacent to Tempe and Phoenix — to sprawling resort and residential communities in North Scottsdale. This geographic range creates dramatically different accident environments within the same city limits. Old Town Scottsdale is a major nightlife and entertainment hub where DUI-related accidents and rideshare vehicle congestion are among the most significant factors in personal injury litigation. Loop 101 (Pima Freeway) carries high-speed commuter and commercial traffic through Scottsdale's western and northern edges, with documented interchange accident concentrations. Major resort properties — including multiple five-star hotels and destination spas — create ongoing premises liability exposure. HonorHealth operates two major hospital campuses within the city, and Mayo Clinic Hospital in North Phoenix serves as the primary Level I Trauma resource for the North Scottsdale area.",
+  "hospitals": [
+    {
+      "name": "HonorHealth Scottsdale Osborn Medical Center",
+      "address": "7400 E Osborn Rd, Scottsdale, AZ 85251",
+      "phone": "(480) 882-4000",
+      "erAvailable": true
+    },
+    {
+      "name": "HonorHealth Scottsdale Shea Medical Center",
+      "address": "9003 E Shea Blvd, Scottsdale, AZ 85260",
+      "phone": "(480) 323-3000",
+      "erAvailable": true
+    },
+    {
+      "name": "Mayo Clinic Hospital",
+      "address": "5777 E Mayo Blvd, Phoenix, AZ 85054",
+      "phone": "(480) 342-2000",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Scottsdale City Court",
+      "address": "3700 N 75th St, Scottsdale, AZ 85251",
+      "phone": "(480) 312-2501",
+      "type": "Municipal (traffic and limited civil)"
+    },
+    {
+      "name": "Maricopa County Superior Court",
+      "address": "201 W Jefferson St, Phoenix, AZ 85003",
+      "phone": "(602) 506-3204",
+      "type": "Civil and personal injury"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Loop 101 (Pima Freeway) high-speed collisions on Scottsdale's western and northern edges",
+    "DUI-related accidents near Old Town Scottsdale entertainment district (bars, nightclubs, restaurants)",
+    "Rideshare (Uber/Lyft) accidents in the Old Town, Fashion Square, and Kierland Commons areas",
+    "Resort and hotel premises liability — slip and fall, pool area, and valet accidents",
+    "Pedestrian accidents on Scottsdale Road near entertainment and retail districts in South Scottsdale",
+    "Golf cart and pedestrian conflicts in resort and retirement community areas"
+  ],
+  "notableCorridors": [
+    "Loop 101 (Pima Freeway) — western and northern Scottsdale; high-speed freeway with merge and interchange accident concentration",
+    "Scottsdale Road — primary north-south arterial traversing the full city; high pedestrian exposure in South and Old Town",
+    "Shea Blvd — major east-west connector across North Scottsdale with documented intersection accident history",
+    "Frank Lloyd Wright Blvd — resort and medical campus corridor with intersection conflict zones",
+    "Camelback Road — high commercial density in South Scottsdale; frequent intersection accidents near Scottsdale Fashion Square",
+    "Indian Bend Road — suburban arterial with mixed resort and residential land use"
+  ],
+  "localNotes": "Scottsdale's 180-day government claim deadline (A.R.S. § 12-821.01) applies to accidents involving City of Scottsdale vehicles and public infrastructure. Old Town Scottsdale's entertainment district generates a disproportionate share of DUI-related injury cases — blood alcohol evidence and the rideshare driver's app status at the time of an accident are critical early-stage priorities. Arizona's extreme summer heat can affect road surface conditions, tire integrity, and driver fatigue — all potentially relevant factors in establishing liability.",
+  "reviewedBy": "Pending Legal Review",
+  "reviewDate": "2026-04-23"
+}

@@ -1,0 +1,63 @@
+{
+  "slug": "mesa",
+  "name": "Mesa",
+  "stateSlug": "arizona",
+  "stateAbbreviation": "AZ",
+  "metaTitle": "Mesa Accident Guide — Local Hospitals, Courts & Rights",
+  "metaDescription": "Injured in Mesa? Find local hospitals, courts, and Arizona personal injury deadlines for accident victims in Maricopa County's third-largest city.",
+  "population": "~510,000 (Arizona's third-largest city; larger than several US state capitals)",
+  "description": "Mesa is Arizona's third-largest city and one of the most populous cities in the United States, sprawling across a large portion of eastern Maricopa County. The US-60 (Superstition Freeway) and SR-202 (Red Mountain Freeway) are the primary freeway corridors and see consistent accident volumes from commuter, commercial, and recreational traffic — the US-60 is one of the most accident-prone freeways in the Phoenix metro area. Mesa is also served by Valley Metro Rail along Main Street, introducing transit-related injury exposure throughout the urban core. The city's extensive grid of commercial arterials — including Power Road, Dobson Road, Gilbert Road, and Mesa Drive — generates significant intersection accident volume at signalized intersections that experience high vehicle-to-pedestrian conflict during peak hours. Spring training baseball venues including Sloan Park (Chicago Cubs) and other Cactus League facilities create seasonal pedestrian spikes. All civil personal injury matters are handled through Maricopa County Superior Court.",
+  "hospitals": [
+    {
+      "name": "Banner Desert Medical Center",
+      "address": "1400 S Dobson Rd, Mesa, AZ 85202",
+      "phone": "(480) 412-3000",
+      "erAvailable": true
+    },
+    {
+      "name": "Mountain Vista Medical Center",
+      "address": "1301 S Crismon Rd, Mesa, AZ 85209",
+      "phone": "(480) 358-6100",
+      "erAvailable": true
+    },
+    {
+      "name": "Dignity Health Mercy Gilbert Medical Center",
+      "address": "3555 S Val Vista Dr, Gilbert, AZ 85297",
+      "phone": "(480) 728-8000",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Maricopa County Superior Court — Southeast Regional Court Center",
+      "address": "222 E Javelina Ave, Mesa, AZ 85210",
+      "phone": "(480) 344-3000",
+      "type": "Civil and personal injury (East Valley)"
+    },
+    {
+      "name": "Mesa Municipal Court",
+      "address": "55 N Center St, Mesa, AZ 85201",
+      "phone": "(480) 644-2255",
+      "type": "Municipal (traffic and limited civil)"
+    }
+  ],
+  "commonAccidentTypes": [
+    "US-60 (Superstition Freeway) rear-end and high-speed collisions — consistently one of Phoenix metro's highest accident-rate freeways",
+    "SR-202 (Red Mountain Freeway) and US-60 interchange accidents at the eastern junction",
+    "Valley Metro Rail accidents along the Main Street and Mesa Drive light rail corridor",
+    "Intersection accidents at Power Road, Dobson Road, Gilbert Road, and University Drive",
+    "Spring training venue pedestrian accidents near Cactus League ballparks (seasonal)",
+    "Construction zone accidents in Mesa's active commercial and residential development corridors"
+  ],
+  "notableCorridors": [
+    "US-60 (Superstition Freeway) — primary east-west freeway through Mesa; among the Phoenix metro's highest accident-volume freeways",
+    "SR-202 (Red Mountain Freeway) — major north-south connector with documented US-60 interchange accident concentration",
+    "Main Street / Mesa Drive — Valley Metro Rail corridor; pedestrian and transit accident zone through urban core",
+    "Power Road — high-volume north-south arterial with documented intersection accident concentration",
+    "Dobson Road — commercial arterial connecting Mesa's residential core to Banner Desert hospital area",
+    "Gilbert Road — east-side connector with growing commercial and residential intersection accident exposure"
+  ],
+  "localNotes": "Arizona's 180-day government claim deadline (A.R.S. § 12-821.01) applies to accidents involving City of Mesa vehicles, public roads, and facilities. Valley Metro Rail accidents require a separate 180-day claim against Valley Metro, a distinct regional public entity. Banner Desert Medical Center is one of the East Valley's primary Level I Trauma Centers. Sloan Park and other Cactus League facilities generate high pedestrian exposure in February and March; accidents near these venues during spring training season can involve complex premises liability questions.",
+  "reviewedBy": "Pending Legal Review",
+  "reviewDate": "2026-04-23"
+}

@@ -1,0 +1,57 @@
+{
+  "slug": "gilbert",
+  "name": "Gilbert",
+  "stateSlug": "arizona",
+  "stateAbbreviation": "AZ",
+  "metaTitle": "Gilbert Accident Guide — Local Hospitals, Courts & Rights",
+  "metaDescription": "Injured in Gilbert? Find local hospitals, courts, and Arizona personal injury rights for accident victims in one of the fastest-growing US cities.",
+  "population": "~267,000 (one of the fastest-growing cities in the United States over the past three decades)",
+  "description": "Gilbert transformed from a small farming town into one of the largest cities in Arizona over the past three decades, and that extraordinarily rapid growth trajectory defines its accident environment. New subdivisions, expanding commercial corridors, and growing arterial road networks are in a constant state of construction and traffic signal recalibration — creating conditions where infrastructure routinely lags behind traffic demand. Loop 202 (Santan Freeway) is the primary freeway serving Gilbert and sees accident concentrations at on-ramps and interchanges as the community's commuter volume has grown. Gilbert Road, Val Vista Drive, and Higley Road are major north-south arterials with documented intersection accident concentrations. Elliot Road and Warner Road are key east-west connectors experiencing growing accident exposure as southern Gilbert develops. Agricultural land still borders parts of the city, and farm equipment on rural transitional roads represents an ongoing accident risk in fringe areas.",
+  "hospitals": [
+    {
+      "name": "Dignity Health Mercy Gilbert Medical Center",
+      "address": "3555 S Val Vista Dr, Gilbert, AZ 85297",
+      "phone": "(480) 728-8000",
+      "erAvailable": true
+    },
+    {
+      "name": "Banner Gateway Medical Center",
+      "address": "1900 N Higley Rd, Gilbert, AZ 85234",
+      "phone": "(480) 543-2000",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Gilbert Municipal Court",
+      "address": "55 E Civic Center Dr, Gilbert, AZ 85296",
+      "phone": "(480) 503-6700",
+      "type": "Municipal (traffic and limited civil)"
+    },
+    {
+      "name": "Maricopa County Superior Court — Southeast Regional Court Center",
+      "address": "222 E Javelina Ave, Mesa, AZ 85210",
+      "phone": "(480) 344-3000",
+      "type": "Civil and personal injury (East Valley)"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Loop 202 (Santan Freeway) on-ramp and interchange collisions as commuter volume has grown rapidly",
+    "Intersection accidents at rapidly developing arterials — Val Vista Drive, Higley Road, Gilbert Road, Elliot Road",
+    "Construction zone accidents in active residential and commercial development throughout the city",
+    "Distracted driving accidents in suburban residential corridors with a younger-than-average demographic",
+    "Agricultural equipment accidents on farm-to-development transition roads in southern Gilbert",
+    "Rear-end accidents on newly constructed roads where traffic patterns and signal timing are not yet established"
+  ],
+  "notableCorridors": [
+    "Loop 202 (Santan Freeway) — primary freeway serving Gilbert; accident concentration at on-ramps and interchanges",
+    "Gilbert Road — primary north-south arterial through the city's commercial and residential core",
+    "Val Vista Drive — fast-growing north-south corridor with multiple new intersections and changing traffic patterns",
+    "Higley Road — major arterial adjacent to Banner Gateway Medical Center with documented accident concentration",
+    "Elliot Road — east-west connector through rapidly developing south Gilbert",
+    "Warner Road — suburban arterial with significant new residential construction zone activity in outer areas"
+  ],
+  "localNotes": "Arizona's 180-day government claim deadline (A.R.S. § 12-821.01) applies to accidents involving Town of Gilbert vehicles, public roads, and facilities. Gilbert's fast-growth environment means road conditions — including lane markings, signage, and signal timing — may not reflect current traffic volumes, which can be a relevant factor in establishing liability for intersection accidents. Banner Gateway Medical Center and Mercy Gilbert Medical Center together serve as the primary emergency and trauma resources for the Gilbert area.",
+  "reviewedBy": "Pending Legal Review",
+  "reviewDate": "2026-04-23"
+}

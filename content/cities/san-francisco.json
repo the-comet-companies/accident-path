@@ -1,0 +1,57 @@
+{
+  "slug": "san-francisco",
+  "name": "San Francisco",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "San Francisco Accident Guide — Local Hospitals, Courts & Rights",
+  "metaDescription": "Injured in San Francisco? Find local trauma centers, courts, and key facts about California personal injury law for SF accident victims.",
+  "population": "~874,000 (city and county; California's fourth-most-populous city)",
+  "description": "San Francisco is one of the most complex urban accident environments in California. The city's dense street grid, steep hills, and high pedestrian and cyclist activity combine with one of the highest concentrations of rideshare vehicles in the country. Market Street — a critical transit and pedestrian corridor — has consistently ranked among the most dangerous streets in California for pedestrians and cyclists, contributing to a high volume of personal injury litigation. MUNI bus, historic streetcar (F-line), and Muni Metro subway accidents are regular features of San Francisco civil court. The Bay Bridge approach on I-80 and Van Ness Avenue also see significant collision volumes. San Francisco is both a city and a county with its own unified Superior Court handling all civil personal injury matters, and government claim deadlines are strictly enforced against MUNI and other city agencies.",
+  "hospitals": [
+    {
+      "name": "Zuckerberg San Francisco General Hospital",
+      "address": "1001 Potrero Ave, San Francisco, CA 94110",
+      "phone": "(415) 206-8000",
+      "erAvailable": true
+    },
+    {
+      "name": "UCSF Medical Center at Parnassus",
+      "address": "505 Parnassus Ave, San Francisco, CA 94143",
+      "phone": "(415) 476-1000",
+      "erAvailable": true
+    },
+    {
+      "name": "St. Mary's Medical Center",
+      "address": "450 Stanyan St, San Francisco, CA 94117",
+      "phone": "(415) 668-1000",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "San Francisco Superior Court — Civic Center Courthouse",
+      "address": "400 McAllister St, San Francisco, CA 94102",
+      "phone": "(415) 551-3600",
+      "type": "Civil and personal injury"
+    }
+  ],
+  "commonAccidentTypes": [
+    "MUNI bus, F-line streetcar, and Muni Metro subway accidents on city transit routes",
+    "Pedestrian accidents on Market Street and major Downtown and SoMa corridors",
+    "Bicycle accidents on Fell Street, Oak Street, the Wiggle, and the Embarcadero",
+    "Rideshare (Uber/Lyft) accidents — SF has one of the highest TNC vehicle concentrations in the US",
+    "Bay Bridge approach (I-80 westbound) rear-end and congestion-related collisions",
+    "Slip and fall accidents on steep hills and uneven city sidewalks"
+  ],
+  "notableCorridors": [
+    "Market Street — consistently among California's most dangerous streets for pedestrians and cyclists; MUNI surface rail",
+    "Van Ness Avenue — major north-south urban arterial with significant pedestrian and cyclist exposure",
+    "I-80 (Bay Bridge approach, westbound) — congestion-driven rear-end collisions near the toll plaza",
+    "US-101 (Central Freeway / South Van Ness) — urban freeway with dense on-ramp merge conflicts",
+    "Mission Street — MUNI bus corridor with documented pedestrian accident concentration",
+    "Lombard Street (US-101 surface route) — high tourist pedestrian activity and vehicle congestion"
+  ],
+  "localNotes": "San Francisco's 6-month government claim deadline applies to MUNI accidents and all incidents involving City and County of San Francisco vehicles, transit, or infrastructure. MUNI collision reports require a separate records request through SFMTA (San Francisco Municipal Transportation Agency). SF sidewalk maintenance liability can fall on either the city or adjacent property owners depending on circumstances — this distinction matters in slip and fall cases. Zuckerberg San Francisco General Hospital is the city's Level I Trauma Center.",
+  "reviewedBy": "Pending Legal Review",
+  "reviewDate": "2026-04-23"
+}

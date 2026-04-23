@@ -1,0 +1,57 @@
+{
+  "slug": "sacramento",
+  "name": "Sacramento",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Sacramento Accident Guide — Local Hospitals, Courts & Rights",
+  "metaDescription": "Injured in Sacramento? Find local hospitals, courts, and key California personal injury deadlines that apply to accidents in the state capital.",
+  "population": "~528,000 (California's state capital and sixth-largest city)",
+  "description": "Sacramento is California's state capital and a major regional hub for government, healthcare, and agriculture. The city sits at the confluence of the I-5, I-80, and US-50 freeway corridors, creating one of the most complex interchange systems in Northern California — the I-5/I-80 merge is a chronic high-accident zone. The Sacramento Regional Transit District (RT) operates light rail and bus service throughout the metro, making transit-related accidents a recurring category of personal injury litigation. Downtown and Midtown Sacramento have high pedestrian and bicycle activity, and the American River Bike Trail draws significant cyclist volume. The Capital City Freeway (Business 80) and Stockton Boulevard are consistent high-accident corridors. UC Davis Medical Center is the region's primary Level I Trauma Center. Sacramento County Superior Court, located blocks from the State Capitol, handles all civil personal injury matters.",
+  "hospitals": [
+    {
+      "name": "UC Davis Medical Center",
+      "address": "2315 Stockton Blvd, Sacramento, CA 95817",
+      "phone": "(916) 734-2011",
+      "erAvailable": true
+    },
+    {
+      "name": "Dignity Health Mercy General Hospital",
+      "address": "4001 J St, Sacramento, CA 95819",
+      "phone": "(916) 453-4545",
+      "erAvailable": true
+    },
+    {
+      "name": "Kaiser Permanente Sacramento Medical Center",
+      "address": "2025 Morse Ave, Sacramento, CA 95825",
+      "phone": "(916) 973-5000",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Sacramento County Superior Court — Gordon D. Schaber Courthouse",
+      "address": "720 9th St, Sacramento, CA 95814",
+      "phone": "(916) 874-5522",
+      "type": "Civil and personal injury"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Freeway collisions at the I-5/I-80 interchange and Business 80 (Capital City Freeway)",
+    "Sacramento Regional Transit (RT) light rail accidents on the downtown and suburban Gold and Green lines",
+    "Pedestrian accidents in Downtown Sacramento and the Midtown grid",
+    "Bicycle accidents on the American River Bike Trail and city cycling infrastructure",
+    "Intersection accidents on Florin Road and Stockton Blvd",
+    "Government vehicle accidents — high concentration of state agency and Capitol security vehicles"
+  ],
+  "notableCorridors": [
+    "I-5 / I-80 interchange (Downtown Sacramento) — complex multi-directional merge zone with chronic congestion",
+    "Business 80 (Capital City Freeway) — urban freeway connecting I-80 to I-5 north; high rear-end frequency",
+    "US-50 (eastbound toward Rancho Cordova and El Dorado Hills) — congestion and collision during commute hours",
+    "Florin Road — high-volume south Sacramento arterial with pedestrian and intersection accident history",
+    "Stockton Blvd — commercial and residential corridor connecting downtown to South Sacramento",
+    "Freeport Blvd — pedestrian corridor connecting Midtown to Land Park and South Sacramento"
+  ],
+  "localNotes": "Sacramento County's 6-month government claim deadline applies to accidents involving Sacramento city vehicles, county-maintained roads, Sacramento Regional Transit (RT) vehicles, and in some cases state government vehicles operating in the capital area. The California Department of General Services handles certain claims involving state vehicles separately. UC Davis Medical Center is the region's Level I Trauma Center and handles the most severe accident injuries from across the Sacramento Valley.",
+  "reviewedBy": "Pending Legal Review",
+  "reviewDate": "2026-04-23"
+}
