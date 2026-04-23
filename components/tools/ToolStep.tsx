@@ -52,7 +52,7 @@ export function ToolStep({ step, value, onChange }: ToolStepProps) {
   if (step.type === 'select') {
     const current = (value as string) ?? ''
     return (
-      <div className="flex flex-col gap-2" role="radiogroup" aria-label={step.question}>
+      <div className="flex flex-col gap-2" aria-label={step.question}>
         {options.map(opt => (
           <OptionCard
             key={opt.value}
@@ -97,7 +97,7 @@ export function ToolStep({ step, value, onChange }: ToolStepProps) {
           min={0}
           onChange={e => {
             const n = parseFloat(e.target.value)
-            if (!isNaN(n)) onChange(n)
+            if (!isNaN(n) && n >= 0) onChange(n)
           }}
           className="w-full px-4 py-3 rounded-xl border-2 border-neutral-200 font-sans text-sm text-neutral-900 focus:border-primary-500 focus:outline-none min-h-[44px]"
           aria-label={step.question}

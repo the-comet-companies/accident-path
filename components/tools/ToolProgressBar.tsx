@@ -7,9 +7,10 @@ export function ToolProgressBar({ current, total }: ToolProgressBarProps) {
   const pct = Math.round((current / total) * 100)
   return (
     <div
+      className="w-full"
       role="progressbar"
       aria-valuenow={current}
-      aria-valuemin={1}
+      aria-valuemin={0}
       aria-valuemax={total}
       aria-label={`Step ${current} of ${total}`}
     >

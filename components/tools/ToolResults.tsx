@@ -35,9 +35,9 @@ export function ToolResults({ output, tool, onReset }: ToolResultsProps) {
       {/* Items */}
       {output.items.length > 0 && (
         <div className="flex flex-col gap-3">
-          {output.items.map((item, i) => (
+          {output.items.map((item) => (
             <div
-              key={i}
+              key={item.label}
               className="flex items-start gap-3 rounded-xl border border-neutral-100 bg-surface-card p-4"
             >
               <span
@@ -60,7 +60,7 @@ export function ToolResults({ output, tool, onReset }: ToolResultsProps) {
       )}
 
       {/* Disclaimer */}
-      <p className="text-neutral-400 text-xs leading-relaxed">{output.disclaimer}</p>
+      <p className="text-neutral-500 text-xs leading-relaxed">{output.disclaimer}</p>
 
       {/* CTAs */}
       <div className="flex flex-col sm:flex-row gap-3 print:hidden">
@@ -73,7 +73,7 @@ export function ToolResults({ output, tool, onReset }: ToolResultsProps) {
         {output.exportable && (
           <button
             type="button"
-            onClick={() => window.print()}
+            onClick={() => { if (typeof window !== 'undefined') window.print() }}
             className="flex-1 inline-flex items-center justify-center px-5 py-3 rounded-xl border-2 border-neutral-200 text-neutral-700 font-sans font-semibold text-sm min-h-[44px] hover:bg-neutral-50 transition-colors"
           >
             Print / Save PDF
