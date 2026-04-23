@@ -2,7 +2,16 @@
 
 ## Where We Left Off (read this first in a new session)
 
-**Last completed task: DEV-23 — CA + AZ state page JSONs** ✅
+**Last completed task: DEV-24 — 16 city page JSONs** ✅
+- Created 12 new city JSON files with real hospitals, courts, corridors, and unique descriptions
+  - CA (8 new): `san-jose`, `san-francisco`, `fresno`, `sacramento`, `long-beach`, `oakland`, `bakersfield`, `anaheim`
+  - AZ (4 new): `mesa`, `chandler`, `scottsdale`, `gilbert`
+- Updated `reviewedBy` → `"Pending Legal Review"` on 4 existing cities: `los-angeles`, `san-diego`, `phoenix`, `tucson`
+- CMS auto-discovers all 16 via `fs.readdirSync` — no registry change needed
+- Commit: `d647a60`
+- **Bug fix:** State and city detail page breadcrumbs were missing `variant="dark"` — fixed in `app/states/[state]/page.tsx` and `app/states/[state]/[city]/page.tsx` — commit `4dc2347`
+
+**Previous task: DEV-23 — CA + AZ state page JSONs** ✅
 - Both `content/states/california.json` and `content/states/arizona.json` were already fully implemented in a prior session
 - All DEV-23 spec requirements already present: CA (2yr PI SOL, 3yr property, pure comparative, SR-1 10 days, 15/30/5, Prop 213), AZ (2yr all, pure comparative, 25/50/15, no no-fault)
 - Only change: updated `reviewedBy` from `"Pending Attorney Review"` → `"Pending Legal Review"` per spec — commit `9830e0c`
@@ -28,7 +37,7 @@
 
 **Task reference file:** `scripts/create-master-pipeline-db.py` — all 28 DEV tasks defined here as Python dicts (DEV-01 through DEV-28). Canonical task list.
 
-**Active branch:** `main` — all work on main, no open PRs. Last commit: `9830e0c`.
+**Active branch:** `main` — all work on main, no open PRs. Last commit: `4dc2347`.
 
 ---
 
@@ -109,7 +118,7 @@ The JSON files had different step IDs than the TOOLS-SPEC.md spec. Actual IDs (w
 | `/guides` hub (13 guides, 6 categories) | ✓ |
 | `/guides/[slug]` (13 pages, all 1400–1660 words) | ✓ |
 | `/states` + `/states/[state]` (CA + AZ) | ✓ |
-| `/states/[state]/[city]` (LA, San Diego, Phoenix, Tucson) | ✓ |
+| `/states/[state]/[city]` (all 16 cities — 10 CA + 6 AZ) | ✓ |
 | `/tools` hub + `/tools/[slug]` (11 pages, ToolEngine live) | ✓ |
 | `/about`, `/about/how-it-works`, `/privacy`, `/terms`, `/disclaimers`, `/for-attorneys`, `/contact` | ✓ |
 | `/find-help` (9-step IntakeWizard, localStorage + Supabase via API route) | ✓ |
@@ -124,6 +133,7 @@ The JSON files had different step IDs than the TOOLS-SPEC.md spec. Actual IDs (w
 | **DEV-20: Accident hub content JSONs (5 files)** | ✓ Complete (pre-session) |
 | **DEV-21: Guide content JSONs (13 guides, all 1400–1660 words)** | ✓ Complete |
 | **DEV-23: CA + AZ state page JSONs** | ✓ Complete (pre-existing + reviewedBy fix) |
+| **DEV-24: 16 city page JSONs (10 CA + 6 AZ)** | ✓ Complete |
 
 ---
 
@@ -137,7 +147,7 @@ The JSON files had different step IDs than the TOOLS-SPEC.md spec. Actual IDs (w
 - **No Three.js** — CSS 3D + SVG + GSAP only.
 - **react-icons FA Solid** for accident-type icons. lucide-react for all other UI icons.
 - **Hub page pattern** — all index pages share: Breadcrumb dark, amber eyebrow, h1, serif italic subtext, attorney-reviewed badge, disclaimer, white rounded card with two-tone filter client component.
-- **Breadcrumb variant rule** — all detail pages inside a dark hero (`bg-primary-900`) must pass `variant="dark"` to `Breadcrumb`. Default is `light` (dark text). Guides detail page fix committed `8ec6d79`.
+- **Breadcrumb variant rule** — ALL detail pages inside a dark hero (`bg-primary-900`) must pass `variant="dark"` to `Breadcrumb`. Default is `light` (dark text). Fixed in: `app/guides/[slug]/page.tsx` (`8ec6d79`), `app/states/[state]/page.tsx` + `app/states/[state]/[city]/page.tsx` (`4dc2347`).
 - **Attorney review pending** on all state and content JSON files before go-live.
 - **Supabase lazy init** — `getSupabase()` factory pattern (not module-level) to prevent Next.js prerender crash.
 - **Step animation** — `key={step}` on step container + `animate-step-in` CSS class (`@keyframes step-in` in `globals.css`).
@@ -154,7 +164,7 @@ The JSON files had different step IDs than the TOOLS-SPEC.md spec. Actual IDs (w
 
 ## Content Gaps (Lower Priority)
 
-- More city pages: San Jose, San Francisco, Fresno, Sacramento, Long Beach, Oakland, Bakersfield, Anaheim (CA) + Mesa, Chandler, Scottsdale, Gilbert (AZ) — 12 more
+- All 16 city pages now live — no more city gaps
 - All content pending attorney review before go-live
 
 ---
@@ -165,11 +175,11 @@ The JSON files had different step IDs than the TOOLS-SPEC.md spec. Actual IDs (w
 |------|-----------|--------|
 | DEV-22 | — | Awaiting authorization |
 | DEV-23 | — | ✓ Complete |
-| More city pages (12 additional CA/AZ cities) | 3 | Not started |
+| DEV-24 | — | ✓ Complete |
 | Attorney review of all content before go-live | — | Pending |
 
 ---
 
 ## Active Branch
 
-`main` — all work pushed to `origin/main`. No open PRs. Last commit: `9830e0c`.
+`main` — all work pushed to `origin/main`. No open PRs. Last commit: `4dc2347`.
