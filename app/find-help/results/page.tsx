@@ -123,7 +123,7 @@ export default function FindHelpResultsPage() {
           let solDateStr: string | null = null
           if (data.accidentDate) {
             const d = new Date(data.accidentDate)
-            d.setMonth(d.getMonth() + 24)
+            d.setFullYear(d.getFullYear() + stateRules.sol.personalInjury / 12)
             solDateStr = d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
           }
 
@@ -164,8 +164,8 @@ export default function FindHelpResultsPage() {
                     Reporting Deadlines to Know
                   </p>
                   <ul className="flex flex-col gap-3">
-                    {deadlines.map(d => (
-                      <li key={d.label} className="flex flex-col gap-0.5">
+                    {deadlines.map((d, i) => (
+                      <li key={`${d.label}-${i}`} className="flex flex-col gap-0.5">
                         <div className="flex items-center justify-between gap-2">
                           <span className="font-sans font-semibold text-sm text-neutral-800">{d.label}</span>
                           <span className="text-xs font-semibold font-sans text-amber-700 whitespace-nowrap">
