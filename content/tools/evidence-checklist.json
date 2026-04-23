@@ -9,27 +9,64 @@
     {
       "id": "accident-type",
       "question": "What type of accident were you involved in?",
-      "type": "select"
+      "type": "select",
+      "options": [
+        { "value": "car-accident", "label": "Car Accident" },
+        { "value": "truck-accident", "label": "Truck Accident" },
+        { "value": "motorcycle-crash", "label": "Motorcycle Crash" },
+        { "value": "bicycle-accident", "label": "Bicycle Accident" },
+        { "value": "pedestrian-accident", "label": "Pedestrian Accident" },
+        { "value": "slip-fall", "label": "Slip & Fall" },
+        { "value": "dog-bite", "label": "Dog Bite or Animal Attack" },
+        { "value": "workplace-injury", "label": "Workplace Injury" },
+        { "value": "other", "label": "Other" }
+      ]
     },
     {
       "id": "location-type",
       "question": "Where did the accident occur?",
-      "type": "select"
+      "type": "select",
+      "options": [
+        { "value": "public-road", "label": "Public road or highway" },
+        { "value": "parking-lot", "label": "Parking lot" },
+        { "value": "business-premises", "label": "Business or commercial property" },
+        { "value": "workplace", "label": "Workplace" },
+        { "value": "private-property", "label": "Private property (home, driveway)" },
+        { "value": "other", "label": "Other" }
+      ]
     },
     {
       "id": "witnesses",
       "question": "Were there witnesses at the scene?",
-      "type": "select"
+      "type": "select",
+      "options": [
+        { "value": "yes-with-info", "label": "Yes — I have their contact information" },
+        { "value": "yes-no-info", "label": "Yes — but I don't have their contact info" },
+        { "value": "no-witnesses", "label": "No witnesses" },
+        { "value": "unknown", "label": "I'm not sure" }
+      ]
     },
     {
       "id": "police-report",
       "question": "Was a police report filed?",
-      "type": "select"
+      "type": "select",
+      "options": [
+        { "value": "yes-filed", "label": "Yes — a report was filed" },
+        { "value": "no-not-filed", "label": "No report was filed" },
+        { "value": "in-progress", "label": "Report is in progress" },
+        { "value": "not-sure", "label": "I'm not sure" }
+      ]
     },
     {
       "id": "photos",
       "question": "Did you take photos at the scene?",
-      "type": "select"
+      "type": "select",
+      "options": [
+        { "value": "yes-extensive", "label": "Yes — extensive photos" },
+        { "value": "yes-some", "label": "Yes — a few photos" },
+        { "value": "no-photos", "label": "No photos yet" },
+        { "value": "conditions-prevented", "label": "Conditions made photos impossible" }
+      ]
     }
   ],
   "supportingContent": [

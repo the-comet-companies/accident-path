@@ -9,22 +9,59 @@
     {
       "id": "accident-type",
       "question": "What type of accident were you involved in?",
-      "type": "select"
+      "type": "select",
+      "options": [
+        { "value": "car-accident", "label": "Car Accident" },
+        { "value": "truck-accident", "label": "Truck Accident" },
+        { "value": "motorcycle-crash", "label": "Motorcycle Crash" },
+        { "value": "bicycle-accident", "label": "Bicycle Accident" },
+        { "value": "pedestrian-accident", "label": "Pedestrian Accident" },
+        { "value": "slip-fall", "label": "Slip & Fall" },
+        { "value": "dog-bite", "label": "Dog Bite or Animal Attack" },
+        { "value": "workplace-injury", "label": "Workplace Injury" },
+        { "value": "other", "label": "Other" }
+      ]
     },
     {
       "id": "symptoms",
       "question": "Are you experiencing any of the following? (Select all that apply)",
-      "type": "checklist"
+      "type": "checklist",
+      "options": [
+        { "value": "loss-of-consciousness", "label": "Loss of consciousness (even briefly)" },
+        { "value": "severe-headache", "label": "Severe or worsening headache" },
+        { "value": "neck-back-pain", "label": "Neck or back pain" },
+        { "value": "chest-pain", "label": "Chest pain or difficulty breathing" },
+        { "value": "numbness-tingling", "label": "Numbness or tingling in arms or legs" },
+        { "value": "abdominal-pain", "label": "Abdominal pain or tenderness" },
+        { "value": "blurred-vision", "label": "Blurred vision or dizziness" },
+        { "value": "nausea", "label": "Nausea or vomiting" },
+        { "value": "confusion", "label": "Confusion or memory problems" },
+        { "value": "no-symptoms", "label": "No symptoms at this time" }
+      ]
     },
     {
       "id": "when",
       "question": "When did the accident happen?",
-      "type": "select"
+      "type": "select",
+      "options": [
+        { "value": "today", "label": "Today" },
+        { "value": "1-7-days", "label": "1–7 days ago" },
+        { "value": "1-4-weeks", "label": "1–4 weeks ago" },
+        { "value": "1-6-months", "label": "1–6 months ago" },
+        { "value": "6-12-months", "label": "6–12 months ago" },
+        { "value": "over-1-year", "label": "More than 1 year ago" }
+      ]
     },
     {
       "id": "seen-doctor",
       "question": "Have you seen a doctor since the accident?",
-      "type": "select"
+      "type": "select",
+      "options": [
+        { "value": "yes-same-day", "label": "Yes — same day as the accident" },
+        { "value": "yes-within-days", "label": "Yes — within a few days" },
+        { "value": "not-yet", "label": "Not yet, but I plan to" },
+        { "value": "no-feel-fine", "label": "No — I feel fine" }
+      ]
     }
   ],
   "supportingContent": [

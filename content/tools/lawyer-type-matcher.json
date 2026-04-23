@@ -9,22 +9,55 @@
     {
       "id": "accident-type",
       "question": "What type of accident were you involved in?",
-      "type": "select"
+      "type": "select",
+      "options": [
+        { "value": "car-accident", "label": "Car Accident" },
+        { "value": "truck-accident", "label": "Truck Accident" },
+        { "value": "motorcycle-crash", "label": "Motorcycle Crash" },
+        { "value": "bicycle-accident", "label": "Bicycle Accident" },
+        { "value": "pedestrian-accident", "label": "Pedestrian Accident" },
+        { "value": "slip-fall", "label": "Slip & Fall" },
+        { "value": "dog-bite", "label": "Dog Bite or Animal Attack" },
+        { "value": "workplace-injury", "label": "Workplace Injury" },
+        { "value": "other", "label": "Other" }
+      ]
     },
     {
       "id": "injuries",
       "question": "What types of injuries did you sustain? (Select all that apply)",
-      "type": "checklist"
+      "type": "checklist",
+      "options": [
+        { "value": "whiplash", "label": "Whiplash / Neck Injury" },
+        { "value": "back-injury", "label": "Back or Spine Injury" },
+        { "value": "head-injury", "label": "Head Injury or Concussion" },
+        { "value": "broken-bones", "label": "Broken Bones / Fractures" },
+        { "value": "cuts-lacerations", "label": "Cuts or Lacerations" },
+        { "value": "soft-tissue", "label": "Soft Tissue Injuries" },
+        { "value": "internal-injuries", "label": "Internal Injuries" },
+        { "value": "psychological", "label": "Psychological / Emotional Trauma" },
+        { "value": "no-visible-injuries", "label": "No Visible Injuries" }
+      ]
     },
     {
       "id": "employment-status",
       "question": "Were you injured while working or on the job?",
-      "type": "select"
+      "type": "select",
+      "options": [
+        { "value": "yes-on-job", "label": "Yes — I was working at the time" },
+        { "value": "no-personal-time", "label": "No — I was not on the job" },
+        { "value": "unsure", "label": "Not sure — it's complicated" }
+      ]
     },
     {
       "id": "at-fault",
       "question": "Was another party clearly at fault for your accident?",
-      "type": "select"
+      "type": "select",
+      "options": [
+        { "value": "yes-clear", "label": "Yes — fault is clear" },
+        { "value": "disputed", "label": "Disputed — liability is contested" },
+        { "value": "unclear", "label": "Unclear at this time" },
+        { "value": "shared-fault", "label": "Shared fault — I may have contributed" }
+      ]
     }
   ],
   "supportingContent": [

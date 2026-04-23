@@ -9,17 +9,38 @@
     {
       "id": "caller-type",
       "question": "Who are you calling?",
-      "type": "select"
+      "type": "select",
+      "options": [
+        { "value": "your-insurer", "label": "Your own insurance company" },
+        { "value": "other-driver-insurer", "label": "The other driver's insurance company" },
+        { "value": "health-insurer", "label": "Your health insurer" },
+        { "value": "workers-comp", "label": "Workers' compensation insurer" }
+      ]
     },
     {
       "id": "call-purpose",
       "question": "What is the purpose of your call?",
-      "type": "select"
+      "type": "select",
+      "options": [
+        { "value": "report-claim", "label": "Report a new claim" },
+        { "value": "follow-up", "label": "Follow up on an existing claim" },
+        { "value": "dispute-decision", "label": "Dispute a coverage decision" },
+        { "value": "request-info", "label": "Request information or documents" }
+      ]
     },
     {
       "id": "info-available",
       "question": "What information do you currently have available? (Select all that apply)",
-      "type": "checklist"
+      "type": "checklist",
+      "options": [
+        { "value": "claim-number", "label": "Claim number" },
+        { "value": "police-report-number", "label": "Police report number" },
+        { "value": "photos-documentation", "label": "Photos and accident documentation" },
+        { "value": "medical-records", "label": "Medical records or bills" },
+        { "value": "witness-info", "label": "Witness contact information" },
+        { "value": "policy-number", "label": "Insurance policy number" },
+        { "value": "none-of-above", "label": "None of the above yet" }
+      ]
     }
   ],
   "supportingContent": [

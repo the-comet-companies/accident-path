@@ -9,7 +9,17 @@
     {
       "id": "injury-type",
       "question": "What type of injuries are you tracking?",
-      "type": "checklist"
+      "type": "checklist",
+      "options": [
+        { "value": "whiplash-neck", "label": "Whiplash / Neck Injury" },
+        { "value": "back-spine", "label": "Back or Spine Injury" },
+        { "value": "head-concussion", "label": "Head Injury or Concussion" },
+        { "value": "broken-bones", "label": "Broken Bones or Fractures" },
+        { "value": "soft-tissue", "label": "Soft Tissue Injuries" },
+        { "value": "cuts-lacerations", "label": "Cuts or Lacerations" },
+        { "value": "psychological", "label": "Psychological / Emotional Trauma" },
+        { "value": "other", "label": "Other Injuries" }
+      ]
     },
     {
       "id": "pain-level",
@@ -19,12 +29,37 @@
     {
       "id": "symptoms",
       "question": "Which symptoms are you experiencing today? (Select all that apply)",
-      "type": "checklist"
+      "type": "checklist",
+      "options": [
+        { "value": "headache", "label": "Headache" },
+        { "value": "neck-pain", "label": "Neck pain or stiffness" },
+        { "value": "back-pain", "label": "Back pain" },
+        { "value": "dizziness", "label": "Dizziness or vertigo" },
+        { "value": "nausea", "label": "Nausea" },
+        { "value": "numbness-tingling", "label": "Numbness or tingling" },
+        { "value": "sleep-disruption", "label": "Sleep disruption" },
+        { "value": "anxiety-depression", "label": "Anxiety or depression" },
+        { "value": "difficulty-concentrating", "label": "Difficulty concentrating" },
+        { "value": "fatigue", "label": "Fatigue or low energy" },
+        { "value": "limited-range-of-motion", "label": "Limited range of motion" },
+        { "value": "no-symptoms-today", "label": "No symptoms today" }
+      ]
     },
     {
       "id": "treatments",
       "question": "What treatments or appointments did you have today?",
-      "type": "checklist"
+      "type": "checklist",
+      "options": [
+        { "value": "doctor-visit", "label": "Doctor visit" },
+        { "value": "physical-therapy", "label": "Physical therapy" },
+        { "value": "chiropractic", "label": "Chiropractic care" },
+        { "value": "medication", "label": "Medication" },
+        { "value": "er-urgent-care", "label": "Emergency room or urgent care" },
+        { "value": "mental-health", "label": "Mental health therapy" },
+        { "value": "massage", "label": "Massage therapy" },
+        { "value": "imaging", "label": "Imaging (X-ray, MRI, CT)" },
+        { "value": "no-treatments-today", "label": "No treatments today" }
+      ]
     }
   ],
   "supportingContent": [

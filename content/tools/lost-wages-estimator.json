@@ -9,7 +9,15 @@
     {
       "id": "employment-type",
       "question": "What is your employment status?",
-      "type": "select"
+      "type": "select",
+      "options": [
+        { "value": "full-time", "label": "Full-time employee (salaried)" },
+        { "value": "full-time-hourly", "label": "Full-time employee (hourly)" },
+        { "value": "part-time", "label": "Part-time employee" },
+        { "value": "self-employed", "label": "Self-employed or freelance" },
+        { "value": "gig-worker", "label": "Gig worker (rideshare, delivery, etc.)" },
+        { "value": "not-employed", "label": "Not currently employed" }
+      ]
     },
     {
       "id": "income",
@@ -24,12 +32,25 @@
     {
       "id": "reduced-hours",
       "question": "Have you returned to work with reduced hours or capacity?",
-      "type": "select"
+      "type": "select",
+      "options": [
+        { "value": "yes-reduced", "label": "Yes — working reduced hours" },
+        { "value": "yes-light-duty", "label": "Yes — on light duty / modified work" },
+        { "value": "no-full-capacity", "label": "No — back to full capacity" },
+        { "value": "not-returned", "label": "Have not returned to work yet" },
+        { "value": "not-applicable", "label": "Not applicable" }
+      ]
     },
     {
       "id": "ongoing",
       "question": "Are you still unable to return to full work capacity?",
-      "type": "select"
+      "type": "select",
+      "options": [
+        { "value": "yes-ongoing", "label": "Yes — still unable to work" },
+        { "value": "yes-partial", "label": "Yes — partially able to work" },
+        { "value": "no-recovered", "label": "No — fully recovered" },
+        { "value": "uncertain", "label": "Uncertain about future capacity" }
+      ]
     }
   ],
   "supportingContent": [

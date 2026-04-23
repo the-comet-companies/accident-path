@@ -9,22 +9,65 @@
     {
       "id": "accident-type",
       "question": "What type of accident were you involved in?",
-      "type": "select"
+      "type": "select",
+      "options": [
+        { "value": "car-accident", "label": "Car Accident" },
+        { "value": "truck-accident", "label": "Truck Accident" },
+        { "value": "motorcycle-crash", "label": "Motorcycle Crash" },
+        { "value": "bicycle-accident", "label": "Bicycle Accident" },
+        { "value": "pedestrian-accident", "label": "Pedestrian Accident" },
+        { "value": "slip-fall", "label": "Slip & Fall" },
+        { "value": "dog-bite", "label": "Dog Bite or Animal Attack" },
+        { "value": "workplace-injury", "label": "Workplace Injury" },
+        { "value": "other", "label": "Other" }
+      ]
     },
     {
       "id": "what-happened",
       "question": "Which of the following best describes what happened?",
-      "type": "multiselect"
+      "type": "multiselect",
+      "options": [
+        { "value": "rear-end", "label": "Rear-end collision" },
+        { "value": "side-impact", "label": "Side-impact (T-bone) collision" },
+        { "value": "head-on", "label": "Head-on collision" },
+        { "value": "sideswipe", "label": "Sideswipe" },
+        { "value": "hit-run", "label": "Hit and run" },
+        { "value": "rollover", "label": "Rollover" },
+        { "value": "pedestrian-struck", "label": "Pedestrian struck by vehicle" },
+        { "value": "slip-trip-fall", "label": "Slip, trip, or fall on property" },
+        { "value": "dog-bite-incident", "label": "Dog bite or animal attack" },
+        { "value": "workplace-incident", "label": "Workplace accident or equipment injury" },
+        { "value": "other", "label": "Other / Not listed" }
+      ]
     },
     {
       "id": "injuries",
       "question": "Which injuries did you sustain? (Select all that apply)",
-      "type": "checklist"
+      "type": "checklist",
+      "options": [
+        { "value": "whiplash", "label": "Whiplash / Neck Injury" },
+        { "value": "back-injury", "label": "Back or Spine Injury" },
+        { "value": "head-injury", "label": "Head Injury or Concussion" },
+        { "value": "broken-bones", "label": "Broken Bones / Fractures" },
+        { "value": "cuts-lacerations", "label": "Cuts or Lacerations" },
+        { "value": "soft-tissue", "label": "Soft Tissue Injuries" },
+        { "value": "internal-injuries", "label": "Internal Injuries" },
+        { "value": "psychological", "label": "Psychological / Emotional Trauma" },
+        { "value": "no-visible-injuries", "label": "No Visible Injuries" }
+      ]
     },
     {
       "id": "timeline",
       "question": "When did the accident happen?",
-      "type": "select"
+      "type": "select",
+      "options": [
+        { "value": "today", "label": "Today" },
+        { "value": "1-7-days", "label": "1–7 days ago" },
+        { "value": "1-4-weeks", "label": "1–4 weeks ago" },
+        { "value": "1-6-months", "label": "1–6 months ago" },
+        { "value": "6-12-months", "label": "6–12 months ago" },
+        { "value": "over-1-year", "label": "More than 1 year ago" }
+      ]
     }
   ],
   "supportingContent": [

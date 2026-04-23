@@ -9,12 +9,35 @@
     {
       "id": "accident-type",
       "question": "What type of accident were you involved in?",
-      "type": "select"
+      "type": "select",
+      "options": [
+        { "value": "car-accident", "label": "Car Accident" },
+        { "value": "truck-accident", "label": "Truck Accident" },
+        { "value": "motorcycle-crash", "label": "Motorcycle Crash" },
+        { "value": "bicycle-accident", "label": "Bicycle Accident" },
+        { "value": "pedestrian-accident", "label": "Pedestrian Accident" },
+        { "value": "slip-fall", "label": "Slip & Fall" },
+        { "value": "dog-bite", "label": "Dog Bite or Animal Attack" },
+        { "value": "workplace-injury", "label": "Workplace Injury" },
+        { "value": "other", "label": "Other" }
+      ]
     },
     {
       "id": "records-needed",
       "question": "Which types of records are you looking to obtain? (Select all that apply)",
-      "type": "checklist"
+      "type": "checklist",
+      "options": [
+        { "value": "police-report", "label": "Police / accident report" },
+        { "value": "hospital-records", "label": "Hospital or emergency room records" },
+        { "value": "ongoing-medical", "label": "Ongoing medical / doctor records" },
+        { "value": "imaging-records", "label": "Imaging records (X-ray, MRI, CT)" },
+        { "value": "pharmacy-records", "label": "Pharmacy records" },
+        { "value": "employment-wage", "label": "Employment and wage records" },
+        { "value": "insurance-policy", "label": "Insurance policy documents" },
+        { "value": "property-damage", "label": "Property damage estimates or appraisals" },
+        { "value": "surveillance-footage", "label": "Surveillance or security footage" },
+        { "value": "rideshare-data", "label": "Rideshare trip data (Uber / Lyft)" }
+      ]
     }
   ],
   "supportingContent": [

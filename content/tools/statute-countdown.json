@@ -14,12 +14,27 @@
     {
       "id": "accident-type",
       "question": "What type of accident was it?",
-      "type": "select"
+      "type": "select",
+      "options": [
+        { "value": "car-accident", "label": "Car Accident" },
+        { "value": "truck-accident", "label": "Truck Accident" },
+        { "value": "motorcycle-crash", "label": "Motorcycle Crash" },
+        { "value": "bicycle-accident", "label": "Bicycle Accident" },
+        { "value": "pedestrian-accident", "label": "Pedestrian Accident" },
+        { "value": "slip-fall", "label": "Slip & Fall" },
+        { "value": "dog-bite", "label": "Dog Bite or Animal Attack" },
+        { "value": "workplace-injury", "label": "Workplace Injury" },
+        { "value": "other", "label": "Other" }
+      ]
     },
     {
       "id": "state",
       "question": "Which state did the accident occur in?",
-      "type": "select"
+      "type": "select",
+      "options": [
+        { "value": "CA", "label": "California" },
+        { "value": "AZ", "label": "Arizona" }
+      ]
     }
   ],
   "supportingContent": [

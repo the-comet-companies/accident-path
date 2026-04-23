@@ -9,22 +9,50 @@
     {
       "id": "medical-status",
       "question": "What is the current status of your medical treatment?",
-      "type": "select"
+      "type": "select",
+      "options": [
+        { "value": "yes-complete", "label": "Yes — treatment is complete" },
+        { "value": "yes-mmi", "label": "Yes — reached maximum medical improvement (MMI)" },
+        { "value": "no-still-treating", "label": "No — still receiving treatment" },
+        { "value": "uncertain", "label": "Uncertain" }
+      ]
     },
     {
       "id": "records-gathered",
       "question": "Which of the following records do you currently have? (Select all that apply)",
-      "type": "checklist"
+      "type": "checklist",
+      "options": [
+        { "value": "medical-records", "label": "Medical records and bills" },
+        { "value": "police-report", "label": "Police or accident report" },
+        { "value": "wage-loss-docs", "label": "Wage loss documentation" },
+        { "value": "property-damage", "label": "Property damage estimates or appraisals" },
+        { "value": "photos-evidence", "label": "Photos and accident scene evidence" },
+        { "value": "witness-statements", "label": "Witness statements or contact information" },
+        { "value": "insurance-correspondence", "label": "Insurance correspondence and claim records" },
+        { "value": "none-yet", "label": "None gathered yet" }
+      ]
     },
     {
       "id": "wages-documented",
       "question": "Have you documented your lost wages and other economic losses?",
-      "type": "select"
+      "type": "select",
+      "options": [
+        { "value": "yes", "label": "Yes — fully documented" },
+        { "value": "partially", "label": "Partially documented" },
+        { "value": "no", "label": "No — not documented yet" },
+        { "value": "not-applicable", "label": "Not applicable — no income loss" }
+      ]
     },
     {
       "id": "attorney-consulted",
       "question": "Have you consulted with a personal injury attorney?",
-      "type": "select"
+      "type": "select",
+      "options": [
+        { "value": "yes-retained", "label": "Yes — I have retained an attorney" },
+        { "value": "yes-consulted", "label": "Yes — I had a consultation but have not retained" },
+        { "value": "not-yet", "label": "Not yet" },
+        { "value": "no-plan-to-self-represent", "label": "No — I plan to handle it myself" }
+      ]
     }
   ],
   "supportingContent": [
