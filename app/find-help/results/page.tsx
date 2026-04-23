@@ -148,7 +148,7 @@ export default function FindHelpResultsPage() {
                     Personal Injury Filing Deadline
                   </p>
                   <p className="text-neutral-700 text-sm leading-relaxed">
-                    In {stateName}, the general personal injury deadline is {stateRules.sol.personalInjury / 12} years from your accident date.
+                    In {stateName}, the general personal injury deadline is {stateRules.sol.personalInjury / 12}{' '}years from your accident date.
                     Based on what you told us, that&apos;s approximately{' '}
                     <span className="font-semibold text-neutral-950">{solDateStr}</span>.
                   </p>
