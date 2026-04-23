@@ -103,7 +103,7 @@ export function IntakeWizard() {
       </div>
 
       {/* Step content */}
-      <div className="min-h-[400px]">
+      <div key={step} className="min-h-[400px] animate-step-in">
         {step === 1 && <StepAccidentType {...stepProps} />}
         {step === 2 && <StepWhen {...stepProps} />}
         {step === 3 && <StepWhere {...stepProps} />}
