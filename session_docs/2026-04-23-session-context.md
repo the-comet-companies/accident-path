@@ -33,11 +33,22 @@
 - **Post-DEV-19 fix:** Print was showing 4 pages — added `print-hide` CSS class to `globals.css`; applied to hero, tab bar, print button, supporting content/FAQ/related/CTA block, sidebar (`aside`). Journal entries now print alone.
 - **Post-DEV-19 fix:** Only one entry could expand at a time — changed `expandedId: string | null` to `expandedIds: Set<string>` so multiple entries can be open simultaneously.
 
-**Next task: DEV-22** — wait for user to authorize.
+**Next task: DEV-25** — Structured data + sitemap + internal linking engine. This is the natural next unblocked task.
+
+**DEV-22 status:** Partial. All page templates are built and rendering. `/privacy` and `/terms` have full structure (TOC, section headings, layout) but each section body shows a `placeholder` description inside an amber "Pending Legal Review" callout — no real legal copy yet. That copy is attorney-drafted, not Claude's to write. Both pages are `noIndex: true`. Consider DEV-22 blocked on legal team, not a code task.
+
+**Remaining pending tasks (5 total):**
+| Task | Description | Hours | Notes |
+|------|-------------|-------|-------|
+| DEV-22 | Home + About + static page content | 4h | Blocked on attorney-drafted Privacy/Terms copy |
+| DEV-25 | Structured data + sitemap + internal linking | 8h | Ready — natural next task |
+| DEV-26 | Analytics events + CRM webhook stub | 4h | Ready after DEV-25 |
+| DEV-27 | E2E tests (Playwright) | 6h | Depends on DEV-14, 19, 24 (all done) |
+| DEV-28 | Unit tests + Lighthouse 90+ + final polish | 6h | Depends on DEV-27 |
 
 **Task reference file:** `scripts/create-master-pipeline-db.py` — all 28 DEV tasks defined here as Python dicts (DEV-01 through DEV-28). Canonical task list.
 
-**Active branch:** `main` — all work on main, no open PRs. Last commit: `4dc2347`.
+**Active branch:** `main` — all work on main, no open PRs. Last commit: `1bcf139`.
 
 ---
 
@@ -166,6 +177,7 @@ The JSON files had different step IDs than the TOOLS-SPEC.md spec. Actual IDs (w
 
 - All 16 city pages now live — no more city gaps
 - All content pending attorney review before go-live
+- **`/privacy` and `/terms`** — page templates fully built (layout, TOC, section structure), but each section renders a `placeholder` description inside an amber "Pending Legal Review" callout instead of real legal copy. Actual Privacy Policy and Terms of Service text needs to be written (likely attorney-drafted). Both pages are `noIndex: true` so they won't appear in search until finalized.
 
 ---
 
@@ -173,7 +185,11 @@ The JSON files had different step IDs than the TOOLS-SPEC.md spec. Actual IDs (w
 
 | Task | Est. Hours | Status |
 |------|-----------|--------|
-| DEV-22 | — | Awaiting authorization |
+| **DEV-25** | **8h** | **Ready — start here** |
+| DEV-26 | 4h | Ready (after DEV-25) |
+| DEV-27 | 6h | Ready |
+| DEV-28 | 6h | After DEV-27 |
+| DEV-22 | 4h | Blocked — Privacy/Terms copy needs attorney drafting |
 | DEV-23 | — | ✓ Complete |
 | DEV-24 | — | ✓ Complete |
 | Attorney review of all content before go-live | — | Pending |
