@@ -28,6 +28,7 @@
       "type": "checklist",
       "options": [
         { "value": "loss-of-consciousness", "label": "Loss of consciousness (even briefly)" },
+        { "value": "severe-bleeding", "label": "Severe or uncontrolled bleeding" },
         { "value": "severe-headache", "label": "Severe or worsening headache" },
         { "value": "neck-back-pain", "label": "Neck or back pain" },
         { "value": "chest-pain", "label": "Chest pain or difficulty breathing" },

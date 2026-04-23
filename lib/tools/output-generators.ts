@@ -167,49 +167,70 @@ const urgencyChecker: OutputGenerator = (answers) => {
   const seenDoctor = str(answers['seen-doctor'])
   const when = str(answers['when'])
 
-  const redFlags = ['loss-of-consciousness', 'chest-pain', 'abdominal-pain', 'confusion']
-  const yellowFlags = ['severe-headache', 'numbness-tingling', 'blurred-vision', 'nausea']
+  // Red flag symptoms per spec
+  const redFlags = [
+    'loss-of-consciousness',
+    'severe-bleeding',
+    'chest-pain',           // label: "Chest pain or difficulty breathing"
+    'numbness-tingling',    // spec: numbness is red
+    'neck-back-pain',       // spec: severe head/neck pain is red
+    'confusion',
+  ]
+  // Yellow flag symptoms
+  const yellowFlags = ['severe-headache', 'abdominal-pain', 'blurred-vision', 'nausea']
+
   const hasRed = redFlags.some(f => symptoms.includes(f))
-  const hasYellow = yellowFlags.some(f => symptoms.includes(f))
+  const hasYellow = !hasRed && yellowFlags.some(f => symptoms.includes(f))
+  const noSymptoms = symptoms.includes('no-symptoms') || symptoms.length === 0
   const hasSeenDoctor = seenDoctor === 'yes-same-day' || seenDoctor === 'yes-within-days'
-  const noSymptoms = symptoms.includes('no-symptoms')
 
   const items: OutputItem[] = []
   let summary = ''
 
   if (hasRed) {
-    summary = 'Based on your answers, you may have symptoms that warrant prompt medical evaluation. Some of the symptoms you selected can indicate serious injury that may not be immediately apparent. This is general educational information only — it is not medical advice.'
+    // RED tier
+    summary = 'Based on your answers, you reported symptoms that can indicate a serious or life-threatening condition. Seek medical attention immediately. This is general educational information only — it is not medical advice.'
     items.push({
-      label: 'Seek medical attention promptly',
-      value: 'The symptoms you selected — including possible loss of consciousness, chest pain, or abdominal pain — can indicate serious conditions. A medical provider can evaluate you properly.',
+      label: 'Seek medical attention immediately',
+      value: 'The symptoms you selected — which may include loss of consciousness, severe bleeding, chest pain, difficulty breathing, numbness, or severe head/neck pain — can indicate serious injury. Go to an emergency room or call 911 now.',
       priority: 'critical',
     })
     if (!hasSeenDoctor) {
       items.push({
         label: 'You have not yet seen a doctor',
-        value: 'Gaps between the accident and your first medical visit can be used by insurance companies to dispute injury severity. Seeking care promptly also protects your health.',
+        value: 'Delaying medical care can worsen your condition and may be used by insurance companies to dispute injury severity. Seek care now.',
         priority: 'critical',
       })
     }
-  } else if (hasYellow && !hasSeenDoctor) {
-    summary = 'Based on your answers, you may have symptoms that are worth evaluating with a healthcare provider soon. Delayed symptoms after accidents are common. This is general educational information only — it is not medical advice.'
+  } else if (hasYellow) {
+    // YELLOW tier
+    summary = 'Based on your answers, you have symptoms worth evaluating with a healthcare provider within the next 24–48 hours. Delayed symptoms after accidents are common. This is general educational information only — it is not medical advice.'
     items.push({
-      label: 'Consider seeing a doctor within the next 24–72 hours',
-      value: 'Symptoms like headache, dizziness, or numbness can develop gradually after an accident. Early evaluation creates a medical record and helps identify conditions before they worsen.',
+      label: 'See a doctor within the next 24–48 hours',
+      value: 'Symptoms like headache, dizziness, abdominal pain, or nausea can develop or worsen gradually after an accident. Early evaluation creates a medical record and helps identify conditions before they become serious.',
       priority: 'important',
     })
+    if (!hasSeenDoctor) {
+      items.push({
+        label: 'Document your symptoms before your appointment',
+        value: 'Write down every symptom — including when it started and how it has changed — so you can give your doctor a complete picture.',
+        priority: 'helpful',
+      })
+    }
   } else if (noSymptoms && !hasSeenDoctor) {
-    summary = 'You report no symptoms at this time. However, many accident injuries — including whiplash, soft tissue damage, and concussion — can take hours or days to present. This is general educational information only.'
+    // GREEN tier — no symptoms, no doctor yet
+    summary = 'You report no symptoms at this time. Many accident injuries — including whiplash and concussion — can take hours or days to appear. Monitoring your condition and seeing a doctor within the week is generally advisable. This is general educational information only.'
     items.push({
-      label: 'Consider a precautionary medical evaluation',
+      label: 'Monitor your symptoms and see a doctor within the week',
       value: 'Even without immediate symptoms, a medical evaluation within 24–72 hours is commonly recommended after accidents. It creates a record in case symptoms appear later.',
       priority: 'important',
     })
   } else {
-    summary = 'Based on your answers, you have received medical care and appear to be monitoring your symptoms. Continuing to follow your provider\'s guidance is the key next step. This is general educational information only.'
+    // GREEN tier — already seen doctor or no red/yellow and seen doctor
+    summary = 'Based on your answers, you have received medical care and appear to be monitoring your situation. Continuing to follow your provider\'s guidance is the key next step. This is general educational information only.'
     items.push({
       label: 'Continue following your healthcare provider\'s guidance',
-      value: 'Keep all follow-up appointments and report any new or worsening symptoms promptly.',
+      value: 'Keep all follow-up appointments and report any new or worsening symptoms promptly to your provider.',
       priority: 'important',
     })
   }
@@ -217,7 +238,7 @@ const urgencyChecker: OutputGenerator = (answers) => {
   if (timelineUrgent(when)) {
     items.push({
       label: 'Document everything now',
-      value: 'Photos, notes about symptoms, and a list of everyone you spoke with at the scene are most valuable when gathered promptly.',
+      value: 'Photos, notes about symptoms, and contact information for anyone at the scene are most valuable when gathered promptly.',
       priority: 'important',
     })
   }
