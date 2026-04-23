@@ -56,12 +56,10 @@ export function IntakeWizard() {
     const name = STEP_NAMES[step] ?? ''
     trackEvent('step_completed', { step_number: step, step_name: name })
     setStep(s => Math.min(s + 1, TOTAL_STEPS))
-    window.scrollTo({ top: 0, behavior: 'smooth' })
   }, [step])
 
   const goBack = useCallback(() => {
     setStep(s => Math.max(s - 1, 1))
-    window.scrollTo({ top: 0, behavior: 'smooth' })
   }, [])
 
   async function handleSubmit() {
