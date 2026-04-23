@@ -7,7 +7,7 @@
   "sections": [
     {
       "heading": "What a Settlement Is and How It Works",
-      "content": "A settlement is a voluntary agreement in which the at-fault party's insurer (or the at-fault party directly) agrees to pay a specified amount in exchange for you releasing your legal claims against them. Settlements can happen at any stage — before a lawsuit is filed, during litigation, or even on the eve of trial. Most personal injury claims resolve this way. The negotiation typically involves an initial demand letter from your attorney outlining your damages and legal position, followed by counter-offers and negotiation. Once both parties agree on a figure, you sign a settlement agreement and release, and payment is issued — typically within 30 to 60 days.",
+      "content": "A settlement is a voluntary agreement in which the at-fault party's insurer (or the at-fault party directly) agrees to pay a specified amount in exchange for you releasing your legal claims against them. Settlements can happen at any stage — before a lawsuit is filed, during litigation, or even on the eve of trial. Most personal injury claims resolve this way. The negotiation typically involves an initial demand letter from your attorney outlining your damages and legal position, followed by counter-offers and negotiation. Once both parties agree on a figure, you sign a settlement agreement and release, and payment is issued — typically within 30 to 60 days of signing.",
       "tips": [
         "Most personal injury claims resolve through settlement, not trial",
         "A settlement ends your claim permanently — you cannot reopen it after signing",
@@ -16,7 +16,7 @@
     },
     {
       "heading": "What Filing a Lawsuit Actually Means",
-      "content": "Filing a lawsuit does not mean going to trial. A lawsuit is a formal legal proceeding initiated when insurance negotiations fail to produce a fair resolution. After filing, the case enters the discovery phase — where both sides exchange evidence, take depositions, and retain expert witnesses. The vast majority of lawsuits settle during this phase, often because the discovery process clarifies liability and damages for both sides. Cases that actually proceed to trial are a small fraction of all filed lawsuits. Filing a lawsuit increases the seriousness of the proceeding and often motivates insurers to negotiate more seriously.",
+      "content": "Filing a lawsuit does not mean going to trial. A lawsuit is a formal legal proceeding initiated when insurance negotiations fail to produce a fair resolution. After filing, the case enters the discovery phase — where both sides exchange evidence, take depositions, and retain expert witnesses. The vast majority of lawsuits settle during this phase, often because the discovery process clarifies liability and damages for both sides. Cases that actually proceed to trial are a small fraction of all filed lawsuits. Filing a lawsuit increases the seriousness of the proceeding and often motivates insurers to negotiate more seriously than they did before.",
       "tips": [
         "Filing a lawsuit does not automatically mean going to trial",
         "Most lawsuits settle during or after the discovery phase",
@@ -49,9 +49,60 @@
         "California and Arizona have no cap on non-economic damages in personal injury cases",
         "Strong medical documentation supports your claimed damages in either path"
       ]
+    },
+    {
+      "heading": "The Timeline: How Long Each Path Takes",
+      "content": "Settlement timelines vary widely depending on case complexity and injury severity. A relatively straightforward case may settle within three to six months of the accident. Cases with serious injuries, disputed liability, or complex insurance issues can take one to two years before a settlement is reached. If a lawsuit is filed, the timeline extends further — the litigation process in California and Arizona typically adds one to two years or more, depending on court dockets, the complexity of discovery, and whether mediation or trial is necessary. Understanding these timelines matters when evaluating whether a settlement offer is worth accepting or whether the wait for a better result through litigation is worth the additional time and uncertainty.",
+      "tips": [
+        "Simple cases may settle in 3 to 6 months; complex cases can take 1 to 2 years or more",
+        "Litigation adds significant time — a lawsuit can take 2 to 4 years from filing to resolution",
+        "Waiting for a better result has both financial and emotional costs — factor both into your decision"
+      ]
+    },
+    {
+      "heading": "Mediation and Arbitration: Middle Paths",
+      "content": "Between private settlement negotiations and full litigation, there are intermediate dispute resolution options. Mediation is a voluntary process in which a neutral third party — the mediator — facilitates negotiations between the parties to help them reach a voluntary settlement. It is faster and cheaper than trial and often produces results that both parties find acceptable. Arbitration is a more formal process where an arbitrator (or panel) hears evidence and renders a decision. Arbitration can be binding or non-binding depending on the agreement. Many insurance policies contain mandatory arbitration clauses for certain disputes. These options are worth exploring when direct negotiations have stalled but full litigation feels disproportionate to the stakes involved.",
+      "tips": [
+        "Mediation is voluntary, confidential, and often produces faster results than litigation",
+        "Arbitration may be required by your insurance policy for certain types of disputes",
+        "Both options are faster and cheaper than trial — ask your attorney whether they make sense for your case"
+      ]
+    },
+    {
+      "heading": "Making the Decision: Questions to Ask Your Attorney",
+      "content": "The choice between settlement and litigation is ultimately yours — your attorney's role is to give you the information you need to make an informed decision. Useful questions to ask: What is the realistic value range for my case? What is the risk of getting less at trial than the current offer? What would litigation cost and how long would it take? Is the current offer reflective of my actual damages? Has the insurer shown any willingness to negotiate? What evidence would become available in discovery that is not available now? Are there any factors — witness credibility, pre-existing conditions, disputed liability — that create trial risk? A good attorney will give you honest answers to all of these, not just encourage the path that maximizes their fee.",
+      "tips": [
+        "Ask your attorney for a realistic range of potential recovery, not just the best-case scenario",
+        "Understand the litigation costs and timeline before rejecting a settlement offer",
+        "The decision is yours — your attorney advises, but you have the final say"
+      ]
+    },
+    {
+      "heading": "What to Expect After You Decide",
+      "content": "Whichever path you choose, understanding what comes next helps you prepare. In a settlement, once the parties agree on an amount, your attorney will prepare a settlement agreement and release for your review and signature. Read the release carefully — it should specify exactly what claims are being released and against whom. After signing, payment typically arrives within 30 to 60 days. Your attorney will then address outstanding liens, negotiate and pay medical providers, deduct their fee and costs, and distribute the remainder to you. In a lawsuit, the post-filing period involves discovery — document requests, depositions, and expert disclosures — followed by potential mediation and if no settlement is reached, trial preparation and trial. At any point during litigation, a settlement can still be reached. Your attorney will keep you informed of significant milestones and involve you in key decisions throughout.",
+      "tips": [
+        "After settling, payment typically arrives within 30 to 60 days of signing the release",
+        "Read the settlement release carefully — it specifies exactly what claims are being closed",
+        "Lawsuits can still settle at any stage, including during trial preparation"
+      ]
     }
   ],
-  "relatedAccidents": ["car", "truck", "motorcycle", "slip-and-fall", "workplace", "wrongful-death"],
-  "relatedTools": ["accident-case-quiz", "settlement-readiness"],
-  "relatedGuides": ["hiring-a-lawyer", "should-i-talk-to-a-lawyer", "am-i-at-fault"]
+  "relatedAccidents": [
+    "car",
+    "truck",
+    "motorcycle",
+    "slip-and-fall",
+    "workplace",
+    "wrongful-death"
+  ],
+  "relatedTools": [
+    "accident-case-quiz",
+    "settlement-readiness"
+  ],
+  "relatedGuides": [
+    "hiring-a-lawyer",
+    "should-i-talk-to-a-lawyer",
+    "am-i-at-fault",
+    "insurance-claims"
+  ]
 }

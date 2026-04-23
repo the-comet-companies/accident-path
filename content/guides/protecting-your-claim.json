@@ -7,7 +7,7 @@
   "sections": [
     {
       "heading": "Not Calling the Police or Filing a Report",
-      "content": "A police report is an official, neutral record of the accident. It documents the date, time, location, parties involved, basic facts about what happened, and often an initial determination of fault. Without it, the accident can become a 'he said, she said' dispute — which typically benefits the insurer. In many states, including California and Arizona, accidents involving injury or significant property damage must be reported. Even in minor accidents where police do not respond in person, filing a report with your local DMV or police department creates the foundational document for your claim.",
+      "content": "A police report is an official, neutral record of the accident. It documents the date, time, location, parties involved, basic facts about what happened, and often an initial determination of fault. Without it, the accident can become a disputed-facts situation — which typically benefits the insurer. In many states, including California and Arizona, accidents involving injury or significant property damage must be reported. Even in minor accidents where police do not respond in person, filing a report with your local DMV or police department creates the foundational document for your claim. Request the report number at the scene and obtain the full report within 7 to 10 days.",
       "tips": [
         "Always call 911 after an accident — a police report protects your claim",
         "If police do not respond, file a DMV report within 10 days for accidents over $1,000 in California",
@@ -16,7 +16,7 @@
     },
     {
       "heading": "Admitting Fault or Apologizing at the Scene",
-      "content": "The impulse to apologize after an accident is human and understandable. But statements like 'I'm sorry,' 'I didn't see you,' or 'this was my fault' made at the scene can be used as admissions against you in a claim or lawsuit. You cannot fully assess fault in the immediate aftermath of an accident — road conditions, mechanical failure, the other party's behavior, and other factors may have contributed. Limit your conversation at the scene to exchanging required information, cooperating with police, and ensuring anyone injured receives help. Let investigators and insurers make fault determinations based on evidence.",
+      "content": "The impulse to apologize after an accident is human and understandable. But statements like 'I'm sorry,' 'I didn't see you,' or 'this was my fault' made at the scene can be used as admissions against you in a claim or lawsuit. You cannot fully assess fault in the immediate aftermath of an accident — road conditions, mechanical failure, the other party's behavior, and other factors may have contributed. Limit your conversation at the scene to exchanging required information, cooperating with police, and ensuring anyone injured receives help. Let investigators and insurers make fault determinations based on the full evidence.",
       "tips": [
         "Do not say 'I'm sorry,' 'I didn't see you,' or 'this was my fault' at the scene",
         "Fault is a legal and factual determination — you are not the right person to make it in the moment",
@@ -25,7 +25,7 @@
     },
     {
       "heading": "Delaying or Skipping Medical Care",
-      "content": "Insurers look for gaps in medical treatment as evidence that your injuries were minor or caused by something other than the accident. If you wait days or weeks to see a doctor, the insurer will argue that a genuinely injured person would have sought care immediately. Go to an emergency room or urgent care facility within 24 to 72 hours of the accident, even if you feel okay. Follow every referral and attend every appointment. If you stop treatment before your doctor releases you, that too will be used against you.",
+      "content": "Insurers look for gaps in medical treatment as evidence that your injuries were minor or caused by something other than the accident. If you wait days or weeks to see a doctor, the insurer will argue that a genuinely injured person would have sought care immediately. Go to an emergency room or urgent care facility within 24 to 72 hours of the accident, even if you feel okay. Follow every referral and attend every appointment. If you stop treatment before your doctor releases you, that too will be used against you. Many serious injuries — whiplash, concussions, spinal injuries — do not produce obvious symptoms until 24 to 72 hours after the incident.",
       "tips": [
         "Seek medical evaluation within 24 to 72 hours — delays create gaps that hurt your claim",
         "Attend every scheduled appointment and all referred specialist visits",
@@ -34,7 +34,7 @@
     },
     {
       "heading": "Posting About the Accident on Social Media",
-      "content": "Insurance companies and defense attorneys routinely search social media for posts that contradict injury claims. A photo of you hiking, dancing at a wedding, or playing with your children — even if taken during a 'good day' that does not reflect your typical pain level — can be presented as evidence that your injuries are not as serious as claimed. The safest approach during any active claim is to refrain from posting about the accident, your injuries, your treatment, or your daily activities. Lock your accounts to private, and ask friends and family not to tag you in photos.",
+      "content": "Insurance companies and defense attorneys routinely search social media for posts that contradict injury claims. A photo of you hiking, dancing at a wedding, or playing with your children — even if taken during a 'good day' that does not reflect your typical pain level — can be presented as evidence that your injuries are not as serious as claimed. The safest approach during any active claim is to refrain from posting about the accident, your injuries, your treatment, or your daily activities. Lock your accounts to private, and ask friends and family not to tag you in photos or posts while your claim is open.",
       "tips": [
         "Do not post anything about the accident, your injuries, or your activities during an active claim",
         "Set all social media accounts to private",
@@ -43,15 +43,66 @@
     },
     {
       "heading": "Accepting the First Settlement Offer",
-      "content": "Early settlement offers from insurance companies are typically low and made before the full extent of your injuries is known. Once you sign a settlement release, your claim is closed permanently — even if you later develop complications, require surgery, or cannot return to work as expected. Before accepting any offer, ensure your treatment is complete or a clear prognosis has been established, all medical bills are documented, lost wages are calculated, and non-economic damages (pain and suffering, loss of enjoyment) are considered. A free consultation with a personal injury attorney can help you evaluate whether an offer is reasonable.",
+      "content": "Early settlement offers from insurance companies are typically low and made before the full extent of your injuries is known. Once you sign a settlement release, your claim is closed permanently — even if you later develop complications, require surgery, or cannot return to work as expected. Before accepting any offer, ensure your treatment is complete or a clear prognosis has been established, all medical bills are documented, lost wages are calculated, and non-economic damages (pain and suffering, loss of enjoyment) are considered. A free consultation with a personal injury attorney can help you evaluate whether an offer is reasonable before you sign anything.",
       "tips": [
         "Never settle while you are still in active medical treatment",
         "A signed release is almost always final — there are very few ways to reopen a settled claim",
         "Get a free consultation from an attorney before accepting any settlement offer"
       ]
+    },
+    {
+      "heading": "Giving Too Much Information to Adjusters",
+      "content": "When an insurance adjuster calls, the temptation is to be cooperative and answer every question fully. But providing more information than necessary — speculating about your speed, describing your pre-existing medical conditions, minimizing your symptoms, or suggesting you may have contributed to the accident — can seriously damage your claim. Adjusters are trained to listen for statements they can use to reduce their liability. Stick to what is factually necessary: the date, time, and location of the accident, and the fact that you are receiving medical evaluation. For more substantive questions, say you will respond in writing or consult with an attorney first.",
+      "tips": [
+        "Answer only what is asked — do not volunteer additional information",
+        "You can always say 'I will need to get back to you on that' — you are not required to answer on the spot",
+        "Describing pre-existing conditions in detail gives insurers material to minimize your current injuries"
+      ]
+    },
+    {
+      "heading": "Not Keeping Financial Records of Your Losses",
+      "content": "Economic damages — medical bills, lost wages, out-of-pocket expenses — require documentation to be recovered. Many people intend to track their expenses but fall behind during recovery, and then find themselves unable to reconstruct the full picture months later. From day one, keep an organized folder (physical or digital) for every receipt, invoice, bill, and pay stub related to the accident. Document every day of work you missed and request a letter from your employer confirming lost income. For self-employed individuals, document lost engagements, canceled projects, and the income impact through invoices and tax records. Non-economic damages like pain and suffering are supported by a daily symptom journal.",
+      "tips": [
+        "Keep every receipt, bill, and invoice organized by date from day one",
+        "Request a letter from your employer documenting every day you missed work",
+        "A daily symptom journal is the primary evidence for pain and suffering claims"
+      ]
+    },
+    {
+      "heading": "Waiting Too Long to Consult an Attorney",
+      "content": "Many people wait to consult an attorney until they are deep in the claims process — after they have given recorded statements, signed medical authorizations, or received a low settlement offer. By that point, some damage may already be done. Consulting a personal injury attorney early, before any significant interactions with the opposing insurer, is typically the best approach. Most personal injury consultations are free, and most attorneys work on contingency — meaning no upfront cost. An attorney can advise you on what to say, what to sign, what evidence to preserve, and what your claim may be worth. This guidance is most valuable before mistakes are made, not after.",
+      "tips": [
+        "Consult an attorney before giving any recorded statement or signing any authorization",
+        "Most personal injury consultations are free — early advice costs nothing and can protect everything",
+        "Waiting until negotiations are underway means some of the most valuable advice comes too late"
+      ]
+    },
+    {
+      "heading": "Building a Strong Claim From Day One",
+      "content": "The strongest accident claims share a common foundation: comprehensive documentation started on the day of the accident, consistent medical treatment from beginning to end, careful communication with insurers, and early awareness of the legal deadlines that govern the claim. None of these require legal expertise — they require discipline and knowledge of what matters. A police report, immediate medical evaluation, organized expense records, careful social media practices, and a refusal to accept early settlement offers before your treatment is complete form the core of a well-protected claim. If at any point you are uncertain about the right move — whether to give a recorded statement, whether to sign an authorization, whether an offer is fair — a free consultation with a personal injury attorney can provide clarity without commitment. Most personal injury consultations are free and attorneys work on contingency.",
+      "tips": [
+        "Strong claims are built through disciplined documentation starting on day one",
+        "Every avoidable mistake you prevent early strengthens your position later",
+        "A free attorney consultation at any decision point costs nothing and can prevent costly errors"
+      ]
     }
   ],
-  "relatedAccidents": ["car", "truck", "motorcycle", "slip-and-fall", "workplace"],
-  "relatedTools": ["accident-case-quiz", "settlement-readiness"],
-  "relatedGuides": ["evidence-checklist", "dealing-with-insurance-adjusters", "should-i-talk-to-a-lawyer"]
+  "relatedAccidents": [
+    "car",
+    "truck",
+    "motorcycle",
+    "slip-and-fall",
+    "workplace"
+  ],
+  "relatedTools": [
+    "accident-case-quiz",
+    "settlement-readiness",
+    "insurance-call-prep"
+  ],
+  "relatedGuides": [
+    "evidence-checklist",
+    "dealing-with-insurance-adjusters",
+    "should-i-talk-to-a-lawyer",
+    "common-mistakes"
+  ]
 }

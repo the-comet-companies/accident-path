@@ -7,7 +7,7 @@
   "sections": [
     {
       "heading": "Why Truck Accidents Are Different From Car Accidents",
-      "content": "Commercial trucking accidents involve federal law (FMCSA regulations), state law, and complex liability chains that do not exist in typical car accidents. The trucking company, not just the driver, is often the primary responsible party — and large carriers maintain teams of adjusters and attorneys who begin investigating immediately after a crash. Evidence like the truck's electronic logging device (ELD), black box data, driver logs, inspection records, and camera footage must be preserved quickly or it will be overwritten, discarded, or lost. The stakes are also higher: trucks can weigh up to 80,000 pounds, making catastrophic or fatal injuries far more common.",
+      "content": "Commercial trucking accidents involve federal law (FMCSA regulations), state law, and complex liability chains that do not exist in typical car accidents. The trucking company, not just the driver, is often the primary responsible party — and large carriers maintain teams of adjusters and attorneys who begin investigating immediately after a crash. Evidence like the truck's electronic logging device (ELD), black box data, driver logs, inspection records, and camera footage must be preserved quickly or it will be overwritten, discarded, or lost. The stakes are also higher: trucks can weigh up to 80,000 pounds, making catastrophic or fatal injuries far more common than in typical vehicle accidents.",
       "tips": [
         "Do not accept any quick settlement from a trucking company's insurer without legal review",
         "Trucking companies are required by law to maintain specific records — these can be subpoenaed",
@@ -16,7 +16,7 @@
     },
     {
       "heading": "Immediate Steps at the Scene",
-      "content": "Call 911 immediately and seek medical help for all injured parties. Document the truck's license plate, DOT number (displayed on the cab door), trucking company name, and the driver's commercial driver's license (CDL) information. Photograph all vehicle positions, road conditions, skid marks, and any cargo that has spilled. Gather witness contact information. Do not speak directly with representatives of the trucking company or their insurer at the scene beyond basic information exchange. The trucking company's team may arrive at the scene quickly — their goal is to assess and contain their liability.",
+      "content": "Call 911 immediately and seek medical help for all injured parties. Document the truck's license plate, DOT number (displayed on the cab door), trucking company name, and the driver's commercial driver's license (CDL) information. Photograph all vehicle positions, road conditions, skid marks, and any cargo that has spilled. Gather witness contact information. Do not speak directly with representatives of the trucking company or their insurer at the scene beyond basic information exchange. The trucking company's team may arrive at the scene quickly — their goal is to assess and contain their liability, not to help you.",
       "tips": [
         "Photograph the DOT number on the truck's cab — it identifies the carrier and their safety record",
         "Note whether the driver seems impaired, fatigued, or injured",
@@ -25,7 +25,7 @@
     },
     {
       "heading": "Identify All Potentially Liable Parties",
-      "content": "Liability in a truck accident can extend beyond the driver. The trucking company may be liable for driver negligence, inadequate training, or hours-of-service violations. The cargo loading company may be responsible if improperly secured cargo contributed to the crash. The truck manufacturer or maintenance company may bear liability if mechanical failure played a role. Identifying all responsible parties is critical to ensuring full compensation — each has separate insurance policies, and failing to name a liable party can limit your recovery.",
+      "content": "Liability in a truck accident can extend beyond the driver. The trucking company may be liable for driver negligence, inadequate training, negligent hiring, or hours-of-service violations. The cargo loading company may be responsible if improperly secured cargo contributed to the crash. The truck manufacturer or maintenance company may bear liability if mechanical failure played a role. The entity that leased the truck to the carrier may have independent liability as well. Identifying all responsible parties is critical to ensuring full compensation — each has separate insurance policies, and failing to name a liable party at the appropriate time can limit your recovery.",
       "tips": [
         "The trucking company, driver, cargo loader, and maintenance provider can each be liable",
         "Federal regulations require trucking companies to maintain minimum insurance coverage",
@@ -34,7 +34,7 @@
     },
     {
       "heading": "Critical Evidence That Disappears Quickly",
-      "content": "Trucks equipped with electronic logging devices (ELDs) and black boxes capture speed, braking, location, and hours driven. Federal law requires ELD data to be retained for six months, but companies are not always diligent — and in litigation, data must be specifically demanded. Driver logs showing hours of service can reveal violations of rest requirements. Maintenance and inspection records may show prior mechanical issues that the company knew about. Dashcam and cargo camera footage may exist and should be specifically requested or demanded within days of the crash.",
+      "content": "Trucks equipped with electronic logging devices (ELDs) and black boxes capture speed, braking, location, and hours driven. Federal law requires ELD data to be retained for six months, but companies are not always diligent — and in litigation, data must be specifically demanded. Driver logs showing hours of service can reveal violations of rest requirements that caused fatigue. Maintenance and inspection records may show prior mechanical issues that the company knew about. Dashcam and cargo camera footage may exist and should be specifically requested within days of the crash. An attorney can send a legal hold letter within 24 hours requiring the trucking company to preserve all relevant records.",
       "tips": [
         "ELD black box data may only be preserved for 30 days before being overwritten",
         "An attorney can send a legal hold letter within 24 hours to preserve electronic evidence",
@@ -42,16 +42,66 @@
       ]
     },
     {
+      "heading": "Federal Regulations That Apply to Commercial Trucking",
+      "content": "Commercial trucking is heavily regulated by the Federal Motor Carrier Safety Administration (FMCSA). Key regulations include hours-of-service rules that limit how long a driver can operate without rest (11 hours of driving after 10 consecutive hours off duty for property carriers), mandatory drug and alcohol testing requirements, vehicle maintenance and inspection standards, cargo securement requirements, and driver qualification and licensing standards. Violations of FMCSA regulations are powerful evidence of negligence in a truck accident case. Your attorney can investigate whether the driver or carrier violated any of these standards prior to the accident by requesting logbooks, inspection records, drug test results, and the carrier's safety rating from the FMCSA database.",
+      "tips": [
+        "FMCSA hours-of-service violations are among the most common causes of truck driver fatigue crashes",
+        "The FMCSA maintains a public carrier safety database — your attorney can check it immediately",
+        "Drug and alcohol test results taken after the accident may be subpoenaable"
+      ]
+    },
+    {
+      "heading": "Insurance Layers in Truck Accident Cases",
+      "content": "Commercial trucks carry significantly higher insurance limits than passenger vehicles. Federal law requires interstate commercial carriers to carry at least $750,000 in liability insurance, and many carry $1 million or more. In addition, cargo insurers, trailer insurers, and umbrella policies may apply depending on the circumstances. The complexity of multiple insurance layers is one reason why truck accident claims are more involved than car accident claims. Understanding which policies apply and in what order — primary, excess, and umbrella coverage — requires careful investigation. Do not assume that one early settlement from one insurer closes all potential sources of recovery.",
+      "tips": [
+        "Federal law requires commercial carriers to carry minimum $750,000 in liability insurance",
+        "Multiple policies may apply — trucking company, cargo, trailer, and umbrella",
+        "Settling with one insurer does not necessarily close claims against other responsible parties"
+      ]
+    },
+    {
       "heading": "Medical Care and Long-Term Documentation",
-      "content": "Truck accident injuries are often severe — traumatic brain injuries, spinal cord damage, multiple fractures, and internal injuries are common. Seek emergency care immediately and follow all medical recommendations carefully. Document every treatment, every symptom, every limitation, and every expense. If your injuries are catastrophic, long-term damages including future medical costs, rehabilitation, lost earning capacity, and home modification may be significant components of your claim. These require expert analysis and comprehensive documentation over time.",
+      "content": "Truck accident injuries are often severe — traumatic brain injuries, spinal cord damage, multiple fractures, and internal injuries are common. Seek emergency care immediately and follow all medical recommendations carefully. Document every treatment, every symptom, every limitation, and every expense. If your injuries are catastrophic, long-term damages including future medical costs, rehabilitation, lost earning capacity, and home modification may be significant components of your claim. These require expert analysis and comprehensive documentation over time. Life care planners and vocational rehabilitation experts are frequently used in serious truck accident cases to document what ongoing care will cost and how injuries affect earning ability.",
       "tips": [
         "Photograph all visible injuries immediately and continue documenting healing progress",
         "Keep records of every appointment, prescription, and out-of-pocket expense",
         "Catastrophic injuries may require life care planning experts to document future costs"
       ]
+    },
+    {
+      "heading": "Why Truck Cases Benefit Most From Early Legal Involvement",
+      "content": "Truck accident cases are among the most complex personal injury matters because they involve federal regulations, multiple liable parties, rapidly disappearing electronic evidence, and sophisticated defense teams that mobilize immediately. The trucking company's insurer and defense attorneys often arrive at accident scenes within hours. Securing legal representation early — ideally within days of the accident — allows your attorney to send preservation letters, conduct an independent investigation, hire accident reconstruction experts, and ensure critical evidence is not lost or altered. Most personal injury attorneys offer free consultations and work on contingency, so early involvement carries no upfront financial burden. The cost of waiting is often evidence that can no longer be recovered.",
+      "tips": [
+        "Trucking companies deploy defense teams quickly — early legal involvement levels the playing field",
+        "An attorney can send evidence preservation letters on the same day as the accident",
+        "Free consultations and contingency fees mean early involvement costs you nothing upfront"
+      ]
+    },
+    {
+      "heading": "Protecting Your Health and Financial Recovery",
+      "content": "The financial impact of a serious truck accident can extend for years — through ongoing medical treatment, reduced work capacity, and long-term disability. Protecting your recovery starts with comprehensive documentation: every medical bill, every treatment note, every missed workday, every out-of-pocket expense. Request letters from your employer documenting any missed time and the impact on your position or earning potential. If you are self-employed, document lost client work and revenue through invoices and tax records. For catastrophic injuries, a life care planner may be retained by your attorney to project the full cost of future medical care and support needs — this expert documentation is often critical to ensuring a settlement or verdict reflects the true long-term impact of your injuries. Do not settle before this picture is fully developed.",
+      "tips": [
+        "Keep records of every expense, missed workday, and income impact from day one",
+        "Life care planners project future medical and support costs for serious injuries",
+        "Do not settle before the full long-term impact of your injuries is documented by your physicians"
+      ]
     }
   ],
-  "relatedAccidents": ["truck", "car", "workplace", "construction"],
-  "relatedTools": ["accident-case-quiz", "evidence-checklist", "statute-of-limitations"],
-  "relatedGuides": ["after-car-accident", "evidence-checklist", "insurance-claims"]
+  "relatedAccidents": [
+    "truck",
+    "car",
+    "workplace",
+    "construction"
+  ],
+  "relatedTools": [
+    "accident-case-quiz",
+    "evidence-checklist",
+    "statute-of-limitations"
+  ],
+  "relatedGuides": [
+    "after-car-accident",
+    "evidence-checklist",
+    "insurance-claims",
+    "hiring-a-lawyer"
+  ]
 }

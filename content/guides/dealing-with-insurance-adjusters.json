@@ -25,7 +25,7 @@
     },
     {
       "heading": "Common Adjuster Tactics to Know About",
-      "content": "Quick settlement offers made before you know the full extent of your injuries are one of the most common adjuster tactics. Once you accept and sign a release, you cannot reopen the claim even if your condition worsens. Other tactics include requesting broad medical authorizations (to find pre-existing conditions that reduce your claim), suggesting your injuries were pre-existing, using social media to find posts that contradict your claimed limitations, and creating urgency to settle. Knowing these approaches in advance removes their power to pressure you into decisions you may regret.",
+      "content": "Quick settlement offers made before you know the full extent of your injuries are one of the most common adjuster tactics. Once you accept and sign a release, you cannot reopen the claim even if your condition worsens. Other tactics include requesting broad medical authorizations to find pre-existing conditions that reduce your claim, suggesting your injuries were pre-existing or caused by something else, using social media monitoring to find posts that contradict your claimed limitations, and creating urgency to settle before you have time to understand your options. Knowing these approaches in advance removes their power to pressure you into decisions you may later regret.",
       "tips": [
         "Never accept a settlement while still in active treatment",
         "A signed release is final — do not sign until you fully understand your prognosis",
@@ -33,8 +33,26 @@
       ]
     },
     {
+      "heading": "The Recorded Statement: What to Know Before You Agree",
+      "content": "Recorded statement requests are one of the most consequential interactions in a claim. The opposing insurer's adjuster may ask you to give a recorded account of the accident 'to get your side of the story.' In reality, recorded statements are used to gather evidence that limits the insurer's liability. Adjusters are trained to ask questions designed to elicit statements about your speed, visibility, reaction time, or pre-existing conditions that can be used to argue partial fault or pre-existing injury. You are generally not required to give a recorded statement to the other party's insurer. Your own insurer may require a statement as a condition of your coverage — in that case, you can request the questions be submitted in writing first, or consult with an attorney before responding.",
+      "tips": [
+        "You are generally not required to give a recorded statement to the opposing insurer",
+        "Your own insurer may require a statement — you can still request questions in writing",
+        "If you give any statement, have a clear account of the facts prepared in advance"
+      ]
+    },
+    {
+      "heading": "Medical Authorizations: What to Sign and What to Refuse",
+      "content": "Insurance companies frequently ask claimants to sign broad HIPAA authorizations that allow them to access your entire medical history — not just records related to the accident. This gives them the opportunity to search for pre-existing conditions they can argue explain your injuries. You have the right to limit any authorization to records from the date of the accident forward, or to records specifically related to the body parts injured in the accident. Never sign a blanket authorization without reviewing its scope. If an adjuster pressures you to sign a broad release and suggests it is routine, that is the moment to pause and understand what you are agreeing to.",
+      "tips": [
+        "Limit any medical authorization to accident-related records and the relevant time period",
+        "Broad medical authorizations are used to find pre-existing conditions that reduce your claim",
+        "You can request to see any authorization form before signing and limit its scope"
+      ]
+    },
+    {
       "heading": "Communicating in Writing Whenever Possible",
-      "content": "Written communication creates a record that protects you. When you make a significant request or receive an important response, follow up by email or letter confirming what was discussed. Request that settlement offers be provided in writing. Keep a log of every phone call with the adjuster's name, date, time, and a summary of what was said. This documentation protects you if the adjuster later claims something different was discussed or agreed upon. It also creates a professional record that signals you are taking the claim seriously.",
+      "content": "Written communication creates a record that protects you. When you make a significant request or receive an important response, follow up by email or letter confirming what was discussed. Request that settlement offers be provided in writing. Keep a log of every phone call with the adjuster's name, date, time, and a summary of what was said. This documentation protects you if the adjuster later claims something different was discussed or agreed upon. It also creates a professional record that signals you are taking the claim seriously and keeping track of the process.",
       "tips": [
         "Follow every significant phone call with an email summarizing what was discussed",
         "Request all settlement offers in writing before responding",
@@ -42,16 +60,49 @@
       ]
     },
     {
+      "heading": "Delays and Bad Faith: Your Rights When the Insurer Stalls",
+      "content": "California and Arizona both impose duties on insurance companies to handle claims promptly and in good faith. California's Fair Claims Settlement Practices Regulations require insurers to acknowledge claims within 10 days, accept or deny claims within 40 days of receiving proof of loss, and not make unreasonably low settlement offers. Arizona has similar regulations under Title 20 of the Arizona Revised Statutes. When an insurer delays without clear reason, denies a valid claim without a legitimate basis, or makes unreasonably low offers knowing the full extent of your damages, this may constitute bad faith. A formal complaint to the California Department of Insurance or the Arizona Department of Insurance and Financial Institutions is one avenue. A bad faith claim in litigation is another.",
+      "tips": [
+        "California requires insurers to acknowledge claims within 10 days and accept/deny within 40 days",
+        "Unreasonable delays or denials can be reported to your state's department of insurance",
+        "Bad faith insurer conduct may give rise to additional legal claims beyond the original injury claim"
+      ]
+    },
+    {
       "heading": "When to Stop Dealing With Adjusters Directly",
-      "content": "If your injuries are serious, you are being pressured to accept a quick settlement, the adjuster is denying or delaying your claim without clear reason, or you feel the process is moving against you, it may be time to consult with a personal injury attorney. Attorneys handle adjuster communications on your behalf and are familiar with insurer tactics. Most personal injury attorneys offer free consultations and work on contingency — they are paid only if you recover compensation. Bringing in an attorney does not mean litigation; many claims resolve at the negotiation stage.",
+      "content": "If your injuries are serious, you are being pressured to accept a quick settlement, the adjuster is denying or delaying your claim without clear reason, or you feel the process is moving against you, it may be time to consult with a personal injury attorney. Attorneys handle adjuster communications on your behalf and are familiar with insurer tactics. Most personal injury attorneys offer free consultations and work on contingency — they are paid only if you recover compensation. Bringing in an attorney does not automatically mean litigation; many claims resolve at the negotiation stage once an attorney is involved.",
       "tips": [
         "You can consult a personal injury attorney at any stage of the claims process",
         "Once you have an attorney, direct all adjuster contact through them",
         "Most personal injury consultations are free and attorneys work on contingency"
       ]
+    },
+    {
+      "heading": "Protecting Yourself Throughout the Claims Process",
+      "content": "Dealing with insurance adjusters effectively comes down to a few consistent practices: document every interaction, limit what you volunteer, do not sign broad authorizations, do not give recorded statements without understanding your rights, and do not accept settlement offers before your treatment is complete and your damages are fully documented. Adjusters contact claimants frequently, often within days of an accident, precisely because early interactions — before you understand your rights and the full extent of your injuries — are most likely to produce statements and agreements that limit the insurer's exposure. Knowing this dynamic in advance puts you in a stronger position. If at any point the process feels overwhelming or you are unsure how to respond, a personal injury attorney can take over adjuster communications on your behalf. Most offer free consultations and work on contingency, so there is no upfront cost to getting professional guidance.",
+      "tips": [
+        "Document every adjuster contact with date, time, name, and summary",
+        "Do not let early adjuster contacts lock in your position before you know your injuries' full scope",
+        "An attorney can take over all adjuster communications at any stage of the process"
+      ]
     }
   ],
-  "relatedAccidents": ["car", "truck", "motorcycle", "slip-and-fall", "workplace"],
-  "relatedTools": ["accident-case-quiz", "settlement-readiness"],
-  "relatedGuides": ["insurance-claims", "protecting-your-claim", "should-i-talk-to-a-lawyer"]
+  "relatedAccidents": [
+    "car",
+    "truck",
+    "motorcycle",
+    "slip-and-fall",
+    "workplace"
+  ],
+  "relatedTools": [
+    "accident-case-quiz",
+    "settlement-readiness",
+    "insurance-call-prep"
+  ],
+  "relatedGuides": [
+    "insurance-claims",
+    "protecting-your-claim",
+    "should-i-talk-to-a-lawyer",
+    "common-mistakes"
+  ]
 }

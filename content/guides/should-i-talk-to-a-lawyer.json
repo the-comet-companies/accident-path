@@ -49,9 +49,60 @@
         "Legal preservation letters can prevent critical evidence from being destroyed",
         "Studies consistently show represented claimants recover significantly more than unrepresented ones"
       ]
+    },
+    {
+      "heading": "Common Misconceptions About Hiring a Personal Injury Lawyer",
+      "content": "Many people delay consulting an attorney based on misconceptions. The most common: that hiring an attorney automatically means going to court (most cases settle without trial); that attorneys are too expensive (contingency fees mean no upfront cost); that consulting is a commitment to hire (it is not — a consultation is informational only); that small claims are not worth an attorney's time (many attorneys handle claims of all sizes); and that involving an attorney will slow things down (attorneys often accelerate resolutions by bringing professionalism and legal leverage to the process). Understanding these realities removes barriers to getting information that could meaningfully affect your situation.",
+      "tips": [
+        "Consulting an attorney is informational — it does not obligate you to hire or to file a lawsuit",
+        "Contingency fees mean there is no upfront financial barrier to representation",
+        "Most personal injury cases resolve faster and for more when an attorney is involved"
+      ]
+    },
+    {
+      "heading": "How to Prepare for Your First Consultation",
+      "content": "Getting the most from a free consultation means coming prepared. Gather: the police report or accident report number; names and insurance information for all parties involved; your medical records and bills from any treatment you have received; photos from the scene and of your injuries; any correspondence you have received from insurance adjusters; and a brief written timeline of what happened and what you have experienced since. Prepare to describe your injuries, your current symptoms, how the accident has affected your work and daily life, and what your current treatment status is. If you have already given a recorded statement or signed any forms for the insurer, bring copies of those as well.",
+      "tips": [
+        "Bring the police report, medical records, bills, and any insurer correspondence to the consultation",
+        "Write a brief timeline of the accident and your recovery to share with the attorney",
+        "If you have already given a recorded statement, let the attorney know immediately"
+      ]
+    },
+    {
+      "heading": "What Happens If You Decide Not to Hire a Lawyer",
+      "content": "If you decide to handle your claim without an attorney, there are steps you can take to protect yourself. Communicate with the opposing insurer in writing when possible. Do not give a recorded statement without understanding your rights. Limit medical authorizations to accident-related records. Do not accept any settlement offer while still in active treatment. Document every expense and keep detailed records. Research the statute of limitations in your state and calendar the deadline. Even if you handle most of the claim yourself, you can consult an attorney at specific decision points — such as evaluating a settlement offer — without retaining full representation. Many attorneys will provide limited consultations for this purpose.",
+      "tips": [
+        "Communicate in writing with the insurer and document every interaction",
+        "Do not accept any settlement before your treatment is complete and your prognosis is established",
+        "You can consult an attorney on a limited basis even if you are not retaining full representation"
+      ]
+    },
+    {
+      "heading": "The Cost of Waiting Too Long",
+      "content": "One of the most common regrets accident victims express is not consulting an attorney sooner. The most impactful attorney guidance — about what statements not to make, what to avoid signing, what evidence to preserve, and what deadlines apply — is most valuable before these decisions are made, not after. Once a recorded statement has been given, once a broad medical authorization has been signed, once a settlement has been accepted and a release signed, the options available to an attorney narrow significantly. A free consultation at the beginning of the process costs nothing and may protect everything. Even if you ultimately decide not to hire an attorney, knowing what your options are and what the process involves is valuable. The accident was not something you planned for — but navigating the aftermath thoughtfully is something you can control.",
+      "tips": [
+        "Attorney guidance is most valuable before statements are given and authorizations are signed",
+        "A free early consultation costs nothing and prevents the most damaging early mistakes",
+        "Even if you do not hire an attorney, knowing your rights and options is valuable"
+      ]
     }
   ],
-  "relatedAccidents": ["car", "truck", "motorcycle", "slip-and-fall", "workplace", "wrongful-death"],
-  "relatedTools": ["accident-case-quiz"],
-  "relatedGuides": ["hiring-a-lawyer", "settlement-vs-lawsuit", "protecting-your-claim"]
+  "relatedAccidents": [
+    "car",
+    "truck",
+    "motorcycle",
+    "slip-and-fall",
+    "workplace",
+    "wrongful-death"
+  ],
+  "relatedTools": [
+    "accident-case-quiz",
+    "lawyer-type-matcher"
+  ],
+  "relatedGuides": [
+    "hiring-a-lawyer",
+    "settlement-vs-lawsuit",
+    "protecting-your-claim",
+    "common-mistakes"
+  ]
 }

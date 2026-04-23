@@ -7,7 +7,7 @@
   "sections": [
     {
       "heading": "How Fault Is Determined After an Accident",
-      "content": "Fault in an accident is a legal and factual determination based on negligence — whether a party failed to act with reasonable care under the circumstances. It is not simply a matter of who hit whom. Insurers, attorneys, and courts consider the police report, physical evidence, witness statements, traffic laws, dashcam footage, and expert reconstruction when assessing fault. In many accidents, fault is shared between multiple parties. A driver who ran a red light may be primarily at fault, but a driver who was speeding when they entered the intersection may share partial responsibility.",
+      "content": "Fault in an accident is a legal and factual determination based on negligence — whether a party failed to act with reasonable care under the circumstances. It is not simply a matter of who hit whom. Insurers, attorneys, and courts consider the police report, physical evidence, witness statements, traffic laws, dashcam footage, and expert reconstruction when assessing fault. In many accidents, fault is shared between multiple parties. A driver who ran a red light may be primarily at fault, but a driver who was speeding when they entered the intersection may share partial responsibility. The initial impressions at the scene often change significantly after a full investigation.",
       "tips": [
         "Do not assume fault based only on who hit whom — the full picture matters",
         "The police report's fault notation is not legally binding but carries significant weight",
@@ -16,7 +16,7 @@
     },
     {
       "heading": "California's Pure Comparative Fault Rule",
-      "content": "California follows a pure comparative fault system. This means that even if you were 99% at fault for an accident, you can still recover 1% of your damages from the other party. More practically, if you were 30% at fault and your total damages are $100,000, you can recover $70,000 from the other party. This is one of the most plaintiff-friendly systems in the country. Your percentage of fault is determined through negotiation, mediation, or if necessary, a jury verdict. Insurers will use any evidence of your contributory fault to argue for a lower settlement.",
+      "content": "California follows a pure comparative fault system. This means that even if you were 99% at fault for an accident, you can still recover 1% of your damages from the other party. More practically, if you were 30% at fault and your total damages are $100,000, you can recover $70,000 from the other party. This is one of the most plaintiff-friendly systems in the country. Your percentage of fault is determined through negotiation, mediation, or if necessary, a jury verdict. Insurers will use any evidence of your contributory fault to argue for a lower settlement — which is why having strong evidence of the other party's negligence is so important.",
       "tips": [
         "California's pure comparative fault rule means partial fault does not bar recovery",
         "Your recovery is reduced proportionally by your share of fault",
@@ -25,7 +25,7 @@
     },
     {
       "heading": "Arizona's Pure Comparative Fault Rule",
-      "content": "Arizona also follows pure comparative fault, identical in structure to California's system. You can recover compensation even if you bear significant responsibility for the accident — your award is simply reduced by your percentage of fault. Arizona courts have applied this rule to find that plaintiffs who were 80% or more at fault can still receive compensation from the remaining at-fault parties. This framework makes it particularly important not to assume you have no claim simply because you believe you may have contributed to the accident.",
+      "content": "Arizona also follows pure comparative fault, identical in structure to California's system. You can recover compensation even if you bear significant responsibility for the accident — your award is simply reduced by your percentage of fault. Arizona courts have applied this rule to find that plaintiffs who were 80% or more at fault can still receive compensation from the remaining at-fault parties. This framework makes it particularly important not to assume you have no claim simply because you believe you may have contributed to the accident. Do not make that determination on your own before consulting with an attorney or understanding the full picture of what happened.",
       "tips": [
         "Arizona's pure comparative fault is the same framework as California's",
         "Even if you are mostly at fault, you may still recover from other at-fault parties",
@@ -34,7 +34,7 @@
     },
     {
       "heading": "What Counts as Negligence in an Accident Claim",
-      "content": "Negligence is defined as a failure to exercise the level of care that a reasonable person would exercise in similar circumstances. In vehicle accidents, negligence commonly includes distracted driving, speeding, running red lights or stop signs, failing to yield, driving impaired, or violating traffic laws. In premises liability, it includes failure to maintain safe conditions. In truck accidents, it includes violations of federal hours-of-service regulations. Establishing the other party's negligence is the foundation of your claim — and the stronger the evidence, the stronger your position in negotiations.",
+      "content": "Negligence is defined as a failure to exercise the level of care that a reasonable person would exercise in similar circumstances. In vehicle accidents, negligence commonly includes distracted driving, speeding, running red lights or stop signs, failing to yield, driving impaired, or violating traffic laws. In premises liability, it includes failure to maintain safe conditions. In truck accidents, it includes violations of federal hours-of-service regulations. Establishing the other party's negligence is the foundation of your claim — and the stronger the evidence, the stronger your position in negotiations. Traffic violations cited in the police report are among the strongest indicators of negligence.",
       "tips": [
         "Negligence = failure to exercise reasonable care under the circumstances",
         "Traffic violations at the time of the accident are strong evidence of negligence",
@@ -42,16 +42,67 @@
       ]
     },
     {
+      "heading": "Common Scenarios Where Fault Is Shared",
+      "content": "Shared fault is more common than many people realize. A rear-end accident where the front driver stopped suddenly may involve some fault on both sides. A left-turn accident where both drivers had the right of way in different directions may split liability. A pedestrian who crossed outside a crosswalk may share fault with a speeding driver who hit them. A slip-and-fall victim who ignored a warning sign may share fault with a property owner who created a dangerous condition. In each case, the percentage allocation depends on the specific facts, the evidence available, and — in litigation — how persuasively each party can present their version. Understanding that most accidents involve some factual complexity removes the impulse to pre-judge your own position.",
+      "tips": [
+        "Even accidents that seem clear-cut often involve shared fault after investigation",
+        "The facts that support or reduce your fault percentage are found in the evidence — not at the scene",
+        "Witness accounts, dashcam footage, and physical evidence are the most objective fault indicators"
+      ]
+    },
+    {
+      "heading": "How Insurers Try to Maximize Your Fault Percentage",
+      "content": "Insurance adjusters have a financial incentive to assign as much fault as possible to you — every percentage point of fault they can attribute to you reduces their payout proportionally. Common techniques include asking leading questions in recorded statements that suggest you had an opportunity to avoid the accident, pointing to pre-accident factors like your speed or following distance, finding social media evidence of prior risk-taking behavior, and using broad medical authorizations to identify pre-existing conditions that they argue explain your injuries. Being aware of these approaches reinforces the importance of not making recorded statements without understanding your rights, limiting medical authorizations to accident-related records, and documenting evidence that supports the other party's negligence.",
+      "tips": [
+        "Every percentage point of fault attributed to you reduces the insurer's payout",
+        "Recorded statements are often used to find admissions that support assigning you more fault",
+        "Document evidence of the other party's fault as thoroughly as you document your own injuries"
+      ]
+    },
+    {
+      "heading": "Evidence That Establishes the Other Party's Fault",
+      "content": "The most powerful evidence of another party's fault is objective and contemporaneous: dashcam or traffic camera footage showing the moment of the accident; police reports noting traffic violations and the officer's observations; witness statements from independent bystanders who saw what happened; physical evidence like skid marks, debris patterns, and vehicle damage consistent with one party's version of events; cell phone records showing the other driver was texting at the time of impact; and drug or alcohol test results. The sooner this evidence is gathered or preserved, the more complete the picture. An attorney can send formal preservation letters to ensure digital evidence is not lost.",
+      "tips": [
+        "Dashcam footage and traffic camera video are the strongest objective fault evidence",
+        "Cell phone records can prove distracted driving — obtainable through subpoena in litigation",
+        "Physical evidence at the scene (skid marks, final vehicle positions) is time-sensitive — photograph immediately"
+      ]
+    },
+    {
       "heading": "What to Do If You Think You Were Partly at Fault",
-      "content": "If you believe you may have been partially responsible for the accident, do not assume you have no claim — and do not admit fault to the other driver, their insurer, or anyone other than your own attorney. The actual percentage of fault is rarely as simple as it seems at the scene, and a thorough investigation often reveals factors that shift the analysis. Consult with a personal injury attorney before making any statements about fault. Most personal injury consultations are free, and an attorney can give you a realistic assessment of your liability exposure and potential recovery. This is educational information, not legal advice.",
+      "content": "If you believe you may have been partially responsible for the accident, do not assume you have no claim — and do not admit fault to the other driver, their insurer, or anyone other than your own attorney. The actual percentage of fault is rarely as simple as it seems at the scene, and a thorough investigation often reveals factors that shift the analysis. Consult with a personal injury attorney before making any statements about fault. Most personal injury consultations are free, and an attorney can give you a realistic assessment of your liability exposure and potential recovery. This is educational information, not legal advice — every situation is different.",
       "tips": [
         "Do not admit fault to the other party's insurer — even if you think you were partly responsible",
         "A free attorney consultation can clarify your realistic liability exposure",
         "Fault determinations often shift after a thorough investigation — do not assume the worst"
       ]
+    },
+    {
+      "heading": "Why You Should Not Determine Fault on Your Own",
+      "content": "The immediate aftermath of an accident is the worst time to make a final judgment about fault. Shock, adrenaline, incomplete information, and the natural desire to make sense of what happened all distort perception. Drivers who believe they were at fault often discover after investigation that road hazards, mechanical failures, or the other driver's behavior contributed significantly. Drivers who believe they were blameless sometimes find that their speed, following distance, or reaction created a portion of the risk. The legal determination of fault is made by professionals — insurers, attorneys, accident reconstruction experts, and if necessary, juries — based on evidence gathered over time. Your role in the immediate aftermath is to document as much as possible, say as little as possible about fault, and consult an attorney before making any formal statements. This is educational information, not legal advice — every case is different.",
+      "tips": [
+        "Fault is almost never as clear at the scene as it seems in the moment",
+        "Accident reconstruction and investigation often change the fault picture significantly",
+        "Your role is to document and preserve evidence — let the professionals assess fault"
+      ]
     }
   ],
-  "relatedAccidents": ["car", "truck", "motorcycle", "bicycle", "pedestrian", "slip-and-fall"],
-  "relatedTools": ["accident-case-quiz", "fault-analyzer"],
-  "relatedGuides": ["after-car-accident", "should-i-talk-to-a-lawyer", "settlement-vs-lawsuit"]
+  "relatedAccidents": [
+    "car",
+    "truck",
+    "motorcycle",
+    "bicycle",
+    "pedestrian",
+    "slip-and-fall"
+  ],
+  "relatedTools": [
+    "accident-case-quiz",
+    "fault-analyzer"
+  ],
+  "relatedGuides": [
+    "after-car-accident",
+    "should-i-talk-to-a-lawyer",
+    "settlement-vs-lawsuit",
+    "common-mistakes"
+  ]
 }

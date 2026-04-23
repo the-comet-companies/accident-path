@@ -7,7 +7,7 @@
   "sections": [
     {
       "heading": "Why Medical Bills After an Accident Are So Confusing",
-      "content": "After an accident, you may receive separate bills from the hospital, emergency room physicians, radiologists, anesthesiologists, specialists, and physical therapists — even though your care happened in one place. Each is an independent provider that bills separately. You may also receive Explanations of Benefits (EOBs) from your health insurer that look like bills but are not. The billed amount, the insurer's negotiated rate, and what you actually owe can be three very different numbers. Do not assume that any figure you see on an initial bill is final or non-negotiable.",
+      "content": "After an accident, you may receive separate bills from the hospital, emergency room physicians, radiologists, anesthesiologists, specialists, and physical therapists — even though your care happened in one place. Each is an independent provider that bills separately. You may also receive Explanations of Benefits (EOBs) from your health insurer that look like bills but are not. The billed amount, the insurer's negotiated rate, and what you actually owe can be three very different numbers. Do not assume that any figure you see on an initial bill is final or non-negotiable — most medical billing involves several layers of adjustment before a final balance is established.",
       "tips": [
         "Ask each provider for an itemized bill — not just a summary",
         "An EOB from your health insurer is not a bill — it shows what the insurer agreed to pay",
@@ -16,7 +16,7 @@
     },
     {
       "heading": "Who Pays Your Medical Bills While Your Claim Is Pending",
-      "content": "There is often a gap between when care is provided and when an insurance claim resolves. During that time, medical bills still come due. Several sources may help cover costs during this period: your own health insurance, MedPay coverage on your auto policy (in California and Arizona), personal injury protection (PIP) if applicable, and in some cases medical providers will place bills in lien — agreeing to be paid from any settlement or verdict rather than billing you immediately. Understanding which coverage applies to your situation early can prevent your bills from going to collections.",
+      "content": "There is often a gap between when care is provided and when an insurance claim resolves. During that time, medical bills still come due. Several sources may help cover costs during this period: your own health insurance, MedPay coverage on your auto policy (in California and Arizona), personal injury protection (PIP) if applicable, and in some cases medical providers will place bills in lien — agreeing to be paid from any settlement or verdict rather than billing you immediately. Understanding which coverage applies to your situation early can prevent your bills from going to collections during the often lengthy claim resolution process.",
       "tips": [
         "Check your auto policy for MedPay — it pays medical bills regardless of fault",
         "Some medical providers will hold billing in exchange for a lien on your future settlement",
@@ -25,7 +25,7 @@
     },
     {
       "heading": "Medical Billing Errors Are Common — Review Every Bill",
-      "content": "Studies consistently show that a significant percentage of medical bills contain errors — duplicate charges, upcoded procedures, services that were ordered but not performed, and administrative mistakes. Request an itemized bill for every provider and review each line. Compare the description to what you actually received. If a code or charge does not match your care, request a correction in writing. Your health insurer's billing dispute process provides another avenue to challenge errors. These corrections directly affect what you owe and what appears in your medical records.",
+      "content": "Studies consistently show that a significant percentage of medical bills contain errors — duplicate charges, upcoded procedures, services that were ordered but not performed, and administrative mistakes. Request an itemized bill for every provider and review each line carefully. Compare the description to what you actually received. If a code or charge does not match your care, request a correction in writing. Your health insurer's billing dispute process provides another avenue to challenge errors. These corrections directly affect what you owe and what is documented in your medical records — both of which matter for your personal injury claim.",
       "tips": [
         "Request itemized bills from every provider — a one-page summary is not enough to verify accuracy",
         "Look for duplicate charges, phantom charges, or services you do not recognize",
@@ -43,15 +43,65 @@
     },
     {
       "heading": "Your Medical Bills as Evidence of Damages",
-      "content": "In a personal injury claim, your medical bills serve dual purpose: they are expenses you are entitled to recover, and they are evidence of the seriousness of your injuries. Keep every bill, receipt, and payment record organized by date and provider. The total of your medical expenses — past and future — is one of the primary factors in calculating your compensation. Future medical expenses (ongoing treatment, surgeries, rehabilitation) require documentation from your treating physicians, and in significant cases, expert life care planners may be needed to project long-term costs.",
+      "content": "In a personal injury claim, your medical bills serve dual purpose: they are expenses you are entitled to recover, and they are evidence of the seriousness of your injuries. Keep every bill, receipt, and payment record organized by date and provider. The total of your medical expenses — past and future — is one of the primary factors in calculating your compensation. Future medical expenses (ongoing treatment, surgeries, rehabilitation) require documentation from your treating physicians, and in significant cases, expert life care planners may be needed to project long-term costs. Do not settle any claim before a clear prognosis for future care is established.",
       "tips": [
         "Keep every medical bill, receipt, and co-pay record organized in one place",
         "Ask your doctor to document the expected future course of treatment in writing",
         "Future medical costs are recoverable — do not settle before a prognosis is established"
       ]
+    },
+    {
+      "heading": "Health Insurance Coordination With Your Accident Claim",
+      "content": "Using your health insurance to pay for accident-related medical care is generally advisable — it gets your treatment paid promptly and creates a clear medical record. However, your health insurer may assert a subrogation right, meaning they can seek reimbursement from your settlement for what they paid. This is not necessarily a problem: the total damages in your claim should account for these bills, and your attorney can negotiate the subrogation amount as part of the settlement. The key is not to avoid using your health insurance, but to make sure your attorney knows about every payment so that the reimbursement obligation is properly addressed before you receive your net settlement.",
+      "tips": [
+        "Use your health insurance for accident-related care — it is not an either/or choice with your injury claim",
+        "Your health insurer's subrogation right should be negotiated as part of your settlement",
+        "Tell your attorney about all health insurance payments related to the accident"
+      ]
+    },
+    {
+      "heading": "Negotiating Medical Bills Directly With Providers",
+      "content": "Medical providers often reduce bills when a patient pays cash or settles an account. After your personal injury case resolves, outstanding medical bills that were not covered by insurance or liens may be negotiable. Providers typically prefer receiving a reduced amount quickly over waiting for full payment over time or pursuing collection. If you are represented by an attorney, they will typically handle this negotiation as part of the settlement process — working to reduce outstanding bills and liens to maximize your net recovery. If you are handling your claim without an attorney, you can contact providers' billing departments directly to ask about a settlement reduction or a payment plan.",
+      "tips": [
+        "Medical providers often accept less than the billed amount to settle an account promptly",
+        "Your attorney typically negotiates outstanding bills and liens as part of settlement",
+        "If unrepresented, contact billing departments directly to ask about settlement or payment plan options"
+      ]
+    },
+    {
+      "heading": "What to Do If Bills Go to Collections While Your Claim Is Pending",
+      "content": "Personal injury claims can take months or years to resolve, and medical bills do not wait. If bills go to collections during that time, your credit can be damaged and collection agencies can become aggressive. Several steps can prevent this: notify the collection agency that the bills are related to a pending personal injury claim and provide the name of your attorney or insurer; ask your attorney about sending a letter of representation that may pause collection activity; explore whether the provider will accept a lien arrangement pending resolution; and ask about whether the collector is a debt buyer (who purchased the debt cheaply) versus the original provider (who may have more flexibility). Your attorney can often negotiate directly with collectors as part of the claim resolution.",
+      "tips": [
+        "Notify collectors in writing that the bills are related to a pending personal injury claim",
+        "Your attorney can send a letter of representation that may pause collection activity",
+        "Ask whether the collector is the original provider or a debt buyer — this affects negotiation leverage"
+      ]
+    },
+    {
+      "heading": "Keeping Your Medical Documentation Complete and Organized",
+      "content": "Thorough medical documentation serves two purposes: it supports your health recovery by creating a clear record for all your providers, and it supports your financial recovery by establishing the full scope of your accident-related injuries and expenses. From the first day, keep every document related to your medical care in one organized location: bills, EOBs, receipts, prescription records, imaging reports, and appointment notes. Date-stamp everything and keep originals. When you receive an Explanation of Benefits from your health insurer, file it alongside the corresponding provider bill — together they show what was charged, what the insurer paid, and what remains your responsibility. Ask each treating provider to document in writing the connection between your injuries and the accident, and to note their prognosis for future care. This contemporaneous medical documentation, kept consistently throughout your treatment, is the strongest foundation for your damages claim.",
+      "tips": [
+        "Keep every medical document organized by date and provider from day one",
+        "File EOBs alongside the corresponding provider bills for a complete financial picture",
+        "Ask each provider to document in writing the connection between your injuries and the accident"
+      ]
     }
   ],
-  "relatedAccidents": ["car", "truck", "motorcycle", "slip-and-fall", "workplace"],
-  "relatedTools": ["accident-case-quiz", "settlement-readiness"],
-  "relatedGuides": ["insurance-claims", "hiring-a-lawyer", "protecting-your-claim"]
+  "relatedAccidents": [
+    "car",
+    "truck",
+    "motorcycle",
+    "slip-and-fall",
+    "workplace"
+  ],
+  "relatedTools": [
+    "accident-case-quiz",
+    "settlement-readiness"
+  ],
+  "relatedGuides": [
+    "insurance-claims",
+    "hiring-a-lawyer",
+    "protecting-your-claim",
+    "evidence-checklist"
+  ]
 }
