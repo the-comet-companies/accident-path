@@ -4,9 +4,9 @@ import Link from 'next/link'
 import type { ToolOutput, ToolConfig } from '@/types/tool'
 
 const PRIORITY_STYLES = {
-  critical: 'bg-danger-50 text-danger-700 border-danger-200',
-  important: 'bg-warning-50 text-warning-700 border-warning-200',
-  helpful: 'bg-success-50 text-success-700 border-success-200',
+  critical: 'bg-danger-500 text-white border-danger-500',
+  important: 'bg-warning-50 text-warning-700 border-warning-500',
+  helpful: 'bg-success-50 text-success-700 border-success-500',
 } as const
 
 const PRIORITY_LABELS = {
