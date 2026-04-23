@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import type { ToolOutput, ToolConfig } from '@/types/tool'
+import type { ToolOutput, ToolConfig, OutputItem } from '@/types/tool'
 
 const PRIORITY_STYLES = {
   critical: 'bg-danger-500 text-white border-danger-500',
@@ -14,6 +14,27 @@ const PRIORITY_LABELS = {
   important: 'Important',
   helpful: 'Helpful',
 } as const
+
+function ItemCard({ item }: { item: OutputItem }) {
+  return (
+    <div className="flex items-start gap-3 rounded-xl border border-neutral-100 bg-surface-card p-4">
+      <span
+        className={[
+          'flex-shrink-0 px-2 py-0.5 rounded-full border text-xs font-bold font-sans mt-0.5',
+          PRIORITY_STYLES[item.priority],
+        ].join(' ')}
+      >
+        {PRIORITY_LABELS[item.priority]}
+      </span>
+      <div className="flex flex-col gap-0.5 flex-1 min-w-0">
+        <p className="font-sans font-semibold text-sm text-neutral-900">{item.label}</p>
+        {item.value && (
+          <p className="text-neutral-500 text-xs leading-relaxed">{item.value}</p>
+        )}
+      </div>
+    </div>
+  )
+}
 
 interface ToolResultsProps {
   output: ToolOutput
@@ -33,31 +54,44 @@ export function ToolResults({ output, tool, onReset }: ToolResultsProps) {
       </div>
 
       {/* Items */}
-      {output.items.length > 0 && (
-        <div className="flex flex-col gap-3">
-          {output.items.map((item) => (
-            <div
-              key={item.label}
-              className="flex items-start gap-3 rounded-xl border border-neutral-100 bg-surface-card p-4"
-            >
-              <span
-                className={[
-                  'flex-shrink-0 px-2 py-0.5 rounded-full border text-xs font-bold font-sans mt-0.5',
-                  PRIORITY_STYLES[item.priority],
-                ].join(' ')}
-              >
-                {PRIORITY_LABELS[item.priority]}
-              </span>
-              <div className="flex flex-col gap-0.5 flex-1 min-w-0">
-                <p className="font-sans font-semibold text-sm text-neutral-900">{item.label}</p>
-                {item.value && (
-                  <p className="text-neutral-500 text-xs leading-relaxed">{item.value}</p>
-                )}
-              </div>
+      {output.items.length > 0 && (() => {
+        const hasCategories = output.items.some(item => item.category)
+
+        if (!hasCategories) {
+          return (
+            <div className="flex flex-col gap-3">
+              {output.items.map((item) => (
+                <ItemCard key={item.label} item={item} />
+              ))}
             </div>
-          ))}
-        </div>
-      )}
+          )
+        }
+
+        // Group by category preserving insertion order
+        const grouped = new Map<string, typeof output.items>()
+        for (const item of output.items) {
+          const cat = item.category ?? 'Other'
+          if (!grouped.has(cat)) grouped.set(cat, [])
+          grouped.get(cat)!.push(item)
+        }
+
+        return (
+          <div className="flex flex-col gap-6">
+            {Array.from(grouped.entries()).map(([category, items]) => (
+              <div key={category} className="flex flex-col gap-2">
+                <h3 className="text-xs font-bold font-sans uppercase tracking-widest text-neutral-400 px-1">
+                  {category}
+                </h3>
+                <div className="flex flex-col gap-2">
+                  {items.map((item) => (
+                    <ItemCard key={item.label} item={item} />
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        )
+      })()}
 
       {/* Disclaimer */}
       <p className="text-neutral-500 text-xs leading-relaxed">{output.disclaimer}</p>

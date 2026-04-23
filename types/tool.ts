@@ -44,6 +44,7 @@ export interface OutputItem {
   label: string
   value?: string
   priority: 'critical' | 'important' | 'helpful'
+  category?: string
 }
 
 export interface CTAConfig {

@@ -269,87 +269,166 @@ const evidenceChecklist: OutputGenerator = (answers) => {
 
   const items: OutputItem[] = []
 
+  // ── Documents ──────────────────────────────────────────────────────────────
   if (policeReport === 'no-not-filed' || policeReport === 'not-sure') {
     items.push({
       label: 'Obtain or file a police / accident report',
-      value: 'If no report was filed, contact the responding agency. A police report is often required by insurers and provides an official account of the incident.',
+      value: 'If no report was filed, contact the responding law enforcement agency. A police report is often required by insurers and provides an official account of the incident.',
       priority: 'critical',
+      category: 'Documents',
     })
   } else {
     items.push({
       label: 'Obtain a copy of the police / accident report',
-      value: 'Request a copy from the responding law enforcement agency. This is a foundational document for any claim.',
+      value: 'Request a copy from the law enforcement agency that responded. Available 3–10 days after the incident, usually for a small fee.',
       priority: 'critical',
-    })
-  }
-
-  items.push({
-    label: 'All medical records and bills',
-    value: 'Emergency room, hospital, primary care, specialist, physical therapy, and pharmacy records. Start collecting these as they accumulate.',
-    priority: 'critical',
-  })
-
-  if (photos === 'no-photos' || photos === 'conditions-prevented') {
-    items.push({
-      label: 'Return to photograph the scene if possible',
-      value: 'Scene conditions change quickly. If you can safely return, photograph the area, any relevant hazards, and the general location.',
-      priority: 'important',
-    })
-  } else {
-    items.push({
-      label: 'Continue photographing injuries as they develop',
-      value: 'Bruising and swelling often intensify in the days after an accident. Continue documenting visible injuries with dated photos.',
-      priority: 'important',
-    })
-  }
-
-  if (witnesses === 'yes-no-info') {
-    items.push({
-      label: 'Attempt to locate witness contact information',
-      value: 'Check any police report, ask nearby businesses for surveillance footage, or post on local community forums.',
-      priority: 'important',
-    })
-  } else if (witnesses === 'yes-with-info') {
-    items.push({
-      label: 'Preserve witness contact information',
-      value: 'Secure witness names, phone numbers, and addresses. Consider asking them to write a brief statement while the incident is fresh.',
-      priority: 'important',
-    })
-  }
-
-  if (location === 'business-premises' || location === 'private-property') {
-    items.push({
-      label: 'Request surveillance or security footage',
-      value: 'Businesses and properties often have cameras. Submit a written preservation request promptly — footage is typically overwritten within 30–60 days.',
-      priority: 'important',
-    })
-  }
-
-  if (location === 'workplace') {
-    items.push({
-      label: 'File an incident report with your employer',
-      value: 'A written incident report creates an official workplace record. This is often required to initiate a workers\' compensation claim.',
-      priority: 'critical',
+      category: 'Documents',
     })
   }
 
   items.push({
     label: 'Insurance documentation for all parties',
-    value: 'Insurance cards, policy numbers, and contact information for all insurers involved — your own and any other parties\'.',
-    priority: 'important',
+    value: 'Insurance cards, policy numbers, and adjuster contact information for your insurer and any other parties involved.',
+    priority: 'critical',
+    category: 'Documents',
+  })
+
+  if (location === 'workplace' || accType === 'workplace-injury') {
+    items.push({
+      label: 'File an incident report with your employer',
+      value: 'A written incident report creates an official workplace record required to initiate a workers\' compensation claim.',
+      priority: 'critical',
+      category: 'Documents',
+    })
+  }
+
+  if (location === 'business-premises' || location === 'private-property') {
+    items.push({
+      label: 'Request the property\'s incident or accident report',
+      value: 'Businesses and property owners are often required to keep records of accidents on their premises. Request a copy in writing.',
+      priority: 'important',
+      category: 'Documents',
+    })
+  }
+
+  // ── Scene ──────────────────────────────────────────────────────────────────
+  if (photos === 'no-photos' || photos === 'conditions-prevented') {
+    items.push({
+      label: 'Return to photograph the scene as soon as possible',
+      value: 'Scene conditions change quickly — skid marks fade, hazards get corrected. Photograph the area, vehicle positions, and any relevant hazards.',
+      priority: 'critical',
+      category: 'Scene',
+    })
+  } else {
+    items.push({
+      label: 'Continue photographing injuries as they develop',
+      value: 'Bruising and swelling often intensify in the days following an accident. Document visible injuries with dated photos daily for at least a week.',
+      priority: 'important',
+      category: 'Scene',
+    })
+  }
+
+  items.push({
+    label: 'Photograph all vehicle or property damage',
+    value: 'Multiple angles including damage location, license plates, and vehicle positions. Do not authorize repairs until damage is fully documented.',
+    priority: photos === 'no-photos' || photos === 'conditions-prevented' ? 'critical' : 'important',
+    category: 'Scene',
+  })
+
+  if (accType === 'slip-fall' || location === 'business-premises') {
+    items.push({
+      label: 'Document the exact hazard that caused the accident',
+      value: 'Photograph the specific condition — wet floor, cracked pavement, missing railing, uneven surface — from multiple angles before it is corrected.',
+      priority: 'critical',
+      category: 'Scene',
+    })
+  }
+
+  // ── Witnesses ─────────────────────────────────────────────────────────────
+  if (witnesses === 'yes-no-info') {
+    items.push({
+      label: 'Attempt to locate witness contact information',
+      value: 'Check the police report, contact nearby businesses with security cameras, or post in local community groups.',
+      priority: 'critical',
+      category: 'Witnesses',
+    })
+  } else if (witnesses === 'yes-with-info') {
+    items.push({
+      label: 'Preserve and verify witness contact information',
+      value: 'Confirm names, phone numbers, and addresses. Ask each witness to write a brief statement while the incident is fresh.',
+      priority: 'important',
+      category: 'Witnesses',
+    })
+  } else if (witnesses === 'unknown') {
+    items.push({
+      label: 'Canvass the area for potential witnesses',
+      value: 'Check with nearby businesses and residents. Review whether anyone posted about the accident on social media or local forums.',
+      priority: 'important',
+      category: 'Witnesses',
+    })
+  }
+
+  // ── Digital ───────────────────────────────────────────────────────────────
+  if (location === 'business-premises' || location === 'public-road' || location === 'parking-lot') {
+    items.push({
+      label: 'Send a written surveillance footage preservation request',
+      value: 'Businesses and municipalities overwrite footage within 24–72 hours. Submit a written request immediately identifying the date, time, and camera location.',
+      priority: 'critical',
+      category: 'Digital',
+    })
+  }
+
+  if (accType === 'car-accident' || accType === 'truck-accident' || accType === 'motorcycle-crash') {
+    items.push({
+      label: 'Check for dashcam footage from your vehicle or others',
+      value: 'Your own dashcam, footage from nearby vehicles, or rideshare trip data (Uber/Lyft) can provide objective documentation of the incident.',
+      priority: 'important',
+      category: 'Digital',
+    })
+  }
+
+  items.push({
+    label: 'Preserve social media and any digital communications',
+    value: 'Do not delete posts, messages, or photos related to the accident. Screenshot and preserve any relevant communications with other parties or insurers.',
+    priority: 'helpful',
+    category: 'Digital',
+  })
+
+  // ── Medical ───────────────────────────────────────────────────────────────
+  items.push({
+    label: 'Collect all medical records and itemized bills',
+    value: 'Emergency room, hospital, specialist, physical therapy, and pharmacy records. Request itemized bills — not just summary statements — as they accumulate.',
+    priority: 'critical',
+    category: 'Medical',
   })
 
   items.push({
-    label: 'Employment records to document lost wages',
-    value: 'Pay stubs, employer letters, and tax returns help document income losses if you missed work due to your injuries.',
+    label: 'Document every symptom at each provider visit',
+    value: 'Tell each provider every symptom — even minor ones. Tell them the exact date and circumstances of the accident. Incomplete records can limit your options later.',
+    priority: 'important',
+    category: 'Medical',
+  })
+
+  // ── Financial ─────────────────────────────────────────────────────────────
+  items.push({
+    label: 'Gather employment records to document lost wages',
+    value: 'Pay stubs, employer letters documenting missed shifts, and tax returns help establish income losses if you missed work due to your injuries.',
+    priority: 'important',
+    category: 'Financial',
+  })
+
+  items.push({
+    label: 'Track all out-of-pocket expenses',
+    value: 'Transportation to medical appointments, prescription costs, home care, and any other costs caused by the accident. Keep receipts.',
     priority: 'helpful',
+    category: 'Financial',
   })
 
   return {
-    summary: `Here is a prioritized evidence checklist for your ${accidentLabel(accType)} case. Gathering this documentation promptly protects your ability to pursue a claim. This is general educational information only, not legal advice.`,
+    summary: `Here is your customized evidence checklist for your ${accidentLabel(accType)} case, organized by category. Gather these items promptly — some evidence disappears within 24–72 hours. This is general educational information only, not legal advice.`,
     items,
     cta: { label: 'Get Free Guidance', href: '/find-help' },
-    disclaimer: 'This checklist is for general educational purposes only. Consult a licensed attorney to understand what evidence matters most in your specific situation.',
+    disclaimer: 'This checklist is for general educational purposes only. The specific evidence that matters in your case depends on your individual circumstances. Consult a licensed attorney for guidance tailored to your situation.',
     exportable: true,
   }
 }
