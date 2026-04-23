@@ -1,9 +1,15 @@
 import { z } from 'zod'
 
+const ToolOptionSchema = z.object({
+  value: z.string(),
+  label: z.string(),
+})
+
 export const ToolStepSchema = z.object({
   id: z.string(),
   question: z.string(),
   type: z.enum(['select', 'multiselect', 'checklist', 'number', 'text', 'date']),
+  options: z.array(ToolOptionSchema).optional(),
 })
 
 export const ToolConfigSchema = z.object({
@@ -28,5 +34,27 @@ export const ToolConfigSchema = z.object({
   relatedAccidents: z.array(z.string()),
 })
 
+export type ToolOption = z.infer<typeof ToolOptionSchema>
 export type ToolConfig = z.infer<typeof ToolConfigSchema>
 export type ToolStep = z.infer<typeof ToolStepSchema>
+
+export type ToolAnswers = Record<string, string | string[] | number>
+
+export interface OutputItem {
+  label: string
+  value?: string
+  priority: 'critical' | 'important' | 'helpful'
+}
+
+export interface CTAConfig {
+  label: string
+  href: string
+}
+
+export interface ToolOutput {
+  summary: string
+  items: OutputItem[]
+  cta: CTAConfig
+  disclaimer: string
+  exportable: boolean
+}
