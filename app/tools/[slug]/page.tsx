@@ -10,6 +10,7 @@ import { SchemaOrg } from '@/components/seo/SchemaOrg'
 import { buildMetaTags } from '@/components/seo/MetaTags'
 import { softwareApplicationSchema, faqSchema } from '@/lib/seo'
 import { ToolEngine } from '@/components/tools/ToolEngine'
+import { InjuryJournal } from '@/components/tools/InjuryJournal'
 
 export async function generateStaticParams() {
   return cms.getAllTools().map(t => ({ slug: t.slug }))
@@ -92,8 +93,12 @@ export default async function ToolDetailPage({
             {/* Main column */}
             <div className="flex flex-col gap-10">
 
-              {/* Tool engine placeholder */}
-              <ToolEngine tool={tool} />
+              {/* Tool engine */}
+              {tool.slug === 'injury-journal' ? (
+                <InjuryJournal tool={tool} />
+              ) : (
+                <ToolEngine tool={tool} />
+              )}
 
               {/* Supporting content */}
               {tool.supportingContent.map((section, index) => (
