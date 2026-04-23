@@ -11,6 +11,7 @@ import {
   monthsAgo,
 } from '@/lib/intake'
 import { DisclaimerBanner } from '@/components/ui/DisclaimerBanner'
+import { STATE_RULES, getRelevantDeadlines } from '@/lib/state-rules'
 
 const URGENCY_CONFIG = {
   high: {
@@ -112,6 +113,86 @@ export default function FindHelpResultsPage() {
             </p>
           )}
         </div>
+
+        {/* State rules card */}
+        {(data.state === 'CA' || data.state === 'AZ') && (() => {
+          const stateRules = STATE_RULES[data.state]
+          const deadlines = getRelevantDeadlines(data.state, data.accidentType ?? '')
+          const stateName = data.state === 'CA' ? 'California' : 'Arizona'
+
+          let solDateStr: string | null = null
+          if (data.accidentDate) {
+            const d = new Date(data.accidentDate)
+            d.setMonth(d.getMonth() + 24)
+            solDateStr = d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
+          }
+
+          return (
+            <div className="bg-surface-card rounded-2xl border border-neutral-100 p-6">
+              {/* Card header */}
+              <div className="flex items-center justify-between mb-5">
+                <div className="flex items-center gap-2 text-amber-600 text-xs font-semibold uppercase tracking-widest font-sans">
+                  <span className="w-4 h-px bg-amber-500 shrink-0" aria-hidden="true" />
+                  State-Specific Information
+                </div>
+                <span className="px-2 py-0.5 rounded bg-amber-50 text-amber-700 font-sans font-bold text-xs border border-amber-200">
+                  {data.state}
+                </span>
+              </div>
+
+              {/* SOL Deadline Block */}
+              {solDateStr && (
+                <div className="mb-5">
+                  <p className="font-sans font-semibold text-neutral-950 text-sm mb-1">
+                    Personal Injury Filing Deadline
+                  </p>
+                  <p className="text-neutral-700 text-sm leading-relaxed">
+                    In {stateName}, the general personal injury deadline is 2 years from your accident date.
+                    Based on what you told us, that&apos;s approximately{' '}
+                    <span className="font-semibold text-neutral-950">{solDateStr}</span>.
+                  </p>
+                  <p className="mt-1.5 text-neutral-400 text-xs leading-relaxed">
+                    Deadlines vary based on your specific circumstances — consult an attorney to confirm yours.
+                  </p>
+                </div>
+              )}
+
+              {/* Reporting Deadlines Block */}
+              {deadlines.length > 0 && (
+                <div className="mb-5">
+                  <p className="font-sans font-semibold text-neutral-950 text-sm mb-3">
+                    Reporting Deadlines to Know
+                  </p>
+                  <ul className="flex flex-col gap-3">
+                    {deadlines.map(d => (
+                      <li key={d.label} className="flex flex-col gap-0.5">
+                        <div className="flex items-center justify-between gap-2">
+                          <span className="font-sans font-semibold text-sm text-neutral-800">{d.label}</span>
+                          <span className="text-xs font-semibold font-sans text-amber-700 whitespace-nowrap">
+                            {d.deadlineDays !== null ? `${d.deadlineDays} days` : 'Per policy terms'}
+                          </span>
+                        </div>
+                        <p className="text-neutral-500 text-xs leading-relaxed">{d.details}</p>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {/* Fault Rule Block */}
+              <div className="pt-4 border-t border-neutral-100">
+                <p className="font-sans font-semibold text-neutral-950 text-sm mb-1">Fault Rule</p>
+                <p className="text-neutral-600 text-sm leading-relaxed">{stateRules.faultRule.summary}</p>
+              </div>
+
+              {/* Footer disclaimer */}
+              <p className="mt-4 text-neutral-400 text-xs leading-relaxed">
+                This is general educational information only, not legal advice. Laws change — verify
+                deadlines with a licensed attorney in {stateName}.
+              </p>
+            </div>
+          )
+        })()}
 
         {/* Lawyer type suggestion */}
         <div className="bg-surface-card rounded-2xl border border-neutral-100 p-6">
