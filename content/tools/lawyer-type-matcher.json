@@ -39,24 +39,25 @@
       ]
     },
     {
-      "id": "employment-status",
-      "question": "Were you injured while working or on the job?",
-      "type": "select",
+      "id": "special-circumstances",
+      "question": "Were there any special circumstances? (Select all that apply)",
+      "type": "multiselect",
       "options": [
-        { "value": "yes-on-job", "label": "Yes — I was working at the time" },
-        { "value": "no-personal-time", "label": "No — I was not on the job" },
-        { "value": "unsure", "label": "Not sure — it's complicated" }
+        { "value": "commercial-vehicle", "label": "Commercial or delivery vehicle was involved" },
+        { "value": "government-property", "label": "Accident occurred on government or public property" },
+        { "value": "workplace", "label": "I was injured while working or on the job" },
+        { "value": "product-defect", "label": "A defective product contributed to the accident" },
+        { "value": "rideshare", "label": "A rideshare vehicle (Uber, Lyft) was involved" },
+        { "value": "none", "label": "None of the above" }
       ]
     },
     {
-      "id": "at-fault",
-      "question": "Was another party clearly at fault for your accident?",
+      "id": "state",
+      "question": "Which state did the accident occur in?",
       "type": "select",
       "options": [
-        { "value": "yes-clear", "label": "Yes — fault is clear" },
-        { "value": "disputed", "label": "Disputed — liability is contested" },
-        { "value": "unclear", "label": "Unclear at this time" },
-        { "value": "shared-fault", "label": "Shared fault — I may have contributed" }
+        { "value": "CA", "label": "California" },
+        { "value": "AZ", "label": "Arizona" }
       ]
     }
   ],

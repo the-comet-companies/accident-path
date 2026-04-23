@@ -793,12 +793,18 @@ const settlementReadiness: OutputGenerator = (answers) => {
 const lawyerTypeMatcher: OutputGenerator = (answers) => {
   const accType = str(answers['accident-type'])
   const injuries = (answers['injuries'] as string[]) ?? []
-  const employmentStatus = str(answers['employment-status'])
-  const atFault = str(answers['at-fault'])
+  const specialCircs = (answers['special-circumstances'] as string[]) ?? []
+  const state = str(answers['state'])
 
-  const isWorkplace = accType === 'workplace-injury' || employmentStatus === 'yes-on-job'
+  const isWorkplace = accType === 'workplace-injury' || specialCircs.includes('workplace')
+  const isProductDefect = specialCircs.includes('product-defect')
+  const isCommercial = specialCircs.includes('commercial-vehicle') || accType === 'truck-accident'
+  const isGovernment = specialCircs.includes('government-property')
+  const isRideshare = specialCircs.includes('rideshare')
   const hasSerious = injuries.includes('head-injury') || injuries.includes('internal-injuries') || injuries.includes('broken-bones')
-  const isDisputed = atFault === 'disputed' || atFault === 'unclear'
+
+  const isCA = state === 'CA'
+  const stateName = isCA ? 'California' : state === 'AZ' ? 'Arizona' : 'your state'
 
   let lawyerType = 'Personal Injury Attorney'
   let typeDescription = 'Personal injury attorneys handle claims arising from accidents caused by another party\'s negligence. Most handle a range of accident types including motor vehicle crashes, slip and falls, and other incidents.'
@@ -806,40 +812,46 @@ const lawyerTypeMatcher: OutputGenerator = (answers) => {
   if (isWorkplace) {
     lawyerType = 'Workers\' Compensation and Personal Injury Attorney'
     typeDescription = 'Workplace accidents may involve both workers\' compensation claims and third-party personal injury claims. An attorney experienced in both areas can evaluate your full range of recovery options.'
+  } else if (isProductDefect) {
+    lawyerType = 'Product Liability Attorney'
+    typeDescription = 'Product liability cases involve defective or unsafe products that caused injury. These cases are technically complex, often requiring engineering experts and litigation against manufacturers. Attorneys who focus on product liability have experience with recalls, design defects, and manufacturing defects.'
+  } else if (isCommercial) {
+    lawyerType = 'Commercial Vehicle / Trucking Accident Attorney'
+    typeDescription = 'Commercial vehicle cases involve federal FMCSA regulations, multiple potentially liable parties (driver, carrier, shipper, owner), and insurers with significant resources. Attorneys with commercial trucking experience navigate these complexities and understand how to preserve electronic logging device (ELD) data and other carrier records.'
   } else if (accType === 'slip-fall') {
     lawyerType = 'Premises Liability Attorney'
     typeDescription = 'Slip and fall and premises liability cases involve property owner duties of care, notice requirements, and specific evidence — such as incident reports, surveillance footage, and maintenance records. Attorneys who focus on premises liability are experienced with these issues.'
   } else if (accType === 'dog-bite') {
     lawyerType = 'Personal Injury / Dog Bite Attorney'
     typeDescription = 'California and Arizona both follow strict liability for dog bites in most circumstances. Personal injury attorneys who handle animal attack cases understand the applicable standards and damage types.'
-  } else if (['car-accident', 'truck-accident', 'motorcycle-crash', 'bicycle-accident', 'pedestrian-accident'].includes(accType)) {
-    lawyerType = accType === 'truck-accident' ? 'Commercial Vehicle / Trucking Accident Attorney' : 'Motor Vehicle Accident Attorney'
-    typeDescription = accType === 'truck-accident'
-      ? 'Truck accident cases involve federal FMCSA regulations, multiple potentially liable parties (driver, carrier, shipper), and insurers with significant resources. Attorneys with commercial trucking experience navigate these complexities.'
+  } else if (['car-accident', 'motorcycle-crash', 'bicycle-accident', 'pedestrian-accident'].includes(accType)) {
+    lawyerType = isRideshare ? 'Motor Vehicle / Rideshare Accident Attorney' : 'Motor Vehicle Accident Attorney'
+    typeDescription = isRideshare
+      ? 'Rideshare accidents (Uber, Lyft) involve unique insurance layering — the rideshare company\'s commercial policy, the driver\'s personal policy, and platform coverage that varies by trip status. Attorneys experienced with rideshare cases understand these coverage layers.'
       : 'Motor vehicle accident attorneys handle claims against at-fault drivers, insurance companies, and other liable parties. They are experienced in accident reconstruction, insurance policy interpretation, and personal injury litigation.'
   }
 
   const items: OutputItem[] = []
 
   items.push({
-    label: `Suggested attorney type: ${lawyerType}`,
+    label: `Attorney type that typically handles cases like this: ${lawyerType}`,
     value: typeDescription,
     priority: 'important',
   })
+
+  if (isGovernment) {
+    items.push({
+      label: 'Government entity involved — shorter deadline applies',
+      value: `Claims against government entities in ${stateName} require a formal notice of claim before filing suit — typically within 180 days in California or 60–180 days in Arizona depending on the entity. Missing this deadline bars the claim entirely. An attorney familiar with government tort claims is essential.`,
+      priority: 'critical',
+    })
+  }
 
   if (hasSerious) {
     items.push({
       label: 'Serious injuries — consider consulting an attorney promptly',
       value: 'Cases involving significant injuries often involve larger insurance limits, multiple liable parties, and expert witnesses. Early legal representation helps preserve evidence and protect your interests.',
       priority: 'critical',
-    })
-  }
-
-  if (isDisputed) {
-    items.push({
-      label: 'Disputed or unclear liability',
-      value: 'When fault is contested, legal representation is particularly valuable. An attorney can gather evidence, consult experts, and counter attempts to assign you an unfair share of fault.',
-      priority: 'important',
     })
   }
 
@@ -851,12 +863,12 @@ const lawyerTypeMatcher: OutputGenerator = (answers) => {
 
   items.push({
     label: 'Questions to ask during a free consultation',
-    value: '"How many cases like mine have you handled?" / "What is your fee arrangement?" / "Who will handle my case day-to-day?" / "What is a realistic timeline?"',
+    value: '"How many cases like mine have you handled?" / "What is your fee arrangement?" / "Who will handle my case day-to-day?" / "What is a realistic timeline for resolution?"',
     priority: 'helpful',
   })
 
   return {
-    summary: `Based on your answers, a ${lawyerType} may be well-suited to handle situations like yours. This is general educational information only — every case is unique, and attorney selection should be based on your specific circumstances and comfort level.`,
+    summary: `Based on your answers, cases like this are typically handled by a ${lawyerType}. This is general information — every situation is unique, and attorney selection should be based on your specific circumstances and comfort level.`,
     items,
     cta: { label: 'Connect with an Attorney', href: '/contact' },
     disclaimer: 'This tool provides general educational information only. It does not constitute a legal referral or recommendation of any specific attorney. Consult with a licensed attorney to evaluate your specific situation.',
