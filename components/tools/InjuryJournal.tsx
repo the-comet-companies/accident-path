@@ -104,8 +104,10 @@ export function InjuryJournal({ tool }: InjuryJournalProps) {
     try {
       const raw = localStorage.getItem(STORAGE_KEY)
       if (raw) {
-        const parsed = JSON.parse(raw) as JournalEntry[]
-        setEntries(parsed)
+        const parsed = JSON.parse(raw)
+        if (Array.isArray(parsed)) {
+          setEntries(parsed as JournalEntry[])
+        }
       }
     } catch {
       // ignore parse errors
@@ -209,13 +211,12 @@ export function InjuryJournal({ tool }: InjuryJournalProps) {
       </div>
 
       {/* View tabs */}
-      <div className="flex gap-2" role="tablist" aria-label="Journal views">
+      <div className="flex gap-2" aria-label="Journal views">
         {(['list', 'calendar', 'add'] as const).map(v => (
           <button
             key={v}
             type="button"
-            role="tab"
-            aria-selected={view === v}
+            aria-current={view === v ? 'true' : undefined}
             onClick={() => {
               if (v === 'add') {
                 handleAddView()
