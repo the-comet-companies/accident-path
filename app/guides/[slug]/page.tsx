@@ -65,6 +65,7 @@ export default async function GuideDetailPage({
               { label: 'Guides', href: '/guides' },
               { label: guide.title },
             ]}
+            variant="dark"
           />
           <div className="mt-4 max-w-2xl">
             <h1 className="font-sans font-bold text-3xl sm:text-4xl lg:text-5xl text-white leading-tight">
