@@ -842,7 +842,7 @@ const lawyerTypeMatcher: OutputGenerator = (answers) => {
   if (isGovernment) {
     items.push({
       label: 'Government entity involved — shorter deadline applies',
-      value: `Claims against government entities in ${stateName} require a formal notice of claim before filing suit — typically within 180 days in California or 60–180 days in Arizona depending on the entity. Missing this deadline bars the claim entirely. An attorney familiar with government tort claims is essential.`,
+      value: `Claims against government entities in ${stateName} require a formal notice of claim before filing suit — typically within 180 days of the incident in California; Arizona deadlines vary by entity type and may be shorter. Missing this deadline bars the claim entirely. An attorney familiar with government tort claims is essential.`,
       priority: 'critical',
     })
   }
