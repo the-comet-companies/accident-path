@@ -60,8 +60,8 @@ export function ToolResults({ output, tool, onReset }: ToolResultsProps) {
         if (!hasCategories) {
           return (
             <div className="flex flex-col gap-3">
-              {output.items.map((item) => (
-                <ItemCard key={item.label} item={item} />
+              {output.items.map((item, i) => (
+                <ItemCard key={`${i}-${item.label}`} item={item} />
               ))}
             </div>
           )
@@ -83,8 +83,8 @@ export function ToolResults({ output, tool, onReset }: ToolResultsProps) {
                   {category}
                 </h3>
                 <div className="flex flex-col gap-2">
-                  {items.map((item) => (
-                    <ItemCard key={item.label} item={item} />
+                  {items.map((item, i) => (
+                    <ItemCard key={`${i}-${item.label}`} item={item} />
                   ))}
                 </div>
               </div>
