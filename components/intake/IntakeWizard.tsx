@@ -65,7 +65,7 @@ export function IntakeWizard() {
     setSubmitting(true)
     const urgencyFactors = computeUrgencyFactors(data)
     try {
-      await fetch('/api/intake', {
+      const response = await fetch('/api/intake', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -73,6 +73,9 @@ export function IntakeWizard() {
           urgencyFactors,
         }),
       })
+      if (!response.ok) {
+        console.error('Intake submission failed:', response.status)
+      }
     } catch {
       // Don't block the user flow on network errors
     }
