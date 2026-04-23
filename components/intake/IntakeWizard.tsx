@@ -3,7 +3,7 @@
 import { useState, useEffect, useCallback } from 'react'
 import { useRouter } from 'next/navigation'
 import type { IntakeForm } from '@/types/intake'
-import { supabase } from '@/lib/supabase'
+import { getSupabase } from '@/lib/supabase'
 import { INTAKE_STORAGE_KEY, computeUrgencyFactors, trackEvent } from '@/lib/intake'
 import { ProgressBar } from '@/components/intake/ProgressBar'
 import { StepAccidentType } from '@/components/intake/steps/StepAccidentType'
@@ -68,7 +68,7 @@ export function IntakeWizard() {
     setSubmitting(true)
     const urgencyFactors = computeUrgencyFactors(data)
     try {
-      await supabase.from('intake_sessions').insert({
+      await getSupabase().from('intake_sessions').insert({
         accident_type: data.accidentType ?? null,
         accident_date: data.accidentDate ?? null,
         city: data.city ?? null,
