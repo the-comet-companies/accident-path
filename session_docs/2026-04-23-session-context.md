@@ -2,7 +2,14 @@
 
 ## Where We Left Off (read this first in a new session)
 
-**Last completed task: DEV-17 — Urgency Checker tool (Red/Yellow/Green tiers)** ✅
+**Last completed task: DEV-18 — Evidence Checklist Generator (category grouping + print CSS)** ✅
+- Output now renders under 6 category headers: Documents, Scene, Witnesses, Digital, Medical, Financial
+- `OutputItem.category?` optional field added to type — backward compatible, all other tools unaffected
+- `ItemCard` extracted as local component in `ToolResults.tsx`; keys use `${i}-${item.label}` for uniqueness
+- `@media print` added to `globals.css` — hides header/footer/nav, forces white background
+- Layout polish deferred to after DEV-19
+
+**Previous task: DEV-17 — Urgency Checker tool (Red/Yellow/Green tiers)** ✅
 - Red flags updated: numbness-tingling + neck-back-pain moved to red; severe-bleeding added to JSON + red flags
 - Output tiers: Red (seek attention immediately) / Yellow (24–48h) / Green (within week / follow provider)
 - `tool_submissions` Supabase table fixed: added missing `output jsonb` column via migration
@@ -12,11 +19,11 @@
 - 5th step `witnesses` added to `content/tools/accident-case-quiz.json`
 - `accidentCaseQuiz` output generator rewritten: case type classification language, hub link CTA, witnesses/hit-and-run items
 
-**Next task: DEV-18** — see MASTER-PLAN.md or task list. Wait for user to authorize.
+**Next task: DEV-19** — Injury Journal + Lawyer Type Matcher. Wait for user to authorize.
 
 **Task reference file:** `scripts/create-master-pipeline-db.py` — all 28 DEV tasks defined here as Python dicts (DEV-01 through DEV-28). Canonical task list.
 
-**Active branch:** `main` — all work on main, no open PRs. Last commit: `6c7ed6b`.
+**Active branch:** `main` — all work on main, no open PRs. Last commit: `17bcd15`.
 
 ---
 
@@ -120,6 +127,7 @@ e9ce85e fix(tools): type-safe helpers and SOL date arithmetic refactor — DEV-1
 | **DEV-15: ToolEngine live (all 11 tools)** | ✓ Complete |
 | **DEV-16: Accident Case Quiz — witnesses step + output fix** | ✓ Complete |
 | **DEV-17: Urgency Checker — Red/Yellow/Green tiers** | ✓ Complete |
+| **DEV-18: Evidence Checklist — category grouping + print CSS** | ✓ Complete |
 
 ---
 
@@ -137,6 +145,7 @@ e9ce85e fix(tools): type-safe helpers and SOL date arithmetic refactor — DEV-1
 - **Supabase lazy init** — `getSupabase()` factory pattern (not module-level) to prevent Next.js prerender crash.
 - **Step animation** — `key={step}` on step container + `animate-step-in` CSS class (`@keyframes step-in` in `globals.css`).
 - **Output item priorities** — `critical` / `important` / `helpful` labels are hardcoded per-item inside each output generator function in `lib/tools/output-generators.ts`. No dynamic scoring. Labels sourced from TOOLS-SPEC.md Tool 3 line; applied globally during DEV-15.
+- **`OutputItem.category?`** — optional `string` field on `OutputItem`. When any item in a tool's output has `category` set, `ToolResults` groups items under bold uppercase category headers (using `Map` for insertion-order preservation). Tools without categories render the existing flat list. Only `evidenceChecklist` uses categories currently.
 - **Priority badge styles** — `critical`: `bg-danger-500 text-white`; `important`: `bg-warning-500 text-white`; `helpful`: `bg-success-50 text-success-700 border-success-500`. Only tokens defined in `globals.css` (`-50`, `-500`, `-700`) — no `-100`/`-200`/`-300` tokens exist.
 - **`tool_submissions` schema** — columns: `id` (uuid), `tool_slug` (text), `answers` (jsonb), `output` (jsonb, added DEV-17), `result_summary` (text, legacy/unused), `created_at` (timestamptz). Insert fires on final step completion; errors swallowed silently so user flow isn't blocked.
 - **ToolEngine output generators** — each tool's logic in `lib/tools/output-generators.ts`. Step IDs must match actual JSON files (see table above) — TOOLS-SPEC.md step IDs differed from the implemented JSON.
