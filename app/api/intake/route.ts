@@ -12,8 +12,9 @@ export async function POST(request: Request) {
 
   const parsed = IntakeFormSchema.safeParse(body)
   if (!parsed.success) {
+    console.error('Intake validation error:', parsed.error.issues)
     return NextResponse.json(
-      { error: 'Invalid submission', details: parsed.error.issues },
+      { error: 'Invalid submission' },
       { status: 400 }
     )
   }
@@ -39,6 +40,7 @@ export async function POST(request: Request) {
     })
 
   if (error) {
+    console.error('Intake insert error:', error.message, { code: error.code })
     return NextResponse.json({ error: 'Submission failed' }, { status: 500 })
   }
 
