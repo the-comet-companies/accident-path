@@ -2,12 +2,19 @@
 
 ## Where We Left Off (read this first in a new session)
 
-**Last completed task: DEV-18 — Evidence Checklist Generator (category grouping + print CSS)** ✅
+**Last completed task: DEV-19 — Injury Journal + Lawyer Type Matcher** ✅
+- Injury Journal: new `InjuryJournal.tsx` component — localStorage (`ap-injury-journal`), list view, calendar view, print, add-entry form (date, pain 1-10, symptoms, treatments, medications, limitations, notes)
+- Lawyer Type Matcher: steps 3-4 replaced — `special-circumstances` (multiselect: commercial vehicle, government property, workplace, product-defect, rideshare, none) + `state` (CA/AZ select)
+- `lawyerTypeMatcher` output generator updated to use new step IDs; government entity flag produces critical item with state-specific deadline note
+- `app/tools/[slug]/page.tsx` conditionally renders `InjuryJournal` for `injury-journal` slug, `ToolEngine` for all others
+- AZ government claim copy softened to "Arizona deadlines vary by entity type and may be shorter" (was imprecise "60-180 days")
+- Layout polish for evidence checklist deferred (was pending since DEV-18)
+
+**Previous task: DEV-18 — Evidence Checklist Generator (category grouping + print CSS)** ✅
 - Output now renders under 6 category headers: Documents, Scene, Witnesses, Digital, Medical, Financial
 - `OutputItem.category?` optional field added to type — backward compatible, all other tools unaffected
 - `ItemCard` extracted as local component in `ToolResults.tsx`; keys use `${i}-${item.label}` for uniqueness
 - `@media print` added to `globals.css` — hides header/footer/nav, forces white background
-- Layout polish deferred to after DEV-19
 
 **Previous task: DEV-17 — Urgency Checker tool (Red/Yellow/Green tiers)** ✅
 - Red flags updated: numbness-tingling + neck-back-pain moved to red; severe-bleeding added to JSON + red flags
@@ -15,15 +22,11 @@
 - `tool_submissions` Supabase table fixed: added missing `output jsonb` column via migration
 - Priority badge visibility fixed: Critical + Important now use solid fill (bg-*-500 text-white)
 
-**Previous task: DEV-16 — Accident Case Quiz output generator** ✅
-- 5th step `witnesses` added to `content/tools/accident-case-quiz.json`
-- `accidentCaseQuiz` output generator rewritten: case type classification language, hub link CTA, witnesses/hit-and-run items
-
-**Next task: DEV-19** — Injury Journal + Lawyer Type Matcher. Wait for user to authorize.
+**Next task: DEV-20** — check `scripts/create-master-pipeline-db.py` for definition. Wait for user to authorize.
 
 **Task reference file:** `scripts/create-master-pipeline-db.py` — all 28 DEV tasks defined here as Python dicts (DEV-01 through DEV-28). Canonical task list.
 
-**Active branch:** `main` — all work on main, no open PRs. Last commit: `17bcd15`.
+**Active branch:** `main` — all work on main, no open PRs. Last commit: `98386aa`.
 
 ---
 
@@ -128,6 +131,7 @@ e9ce85e fix(tools): type-safe helpers and SOL date arithmetic refactor — DEV-1
 | **DEV-16: Accident Case Quiz — witnesses step + output fix** | ✓ Complete |
 | **DEV-17: Urgency Checker — Red/Yellow/Green tiers** | ✓ Complete |
 | **DEV-18: Evidence Checklist — category grouping + print CSS** | ✓ Complete |
+| **DEV-19: Injury Journal + Lawyer Type Matcher** | ✓ Complete |
 
 ---
 
@@ -149,6 +153,8 @@ e9ce85e fix(tools): type-safe helpers and SOL date arithmetic refactor — DEV-1
 - **Priority badge styles** — `critical`: `bg-danger-500 text-white`; `important`: `bg-warning-500 text-white`; `helpful`: `bg-success-50 text-success-700 border-success-500`. Only tokens defined in `globals.css` (`-50`, `-500`, `-700`) — no `-100`/`-200`/`-300` tokens exist.
 - **`tool_submissions` schema** — columns: `id` (uuid), `tool_slug` (text), `answers` (jsonb), `output` (jsonb, added DEV-17), `result_summary` (text, legacy/unused), `created_at` (timestamptz). Insert fires on final step completion; errors swallowed silently so user flow isn't blocked.
 - **ToolEngine output generators** — each tool's logic in `lib/tools/output-generators.ts`. Step IDs must match actual JSON files (see table above) — TOOLS-SPEC.md step IDs differed from the implemented JSON.
+- **InjuryJournal component** — `components/tools/InjuryJournal.tsx` is a `'use client'` persistent journal (NOT ToolEngine). `app/tools/[slug]/page.tsx` uses `tool.slug === 'injury-journal'` to conditionally render it. localStorage key: `ap-injury-journal`. Data shape: `JournalEntry { id, date, painLevel, symptoms[], treatments[], medications, limitations, notes }`.
+- **Lawyer Type Matcher steps** — step 3 id: `special-circumstances` (multiselect), step 4 id: `state` (select CA/AZ). Output generator uses these IDs. Previous steps (`employment-status`, `at-fault`) are gone.
 
 ---
 
