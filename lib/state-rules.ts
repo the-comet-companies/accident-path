@@ -14,9 +14,9 @@ export const STATE_RULES: Record<'CA' | 'AZ', StateRules> = {
         'California uses pure comparative fault — you may recover damages even if you were partly at fault, with your award reduced in proportion to your share of responsibility.',
     },
     insuranceMinimums: {
-      perPerson: '$15,000',
-      perAccident: '$30,000',
-      propertyDamage: '$5,000',
+      perPerson: '$30,000',
+      perAccident: '$60,000',
+      propertyDamage: '$15,000',
     },
     reportingDeadlines: [
       {

@@ -122,7 +122,8 @@ export default function FindHelpResultsPage() {
 
           let solDateStr: string | null = null
           if (data.accidentDate) {
-            const d = new Date(data.accidentDate)
+            const [y, m, day] = data.accidentDate.split('-').map(Number)
+            const d = new Date(y, m - 1, day)
             d.setFullYear(d.getFullYear() + stateRules.sol.personalInjury / 12)
             solDateStr = d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
           }
@@ -147,7 +148,7 @@ export default function FindHelpResultsPage() {
                     Personal Injury Filing Deadline
                   </p>
                   <p className="text-neutral-700 text-sm leading-relaxed">
-                    In {stateName}, the general personal injury deadline is 2 years from your accident date.
+                    In {stateName}, the general personal injury deadline is {stateRules.sol.personalInjury / 12} years from your accident date.
                     Based on what you told us, that&apos;s approximately{' '}
                     <span className="font-semibold text-neutral-950">{solDateStr}</span>.
                   </p>

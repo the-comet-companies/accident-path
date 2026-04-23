@@ -78,6 +78,8 @@ export function IntakeWizard() {
       }
     } catch {
       // Don't block the user flow on network errors
+    } finally {
+      setSubmitting(false)
     }
     trackEvent('intake_submitted', {
       accident_type: data.accidentType ?? '',

@@ -12,7 +12,7 @@ export interface StateRules {
     wrongfulDeath: number
   }
   faultRule: {
-    type: 'pure_comparative'
+    type: 'pure_comparative' | 'modified_comparative' | 'contributory' | 'no_fault'
     summary: string
   }
   insuranceMinimums: {
