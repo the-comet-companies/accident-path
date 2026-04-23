@@ -92,6 +92,7 @@ export default async function CityDetailPage({
               { label: stateData.name, href: `/states/${state}` },
               { label: cityData.name },
             ]}
+            variant="dark"
           />
           <div className="mt-4 lg:flex lg:items-start lg:justify-between lg:gap-12">
             <div className="max-w-2xl">

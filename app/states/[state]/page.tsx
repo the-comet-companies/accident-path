@@ -85,6 +85,7 @@ export default async function StateDetailPage({
               { label: 'State Guides', href: '/states' },
               { label: stateData.name },
             ]}
+            variant="dark"
           />
           <div className="mt-4 lg:flex lg:items-start lg:justify-between lg:gap-12">
             <div className="max-w-2xl">
