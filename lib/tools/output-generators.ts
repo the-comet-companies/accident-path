@@ -47,16 +47,51 @@ const accidentCaseQuiz: OutputGenerator = (answers) => {
   const accType = str(answers['accident-type'])
   const injuries = (answers['injuries'] as string[]) ?? []
   const when = str(answers['timeline'])
+  const witnesses = str(answers['witnesses'])
+
   const hasVisibleInjuries = !injuries.includes('no-visible-injuries') && injuries.length > 0
-  const accLabel = accidentLabel(accType)
   const urgent = timelineUrgent(when)
+  const hasWitnesses = witnesses === 'yes-multiple' || witnesses === 'yes-one'
+
+  // Case type classification
+  const CASE_TYPE_MAP: Record<string, string> = {
+    'car-accident': 'motor vehicle accident case',
+    'truck-accident': 'motor vehicle accident case',
+    'motorcycle-crash': 'motor vehicle accident case',
+    'bicycle-accident': 'motor vehicle accident case',
+    'pedestrian-accident': 'motor vehicle accident case',
+    'slip-fall': 'premises liability case',
+    'dog-bite': 'dog bite case',
+    'workplace-injury': 'workplace injury or workers\' compensation case',
+  }
+  const HUB_LINK_MAP: Record<string, string> = {
+    'car-accident': '/accidents/car',
+    'truck-accident': '/accidents/truck',
+    'motorcycle-crash': '/accidents/motorcycle',
+    'bicycle-accident': '/accidents/bicycle',
+    'pedestrian-accident': '/accidents/pedestrian',
+    'slip-fall': '/accidents/slip-and-fall',
+    'dog-bite': '/accidents/dog-bite',
+    'workplace-injury': '/accidents/workplace',
+  }
+
+  const caseType = CASE_TYPE_MAP[accType] ?? 'personal injury case'
+  const hubLink = HUB_LINK_MAP[accType] ?? '/accidents'
 
   const items: OutputItem[] = []
 
+  // Hub link item (always first)
+  items.push({
+    label: `Learn more: ${caseType.replace(/\b\w/g, c => c.toUpperCase())}`,
+    value: `Review our detailed guide on ${caseType} cases — what to expect, key timelines, and what evidence matters most.`,
+    priority: 'helpful',
+  })
+
+  // Urgency-based attorney item
   if (urgent) {
     items.push({
       label: 'Consult a personal injury attorney soon',
-      value: `With a recent ${accLabel}, documenting your claim early is important. Evidence and witness memories fade quickly.`,
+      value: `With a recent ${accidentLabel(accType)}, documenting your claim early is important. Evidence and witness memories fade quickly.`,
       priority: 'critical',
     })
   } else {
@@ -67,6 +102,7 @@ const accidentCaseQuiz: OutputGenerator = (answers) => {
     })
   }
 
+  // Medical documentation
   if (hasVisibleInjuries) {
     items.push({
       label: 'Continue documenting medical treatment',
@@ -75,12 +111,22 @@ const accidentCaseQuiz: OutputGenerator = (answers) => {
     })
   }
 
-  items.push({
-    label: 'Gather evidence',
-    value: 'Photos of the scene and injuries, police report, witness contact info, and insurance documentation are all valuable.',
-    priority: 'important',
-  })
+  // Witnesses item
+  if (hasWitnesses) {
+    items.push({
+      label: 'Secure witness contact information',
+      value: 'You indicated there were witnesses. Collecting their names and contact details now — while their memories are fresh — can significantly strengthen your claim.',
+      priority: 'important',
+    })
+  } else if (witnesses === 'no') {
+    items.push({
+      label: 'No witnesses — focus on other evidence',
+      value: 'Without witnesses, physical evidence becomes especially important: photos of the scene, the police report, medical records, and any available camera footage.',
+      priority: 'important',
+    })
+  }
 
+  // General evidence
   items.push({
     label: 'Avoid giving recorded statements to insurance companies',
     value: 'Insurance adjusters may use recorded statements to minimize a claim. Consider consulting an attorney before providing a formal statement.',
@@ -93,10 +139,12 @@ const accidentCaseQuiz: OutputGenerator = (answers) => {
     priority: 'helpful',
   })
 
+  const caseTypeCapitalized = caseType.charAt(0).toUpperCase() + caseType.slice(1)
+
   return {
-    summary: `Based on your answers, your situation involves a ${accLabel}${hasVisibleInjuries ? ' with physical injuries' : ''}. Cases like this are typically handled by personal injury attorneys. This is general educational information only — your specific situation may differ.`,
+    summary: `Based on what you described, cases like this are typically classified as a ${caseType}. ${caseTypeCapitalized} claims involve specific rules, timelines, and considerations. This is general educational information only — your specific situation may differ, and this is not legal advice.`,
     items,
-    cta: { label: 'Connect with an Attorney', href: '/contact' },
+    cta: { label: `Learn About ${caseTypeCapitalized} Cases`, href: hubLink },
     disclaimer: 'This quiz provides general educational information only. It is not legal advice and does not evaluate the merits of any potential claim.',
     exportable: true,
   }

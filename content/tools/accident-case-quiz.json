@@ -68,6 +68,17 @@
         { "value": "6-12-months", "label": "6–12 months ago" },
         { "value": "over-1-year", "label": "More than 1 year ago" }
       ]
+    },
+    {
+      "id": "witnesses",
+      "question": "Were there any witnesses to the accident?",
+      "type": "select",
+      "options": [
+        { "value": "yes-multiple", "label": "Yes — multiple witnesses" },
+        { "value": "yes-one", "label": "Yes — one witness" },
+        { "value": "no", "label": "No witnesses" },
+        { "value": "unsure", "label": "Unsure" }
+      ]
     }
   ],
   "supportingContent": [
