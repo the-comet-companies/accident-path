@@ -9,6 +9,8 @@
 - `app/tools/[slug]/page.tsx` conditionally renders `InjuryJournal` for `injury-journal` slug, `ToolEngine` for all others
 - AZ government claim copy softened to "Arizona deadlines vary by entity type and may be shorter" (was imprecise "60-180 days")
 - Layout polish for evidence checklist deferred (was pending since DEV-18)
+- **Post-DEV-19 fix:** Print was showing 4 pages — added `print-hide` CSS class to `globals.css`; applied to hero, tab bar, print button, supporting content/FAQ/related/CTA block, sidebar (`aside`). Journal entries now print alone.
+- **Post-DEV-19 fix:** Only one entry could expand at a time — changed `expandedId: string | null` to `expandedIds: Set<string>` so multiple entries can be open simultaneously.
 
 **Previous task: DEV-18 — Evidence Checklist Generator (category grouping + print CSS)** ✅
 - Output now renders under 6 category headers: Documents, Scene, Witnesses, Digital, Medical, Financial
@@ -26,7 +28,7 @@
 
 **Task reference file:** `scripts/create-master-pipeline-db.py` — all 28 DEV tasks defined here as Python dicts (DEV-01 through DEV-28). Canonical task list.
 
-**Active branch:** `main` — all work on main, no open PRs. Last commit: `98386aa`.
+**Active branch:** `main` — all work on main, no open PRs. Last commit: `e611656`.
 
 ---
 
