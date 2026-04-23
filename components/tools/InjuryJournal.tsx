@@ -83,7 +83,7 @@ const MONTH_NAMES = [
 export function InjuryJournal({ tool }: InjuryJournalProps) {
   const [entries, setEntries] = useState<JournalEntry[]>([])
   const [view, setView] = useState<'list' | 'add' | 'calendar'>('list')
-  const [expandedId, setExpandedId] = useState<string | null>(null)
+  const [expandedIds, setExpandedIds] = useState<Set<string>>(new Set())
   const today = new Date()
   const [calendarMonth, setCalendarMonth] = useState({
     year: today.getFullYear(),
@@ -154,7 +154,7 @@ export function InjuryJournal({ tool }: InjuryJournalProps) {
     saveEntries(newEntries)
     resetForm()
     setView('list')
-    setExpandedId(entry.id)
+    setExpandedIds(new Set([entry.id]))
   }
 
   function toggleSymptom(value: string) {
@@ -175,7 +175,7 @@ export function InjuryJournal({ tool }: InjuryJournalProps) {
     if (hasEntry) {
       const entry = entries.find(e => e.date === dateStr)
       setView('list')
-      setExpandedId(entry?.id ?? null)
+      if (entry) setExpandedIds(new Set([entry.id]))
     } else {
       handleAddView(dateStr)
     }
@@ -274,10 +274,14 @@ export function InjuryJournal({ tool }: InjuryJournalProps) {
                   <button
                     type="button"
                     onClick={() =>
-                      setExpandedId(expandedId === entry.id ? null : entry.id)
+                      setExpandedIds(prev => {
+                        const next = new Set(prev)
+                        next.has(entry.id) ? next.delete(entry.id) : next.add(entry.id)
+                        return next
+                      })
                     }
                     className="w-full flex items-center justify-between gap-3 px-5 py-4 text-left hover:bg-neutral-50 transition-colors"
-                    aria-expanded={expandedId === entry.id}
+                    aria-expanded={expandedIds.has(entry.id)}
                   >
                     <div className="flex items-center gap-3 min-w-0">
                       <span className="font-sans font-semibold text-sm text-neutral-950 shrink-0">
@@ -289,14 +293,14 @@ export function InjuryJournal({ tool }: InjuryJournalProps) {
                         Pain: {entry.painLevel}/10
                       </span>
                     </div>
-                    {expandedId === entry.id ? (
+                    {expandedIds.has(entry.id) ? (
                       <ChevronUp className="w-4 h-4 text-neutral-400 shrink-0" aria-hidden="true" />
                     ) : (
                       <ChevronDown className="w-4 h-4 text-neutral-400 shrink-0" aria-hidden="true" />
                     )}
                   </button>
 
-                  {expandedId === entry.id && (
+                  {expandedIds.has(entry.id) && (
                     <div className="px-5 pb-5 flex flex-col gap-3 border-t border-neutral-100">
                       {entry.symptoms.length > 0 && (
                         <div>
