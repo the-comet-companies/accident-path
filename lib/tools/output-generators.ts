@@ -48,6 +48,8 @@ const accidentCaseQuiz: OutputGenerator = (answers) => {
   const injuries = (answers['injuries'] as string[]) ?? []
   const when = str(answers['timeline'])
   const witnesses = str(answers['witnesses'])
+  const whatHappened = (answers['what-happened'] as string[]) ?? []
+  const isHitRun = whatHappened.includes('hit-run')
 
   const hasVisibleInjuries = !injuries.includes('no-visible-injuries') && injuries.length > 0
   const urgent = timelineUrgent(when)
@@ -99,6 +101,14 @@ const accidentCaseQuiz: OutputGenerator = (answers) => {
       label: 'Consult a personal injury attorney',
       value: 'Your situation may benefit from legal guidance. Most personal injury attorneys offer free initial consultations.',
       priority: 'important',
+    })
+  }
+
+  if (isHitRun) {
+    items.push({
+      label: 'Hit and run — file a police report immediately',
+      value: 'If you have not already done so, file a police report for the hit-and-run. This is critical for uninsured motorist (UM) insurance claims, which often require a police report as a condition of coverage.',
+      priority: 'critical',
     })
   }
 
