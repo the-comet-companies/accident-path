@@ -2,63 +2,92 @@
 
 ## Where We Left Off (read this first in a new session)
 
-**Last completed task: DEV-14 — State Rules Engine (CA+AZ) + Server Actions** ✅
-- State rules card live on `/find-help/results` — shows SOL deadline, reporting deadlines, fault rule
-- Intake submissions now go through `/api/intake` route handler (server-side Zod validation + Supabase insert)
-- Confirmed working in production: Supabase row created, state card renders correctly for AZ motorcycle crash test
+**Last completed task: DEV-17 — Urgency Checker tool (Red/Yellow/Green tiers)** ✅
+- Red flags updated: numbness-tingling + neck-back-pain moved to red; severe-bleeding added to JSON + red flags
+- Output tiers: Red (seek attention immediately) / Yellow (24–48h) / Green (within week / follow provider)
+- `tool_submissions` Supabase table fixed: added missing `output jsonb` column via migration
+- Priority badge visibility fixed: Critical + Important now use solid fill (bg-*-500 text-white)
 
-**Next task: DEV-15 — ToolEngine live (step inputs, results, Supabase `tool_submissions`)**
-- ~8h, all 11 tool slugs currently show a "Launching soon" placeholder via `components/tools/ToolEngine.tsx`
-- Depends on DEV-12 (Tools CMS ✅) + DEV-14 (Supabase patterns ✅)
+**Previous task: DEV-16 — Accident Case Quiz output generator** ✅
+- 5th step `witnesses` added to `content/tools/accident-case-quiz.json`
+- `accidentCaseQuiz` output generator rewritten: case type classification language, hub link CTA, witnesses/hit-and-run items
+
+**Next task: DEV-18** — see MASTER-PLAN.md or task list. Wait for user to authorize.
 
 **Task reference file:** `scripts/create-master-pipeline-db.py` — all 28 DEV tasks defined here as Python dicts (DEV-01 through DEV-28). Canonical task list.
 
-**Active branch:** `main` — all work on main, no open PRs. Last commit: `88544d5`.
+**Active branch:** `main` — all work on main, no open PRs. Last commit: `6c7ed6b`.
 
 ---
 
-## DEV-14 Completed Today (April 23, 2026)
+## DEV-15 Completed Today (April 23, 2026)
 
 ### Files Changed
 
 | File | Action | What It Does |
 |------|--------|-------------|
-| `types/state-rules.ts` | New | `ReportingDeadline` + `StateRules` interfaces. `faultRule.type` is a union (`pure_comparative \| modified_comparative \| contributory \| no_fault`) to support future states. |
-| `lib/state-rules.ts` | New | `STATE_RULES: Record<'CA' \| 'AZ', StateRules>` + `getRelevantDeadlines(state, accidentType)` — filters by empty accidentTypes (all) or exact match, capped at 3 |
-| `app/api/intake/route.ts` | New | POST-only route handler. Parses JSON → Zod validates via `IntakeFormSchema` → inserts to `intake_sessions`. Returns generic 400/500 (no schema details exposed). |
-| `components/intake/IntakeWizard.tsx` | Edit | Swapped direct Supabase call → `fetch('/api/intake')`. Added `response.ok` check + `finally { setSubmitting(false) }`. No more Supabase import client-side. |
-| `app/find-help/results/page.tsx` | Edit | State rules card between urgency banner and lawyer type card. Guards on CA/AZ only. |
+| `types/tool.ts` | Edit | Added `ToolOption`, `ToolAnswers`, `OutputItem`, `CTAConfig`, `ToolOutput` types; added `options?: ToolOption[]` to `ToolStepSchema` |
+| `components/tools/ToolProgressBar.tsx` | New | Light-mode progress bar (neutral-200 track, primary-600 fill, ARIA compliant) |
+| `components/tools/ToolStep.tsx` | New | Renders one step by type: select (tappable radio cards), multiselect/checklist (checkbox cards), number, text, date |
+| `components/tools/ToolResults.tsx` | New | Priority-badged output items (critical/important/helpful), CTA link, window.print() export, Start Over |
+| `components/tools/ToolEngine.tsx` | Rewrite | Full interactive wizard: disclaimer before → progress bar → steps → results → disclaimer after; saves to Supabase `tool_submissions` on completion |
+| `lib/tools/output-generators.ts` | New | `outputGenerators` registry with 11 functions, one per tool slug |
+| `content/tools/*.json` (all 11) | Edit | Added `options` arrays to all select/multiselect/checklist steps |
+| `app/globals.css` | Edit | Added missing `danger-700` and `warning-700` Tailwind tokens |
 
-### CA Rules
-- SOL: personalInjury 24mo, propertyDamage 36mo, wrongfulDeath 24mo
-- Fault: pure comparative (Li v. Yellow Cab Co., 1975)
-- Insurance minimums: **$30,000 / $60,000 / $15,000** (SB 1107, effective Jan 1 2025)
-- Reporting deadlines: SR-1 (10d, vehicle accidents), Gov Entity (180d, all), Workers' Comp (30d notice), UM/UIM (null)
+### Architecture Decisions
 
-### AZ Rules
-- SOL: all 24mo
-- Fault: pure comparative (no threshold bar)
-- Insurance minimums: $25,000 / $50,000 / $15,000
-- Reporting deadlines: Gov Entity (180d, all), Workers' Comp (365d), UM/UIM (null)
+- `ToolEngine` imports `outputGenerators` registry internally — no prop threading from server page
+- If a tool has no registered generator (future tool), shows "coming soon" fallback gracefully
+- `canAdvance()` enforces each step must be answered before proceeding
+- Supabase `tool_submissions` insert on final step — errors silently swallowed so user flow isn't blocked
+- `window.print()` guarded with `typeof window !== 'undefined'` check
 
-### Key Implementation Details
-- `accidentDate` from `<input type="date">` produces `YYYY-MM-DD` — parsed as **local time** (`new Date(y, m-1, d)`) to avoid off-by-one-day UTC bug
-- SOL deadline prose and date calculation both derived from `stateRules.sol.personalInjury / 12` (not hardcoded)
-- `getRelevantDeadlines` filter: `accidentTypes.length === 0 || accidentTypes.includes(accidentType)`
-- Zod version is **4.3.6** — uses `.issues` not `.errors` on `ZodError`
-- Supabase singleton (`getSupabase()`) uses `NEXT_PUBLIC_*` anon key + RLS — intentional per spec
+### Step ID Corrections (actual JSON vs. spec)
 
-### Results Page — State Card Structure
-1. Amber eyebrow "State-Specific Information" + state abbreviation badge
-2. SOL deadline block (only if `accidentDate` present) — date + disclaimer
-3. Reporting deadlines list — label, days badge or "Per policy terms", details text
-4. Fault rule one-liner
-5. Footer disclaimer: "general educational information only, not legal advice"
+The JSON files had different step IDs than the TOOLS-SPEC.md spec. Actual IDs (what the output generators use):
 
-### User Flow
-- Wizard → `/find-help/thank-you` → "View My Results →" → `/find-help/results`
-- Results page reads from `localStorage` — persists across sessions until user clicks "Start Over"
-- "Start Over" links back to `/find-help`
+| Tool | Actual step IDs |
+|------|----------------|
+| insurance-call-prep | `caller-type`, `call-purpose`, `info-available` |
+| settlement-readiness | `medical-status`, `records-gathered` (checklist), `wages-documented`, `attorney-consulted` |
+| lawyer-type-matcher | `accident-type`, `injuries` (checklist), `employment-status`, `at-fault` |
+| statute-countdown | `accident-date` (date), `accident-type`, `state` |
+| state-next-steps | `state`, `accident-type`, `accident-date` (date) |
+
+### Key Technical Details
+
+- `ToolStep.tsx`: `select` div has no `role="radiogroup"` (ARIA violation if children are `button+aria-pressed`) — removed per code review
+- `ToolProgressBar.tsx`: `aria-valuemin={0}` (not 1), `w-full` on root div
+- `ToolResults.tsx`: items keyed by `item.label`, `window.print()` guarded, disclaimer at `text-neutral-500` for WCAG AA contrast
+- `output-generators.ts`: `str()` helper for safe scalar answer reads, `computeSolDeadline()` shared between `stateNextSteps` and `statuteCountdown`; government claim deadline uses timestamp arithmetic (no day-overflow bug)
+
+### DEV-15 Git Commits (in order)
+
+```
+22d5034 feat(tools): extend ToolStep with options + add ToolOutput types — DEV-15
+8cd1244 feat(tools): add ToolProgressBar and ToolStep sub-components — DEV-15
+e124c09 feat(tools): add ToolResults component — DEV-15
+a9e8da0 feat(tools): rewrite ToolEngine as live interactive wizard — DEV-15
+c67b82f fix(tools): ARIA violations and quality fixes — DEV-15
+d0ffdbe feat(tools): add step options to all 11 tool JSON files — DEV-15
+32281b1 feat(tools): implement output generators for all 11 tools — DEV-15
+e9ce85e fix(tools): type-safe helpers and SOL date arithmetic refactor — DEV-15
+```
+
+---
+
+## DEV-14 Summary (April 23, 2026)
+
+### Files Changed
+
+| File | Action | What It Does |
+|------|--------|-------------|
+| `types/state-rules.ts` | New | `ReportingDeadline` + `StateRules` interfaces |
+| `lib/state-rules.ts` | New | `STATE_RULES: Record<'CA' \| 'AZ', StateRules>` + `getRelevantDeadlines()` |
+| `app/api/intake/route.ts` | New | POST-only route handler: Zod validates → inserts to `intake_sessions` |
+| `components/intake/IntakeWizard.tsx` | Edit | Submits via `/api/intake` (no client-side Supabase import) |
+| `app/find-help/results/page.tsx` | Edit | State rules card between urgency banner and lawyer type card |
 
 ---
 
@@ -82,13 +111,15 @@
 | `/guides/[slug]` (13 pages) | ✓ |
 | `/states` + `/states/[state]` (CA + AZ) | ✓ |
 | `/states/[state]/[city]` (LA, San Diego, Phoenix, Tucson) | ✓ |
-| `/tools` hub + `/tools/[slug]` (11 pages, ToolEngine placeholder) | ✓ |
+| `/tools` hub + `/tools/[slug]` (11 pages, ToolEngine live) | ✓ |
 | `/about`, `/about/how-it-works`, `/privacy`, `/terms`, `/disclaimers`, `/for-attorneys`, `/contact` | ✓ |
 | `/find-help` (9-step IntakeWizard, localStorage + Supabase via API route) | ✓ |
 | `/find-help/results` (urgency + state rules card + lawyer type + resources) | ✓ |
 | `/find-help/thank-you` | ✓ |
 | **DEV-14: State rules engine** | ✓ Complete |
-| **DEV-15: ToolEngine live** | ✗ Not started |
+| **DEV-15: ToolEngine live (all 11 tools)** | ✓ Complete |
+| **DEV-16: Accident Case Quiz — witnesses step + output fix** | ✓ Complete |
+| **DEV-17: Urgency Checker — Red/Yellow/Green tiers** | ✓ Complete |
 
 ---
 
@@ -105,6 +136,10 @@
 - **Attorney review pending** on all state and content JSON files before go-live.
 - **Supabase lazy init** — `getSupabase()` factory pattern (not module-level) to prevent Next.js prerender crash.
 - **Step animation** — `key={step}` on step container + `animate-step-in` CSS class (`@keyframes step-in` in `globals.css`).
+- **Output item priorities** — `critical` / `important` / `helpful` labels are hardcoded per-item inside each output generator function in `lib/tools/output-generators.ts`. No dynamic scoring. Labels sourced from TOOLS-SPEC.md Tool 3 line; applied globally during DEV-15.
+- **Priority badge styles** — `critical`: `bg-danger-500 text-white`; `important`: `bg-warning-500 text-white`; `helpful`: `bg-success-50 text-success-700 border-success-500`. Only tokens defined in `globals.css` (`-50`, `-500`, `-700`) — no `-100`/`-200`/`-300` tokens exist.
+- **`tool_submissions` schema** — columns: `id` (uuid), `tool_slug` (text), `answers` (jsonb), `output` (jsonb, added DEV-17), `result_summary` (text, legacy/unused), `created_at` (timestamptz). Insert fires on final step completion; errors swallowed silently so user flow isn't blocked.
+- **ToolEngine output generators** — each tool's logic in `lib/tools/output-generators.ts`. Step IDs must match actual JSON files (see table above) — TOOLS-SPEC.md step IDs differed from the implemented JSON.
 
 ---
 
@@ -119,12 +154,12 @@
 
 | Task | Est. Hours | Status |
 |------|-----------|--------|
-| **DEV-15:** ToolEngine live (step inputs, results, Supabase `tool_submissions`) | 8 | Not started |
 | More city pages (12 additional CA/AZ cities) | 3 | Not started |
 | Attorney review of all content before go-live | — | Pending |
+| Check MASTER-PLAN.md for remaining DEV tasks | — | — |
 
 ---
 
 ## Active Branch
 
-`main` — all work pushed to `origin/main`. No open PRs. Last commit: `88544d5`.
+`main` — all work pushed to `origin/main`. No open PRs. Last commit: `e9ce85e`.
