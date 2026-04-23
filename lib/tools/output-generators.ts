@@ -20,6 +20,23 @@ function accidentLabel(v: string | undefined): string {
   return ACCIDENT_LABELS[v ?? ''] ?? 'accident'
 }
 
+function str(v: ToolAnswers[string] | undefined): string {
+  return typeof v === 'string' ? v : ''
+}
+
+function computeSolDeadline(
+  accidentDate: string,
+  solYears: number
+): { deadline: Date; daysRemaining: number; deadlineStr: string } {
+  const [y, m, d] = accidentDate.split('-').map(Number)
+  const deadline = new Date(y + solYears, m - 1, d)
+  const today = new Date()
+  today.setHours(0, 0, 0, 0)
+  const daysRemaining = Math.floor((deadline.getTime() - today.getTime()) / (1000 * 60 * 60 * 24))
+  const deadlineStr = deadline.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
+  return { deadline, daysRemaining, deadlineStr }
+}
+
 function timelineUrgent(when: string | undefined): boolean {
   return when === 'today' || when === '1-7-days' || when === '1-4-weeks'
 }
@@ -27,9 +44,9 @@ function timelineUrgent(when: string | undefined): boolean {
 // ─── Tool 1: accident-case-quiz ───────────────────────────────────────────────
 
 const accidentCaseQuiz: OutputGenerator = (answers) => {
-  const accType = answers['accident-type'] as string
+  const accType = str(answers['accident-type'])
   const injuries = (answers['injuries'] as string[]) ?? []
-  const when = answers['timeline'] as string
+  const when = str(answers['timeline'])
   const hasVisibleInjuries = !injuries.includes('no-visible-injuries') && injuries.length > 0
   const accLabel = accidentLabel(accType)
   const urgent = timelineUrgent(when)
@@ -89,8 +106,8 @@ const accidentCaseQuiz: OutputGenerator = (answers) => {
 
 const urgencyChecker: OutputGenerator = (answers) => {
   const symptoms = (answers['symptoms'] as string[]) ?? []
-  const seenDoctor = answers['seen-doctor'] as string
-  const when = answers['when'] as string
+  const seenDoctor = str(answers['seen-doctor'])
+  const when = str(answers['when'])
 
   const redFlags = ['loss-of-consciousness', 'chest-pain', 'abdominal-pain', 'confusion']
   const yellowFlags = ['severe-headache', 'numbness-tingling', 'blurred-vision', 'nausea']
@@ -165,11 +182,11 @@ const urgencyChecker: OutputGenerator = (answers) => {
 // ─── Tool 3: evidence-checklist ───────────────────────────────────────────────
 
 const evidenceChecklist: OutputGenerator = (answers) => {
-  const accType = answers['accident-type'] as string
-  const location = answers['location-type'] as string
-  const witnesses = answers['witnesses'] as string
-  const policeReport = answers['police-report'] as string
-  const photos = answers['photos'] as string
+  const accType = str(answers['accident-type'])
+  const location = str(answers['location-type'])
+  const witnesses = str(answers['witnesses'])
+  const policeReport = str(answers['police-report'])
+  const photos = str(answers['photos'])
 
   const items: OutputItem[] = []
 
@@ -328,11 +345,11 @@ const injuryJournal: OutputGenerator = (answers) => {
 // ─── Tool 5: lost-wages-estimator ─────────────────────────────────────────────
 
 const lostWagesEstimator: OutputGenerator = (answers) => {
-  const empType = answers['employment-type'] as string
+  const empType = str(answers['employment-type'])
   const income = typeof answers['income'] === 'number' ? answers['income'] : 0
   const daysMissed = typeof answers['days-missed'] === 'number' ? answers['days-missed'] : 0
-  const reducedHours = answers['reduced-hours'] as string
-  const ongoing = answers['ongoing'] as string
+  const reducedHours = str(answers['reduced-hours'])
+  const ongoing = str(answers['ongoing'])
 
   const isNotEmployed = empType === 'not-employed'
   const isSalaried = empType === 'full-time'
@@ -414,8 +431,8 @@ const lostWagesEstimator: OutputGenerator = (answers) => {
 // ─── Tool 6: insurance-call-prep ──────────────────────────────────────────────
 
 const insuranceCallPrep: OutputGenerator = (answers) => {
-  const callerType = answers['caller-type'] as string
-  const callPurpose = answers['call-purpose'] as string
+  const callerType = str(answers['caller-type'])
+  const callPurpose = str(answers['call-purpose'])
   const infoAvailable = (answers['info-available'] as string[]) ?? []
 
   const callerLabels: Record<string, string> = {
@@ -488,7 +505,7 @@ const insuranceCallPrep: OutputGenerator = (answers) => {
 // ─── Tool 7: record-request ───────────────────────────────────────────────────
 
 const recordRequest: OutputGenerator = (answers) => {
-  const accType = answers['accident-type'] as string
+  const accType = str(answers['accident-type'])
   const recordsNeeded = (answers['records-needed'] as string[]) ?? []
 
   const recordDetails: Record<string, { who: string; timeline: string }> = {
@@ -537,10 +554,10 @@ const recordRequest: OutputGenerator = (answers) => {
 // ─── Tool 8: settlement-readiness ────────────────────────────────────────────
 
 const settlementReadiness: OutputGenerator = (answers) => {
-  const medicalStatus = answers['medical-status'] as string
+  const medicalStatus = str(answers['medical-status'])
   const recordsGathered = (answers['records-gathered'] as string[]) ?? []
-  const wagesDocumented = answers['wages-documented'] as string
-  const attorneyConsulted = answers['attorney-consulted'] as string
+  const wagesDocumented = str(answers['wages-documented'])
+  const attorneyConsulted = str(answers['attorney-consulted'])
 
   const medicalReady = medicalStatus === 'yes-complete' || medicalStatus === 'yes-mmi'
   const hasNoneYet = recordsGathered.includes('none-yet')
@@ -616,10 +633,10 @@ const settlementReadiness: OutputGenerator = (answers) => {
 // ─── Tool 9: lawyer-type-matcher ─────────────────────────────────────────────
 
 const lawyerTypeMatcher: OutputGenerator = (answers) => {
-  const accType = answers['accident-type'] as string
+  const accType = str(answers['accident-type'])
   const injuries = (answers['injuries'] as string[]) ?? []
-  const employmentStatus = answers['employment-status'] as string
-  const atFault = answers['at-fault'] as string
+  const employmentStatus = str(answers['employment-status'])
+  const atFault = str(answers['at-fault'])
 
   const isWorkplace = accType === 'workplace-injury' || employmentStatus === 'yes-on-job'
   const hasSerious = injuries.includes('head-injury') || injuries.includes('internal-injuries') || injuries.includes('broken-bones')
@@ -692,9 +709,9 @@ const lawyerTypeMatcher: OutputGenerator = (answers) => {
 // ─── Tool 10: state-next-steps ────────────────────────────────────────────────
 
 const stateNextSteps: OutputGenerator = (answers) => {
-  const state = answers['state'] as string
-  const accType = answers['accident-type'] as string
-  const accidentDate = answers['accident-date'] as string
+  const state = str(answers['state'])
+  const accType = str(answers['accident-type'])
+  const accidentDate = str(answers['accident-date'])
 
   const isCA = state === 'CA'
   const stateName = isCA ? 'California' : 'Arizona'
@@ -703,12 +720,7 @@ const stateNextSteps: OutputGenerator = (answers) => {
   const items: OutputItem[] = []
 
   if (accidentDate) {
-    const [y, m, d] = accidentDate.split('-').map(Number)
-    const deadline = new Date(y + solYears, m - 1, d)
-    const today = new Date()
-    today.setHours(0, 0, 0, 0)
-    const daysRemaining = Math.floor((deadline.getTime() - today.getTime()) / (1000 * 60 * 60 * 24))
-    const deadlineStr = deadline.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
+    const { daysRemaining, deadlineStr } = computeSolDeadline(accidentDate, solYears)
 
     items.push({
       label: `${stateName} statute of limitations deadline: ${deadlineStr}`,
@@ -777,9 +789,9 @@ const stateNextSteps: OutputGenerator = (answers) => {
 // ─── Tool 11: statute-countdown ───────────────────────────────────────────────
 
 const statuteCountdown: OutputGenerator = (answers) => {
-  const accidentDate = answers['accident-date'] as string
-  const accType = answers['accident-type'] as string
-  const state = answers['state'] as string
+  const accidentDate = str(answers['accident-date'])
+  const accType = str(answers['accident-type'])
+  const state = str(answers['state'])
 
   const isCA = state === 'CA'
   const stateName = isCA ? 'California' : 'Arizona'
@@ -789,12 +801,7 @@ const statuteCountdown: OutputGenerator = (answers) => {
   const items: OutputItem[] = []
 
   if (accidentDate) {
-    const [y, m, d] = accidentDate.split('-').map(Number)
-    const deadline = new Date(y + solYears, m - 1, d)
-    const today = new Date()
-    today.setHours(0, 0, 0, 0)
-    const daysRemaining = Math.floor((deadline.getTime() - today.getTime()) / (1000 * 60 * 60 * 24))
-    const deadlineStr = deadline.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
+    const { daysRemaining, deadlineStr } = computeSolDeadline(accidentDate, solYears)
 
     let deadlinePriority: 'critical' | 'important' | 'helpful' = 'helpful'
     let deadlineNote = ''
@@ -820,9 +827,12 @@ const statuteCountdown: OutputGenerator = (answers) => {
     })
 
     // Government claim deadline
+    const [accY, accM, accD] = accidentDate.split('-').map(Number)
+    const govDeadline = new Date(new Date(accY, accM - 1, accD).getTime() + 180 * 24 * 60 * 60 * 1000)
+    const govDeadlineStr = govDeadline.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
     items.push({
       label: `Government claim notice: 180 days (${isCA ? '6 months' : 'state'} / 60 days AZ city/county)`,
-      value: `If a government entity was involved, this is a SEPARATE and SHORTER deadline than the ${solYears}-year statute. Missing it bars your claim. Deadline from your accident date: ${new Date(y, m - 1, d + 180).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}.`,
+      value: `If a government entity was involved, this is a SEPARATE and SHORTER deadline than the ${solYears}-year statute. Missing it bars your claim. Deadline from your accident date: ${govDeadlineStr}.`,
       priority: 'important',
     })
   } else {
