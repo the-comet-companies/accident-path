@@ -7,7 +7,7 @@
   "sections": [
     {
       "heading": "The First 15 Minutes: Safety and Documentation",
-      "content": "Your first priority is safety. Move to a safe location if you can do so without risking further injury, and turn on your hazard lights. Call 911 — even in minor accidents, a police report creates an official record that is valuable for insurance claims. Do not admit fault or apologize at the scene; statements made immediately after an accident can be used against you. Exchange insurance information, driver's license numbers, and license plates with all involved drivers. Take as many photographs as possible of all vehicles, the road, any visible injuries, and the surrounding scene from multiple angles.",
+      "content": "Your first priority is safety. Move to a safe location if you can do so without risking further injury, and turn on your hazard lights. Call 911 — even in minor accidents, a police report creates an official record that is valuable for insurance claims. Do not admit fault or apologize at the scene; statements made immediately after an accident can be used against you. Exchange insurance information, driver's license numbers, and license plates with all involved drivers. Take as many photographs as possible of all vehicles, the road, any visible injuries, and the surrounding scene from multiple angles. If there are witnesses, ask for their names and phone numbers before they leave — independent witnesses are often the most credible evidence in a disputed-fault case.",
       "tips": [
         "Call 911 even if the accident seems minor — a police report protects you",
         "Do not move injured people unless there is immediate danger (fire, traffic)",
@@ -15,8 +15,17 @@
       ]
     },
     {
+      "heading": "What Not to Do at the Scene",
+      "content": "Just as important as what you should do is what you should avoid. Do not admit fault, apologize, or speculate about what caused the accident — even if you feel you may have contributed. Fault is a legal and insurance determination, not something to settle at the roadside. Do not agree to handle the matter privately without involving insurance companies; doing so removes your legal protections and can leave you responsible for costs you did not anticipate. Do not leave the scene before exchanging information and, if required, before police arrive — leaving can be treated as a hit-and-run even if no one was seriously injured. Do not move an injured person unless there is an immediate danger of fire or oncoming traffic, as spinal injuries can be made catastrophically worse by improper movement. And do not discuss the accident details with the other driver beyond what is necessary for the information exchange — keep the conversation factual and brief.",
+      "tips": [
+        "Never agree to settle an accident privately, even for minor damage",
+        "Do not discuss fault or speculate about the cause with the other driver",
+        "Leaving the scene before police arrive can create legal problems even in minor accidents"
+      ]
+    },
+    {
       "heading": "Seek Medical Evaluation — Even If You Feel Fine",
-      "content": "Adrenaline masks pain. Many serious injuries — whiplash, traumatic brain injuries, internal bleeding, and spinal damage — do not produce noticeable symptoms in the immediate aftermath of a crash. Seeking evaluation within 24 to 72 hours creates a documented medical record that directly connects your injuries to the accident. Delays in seeking care give insurers a basis to argue that your injuries were caused by something else or are not serious. Tell every healthcare provider exactly when and how the accident occurred.",
+      "content": "Adrenaline masks pain. Many serious injuries — whiplash, traumatic brain injuries, internal bleeding, and spinal damage — do not produce noticeable symptoms in the immediate aftermath of a crash. Seeking evaluation within 24 to 72 hours creates a documented medical record that directly connects your injuries to the accident. Delays in seeking care give insurers a basis to argue that your injuries were caused by something else or are not serious. Tell every healthcare provider exactly when and how the accident occurred. Even minor symptoms like neck stiffness, headache, or back tenderness deserve documentation — these can signal significant underlying injuries that may worsen without treatment. The medical record you build in the days after an accident is often the most important piece of evidence in any future insurance claim.",
       "tips": [
         "Go to an emergency room or urgent care even if you feel okay",
         "Document every symptom, no matter how minor, in your medical visit",
@@ -25,7 +34,7 @@
     },
     {
       "heading": "Notify Your Insurance Company",
-      "content": "Contact your own insurance company to report the accident promptly. Most policies require timely notice, and delays can complicate your own coverage. Provide factual information about what happened, but avoid speculating about fault or minimizing your injuries. Do not give a recorded statement to the other party's insurer without first understanding your rights — you are generally not required to do so. Your own insurer may provide MedPay or uninsured/underinsured motorist coverage that can help with immediate medical costs regardless of who was at fault.",
+      "content": "Contact your own insurance company to report the accident promptly. Most policies require timely notice, and delays can complicate your own coverage. Provide factual information about what happened, but avoid speculating about fault or minimizing your injuries. Do not give a recorded statement to the other party's insurer without first understanding your rights — you are generally not required to do so. Your own insurer may provide MedPay or uninsured/underinsured motorist coverage that can help with immediate medical costs regardless of who was at fault. When speaking with any insurer, keep statements factual and limited: the date, time, and general location of the accident are appropriate; opinions about fault, the severity of injuries, or the value of property damage are not.",
       "tips": [
         "Report to your own insurer promptly — delays can affect your coverage",
         "You are not required to give a recorded statement to the other driver's insurer",
@@ -34,7 +43,7 @@
     },
     {
       "heading": "Document Everything in the Days That Follow",
-      "content": "In the days following the accident, continue building your record. Keep all medical bills, prescriptions, and receipts organized by date. Request a copy of the official police report as soon as it is available — typically within 3 to 10 days of the accident. Keep a daily journal documenting your symptoms, pain levels, activities you cannot perform, and how the injury is affecting your work and daily life. These details become important when calculating non-economic damages like pain and suffering.",
+      "content": "In the days following the accident, continue building your record. Keep all medical bills, prescriptions, and receipts organized by date. Request a copy of the official police report as soon as it is available — typically within 3 to 10 days of the accident. Keep a daily journal documenting your symptoms, pain levels, activities you cannot perform, and how the injury is affecting your work and daily life. These details become important when calculating non-economic damages like pain and suffering. Photograph any visible injuries — bruising, swelling, cuts — as they evolve over the days following the crash. Also document any property damage beyond the vehicle: a damaged phone, clothing, or other personal property are potentially compensable losses.",
       "tips": [
         "Start a symptom journal the same day as the accident and update it daily",
         "Request the police report as soon as it is available through the reporting agency",
@@ -42,16 +51,34 @@
       ]
     },
     {
+      "heading": "Understanding Comparative Fault in California and Arizona",
+      "content": "Both California and Arizona follow pure comparative fault rules in personal injury cases. This means that even if you were partly responsible for the accident, you may still be entitled to compensation — reduced by your percentage of fault. For example, if a jury finds you were 20% at fault and awards $100,000 in total damages, you would receive $80,000. Insurance adjusters often try to assign a higher percentage of fault to claimants than the facts support, which reduces their payout. Understanding this rule matters because it means you should not assume a partial contribution to the accident eliminates your options. Evidence — photographs, witness statements, the police report, and dashcam footage — is the most effective tool for contesting an unfair fault assignment.",
+      "tips": [
+        "Being partially at fault does not necessarily eliminate your right to compensation in CA or AZ",
+        "Document your side of events carefully — insurance adjusters sometimes inflate your assigned fault",
+        "A police report and witness statements are among the strongest tools for disputing a fault assignment"
+      ]
+    },
+    {
       "heading": "Know the Deadlines That Apply to Your Claim",
-      "content": "In both California and Arizona, the statute of limitations for personal injury claims from a car accident is generally two years from the date of injury. Missing this deadline typically means losing your right to pursue compensation entirely. Certain situations — claims against government entities, accidents involving minors, or delayed injury discovery — may have different deadlines. Insurance claims have their own internal deadlines as well. Understanding these time limits early ensures you do not inadvertently lose your options.",
+      "content": "In both California and Arizona, the statute of limitations for personal injury claims from a car accident is generally two years from the date of injury. Missing this deadline typically means losing your right to pursue compensation entirely. Certain situations — claims against government entities, accidents involving minors, or delayed injury discovery — may have different deadlines. Claims against government entities such as city buses, county vehicles, or state-maintained roadways often require a formal government tort claim to be filed within six months of the incident in California. Arizona has its own notice requirements for government-related claims. Insurance claims have their own internal deadlines as well, which may be shorter than the legal statute of limitations. Understanding these time limits early ensures you do not inadvertently lose your options.",
       "tips": [
         "California and Arizona both have a 2-year statute of limitations for car accident injury claims",
         "Claims against government entities (city buses, state vehicles) may have a 6-month claim filing deadline",
         "Do not assume you have time — consult with an attorney to understand the deadlines for your specific situation"
       ]
+    },
+    {
+      "heading": "When to Consider Speaking With a Personal Injury Attorney",
+      "content": "You do not need an attorney to file an insurance claim, and many straightforward claims are resolved without one. But there are situations where speaking with a personal injury attorney is likely worth your time — especially given that initial consultations are almost universally free. Consider consulting an attorney if you sustained injuries requiring medical treatment beyond basic first aid; if you have received any treatment or anticipate future medical care; if fault is disputed or the other driver is claiming you caused the accident; if the insurance company has already contacted you with a settlement offer; if you were injured in an accident involving a commercial vehicle, government vehicle, rideshare, or defective road condition; or if you missed work due to your injuries. You can consult with an attorney at any point in the process — even after you have already started dealing with insurance on your own. An attorney can evaluate where you stand and whether your current path is likely to produce a fair outcome.",
+      "tips": [
+        "A free consultation does not obligate you to hire an attorney — it gives you information",
+        "Even if you have already started the claims process, an attorney can be brought in later",
+        "Attorneys who take personal injury cases on contingency have no financial reason to discourage a valid claim"
+      ]
     }
   ],
   "relatedAccidents": ["car", "truck", "motorcycle", "uber-lyft"],
   "relatedTools": ["accident-case-quiz", "evidence-checklist", "statute-of-limitations"],
-  "relatedGuides": ["evidence-checklist", "insurance-claims", "getting-your-police-report"]
+  "relatedGuides": ["evidence-checklist", "insurance-claims", "getting-your-police-report", "common-mistakes"]
 }
