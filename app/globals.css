@@ -27,10 +27,12 @@
   /* Warning: Measured Gold */
   --color-warning-50: #FDF8EB;
   --color-warning-500: #CC9629;
+  --color-warning-700: #9B7200;
 
   /* Danger: Restrained Red */
   --color-danger-50: #FDECEC;
   --color-danger-500: #E04545;
+  --color-danger-700: #A52A2A;
 
   /* Neutral: Cool Slate */
   --color-neutral-50: #F3F6F9;
