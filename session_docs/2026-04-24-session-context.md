@@ -2,7 +2,16 @@
 
 ## Where We Left Off (read this first in a new session)
 
-**Last completed task: DEV-26 — Analytics events + CRM webhook stub** ✅
+**Last completed task: DEV-27 — E2E tests (Playwright)** ✅
+- 24/24 tests passing across 7 test files
+- `playwright.config.ts` — chromium + mobile projects, reuseExistingServer
+- `tests/e2e/` — home, accident, intake, tool, state, mobile, a11y specs
+- Intake test mocks `/api/intake` to avoid real Supabase writes
+- a11y: axe WCAG2AA on 3 pages — color-contrast rule excluded (pre-existing, tracked for DEV-28)
+- Footer "Do Not Sell My Info" link fixed — permanent underline added (was hover-only, failed axe link-in-text-block)
+- Commit: `0060c55`
+
+**Previous completed task: DEV-26 — Analytics events + CRM webhook stub** ✅
 - `lib/analytics.ts` — `trackEvent(name, params)` wrapping `window.gtag`, graceful no-op if not loaded
 - `components/intake/IntakeWizard.tsx` — fires `intake_started`, `step_completed`, `intake_submitted`
 - `components/tools/ToolEngine.tsx` — fires `tool_started` on mount, `tool_completed` after output
@@ -19,7 +28,7 @@
 - generateMetadata audit: fixed `/find-help` description (167→157 chars) and `/find-help/thank-you` (80→137 chars)
 - Build: 87 static pages, zero TS errors. Commit: `b40830e`
 
-**Next task: DEV-27** — E2E tests (Playwright). 6h estimate. Ready to start.
+**Next task: DEV-28** — Unit tests + Lighthouse 90+ + final polish. 6h estimate. Ready to start.
 
 **DEV-22 status:** Partial / blocked. `/privacy` and `/terms` are fully scaffolded (layout, TOC, section structure) but each section body shows a `placeholder` description inside an amber "Pending Legal Review" callout. Real copy must be attorney-drafted — not a code task. Both pages are `noIndex: true`.
 
@@ -62,7 +71,8 @@ DEV-25 completed April 24. SEO infrastructure now fully in place — sitemap, ro
 | Task | Description | Est. Hours | Status |
 |------|-------------|------------|--------|
 | DEV-26 | Analytics events + CRM webhook stub | 4h | ✅ Complete |
-| **DEV-27** | E2E tests (Playwright) | **6h** | **Ready — start here** |
+| DEV-27 | E2E tests (Playwright) | 6h | ✅ Complete |
+| **DEV-28** | Unit tests + Lighthouse 90+ + final polish | **6h** | **Ready — start here** |
 | DEV-27 | E2E tests (Playwright) | 6h | Ready |
 | DEV-28 | Unit tests + Lighthouse 90+ + final polish | 6h | After DEV-27 |
 | DEV-22 | Home + About + static page content | 4h | Blocked — Privacy/Terms needs attorney copy |
@@ -100,7 +110,7 @@ DEV-25 completed April 24. SEO infrastructure now fully in place — sitemap, ro
 | robots.txt (`/robots.txt`) | ✓ DEV-25 |
 | Internal linking engine (`lib/related.ts`) | ✓ DEV-25 |
 | Analytics events + CRM webhook | ✓ DEV-26 (GA4 script pending Michael) |
-| E2E tests (Playwright) | ✗ DEV-27 |
+| E2E tests (Playwright) | ✓ DEV-27 — 24/24 passing |
 | Lighthouse 90+ verified | ✗ DEV-28 |
 
 ---
