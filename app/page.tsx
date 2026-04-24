@@ -111,7 +111,7 @@ export default function Home() {
             <div>
               <p
                 data-animate="hero-eyebrow"
-                className="text-primary-300 text-sm font-medium uppercase tracking-wider mb-4 font-sans"
+                className="animate-hero-eyebrow text-primary-300 text-sm font-medium uppercase tracking-wider mb-4 font-sans"
               >
                 Free guidance — no obligation
               </p>
@@ -123,12 +123,12 @@ export default function Home() {
               </h1>
               <p
                 data-animate="hero-body"
-                className="font-serif text-lg sm:text-xl text-primary-100 leading-relaxed mb-8"
+                className="animate-hero-body font-serif text-lg sm:text-xl text-primary-100 leading-relaxed mb-8"
               >
                 Learn what to do, what evidence to keep, and whether speaking with a lawyer could
                 help. Educational guidance for California and Arizona.
               </p>
-              <div data-animate="hero-ctas" className="flex flex-row flex-wrap gap-3">
+              <div data-animate="hero-ctas" className="animate-hero-ctas flex flex-row flex-wrap gap-3">
                 <CTAButton href="/find-help" size="md" className="whitespace-nowrap shadow-[0_4px_20px_rgba(40,145,199,0.4)]">
                   Start Free Accident Check
                 </CTAButton>

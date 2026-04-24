@@ -12,12 +12,9 @@ export function HomeAnimations() {
 
     const ctx = gsap.context(() => {
       // ── Hero: plays immediately on load ──────────────────────────────────
-      gsap.timeline({ defaults: { ease: 'power2.out' } })
-        .from('[data-animate="hero-eyebrow"]', { opacity: 0, y: 12, duration: 0.45 })
-        .from('#hero-heading',                 { opacity: 0, y: 28, duration: 0.6  }, '-=0.2')
-        // hero-body is the LCP element — animate y only (no opacity) so browser paints it at FCP
-        .fromTo('[data-animate="hero-body"]',  { y: 18 }, { y: 0, duration: 0.5 },   '-=0.3')
-        .from('[data-animate="hero-ctas"]',    { opacity: 0, y: 14, duration: 0.4  }, '-=0.25')
+      // Hero eyebrow, body, and CTAs use CSS animations (globals.css .animate-hero-*)
+      // so they fire before JS loads. Only animate the h1 via GSAP (not LCP element).
+      gsap.from('#hero-heading', { opacity: 0, y: 28, duration: 0.6, delay: 0.1, ease: 'power2.out' })
 
       // fromTo with immediateRender:false prevents GSAP from hiding elements on
       // mount — they only become invisible right as their animation starts playing.
