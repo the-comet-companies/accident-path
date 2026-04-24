@@ -51,3 +51,7 @@ supabase/.temp/
 
 # Superpowers brainstorm temp data
 .superpowers/
+
+# Playwright
+playwright-report/
+test-results/
