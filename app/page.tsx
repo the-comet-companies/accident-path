@@ -117,7 +117,7 @@ export default function Home() {
               </p>
               <h1
                 id="hero-heading"
-                className="font-sans font-bold text-4xl sm:text-5xl lg:text-6xl leading-tight tracking-tight mb-6"
+                className="animate-hero-heading font-sans font-bold text-4xl sm:text-5xl lg:text-6xl leading-tight tracking-tight mb-6"
               >
                 Get Clear Next Steps After an Accident
               </h1>

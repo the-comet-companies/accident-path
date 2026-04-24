@@ -98,6 +98,11 @@ body {
     animation: hero-fade-up 0.45s ease-out both;
     animation-delay: 0.05s;
   }
+  .animate-hero-heading {
+    --slide-y: 28px;
+    animation: hero-fade-up 0.6s ease-out both;
+    animation-delay: 0.1s;
+  }
   .animate-hero-body {
     animation: hero-fade-up 0.5s ease-out both;
     animation-delay: 0.15s;

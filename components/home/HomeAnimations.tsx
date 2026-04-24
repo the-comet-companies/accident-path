@@ -12,9 +12,8 @@ export function HomeAnimations() {
 
     const ctx = gsap.context(() => {
       // ── Hero: plays immediately on load ──────────────────────────────────
-      // Hero eyebrow, body, and CTAs use CSS animations (globals.css .animate-hero-*)
-      // so they fire before JS loads. Only animate the h1 via GSAP (not LCP element).
-      gsap.from('#hero-heading', { opacity: 0, y: 28, duration: 0.6, delay: 0.1, ease: 'power2.out' })
+      // All hero elements use CSS animations (globals.css .animate-hero-*) so they
+      // fire before JS loads. Nothing in the hero section is animated by GSAP.
 
       // fromTo with immediateRender:false prevents GSAP from hiding elements on
       // mount — they only become invisible right as their animation starts playing.
