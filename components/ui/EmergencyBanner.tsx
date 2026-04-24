@@ -6,11 +6,13 @@ import { X, Phone } from 'lucide-react'
 const SESSION_KEY = 'ap_emergency_dismissed'
 
 export function EmergencyBanner() {
-  const [visible, setVisible] = useState(false)
+  // Start visible so the banner renders in SSR/first-paint (fixes LCP).
+  // useEffect hides it immediately if the user already dismissed this session.
+  const [visible, setVisible] = useState(true)
 
   useEffect(() => {
-    if (!sessionStorage.getItem(SESSION_KEY)) {
-      setVisible(true)
+    if (sessionStorage.getItem(SESSION_KEY)) {
+      setVisible(false)
     }
   }, [])
 
