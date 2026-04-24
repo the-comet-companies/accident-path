@@ -399,7 +399,6 @@ export default function Home() {
                 key={tool.slug}
                 href={`/tools/${tool.slug}`}
                 data-animate="tool-card"
-                aria-label={`${tool.title} — Try it free`}
                 className="group flex items-center gap-4 bg-white border border-primary-100 rounded-2xl px-5 py-4 hover:border-primary-200 hover:shadow-[0_4px_16px_rgba(40,145,199,0.09)] transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500"
               >
                 <div className="w-[46px] h-[46px] rounded-xl bg-primary-50 border border-primary-100 flex items-center justify-center shrink-0 text-primary-500">

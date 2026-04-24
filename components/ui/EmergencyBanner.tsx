@@ -34,7 +34,7 @@ export function EmergencyBanner() {
             <strong>In immediate danger?</strong> Call{' '}
             <a
               href="tel:911"
-              className="font-bold text-danger-500 underline underline-offset-2"
+              className="font-bold text-danger-700 underline underline-offset-2"
               aria-label="Call 911 for emergencies"
             >
               911

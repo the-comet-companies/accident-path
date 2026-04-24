@@ -52,7 +52,6 @@ const simpleLinks = [
   { label: 'Injuries', href: '/injuries' },
   { label: 'What To Do Next', href: '/guides' },
   { label: 'Tools', href: '/tools' },
-  { label: 'Resources', href: '/resources' },
   { label: 'About', href: '/about' },
 ]
 

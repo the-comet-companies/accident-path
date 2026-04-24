@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { trackEvent } from '@/lib/analytics'
 
-type Variant = 'primary' | 'secondary'
+type Variant = 'primary' | 'primary-dark' | 'secondary'
 type Size = 'sm' | 'md' | 'lg'
 
 interface CTAButtonProps {
@@ -27,6 +27,8 @@ const sizeClasses: Record<Size, string> = {
 const variantClasses: Record<Variant, string> = {
   primary:
     'bg-primary-500 text-white font-semibold hover:bg-primary-600 active:bg-primary-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500 disabled:opacity-50 disabled:cursor-not-allowed',
+  'primary-dark':
+    'bg-primary-700 text-white font-semibold hover:bg-primary-800 active:bg-primary-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-700 disabled:opacity-50 disabled:cursor-not-allowed',
   secondary:
     'border-2 border-primary-500 text-primary-600 bg-transparent font-semibold hover:bg-primary-50 active:bg-primary-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500 disabled:opacity-50 disabled:cursor-not-allowed',
 }

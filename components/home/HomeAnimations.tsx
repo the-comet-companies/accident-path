@@ -15,7 +15,8 @@ export function HomeAnimations() {
       gsap.timeline({ defaults: { ease: 'power2.out' } })
         .from('[data-animate="hero-eyebrow"]', { opacity: 0, y: 12, duration: 0.45 })
         .from('#hero-heading',                 { opacity: 0, y: 28, duration: 0.6  }, '-=0.2')
-        .from('[data-animate="hero-body"]',    { opacity: 0, y: 18, duration: 0.5  }, '-=0.3')
+        // hero-body is the LCP element — animate y only (no opacity) so browser paints it at FCP
+        .fromTo('[data-animate="hero-body"]',  { y: 18 }, { y: 0, duration: 0.5 },   '-=0.3')
         .from('[data-animate="hero-ctas"]',    { opacity: 0, y: 14, duration: 0.4  }, '-=0.25')
 
       // fromTo with immediateRender:false prevents GSAP from hiding elements on

@@ -31,7 +31,6 @@ const mainLinks = [
   { label: 'What To Do Next', href: '/guides' },
   { label: 'Tools', href: '/tools' },
   { label: 'Find Help', href: '/find-help' },
-  { label: 'Resources', href: '/resources' },
   { label: 'About', href: '/about' },
 ]
 
@@ -250,7 +249,7 @@ export function MobileNav() {
 
       {/* Bottom-fixed CTA bar — mobile only */}
       <div className="fixed bottom-0 left-0 right-0 z-30 lg:hidden bg-surface-card border-t border-neutral-100 px-4 py-3 safe-area-pb">
-        <CTAButton href="/find-help" fullWidth>
+        <CTAButton href="/find-help" variant="primary-dark" fullWidth>
           Get Help Now — Free, No Obligation
         </CTAButton>
       </div>
