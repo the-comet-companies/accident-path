@@ -255,6 +255,7 @@ const urgencyChecker: OutputGenerator = (answers) => {
     cta: { label: 'Get Free Guidance', href: '/find-help' },
     disclaimer: 'This tool is for educational purposes only. It is not medical advice. If you are experiencing a medical emergency, call 911 immediately.',
     exportable: true,
+    emergency: hasRed,
   }
 }
 

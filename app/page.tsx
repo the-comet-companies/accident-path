@@ -76,21 +76,21 @@ const FEATURED_GUIDES = [
     title: 'What to Do in the First 24 Hours After an Accident',
     excerpt:
       'The steps you take immediately after an accident can significantly impact your ability to document what happened. This guide walks you through each critical action.',
-    href: '/guides/what-to-do-first-24-hours',
+    href: '/guides/after-car-accident',
     readTime: '8 min read',
   },
   {
     title: 'How to Document Your Injuries After an Accident',
     excerpt:
       'Thorough documentation supports your medical care and may be important if you decide to explore legal options. Learn what to record and how.',
-    href: '/guides/how-to-document-injuries',
+    href: '/guides/evidence-checklist',
     readTime: '6 min read',
   },
   {
     title: 'Understanding When to Speak With a Personal Injury Lawyer',
     excerpt:
       'Not every accident requires legal help, but some situations benefit from a consultation. This guide helps you understand the questions to ask.',
-    href: '/guides/when-to-speak-with-a-lawyer',
+    href: '/guides/should-i-talk-to-a-lawyer',
     readTime: '7 min read',
   },
 ]

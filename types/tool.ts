@@ -58,4 +58,5 @@ export interface ToolOutput {
   cta: CTAConfig
   disclaimer: string
   exportable: boolean
+  emergency?: boolean
 }

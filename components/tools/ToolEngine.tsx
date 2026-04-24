@@ -88,6 +88,15 @@ export function ToolEngine({ tool }: Props) {
   if (output) {
     return (
       <div className="flex flex-col gap-6">
+        {output.emergency && (
+          <div className="rounded-xl border-2 border-danger-500 bg-danger-50 p-4 flex items-start gap-3">
+            <span className="text-danger-500 text-xl leading-none mt-0.5">⚠</span>
+            <div>
+              <p className="font-sans font-bold text-danger-700 text-sm">If you are in immediate danger, call 911 now.</p>
+              <p className="font-sans text-danger-700 text-sm mt-1">The symptoms you reported may indicate a serious or life-threatening condition. Please seek emergency medical care immediately.</p>
+            </div>
+          </div>
+        )}
         <div className="rounded-xl border border-amber-200 bg-amber-50 p-4">
           <p className="text-amber-800 text-sm leading-relaxed">{tool.disclaimer}</p>
         </div>
