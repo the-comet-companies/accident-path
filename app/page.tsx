@@ -21,7 +21,7 @@ import { FaPersonFalling } from 'react-icons/fa6'
 import { CTAButton } from '@/components/ui/CTAButton'
 import { StateSelector } from '@/components/ui/StateSelector'
 import { buildMetaTags } from '@/components/seo/MetaTags'
-import { HomeAnimations } from '@/components/home/HomeAnimations'
+import { LazyAnimations } from '@/components/home/LazyAnimations'
 import { HeroVisual } from '@/components/home/HeroVisual'
 
 export const metadata: Metadata = buildMetaTags({
@@ -100,7 +100,7 @@ const FEATURED_GUIDES = [
 export default function Home() {
   return (
     <>
-      <HomeAnimations />
+      <LazyAnimations />
 
       {/* ── 1. Hero ───────────────────────────────────────────────────────── */}
       <section className="bg-primary-900 text-white relative overflow-hidden" aria-labelledby="hero-heading">
