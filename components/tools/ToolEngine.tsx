@@ -1,12 +1,13 @@
 'use client'
 
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useEffect } from 'react'
 import type { ToolConfig, ToolAnswers, ToolOutput } from '@/types/tool'
 import { ToolProgressBar } from '@/components/tools/ToolProgressBar'
 import { ToolStep } from '@/components/tools/ToolStep'
 import { ToolResults } from '@/components/tools/ToolResults'
 import { outputGenerators } from '@/lib/tools/output-generators'
 import { getSupabase } from '@/lib/supabase'
+import { trackEvent } from '@/lib/analytics'
 
 interface Props {
   tool: ToolConfig
@@ -17,6 +18,10 @@ export function ToolEngine({ tool }: Props) {
   const [currentStep, setCurrentStep] = useState(0)
   const [output, setOutput] = useState<ToolOutput | null>(null)
   const [submitting, setSubmitting] = useState(false)
+
+  useEffect(() => {
+    trackEvent('tool_started', { tool_slug: tool.slug })
+  }, [tool.slug])
 
   const step = tool.steps[currentStep]
   const total = tool.steps.length
@@ -58,6 +63,7 @@ export function ToolEngine({ tool }: Props) {
     setSubmitting(true)
     const result = generator(answers)
     setOutput(result)
+    trackEvent('tool_completed', { tool_slug: tool.slug })
 
     try {
       const supabase = getSupabase()

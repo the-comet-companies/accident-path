@@ -69,9 +69,3 @@ export function suggestResources(data: Partial<IntakeForm>): Array<{ label: stri
   return resources.slice(0, 4)
 }
 
-// Analytics — gracefully no-ops if gtag not loaded
-export function trackEvent(name: string, params?: Record<string, string | number>) {
-  if (typeof window === 'undefined') return
-  // @ts-expect-error gtag injected by GA4 script tag
-  window.gtag?.('event', name, params)
-}

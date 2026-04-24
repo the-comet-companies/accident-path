@@ -2,7 +2,16 @@
 
 ## Where We Left Off (read this first in a new session)
 
-**Last completed task: DEV-25 — Structured data + sitemap + internal linking engine** ✅
+**Last completed task: DEV-26 — Analytics events + CRM webhook stub** ✅
+- `lib/analytics.ts` — `trackEvent(name, params)` wrapping `window.gtag`, graceful no-op if not loaded
+- `components/intake/IntakeWizard.tsx` — fires `intake_started`, `step_completed`, `intake_submitted`
+- `components/tools/ToolEngine.tsx` — fires `tool_started` on mount, `tool_completed` after output
+- `components/ui/CTAButton.tsx` — added `'use client'`, fires `cta_clicked` on all link + button variants
+- `app/api/webhook/route.ts` — POST stub, logs payload + returns 200 (no real CRM connected yet)
+- **GA4 script not yet added to layout** — `trackEvent` calls no-op until Michael creates the GA4 property, gets `G-XXXXXXXXXX` measurement ID, and adds the gtag script to `app/layout.tsx`. Tracked in MASTER-PLAN.md as Michael's task ("Configure GA4 + GSC", 2h).
+- Build: zero TS errors. Commit: TBD.
+
+**Previous completed task: DEV-25 — Structured data + sitemap + internal linking engine** ✅
 - `app/robots.ts` — allow all, disallow `/find-help/results`, `/find-help/thank-you`, `/api/`
 - `app/sitemap.ts` — 75 URLs, dynamic, partitioned by section, correct priorities
 - `lib/related.ts` — internal linking engine: `getAccidentRelated`, `getInjuryRelated`, `getGuideRelated`, `getToolRelated`, `getCityRelated`, `getStateRelated`
@@ -10,7 +19,7 @@
 - generateMetadata audit: fixed `/find-help` description (167→157 chars) and `/find-help/thank-you` (80→137 chars)
 - Build: 87 static pages, zero TS errors. Commit: `b40830e`
 
-**Next task: DEV-26** — Analytics events + CRM webhook stub. 4h estimate. Ready to start.
+**Next task: DEV-27** — E2E tests (Playwright). 6h estimate. Ready to start.
 
 **DEV-22 status:** Partial / blocked. `/privacy` and `/terms` are fully scaffolded (layout, TOC, section structure) but each section body shows a `placeholder` description inside an amber "Pending Legal Review" callout. Real copy must be attorney-drafted — not a code task. Both pages are `noIndex: true`.
 
@@ -44,6 +53,7 @@ DEV-25 completed April 24. SEO infrastructure now fully in place — sitemap, ro
 | DEV-24 | 16 city page JSONs (10 CA + 6 AZ) | `d647a60` |
 | Breadcrumb fixes | `variant="dark"` on guides, state, city detail pages | `8ec6d79`, `4dc2347` |
 | **DEV-25** | Structured data + sitemap + robots + internal linking engine | `b40830e` |
+| **DEV-26** | Analytics events + CRM webhook stub | TBD |
 
 ---
 
@@ -51,7 +61,8 @@ DEV-25 completed April 24. SEO infrastructure now fully in place — sitemap, ro
 
 | Task | Description | Est. Hours | Status |
 |------|-------------|------------|--------|
-| **DEV-26** | Analytics events + CRM webhook stub | **4h** | **Ready — start here** |
+| DEV-26 | Analytics events + CRM webhook stub | 4h | ✅ Complete |
+| **DEV-27** | E2E tests (Playwright) | **6h** | **Ready — start here** |
 | DEV-27 | E2E tests (Playwright) | 6h | Ready |
 | DEV-28 | Unit tests + Lighthouse 90+ + final polish | 6h | After DEV-27 |
 | DEV-22 | Home + About + static page content | 4h | Blocked — Privacy/Terms needs attorney copy |
@@ -88,7 +99,7 @@ DEV-25 completed April 24. SEO infrastructure now fully in place — sitemap, ro
 | XML sitemap (`/sitemap.xml`) | ✓ DEV-25 |
 | robots.txt (`/robots.txt`) | ✓ DEV-25 |
 | Internal linking engine (`lib/related.ts`) | ✓ DEV-25 |
-| Analytics events + CRM webhook | ✗ DEV-26 |
+| Analytics events + CRM webhook | ✓ DEV-26 (GA4 script pending Michael) |
 | E2E tests (Playwright) | ✗ DEV-27 |
 | Lighthouse 90+ verified | ✗ DEV-28 |
 

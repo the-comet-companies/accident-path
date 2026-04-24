@@ -1,4 +1,7 @@
+'use client'
+
 import Link from 'next/link'
+import { trackEvent } from '@/lib/analytics'
 
 type Variant = 'primary' | 'secondary'
 type Size = 'sm' | 'md' | 'lg'
@@ -54,14 +57,26 @@ export function CTAButton({
 
   if (href) {
     return (
-      <Link href={href} className={classes}>
+      <Link
+        href={href}
+        className={classes}
+        onClick={() => trackEvent('cta_clicked', { destination: href })}
+      >
         {children}
       </Link>
     )
   }
 
   return (
-    <button type={type} onClick={onClick} disabled={disabled} className={classes}>
+    <button
+      type={type}
+      onClick={() => {
+        trackEvent('cta_clicked', { destination: 'button' })
+        onClick?.()
+      }}
+      disabled={disabled}
+      className={classes}
+    >
       {children}
     </button>
   )
