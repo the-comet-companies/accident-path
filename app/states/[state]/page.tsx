@@ -99,16 +99,18 @@ export default async function StateDetailPage({
                 Key deadlines, fault rules, insurance minimums, and laws that affect personal injury
                 claims in {stateData.name}.
               </p>
-              <div className="mt-4 flex items-center gap-4 text-primary-400 text-xs">
-                <span className="flex items-center gap-1">
-                  <User className="w-3 h-3" aria-hidden="true" />
-                  {stateData.reviewedBy}
-                </span>
-                <span className="flex items-center gap-1">
-                  <Calendar className="w-3 h-3" aria-hidden="true" />
-                  {stateData.reviewDate}
-                </span>
-              </div>
+              {stateData.reviewedBy !== 'Pending Legal Review' && (
+                <div className="mt-4 flex items-center gap-4 text-primary-400 text-xs">
+                  <span className="flex items-center gap-1">
+                    <User className="w-3 h-3" aria-hidden="true" />
+                    {stateData.reviewedBy}
+                  </span>
+                  <span className="flex items-center gap-1">
+                    <Calendar className="w-3 h-3" aria-hidden="true" />
+                    {stateData.reviewDate}
+                  </span>
+                </div>
+              )}
             </div>
 
             {/* Quick stats */}
@@ -353,9 +355,8 @@ export default async function StateDetailPage({
 
               <p className="text-xs text-neutral-400 leading-relaxed">
                 The above is general educational information about {stateData.name} law and may not
-                reflect recent legislative changes. Reviewed by: {stateData.reviewedBy} on{' '}
-                {stateData.reviewDate}. Consult a licensed attorney in {stateData.name} for advice
-                specific to your situation.
+                reflect recent legislative changes.{stateData.reviewedBy !== 'Pending Legal Review' && ` Reviewed by: ${stateData.reviewedBy} on ${stateData.reviewDate}.`}{' '}
+                Consult a licensed attorney in {stateData.name} for advice specific to your situation.
               </p>
 
               <CTAButton href="/find-help" size="md">
@@ -410,17 +411,19 @@ export default async function StateDetailPage({
                 </CTAButton>
               </div>
 
-              {/* Reviewer badge */}
-              <div className="rounded-xl border border-neutral-100 bg-surface-card p-5 shadow-sm">
-                <p className="text-xs font-semibold text-neutral-400 uppercase tracking-wide mb-2">
-                  Reviewed By
-                </p>
-                <div className="flex items-center gap-2">
-                  <User className="w-4 h-4 text-neutral-400" aria-hidden="true" />
-                  <p className="text-sm text-neutral-700">{stateData.reviewedBy}</p>
+              {/* Reviewer badge — only shown once attorney review is complete */}
+              {stateData.reviewedBy !== 'Pending Legal Review' && (
+                <div className="rounded-xl border border-neutral-100 bg-surface-card p-5 shadow-sm">
+                  <p className="text-xs font-semibold text-neutral-400 uppercase tracking-wide mb-2">
+                    Reviewed By
+                  </p>
+                  <div className="flex items-center gap-2">
+                    <User className="w-4 h-4 text-neutral-400" aria-hidden="true" />
+                    <p className="text-sm text-neutral-700">{stateData.reviewedBy}</p>
+                  </div>
+                  <p className="text-xs text-neutral-400 mt-1">{stateData.reviewDate}</p>
                 </div>
-                <p className="text-xs text-neutral-400 mt-1">{stateData.reviewDate}</p>
-              </div>
+              )}
 
             </aside>
           </div>

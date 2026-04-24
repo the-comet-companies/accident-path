@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { Printer, ChevronLeft, ChevronRight, ChevronDown, ChevronUp } from 'lucide-react'
 import type { ToolConfig } from '@/types/tool'
 
@@ -81,7 +81,17 @@ const MONTH_NAMES = [
 ]
 
 export function InjuryJournal({ tool }: InjuryJournalProps) {
-  const [entries, setEntries] = useState<JournalEntry[]>([])
+  const [entries, setEntries] = useState<JournalEntry[]>(() => {
+    if (typeof window === 'undefined') return []
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY)
+      if (raw) {
+        const parsed = JSON.parse(raw)
+        if (Array.isArray(parsed)) return parsed as JournalEntry[]
+      }
+    } catch { /* ignore parse errors */ }
+    return []
+  })
   const [view, setView] = useState<'list' | 'add' | 'calendar'>('list')
   const [expandedIds, setExpandedIds] = useState<Set<string>>(new Set())
   const today = new Date()
@@ -99,20 +109,6 @@ export function InjuryJournal({ tool }: InjuryJournalProps) {
   const [formLimitations, setFormLimitations] = useState('')
   const [formNotes, setFormNotes] = useState('')
 
-  // Load from localStorage on mount
-  useEffect(() => {
-    try {
-      const raw = localStorage.getItem(STORAGE_KEY)
-      if (raw) {
-        const parsed = JSON.parse(raw)
-        if (Array.isArray(parsed)) {
-          setEntries(parsed as JournalEntry[])
-        }
-      }
-    } catch {
-      // ignore parse errors
-    }
-  }, [])
 
   function saveEntries(newEntries: JournalEntry[]) {
     setEntries(newEntries)
@@ -276,7 +272,7 @@ export function InjuryJournal({ tool }: InjuryJournalProps) {
                     onClick={() =>
                       setExpandedIds(prev => {
                         const next = new Set(prev)
-                        next.has(entry.id) ? next.delete(entry.id) : next.add(entry.id)
+                        if (next.has(entry.id)) { next.delete(entry.id) } else { next.add(entry.id) }
                         return next
                       })
                     }

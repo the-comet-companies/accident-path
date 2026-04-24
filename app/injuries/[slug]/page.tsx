@@ -169,7 +169,7 @@ export default async function InjuryDetailPage({
                   </h2>
                 </div>
                 <p className="text-neutral-500 text-sm mb-5">
-                  Treatment options vary based on severity. Follow your healthcare provider's
+                  Treatment options vary based on severity. Follow your healthcare provider&apos;s
                   recommendations and document all treatment — it is important evidence for your
                   claim.
                 </p>

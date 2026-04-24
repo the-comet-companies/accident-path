@@ -383,7 +383,7 @@ export default async function AccidentHubPage({
                         if partially at fault, reduced by your percentage
                       </li>
                       <li>
-                        <strong>Insurance minimum:</strong> $15,000/$30,000/$5,000
+                        <strong>Insurance minimum:</strong> $30,000/$60,000/$15,000
                       </li>
                     </ul>
                   </div>

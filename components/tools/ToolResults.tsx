@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import type { ToolOutput, ToolConfig, OutputItem } from '@/types/tool'
+import type { ToolOutput, OutputItem } from '@/types/tool'
 
 const PRIORITY_STYLES = {
   critical: 'bg-danger-500 text-white border-danger-500',
@@ -38,11 +38,10 @@ function ItemCard({ item }: { item: OutputItem }) {
 
 interface ToolResultsProps {
   output: ToolOutput
-  tool: ToolConfig
   onReset: () => void
 }
 
-export function ToolResults({ output, tool, onReset }: ToolResultsProps) {
+export function ToolResults({ output, onReset }: ToolResultsProps) {
   return (
     <div className="flex flex-col gap-6 print:gap-4">
       {/* Summary */}

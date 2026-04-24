@@ -121,16 +121,18 @@ export default async function CityDetailPage({
                   {stateData.name} State Laws
                 </CTAButton>
               </div>
-              <div className="mt-4 flex items-center gap-4 text-primary-400 text-xs">
-                <span className="flex items-center gap-1">
-                  <User className="w-3 h-3" aria-hidden="true" />
-                  {cityData.reviewedBy}
-                </span>
-                <span className="flex items-center gap-1">
-                  <Calendar className="w-3 h-3" aria-hidden="true" />
-                  {cityData.reviewDate}
-                </span>
-              </div>
+              {cityData.reviewedBy !== 'Pending Legal Review' && (
+                <div className="mt-4 flex items-center gap-4 text-primary-400 text-xs">
+                  <span className="flex items-center gap-1">
+                    <User className="w-3 h-3" aria-hidden="true" />
+                    {cityData.reviewedBy}
+                  </span>
+                  <span className="flex items-center gap-1">
+                    <Calendar className="w-3 h-3" aria-hidden="true" />
+                    {cityData.reviewDate}
+                  </span>
+                </div>
+              )}
             </div>
 
             {/* Quick stats */}
@@ -336,7 +338,7 @@ export default async function CityDetailPage({
               </section>
 
               <p className="text-xs text-neutral-400 leading-relaxed">
-                Information reviewed by: {cityData.reviewedBy} on {cityData.reviewDate}. This is
+                {cityData.reviewedBy !== 'Pending Legal Review' && `Information reviewed by: ${cityData.reviewedBy} on ${cityData.reviewDate}. `}This is
                 general educational information only and may not reflect recent changes. Consult a
                 licensed attorney for advice specific to your situation.
               </p>

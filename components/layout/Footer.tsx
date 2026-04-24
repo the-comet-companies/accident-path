@@ -54,7 +54,7 @@ export function Footer() {
             <div className="space-y-2 pt-2">
               <TrustBadge
                 variant="shield"
-                text="Attorney-Reviewed Content"
+                text="Content Review in Progress"
                 className="text-neutral-300 [&_svg]:text-amber-500 [&_p]:text-neutral-300"
               />
               <TrustBadge

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Merriweather } from "next/font/google";
+import Link from "next/link";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { MobileNav } from "@/components/layout/MobileNav";
@@ -52,11 +53,11 @@ export default function RootLayout({
         {/* Mobile header */}
         <div className="lg:hidden sticky top-0 z-50 bg-surface-card border-b border-neutral-100 shadow-sm">
           <div className="flex items-center justify-between h-16 px-4">
-            <a href="/" aria-label="AccidentPath home">
+            <Link href="/" aria-label="AccidentPath home">
               <span className="text-lg font-bold text-primary-700 font-sans">
                 Accident<span className="text-amber-500">Path</span>
               </span>
-            </a>
+            </Link>
             <MobileNav />
           </div>
         </div>

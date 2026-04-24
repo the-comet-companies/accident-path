@@ -36,9 +36,9 @@
     }
   ],
   "insuranceMinimums": {
-    "bodilyInjuryPerPerson": "$15,000",
-    "bodilyInjuryPerAccident": "$30,000",
-    "propertyDamage": "$5,000",
+    "bodilyInjuryPerPerson": "$30,000",
+    "bodilyInjuryPerAccident": "$60,000",
+    "propertyDamage": "$15,000",
     "uninsuredMotorist": "Must be offered; may be waived in writing"
   },
   "keyLaws": [

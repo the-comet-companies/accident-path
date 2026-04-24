@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import Link from 'next/link'
 import type { IntakeForm } from '@/types/intake'
 import {
@@ -38,24 +38,13 @@ const URGENCY_CONFIG = {
 }
 
 export default function FindHelpResultsPage() {
-  const [data, setData] = useState<Partial<IntakeForm> | null>(null)
-  const [loaded, setLoaded] = useState(false)
-
-  useEffect(() => {
-    const saved = localStorage.getItem(INTAKE_STORAGE_KEY)
-    if (saved) {
-      try { setData(JSON.parse(saved)) } catch { /* ignore */ }
-    }
-    setLoaded(true)
-  }, [])
-
-  if (!loaded) {
-    return (
-      <div className="min-h-screen bg-surface-page flex items-center justify-center">
-        <div className="text-neutral-400 font-sans text-sm">Loading your results…</div>
-      </div>
-    )
-  }
+  const [data] = useState<Partial<IntakeForm> | null>(() => {
+    if (typeof window === 'undefined') return null
+    try {
+      const saved = localStorage.getItem(INTAKE_STORAGE_KEY)
+      return saved ? (JSON.parse(saved) as Partial<IntakeForm>) : null
+    } catch { return null }
+  })
 
   if (!data || !data.accidentType) {
     return (

@@ -100,7 +100,7 @@ export function ToolEngine({ tool }: Props) {
         <div className="rounded-xl border border-amber-200 bg-amber-50 p-4">
           <p className="text-amber-800 text-sm leading-relaxed">{tool.disclaimer}</p>
         </div>
-        <ToolResults output={output} tool={tool} onReset={handleReset} />
+        <ToolResults output={output} onReset={handleReset} />
         <div className="rounded-xl border border-amber-200 bg-amber-50 p-4">
           <p className="text-amber-800 text-sm leading-relaxed">{tool.disclaimer}</p>
         </div>
