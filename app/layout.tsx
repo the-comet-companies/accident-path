@@ -19,7 +19,9 @@ const merriweather = Merriweather({
   subsets: ["latin"],
   weight: ["400", "700"],
   style: ["normal", "italic"],
-  display: "swap",
+  // "optional" prevents font-swap LCP delay — first-visit uses system serif fallback,
+  // subsequent visits see Merriweather (cached). Keeps LCP at FCP time (~1.3s).
+  display: "optional",
 });
 
 export const metadata: Metadata = {
