@@ -21,8 +21,7 @@ import { FaPersonFalling } from 'react-icons/fa6'
 import { CTAButton } from '@/components/ui/CTAButton'
 import { StateSelector } from '@/components/ui/StateSelector'
 import { buildMetaTags } from '@/components/seo/MetaTags'
-import { LazyAnimations } from '@/components/home/LazyAnimations'
-import { HeroVisual } from '@/components/home/HeroVisual'
+import { LazyAnimations, LazyHeroVisual } from '@/components/home/LazyAnimations'
 
 export const metadata: Metadata = buildMetaTags({
   title: 'AccidentPath — Get Clear Next Steps After an Accident',
@@ -104,7 +103,7 @@ export default function Home() {
 
       {/* ── 1. Hero ───────────────────────────────────────────────────────── */}
       <section className="bg-primary-900 text-white relative overflow-hidden" aria-labelledby="hero-heading">
-        <HeroVisual />
+        <LazyHeroVisual />
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Left: copy + CTAs */}
