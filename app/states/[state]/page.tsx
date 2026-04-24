@@ -17,7 +17,7 @@ import { CTAButton } from '@/components/ui/CTAButton'
 import { DisclaimerBanner } from '@/components/ui/DisclaimerBanner'
 import { SchemaOrg } from '@/components/seo/SchemaOrg'
 import { buildMetaTags } from '@/components/seo/MetaTags'
-import { articleSchema } from '@/lib/seo'
+import { articleSchema, breadcrumbSchema } from '@/lib/seo'
 
 export async function generateStaticParams() {
   return cms.getAllStates().map(s => ({ state: s.slug }))
@@ -67,13 +67,13 @@ export default async function StateDetailPage({
   return (
     <>
       <SchemaOrg
-        schema={articleSchema({
+        schema={[articleSchema({
           title: `${stateData.name} Personal Injury Law Guide`,
           description: stateData.metaDescription,
           slug: `/states/${stateData.slug}`,
           reviewedBy: stateData.reviewedBy,
           dateModified: stateData.reviewDate,
-        })}
+        }), breadcrumbSchema([{ label: 'State Guides', href: '/states' }, { label: stateData.name }])]}
         id="article-schema"
       />
 

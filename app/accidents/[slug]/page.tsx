@@ -10,7 +10,7 @@ import { SchemaOrg } from '@/components/seo/SchemaOrg'
 import { ChecklistBlock } from '@/components/content/ChecklistBlock'
 import { TimelineBlock } from '@/components/content/TimelineBlock'
 import { buildMetaTags } from '@/components/seo/MetaTags'
-import { articleSchema } from '@/lib/seo'
+import { articleSchema, breadcrumbSchema } from '@/lib/seo'
 
 export async function generateStaticParams() {
   return cms.getAllAccidents().map(a => ({ slug: a.slug }))
@@ -87,11 +87,11 @@ export default async function AccidentHubPage({
   return (
     <>
       <SchemaOrg
-        schema={articleSchema({
+        schema={[articleSchema({
           title: accident.title,
           description: accident.description,
           slug: `/accidents/${accident.slug}`,
-        })}
+        }), breadcrumbSchema([{ label: 'Accident Types', href: '/accidents' }, { label: accident.title }])]}
         id="article-schema"
       />
 

@@ -3,6 +3,8 @@ import { Wrench } from 'lucide-react'
 import { cms } from '@/lib/cms'
 import { Breadcrumb } from '@/components/layout/Breadcrumb'
 import { buildMetaTags } from '@/components/seo/MetaTags'
+import { SchemaOrg } from '@/components/seo/SchemaOrg'
+import { breadcrumbSchema } from '@/lib/seo'
 
 export const metadata = buildMetaTags({
   title: 'Free Accident & Injury Tools — California & Arizona',
@@ -19,6 +21,8 @@ export default function ToolsPage() {
   const gridTools = tools.filter(t => !FEATURED_SLUGS.includes(t.slug))
 
   return (
+    <>
+      <SchemaOrg schema={breadcrumbSchema([{ label: 'Tools', href: '/tools' }])} id="breadcrumb-schema" />
     <div className="bg-surface-page min-h-screen">
       {/* Hero */}
       <div className="bg-primary-900 py-12 lg:py-16">
@@ -135,5 +139,6 @@ export default function ToolsPage() {
         </div>
       </div>
     </div>
+    </>
   )
 }

@@ -8,7 +8,7 @@ import { CTAButton } from '@/components/ui/CTAButton'
 import { DisclaimerBanner } from '@/components/ui/DisclaimerBanner'
 import { SchemaOrg } from '@/components/seo/SchemaOrg'
 import { buildMetaTags } from '@/components/seo/MetaTags'
-import { articleSchema } from '@/lib/seo'
+import { articleSchema, breadcrumbSchema } from '@/lib/seo'
 
 export async function generateStaticParams() {
   return cms.getAllInjuries().map(i => ({ slug: i.slug }))
@@ -49,11 +49,11 @@ export default async function InjuryDetailPage({
   return (
     <>
       <SchemaOrg
-        schema={articleSchema({
+        schema={[articleSchema({
           title: injury.title,
           description: injury.description,
           slug: `/injuries/${injury.slug}`,
-        })}
+        }), breadcrumbSchema([{ label: 'Injury Types', href: '/injuries' }, { label: injury.title }])]}
         id="article-schema"
       />
 

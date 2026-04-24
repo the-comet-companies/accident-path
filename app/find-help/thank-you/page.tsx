@@ -5,7 +5,7 @@ import { buildMetaTags } from '@/components/seo/MetaTags'
 
 export const metadata = buildMetaTags({
   title: 'Thank You — AccidentPath',
-  description: 'Your intake has been submitted. View your personalized next steps and resources.',
+  description: 'Your intake has been submitted. Your personalized next steps, relevant guides, and attorney connection options are ready to review below.',
   canonical: '/find-help/thank-you',
   noIndex: true,
 })

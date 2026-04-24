@@ -6,7 +6,7 @@ import { buildMetaTags } from '@/components/seo/MetaTags'
 export const metadata = buildMetaTags({
   title: 'Get Free Accident Guidance — AccidentPath',
   description:
-    'Answer a few questions about your accident and get personalized next steps, understand what type of lawyer may help, and find relevant resources — free, no obligation.',
+    'Answer a few questions about your accident to get personalized next steps, understand what type of lawyer may help, and find resources — free, no obligation.',
   canonical: '/find-help',
 })
 

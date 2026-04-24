@@ -2,6 +2,8 @@ import { cms } from '@/lib/cms'
 import { AccidentsHubClient } from '@/components/content/AccidentsHubClient'
 import { Breadcrumb } from '@/components/layout/Breadcrumb'
 import { buildMetaTags } from '@/components/seo/MetaTags'
+import { SchemaOrg } from '@/components/seo/SchemaOrg'
+import { breadcrumbSchema } from '@/lib/seo'
 
 export const metadata = buildMetaTags({
   title: 'Accident Type Guides — Car, Truck, Slip & Fall, and More',
@@ -14,6 +16,8 @@ export default function AccidentsPage() {
   const accidents = cms.getAllAccidents()
 
   return (
+    <>
+      <SchemaOrg schema={breadcrumbSchema([{ label: 'Accident Types', href: '/accidents' }])} id="breadcrumb-schema" />
     <div className="bg-surface-page min-h-screen">
       {/* Page header */}
       <div className="bg-primary-900 py-12 lg:py-16">
@@ -53,5 +57,6 @@ export default function AccidentsPage() {
         )}
       </div>
     </div>
+    </>
   )
 }

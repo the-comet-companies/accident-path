@@ -19,7 +19,7 @@ import { CTAButton } from '@/components/ui/CTAButton'
 import { DisclaimerBanner } from '@/components/ui/DisclaimerBanner'
 import { SchemaOrg } from '@/components/seo/SchemaOrg'
 import { buildMetaTags } from '@/components/seo/MetaTags'
-import { articleSchema } from '@/lib/seo'
+import { articleSchema, breadcrumbSchema } from '@/lib/seo'
 
 export async function generateStaticParams() {
   return cms.getAllCities().map(c => ({
@@ -73,13 +73,13 @@ export default async function CityDetailPage({
   return (
     <>
       <SchemaOrg
-        schema={articleSchema({
+        schema={[articleSchema({
           title: `${cityData.name}, ${cityData.stateAbbreviation} Accident Guide`,
           description: cityData.description.slice(0, 200),
           slug: `/states/${state}/${city}`,
           reviewedBy: cityData.reviewedBy,
           dateModified: cityData.reviewDate,
-        })}
+        }), breadcrumbSchema([{ label: 'State Guides', href: '/states' }, { label: stateData.name, href: `/states/${stateData.slug}` }, { label: cityData.name }])]}
         id="article-schema"
       />
 

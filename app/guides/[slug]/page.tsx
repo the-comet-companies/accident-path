@@ -8,7 +8,7 @@ import { CTAButton } from '@/components/ui/CTAButton'
 import { DisclaimerBanner } from '@/components/ui/DisclaimerBanner'
 import { SchemaOrg } from '@/components/seo/SchemaOrg'
 import { buildMetaTags } from '@/components/seo/MetaTags'
-import { articleSchema } from '@/lib/seo'
+import { articleSchema, breadcrumbSchema } from '@/lib/seo'
 
 export async function generateStaticParams() {
   return cms.getAllGuides().map(g => ({ slug: g.slug }))
@@ -49,11 +49,11 @@ export default async function GuideDetailPage({
   return (
     <>
       <SchemaOrg
-        schema={articleSchema({
+        schema={[articleSchema({
           title: guide.title,
           description: guide.description,
           slug: `/guides/${guide.slug}`,
-        })}
+        }), breadcrumbSchema([{ label: 'Guides', href: '/guides' }, { label: guide.title }])]}
         id="article-schema"
       />
 

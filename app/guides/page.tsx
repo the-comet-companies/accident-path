@@ -2,6 +2,8 @@ import { cms } from '@/lib/cms'
 import { GuidesHubClient } from '@/components/content/GuidesHubClient'
 import { Breadcrumb } from '@/components/layout/Breadcrumb'
 import { buildMetaTags } from '@/components/seo/MetaTags'
+import { SchemaOrg } from '@/components/seo/SchemaOrg'
+import { breadcrumbSchema } from '@/lib/seo'
 
 export const metadata = buildMetaTags({
   title: 'Accident & Injury Guides — California & Arizona',
@@ -14,6 +16,8 @@ export default function GuidesPage() {
   const guides = cms.getAllGuides()
 
   return (
+    <>
+      <SchemaOrg schema={breadcrumbSchema([{ label: 'Guides', href: '/guides' }])} id="breadcrumb-schema" />
     <div className="bg-surface-page min-h-screen">
       {/* Page header */}
       <div className="bg-primary-900 py-12 lg:py-16">
@@ -53,5 +57,6 @@ export default function GuidesPage() {
         )}
       </div>
     </div>
+    </>
   )
 }

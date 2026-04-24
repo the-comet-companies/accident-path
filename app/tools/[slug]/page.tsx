@@ -8,7 +8,7 @@ import { CTAButton } from '@/components/ui/CTAButton'
 import { DisclaimerBanner } from '@/components/ui/DisclaimerBanner'
 import { SchemaOrg } from '@/components/seo/SchemaOrg'
 import { buildMetaTags } from '@/components/seo/MetaTags'
-import { softwareApplicationSchema, faqSchema } from '@/lib/seo'
+import { softwareApplicationSchema, faqSchema, breadcrumbSchema } from '@/lib/seo'
 import { ToolEngine } from '@/components/tools/ToolEngine'
 import { InjuryJournal } from '@/components/tools/InjuryJournal'
 
@@ -51,11 +51,11 @@ export default async function ToolDetailPage({
   return (
     <>
       <SchemaOrg
-        schema={softwareApplicationSchema({
+        schema={[softwareApplicationSchema({
           name: tool.title,
           description: tool.description,
           url: `/tools/${tool.slug}`,
-        })}
+        }), breadcrumbSchema([{ label: 'Tools', href: '/tools' }, { label: tool.title }])]}
         id="software-schema"
       />
       <SchemaOrg

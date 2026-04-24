@@ -4,6 +4,8 @@ import { cms } from '@/lib/cms'
 import { buildMetaTags } from '@/components/seo/MetaTags'
 import { DisclaimerBanner } from '@/components/ui/DisclaimerBanner'
 import { CTAButton } from '@/components/ui/CTAButton'
+import { SchemaOrg } from '@/components/seo/SchemaOrg'
+import { breadcrumbSchema } from '@/lib/seo'
 
 export const metadata = buildMetaTags({
   title: 'State Injury Law Guides — California & Arizona',
@@ -17,6 +19,7 @@ export default function StatesPage() {
 
   return (
     <>
+      <SchemaOrg schema={breadcrumbSchema([{ label: 'State Guides', href: '/states' }])} id="breadcrumb-schema" />
       {/* Hero */}
       <div className="bg-primary-900 py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
