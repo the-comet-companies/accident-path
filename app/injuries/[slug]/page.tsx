@@ -9,6 +9,7 @@ import { DisclaimerBanner } from '@/components/ui/DisclaimerBanner'
 import { SchemaOrg } from '@/components/seo/SchemaOrg'
 import { buildMetaTags } from '@/components/seo/MetaTags'
 import { articleSchema, breadcrumbSchema } from '@/lib/seo'
+import { getInjuryRelated } from '@/lib/related'
 
 export async function generateStaticParams() {
   return cms.getAllInjuries().map(i => ({ slug: i.slug }))
@@ -46,6 +47,8 @@ export default async function InjuryDetailPage({
     notFound()
   }
 
+  const related = getInjuryRelated(slug)
+
   return (
     <>
       <SchemaOrg
@@ -65,6 +68,7 @@ export default async function InjuryDetailPage({
               { label: 'Injuries', href: '/injuries' },
               { label: injury.title },
             ]}
+            variant="dark"
           />
           <div className="mt-4 max-w-2xl">
             <h1 className="font-sans font-bold text-3xl sm:text-4xl lg:text-5xl text-white leading-tight">
@@ -276,20 +280,42 @@ export default async function InjuryDetailPage({
               </div>
 
               {/* Related accidents */}
-              {injury.relatedAccidents.length > 0 && (
+              {related.accidents.length > 0 && (
                 <div className="rounded-xl border border-neutral-100 bg-surface-card p-5 shadow-sm">
                   <h3 className="font-sans font-semibold text-neutral-950 text-sm mb-3">
                     Related Accident Types
                   </h3>
                   <ul className="flex flex-col gap-2">
-                    {injury.relatedAccidents.map(accSlug => (
-                      <li key={accSlug}>
+                    {related.accidents.map(link => (
+                      <li key={link.href}>
                         <Link
-                          href={`/accidents/${accSlug}`}
+                          href={link.href}
                           className="flex items-center gap-1.5 text-sm text-neutral-600 hover:text-primary-600 transition-colors"
                         >
                           <ArrowRight className="w-3 h-3 shrink-0" aria-hidden="true" />
-                          {accSlug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())}
+                          {link.label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {/* Related tools */}
+              {related.tools.length > 0 && (
+                <div className="rounded-xl border border-neutral-100 bg-surface-card p-5 shadow-sm">
+                  <h3 className="font-sans font-semibold text-neutral-950 text-sm mb-3">
+                    Free Tools
+                  </h3>
+                  <ul className="flex flex-col gap-2">
+                    {related.tools.map(link => (
+                      <li key={link.href}>
+                        <Link
+                          href={link.href}
+                          className="flex items-center gap-1.5 text-sm text-neutral-600 hover:text-primary-600 transition-colors"
+                        >
+                          <ArrowRight className="w-3 h-3 shrink-0" aria-hidden="true" />
+                          {link.label}
                         </Link>
                       </li>
                     ))}

@@ -11,6 +11,7 @@ import { ChecklistBlock } from '@/components/content/ChecklistBlock'
 import { TimelineBlock } from '@/components/content/TimelineBlock'
 import { buildMetaTags } from '@/components/seo/MetaTags'
 import { articleSchema, breadcrumbSchema } from '@/lib/seo'
+import { getAccidentRelated } from '@/lib/related'
 
 export async function generateStaticParams() {
   return cms.getAllAccidents().map(a => ({ slug: a.slug }))
@@ -78,6 +79,8 @@ export default async function AccidentHubPage({
   } catch {
     notFound()
   }
+
+  const related = getAccidentRelated(slug)
 
   const totalEvidenceItems = accident.evidenceChecklist.reduce(
     (acc, cat) => acc + cat.items.length,
@@ -479,6 +482,72 @@ export default async function AccidentHubPage({
                           {relSlug
                             .replace(/-/g, ' ')
                             .replace(/\b\w/g, c => c.toUpperCase())}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {/* Related injuries */}
+              {related.injuries.length > 0 && (
+                <div className="rounded-xl border border-neutral-100 bg-surface-card p-5 shadow-sm">
+                  <h3 className="font-sans font-semibold text-neutral-950 text-sm mb-3">
+                    Related Injuries
+                  </h3>
+                  <ul className="flex flex-col gap-2">
+                    {related.injuries.map(link => (
+                      <li key={link.href}>
+                        <Link
+                          href={link.href}
+                          className="flex items-center gap-1.5 text-sm text-neutral-600 hover:text-primary-600 transition-colors"
+                        >
+                          <ArrowRight className="w-3 h-3 shrink-0" aria-hidden="true" />
+                          {link.label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {/* Related guides */}
+              {related.guides.length > 0 && (
+                <div className="rounded-xl border border-neutral-100 bg-surface-card p-5 shadow-sm">
+                  <h3 className="font-sans font-semibold text-neutral-950 text-sm mb-3">
+                    Related Guides
+                  </h3>
+                  <ul className="flex flex-col gap-2">
+                    {related.guides.map(link => (
+                      <li key={link.href}>
+                        <Link
+                          href={link.href}
+                          className="flex items-center gap-1.5 text-sm text-neutral-600 hover:text-primary-600 transition-colors"
+                        >
+                          <ArrowRight className="w-3 h-3 shrink-0" aria-hidden="true" />
+                          {link.label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {/* Related tools */}
+              {related.tools.length > 0 && (
+                <div className="rounded-xl border border-neutral-100 bg-surface-card p-5 shadow-sm">
+                  <h3 className="font-sans font-semibold text-neutral-950 text-sm mb-3">
+                    Free Tools
+                  </h3>
+                  <ul className="flex flex-col gap-2">
+                    {related.tools.map(link => (
+                      <li key={link.href}>
+                        <Link
+                          href={link.href}
+                          className="flex items-center gap-1.5 text-sm text-neutral-600 hover:text-primary-600 transition-colors"
+                        >
+                          <ArrowRight className="w-3 h-3 shrink-0" aria-hidden="true" />
+                          {link.label}
                         </Link>
                       </li>
                     ))}

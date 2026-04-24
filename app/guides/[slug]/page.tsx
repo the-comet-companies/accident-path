@@ -9,6 +9,7 @@ import { DisclaimerBanner } from '@/components/ui/DisclaimerBanner'
 import { SchemaOrg } from '@/components/seo/SchemaOrg'
 import { buildMetaTags } from '@/components/seo/MetaTags'
 import { articleSchema, breadcrumbSchema } from '@/lib/seo'
+import { getGuideRelated } from '@/lib/related'
 
 export async function generateStaticParams() {
   return cms.getAllGuides().map(g => ({ slug: g.slug }))
@@ -45,6 +46,8 @@ export default async function GuideDetailPage({
   } catch {
     notFound()
   }
+
+  const related = getGuideRelated(slug)
 
   return (
     <>
@@ -193,20 +196,42 @@ export default async function GuideDetailPage({
               </div>
 
               {/* Related guides */}
-              {guide.relatedGuides.length > 0 && (
+              {related.guides.length > 0 && (
                 <div className="rounded-xl border border-neutral-100 bg-surface-card p-5 shadow-sm">
                   <h3 className="font-sans font-semibold text-neutral-950 text-sm mb-3">
                     Related Guides
                   </h3>
                   <ul className="flex flex-col gap-2">
-                    {guide.relatedGuides.map(guideSlug => (
-                      <li key={guideSlug}>
+                    {related.guides.map(link => (
+                      <li key={link.href}>
                         <Link
-                          href={`/guides/${guideSlug}`}
+                          href={link.href}
                           className="flex items-center gap-1.5 text-sm text-neutral-600 hover:text-primary-600 transition-colors"
                         >
                           <ArrowRight className="w-3 h-3 shrink-0" aria-hidden="true" />
-                          {guideSlug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())}
+                          {link.label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {/* Related tools */}
+              {related.tools.length > 0 && (
+                <div className="rounded-xl border border-neutral-100 bg-surface-card p-5 shadow-sm">
+                  <h3 className="font-sans font-semibold text-neutral-950 text-sm mb-3">
+                    Free Tools
+                  </h3>
+                  <ul className="flex flex-col gap-2">
+                    {related.tools.map(link => (
+                      <li key={link.href}>
+                        <Link
+                          href={link.href}
+                          className="flex items-center gap-1.5 text-sm text-neutral-600 hover:text-primary-600 transition-colors"
+                        >
+                          <ArrowRight className="w-3 h-3 shrink-0" aria-hidden="true" />
+                          {link.label}
                         </Link>
                       </li>
                     ))}
