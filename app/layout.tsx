@@ -11,7 +11,9 @@ import { organizationSchema } from "@/lib/seo";
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
-  display: "swap",
+  // "optional" prevents font-swap updating LCP measurement on first visit.
+  // Subsequent visits see Inter from cache. Keeps LCP at ~FCP time.
+  display: "optional",
 });
 
 const merriweather = Merriweather({
