@@ -8,8 +8,8 @@
 - `components/tools/ToolEngine.tsx` — fires `tool_started` on mount, `tool_completed` after output
 - `components/ui/CTAButton.tsx` — added `'use client'`, fires `cta_clicked` on all link + button variants
 - `app/api/webhook/route.ts` — POST stub, logs payload + returns 200 (no real CRM connected yet)
-- **GA4 script not yet added to layout** — `trackEvent` calls no-op until Michael creates the GA4 property, gets `G-XXXXXXXXXX` measurement ID, and adds the gtag script to `app/layout.tsx`. Tracked in MASTER-PLAN.md as Michael's task ("Configure GA4 + GSC", 2h).
-- Build: zero TS errors. Commit: TBD.
+- **GA4 script not yet added to layout** — `trackEvent` calls no-op until GA4 property is created and `G-XXXXXXXXXX` measurement ID is added to `app/layout.tsx`. This is **Michael's task** ("Configure GA4 + GSC", 2h in MASTER-PLAN.md) — not a Claude code task.
+- Build: zero TS errors. Commit: `84a6ac7`. QA verified: all intake events fire correctly, webhook returns 200.
 
 **Previous completed task: DEV-25 — Structured data + sitemap + internal linking engine** ✅
 - `app/robots.ts` — allow all, disallow `/find-help/results`, `/find-help/thank-you`, `/api/`
