@@ -160,7 +160,7 @@ export function Footer() {
           </p>
           <p className="text-xs text-neutral-500">
             &copy; {currentYear} AccidentPath. All rights reserved.{' '}
-            <Link href="/privacy#do-not-sell" className="text-amber-400 hover:text-amber-300 hover:underline">
+            <Link href="/privacy#do-not-sell" className="text-amber-400 hover:text-amber-300 underline">
               Do Not Sell My Info
             </Link>
           </p>
