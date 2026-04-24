@@ -13,12 +13,26 @@ export const metadata = buildMetaTags({
   canonical: '/tools',
 })
 
-const FEATURED_SLUGS = ['statute-countdown', 'accident-case-quiz']
+const LAUNCH_SLUGS = [
+  'accident-case-quiz',
+  'urgency-checker',
+  'evidence-checklist',
+  'injury-journal',
+  'lawyer-type-matcher',
+]
+
+const FEATURED_SLUGS = ['accident-case-quiz', 'urgency-checker']
 
 export default function ToolsPage() {
   const tools = cms.getAllTools()
   const featuredTools = tools.filter(t => FEATURED_SLUGS.includes(t.slug))
-  const gridTools = tools.filter(t => !FEATURED_SLUGS.includes(t.slug))
+  const gridTools = tools
+    .filter(t => !FEATURED_SLUGS.includes(t.slug))
+    .sort((a, b) => {
+      const aLive = LAUNCH_SLUGS.includes(a.slug) ? 0 : 1
+      const bLive = LAUNCH_SLUGS.includes(b.slug) ? 0 : 1
+      return aLive - bLive
+    })
 
   return (
     <>
@@ -98,35 +112,55 @@ export default function ToolsPage() {
           {gridTools.length > 0 && (
             <div className="p-6 lg:p-8">
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                {gridTools.map(tool => (
-                  <div
-                    key={tool.slug}
-                    className="flex flex-col gap-3 rounded-xl border border-neutral-100 p-5 hover:border-primary-200 transition-colors"
-                  >
-                    <div className="w-10 h-10 rounded-lg bg-surface-info flex items-center justify-center shrink-0">
-                      <Wrench className="w-5 h-5 text-primary-600" aria-hidden="true" />
+                {gridTools.map(tool => {
+                  const isLive = LAUNCH_SLUGS.includes(tool.slug)
+                  return (
+                    <div
+                      key={tool.slug}
+                      className={`flex flex-col gap-3 rounded-xl border p-5 transition-colors ${
+                        isLive
+                          ? 'border-neutral-100 hover:border-primary-200'
+                          : 'border-neutral-100 opacity-60'
+                      }`}
+                    >
+                      <div className="flex items-start justify-between">
+                        <div className="w-10 h-10 rounded-lg bg-surface-info flex items-center justify-center shrink-0">
+                          <Wrench className="w-5 h-5 text-primary-600" aria-hidden="true" />
+                        </div>
+                        {!isLive && (
+                          <span className="text-xs font-semibold font-sans text-neutral-400 border border-neutral-200 rounded-full px-2 py-0.5">
+                            Coming Soon
+                          </span>
+                        )}
+                      </div>
+                      <div className="flex flex-col gap-1 flex-1">
+                        <h2 className="font-sans font-semibold text-neutral-950 text-sm leading-snug">
+                          {tool.title}
+                        </h2>
+                        <p className="text-neutral-500 text-xs leading-relaxed line-clamp-2">
+                          {tool.description}
+                        </p>
+                      </div>
+                      <div className="flex items-center justify-between">
+                        <span className="text-neutral-400 text-xs">
+                          {tool.steps.length} {tool.steps.length === 1 ? 'step' : 'steps'}
+                        </span>
+                        {isLive ? (
+                          <Link
+                            href={`/tools/${tool.slug}`}
+                            className="text-primary-600 hover:text-primary-700 text-xs font-semibold font-sans transition-colors"
+                          >
+                            Try Tool →
+                          </Link>
+                        ) : (
+                          <span className="text-neutral-300 text-xs font-semibold font-sans">
+                            Try Tool →
+                          </span>
+                        )}
+                      </div>
                     </div>
-                    <div className="flex flex-col gap-1 flex-1">
-                      <h2 className="font-sans font-semibold text-neutral-950 text-sm leading-snug">
-                        {tool.title}
-                      </h2>
-                      <p className="text-neutral-500 text-xs leading-relaxed line-clamp-2">
-                        {tool.description}
-                      </p>
-                    </div>
-                    <div className="flex items-center justify-between">
-                      <span className="text-neutral-400 text-xs">
-                        {tool.steps.length} {tool.steps.length === 1 ? 'step' : 'steps'}
-                      </span>
-                      <Link
-                        href={`/tools/${tool.slug}`}
-                        className="text-primary-600 hover:text-primary-700 text-xs font-semibold font-sans transition-colors"
-                      >
-                        Try Tool →
-                      </Link>
-                    </div>
-                  </div>
-                ))}
+                  )
+                })}
               </div>
             </div>
           )}

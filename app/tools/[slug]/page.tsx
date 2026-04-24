@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import { ArrowRight, Shield, Wrench } from 'lucide-react'
+import { ArrowRight, Shield, Wrench, Clock } from 'lucide-react'
 import { cms } from '@/lib/cms'
 import type { ToolConfig } from '@/types/tool'
 import { Breadcrumb } from '@/components/layout/Breadcrumb'
@@ -11,6 +11,14 @@ import { buildMetaTags } from '@/components/seo/MetaTags'
 import { softwareApplicationSchema, faqSchema, breadcrumbSchema } from '@/lib/seo'
 import { ToolEngine } from '@/components/tools/ToolEngine'
 import { InjuryJournal } from '@/components/tools/InjuryJournal'
+
+const LAUNCH_SLUGS = [
+  'accident-case-quiz',
+  'urgency-checker',
+  'evidence-checklist',
+  'injury-journal',
+  'lawyer-type-matcher',
+]
 
 export async function generateStaticParams() {
   return cms.getAllTools().map(t => ({ slug: t.slug }))
@@ -46,6 +54,46 @@ export default async function ToolDetailPage({
     tool = cms.getTool(slug)
   } catch {
     notFound()
+  }
+
+  if (!LAUNCH_SLUGS.includes(slug)) {
+    return (
+      <>
+        <div className="bg-primary-900 py-12 lg:py-16">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <Breadcrumb
+              items={[{ label: 'Free Tools', href: '/tools' }, { label: tool.title }]}
+              variant="dark"
+            />
+            <div className="mt-4 max-w-2xl">
+              <h1 className="font-sans font-bold text-3xl sm:text-4xl lg:text-5xl text-white leading-tight">
+                {tool.title}
+              </h1>
+              <p className="mt-4 text-primary-200 text-lg leading-relaxed font-serif">
+                {tool.description}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="bg-surface-page min-h-[40vh] flex items-center">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
+            <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-neutral-100 mb-6">
+              <Clock className="w-7 h-7 text-neutral-400" aria-hidden="true" />
+            </div>
+            <h2 className="font-sans font-bold text-2xl text-neutral-950 mb-3">Coming Soon</h2>
+            <p className="text-neutral-500 font-serif text-base max-w-md mx-auto mb-8">
+              This tool is currently being prepared and will be available at launch. In the meantime, explore our other free tools.
+            </p>
+            <Link
+              href="/tools"
+              className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-primary-600 text-white font-sans font-semibold text-sm hover:bg-primary-700 transition-colors"
+            >
+              ← Back to All Tools
+            </Link>
+          </div>
+        </div>
+      </>
+    )
   }
 
   return (
