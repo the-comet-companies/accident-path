@@ -1,0 +1,214 @@
+{
+  "slug": "bicicleta",
+  "title": "Accidentes de Bicicleta",
+  "shortTitle": "Accidentes de Bicicleta",
+  "description": "Los ciclistas se encuentran entre los usuarios de la vía más vulnerables. Cuando una bicicleta es golpeada por un vehículo, las lesiones pueden ser graves. Conocer sus derechos, documentar la escena y entender cómo funciona la responsabilidad son los primeros pasos esenciales después de un accidente de bicicleta. Esta información es educativa únicamente y no constituye asesoramiento legal.",
+  "metaTitle": "Guía de Accidentes de Bicicleta — Derechos y Pasos a Seguir",
+  "metaDescription": "Qué hacer después de un accidente de bicicleta en California o Arizona. Lista de evidencia, pasos inmediatos y orientación sobre cuándo hablar con un abogado.",
+  "icon": "bicycle",
+  "commonCauses": [
+    {
+      "title": "Accidentes por Apertura de Puertas",
+      "description": "Un ocupante de un auto estacionado abre la puerta hacia el camino del ciclista, causando una colisión repentina. Es común en zonas urbanas con carriles para bicicletas junto a autos estacionados."
+    },
+    {
+      "title": "No Ceder el Paso en Intersecciones",
+      "description": "Los conductores que giran o salen de entradas pueden no ceder el paso a los ciclistas en el carril bici o en la calzada."
+    },
+    {
+      "title": "Colisiones por Alcance Trasero",
+      "description": "Los conductores que siguen muy de cerca o están distraídos pueden golpear a los ciclistas por atrás, lo que frecuentemente resulta en lesiones graves."
+    },
+    {
+      "title": "Accidentes por Giro a la Izquierda",
+      "description": "Un conductor que gira a la izquierda cruzando el camino de un ciclista que viene de frente — una de las causas más comunes de accidentes graves de bicicleta."
+    },
+    {
+      "title": "Peligros en la Vía",
+      "description": "Los baches, escombros, rieles de tren y el pavimento irregular pueden hacer que los ciclistas pierdan el control y caigan, a veces sin que haya vehículos involucrados."
+    },
+    {
+      "title": "Manejo Distraído",
+      "description": "Los conductores que usan el teléfono u están distraídos tienen más probabilidades de no ver a los ciclistas, especialmente en intersecciones y carriles bici."
+    },
+    {
+      "title": "Manejo bajo los Efectos del Alcohol o Drogas",
+      "description": "Los conductores con facultades disminuidas tienen menor capacidad para detectar y responder a los ciclistas que comparten la vía."
+    }
+  ],
+  "likelyInjuries": [
+    { "slug": "traumatismo-craneal", "title": "Traumatismo Craneoencefálico", "severity": "severe" },
+    { "slug": "huesos-rotos", "title": "Huesos Rotos", "severity": "moderate" },
+    { "slug": "tejido-blando", "title": "Raspones / Tejido Blando", "severity": "moderate" },
+    { "slug": "columna", "title": "Lesiones de Columna", "severity": "catastrophic" },
+    { "slug": "lesiones-internas", "title": "Lesiones Internas", "severity": "severe" }
+  ],
+  "immediateSteps": [
+    {
+      "step": 1,
+      "title": "Llame al 911",
+      "description": "Solicite servicios de emergencia. Un reporte policial es documentación esencial aunque las lesiones parezcan menores.",
+      "urgency": "critical"
+    },
+    {
+      "step": 2,
+      "title": "Permanezca en el lugar del accidente",
+      "description": "No mueva su bicicleta ni permita que el vehículo sea movido antes de tomar fotos. Si está en la carretera, muévase a un lugar seguro mientras espera a la policía.",
+      "urgency": "critical"
+    },
+    {
+      "step": 3,
+      "title": "Preserve su casco y equipo",
+      "description": "Su casco, guantes y ropa son evidencia física. No los deseche, lave ni repare.",
+      "urgency": "critical"
+    },
+    {
+      "step": 4,
+      "title": "Documente la escena exhaustivamente",
+      "description": "Fotografíe todos los vehículos, su bicicleta, los daños, las condiciones de la vía, el carril bici o las marcas del camino, y cualquier lesión visible.",
+      "urgency": "important"
+    },
+    {
+      "step": 5,
+      "title": "Obtenga la información del conductor",
+      "description": "Nombre, número de licencia, compañía aseguradora e información de contacto. Anote la marca, modelo y placa del vehículo.",
+      "urgency": "important"
+    },
+    {
+      "step": 6,
+      "title": "Obtenga información de los testigos",
+      "description": "Nombres e información de contacto de cualquier persona que haya presenciado el accidente.",
+      "urgency": "important"
+    },
+    {
+      "step": 7,
+      "title": "Busque evaluación médica de inmediato",
+      "description": "Los accidentes de bicicleta pueden causar lesiones significativas en la cabeza y lesiones internas. Acepte el transporte en ambulancia si se lo ofrecen, o acuda a una clínica de urgencias o sala de emergencias el mismo día.",
+      "urgency": "critical"
+    },
+    {
+      "step": 8,
+      "title": "Reporte a su aseguradora",
+      "description": "Notifique a su aseguradora. Si tiene cobertura para motoristas sin seguro, puede aplicar. Mantenga todos los registros organizados.",
+      "urgency": "helpful"
+    }
+  ],
+  "evidenceChecklist": [
+    {
+      "category": "En el Lugar del Accidente",
+      "priority": "critical",
+      "items": [
+        "Fotos del vehículo y de su bicicleta (antes de mover cualquier cosa)",
+        "Fotos de la vía, el carril bici y cualquier defecto en el pavimento",
+        "Fotos de las lesiones visibles",
+        "Licencia de conducir, seguro e información de contacto del conductor",
+        "Número del reporte policial",
+        "Nombres e información de contacto de los testigos"
+      ]
+    },
+    {
+      "category": "Evidencia Física",
+      "priority": "critical",
+      "items": [
+        "Su bicicleta (consérvela para evaluación de daños)",
+        "Su casco (no lo deseche — muestra la gravedad del impacto)",
+        "Su ropa, guantes y zapatos (no los lave)",
+        "Fotos de los daños a su equipo"
+      ]
+    },
+    {
+      "category": "Documentación Médica",
+      "priority": "critical",
+      "items": [
+        "Registros de sala de emergencias o clínica de atención urgente",
+        "Todas las notas de seguimiento con médicos y especialistas",
+        "Informes de imágenes (radiografías, resonancia magnética, tomografía computarizada)",
+        "Registros de fisioterapia",
+        "Registros de recetas y diario continuo de síntomas"
+      ]
+    },
+    {
+      "category": "Registros Financieros",
+      "priority": "important",
+      "items": [
+        "Todas las facturas médicas",
+        "Estimado de reparación o reemplazo de la bicicleta",
+        "Documentación de salarios perdidos",
+        "Cualquier gasto de bolsillo relacionado con el accidente"
+      ]
+    },
+    {
+      "category": "Evidencia Adicional",
+      "priority": "helpful",
+      "items": [
+        "Grabaciones de cámara de tablero o cámara de tráfico",
+        "Video de vigilancia de negocios cercanos",
+        "Cualquier queja previa sobre el peligro en la vía (si aplica)"
+      ]
+    }
+  ],
+  "timelineRisks": [
+    {
+      "period": "De inmediato",
+      "risk": "El casco y el equipo pueden desecharse",
+      "action": "Preserve todo el equipo de ciclismo como evidencia física. Guárdelo en un lugar seguro y no lo limpie ni repare."
+    },
+    {
+      "period": "Dentro de 24 a 48 horas",
+      "risk": "Las grabaciones de cámaras de vigilancia son sobreescritas",
+      "action": "Las cámaras de tráfico y de negocios generalmente sobreescriben sus grabaciones en 24 a 72 horas. Un abogado puede enviar una solicitud de preservación de inmediato."
+    },
+    {
+      "period": "Dentro de 30 días",
+      "risk": "Plazos para notificar al seguro",
+      "action": "Reporte a su aseguradora con prontitud. Revise su póliza para ver si tiene cobertura para motoristas sin seguro que pueda aplicar a accidentes de bicicleta."
+    },
+    {
+      "period": "6 meses (Defecto en la vía pública)",
+      "risk": "Plazo para notificación de reclamación contra entidad gubernamental",
+      "action": "Si un defecto en la vía mantenida por una agencia gubernamental causó o contribuyó al accidente, California y Arizona tienen plazos más cortos para la notificación de reclamación."
+    },
+    {
+      "period": "2 años (California)",
+      "risk": "Estatuto de limitaciones para lesiones personales",
+      "action": "California generalmente permite 2 años desde la fecha del accidente para presentar reclamaciones de lesiones personales."
+    },
+    {
+      "period": "2 años (Arizona)",
+      "risk": "Estatuto de limitaciones para lesiones personales",
+      "action": "Arizona tiene el mismo estatuto de limitaciones de 2 años para lesiones personales. Contacte a un abogado con suficiente anticipación a este plazo."
+    }
+  ],
+  "insuranceIssues": [
+    {
+      "issue": "Cobertura UM/UIM del seguro de auto para ciclistas",
+      "explanation": "Muchas pólizas de seguro de auto extienden la cobertura para motoristas sin seguro o con seguro insuficiente a los asegurados incluso cuando van en bicicleta. Revise su póliza con cuidado."
+    },
+    {
+      "issue": "Seguro de propietario o inquilino",
+      "explanation": "En algunos casos, su propio seguro de propietario o inquilino puede cubrir lesiones por accidente de bicicleta o daños a la propiedad. Consulte su póliza."
+    },
+    {
+      "issue": "Culpa comparativa en accidentes de bicicleta",
+      "explanation": "Las aseguradoras pueden argumentar que usted no respetaba las leyes de tránsito, circulaba sin luz en la noche o contribuyó al accidente de alguna otra forma. Ambos estados utilizan la culpa comparativa pura."
+    },
+    {
+      "issue": "Reclamaciones por defectos en la vía contra municipios",
+      "explanation": "Si un bache o defecto en la vía contribuyó a su accidente, una entidad gubernamental puede tener responsabilidad parcial. Estas reclamaciones tienen procedimientos especiales y plazos más cortos."
+    }
+  ],
+  "whenToGetLawyer": [
+    "Sufrió lesiones que requieren tratamiento médico",
+    "El conductor no tenía seguro o se dio a la fuga",
+    "La responsabilidad está siendo disputada",
+    "Un defecto en la vía o infraestructura en mal estado contribuyó al accidente",
+    "Sus lesiones resultaron en facturas médicas importantes o pérdida de salario",
+    "Recibió una oferta de acuerdo rápida antes de conocer el alcance total de sus lesiones",
+    "Las grabaciones de vigilancia necesitan ser preservadas de inmediato"
+  ],
+  "relatedAccidents": ["auto", "motocicleta", "peaton", "uber-lyft"],
+  "relatedInjuries": ["traumatismo-craneal", "huesos-rotos", "tejido-blando", "columna", "lesiones-internas"],
+  "relatedGuides": ["lista-evidencia", "despues-accidente-auto", "evaluacion-caso"],
+  "relatedTools": ["evaluacion-caso", "lista-evidencia"],
+  "translationStatus": "needs-review"
+}

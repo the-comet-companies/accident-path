@@ -1,0 +1,222 @@
+{
+  "slug": "auto",
+  "title": "Accidentes de Auto",
+  "shortTitle": "Accidentes de Auto",
+  "description": "Los accidentes de auto son el tipo más común de caso de lesiones personales en California y Arizona. Ya sea que lo hayan golpeado por detrás, de lado, o que haya estado involucrado en una colisión de varios vehículos, entender sus derechos y los pasos a seguir puede proteger su salud y su reclamo. Esta guía le ofrece información educativa únicamente — no constituye asesoría legal.",
+  "metaTitle": "Guía de Accidentes de Auto — Qué Hacer Después de un Choque",
+  "metaDescription": "Qué hacer después de un accidente de auto en California o Arizona. Pasos claros, lista de evidencia, riesgos de tiempo y orientación sobre cuándo hablar con un abogado.",
+  "icon": "car",
+  "commonCauses": [
+    {
+      "title": "Manejo Distraído",
+      "description": "El uso del celular, comer al volante u otras distracciones que desvían la atención del conductor de la carretera."
+    },
+    {
+      "title": "Exceso de Velocidad",
+      "description": "Conducir por encima del límite de velocidad permitido o demasiado rápido para las condiciones de la vía."
+    },
+    {
+      "title": "Manejo en Estado de Ebriedad o Bajo Influencia",
+      "description": "El alcohol, las drogas o los medicamentos de prescripción que afectan el tiempo de reacción y el juicio del conductor."
+    },
+    {
+      "title": "Ignorar Semáforos o Señales de Alto",
+      "description": "No respetar las señales de tráfico, lo que frecuentemente provoca colisiones laterales en intersecciones."
+    },
+    {
+      "title": "Seguimiento Demasiado Cercano",
+      "description": "Conducir muy pegado al vehículo de adelante, dejando una distancia de frenado insuficiente."
+    },
+    {
+      "title": "Cambios de Carril Peligrosos",
+      "description": "Incorporarse a otro carril sin revisar los ángulos ciegos ni usar las señales direccionales."
+    },
+    {
+      "title": "Agresividad al Volante",
+      "description": "Comportamientos agresivos al manejar, incluyendo cerrar el paso, frenar de golpe y colisiones intencionales."
+    }
+  ],
+  "likelyInjuries": [
+    { "slug": "latigazo", "title": "Latigazo Cervical", "severity": "moderate" },
+    { "slug": "traumatismo-craneal", "title": "Traumatismo Craneoencefálico", "severity": "severe" },
+    { "slug": "huesos-rotos", "title": "Huesos Rotos", "severity": "moderate" },
+    { "slug": "tejido-blando", "title": "Lesiones de Tejido Blando", "severity": "mild" },
+    { "slug": "columna", "title": "Lesiones de Columna", "severity": "catastrophic" }
+  ],
+  "immediateSteps": [
+    {
+      "step": 1,
+      "title": "Llame al 911 si hay personas lesionadas",
+      "description": "Si hay heridos — aunque parezcan leves — llame al 911 de inmediato. No mueva a personas lesionadas a menos que haya un peligro inmediato.",
+      "urgency": "critical"
+    },
+    {
+      "step": 2,
+      "title": "Muévase a un lugar seguro si es posible",
+      "description": "Si los vehículos pueden moverse y están bloqueando el tráfico, llévelos al acotamiento. Encienda las luces de emergencia.",
+      "urgency": "critical"
+    },
+    {
+      "step": 3,
+      "title": "Documente la escena con fotos",
+      "description": "Antes de mover cualquier cosa, fotografíe todos los vehículos, los daños, las marcas de frenada, las condiciones de la vía y cualquier lesión visible.",
+      "urgency": "important"
+    },
+    {
+      "step": 4,
+      "title": "Intercambie información con el otro conductor",
+      "description": "Obtenga el nombre, número de licencia, compañía de seguros, número de póliza e información de contacto de todos los conductores involucrados.",
+      "urgency": "important"
+    },
+    {
+      "step": 5,
+      "title": "Obtenga información de testigos",
+      "description": "Pida a cualquier persona presente su nombre y número de teléfono. Los testigos independientes pueden ser fundamentales si se disputa la culpabilidad.",
+      "urgency": "important"
+    },
+    {
+      "step": 6,
+      "title": "Busque evaluación médica dentro de las 24-48 horas",
+      "description": "Aunque se sienta bien, consulte a un médico. Los síntomas tardíos (latigazo, conmoción cerebral) son comunes. Un expediente médico establece la relación entre el accidente y sus lesiones.",
+      "urgency": "critical"
+    },
+    {
+      "step": 7,
+      "title": "Notifique a su compañía de seguros",
+      "description": "Reporte el accidente a su aseguradora a la brevedad. Apéguese a los hechos — evite especular sobre la culpa o la gravedad de las lesiones.",
+      "urgency": "important"
+    },
+    {
+      "step": 8,
+      "title": "Guarde todos los registros",
+      "description": "Conserve todas las facturas médicas, presupuestos de reparación, recibos de auto de renta y cualquier documentación de pérdida de salario.",
+      "urgency": "helpful"
+    }
+  ],
+  "evidenceChecklist": [
+    {
+      "category": "En la Escena del Accidente",
+      "priority": "critical",
+      "items": [
+        "Fotos de todos los daños a los vehículos (todos los ángulos)",
+        "Fotos del lugar del accidente y las condiciones de la vía",
+        "Fotos de lesiones visibles",
+        "Número del reporte policial",
+        "Licencia, seguro e información de contacto del otro conductor",
+        "Nombres e información de contacto de testigos"
+      ]
+    },
+    {
+      "category": "Documentación Médica",
+      "priority": "critical",
+      "items": [
+        "Registros de la sala de emergencias o clínica de urgencias",
+        "Notas de todos los médicos y especialistas",
+        "Reportes de imágenes diagnósticas (radiografía, resonancia magnética, tomografía)",
+        "Registros de terapia física",
+        "Recibos de medicamentos",
+        "Diario de síntomas continuo"
+      ]
+    },
+    {
+      "category": "Registros Financieros",
+      "priority": "important",
+      "items": [
+        "Todas las facturas médicas",
+        "Presupuestos y facturas de reparación del vehículo",
+        "Recibos de auto de renta",
+        "Carta del empleador o talones de pago que documenten días perdidos de trabajo",
+        "Recibos de cualquier gasto de bolsillo relacionado con el accidente"
+      ]
+    },
+    {
+      "category": "Seguros y Documentos Legales",
+      "priority": "important",
+      "items": [
+        "Documentos de su propia póliza de seguro",
+        "Toda la correspondencia con los ajustadores de seguros (escrita y llamadas registradas)",
+        "Cualquier oferta de acuerdo recibida por escrito",
+        "Copia del reporte policial (solicítela cuando esté disponible)"
+      ]
+    },
+    {
+      "category": "Evidencia Adicional",
+      "priority": "helpful",
+      "items": [
+        "Video de cámara de tablero o cámaras de tráfico cercanas",
+        "Video de vigilancia de negocios cercanos",
+        "Capturas de pantalla de publicaciones relevantes en redes sociales",
+        "Reportes del clima del día y lugar del accidente"
+      ]
+    }
+  ],
+  "timelineRisks": [
+    {
+      "period": "Dentro de las 24-48 Horas",
+      "risk": "Los síntomas de lesiones tardías pueden quedar sin documentar",
+      "action": "Busque una evaluación médica aunque se sienta bien. Establezca un expediente médico que conecte el accidente con cualquier lesión."
+    },
+    {
+      "period": "Dentro de los Primeros 3-10 Días",
+      "risk": "La evidencia de la escena desaparece",
+      "action": "Regrese al lugar del accidente para tomar fotos adicionales si es necesario. Descargue el video de la cámara de tablero antes de que se sobrescriba."
+    },
+    {
+      "period": "Dentro de los Primeros 30 Días",
+      "risk": "Plazos para reportar a la aseguradora",
+      "action": "La mayoría de las pólizas exigen reporte oportuno. Notifique a su aseguradora en la primera semana para evitar problemas de cobertura."
+    },
+    {
+      "period": "Dentro de los 6 Meses",
+      "risk": "La memoria se desvanece y los testigos se vuelven inlocalizables",
+      "action": "Escriba un relato detallado del accidente y sus lesiones mientras su memoria es fresca. Recopile declaraciones de testigos."
+    },
+    {
+      "period": "2 Años (California)",
+      "risk": "Plazo de prescripción para lesiones personales",
+      "action": "En general, tiene 2 años desde la fecha del accidente para presentar una demanda por lesiones personales en California. Perder este plazo generalmente impide su reclamo."
+    },
+    {
+      "period": "2 Años (Arizona)",
+      "risk": "Plazo de prescripción para lesiones personales",
+      "action": "Arizona también tiene un plazo de prescripción de 2 años para reclamos de lesiones personales. Los vehículos del gobierno pueden tener requisitos de notificación más cortos."
+    }
+  ],
+  "insuranceIssues": [
+    {
+      "issue": "Ofertas de acuerdo rápidas",
+      "explanation": "Los ajustadores de seguros pueden contactarle en pocos días con una oferta de acuerdo. Las ofertas tempranas generalmente son bajas y se hacen antes de conocer la magnitud completa de las lesiones. Usted no está obligado a aceptar."
+    },
+    {
+      "issue": "Solicitudes de declaración grabada",
+      "explanation": "El seguro del otro conductor puede pedirle que proporcione una declaración grabada. Generalmente no está obligado a cumplir con las solicitudes de la aseguradora contraria. Consulte con un abogado antes de aceptar."
+    },
+    {
+      "issue": "Responsabilidad disputada",
+      "explanation": "Las aseguradoras pueden discutir quién tuvo la culpa o asignar culpa compartida para reducir su pago. California usa la norma de culpa comparativa pura — su indemnización se reduce por su porcentaje de responsabilidad."
+    },
+    {
+      "issue": "Conductores sin seguro o con seguro insuficiente",
+      "explanation": "Si el conductor responsable no tiene seguro suficiente, su propia cobertura de motorista no asegurado/subasegurado (UM/UIM) puede aplicar. Revise su póliza cuidadosamente."
+    },
+    {
+      "issue": "Cobertura de pagos médicos (MedPay)",
+      "explanation": "Algunas pólizas de California incluyen MedPay, que cubre gastos médicos sin importar la culpa. Esto puede ayudar a cubrir costos inmediatos mientras se resuelve su reclamo."
+    }
+  ],
+  "whenToGetLawyer": [
+    "Usted o algún pasajero sufrió lesiones que requieren tratamiento médico",
+    "El otro conductor no tenía seguro o tenía seguro insuficiente",
+    "La culpabilidad está en disputa o se le atribuye a usted parcialmente",
+    "Recibió una oferta de acuerdo rápida antes de entender completamente sus lesiones",
+    "Estuvo involucrado un vehículo comercial (camión, autobús, servicio de transporte por aplicación)",
+    "El accidente involucró un vehículo gubernamental o condiciones peligrosas en la vía",
+    "Un ajustador de seguros le está presionando para llegar a un acuerdo rápidamente",
+    "Sus lesiones le han causado pérdida significativa de salario o discapacidad a largo plazo"
+  ],
+  "relatedAccidents": ["camion", "motocicleta", "uber-lyft", "peaton"],
+  "relatedInjuries": ["latigazo", "traumatismo-craneal", "huesos-rotos", "tejido-blando", "columna"],
+  "relatedGuides": ["despues-accidente-auto", "lista-evidencia", "evaluacion-caso"],
+  "relatedTools": ["evaluacion-caso", "lista-evidencia"],
+  "translationStatus": "needs-review"
+}

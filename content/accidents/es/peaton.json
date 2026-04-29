@@ -1,0 +1,213 @@
+{
+  "slug": "peaton",
+  "title": "Accidentes de Peatones",
+  "shortTitle": "Accidentes de Peatones",
+  "description": "Los peatones atropellados por vehículos enfrentan algunas de las lesiones más graves de todos los tipos de accidentes. Las leyes de California y Arizona brindan protecciones importantes para los peatones, pero actuar con prontitud, documentar bien el accidente y recibir atención médica son pasos críticos para proteger su salud y sus opciones legales. Esta información es educativa únicamente y no constituye asesoramiento legal.",
+  "metaTitle": "Guía para Peatones Atropellados — Qué Hacer Después",
+  "metaDescription": "Qué hacer después de un accidente de peatón en California o Arizona. Pasos inmediatos, lista de evidencia, derechos legales y cuándo hablar con un abogado.",
+  "icon": "pedestrian",
+  "commonCauses": [
+    {
+      "title": "No Ceder el Paso en los Cruces Peatonales",
+      "description": "Los conductores están obligados a ceder el paso a los peatones en los cruces peatonales marcados y no marcados. No hacerlo es una de las principales causas de accidentes de peatones."
+    },
+    {
+      "title": "Manejo Distraído",
+      "description": "Los conductores que usan el teléfono u otras distracciones son menos propensos a ver a los peatones, especialmente en intersecciones y áreas de estacionamiento."
+    },
+    {
+      "title": "Pasarse Semáforos en Rojo y Señales de Alto",
+      "description": "Las infracciones de tránsito que permiten que un vehículo invada el derecho de paso de un peatón de forma inesperada y a alta velocidad."
+    },
+    {
+      "title": "Exceso de Velocidad",
+      "description": "Las velocidades más altas aumentan drásticamente la gravedad de las lesiones a los peatones. Un peatón golpeado a 60 km/h tiene una tasa de supervivencia mucho menor que uno golpeado a 30 km/h."
+    },
+    {
+      "title": "Giros a la Izquierda y a la Derecha",
+      "description": "Los conductores que giran frecuentemente se concentran en el tráfico en lugar de en los peatones en el cruce peatonal. Los vehículos que giran son responsables de un gran porcentaje de los accidentes de peatones."
+    },
+    {
+      "title": "Vehículos en Reversa",
+      "description": "Los autos en reversa en entradas, estacionamientos y zonas de carga frecuentemente no detectan a los peatones, especialmente a los niños."
+    },
+    {
+      "title": "Mala Iluminación o Visibilidad",
+      "description": "La noche, el mal clima y la iluminación insuficiente de las calles reducen la visibilidad de los peatones para los conductores."
+    }
+  ],
+  "likelyInjuries": [
+    { "slug": "traumatismo-craneal", "title": "Traumatismo Craneoencefálico", "severity": "severe" },
+    { "slug": "columna", "title": "Lesiones de Columna", "severity": "catastrophic" },
+    { "slug": "huesos-rotos", "title": "Huesos Rotos", "severity": "moderate" },
+    { "slug": "lesiones-internas", "title": "Lesiones Internas", "severity": "severe" },
+    { "slug": "tejido-blando", "title": "Lesiones de Tejido Blando", "severity": "moderate" }
+  ],
+  "immediateSteps": [
+    {
+      "step": 1,
+      "title": "Llame al 911",
+      "description": "Los accidentes de peatones frecuentemente involucran lesiones graves. Llame a los servicios de emergencia de inmediato.",
+      "urgency": "critical"
+    },
+    {
+      "step": 2,
+      "title": "No se levante si siente dolor en el cuello o la espalda",
+      "description": "Las lesiones de columna son comunes en accidentes de peatones. Permanezca quieto hasta que lleguen los paramédicos, a menos que esté en peligro inmediato por el tráfico.",
+      "urgency": "critical"
+    },
+    {
+      "step": 3,
+      "title": "Pida a alguien que documente la escena",
+      "description": "Si no puede tomar fotos, pida a un transeúnte que fotografíe las posiciones de los vehículos, el cruce peatonal, los semáforos y las condiciones del camino.",
+      "urgency": "critical"
+    },
+    {
+      "step": 4,
+      "title": "Obtenga la información del conductor",
+      "description": "Nombre, número de licencia, compañía aseguradora e información de contacto. No discuta quién tuvo la culpa.",
+      "urgency": "important"
+    },
+    {
+      "step": 5,
+      "title": "Obtenga información de los testigos",
+      "description": "Nombres e información de contacto de los transeúntes. Múltiples testigos refuerzan significativamente el testimonio del peatón.",
+      "urgency": "important"
+    },
+    {
+      "step": 6,
+      "title": "Anote el estado del semáforo y el tipo de cruce peatonal",
+      "description": "¿El semáforo estaba en verde? ¿Había señal de cruce peatonal? ¿Era un cruce marcado o no marcado? Estos detalles son importantes para establecer quién tenía el derecho de paso.",
+      "urgency": "important"
+    },
+    {
+      "step": 7,
+      "title": "Busque evaluación médica de emergencia",
+      "description": "Acepte el transporte en ambulancia si se lo ofrecen. Las lesiones internas y las lesiones cerebrales por impactos a peatones frecuentemente no son evidentes de inmediato.",
+      "urgency": "critical"
+    },
+    {
+      "step": 8,
+      "title": "Conserve toda su ropa y pertenencias personales",
+      "description": "La ropa rasgada, los zapatos dañados y los lentes rotos son evidencia física. Consérvelos en lugar de desecharlos.",
+      "urgency": "helpful"
+    }
+  ],
+  "evidenceChecklist": [
+    {
+      "category": "En el Lugar del Accidente",
+      "priority": "critical",
+      "items": [
+        "Fotos del vehículo que le golpeó y todos los daños",
+        "Fotos del cruce peatonal, la intersección y los semáforos",
+        "Fotos de las lesiones visibles",
+        "Licencia de conducir, seguro e información de contacto del conductor",
+        "Número del reporte policial",
+        "Nombres e información de contacto de todos los testigos"
+      ]
+    },
+    {
+      "category": "Evidencia Física",
+      "priority": "critical",
+      "items": [
+        "Ropa rasgada o dañada (consérvela, no la lave)",
+        "Artículos personales dañados (lentes, bolsos, teléfono)",
+        "Fotos de las lesiones tomadas en la escena y en los días siguientes"
+      ]
+    },
+    {
+      "category": "Documentación Médica",
+      "priority": "critical",
+      "items": [
+        "Registros de sala de emergencias y de transporte en ambulancia",
+        "Todas las notas de médicos y especialistas",
+        "Informes de imágenes (radiografías, resonancia magnética, tomografía computarizada)",
+        "Registros de fisioterapia y terapia ocupacional",
+        "Registros de recetas y diario de síntomas"
+      ]
+    },
+    {
+      "category": "Escena y Vialidad",
+      "priority": "important",
+      "items": [
+        "Video de cámaras de tráfico o de vigilancia (solicítelo rápido — las grabaciones suelen sobreescribirse)",
+        "Fotos del lugar del accidente tomadas posteriormente",
+        "Documentación de las condiciones del cruce peatonal, visibilidad o defectos en la señalización"
+      ]
+    },
+    {
+      "category": "Registros Financieros",
+      "priority": "important",
+      "items": [
+        "Todas las facturas médicas",
+        "Documentación de salarios perdidos",
+        "Costos de transporte durante la recuperación",
+        "Cualquier gasto de bolsillo relacionado con el accidente"
+      ]
+    }
+  ],
+  "timelineRisks": [
+    {
+      "period": "Dentro de 24 a 48 horas",
+      "risk": "Las grabaciones de vigilancia son sobreescritas",
+      "action": "Las cámaras de tráfico y el sistema de seguridad de negocios cercanos generalmente sobreescriben sus grabaciones en 24 a 72 horas. Un abogado puede enviar una solicitud de preservación con rapidez."
+    },
+    {
+      "period": "Dentro de 72 horas",
+      "risk": "Síntomas de lesión tardíos",
+      "action": "Obtenga una evaluación médica completa aunque se sienta funcional. Las lesiones internas y los traumatismos craneoencefálicos pueden manifestarse con el paso de los días."
+    },
+    {
+      "period": "Dentro de 30 días",
+      "risk": "Plazos para notificación al seguro",
+      "action": "Notifique a su propia aseguradora. Si el conductor responsable no tiene seguro, su propia cobertura para motoristas sin seguro puede aplicar."
+    },
+    {
+      "period": "Dentro de 6 meses",
+      "risk": "Los testigos dejan de estar disponibles",
+      "action": "Recopile declaraciones escritas de los testigos mientras los recuerdos están frescos."
+    },
+    {
+      "period": "6 meses (Vehículos gubernamentales)",
+      "risk": "Requisito de aviso de reclamación gubernamental",
+      "action": "Si un vehículo gubernamental (autobús, auto de la ciudad) le golpeó, California y Arizona tienen plazos más cortos para la notificación de reclamación, tan cortos como 6 meses. Este es un plazo inamovible."
+    },
+    {
+      "period": "2 años (California / Arizona)",
+      "risk": "Estatuto de limitaciones para lesiones personales",
+      "action": "Ambos estados tienen un estatuto de limitaciones de 2 años para lesiones personales a partir de la fecha de la lesión para demandados que no sean entidades gubernamentales."
+    }
+  ],
+  "insuranceIssues": [
+    {
+      "issue": "Conductores sin seguro",
+      "explanation": "Los peatones son particularmente vulnerables a ser golpeados por conductores sin seguro. Su propia cobertura UM/UIM del seguro de auto puede aplicar incluso si usted no estaba en un vehículo."
+    },
+    {
+      "issue": "Argumentos de culpa comparativa",
+      "explanation": "Los ajustadores de seguros pueden argumentar que el peatón cruzó fuera del cruce peatonal, no estaba en la zona designada o no prestaba atención. California y Arizona utilizan la culpa comparativa pura, por lo que incluso una culpa parcial no impide la recuperación."
+    },
+    {
+      "issue": "Reclamaciones por vehículos gubernamentales",
+      "explanation": "Si fue golpeado por un autobús de la ciudad, un vehículo policial u otro vehículo gubernamental, se aplican procedimientos especiales de reclamación y plazos más cortos. Estos deben manejarse de manera diferente a las reclamaciones con partes privadas."
+    },
+    {
+      "issue": "Ofertas de acuerdo rápidas",
+      "explanation": "Las lesiones de peatones suelen ser graves y de largo plazo. Aceptar un acuerdo rápido antes de conocer el alcance total de las lesiones puede dejar una compensación significativa sobre la mesa."
+    }
+  ],
+  "whenToGetLawyer": [
+    "Sufrió lesiones que requieren tratamiento médico",
+    "El conductor no tenía seguro o se dio a la fuga",
+    "La responsabilidad está siendo disputada o se sugiere culpa compartida",
+    "Estuvo involucrado un vehículo gubernamental (autobús, auto de la ciudad)",
+    "Sus lesiones implicaron hospitalización o una recuperación prolongada",
+    "Recibió una oferta de acuerdo rápida antes de conocer el alcance total de sus lesiones",
+    "Las grabaciones de vigilancia necesitan ser preservadas antes de que sean sobreescritas"
+  ],
+  "relatedAccidents": ["auto", "bicicleta", "uber-lyft", "motocicleta"],
+  "relatedInjuries": ["traumatismo-craneal", "columna", "huesos-rotos", "lesiones-internas", "tejido-blando"],
+  "relatedGuides": ["lista-evidencia", "despues-accidente-auto", "evaluacion-caso"],
+  "relatedTools": ["evaluacion-caso", "lista-evidencia"],
+  "translationStatus": "needs-review"
+}

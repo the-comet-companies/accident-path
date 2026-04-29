@@ -23,8 +23,10 @@ function loadAll<T>(dir: string, schema: { parse: (data: unknown) => T }): T[] {
 }
 
 export const cms = {
-  getAccident: (slug: string) => loadAndValidate<AccidentType>('accidents', slug, AccidentTypeSchema),
-  getAllAccidents: () => loadAll<AccidentType>('accidents', AccidentTypeSchema),
+  getAccident: (slug: string, locale: 'en' | 'es' = 'en') =>
+    loadAndValidate<AccidentType>(locale === 'es' ? 'accidents/es' : 'accidents', slug, AccidentTypeSchema),
+  getAllAccidents: (locale: 'en' | 'es' = 'en') =>
+    loadAll<AccidentType>(locale === 'es' ? 'accidents/es' : 'accidents', AccidentTypeSchema),
   getInjury: (slug: string) => loadAndValidate<InjuryType>('injuries', slug, InjuryTypeSchema),
   getAllInjuries: () => loadAll<InjuryType>('injuries', InjuryTypeSchema),
   getState: (slug: string) => loadAndValidate<StateData>('states', slug, StateDataSchema),

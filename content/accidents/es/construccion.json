@@ -1,0 +1,215 @@
+{
+  "slug": "construccion",
+  "title": "Lesiones en Obras de Construcción",
+  "shortTitle": "Accidentes de Construcción",
+  "description": "Los sitios de construcción se encuentran entre los entornos de trabajo más peligrosos. Los trabajadores lesionados en una obra pueden tener opciones más allá de la compensación laboral, incluyendo reclamaciones contra terceros como contratistas generales, subcontratistas, fabricantes de equipos y propietarios de inmuebles.",
+  "metaTitle": "Lesiones en Construcción — Compensación Laboral vs. Terceros",
+  "metaDescription": "¿Qué hacer después de una lesión en obra de construcción en California o Arizona? Aprende sobre compensación laboral, responsabilidad de terceros, reportes a OSHA y tus derechos.",
+  "icon": "construction",
+  "commonCauses": [
+    {
+      "title": "Caídas desde Alturas",
+      "description": "Las caídas desde andamios, escaleras, techos y plataformas elevadas son la principal causa de muertes y lesiones graves en la construcción."
+    },
+    {
+      "title": "Accidentes por Impacto de Objetos",
+      "description": "Trabajadores golpeados por herramientas, equipos o vehículos que caen en obras activas. El trabajo en altura genera importantes riesgos de impacto."
+    },
+    {
+      "title": "Atrapamiento en Maquinaria o Estructuras",
+      "description": "Trabajadores atrapados en o entre maquinaria pesada, equipo o estructuras que colapsan. Este tipo de accidentes frecuentemente resulta en lesiones fatales o catastróficas."
+    },
+    {
+      "title": "Electrocución",
+      "description": "El contacto con cables energizados, procedimientos inadecuados de bloqueo y etiquetado, y la proximidad a líneas eléctricas son los principales riesgos eléctricos en obras de construcción."
+    },
+    {
+      "title": "Equipo o Herramientas Defectuosas",
+      "description": "Herramientas eléctricas con fallas, componentes de andamio defectuosos y equipo averiado pueden causar lesiones graves independientemente del error del trabajador."
+    },
+    {
+      "title": "Colapso de Zanjas y Excavaciones",
+      "description": "Las zanjas y excavaciones sin protección pueden colapsar repentinamente, sepultando a los trabajadores. OSHA establece requisitos específicos de entibado y sistemas de protección."
+    },
+    {
+      "title": "Exposición a Materiales Peligrosos",
+      "description": "El asbesto, el polvo de sílice, el plomo y otros materiales de construcción representan graves riesgos para la salud a largo plazo si no se cuenta con equipo de protección adecuado."
+    }
+  ],
+  "likelyInjuries": [
+    { "slug": "traumatismo-craneal", "title": "Traumatismo Craneoencefálico", "severity": "severe" },
+    { "slug": "columna", "title": "Lesiones de Columna", "severity": "catastrophic" },
+    { "slug": "huesos-rotos", "title": "Huesos Rotos", "severity": "moderate" },
+    { "slug": "lesiones-internas", "title": "Lesiones Internas", "severity": "severe" },
+    { "slug": "quemaduras", "title": "Quemaduras", "severity": "severe" }
+  ],
+  "immediateSteps": [
+    {
+      "step": 1,
+      "title": "Busca atención médica de emergencia",
+      "description": "Las lesiones en construcción pueden ser graves. Llama al 911 o pide a un compañero que lo haga de inmediato. No minimices los síntomas.",
+      "urgency": "critical"
+    },
+    {
+      "step": 2,
+      "title": "Reporta la lesión a tu empleador de inmediato",
+      "description": "Notifica a tu empleador o supervisor de obra tan pronto como sea posible. Esto es necesario para preservar tus derechos de compensación laboral tanto en California como en Arizona.",
+      "urgency": "critical"
+    },
+    {
+      "step": 3,
+      "title": "Documenta la escena antes de que cambie",
+      "description": "Las obras de construcción cambian rápidamente. Fotografía el lugar exacto del accidente, el equipo involucrado, cualquier defecto y violaciones de seguridad antes de que se modifique el sitio.",
+      "urgency": "critical"
+    },
+    {
+      "step": 4,
+      "title": "Identifica a los testigos",
+      "description": "Obtén los nombres e información de contacto de compañeros de trabajo u otras personas que presenciaron el accidente.",
+      "urgency": "important"
+    },
+    {
+      "step": 5,
+      "title": "Preserva cualquier equipo defectuoso",
+      "description": "Si una herramienta o equipo falló, consérvalo como evidencia. No permitas que sea reparado, desechado o devuelto.",
+      "urgency": "important"
+    },
+    {
+      "step": 6,
+      "title": "Documenta cualquier violación a OSHA observada",
+      "description": "Anota cualquier requisito de seguridad que no se haya cumplido al momento del accidente. Las violaciones a OSHA pueden respaldar reclamaciones de responsabilidad contra terceros.",
+      "urgency": "important"
+    },
+    {
+      "step": 7,
+      "title": "Presenta una reclamación de compensación laboral",
+      "description": "Presenta tu reclamación ante la aseguradora de compensación laboral de tu empleador con prontitud. Perder los plazos de reporte puede poner en riesgo tus beneficios.",
+      "urgency": "critical"
+    },
+    {
+      "step": 8,
+      "title": "Guarda registros de todo",
+      "description": "Todas las facturas médicas, documentación de salarios perdidos y comunicaciones con tu empleador, aseguradora o cualquier tercero.",
+      "urgency": "helpful"
+    }
+  ],
+  "evidenceChecklist": [
+    {
+      "category": "En la Escena",
+      "priority": "critical",
+      "items": [
+        "Fotos del lugar exacto del accidente",
+        "Fotos de cualquier equipo, herramienta o material involucrado",
+        "Fotos de violaciones de seguridad o medidas de protección ausentes",
+        "Nombres e información de contacto de testigos",
+        "Número del reporte de incidente del empleador"
+      ]
+    },
+    {
+      "category": "Equipo y Materiales",
+      "priority": "critical",
+      "items": [
+        "Conserva cualquier herramienta o equipo defectuoso (no lo repares ni deseches)",
+        "Nombre del fabricante y número de modelo del equipo involucrado",
+        "Registros de mantenimiento del equipo (solicita mediante abogado)",
+        "Hojas de datos de seguridad de cualquier material peligroso involucrado"
+      ]
+    },
+    {
+      "category": "Registros de Empleo y Reclamaciones",
+      "priority": "important",
+      "items": [
+        "Número de reclamación de compensación laboral",
+        "Reporte escrito de lesión del empleador",
+        "Reporte de OSHA (si se presentó)",
+        "Contrato o acuerdo de empleo",
+        "Información de contratistas y subcontratistas de la obra"
+      ]
+    },
+    {
+      "category": "Documentación Médica",
+      "priority": "critical",
+      "items": [
+        "Registros de urgencias y todas las consultas de seguimiento",
+        "Notas de especialistas (ortopedia, neurología, etc.)",
+        "Informes de imágenes (radiografías, resonancias magnéticas, tomografías)",
+        "Registros de fisioterapia y terapia ocupacional",
+        "Registros de cualquier tratamiento quirúrgico",
+        "Diario continuo de síntomas y recuperación"
+      ]
+    },
+    {
+      "category": "Registros Financieros",
+      "priority": "important",
+      "items": [
+        "Todas las facturas médicas",
+        "Documentación de salarios perdidos",
+        "Registros de pagos de compensación laboral recibidos",
+        "Cualquier gasto de bolsillo relacionado con el accidente"
+      ]
+    }
+  ],
+  "timelineRisks": [
+    {
+      "period": "Inmediatamente",
+      "risk": "La escena cambia y la evidencia se pierde",
+      "action": "Las obras de construcción cambian rápidamente. Documenta todo antes de que se modifique el sitio, se repare el equipo o se desmonte el andamiaje."
+    },
+    {
+      "period": "Dentro de 24 a 48 Horas",
+      "risk": "Riesgo de vencer el plazo para reportar a compensación laboral",
+      "action": "Los sistemas de compensación laboral de California y Arizona requieren notificación oportuna al empleador. El retraso puede complicar o poner en riesgo tu reclamación."
+    },
+    {
+      "period": "Dentro de 30 Días",
+      "risk": "Puede concluir la investigación de OSHA",
+      "action": "OSHA puede investigar accidentes graves de construcción. Coopera con los investigadores y conserva tu propia documentación."
+    },
+    {
+      "period": "Dentro de 1 Año (Compensación Laboral)",
+      "risk": "Plazo para presentar reclamación de compensación laboral",
+      "action": "California requiere presentar la reclamación de compensación laboral dentro de 1 año de la lesión. Arizona también tiene un plazo de 1 año para la mayoría de las reclamaciones de compensación laboral."
+    },
+    {
+      "period": "2 Años (Reclamaciones contra Terceros)",
+      "risk": "Prescripción para reclamaciones civiles de lesiones personales contra terceros",
+      "action": "Si un tercero (contratista, fabricante de equipo) es responsable, generalmente tienes 2 años para presentar una demanda civil. La compensación laboral no impide las reclamaciones contra terceros."
+    }
+  ],
+  "insuranceIssues": [
+    {
+      "issue": "Compensación laboral vs. reclamaciones contra terceros",
+      "explanation": "La compensación laboral generalmente cubre costos médicos y salarios perdidos, pero limita la recuperación total. Si un tercero (contratista general, fabricante de equipo, propietario del inmueble) contribuyó al accidente, puede estar disponible una demanda civil por separado."
+    },
+    {
+      "issue": "Estatus de contratista independiente",
+      "explanation": "Los trabajadores clasificados como contratistas independientes pueden no estar cubiertos por la compensación laboral del empleador. Sin embargo, la clasificación incorrecta es común y puede impugnarse."
+    },
+    {
+      "issue": "Múltiples partes potencialmente responsables",
+      "explanation": "Las lesiones en obras de construcción pueden involucrar al contratista general, múltiples subcontratistas, propietarios del inmueble, fabricantes de equipo y arquitectos. Identificar a todas las partes es complejo pero de gran importancia."
+    },
+    {
+      "issue": "Responsabilidad del fabricante del equipo",
+      "explanation": "Si una herramienta o máquina defectuosa causó la lesión, el fabricante puede ser responsable bajo las leyes de responsabilidad por productos, de manera separada y adicional a cualquier reclamación de compensación laboral."
+    },
+    {
+      "issue": "Las violaciones a OSHA como evidencia",
+      "explanation": "Las violaciones documentadas a OSHA al momento del accidente pueden respaldar tanto reclamaciones de compensación laboral como demandas civiles contra terceros, al establecer negligencia."
+    }
+  ],
+  "whenToGetLawyer": [
+    "Tus lesiones requirieron cirugía, hospitalización o atención médica a largo plazo",
+    "Un tercero (contratista, fabricante de equipo, propietario del inmueble) pudo haber contribuido al accidente",
+    "Tu empleador está disputando la reclamación de compensación laboral o tu estatus de empleo",
+    "Estuvo involucrado equipo defectuoso",
+    "Había violaciones a OSHA presentes al momento del accidente",
+    "Te han ofrecido un acuerdo de compensación laboral",
+    "Tus lesiones han causado discapacidad permanente o pérdida significativa de ingresos"
+  ],
+  "relatedAccidents": ["trabajo", "propiedad", "producto", "caida"],
+  "relatedInjuries": ["traumatismo-craneal", "columna", "huesos-rotos", "lesiones-internas", "quemaduras"],
+  "relatedGuides": ["lista-evidencia", "despues-accidente-auto", "evaluacion-caso"],
+  "relatedTools": ["evaluacion-caso", "lista-evidencia"],
+  "translationStatus": "needs-review"
+}

@@ -1,0 +1,221 @@
+{
+  "slug": "motocicleta",
+  "title": "Accidentes de Motocicleta",
+  "shortTitle": "Accidentes de Moto",
+  "description": "Los accidentes de motocicleta frecuentemente resultan en lesiones graves porque los motociclistas carecen de la protección física de un vehículo cerrado. Los desafíos legales únicos — incluyendo el sesgo contra los motociclistas — hacen que la documentación y la acción inmediata sean especialmente importantes. Esta información es educativa únicamente y no constituye asesoría legal.",
+  "metaTitle": "Guía de Accidentes de Moto — Pasos, Derechos y Lo Que Debe Saber",
+  "metaDescription": "Qué hacer después de un accidente de motocicleta en California o Arizona. Lista de evidencia, pasos inmediatos y orientación sobre cuándo hablar con un abogado.",
+  "icon": "motorcycle",
+  "commonCauses": [
+    {
+      "title": "Colisiones al Girar a la Izquierda",
+      "description": "El tipo más común de accidente de motocicleta — un auto que gira a la izquierda frente a una motocicleta que viene de frente en una intersección o entrada."
+    },
+    {
+      "title": "Accidentes por Cambio de Carril",
+      "description": "Las motocicletas son fáciles de perder en los ángulos ciegos. Los conductores que cambian de carril sin revisar son una causa principal de colisiones graves de motocicleta."
+    },
+    {
+      "title": "Colisiones por Alcance",
+      "description": "Las motocicletas frenan más rápido que los autos pero son más vulnerables cuando son impactadas por detrás. Los conductores que siguen muy de cerca representan un riesgo significativo."
+    },
+    {
+      "title": "Manejo Distraído",
+      "description": "Los conductores que usan el celular o están distraídos tienen menos probabilidad de notar motocicletas, particularmente en intersecciones y en carreteras."
+    },
+    {
+      "title": "Peligros en la Vía",
+      "description": "La grava, los baches, los derrames de aceite y el pavimento irregular que son molestias menores para los autos pueden hacer que un motociclista pierda el control."
+    },
+    {
+      "title": "Exceso de Velocidad",
+      "description": "Tanto el conductor del auto como el motociclista que van a exceso de velocidad reducen el tiempo de reacción. Los choques de motocicleta a alta velocidad conllevan un alto riesgo de lesiones catastróficas."
+    },
+    {
+      "title": "Manejo Bajo Influencia del Alcohol o Drogas",
+      "description": "Los conductores bajo los efectos del alcohol tienen menor capacidad para detectar motocicletas y responder a tiempo, lo que los hace desproporcionadamente involucrados en choques fatales de motocicleta."
+    }
+  ],
+  "likelyInjuries": [
+    { "slug": "traumatismo-craneal", "title": "Traumatismo Craneoencefálico", "severity": "severe" },
+    { "slug": "columna", "title": "Lesiones de Columna", "severity": "catastrophic" },
+    { "slug": "huesos-rotos", "title": "Huesos Rotos", "severity": "moderate" },
+    { "slug": "tejido-blando", "title": "Rozaduras / Tejido Blando", "severity": "moderate" },
+    { "slug": "lesiones-internas", "title": "Lesiones Internas", "severity": "severe" }
+  ],
+  "immediateSteps": [
+    {
+      "step": 1,
+      "title": "Llame al 911",
+      "description": "Los accidentes de motocicleta frecuentemente resultan en lesiones graves. Llame al 911 aunque se sienta bien — muchas lesiones graves tienen síntomas tardíos.",
+      "urgency": "critical"
+    },
+    {
+      "step": 2,
+      "title": "Permanezca en la escena y mantenga la calma",
+      "description": "No se quite el casco a menos que haya una obstrucción inmediata de las vías respiratorias y haya una persona capacitada presente. Quédese quieto si siente dolor en el cuello o la espalda.",
+      "urgency": "critical"
+    },
+    {
+      "step": 3,
+      "title": "Documente todo antes de que se limpie la escena",
+      "description": "Fotografíe las posiciones de los vehículos, los daños, las condiciones de la vía, las marcas de frenada y cualquier defecto en el pavimento que pueda haber contribuido al accidente.",
+      "urgency": "critical"
+    },
+    {
+      "step": 4,
+      "title": "Obtenga la información del otro conductor",
+      "description": "Nombre, número de licencia, compañía de seguros, número de póliza e información de contacto. No discuta la culpabilidad en la escena del accidente.",
+      "urgency": "important"
+    },
+    {
+      "step": 5,
+      "title": "Identifique testigos",
+      "description": "Obtenga los nombres e información de contacto de cualquier persona que haya visto el accidente. El sesgo contra los motociclistas hace que los testigos independientes sean especialmente importantes.",
+      "urgency": "important"
+    },
+    {
+      "step": 6,
+      "title": "Conserve su casco y equipo de protección",
+      "description": "Su casco, chamarra, guantes y calzado son evidencia física de la gravedad del accidente. No los deseche ni los repare.",
+      "urgency": "important"
+    },
+    {
+      "step": 7,
+      "title": "Busque evaluación médica de inmediato",
+      "description": "Incluso impactos que parecen menores pueden causar hemorragia interna o traumatismo craneoencefálico. Hágase evaluar el mismo día del accidente.",
+      "urgency": "critical"
+    },
+    {
+      "step": 8,
+      "title": "Notifique a su aseguradora",
+      "description": "Reporte el accidente a su compañía de seguros. Evite admitir culpa o especular sobre las lesiones.",
+      "urgency": "helpful"
+    }
+  ],
+  "evidenceChecklist": [
+    {
+      "category": "En la Escena del Accidente",
+      "priority": "critical",
+      "items": [
+        "Fotos de todos los vehículos desde cada ángulo (antes de moverlos)",
+        "Fotos de las condiciones de la vía, marcas de frenada y escombros",
+        "Fotos de los daños a su motocicleta",
+        "Licencia, seguro e información de contacto del otro conductor",
+        "Número del reporte policial",
+        "Nombres e información de contacto de los testigos"
+      ]
+    },
+    {
+      "category": "Evidencia Física",
+      "priority": "critical",
+      "items": [
+        "Su casco (consérvelo — no lo limpie ni lo repare)",
+        "Su chamarra, guantes y botas de manejo",
+        "Fotos de rozaduras, moretones y lesiones visibles en la escena y en los días siguientes",
+        "Presupuesto de reparación de la motocicleta o documentación de pérdida total"
+      ]
+    },
+    {
+      "category": "Documentación Médica",
+      "priority": "critical",
+      "items": [
+        "Registros de la sala de emergencias o centro de trauma",
+        "Notas de todas las visitas de seguimiento con médicos y especialistas",
+        "Reportes de imágenes (radiografía, resonancia magnética, tomografía)",
+        "Registros de terapia física",
+        "Recibos de medicamentos",
+        "Diario continuo de síntomas y recuperación"
+      ]
+    },
+    {
+      "category": "Registros Financieros",
+      "priority": "important",
+      "items": [
+        "Todas las facturas médicas",
+        "Documentación de reparación o reemplazo de la motocicleta",
+        "Documentación de pérdida de salario del empleador",
+        "Costos de renta o transporte durante la recuperación",
+        "Cualquier gasto de bolsillo relacionado con el accidente"
+      ]
+    },
+    {
+      "category": "Evidencia Adicional",
+      "priority": "helpful",
+      "items": [
+        "Video de cámara de tablero o cámaras de tráfico",
+        "Video de vigilancia de negocios cercanos",
+        "Reportes del clima y condiciones de la vía del día del accidente",
+        "Cualquier queja previa sobre el peligro en la vía (si aplica)"
+      ]
+    }
+  ],
+  "timelineRisks": [
+    {
+      "period": "De Inmediato",
+      "risk": "El casco y equipo pueden ser desechados",
+      "action": "Conserve todo el equipo de manejo — es evidencia física de la gravedad del choque. Guárdelo en un lugar seguro y no lo repare ni lo limpie."
+    },
+    {
+      "period": "Dentro de las 24-48 Horas",
+      "risk": "Síntomas tardíos de lesiones",
+      "action": "Busque una evaluación médica completa, incluyendo exploración neurológica. El traumatismo craneoencefálico y las lesiones internas con frecuencia se manifiestan después."
+    },
+    {
+      "period": "Dentro de los Primeros 30 Días",
+      "risk": "Se cierran los plazos para reportar al seguro",
+      "action": "Reporte a su aseguradora a la brevedad. Evite declaraciones grabadas a la aseguradora del conductor contrario sin orientación."
+    },
+    {
+      "period": "Dentro de los 6 Meses",
+      "risk": "La memoria de los testigos se desvanece",
+      "action": "Obtenga declaraciones escritas de los testigos. Descargue cualquier video de cámara de tablero o vigilancia disponible."
+    },
+    {
+      "period": "2 Años (California)",
+      "risk": "Plazo de prescripción para lesiones personales",
+      "action": "California generalmente otorga 2 años desde la fecha del accidente para presentar un reclamo por lesiones personales. Perder este plazo generalmente impide el reclamo."
+    },
+    {
+      "period": "2 Años (Arizona)",
+      "risk": "Plazo de prescripción para lesiones personales",
+      "action": "Arizona también tiene un plazo de prescripción de 2 años para lesiones personales. Contacte a un abogado con suficiente anticipación a este plazo."
+    }
+  ],
+  "insuranceIssues": [
+    {
+      "issue": "Sesgo contra los motociclistas en los reclamos",
+      "explanation": "Los ajustadores de seguros pueden intentar atribuirle la culpa al motociclista sugiriendo exceso de velocidad, circulación entre carriles o imprudencia, incluso sin evidencia. Una documentación sólida contrarresta esto."
+    },
+    {
+      "issue": "Uso del casco y culpa comparativa",
+      "explanation": "En California y Arizona, el uso del casco puede afectar los argumentos de culpa comparativa. California exige el casco; Arizona no lo requiere para mayores de 18 años, pero la falta del casco puede plantearse en los argumentos de daños."
+    },
+    {
+      "issue": "Motoristas con seguro insuficiente",
+      "explanation": "Los motociclistas frecuentemente son impactados por conductores sin seguro o con seguro insuficiente. Su propia cobertura UM/UIM puede ser fundamental para recuperar una compensación completa."
+    },
+    {
+      "issue": "Ofertas de acuerdo rápidas y bajas",
+      "explanation": "Las lesiones de motocicleta suelen implicar una recuperación prolongada. Aceptar un acuerdo rápido antes de entender el alcance completo de las lesiones puede dejarlo sin recursos para futuras necesidades médicas."
+    },
+    {
+      "issue": "Brechas en la cobertura de pagos médicos",
+      "explanation": "Muchas pólizas de seguro de motocicleta tienen términos diferentes de MedPay o pagos médicos que las pólizas de auto. Revise su cobertura cuidadosamente."
+    }
+  ],
+  "whenToGetLawyer": [
+    "Sufrió lesiones que requieren tratamiento médico",
+    "La aseguradora del otro conductor está disputando la culpa o culpándolo a usted",
+    "Recibió una oferta de acuerdo antes de completar su tratamiento",
+    "El accidente involucró un defecto en la vía o una carretera mantenida por el gobierno",
+    "Sus lesiones han causado pérdida prolongada de salario o discapacidad",
+    "El otro conductor no tenía seguro o tenía seguro insuficiente",
+    "No sabe cómo contrarrestar el sesgo contra los motociclistas en el proceso de reclamos"
+  ],
+  "relatedAccidents": ["auto", "camion", "bicicleta", "peaton"],
+  "relatedInjuries": ["traumatismo-craneal", "columna", "huesos-rotos", "tejido-blando", "lesiones-internas"],
+  "relatedGuides": ["lista-evidencia", "evaluacion-caso", "despues-accidente-auto"],
+  "relatedTools": ["evaluacion-caso", "lista-evidencia"],
+  "translationStatus": "needs-review"
+}

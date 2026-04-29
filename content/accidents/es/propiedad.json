@@ -1,0 +1,209 @@
+{
+  "slug": "propiedad",
+  "title": "Responsabilidad por Condición del Inmueble",
+  "shortTitle": "Responsabilidad de Propiedad",
+  "description": "La responsabilidad por condición del inmueble abarca las lesiones causadas por condiciones peligrosas en la propiedad de otra persona. Ya sea que la lesión ocurra en una tienda, complejo de apartamentos, estacionamiento o casa privada, los propietarios tienen la obligación legal de mantener condiciones razonablemente seguras para las personas que estén legítimamente en sus instalaciones.",
+  "metaTitle": "Guía de Responsabilidad de Propiedad — Lesión en Inmueble Ajeno",
+  "metaDescription": "¿Qué hacer tras una lesión por responsabilidad de propiedad en California o Arizona? Caídas, seguridad deficiente, accidentes en alberca y cómo documentar tu reclamación.",
+  "icon": "premises",
+  "commonCauses": [
+    {
+      "title": "Pisos Mojados, Resbalosos o Desnivelados",
+      "description": "Derrames, pisos recién trapeados y pisos irregulares se encuentran entre los peligros más comunes en propiedades que causan lesiones a los visitantes."
+    },
+    {
+      "title": "Seguridad Insuficiente",
+      "description": "Los propietarios que no proporcionan medidas de seguridad adecuadas —iluminación, cerraduras, cámaras, personal de seguridad— pueden ser responsables cuando los visitantes son agredidos o lastimados."
+    },
+    {
+      "title": "Accidentes en Albercas",
+      "description": "Los dueños de albercas son responsables del cercado, el equipo de seguridad y la supervisión. Los ahogamientos y lesiones por casi ahogamiento son reclamaciones graves de responsabilidad de propiedad."
+    },
+    {
+      "title": "Peligros en Estacionamientos",
+      "description": "Áreas de estacionamiento con poca iluminación, pavimento agrietado y controles de tráfico inadecuados crean riesgos de lesiones tanto para peatones como para conductores."
+    },
+    {
+      "title": "Defectos en Escaleras y Elevadores",
+      "description": "Escalones rotos, barandales faltantes y elevadores o escaleras eléctricas defectuosas son fallas de mantenimiento de las que los propietarios son responsables de corregir."
+    },
+    {
+      "title": "Exposición a Sustancias Tóxicas en la Propiedad",
+      "description": "El moho, el asbesto, la pintura con plomo y otros contaminantes ambientales en una propiedad pueden causar lesiones graves a la salud de inquilinos o visitantes."
+    },
+    {
+      "title": "Riesgos de Incendio y Eléctricos",
+      "description": "Las propiedades con medidas insuficientes de seguridad contra incendios, sistemas eléctricos defectuosos o salidas de emergencia bloqueadas pueden ser responsables de las lesiones resultantes."
+    }
+  ],
+  "likelyInjuries": [
+    { "slug": "huesos-rotos", "title": "Huesos Rotos", "severity": "moderate" },
+    { "slug": "traumatismo-craneal", "title": "Traumatismo Craneoencefálico", "severity": "severe" },
+    { "slug": "tejido-blando", "title": "Lesiones de Tejido Blando", "severity": "mild" },
+    { "slug": "columna", "title": "Lesiones de Columna", "severity": "catastrophic" },
+    { "slug": "quemaduras", "title": "Quemaduras", "severity": "severe" }
+  ],
+  "immediateSteps": [
+    {
+      "step": 1,
+      "title": "Busca atención médica",
+      "description": "Busca atención de emergencia para lesiones graves. Para cualquier lesión, consulta a un médico el mismo día o dentro de las 24 horas para crear un registro médico oportuno.",
+      "urgency": "critical"
+    },
+    {
+      "step": 2,
+      "title": "Documenta el peligro antes de que sea corregido",
+      "description": "Fotografía la condición exacta que causó tu lesión de inmediato. Los propietarios generalmente remedian los peligros rápidamente después de un incidente.",
+      "urgency": "critical"
+    },
+    {
+      "step": 3,
+      "title": "Reporta el incidente al propietario o administrador",
+      "description": "Notifica al propietario de la propiedad o al administrador en el sitio. Solicita un reporte escrito del incidente y pide una copia.",
+      "urgency": "critical"
+    },
+    {
+      "step": 4,
+      "title": "Identifica testigos",
+      "description": "Obtén los nombres e información de contacto de cualquier persona que haya presenciado el incidente o que estuviera al tanto del peligro.",
+      "urgency": "important"
+    },
+    {
+      "step": 5,
+      "title": "Conserva tu calzado y ropa",
+      "description": "Los zapatos y la ropa que traías puestos son evidencia física. No los deseches ni los laves.",
+      "urgency": "important"
+    },
+    {
+      "step": 6,
+      "title": "Anota la ubicación de las cámaras de seguridad",
+      "description": "Identifica cualquier cámara de vigilancia que cubra el área. Las grabaciones generalmente se sobreescriben en 24 a 72 horas y deben preservarse rápidamente.",
+      "urgency": "important"
+    },
+    {
+      "step": 7,
+      "title": "Documenta tus lesiones con el tiempo",
+      "description": "Fotografía hematomas, hinchazón y otras lesiones visibles en los días posteriores al incidente.",
+      "urgency": "important"
+    },
+    {
+      "step": 8,
+      "title": "Guarda todos los registros",
+      "description": "Conserva la copia del reporte de incidente, todas las facturas médicas y cualquier comunicación del propietario o su aseguradora.",
+      "urgency": "helpful"
+    }
+  ],
+  "evidenceChecklist": [
+    {
+      "category": "Documentación del Peligro",
+      "priority": "critical",
+      "items": [
+        "Fotos del peligro exacto (tomadas de inmediato)",
+        "Fotos de señales de advertencia presentes o ausentes",
+        "Fotos del área circundante y condiciones de iluminación",
+        "Copia del reporte de incidente"
+      ]
+    },
+    {
+      "category": "Información de la Propiedad",
+      "priority": "important",
+      "items": [
+        "Nombre e información de contacto del propietario",
+        "Nombre del negocio (si es propiedad comercial)",
+        "Información de la empresa administradora de la propiedad",
+        "Nombres e información de contacto de testigos"
+      ]
+    },
+    {
+      "category": "Documentación Médica",
+      "priority": "critical",
+      "items": [
+        "Todos los registros médicos de urgencias y seguimiento",
+        "Informes de imágenes (radiografías, resonancias magnéticas, tomografías)",
+        "Registros de fisioterapia",
+        "Registros de prescripciones y diario de síntomas"
+      ]
+    },
+    {
+      "category": "Registros Financieros",
+      "priority": "important",
+      "items": [
+        "Todas las facturas médicas",
+        "Documentación de salarios perdidos",
+        "Cualquier gasto de bolsillo relacionado con el accidente"
+      ]
+    },
+    {
+      "category": "Vigilancia y Conocimiento Previo",
+      "priority": "helpful",
+      "items": [
+        "Grabación de cámaras de seguridad (solicita de inmediato, se sobreescribe pronto)",
+        "Evidencia de quejas o incidentes previos en la misma propiedad",
+        "Registros de mantenimiento o inspección que muestren conocimiento del peligro"
+      ]
+    }
+  ],
+  "timelineRisks": [
+    {
+      "period": "Dentro de Unas Horas",
+      "risk": "El peligro es corregido y las grabaciones se sobreescriben",
+      "action": "Documenta el peligro y solicita de inmediato la preservación de las grabaciones de vigilancia. Ambas pueden desaparecer en cuestión de horas."
+    },
+    {
+      "period": "Dentro de 30 Días",
+      "risk": "La aseguradora del propietario inicia su investigación",
+      "action": "La aseguradora de responsabilidad de la propiedad investigará el caso. Contar con tu propia documentación desde el principio fortalece tu posición."
+    },
+    {
+      "period": "6 Meses (Propiedad Gubernamental)",
+      "risk": "Plazo para notificación de reclamaciones en propiedades gubernamentales",
+      "action": "Las lesiones en propiedades públicas (banquetas de la ciudad, edificios gubernamentales, parques) requieren aviso formal de reclamación dentro de 6 meses en California y Arizona."
+    },
+    {
+      "period": "2 Años (California)",
+      "risk": "Prescripción para reclamaciones de responsabilidad de propiedad",
+      "action": "La prescripción de lesiones personales en California es de 2 años a partir de la fecha de la lesión en propiedad privada."
+    },
+    {
+      "period": "2 Años (Arizona)",
+      "risk": "Prescripción para reclamaciones de responsabilidad de propiedad",
+      "action": "Arizona también tiene una prescripción de 2 años para reclamaciones de lesiones personales en propiedad privada."
+    }
+  ],
+  "insuranceIssues": [
+    {
+      "issue": "Seguro de responsabilidad civil del propietario",
+      "explanation": "La mayoría de las propiedades comerciales cuentan con seguro de responsabilidad civil general, y los propietarios de viviendas tienen seguro de hogar. Estas pólizas generalmente cubren reclamaciones de responsabilidad por condición del inmueble."
+    },
+    {
+      "issue": "Requisito de conocimiento del peligro",
+      "explanation": "Para establecer responsabilidad, generalmente es útil demostrar que el propietario sabía o debería haber sabido sobre el peligro. Las quejas previas, el tiempo durante el cual existió el peligro y los registros de mantenimiento son relevantes."
+    },
+    {
+      "issue": "Culpa compartida",
+      "explanation": "Los propietarios frecuentemente argumentan que los visitantes no estaban prestando atención, ignoraron advertencias visibles o estaban en un área no abierta al público. Ambos estados utilizan el sistema de culpa comparativa pura."
+    },
+    {
+      "issue": "Reglas especiales para propiedades gubernamentales",
+      "explanation": "Las lesiones en propiedades de gobierno implican procedimientos especiales, plazos más cortos y límites en los daños. Estas reclamaciones deben manejarse de manera diferente."
+    },
+    {
+      "issue": "Responsabilidad del inquilino vs. el propietario",
+      "explanation": "En propiedades de alquiler, la responsabilidad puede recaer sobre el propietario, el inquilino, una empresa administradora o alguna combinación, dependiendo de quién tenía el control sobre la condición peligrosa."
+    }
+  ],
+  "whenToGetLawyer": [
+    "Sufriste lesiones que requirieron atención médica",
+    "El peligro fue resultado de mantenimiento deficiente o quejas previas",
+    "La lesión ocurrió en propiedad gubernamental",
+    "Las grabaciones de vigilancia necesitan preservación inmediata",
+    "El propietario o su aseguradora están negando la responsabilidad",
+    "Tus lesiones resultaron en facturas médicas significativas o pérdida de ingresos",
+    "La seguridad insuficiente contribuyó a una agresión o acto delictivo"
+  ],
+  "relatedAccidents": ["caida", "construccion", "trabajo", "mordida-perro"],
+  "relatedInjuries": ["huesos-rotos", "traumatismo-craneal", "tejido-blando", "columna", "quemaduras"],
+  "relatedGuides": ["lista-evidencia", "despues-accidente-auto", "evaluacion-caso"],
+  "relatedTools": ["evaluacion-caso", "lista-evidencia"],
+  "translationStatus": "needs-review"
+}

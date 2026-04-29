@@ -1,0 +1,213 @@
+{
+  "slug": "uber-lyft",
+  "title": "Accidentes de Uber y Lyft",
+  "shortTitle": "Accidentes de Transporte por App",
+  "description": "Los accidentes que involucran Uber, Lyft u otros servicios de transporte por aplicación son complicados por las coberturas de seguro por capas, el estado de la aplicación al momento del choque y las preguntas sobre el estatus laboral del conductor. Entender qué póliza aplica es fundamental para proteger su reclamo. Esta información es educativa únicamente y no constituye asesoría legal.",
+  "metaTitle": "Guía de Accidentes de Uber y Lyft — Reclamos de Lesiones Explicados",
+  "metaDescription": "Qué hacer después de un accidente de Uber o Lyft en California o Arizona. Cómo funcionan los seguros por capas, sus derechos como pasajero y los pasos a seguir.",
+  "icon": "uber-lyft",
+  "commonCauses": [
+    {
+      "title": "Manejo Distraído",
+      "description": "Los conductores de transporte por aplicación revisan frecuentemente su aplicación para navegación, nuevas solicitudes de viaje y calificaciones mientras manejan — un riesgo de distracción significativo."
+    },
+    {
+      "title": "Fatiga por Turnos Prolongados",
+      "description": "Muchos conductores de transporte por aplicación trabajan largas horas en múltiples plataformas. La fatiga del conductor es una causa significativa y subreportada de accidentes."
+    },
+    {
+      "title": "Desconocimiento del Área",
+      "description": "Los conductores que dependen en gran medida del GPS pueden hacer paradas repentinas, giros inesperados o cambios de carril para seguir las instrucciones de la ruta."
+    },
+    {
+      "title": "Manejo Imprudente por Calificaciones o Ingresos",
+      "description": "La presión por completar más viajes y mantener calificaciones altas puede llevar a los conductores a exceder la velocidad o aceptar viajes en condiciones inseguras."
+    },
+    {
+      "title": "Negligencia de Otro Conductor",
+      "description": "El responsable en un accidente de transporte por aplicación puede ser otro conductor, no el conductor de la aplicación. La complejidad del seguro aplica de todas formas."
+    },
+    {
+      "title": "Peligros al Recoger y Dejar Pasajeros",
+      "description": "Detenerse en carriles de tráfico, abrir puertas de repente y acercarse al acotamiento de forma errática crean riesgos para otros vehículos, ciclistas y peatones."
+    }
+  ],
+  "likelyInjuries": [
+    { "slug": "latigazo", "title": "Latigazo Cervical", "severity": "moderate" },
+    { "slug": "traumatismo-craneal", "title": "Traumatismo Craneoencefálico", "severity": "severe" },
+    { "slug": "huesos-rotos", "title": "Huesos Rotos", "severity": "moderate" },
+    { "slug": "tejido-blando", "title": "Lesiones de Tejido Blando", "severity": "mild" },
+    { "slug": "columna", "title": "Lesiones de Columna", "severity": "catastrophic" }
+  ],
+  "immediateSteps": [
+    {
+      "step": 1,
+      "title": "Llame al 911 si hay personas lesionadas",
+      "description": "Los servicios de emergencia deben ser llamados ante cualquier lesión, aunque parezca menor. Un reporte policial establece el registro oficial del accidente.",
+      "urgency": "critical"
+    },
+    {
+      "step": 2,
+      "title": "Tome captura de pantalla de los detalles del viaje en la aplicación de inmediato",
+      "description": "Abra su aplicación de Uber o Lyft y tome captura de pantalla del viaje — nombre del conductor, información del vehículo, ID del viaje y hora. Esto establece que la aplicación estaba activa y el conductor estaba en un viaje.",
+      "urgency": "critical"
+    },
+    {
+      "step": 3,
+      "title": "Documente la escena detalladamente",
+      "description": "Fotografíe todos los vehículos, los daños, las placas, las condiciones de la vía y cualquier lesión. Note el logotipo o calcomanía de la empresa de transporte por aplicación si es visible.",
+      "urgency": "important"
+    },
+    {
+      "step": 4,
+      "title": "Obtenga la información del conductor y del vehículo",
+      "description": "Nombre, licencia, seguro, marca/modelo/placa del vehículo. La aplicación ya captura parte de esto, pero obténgalo directamente como respaldo.",
+      "urgency": "important"
+    },
+    {
+      "step": 5,
+      "title": "Obtenga información de los testigos",
+      "description": "Nombres e información de contacto de otros pasajeros, transeúntes u otros conductores que presenciaron el accidente.",
+      "urgency": "important"
+    },
+    {
+      "step": 6,
+      "title": "Reporte el accidente a través de la aplicación",
+      "description": "Tanto Uber como Lyft tienen reportes de accidentes dentro de la aplicación. Envíe un reporte a la brevedad — esto crea un registro oficial con la empresa.",
+      "urgency": "important"
+    },
+    {
+      "step": 7,
+      "title": "Busque evaluación médica",
+      "description": "Incluso los accidentes menores pueden causar lesiones de aparición tardía. Hágase evaluar lo antes posible y conserve todos los registros.",
+      "urgency": "critical"
+    },
+    {
+      "step": 8,
+      "title": "Mantenga toda la documentación organizada",
+      "description": "Guarde la captura de pantalla de la aplicación, el número del reporte policial, todos los registros médicos y cualquier comunicación de Uber/Lyft.",
+      "urgency": "helpful"
+    }
+  ],
+  "evidenceChecklist": [
+    {
+      "category": "Documentación de la Aplicación y el Viaje",
+      "priority": "critical",
+      "items": [
+        "Captura de pantalla del viaje activo en la app de Uber/Lyft (nombre del conductor, vehículo, ID del viaje)",
+        "Captura de pantalla del recibo del viaje después del accidente",
+        "Número de confirmación del reporte de accidente en la aplicación",
+        "Calificación del conductor y quejas previas (puede solicitarse)"
+      ]
+    },
+    {
+      "category": "En la Escena del Accidente",
+      "priority": "critical",
+      "items": [
+        "Fotos de todos los vehículos desde todos los ángulos",
+        "Fotos del emblema o calcomanía de transporte por aplicación en el vehículo",
+        "Información del seguro personal del conductor",
+        "Número del reporte policial",
+        "Nombres e información de contacto de todos los testigos y pasajeros"
+      ]
+    },
+    {
+      "category": "Documentación Médica",
+      "priority": "critical",
+      "items": [
+        "Registros de la sala de emergencias o clínica de urgencias",
+        "Notas de todas las visitas de seguimiento con médicos y especialistas",
+        "Reportes de imágenes (radiografía, resonancia magnética, tomografía)",
+        "Registros de terapia física",
+        "Recibos de medicamentos y diario continuo de síntomas"
+      ]
+    },
+    {
+      "category": "Registros Financieros",
+      "priority": "important",
+      "items": [
+        "Todas las facturas médicas",
+        "Documentación de pérdida de salario",
+        "Costos de transporte durante la recuperación",
+        "Cualquier gasto de bolsillo relacionado con el accidente"
+      ]
+    },
+    {
+      "category": "Comunicaciones",
+      "priority": "helpful",
+      "items": [
+        "Todos los correos electrónicos o mensajes dentro de la aplicación de Uber/Lyft sobre el accidente",
+        "Cualquier oferta de acuerdo recibida por escrito de cualquier aseguradora",
+        "Correspondencia con ajustadores de seguros"
+      ]
+    }
+  ],
+  "timelineRisks": [
+    {
+      "period": "De Inmediato",
+      "risk": "Los datos de la aplicación pueden no ser preservados",
+      "action": "Tome capturas de pantalla de los detalles del viaje, el recibo y la información del conductor de inmediato. Esta evidencia digital puede ser fundamental para establecer que el conductor estaba en un viaje activo."
+    },
+    {
+      "period": "Dentro de las 24-48 Horas",
+      "risk": "Síntomas tardíos de lesiones",
+      "action": "Busque una evaluación médica completa aunque se sienta bien. Documente todos los síntomas por escrito desde el primer día."
+    },
+    {
+      "period": "Dentro de los Primeros 30 Días",
+      "risk": "Plazos para reportar al seguro",
+      "action": "Reporte a su propia aseguradora. Presente un reporte de accidente dentro de la aplicación si aún no lo ha hecho. Evite declaraciones grabadas a la aseguradora de Uber/Lyft sin orientación."
+    },
+    {
+      "period": "Dentro de los 6 Meses",
+      "risk": "La disponibilidad de evidencia y testigos disminuye",
+      "action": "Recopile declaraciones escritas de los testigos y descargue cualquier video de vigilancia disponible."
+    },
+    {
+      "period": "2 Años (California)",
+      "risk": "Plazo de prescripción para lesiones personales",
+      "action": "California tiene un plazo de prescripción de 2 años para lesiones personales. La estructura de seguro por capas hace que actuar a tiempo sea recomendable."
+    },
+    {
+      "period": "2 Años (Arizona)",
+      "risk": "Plazo de prescripción para lesiones personales",
+      "action": "Arizona también tiene un plazo de prescripción de 2 años. Consulte a un abogado para entender qué pólizas de seguro aplican antes de que venza el plazo."
+    }
+  ],
+  "insuranceIssues": [
+    {
+      "issue": "Cobertura de seguro en tres fases",
+      "explanation": "La cobertura de Uber y Lyft depende del estado de la aplicación del conductor: (1) aplicación apagada — solo el seguro personal del conductor; (2) aplicación encendida, esperando viaje — cobertura contingente limitada; (3) viaje aceptado o pasajero en el vehículo — póliza comercial completa (más de $1 millón de responsabilidad)."
+    },
+    {
+      "issue": "El seguro personal del conductor puede rechazar reclamos",
+      "explanation": "La mayoría de las pólizas de seguro de auto personal excluyen el uso comercial de transporte por aplicación. Si el conductor estaba en la Fase 1, puede no tener cobertura para un accidente de transporte por aplicación."
+    },
+    {
+      "issue": "Múltiples reclamos que presentar",
+      "explanation": "Es posible que necesite presentar reclamos ante la aseguradora de la empresa de transporte por aplicación, la aseguradora personal del conductor y la suya propia. Coordinar estos reclamos es complejo."
+    },
+    {
+      "issue": "Clasificación de contratista independiente",
+      "explanation": "Uber y Lyft clasifican a los conductores como contratistas independientes, no como empleados. Esto limita la responsabilidad directa del empleador pero no necesariamente elimina los reclamos contra la plataforma."
+    },
+    {
+      "issue": "Como pasajero, tiene protecciones adicionales",
+      "explanation": "Los pasajeros en un viaje activo de Uber o Lyft generalmente están cubiertos bajo la póliza comercial completa independientemente de la culpa. Esta es una posición de partida más sólida que un reclamo entre conductores."
+    }
+  ],
+  "whenToGetLawyer": [
+    "Se lesionó como pasajero, peatón u otro conductor en un accidente de transporte por aplicación",
+    "El estado de la aplicación al momento del choque está en disputa",
+    "Múltiples compañías de seguros están involucradas y disputando la cobertura",
+    "La aseguradora de la empresa de transporte por aplicación ofreció un acuerdo rápido",
+    "Sus lesiones resultaron en facturas médicas significativas o pérdida de salario",
+    "El seguro personal del conductor rechazó su reclamo",
+    "No sabe qué pólizas de seguro aplican a su situación"
+  ],
+  "relatedAccidents": ["auto", "camion", "peaton", "bicicleta"],
+  "relatedInjuries": ["latigazo", "traumatismo-craneal", "huesos-rotos", "tejido-blando", "columna"],
+  "relatedGuides": ["lista-evidencia", "despues-accidente-auto", "evaluacion-caso"],
+  "relatedTools": ["evaluacion-caso", "lista-evidencia"],
+  "translationStatus": "needs-review"
+}

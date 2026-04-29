@@ -1,0 +1,210 @@
+{
+  "slug": "mordida-perro",
+  "title": "Lesiones por Mordida de Perro",
+  "shortTitle": "Mordidas de Perro",
+  "description": "California es un estado de responsabilidad estricta en casos de mordidas de perro, lo que significa que el dueño del perro es responsable independientemente de si el animal había mostrado agresividad anteriormente. Arizona tiene protecciones similares. Si fue mordido o atacado por un perro, la atención médica inmediata y la documentación son fundamentales. Esta información es educativa únicamente y no constituye asesoramiento legal.",
+  "metaTitle": "Guía de Mordidas de Perro — Leyes en California y Arizona",
+  "metaDescription": "Qué hacer tras una mordida de perro en California o Arizona. Responsabilidad estricta, lista de evidencia, documentación médica y cuándo hablar con abogado.",
+  "icon": "dog-bite",
+  "commonCauses": [
+    {
+      "title": "Falta de Control por Parte del Dueño",
+      "description": "Los perros que deambulan sin correa o que se dejan desatendidos en espacios públicos representan un riesgo directo para otras personas."
+    },
+    {
+      "title": "No Advertir a los Visitantes",
+      "description": "Los propietarios que no advierten a sus visitas sobre un perro agresivo o impredecible pueden tener responsabilidad adicional."
+    },
+    {
+      "title": "Provocación (Disputada)",
+      "description": "Los dueños a veces argumentan que la víctima provocó al perro. La responsabilidad estricta de California y Arizona aplica independientemente de la provocación en la mayoría de los casos, aunque este es un argumento de defensa común."
+    },
+    {
+      "title": "Perros que Escapan o No Están Asegurados",
+      "description": "Perros que escapan de patios cercados o se sueltan de sus ataduras y muerden a personas en la vía pública."
+    },
+    {
+      "title": "Trabajadores de Mensajería y Servicios",
+      "description": "Los carteros, repartidores y trabajadores de servicios públicos enfrentan un mayor riesgo de mordidas de perro debido al acceso regular a domicilios."
+    },
+    {
+      "title": "Niños Dejados Sin Supervisión con Perros",
+      "description": "Los niños son desproporcionadamente víctimas de mordidas de perro graves, frecuentemente por perros conocidos de la familia."
+    }
+  ],
+  "likelyInjuries": [
+    { "slug": "tejido-blando", "title": "Heridas Punzantes y Laceraciones", "severity": "moderate" },
+    { "slug": "huesos-rotos", "title": "Huesos Rotos", "severity": "moderate" },
+    { "slug": "traumatismo-craneal", "title": "Traumatismo Craneoencefálico (ataques graves)", "severity": "severe" },
+    { "slug": "tejido-blando", "title": "Daño Nervioso", "severity": "severe" },
+    { "slug": "tejido-blando", "title": "Infección / Riesgo de Rabia", "severity": "moderate" }
+  ],
+  "immediateSteps": [
+    {
+      "step": 1,
+      "title": "Busque atención médica de inmediato",
+      "description": "Las mordidas de perro conllevan un alto riesgo de infección, incluida la rabia. Limpie la herida con cuidado y acuda a una clínica de urgencias o sala de emergencias el mismo día, aunque la herida parezca menor.",
+      "urgency": "critical"
+    },
+    {
+      "step": 2,
+      "title": "Identifique al perro y a su dueño",
+      "description": "Obtenga el nombre, dirección y teléfono del dueño. Solicite comprobante de vacuna contra la rabia. Si el dueño es desconocido, repórtelo al control de animales.",
+      "urgency": "critical"
+    },
+    {
+      "step": 3,
+      "title": "Reporte la mordida al control de animales",
+      "description": "Presente un reporte ante la agencia de control de animales local. Esto crea un registro oficial y activa un período de cuarentena u observación del perro.",
+      "urgency": "critical"
+    },
+    {
+      "step": 4,
+      "title": "Fotografíe la herida antes y después del tratamiento",
+      "description": "Documente la gravedad de la lesión con fotos tomadas en el lugar y a lo largo de su recuperación.",
+      "urgency": "important"
+    },
+    {
+      "step": 5,
+      "title": "Obtenga información de los testigos",
+      "description": "Nombres e información de contacto de cualquier persona que haya presenciado el ataque.",
+      "urgency": "important"
+    },
+    {
+      "step": 6,
+      "title": "Fotografíe el lugar del incidente",
+      "description": "Documente dónde ocurrió la mordida — la acera pública, un parque, la propiedad del dueño — junto con cualquier cerca, letrero o condición de la correa.",
+      "urgency": "important"
+    },
+    {
+      "step": 7,
+      "title": "Conserve todos los registros médicos y facturas",
+      "description": "Documente cada visita médica relacionada con la mordida, incluyendo cuidado de la herida de seguimiento, profilaxis antirrábica y cualquier tratamiento psicológico.",
+      "urgency": "important"
+    },
+    {
+      "step": 8,
+      "title": "Documente el impacto emocional",
+      "description": "Las mordidas de perro pueden causar angustia psicológica duradera, especialmente en niños. Lleve un diario de cualquier ansiedad, trastorno del sueño o miedo a los perros.",
+      "urgency": "helpful"
+    }
+  ],
+  "evidenceChecklist": [
+    {
+      "category": "Información del Perro y el Dueño",
+      "priority": "critical",
+      "items": [
+        "Nombre, dirección y teléfono del dueño",
+        "Raza, descripción y nombre del perro",
+        "Comprobante de vacuna antirrábica (solicítelo al dueño)",
+        "Número del reporte de control de animales"
+      ]
+    },
+    {
+      "category": "Documentación de la Lesión",
+      "priority": "critical",
+      "items": [
+        "Fotos de las heridas inmediatamente después de la mordida",
+        "Fotos de las heridas a lo largo de la recuperación (diariamente si son significativas)",
+        "Registros de sala de emergencias y visitas de seguimiento",
+        "Registros de profilaxis antirrábica o cualquier vacuna administrada",
+        "Registros de cualquier tratamiento quirúrgico o cuidado de heridas"
+      ]
+    },
+    {
+      "category": "Documentación del Lugar",
+      "priority": "important",
+      "items": [
+        "Fotos del lugar donde ocurrió el ataque",
+        "Fotos de cualquier cerca, puerta o sujeción que falló",
+        "Nombres e información de contacto de cualquier testigo"
+      ]
+    },
+    {
+      "category": "Registros Financieros",
+      "priority": "important",
+      "items": [
+        "Todas las facturas médicas relacionadas con la mordida",
+        "Documentación de salarios perdidos",
+        "Costos de tratamiento psicológico o de consejería",
+        "Cualquier otro gasto de bolsillo"
+      ]
+    },
+    {
+      "category": "Incidentes Previos",
+      "priority": "helpful",
+      "items": [
+        "Cualquier reporte previo de control de animales que involucre al mismo perro",
+        "Testimonios de vecinos o testigos sobre comportamiento agresivo previo del perro"
+      ]
+    }
+  ],
+  "timelineRisks": [
+    {
+      "period": "De inmediato",
+      "risk": "Infección y exposición a la rabia",
+      "action": "Limpie la herida y busque atención médica el mismo día. Si se desconoce el estado de vacunación del perro contra la rabia, la profilaxis postexposición debe iniciarse con prontitud."
+    },
+    {
+      "period": "Dentro de 24 a 48 horas",
+      "risk": "Debe presentarse el reporte al control de animales",
+      "action": "Presente un reporte al control de animales con prontitud para activar la cuarentena del perro. Esto también crea un registro oficial del incidente."
+    },
+    {
+      "period": "Dentro de 30 días",
+      "risk": "La aseguradora del propietario inicia la investigación",
+      "action": "La mayoría de las reclamaciones por mordidas de perro se tramitan a través del seguro de propietario o inquilino del dueño del perro. La aseguradora investigará el caso."
+    },
+    {
+      "period": "Dentro de 6 meses",
+      "risk": "Plazo para propiedad gubernamental",
+      "action": "Si la mordida ocurrió en propiedad gubernamental o involucró un animal propiedad del gobierno, se aplican plazos de reclamación más cortos."
+    },
+    {
+      "period": "2 años (California)",
+      "risk": "Estatuto de limitaciones para reclamaciones de lesiones personales por mordida de perro",
+      "action": "California tiene un estatuto de limitaciones de 2 años para reclamaciones de lesiones personales, incluyendo mordidas de perro."
+    },
+    {
+      "period": "1 a 2 años (Arizona)",
+      "risk": "Estatuto de limitaciones para reclamaciones por mordida de perro",
+      "action": "Arizona tiene un estatuto de limitaciones de 1 año específicamente para reclamaciones por mordida de perro bajo su ley de responsabilidad estricta. Consulte a un abogado con prontitud."
+    }
+  ],
+  "insuranceIssues": [
+    {
+      "issue": "Cobertura del seguro de propietario e inquilino",
+      "explanation": "La mayoría de las reclamaciones por mordidas de perro se pagan a través de la cobertura de responsabilidad del seguro de propietario o inquilino del dueño del perro. Muchas pólizas cubren entre $100,000 y $300,000 en responsabilidad."
+    },
+    {
+      "issue": "Exclusiones por raza",
+      "explanation": "Algunas pólizas de propietario excluyen ciertas razas (pitbull, Rottweiler) de la cobertura. Si la raza del perro del dueño está excluida, recuperar una compensación puede requerir enfoques alternativos."
+    },
+    {
+      "issue": "Responsabilidad estricta en California",
+      "explanation": "Bajo el Código Civil de California 3342, los dueños de perros son estrictamente responsables por las mordidas que ocurren en lugares públicos o legalmente en lugares privados, independientemente del historial previo del perro."
+    },
+    {
+      "issue": "Responsabilidad estricta en Arizona",
+      "explanation": "Arizona tiene una ley de responsabilidad estricta similar para mordidas de perro. El dueño es responsable si la persona mordida estaba en un lugar público o legalmente en un lugar privado."
+    },
+    {
+      "issue": "Defensa de provocación",
+      "explanation": "Aunque la responsabilidad estricta aplica ampliamente, los dueños pueden argumentar que la víctima provocó al perro. Este argumento se plantea con frecuencia y requiere una respuesta basada en los hechos."
+    }
+  ],
+  "whenToGetLawyer": [
+    "Sus lesiones requirieron tratamiento médico más allá de los primeros auxilios básicos",
+    "La herida requirió puntos de sutura, cirugía o resultó en cicatrices",
+    "La aseguradora del dueño del perro negó la cobertura o disputó la responsabilidad",
+    "La mordida ha causado un impacto psicológico duradero o miedo",
+    "La mordida ocurrió a un niño",
+    "El perro tenía incidentes previos de agresión",
+    "No está seguro de cómo gestionar la reclamación al seguro del propietario"
+  ],
+  "relatedAccidents": ["caida", "propiedad", "trabajo"],
+  "relatedInjuries": ["tejido-blando", "huesos-rotos", "traumatismo-craneal"],
+  "relatedGuides": ["lista-evidencia", "despues-accidente-auto", "evaluacion-caso"],
+  "relatedTools": ["evaluacion-caso", "lista-evidencia"],
+  "translationStatus": "needs-review"
+}

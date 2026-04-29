@@ -1,0 +1,216 @@
+{
+  "slug": "caida",
+  "title": "Accidentes por Caída",
+  "shortTitle": "Caída en Propiedad Ajena",
+  "description": "Los accidentes por caída en propiedad ajena se rigen por la ley de responsabilidad de propietarios. Los dueños de propiedades tienen la obligación legal de mantener condiciones seguras. Si una condición peligrosa causó su caída, documentarla de inmediato y buscar atención médica son los pasos más importantes que puede tomar. Esta información es educativa únicamente y no constituye asesoría legal.",
+  "metaTitle": "Guía de Caídas — Responsabilidad de Propietarios, Pasos y Derechos",
+  "metaDescription": "Qué hacer después de una caída en California o Arizona. Documente el peligro, busque atención médica y conozca sus derechos de responsabilidad de propietarios.",
+  "icon": "slip-and-fall",
+  "commonCauses": [
+    {
+      "title": "Pisos Mojados o Resbaladizos",
+      "description": "Los derrames, los pisos recién trapedos y las entradas mojadas sin señales de advertencia adecuadas son una causa principal de caídas en propiedades comerciales."
+    },
+    {
+      "title": "Superficies Irregulares",
+      "description": "Las banquetas agrietadas, los cambios de nivel en el piso, los azulejos levantados y los caminos dañados crean peligros de tropiezo."
+    },
+    {
+      "title": "Iluminación Inadecuada",
+      "description": "Las escaleras, estacionamientos y pasillos mal iluminados dificultan ver los peligros a tiempo para evitarlos."
+    },
+    {
+      "title": "Pasamanos Ausentes o Defectuosos",
+      "description": "Las escaleras y rampas sin pasamanos adecuados, o con pasamanos flojos o rotos, aumentan significativamente el riesgo de caídas."
+    },
+    {
+      "title": "Escombros y Obstáculos en los Pasillos",
+      "description": "Los objetos dejados en pasillos, pasillos de tiendas o escaleras crean peligros de tropiezo inesperados."
+    },
+    {
+      "title": "Condiciones Climáticas",
+      "description": "El hielo, la nieve y la lluvia crean superficies resbaladizas. Los propietarios son responsables de remediar oportunamente los peligros climáticos previsibles en su propiedad."
+    },
+    {
+      "title": "Escaleras o Escaleras Mecánicas Defectuosas",
+      "description": "Los escalones rotos, los peldaños faltantes y las escaleras mecánicas o elevadores averiados son peligros mecánicos de los que los propietarios son responsables de mantener."
+    }
+  ],
+  "likelyInjuries": [
+    { "slug": "huesos-rotos", "title": "Huesos Rotos", "severity": "moderate" },
+    { "slug": "traumatismo-craneal", "title": "Traumatismo Craneoencefálico", "severity": "severe" },
+    { "slug": "tejido-blando", "title": "Lesiones de Tejido Blando", "severity": "mild" },
+    { "slug": "columna", "title": "Lesiones de Columna", "severity": "catastrophic" },
+    { "slug": "latigazo", "title": "Latigazo Cervical", "severity": "moderate" }
+  ],
+  "immediateSteps": [
+    {
+      "step": 1,
+      "title": "Busque ayuda médica si la necesita",
+      "description": "Si está lesionado, pida ayuda o que alguien llame al 911. No intente levantarse rápidamente si siente dolor en la espalda, el cuello o la cabeza.",
+      "urgency": "critical"
+    },
+    {
+      "step": 2,
+      "title": "Fotografíe el peligro de inmediato",
+      "description": "Tome fotos de exactamente lo que causó su caída antes de que sea limpiado o reparado. Esta es la pieza de evidencia más crítica en un caso de responsabilidad de propietarios.",
+      "urgency": "critical"
+    },
+    {
+      "step": 3,
+      "title": "Reporte el incidente al dueño o gerente de la propiedad",
+      "description": "Solicite que se llene un reporte de incidente. Pida una copia — la mayoría de los negocios están obligados a proporcionarla. Si se la niegan, anote el nombre de la persona con quien habló.",
+      "urgency": "critical"
+    },
+    {
+      "step": 4,
+      "title": "Obtenga información de los testigos",
+      "description": "Nombres e información de contacto de cualquier persona que haya visto su caída o que conociera el peligro.",
+      "urgency": "important"
+    },
+    {
+      "step": 5,
+      "title": "Conserve su calzado",
+      "description": "Los zapatos que llevaba puestos al momento de la caída son evidencia. No los deseche ni los reemplace.",
+      "urgency": "important"
+    },
+    {
+      "step": 6,
+      "title": "Busque evaluación médica a la brevedad",
+      "description": "Aunque se sienta bien, hágase evaluar. Las lesiones por caída — especialmente fracturas de cadera en adultos mayores y lesiones en la cabeza — pueden no ser evidentes de inmediato.",
+      "urgency": "critical"
+    },
+    {
+      "step": 7,
+      "title": "Documente sus lesiones a lo largo del tiempo",
+      "description": "Fotografíe los moretones, la hinchazón y otras lesiones visibles en los días siguientes a la caída. Las fotos de seguimiento son evidencia valiosa.",
+      "urgency": "important"
+    },
+    {
+      "step": 8,
+      "title": "Guarde todos los registros",
+      "description": "Conserve la copia del reporte de incidente, todas las facturas médicas y cualquier comunicación del dueño de la propiedad o su aseguradora.",
+      "urgency": "helpful"
+    }
+  ],
+  "evidenceChecklist": [
+    {
+      "category": "En la Escena del Accidente",
+      "priority": "critical",
+      "items": [
+        "Fotos del peligro exacto que causó la caída (piso mojado, grieta, escombros, etc.)",
+        "Fotos de las señales de advertencia presentes (o ausentes)",
+        "Fotos del área circundante y las condiciones de iluminación",
+        "Copia del reporte de incidente (solicítela)",
+        "Nombres e información de contacto de los testigos",
+        "Nombre del gerente o empleado al que reportó el incidente"
+      ]
+    },
+    {
+      "category": "Evidencia Física",
+      "priority": "critical",
+      "items": [
+        "Los zapatos que llevaba puestos (consérvelos — no los deseche)",
+        "Fotos de lesiones tomadas en la escena y en los días siguientes",
+        "Ropa que llevaba puesta (consérvela si está dañada)"
+      ]
+    },
+    {
+      "category": "Registros de la Propiedad",
+      "priority": "important",
+      "items": [
+        "Nombre del negocio, dirección e información del dueño de la propiedad",
+        "Quejas previas o incidentes en el mismo lugar (puede requerir solicitud legal)",
+        "Registros de mantenimiento o inspección (puede requerir solicitud legal)"
+      ]
+    },
+    {
+      "category": "Documentación Médica",
+      "priority": "critical",
+      "items": [
+        "Registros de la sala de emergencias o clínica de urgencias",
+        "Notas de todos los médicos y especialistas",
+        "Reportes de imágenes (radiografía, resonancia magnética, tomografía)",
+        "Registros de terapia física",
+        "Registros de medicamentos y diario continuo de síntomas"
+      ]
+    },
+    {
+      "category": "Registros Financieros",
+      "priority": "important",
+      "items": [
+        "Todas las facturas médicas",
+        "Documentación de pérdida de salario",
+        "Cualquier gasto de bolsillo relacionado con el accidente"
+      ]
+    }
+  ],
+  "timelineRisks": [
+    {
+      "period": "En las Primeras Horas",
+      "risk": "El peligro puede ser limpiado o reparado",
+      "action": "Fotografíe todo de inmediato. Una vez que el peligro es eliminado, es mucho más difícil demostrar que existía."
+    },
+    {
+      "period": "Dentro de las 24-48 Horas",
+      "risk": "El video de vigilancia es sobrescrito",
+      "action": "Las cámaras de seguridad en propiedades comerciales suelen sobrescribir el video dentro de 24-72 horas. Un abogado puede enviar una carta de preservación de inmediato."
+    },
+    {
+      "period": "Dentro de los Primeros 30 Días",
+      "risk": "La aseguradora de la propiedad inicia su investigación",
+      "action": "La aseguradora del dueño de la propiedad comenzará a investigar. Haber documentado la escena a tiempo le da una posición más sólida."
+    },
+    {
+      "period": "6 Meses (Propiedad Gubernamental)",
+      "risk": "Plazo de notificación de reclamo contra entidad gubernamental",
+      "action": "Si cayó en propiedad del gobierno (banqueta municipal, parque público, edificio gubernamental), California y Arizona exigen notificación formal de reclamo dentro de 6 meses. Este es un plazo inamovible."
+    },
+    {
+      "period": "2 Años (California)",
+      "risk": "Plazo de prescripción para lesiones personales en propiedad privada",
+      "action": "California tiene un plazo de prescripción de 2 años para lesiones personales en caídas en propiedad privada."
+    },
+    {
+      "period": "2 Años (Arizona)",
+      "risk": "Plazo de prescripción para lesiones personales en propiedad privada",
+      "action": "Arizona tiene un plazo de prescripción de 2 años para reclamos de lesiones personales."
+    }
+  ],
+  "insuranceIssues": [
+    {
+      "issue": "Seguro de responsabilidad del dueño de la propiedad",
+      "explanation": "La mayoría de las propiedades comerciales y los propietarios de viviendas tienen seguro de responsabilidad que cubre reclamos por caídas. La aseguradora investigará y puede hacer ofertas de acuerdo."
+    },
+    {
+      "issue": "Invitado vs. visitante con licencia vs. intruso",
+      "explanation": "Su situación legal en la propiedad afecta el deber de cuidado que se le debe. Los clientes e invitados (invitados) tienen el mayor nivel de protección. Esta distinción afecta su reclamo."
+    },
+    {
+      "issue": "Defensa de culpa comparativa",
+      "explanation": "Los dueños de propiedades y sus aseguradoras frecuentemente argumentan que la persona lesionada no estaba prestando atención, usaba calzado inapropiado o ignoró peligros obvios. Ambos estados usan la norma de culpa comparativa pura."
+    },
+    {
+      "issue": "Requisito de notificación",
+      "explanation": "Un elemento clave de los reclamos de responsabilidad de propietarios es demostrar que el dueño sabía (o debía saber) del peligro. La evidencia de incidentes previos o una limpieza demorada apoya esto."
+    },
+    {
+      "issue": "Reglas especiales para propiedades gubernamentales",
+      "explanation": "Las caídas en banquetas municipales, edificios gubernamentales y parques públicos involucran entidades con procedimientos especiales, plazos más cortos y límites de daños."
+    }
+  ],
+  "whenToGetLawyer": [
+    "Sufrió lesiones que requieren tratamiento médico",
+    "El dueño de la propiedad niega que el peligro existía o disputa la responsabilidad",
+    "La caída ocurrió en propiedad gubernamental",
+    "El video de vigilancia necesita ser preservado de inmediato",
+    "La aseguradora del dueño de la propiedad le contactó con una oferta de acuerdo",
+    "Sus lesiones resultaron en facturas médicas significativas o pérdida de salario",
+    "No sabe cómo documentar un argumento de notificación previa"
+  ],
+  "relatedAccidents": ["propiedad", "construccion", "trabajo", "mordida-perro"],
+  "relatedInjuries": ["huesos-rotos", "traumatismo-craneal", "tejido-blando", "columna", "latigazo"],
+  "relatedGuides": ["lista-evidencia", "despues-accidente-auto", "evaluacion-caso"],
+  "relatedTools": ["evaluacion-caso", "lista-evidencia"],
+  "translationStatus": "needs-review"
+}

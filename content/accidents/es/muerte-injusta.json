@@ -1,0 +1,195 @@
+{
+  "slug": "muerte-injusta",
+  "title": "Muerte por Negligencia (Wrongful Death)",
+  "shortTitle": "Muerte por Negligencia",
+  "description": "Cuando una persona fallece como resultado de la negligencia o acto ilícito de otra parte, los familiares sobrevivientes pueden tener una reclamación por muerte por negligencia. California y Arizona permiten que los sobrevivientes calificados busquen compensación por su pérdida. Esta es un área del derecho profundamente delicada que requiere orientación cuidadosa y compasiva. Esta información es únicamente educativa y no constituye asesoramiento legal.",
+  "metaTitle": "Reclamaciones por Muerte Injusta — Lo que Familias Deben Saber en CA y AZ",
+  "metaDescription": "Lo que las familias deben saber sobre reclamaciones por muerte injusta en California y Arizona. Quién puede presentar, qué daños están disponibles y cuándo hablar con un abogado.",
+  "icon": "wrongful-death",
+  "commonCauses": [
+    {
+      "title": "Accidentes de Vehículos de Motor",
+      "description": "Los accidentes de automóviles, camiones y motocicletas se encuentran entre las causas más comunes de reclamaciones por muerte por negligencia."
+    },
+    {
+      "title": "Accidentes Laborales",
+      "description": "Los accidentes fatales en obras de construcción, accidentes industriales y violencia en el lugar de trabajo pueden dar lugar a reclamaciones por muerte por negligencia junto con la compensación laboral."
+    },
+    {
+      "title": "Negligencia Médica",
+      "description": "Las muertes causadas por negligencia de proveedores de salud —incluyendo errores quirúrgicos, diagnósticos incorrectos y errores de medicación— pueden respaldar reclamaciones por muerte por negligencia."
+    },
+    {
+      "title": "Responsabilidad por Condición del Inmueble",
+      "description": "Caídas fatales, ahogamientos y otras muertes relacionadas con propiedades debido a la negligencia del propietario."
+    },
+    {
+      "title": "Productos Defectuosos",
+      "description": "Muertes causadas por vehículos defectuosos, productos de consumo, medicamentos o dispositivos médicos."
+    },
+    {
+      "title": "Actos Delictivos",
+      "description": "Una reclamación civil por muerte por negligencia puede presentarse aunque también se persigan cargos penales. Los estándares de prueba son diferentes en cada caso."
+    }
+  ],
+  "likelyInjuries": [
+    { "slug": "traumatismo-craneal", "title": "Traumatismo Craneoencefálico (fatal)", "severity": "catastrophic" },
+    { "slug": "columna", "title": "Lesiones de Columna (fatal)", "severity": "catastrophic" },
+    { "slug": "lesiones-internas", "title": "Lesiones Internas (fatal)", "severity": "catastrophic" }
+  ],
+  "immediateSteps": [
+    {
+      "step": 1,
+      "title": "Atiende primero las necesidades inmediatas de tu familia",
+      "description": "No existe una única respuesta correcta en los momentos inmediatos después de perder a un ser querido. Cuídense a sí mismos y a su familia antes de tomar cualquier paso legal.",
+      "urgency": "critical"
+    },
+    {
+      "step": 2,
+      "title": "Preserva toda posible evidencia",
+      "description": "Si es posible, fotografía la escena o conserva cualquier evidencia física relacionada con el fallecimiento. La evidencia perdida tempranamente puede ser difícil de reconstruir.",
+      "urgency": "important"
+    },
+    {
+      "step": 3,
+      "title": "Solicita el acta de defunción oficial",
+      "description": "El acta de defunción es documentación esencial para cualquier reclamación legal y asuntos sucesorios.",
+      "urgency": "important"
+    },
+    {
+      "step": 4,
+      "title": "Solicita una copia de cualquier reporte de incidente o accidente",
+      "description": "Los reportes policiales, reportes de incidentes del empleador y registros hospitalarios documentan las circunstancias del fallecimiento.",
+      "urgency": "important"
+    },
+    {
+      "step": 5,
+      "title": "Identifica y preserva registros financieros",
+      "description": "Los registros de empleo, documentación de ingresos y estados financieros establecen los daños económicos que pueden reclamarse en un caso de muerte por negligencia.",
+      "urgency": "helpful"
+    },
+    {
+      "step": 6,
+      "title": "Consulta con un abogado de lesiones personales con anticipación",
+      "description": "Las reclamaciones por muerte por negligencia implican reglas complejas de legitimación procesal, plazos más cortos en algunos casos y coordinación con los procesos sucesorios. Se recomienda ampliamente una consulta temprana.",
+      "urgency": "critical"
+    },
+    {
+      "step": 7,
+      "title": "No firmes nada de una aseguradora sin asesoramiento legal",
+      "description": "Las aseguradoras pueden acercarse a los familiares sobrevivientes rápidamente. No firmes liberaciones, aceptes acuerdos ni des declaraciones grabadas sin consultar a un abogado.",
+      "urgency": "critical"
+    },
+    {
+      "step": 8,
+      "title": "Coordina con el proceso sucesorio",
+      "description": "Algunos daños por muerte por negligencia pasan a través del patrimonio del fallecido. Es importante entender cómo las leyes de tu estado coordinan las reclamaciones del patrimonio y las de los sobrevivientes.",
+      "urgency": "helpful"
+    }
+  ],
+  "evidenceChecklist": [
+    {
+      "category": "Registros Oficiales",
+      "priority": "critical",
+      "items": [
+        "Acta de defunción",
+        "Reporte policial o de incidente",
+        "Informe de autopsia o del médico forense",
+        "Registros hospitalarios y de urgencias",
+        "Cualquier registro médico previo relevante para la causa del fallecimiento"
+      ]
+    },
+    {
+      "category": "Evidencia de la Escena y Responsabilidad",
+      "priority": "critical",
+      "items": [
+        "Fotos del lugar del accidente o incidente (si son accesibles)",
+        "Nombres e información de contacto de testigos",
+        "Nombres de todas las partes potencialmente responsables",
+        "Información de pólizas de seguro de las partes responsables"
+      ]
+    },
+    {
+      "category": "Registros Financieros y Económicos",
+      "priority": "important",
+      "items": [
+        "Declaraciones de impuestos y comprobantes de nómina del fallecido (últimos 2 a 3 años)",
+        "Talones de pago y registros de empleo",
+        "Documentación de beneficios, pensión o potencial de ingresos futuros",
+        "Registros del apoyo económico proporcionado a los familiares sobrevivientes"
+      ]
+    },
+    {
+      "category": "Documentación de la Relación",
+      "priority": "important",
+      "items": [
+        "Actas de matrimonio (para reclamaciones del cónyuge)",
+        "Actas de nacimiento (para reclamaciones de padres o hijos)",
+        "Evidencia de dependencia económica",
+        "Documentación de la relación y la compañía perdida"
+      ]
+    },
+    {
+      "category": "Comunicaciones",
+      "priority": "helpful",
+      "items": [
+        "Cualquier comunicación de aseguradoras o partes responsables",
+        "Cualquier oferta de acuerdo recibida por escrito",
+        "Toda correspondencia con el empleador del fallecido si el caso es relacionado con el trabajo"
+      ]
+    }
+  ],
+  "timelineRisks": [
+    {
+      "period": "Dentro de 30 Días",
+      "risk": "Las aseguradoras pueden acercarse a los familiares",
+      "action": "No firmes ninguna liberación ni aceptes ningún acuerdo sin consultar a un abogado. Los acuerdos tempranos en casos de muerte por negligencia generalmente están muy por debajo del valor total de la reclamación."
+    },
+    {
+      "period": "Dentro de 6 Meses (Demandados Gubernamentales)",
+      "risk": "Plazo de aviso de reclamación contra entidad gubernamental",
+      "action": "Si una entidad gubernamental, empleado o vehículo causó el fallecimiento, California y Arizona tienen requisitos de aviso de reclamación dentro de 6 meses. Este es un plazo definitivo e improrrogable."
+    },
+    {
+      "period": "2 Años (California)",
+      "risk": "Prescripción para reclamaciones por muerte por negligencia",
+      "action": "La prescripción por muerte por negligencia en California es de 2 años a partir de la fecha del fallecimiento. Perder este plazo generalmente impide la reclamación."
+    },
+    {
+      "period": "2 Años (Arizona)",
+      "risk": "Prescripción para reclamaciones por muerte por negligencia",
+      "action": "Arizona también tiene una prescripción de 2 años para reclamaciones por muerte por negligencia. Consulta a un abogado con prontitud para proteger los derechos de la familia."
+    }
+  ],
+  "insuranceIssues": [
+    {
+      "issue": "Quién puede presentar una reclamación por muerte por negligencia",
+      "explanation": "En California, una reclamación por muerte por negligencia puede ser presentada por el cónyuge sobreviviente, pareja doméstica, hijos o, en su ausencia, aquellos que heredarían conforme a la sucesión intestada. En Arizona aplican reglas similares. Los detalles son importantes para determinar quién recibe qué."
+    },
+    {
+      "issue": "Reclamaciones de supervivencia vs. reclamaciones por muerte por negligencia",
+      "explanation": "California permite tanto una reclamación por muerte por negligencia (por las pérdidas de los sobrevivientes) como una acción de supervivencia (por el dolor, sufrimiento y pérdidas económicas propias del fallecido antes de la muerte). Estas son separadas y pueden presentarse conjuntamente."
+    },
+    {
+      "issue": "Coordinación con el proceso sucesorio",
+      "explanation": "Las reclamaciones de supervivencia pasan a través del patrimonio del fallecido. Si eres un familiar sobreviviente pero no el representante del patrimonio, se requiere coordinación."
+    },
+    {
+      "issue": "Compensación laboral y muerte por negligencia",
+      "explanation": "Si el fallecimiento ocurrió en el trabajo, pueden estar disponibles beneficios por muerte de compensación laboral para los dependientes. Las reclamaciones civiles por muerte por negligencia también pueden estar disponibles junto con, o en lugar de, la compensación laboral, dependiendo de las circunstancias."
+    }
+  ],
+  "whenToGetLawyer": [
+    "Un familiar falleció como resultado de la negligencia o acto ilícito de otra parte",
+    "Una aseguradora se ha comunicado con los familiares sobrevivientes con una oferta de acuerdo",
+    "El fallecimiento ocurrió debido a un accidente laboral, producto defectuoso o error médico",
+    "Puede haber estado involucrada una entidad gubernamental",
+    "No estás seguro de quién tiene legitimación legal para presentar una reclamación",
+    "Necesitas orientación para coordinar una reclamación por muerte por negligencia con el proceso sucesorio"
+  ],
+  "relatedAccidents": ["auto", "camion", "motocicleta", "trabajo", "construccion", "propiedad"],
+  "relatedInjuries": ["traumatismo-craneal", "columna", "lesiones-internas"],
+  "relatedGuides": ["despues-accidente-auto", "despues-accidente-camion", "evaluacion-caso"],
+  "relatedTools": ["evaluacion-caso", "lista-evidencia"],
+  "translationStatus": "needs-review"
+}

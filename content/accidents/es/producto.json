@@ -1,0 +1,207 @@
+{
+  "slug": "producto",
+  "title": "Responsabilidad por Productos Defectuosos",
+  "shortTitle": "Productos Defectuosos",
+  "description": "Cuando un producto defectuoso causa lesiones, el fabricante, distribuidor o minorista puede ser responsable conforme a las leyes de responsabilidad por productos. California y Arizona reconocen tres teorías de defecto: defectos de diseño, defectos de fabricación y falta de advertencia. No es necesario probar negligencia, ya que en muchos casos de lesiones por productos aplica la responsabilidad objetiva.",
+  "metaTitle": "Guía de Responsabilidad por Productos — Lesionado por Producto Defectuoso",
+  "metaDescription": "¿Lesionado por un producto defectuoso en California o Arizona? Aprende sobre responsabilidad objetiva, preservación de evidencia y cuándo hablar con un abogado.",
+  "icon": "product",
+  "commonCauses": [
+    {
+      "title": "Defectos de Fabricación",
+      "description": "Un error en el proceso de fabricación hace que un producto específico se desvíe de su diseño original, creando una condición peligrosa."
+    },
+    {
+      "title": "Defectos de Diseño",
+      "description": "Toda la línea de productos es inherentemente peligrosa debido a una falla en el propio diseño, incluso si fue fabricado exactamente como se pretendía."
+    },
+    {
+      "title": "Falta de Advertencia",
+      "description": "Un producto que representa peligros no evidentes sin advertencias adecuadas, instrucciones o etiquetas de seguridad puede generar responsabilidad para el fabricante."
+    },
+    {
+      "title": "Componentes Vehiculares Defectuosos",
+      "description": "Reventones de llantas, fallas de frenos, malfuncionamiento de bolsas de aire y otros defectos automotrices causan accidentes y lesiones graves."
+    },
+    {
+      "title": "Productos de Consumo Peligrosos",
+      "description": "Electrodomésticos, herramientas eléctricas, juguetes para niños y dispositivos electrónicos que fallan y causan quemaduras, laceraciones u otras lesiones."
+    },
+    {
+      "title": "Defectos en Medicamentos y Dispositivos Médicos",
+      "description": "Los efectos secundarios peligrosos de medicamentos no divulgados adecuadamente, y los dispositivos médicos defectuosos implantados en pacientes, son fuentes importantes de reclamaciones por responsabilidad de productos."
+    },
+    {
+      "title": "Contaminación de Alimentos",
+      "description": "Las enfermedades transmitidas por alimentos causadas por productos alimenticios contaminados pueden respaldar reclamaciones de responsabilidad por productos contra fabricantes y distribuidores."
+    }
+  ],
+  "likelyInjuries": [
+    { "slug": "quemaduras", "title": "Quemaduras y Lesiones Químicas", "severity": "severe" },
+    { "slug": "huesos-rotos", "title": "Huesos Rotos", "severity": "moderate" },
+    { "slug": "traumatismo-craneal", "title": "Traumatismo Craneoencefálico", "severity": "severe" },
+    { "slug": "tejido-blando", "title": "Laceraciones y Tejido Blando", "severity": "moderate" },
+    { "slug": "lesiones-internas", "title": "Lesiones Internas", "severity": "severe" }
+  ],
+  "immediateSteps": [
+    {
+      "step": 1,
+      "title": "Busca atención médica",
+      "description": "Recibe evaluación y tratamiento para tus lesiones. Documenta la causa de la lesión en tus registros médicos de la manera más específica posible.",
+      "urgency": "critical"
+    },
+    {
+      "step": 2,
+      "title": "Preserva el producto defectuoso",
+      "description": "Este es el paso más importante. No deseches, repares ni alteres el producto que causó tu lesión. Es la pieza principal de evidencia en un caso de responsabilidad por productos.",
+      "urgency": "critical"
+    },
+    {
+      "step": 3,
+      "title": "Conserva todo el empaque y la documentación",
+      "description": "Guarda el empaque original, las instrucciones, las tarjetas de garantía y cualquier recibo o registro de compra.",
+      "urgency": "critical"
+    },
+    {
+      "step": 4,
+      "title": "Fotografía todo",
+      "description": "Documenta el producto, el defecto (si es visible), tus lesiones y cualquier daño a la propiedad. Fotografía desde múltiples ángulos.",
+      "urgency": "important"
+    },
+    {
+      "step": 5,
+      "title": "Verifica si hay retiros del mercado",
+      "description": "Busca el producto en la base de datos de retiros de la CPSC (cpsc.gov) y en el sitio web del fabricante. Un retiro existente puede respaldar significativamente tu reclamación.",
+      "urgency": "important"
+    },
+    {
+      "step": 6,
+      "title": "Identifica a otras posibles víctimas",
+      "description": "Si tienes conocimiento de otras personas lesionadas por el mismo producto, documentarlo puede respaldar un argumento de patrón de defecto o conectarte con una demanda colectiva.",
+      "urgency": "helpful"
+    },
+    {
+      "step": 7,
+      "title": "Reporta a la agencia correspondiente",
+      "description": "Reporta lesiones por productos de consumo a la CPSC (saferproducts.gov). Reporta lesiones por medicamentos o dispositivos médicos a la FDA.",
+      "urgency": "helpful"
+    },
+    {
+      "step": 8,
+      "title": "Guarda todos los registros médicos y financieros",
+      "description": "Documenta todos los costos de tratamiento, salarios perdidos y cualquier otro gasto relacionado con la lesión causada por el producto.",
+      "urgency": "important"
+    }
+  ],
+  "evidenceChecklist": [
+    {
+      "category": "Evidencia del Producto",
+      "priority": "critical",
+      "items": [
+        "El producto defectuoso en sí (no lo repares ni deseches)",
+        "Empaque e instrucciones originales",
+        "Recibo o comprobante de compra",
+        "Documentación de garantía",
+        "Número de serie, número de lote y fecha de fabricación (si son visibles)"
+      ]
+    },
+    {
+      "category": "Documentación del Incidente",
+      "priority": "critical",
+      "items": [
+        "Fotos del producto y el defecto visible",
+        "Fotos de todas las lesiones",
+        "Fotos de cualquier daño a la propiedad causado por el producto",
+        "Relato escrito de exactamente cómo se estaba usando el producto cuando ocurrió la lesión"
+      ]
+    },
+    {
+      "category": "Registros de Retiro y Seguridad",
+      "priority": "important",
+      "items": [
+        "Resultados de búsqueda de retiro en la CPSC para el producto",
+        "Cualquier aviso o boletín de seguridad del fabricante",
+        "Evidencia de otras lesiones reportadas (reseñas en línea, bases de datos de retiros)"
+      ]
+    },
+    {
+      "category": "Documentación Médica",
+      "priority": "critical",
+      "items": [
+        "Registros de urgencias o atención de emergencia",
+        "Todas las notas de seguimiento de médicos y especialistas",
+        "Informes de imágenes",
+        "Registros de fisioterapia y rehabilitación",
+        "Registros de prescripciones y diario de síntomas"
+      ]
+    },
+    {
+      "category": "Registros Financieros",
+      "priority": "important",
+      "items": [
+        "Todas las facturas médicas",
+        "Documentación de salarios perdidos",
+        "Costo del producto",
+        "Cualquier otro gasto de bolsillo relacionado con el accidente"
+      ]
+    }
+  ],
+  "timelineRisks": [
+    {
+      "period": "Inmediatamente",
+      "risk": "El producto puede ser desechado o reparado",
+      "action": "Preserva el producto defectuoso exactamente como estaba al momento de la lesión. Este es el paso más importante y no puede deshacerse si se omite."
+    },
+    {
+      "period": "Dentro de 30 Días",
+      "risk": "Plazos de investigación de retiro del producto",
+      "action": "Verifica si existen retiros del mercado. Reporta tu lesión a la CPSC o la FDA según corresponda para crear un registro oficial."
+    },
+    {
+      "period": "Dentro de 2 Años (California)",
+      "risk": "Prescripción para lesiones personales por responsabilidad de productos",
+      "action": "California tiene una prescripción de 2 años para lesiones personales contada a partir de la fecha de la lesión."
+    },
+    {
+      "period": "Dentro de 2 Años (Arizona)",
+      "risk": "Prescripción para lesiones personales por responsabilidad de productos",
+      "action": "Arizona también tiene una prescripción de 2 años para reclamaciones de responsabilidad por productos."
+    },
+    {
+      "period": "10 Años (Prescripción Absoluta)",
+      "risk": "Algunos estados tienen un plazo máximo independientemente del descubrimiento",
+      "action": "Algunas reclamaciones de responsabilidad por productos tienen una prescripción absoluta independiente de cuándo descubriste la lesión. Consulta a un abogado para tu situación específica."
+    }
+  ],
+  "insuranceIssues": [
+    {
+      "issue": "Responsabilidad objetiva: no se requiere probar negligencia",
+      "explanation": "En California y Arizona, los fabricantes pueden ser declarados responsables de manera objetiva por productos defectuosos que causen lesiones. No es necesario probar que el fabricante fue descuidado, solo que el producto era defectuoso y causó la lesión."
+    },
+    {
+      "issue": "Múltiples partes en la cadena de suministro",
+      "explanation": "La responsabilidad puede extenderse a diseñadores, fabricantes, fabricantes de componentes, distribuidores y minoristas. Identificar a las partes correctas es un paso fundamental."
+    },
+    {
+      "issue": "Defensa de uso indebido o modificación",
+      "explanation": "Los fabricantes pueden argumentar que el producto fue utilizado de manera no prevista o fue alterado por el usuario. Documentar el uso normal y previsto del producto al momento de la lesión contradice esta defensa."
+    },
+    {
+      "issue": "Demandas colectivas y litigios masivos",
+      "explanation": "Si muchas personas han sido lesionadas por el mismo producto, puede haber una demanda colectiva o litigio masivo en curso. Un abogado puede asesorarte sobre si conviene unirte a un litigio existente."
+    }
+  ],
+  "whenToGetLawyer": [
+    "Fuiste lesionado por un producto que funcionó mal o era defectuoso",
+    "El producto tiene un retiro activo del cual no fuiste notificado",
+    "Tus lesiones requirieron atención médica o resultaron en gastos significativos",
+    "Un medicamento o dispositivo médico causó daños inesperados",
+    "Deseas preservar la evidencia antes de que se comprometa",
+    "Tienes conocimiento de otras personas lesionadas por el mismo producto"
+  ],
+  "relatedAccidents": ["auto", "construccion", "trabajo", "propiedad"],
+  "relatedInjuries": ["quemaduras", "huesos-rotos", "traumatismo-craneal", "tejido-blando", "lesiones-internas"],
+  "relatedGuides": ["lista-evidencia", "despues-accidente-auto", "evaluacion-caso"],
+  "relatedTools": ["evaluacion-caso", "lista-evidencia"],
+  "translationStatus": "needs-review"
+}

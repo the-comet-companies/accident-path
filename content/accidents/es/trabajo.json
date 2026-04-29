@@ -1,0 +1,212 @@
+{
+  "slug": "trabajo",
+  "title": "Lesiones en el Lugar de Trabajo",
+  "shortTitle": "Lesiones Laborales",
+  "description": "Las lesiones laborales están cubiertas por la compensación para trabajadores en California y Arizona, pero los trabajadores también pueden tener reclamaciones contra terceros. Comprender la diferencia entre la compensación laboral y la responsabilidad civil puede afectar significativamente la compensación disponible para usted. Esta información es educativa únicamente y no constituye asesoramiento legal.",
+  "metaTitle": "Guía de Lesiones Laborales — Compensación y Derechos",
+  "metaDescription": "Qué hacer tras una lesión laboral en California o Arizona. Compensación para trabajadores, reclamos contra terceros, plazos y cuándo hablar con un abogado.",
+  "icon": "workplace",
+  "commonCauses": [
+    {
+      "title": "Resbalones, Tropiezos y Caídas",
+      "description": "Los pisos mojados, las superficies irregulares, la iluminación deficiente y los obstáculos en las áreas de trabajo son una de las principales causas de lesiones laborales en todas las industrias."
+    },
+    {
+      "title": "Sobreesfuerzo y Lesiones por Movimientos Repetitivos",
+      "description": "Las lesiones por levantar, empujar, jalar y movimientos repetitivos representan un porcentaje significativo de las reclamaciones de compensación para trabajadores."
+    },
+    {
+      "title": "Accidentes por Objetos en Movimiento",
+      "description": "Trabajadores golpeados por objetos que caen, equipos en movimiento o vehículos en almacenes y entornos industriales."
+    },
+    {
+      "title": "Accidentes con Maquinaria y Equipo",
+      "description": "El contacto con maquinaria sin protección, herramientas eléctricas o sistemas de banda transportadora puede causar laceraciones graves, aplastamientos y amputaciones."
+    },
+    {
+      "title": "Accidentes de Vehículos en el Trabajo",
+      "description": "Trabajadores lesionados mientras conducen vehículos de la empresa u operan montacargas y otros vehículos industriales."
+    },
+    {
+      "title": "Violencia en el Lugar de Trabajo",
+      "description": "Las agresiones por parte de compañeros de trabajo, clientes o terceros en el trabajo pueden calificar para cobertura de compensación laboral."
+    },
+    {
+      "title": "Exposición a Químicos y Sustancias Tóxicas",
+      "description": "La exposición a químicos peligrosos, vapores y sustancias sin el equipo de protección personal adecuado puede causar lesiones agudas y enfermedades a largo plazo."
+    }
+  ],
+  "likelyInjuries": [
+    { "slug": "tejido-blando", "title": "Lesiones de Tejido Blando y Movimientos Repetitivos", "severity": "moderate" },
+    { "slug": "huesos-rotos", "title": "Huesos Rotos", "severity": "moderate" },
+    { "slug": "traumatismo-craneal", "title": "Traumatismo Craneoencefálico", "severity": "severe" },
+    { "slug": "columna", "title": "Lesiones de Columna", "severity": "catastrophic" },
+    { "slug": "quemaduras", "title": "Quemaduras y Lesiones Químicas", "severity": "severe" }
+  ],
+  "immediateSteps": [
+    {
+      "step": 1,
+      "title": "Busque atención médica de emergencia si es necesario",
+      "description": "Llame al 911 en caso de lesiones graves. Para lesiones menos severas, consulte a un médico autorizado por la compensación laboral o acuda a una clínica de atención urgente.",
+      "urgency": "critical"
+    },
+    {
+      "step": 2,
+      "title": "Reporte la lesión a su supervisor de inmediato",
+      "description": "Notifique a su empleador o supervisor directo el mismo día que ocurre la lesión. Un reporte tardío puede poner en riesgo su reclamación de compensación laboral.",
+      "urgency": "critical"
+    },
+    {
+      "step": 3,
+      "title": "Documente el lugar y las circunstancias del accidente",
+      "description": "Fotografíe el lugar exacto, cualquier equipo o peligro involucrado y todo lo que contribuyó a la lesión. Hágalo antes de que el lugar sea limpiado o modificado.",
+      "urgency": "critical"
+    },
+    {
+      "step": 4,
+      "title": "Llene el formulario de reclamación de compensación laboral",
+      "description": "En California, complete el formulario DWC-1. En Arizona, presente una reclamación de compensación laboral al asegurador de su empleador. Solicite una copia de la reclamación presentada.",
+      "urgency": "critical"
+    },
+    {
+      "step": 5,
+      "title": "Identifique a los testigos",
+      "description": "Obtenga los nombres e información de contacto de compañeros de trabajo u otras personas que hayan presenciado la lesión.",
+      "urgency": "important"
+    },
+    {
+      "step": 6,
+      "title": "Consulte a un médico autorizado de compensación laboral",
+      "description": "La compensación laboral generalmente requiere tratamiento con proveedores autorizados. Usar un proveedor no autorizado sin permiso puede afectar sus beneficios.",
+      "urgency": "important"
+    },
+    {
+      "step": 7,
+      "title": "Lleve registro de todos los tratamientos y comunicaciones",
+      "description": "Documente todas las visitas médicas, recetas y cualquier comunicación con su empleador o la aseguradora de compensación laboral.",
+      "urgency": "important"
+    },
+    {
+      "step": 8,
+      "title": "Considere si algún tercero tiene responsabilidad",
+      "description": "Si un contratista, cliente, fabricante de equipo u otra persona que no sea su empleador contribuyó a la lesión, puede haber disponible una reclamación civil además de la compensación laboral.",
+      "urgency": "helpful"
+    }
+  ],
+  "evidenceChecklist": [
+    {
+      "category": "En el Lugar del Accidente",
+      "priority": "critical",
+      "items": [
+        "Fotos del lugar del accidente y de los peligros presentes",
+        "Fotos de cualquier equipo, herramienta o materiales involucrados",
+        "Fotos de las lesiones visibles",
+        "Nombres e información de contacto de los testigos",
+        "Copia del reporte de incidente del empleador"
+      ]
+    },
+    {
+      "category": "Documentación de Compensación Laboral",
+      "priority": "critical",
+      "items": [
+        "Copia del formulario DWC-1 (California) o formulario de reclamación equivalente (Arizona)",
+        "Número de confirmación de la reclamación de compensación laboral",
+        "Información del médico tratante autorizado",
+        "Todos los registros médicos y notas de tratamiento de proveedores autorizados"
+      ]
+    },
+    {
+      "category": "Documentación Médica",
+      "priority": "critical",
+      "items": [
+        "Notas de todas las visitas con médicos y especialistas",
+        "Informes de imágenes (radiografías, resonancia magnética, tomografía computarizada)",
+        "Registros de fisioterapia y terapia ocupacional",
+        "Registros de recetas médicas",
+        "Diario continuo de síntomas y recuperación"
+      ]
+    },
+    {
+      "category": "Registros de Empleo",
+      "priority": "important",
+      "items": [
+        "Talones de pago que muestren los ingresos previos a la lesión",
+        "Documentación de días de trabajo perdidos y salarios no percibidos",
+        "Cualquier queja o reporte de seguridad presentado anteriormente",
+        "Contrato de trabajo o documentos de clasificación laboral"
+      ]
+    },
+    {
+      "category": "Evidencia de Terceros",
+      "priority": "helpful",
+      "items": [
+        "Información sobre cualquier contratista, proveedor o tercero presente al momento de la lesión",
+        "Información del fabricante del equipo si estuvo involucrado un producto defectuoso",
+        "Registros de inspecciones o violaciones de OSHA"
+      ]
+    }
+  ],
+  "timelineRisks": [
+    {
+      "period": "El mismo día",
+      "risk": "Plazo para reportar la lesión al empleador",
+      "action": "Reporte su lesión a su empleador el mismo día. Las lesiones no reportadas pueden generar disputas sobre la causa y la puntualidad del reporte."
+    },
+    {
+      "period": "Dentro de 30 días (California)",
+      "risk": "Plazo para presentar la reclamación de compensación laboral",
+      "action": "California exige presentar la reclamación dentro de los 30 días posteriores a la lesión para conservar todos los beneficios. Llene el formulario DWC-1 de inmediato."
+    },
+    {
+      "period": "Dentro de 1 año (Arizona)",
+      "risk": "Plazo para presentar la reclamación de compensación laboral",
+      "action": "Arizona exige presentar la reclamación dentro de 1 año a partir de la lesión. No espere."
+    },
+    {
+      "period": "Dentro de 2 años",
+      "risk": "Plazo para reclamación civil contra terceros",
+      "action": "Si un tercero contribuyó a su lesión, generalmente tiene 2 años para presentar una reclamación civil. La compensación laboral no impide estas reclamaciones."
+    },
+    {
+      "period": "En curso",
+      "risk": "Determinación de discapacidad permanente",
+      "action": "Las calificaciones de discapacidad permanente de compensación laboral afectan los beneficios a largo plazo. Asegúrese de obtener una evaluación médica independiente antes de aceptar una calificación final."
+    }
+  ],
+  "insuranceIssues": [
+    {
+      "issue": "La compensación laboral no requiere demostrar culpa",
+      "explanation": "La compensación laboral cubre el tratamiento médico y una parte de los salarios perdidos independientemente de quién causó el accidente. Sin embargo, los beneficios son limitados y no incluyen el dolor y sufrimiento."
+    },
+    {
+      "issue": "La represalia del empleador está prohibida",
+      "explanation": "Las leyes de California y Arizona prohíben represalias contra trabajadores que presentan reclamaciones de compensación laboral. El despido o una acción adversa después de una reclamación constituye una violación legal separada."
+    },
+    {
+      "issue": "Exclusiones para contratistas independientes",
+      "explanation": "Los trabajadores clasificados como contratistas independientes pueden no estar cubiertos por la compensación laboral. La clasificación errónea es común — la relación laboral real es lo que importa, no solo la etiqueta."
+    },
+    {
+      "issue": "Las reclamaciones contra terceros son independientes",
+      "explanation": "Si un tercero (proveedor, contratista, fabricante de equipo) contribuyó a su lesión, puede tener una reclamación civil que permite recuperar compensación por dolor y sufrimiento más allá de la compensación laboral."
+    },
+    {
+      "issue": "Acuerdos de compensación laboral",
+      "explanation": "Los casos de compensación laboral pueden resolverse mediante un Compromiso y Liberación (C&R) o un Laudo Estipulado. El C&R cierra todos los derechos futuros de compensación laboral por la lesión. Comprenda bien las implicaciones antes de firmar."
+    }
+  ],
+  "whenToGetLawyer": [
+    "Su lesión requiere cirugía, hospitalización o atención médica a largo plazo",
+    "Su reclamación de compensación laboral fue denegada o está en disputa",
+    "Su empleador disputa que la lesión ocurrió en el trabajo",
+    "Un tercero (contratista, fabricante de equipo) puede haber contribuido",
+    "Le han ofrecido un acuerdo de compensación laboral",
+    "Su empleador ha tomado medidas en su contra después de su reclamación",
+    "No está seguro de si su clasificación laboral afecta sus derechos"
+  ],
+  "relatedAccidents": ["construccion", "propiedad", "producto", "caida"],
+  "relatedInjuries": ["tejido-blando", "huesos-rotos", "traumatismo-craneal", "columna", "quemaduras"],
+  "relatedGuides": ["lista-evidencia", "despues-accidente-auto", "evaluacion-caso"],
+  "relatedTools": ["evaluacion-caso", "lista-evidencia"],
+  "translationStatus": "needs-review"
+}

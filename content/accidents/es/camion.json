@@ -1,0 +1,225 @@
+{
+  "slug": "camion",
+  "title": "Accidentes de Camión",
+  "shortTitle": "Accidentes de Camión",
+  "description": "Los accidentes que involucran camiones comerciales, semirremolques y tractocamiones se encuentran entre los más graves en las carreteras. Las regulaciones federales, las múltiples partes responsables y las lesiones severas hacen que estos casos sean significativamente más complejos que los accidentes de auto comunes. Esta información es educativa únicamente y no constituye asesoría legal.",
+  "metaTitle": "Guía de Accidentes de Camión — Qué Hacer Después del Choque",
+  "metaDescription": "Qué hacer después de un accidente de camión en California o Arizona. Pasos, lista de evidencia, regulaciones federales y orientación sobre cuándo hablar con un abogado.",
+  "icon": "truck",
+  "commonCauses": [
+    {
+      "title": "Fatiga del Conductor",
+      "description": "Las regulaciones federales de Horas de Servicio limitan el tiempo de conducción, pero las violaciones son comunes. Los conductores de camión con somnolencia tienen tiempos de reacción significativamente deteriorados."
+    },
+    {
+      "title": "Manejo Distraído",
+      "description": "El uso del celular, los dispositivos de despacho y otras distracciones son especialmente peligrosos a las velocidades y pesos de los vehículos comerciales."
+    },
+    {
+      "title": "Carga Inadecuada",
+      "description": "La carga excesiva o mal asegurada puede hacer que los camiones vuelquen, hagan tijeretazos o arrojen escombros a la vía."
+    },
+    {
+      "title": "Falla de Frenos",
+      "description": "Los camiones comerciales necesitan una distancia de frenado considerablemente mayor. Las fallas de mantenimiento de frenos son una causa mecánica principal de accidentes."
+    },
+    {
+      "title": "Exceso de Velocidad y Manejo Agresivo",
+      "description": "La presión de entrega y los horarios pueden llevar a los conductores a exceder la velocidad o manejar agresivamente, especialmente en carreteras."
+    },
+    {
+      "title": "Capacitación Insuficiente",
+      "description": "Los conductores con capacitación inadecuada pueden no estar preparados para condiciones climáticas adversas, maniobras de emergencia o manejo de carga peligrosa."
+    },
+    {
+      "title": "Manejo Bajo Influencia del Alcohol o Drogas",
+      "description": "Los conductores comerciales están sujetos a un límite legal de alcohol más bajo (0.04%) que los conductores no comerciales, pero las violaciones siguen ocurriendo."
+    }
+  ],
+  "likelyInjuries": [
+    { "slug": "traumatismo-craneal", "title": "Traumatismo Craneoencefálico", "severity": "severe" },
+    { "slug": "columna", "title": "Lesiones de Columna", "severity": "catastrophic" },
+    { "slug": "huesos-rotos", "title": "Huesos Rotos", "severity": "moderate" },
+    { "slug": "lesiones-internas", "title": "Lesiones Internas", "severity": "severe" },
+    { "slug": "tejido-blando", "title": "Lesiones de Tejido Blando", "severity": "moderate" }
+  ],
+  "immediateSteps": [
+    {
+      "step": 1,
+      "title": "Llame al 911 de inmediato",
+      "description": "Los accidentes de camión frecuentemente resultan en lesiones graves. Llame al 911 aunque crea que las lesiones son menores — los síntomas pueden aparecer con retraso.",
+      "urgency": "critical"
+    },
+    {
+      "step": 2,
+      "title": "No mueva a las personas lesionadas",
+      "description": "Las lesiones de columna son comunes en accidentes de camión. Evite mover a alguien a menos que esté en peligro inmediato.",
+      "urgency": "critical"
+    },
+    {
+      "step": 3,
+      "title": "Fotografíe todo antes de que se muevan los vehículos",
+      "description": "Los camiones suelen retirarse rápidamente para gestionar el tráfico. Documente las marcas de frenada, las posiciones finales de los vehículos, las condiciones de la vía y todos los daños antes de que se despeje la escena.",
+      "urgency": "critical"
+    },
+    {
+      "step": 4,
+      "title": "Obtenga el número DOT del camión e información de la empresa transportista",
+      "description": "Se encuentra en la puerta o cabina del camión. Esto identifica a la transportista y es esencial para investigar el seguro y el cumplimiento regulatorio.",
+      "urgency": "important"
+    },
+    {
+      "step": 5,
+      "title": "Solicite la información del libro de registro del conductor",
+      "description": "La ley federal exige a los conductores comerciales llevar registros de Horas de Servicio. Esta es evidencia crítica que puede desaparecer rápidamente.",
+      "urgency": "important"
+    },
+    {
+      "step": 6,
+      "title": "Identifique a los testigos",
+      "description": "Otros conductores, pasajeros o transeúntes que hayan visto el accidente. Los testimonios de testigos independientes son especialmente importantes cuando se trata con grandes transportistas.",
+      "urgency": "important"
+    },
+    {
+      "step": 7,
+      "title": "Busque evaluación médica de inmediato",
+      "description": "Las lesiones por accidentes de camión suelen ser graves. Aunque se sienta funcional, las lesiones internas y los traumatismos craneoencefálicos pueden no ser evidentes de inmediato.",
+      "urgency": "critical"
+    },
+    {
+      "step": 8,
+      "title": "Conserve todos los registros",
+      "description": "Guarde todo — facturas médicas, presupuestos de reparación, registros de renta y documentación de cualquier trabajo perdido.",
+      "urgency": "helpful"
+    }
+  ],
+  "evidenceChecklist": [
+    {
+      "category": "En la Escena del Accidente",
+      "priority": "critical",
+      "items": [
+        "Fotos de todos los vehículos (todos los ángulos, antes de que se muevan)",
+        "Número DOT del camión, placas y nombre de la empresa",
+        "Nombre del conductor, número de CDL e información de contacto",
+        "Información de contacto de la empresa transportista",
+        "Fotos de marcas de frenada, condiciones de la vía y escombros",
+        "Número del reporte policial",
+        "Nombres e información de contacto de todos los testigos"
+      ]
+    },
+    {
+      "category": "Evidencia Específica del Camión",
+      "priority": "critical",
+      "items": [
+        "Libro de registro de Horas de Servicio del conductor (solicite a través de un abogado)",
+        "Datos del dispositivo de registro electrónico (ELD)",
+        "Caja negra del camión / grabador de datos de eventos",
+        "Manifiesto de carga y documentación de peso",
+        "Registros de mantenimiento e inspección del camión",
+        "Registros de empleo y capacitación del conductor"
+      ]
+    },
+    {
+      "category": "Documentación Médica",
+      "priority": "critical",
+      "items": [
+        "Registros de la sala de emergencias",
+        "Notas de todas las visitas de seguimiento con especialistas",
+        "Reportes de imágenes (radiografía, resonancia magnética, tomografía)",
+        "Registros de terapia física y ocupacional",
+        "Registros de medicamentos",
+        "Diario de síntomas continuo"
+      ]
+    },
+    {
+      "category": "Registros Financieros",
+      "priority": "important",
+      "items": [
+        "Todas las facturas médicas",
+        "Documentación de reparación del vehículo o pérdida total",
+        "Documentación de pérdida de salario del empleador",
+        "Recibos del vehículo de renta",
+        "Cualquier otro gasto de bolsillo relacionado con el accidente"
+      ]
+    },
+    {
+      "category": "Evidencia Adicional",
+      "priority": "helpful",
+      "items": [
+        "Video de cámara de tablero o cámaras de tráfico",
+        "Registros de báscula de pesaje para el vehículo",
+        "Reportes del clima y condiciones de la vía",
+        "Fotos de la escena del accidente tomadas después del hecho"
+      ]
+    }
+  ],
+  "timelineRisks": [
+    {
+      "period": "Dentro de las 24-48 Horas",
+      "risk": "Los datos críticos del camión pueden ser sobrescritos",
+      "action": "Los datos del dispositivo de registro electrónico y las grabaciones de la caja negra pueden sobrescribirse en días. Un abogado puede enviar una carta de preservación para proteger esta evidencia."
+    },
+    {
+      "period": "Dentro de las 72 Horas",
+      "risk": "La empresa transportista inicia su propia investigación",
+      "action": "Las transportistas envían investigadores y abogados rápidamente después de accidentes graves. Documentar su versión y la evidencia a tiempo es fundamental."
+    },
+    {
+      "period": "Dentro de los Primeros 30 Días",
+      "risk": "Plazos para reporte a la aseguradora",
+      "action": "Reporte el accidente a su aseguradora a la brevedad. Evite dar declaraciones grabadas a la aseguradora de la transportista sin orientación legal."
+    },
+    {
+      "period": "Dentro de los 6 Meses",
+      "risk": "Los testigos se vuelven inlocalizables",
+      "action": "Recopile y conserve las declaraciones de los testigos. Obtenga el reporte policial cuando esté disponible."
+    },
+    {
+      "period": "2 Años (California)",
+      "risk": "Plazo de prescripción para lesiones personales",
+      "action": "California generalmente permite 2 años desde la fecha del accidente para presentar una demanda por lesiones personales. Los reclamos contra entidades gubernamentales pueden tener plazos más cortos."
+    },
+    {
+      "period": "2 Años (Arizona)",
+      "risk": "Plazo de prescripción para lesiones personales",
+      "action": "Arizona también tiene un plazo de prescripción de 2 años para reclamos de lesiones personales. Consulte a un abogado a tiempo para proteger sus opciones."
+    }
+  ],
+  "insuranceIssues": [
+    {
+      "issue": "Múltiples partes responsables",
+      "explanation": "Los accidentes de camión pueden involucrar al conductor, la empresa transportista, el cargador, un contratista de mantenimiento o el fabricante del camión. Identificar a todas las partes responsables es complejo y de gran importancia."
+    },
+    {
+      "issue": "Montos mínimos de seguro más altos",
+      "explanation": "Los camiones comerciales deben llevar una cobertura de responsabilidad significativamente mayor que los vehículos de pasajeros — con frecuencia de $750,000 a $5 millones. Esto también significa que los transportistas cuentan con equipos de reclamos experimentados."
+    },
+    {
+      "issue": "Defensa agresiva de la transportista",
+      "explanation": "Las grandes empresas transportistas suelen tener equipos legales y de reclamos dedicados. Pueden contactarle rápidamente después de un accidente con ofertas de acuerdo. Las ofertas tempranas generalmente están por debajo del valor total de los daños."
+    },
+    {
+      "issue": "Complicaciones por contratistas independientes",
+      "explanation": "Algunos camioneros operan como contratistas independientes en lugar de empleados, lo que puede afectar qué pólizas de seguro aplican y quién asume la responsabilidad."
+    },
+    {
+      "issue": "Exposición a violaciones de regulaciones federales",
+      "explanation": "Las violaciones a la FMCSA (horas de servicio, pruebas de drogas, requisitos de mantenimiento) pueden establecer negligencia. Estos registros deben solicitarse antes de que sean destruidos."
+    }
+  ],
+  "whenToGetLawyer": [
+    "Usted o algún pasajero sufrió lesiones que requieren tratamiento médico",
+    "La empresa transportista o su aseguradora le contactó directamente después del accidente",
+    "Recibió una oferta de acuerdo antes de entender completamente sus lesiones",
+    "El conductor del camión estaba fatigado, bajo influencia o en violación de regulaciones federales",
+    "Hay múltiples partes potencialmente responsables (conductor, transportista, cargador)",
+    "Sus lesiones le han causado pérdida significativa de salario o discapacidad a largo plazo",
+    "El camión era operado por una entidad gubernamental",
+    "No sabe cómo preservar la evidencia electrónica antes de que sea sobrescrita"
+  ],
+  "relatedAccidents": ["auto", "motocicleta", "uber-lyft", "trabajo"],
+  "relatedInjuries": ["traumatismo-craneal", "columna", "huesos-rotos", "lesiones-internas", "tejido-blando"],
+  "relatedGuides": ["lista-evidencia", "evaluacion-caso", "despues-accidente-auto"],
+  "relatedTools": ["evaluacion-caso", "lista-evidencia"],
+  "translationStatus": "needs-review"
+}
