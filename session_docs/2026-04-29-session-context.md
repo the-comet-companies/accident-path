@@ -20,6 +20,23 @@
 - Reviewed plan with superpowers writing-plans skill — found and fixed 8 architectural gaps
 - Ran final pre-implementation spec check against actual source files — found and fixed 4 more gaps
 - All planning docs finalized and ready
+- **DEV-29 complete** — i18n infrastructure implemented on `staging` branch
+- **DEV-30 complete** — LanguageToggle + locale-aware Header, MobileNav, Footer
+
+### DEV-29 files created
+- `i18n/config.ts` — `LOCALES`, `DEFAULT_LOCALE`, `SLUG_MAP_ES` (24 entries), `SLUG_MAP_EN` (auto-reversed), + 5 locale-aware nav arrays + `NAV_LABELS`
+- `i18n/en.json` + `i18n/es.json` — ~150 keys across `cta`, `trust`, `emergency`, `phone`, `footer`, `tools`, `findHelp`, `intake` namespaces
+- `i18n/dictionaries.ts` — `getDictionary(locale)` async loader; `satisfies Dictionary` enforces key parity at build time
+- `proxy.ts` — locale detection on `/` only (cookie first, then `Accept-Language`); redirects Spanish users to `/es/`
+  - **Note:** Next.js 16 renamed `middleware.ts` → `proxy.ts` and `export function middleware` → `export function proxy`
+
+### DEV-30 files created/modified
+- `components/layout/LanguageToggle.tsx` — new `'use client'` pill toggle; path translation using `SLUG_MAP_ES`/`SLUG_MAP_EN` + prefix map; sets `NEXT_LOCALE` cookie; `variant="light"` (header/mobile) or `variant="dark"` (footer); `cursor-pointer` on buttons
+- `components/layout/Header.tsx` — `locale` prop (default `'en'`); nav arrays from `i18n/config`; `LanguageToggle` between last link and CTA
+- `components/layout/MobileNav.tsx` — `locale` prop; Find Help separated from simpleLinks for amber styling; `LanguageToggle` in drawer; CTA links locale-aware
+- `components/layout/Footer.tsx` — `locale` + `dict` props; disclaimer paragraphs from `dict.footer.disclaimer1/2/3`; section headings/emergency/copyright from dict; `LanguageToggle variant="dark"` in bottom bar
+- `app/layout.tsx` — now `async`; loads EN dict; passes `locale="en"` + `dict` to Footer
+- `app/es/layout.tsx` — new stub; loads ES dict; passes `locale="es"` to Header/MobileNav/Footer
 
 ### Last commit: `1fa9109`
 
@@ -54,8 +71,8 @@ For the Notion overview doc (what's being built, maintenance, implications):
 
 | Task | Phase | Status |
 |------|-------|--------|
-| DEV-29 | 7A | Not started — i18n config, dict files, middleware |
-| DEV-30 | 7A | Not started — language toggle + Header/Footer locale refactor |
+| DEV-29 | 7A | ✓ Complete — i18n config, dict files, proxy (locale redirect) |
+| DEV-30 | 7A | ✓ Complete — LanguageToggle + locale-aware Header, MobileNav, Footer |
 | DEV-31 | 7A | Not started — Spanish home page + layout |
 | DEV-32 | 7B | Not started — Spanish intake wizard |
 | DEV-33 | 7C | Not started — Spanish accident pages (13 types) |
@@ -99,7 +116,7 @@ For the Notion overview doc (what's being built, maintenance, implications):
 | Lighthouse Mobile | ✓ 82–96 |
 | Unit tests | ✓ 26/26 |
 | E2E tests | ✓ 24/24 |
-| Spanish i18n | ✗ Not started (plan complete) |
+| Spanish i18n | 🔄 In progress — DEV-29 + DEV-30 done, DEV-31 next |
 | Attorney review of content | ✗ Pending (non-code) |
 | GA4 setup | ✗ Pending Michael |
 | Domain/DNS | ✗ Pending Michael |

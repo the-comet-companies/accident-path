@@ -8,6 +8,7 @@ import { Footer } from "@/components/layout/Footer";
 import { EmergencyBanner } from "@/components/ui/EmergencyBanner";
 import { SchemaOrg } from "@/components/seo/SchemaOrg";
 import { organizationSchema } from "@/lib/seo";
+import { getDictionary } from "@/i18n/dictionaries";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -33,11 +34,13 @@ export const metadata: Metadata = {
     "Clear guidance after an accident, smart next steps, and help finding the right attorney. Educational resources for injured people in California and Arizona.",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const dict = await getDictionary('en')
+
   return (
     <html
       lang="en"
@@ -48,7 +51,7 @@ export default function RootLayout({
         <EmergencyBanner />
         {/* Desktop header */}
         <div className="hidden lg:block sticky top-0 z-50">
-          <Header />
+          <Header locale="en" />
         </div>
         {/* Mobile header */}
         <div className="lg:hidden sticky top-0 z-50 bg-surface-card border-b border-neutral-100 shadow-sm">
@@ -58,12 +61,12 @@ export default function RootLayout({
                 Accident<span className="text-amber-500">Path</span>
               </span>
             </Link>
-            <MobileNav />
+            <MobileNav locale="en" />
           </div>
         </div>
         {/* Main content — pb-20 on mobile reserves space above fixed CTA bar */}
         <main className="flex-1 pb-20 lg:pb-0">{children}</main>
-        <Footer />
+        <Footer locale="en" dict={dict} />
       </body>
     </html>
   );

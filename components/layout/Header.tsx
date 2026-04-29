@@ -4,23 +4,16 @@ import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
 import { ChevronDown } from 'lucide-react'
 import { CTAButton } from '@/components/ui/CTAButton'
+import { LanguageToggle } from '@/components/layout/LanguageToggle'
+import {
+  NAV_ACCIDENT_TYPES,
+  NAV_SIMPLE_LINKS,
+  NAV_FIND_HELP,
+  NAV_LABELS,
+  type Locale,
+} from '@/i18n/config'
 
-const accidentTypes = [
-  { label: 'Car Accidents', href: '/accidents/car' },
-  { label: 'Truck Accidents', href: '/accidents/truck' },
-  { label: 'Motorcycle Accidents', href: '/accidents/motorcycle' },
-  { label: 'Uber / Lyft Accidents', href: '/accidents/uber-lyft' },
-  { label: 'Pedestrian Accidents', href: '/accidents/pedestrian' },
-  { label: 'Bicycle Accidents', href: '/accidents/bicycle' },
-  { label: 'Slip & Fall', href: '/accidents/slip-and-fall' },
-  { label: 'Dog Bites', href: '/accidents/dog-bite' },
-  { label: 'Construction Injuries', href: '/accidents/construction' },
-  { label: 'Workplace Injuries', href: '/accidents/workplace' },
-  { label: 'Wrongful Death', href: '/accidents/wrongful-death' },
-  { label: 'Premises Liability', href: '/accidents/premises' },
-  { label: 'Product Liability', href: '/accidents/product' },
-]
-
+// State guides remain English-only until DEV-37 adds Spanish state pages
 const stateGuides = [
   {
     state: 'California',
@@ -48,19 +41,21 @@ const stateGuides = [
   },
 ]
 
-const simpleLinks = [
-  { label: 'Injuries', href: '/injuries' },
-  { label: 'What To Do Next', href: '/guides' },
-  { label: 'Tools', href: '/tools' },
-  { label: 'About', href: '/about' },
-]
-
 type OpenMenu = 'accidents' | 'states' | null
 
-export function Header() {
+interface HeaderProps {
+  locale?: Locale
+}
+
+export function Header({ locale = 'en' }: HeaderProps) {
   const [openMenu, setOpenMenu] = useState<OpenMenu>(null)
   const menuRef = useRef<HTMLDivElement>(null)
   const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
+
+  const accidentTypes = NAV_ACCIDENT_TYPES[locale]
+  const simpleLinks = NAV_SIMPLE_LINKS[locale]
+  const findHelp = NAV_FIND_HELP[locale]
+  const labels = NAV_LABELS[locale]
 
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
@@ -121,7 +116,7 @@ export function Header() {
               onMouseLeave={scheduleClose}
               className="flex items-center gap-1 px-3 py-2 text-sm font-medium text-neutral-700 hover:text-primary-600 rounded-md hover:bg-primary-50 transition-colors"
             >
-              Accident Types
+              {labels.accidentTypes}
               <ChevronDown
                 className={`w-4 h-4 transition-transform duration-150 ${openMenu === 'accidents' ? 'rotate-180' : ''}`}
                 aria-hidden="true"
@@ -141,10 +136,10 @@ export function Header() {
 
             {/* Find Help — highlighted */}
             <Link
-              href="/find-help"
+              href={findHelp.href}
               className="px-3 py-2 text-sm font-medium text-amber-600 hover:text-amber-700 rounded-md hover:bg-amber-50 transition-colors"
             >
-              Find Help
+              {findHelp.label}
             </Link>
 
             {/* State Guides mega-menu trigger */}
@@ -156,7 +151,7 @@ export function Header() {
               onMouseLeave={scheduleClose}
               className="flex items-center gap-1 px-3 py-2 text-sm font-medium text-neutral-700 hover:text-primary-600 rounded-md hover:bg-primary-50 transition-colors"
             >
-              State Guides
+              {labels.stateGuides}
               <ChevronDown
                 className={`w-4 h-4 transition-transform duration-150 ${openMenu === 'states' ? 'rotate-180' : ''}`}
                 aria-hidden="true"
@@ -173,11 +168,14 @@ export function Header() {
                 {link.label}
               </Link>
             ))}
+
+            {/* Language toggle */}
+            <LanguageToggle />
           </nav>
 
           {/* Desktop CTA */}
           <div className="hidden lg:block shrink-0">
-            <CTAButton href="/find-help" size="sm">Get Help Now</CTAButton>
+            <CTAButton href={findHelp.href} size="sm">{labels.getHelpNow}</CTAButton>
           </div>
         </div>
 
@@ -192,7 +190,7 @@ export function Header() {
           >
             <div className="max-w-7xl mx-auto px-8 py-6">
               <p className="text-xs font-semibold text-neutral-500 uppercase tracking-wider mb-4">
-                Accident Types
+                {labels.accidentTypes}
               </p>
               <ul className="grid grid-cols-4 gap-x-8 gap-y-2">
                 {accidentTypes.map(item => (
@@ -209,11 +207,11 @@ export function Header() {
               </ul>
               <div className="mt-4 pt-4 border-t border-neutral-100">
                 <Link
-                  href="/accidents"
+                  href={locale === 'es' ? '/es/accidentes' : '/accidents'}
                   onClick={() => setOpenMenu(null)}
                   className="text-sm font-medium text-primary-600 hover:underline"
                 >
-                  View all accident types →
+                  {labels.viewAllAccidents}
                 </Link>
               </div>
             </div>
@@ -262,7 +260,7 @@ export function Header() {
                   onClick={() => setOpenMenu(null)}
                   className="text-sm font-medium text-primary-600 hover:underline"
                 >
-                  View all states →
+                  {labels.viewAllStates}
                 </Link>
               </div>
             </div>

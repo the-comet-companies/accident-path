@@ -1,24 +1,8 @@
 import Link from 'next/link'
 import { TrustBadge } from '@/components/ui/TrustBadge'
-
-const accidentLinks = [
-  { label: 'Car Accidents', href: '/accidents/car' },
-  { label: 'Truck Accidents', href: '/accidents/truck' },
-  { label: 'Motorcycle Accidents', href: '/accidents/motorcycle' },
-  { label: 'Pedestrian Accidents', href: '/accidents/pedestrian' },
-  { label: 'Slip & Fall', href: '/accidents/slip-and-fall' },
-  { label: 'Workplace Injuries', href: '/accidents/workplace' },
-  { label: 'View All Accident Types', href: '/accidents' },
-]
-
-const resourceLinks = [
-  { label: 'Accident Guides', href: '/guides' },
-  { label: 'Injury Types', href: '/injuries' },
-  { label: 'Free Tools', href: '/tools' },
-  { label: 'California Guide', href: '/states/california' },
-  { label: 'Arizona Guide', href: '/states/arizona' },
-  { label: 'Find an Attorney', href: '/find-help' },
-]
+import { LanguageToggle } from '@/components/layout/LanguageToggle'
+import { FOOTER_ACCIDENT_LINKS, FOOTER_RESOURCE_LINKS, type Locale } from '@/i18n/config'
+import type { Dictionary } from '@/i18n/dictionaries'
 
 const companyLinks = [
   { label: 'How It Works', href: '/about/how-it-works' },
@@ -33,7 +17,17 @@ const companyLinks = [
 
 const currentYear = new Date().getFullYear()
 
-export function Footer() {
+interface FooterProps {
+  locale?: Locale
+  dict: Dictionary
+}
+
+export function Footer({ locale = 'en', dict }: FooterProps) {
+  const accidentLinks = FOOTER_ACCIDENT_LINKS[locale]
+  const resourceLinks = FOOTER_RESOURCE_LINKS[locale]
+  const t = dict.footer
+  const trust = dict.trust
+
   return (
     <footer aria-label="Site footer" className="bg-primary-900 text-neutral-300">
 
@@ -49,22 +43,24 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-sm leading-relaxed text-neutral-400">
-              Your path to recovery starts here. Clear guidance after an accident, smart next steps, and help finding the right attorney.
+              {locale === 'es'
+                ? 'Su camino hacia la recuperación comienza aquí. Orientación clara después de un accidente y ayuda para encontrar el abogado adecuado.'
+                : 'Your path to recovery starts here. Clear guidance after an accident, smart next steps, and help finding the right attorney.'}
             </p>
             <div className="space-y-2 pt-2">
               <TrustBadge
                 variant="shield"
-                text="Content Review in Progress"
+                text={trust.contentReview}
                 className="text-neutral-300 [&_svg]:text-amber-500 [&_p]:text-neutral-300"
               />
               <TrustBadge
                 variant="lock"
-                text="Your information is secure"
+                text={trust.infoSecure}
                 className="text-neutral-300 [&_svg]:text-amber-500 [&_p]:text-neutral-300"
               />
               <TrustBadge
                 variant="clock"
-                text="Free consultation — no obligation"
+                text={trust.freeConsult}
                 className="text-neutral-300 [&_svg]:text-amber-500 [&_p]:text-neutral-300"
               />
             </div>
@@ -73,7 +69,7 @@ export function Footer() {
           {/* Col 2: Accident Types */}
           <div>
             <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">
-              Accident Types
+              {t.accidentTypes}
             </h3>
             <ul className="space-y-2">
               {accidentLinks.map(link => (
@@ -92,7 +88,7 @@ export function Footer() {
           {/* Col 3: Resources */}
           <div>
             <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">
-              Resources
+              {t.resources}
             </h3>
             <ul className="space-y-2">
               {resourceLinks.map(link => (
@@ -111,7 +107,7 @@ export function Footer() {
           {/* Col 4: Company */}
           <div>
             <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">
-              Company
+              {t.company}
             </h3>
             <ul className="space-y-2">
               {companyLinks.map(link => (
@@ -136,34 +132,31 @@ export function Footer() {
       {/* Disclaimer block */}
       <div className="border-t border-primary-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-3">
-          <p className="text-xs text-neutral-500 leading-relaxed">
-            AccidentPath is not a law firm and does not provide legal advice. Information provided is for educational purposes only. By using this site, you acknowledge that no attorney-client relationship is formed. If you are in immediate danger, call 911. For medical emergencies, seek care immediately.
-          </p>
-          <p className="text-xs text-neutral-500 leading-relaxed">
-            AccidentPath connects consumers with attorneys in our network. Attorneys in our network may pay a fee for marketing services. This does not affect the quality of service you receive. AccidentPath does not endorse or guarantee any attorney&apos;s services. Availability varies by state and case type.
-          </p>
-          <p className="text-xs text-neutral-500 leading-relaxed">
-            Every case is different. Consult a licensed attorney for advice specific to your situation. Results may vary. Past results do not guarantee future outcomes.
-          </p>
+          <p className="text-xs text-neutral-500 leading-relaxed">{t.disclaimer1}</p>
+          <p className="text-xs text-neutral-500 leading-relaxed">{t.disclaimer2}</p>
+          <p className="text-xs text-neutral-500 leading-relaxed">{t.disclaimer3}</p>
         </div>
       </div>
 
-      {/* Bottom bar: emergency + copyright + CCPA */}
+      {/* Bottom bar: emergency + copyright + CCPA + language toggle */}
       <div className="border-t border-primary-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
           <p className="text-xs text-neutral-500">
-            <strong className="text-neutral-400">Emergency?</strong>{' '}
+            <strong className="text-neutral-400">{t.emergency}</strong>{' '}
             <a href="tel:911" className="text-danger-500 font-bold hover:underline">
-              Call 911
+              {t.call911}
             </a>{' '}
-            &middot; Seek immediate medical care for injuries.
+            &middot; {locale === 'es' ? 'Busque atención médica inmediata.' : 'Seek immediate medical care for injuries.'}
           </p>
-          <p className="text-xs text-neutral-500">
-            &copy; {currentYear} AccidentPath. All rights reserved.{' '}
-            <Link href="/privacy#do-not-sell" className="text-amber-400 hover:text-amber-300 underline">
-              Do Not Sell My Info
-            </Link>
-          </p>
+          <div className="flex items-center gap-4">
+            <p className="text-xs text-neutral-500">
+              &copy; {currentYear} AccidentPath. {t.copyright}{' '}
+              <Link href="/privacy#do-not-sell" className="text-amber-400 hover:text-amber-300 underline">
+                {t.doNotSell}
+              </Link>
+            </p>
+            <LanguageToggle variant="dark" />
+          </div>
         </div>
       </div>
     </footer>
