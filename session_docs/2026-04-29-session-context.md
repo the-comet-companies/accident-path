@@ -85,20 +85,37 @@ Root cause: `if (typeof window === 'undefined')` check in state initializer only
 
 Root cause: `if (typeof window === 'undefined')` check in state initializer only guards server; client reads localStorage during hydration, diverging from server HTML.
 
-### Last commit: `6f3e654`
+### Last commit: `edff211`
 
 ---
 
-## Current Task: Spanish Language Implementation
+## Where to Start Next Session
 
-**Planning is complete. Next step is implementation starting with DEV-29.**
+**Next task: DEV-34 — Spanish Guide Pages (`/es/guias/[slug]`)**
 
-Read these two files to start implementation:
-1. `docs/plans/PHASE-7-SPANISH-PLAN.md` — full technical plan, architecture decisions, all task specs
-2. `docs/plans/PHASE-7-NOTION-PROMPTS.md` — clean execution prompts per task (for Notion and subagents)
+Read these files before starting:
+1. `docs/plans/PHASE-7-IMPLEMENTATIONS.md` — actual architecture built so far (authoritative)
+2. `docs/plans/PHASE-7-SPANISH-PLAN.md` §DEV-34 — full spec for guide pages
 
-For the Notion overview doc (what's being built, maintenance, implications):
-- `docs/plans/PHASE-7-NOTION-OVERVIEW.md`
+**DEV-34 quick spec:**
+- Extend `lib/cms.ts`: add `locale` param to `getGuide` and `getAllGuides` (same pattern as `getAccident`)
+- Create `app/(es)/es/guias/[slug]/page.tsx` — mirrors `app/(en)/guides/[slug]/page.tsx`
+- Create `app/(es)/es/guias/page.tsx` — Spanish guides index (mirrors `app/(en)/guides/page.tsx`)
+- Create `content/guides/es/` — 14 JSON files (same schema as English guides)
+- Spanish guide slugs (from `SLUG_MAP_ES`): `despues-accidente-auto`, `despues-accidente-camion`, `lista-evidencia`, `evaluacion-caso` + 10 more from the plan
+- Use 3-agent parallel pattern (same as DEV-33) to write the JSON content files
+
+**Key lesson from DEV-33:** After agents write JSON files, always run the Zod validation script before committing:
+```bash
+node -e "
+const { z } = require('zod');
+const fs = require('fs');
+// paste GuideSchema inline, loop over content/guides/es/
+"
+```
+Or check `metaTitle` ≤70 chars and `metaDescription` 120–160 chars manually — those were the only failures in DEV-33.
+
+**After DEV-34, order is:** DEV-34B (injuries, 7 files) → DEV-35 (tools, ToolEngine strings) → DEV-37 (states/cities) → DEV-36 (sitemap)
 
 ---
 

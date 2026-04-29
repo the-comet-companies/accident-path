@@ -247,11 +247,25 @@ The `globals.css` import path depends on nesting level:
 
 ---
 
+## DEV-33 — Spanish Accident Pages (Complete)
+
+| File | Action | Notes |
+|------|--------|-------|
+| `lib/cms.ts` | Modified | `getAccident(slug, locale='en')` + `getAllAccidents(locale='en')` — backward-compatible |
+| `app/(es)/es/accidentes/[slug]/page.tsx` | Created | Spanish detail page; `generateStaticParams` from `SLUG_MAP_ES`; translated headings/urgency labels; hreflang; `notranslate` |
+| `app/(es)/es/accidentes/page.tsx` | Created | Spanish index; 3-column grid; `cms.getAllAccidents('es')` |
+| `content/accidents/es/*.json` | Created | 13 files — Mexican Spanish; Zod-validated; `translationStatus: "needs-review"` |
+
+**Slug convention for Spanish JSON files:** `likelyInjuries[].slug`, `relatedAccidents`, `relatedInjuries`, `relatedGuides`, `relatedTools` all use Spanish slugs. The page renders hrefs directly without re-translating.
+
+**Post-generation validation pattern:** After agents write JSON files, validate with inline Zod before committing — 6 of 13 files had `metaTitle`/`metaDescription` over the length limit (Zod parse failure → `notFound()` → 404). Always check ≤70 chars metaTitle and 120–160 chars metaDescription.
+
+---
+
 ## Remaining Tasks (Tier 2)
 
 | Task | Routes to create | Content files to create |
 |------|-----------------|------------------------|
-| DEV-33 | `app/(es)/es/accidentes/[slug]/page.tsx` | `content/accidents/es/*.json` (13 files) |
 | DEV-34 | `app/(es)/es/guias/[slug]/page.tsx` | `content/guides/es/*.json` (14 files) |
 | DEV-34B | `app/(es)/es/lesiones/[slug]/page.tsx` | `content/injuries/es/*.json` (7 files) |
 | DEV-35 | `app/(es)/es/herramientas/[slug]/page.tsx` | Update `ToolEngine.tsx` + `ToolResults.tsx` with `strings` prop |
