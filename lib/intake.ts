@@ -1,4 +1,5 @@
 import type { IntakeForm } from '@/types/intake'
+import type { Dictionary } from '@/i18n/dictionaries'
 
 export const INTAKE_STORAGE_KEY = 'accident-path-intake-v1'
 
@@ -7,6 +8,7 @@ export interface StepProps {
   onChange: (updates: Partial<IntakeForm>) => void
   onNext: () => void
   onBack: () => void
+  strings?: Dictionary['intake']
 }
 
 export function monthsAgo(dateStr: string): number {

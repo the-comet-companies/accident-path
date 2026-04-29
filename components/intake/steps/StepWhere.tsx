@@ -7,20 +7,22 @@ const STATES: Array<{ value: IntakeForm['state']; label: string }> = [
   { value: 'AZ', label: 'Arizona' },
 ]
 
-export function StepWhere({ data, onChange, onNext, onBack }: StepProps) {
+export function StepWhere({ data, onChange, onNext, onBack, strings }: StepProps) {
   const isValid = !!data.state && !!data.city?.trim()
 
   return (
     <div>
       <h2 className="font-sans font-bold text-2xl text-neutral-950 mb-2">
-        Where did it happen?
+        {strings?.step3_question ?? 'Where did it happen?'}
       </h2>
       <p className="text-neutral-500 text-sm mb-6">
-        We currently serve California and Arizona. State laws affect your options.
+        {strings?.step3_desc ?? 'We currently serve California and Arizona. State laws affect your options.'}
       </p>
 
       <fieldset className="mb-5">
-        <legend className="text-sm font-semibold font-sans text-neutral-700 mb-2">State</legend>
+        <legend className="text-sm font-semibold font-sans text-neutral-700 mb-2">
+          {strings?.step3_stateLabel ?? 'State'}
+        </legend>
         <div className="flex gap-3">
           {STATES.map(s => (
             <button
@@ -41,14 +43,14 @@ export function StepWhere({ data, onChange, onNext, onBack }: StepProps) {
 
       <div>
         <label htmlFor="city-input" className="block text-sm font-semibold font-sans text-neutral-700 mb-2">
-          City
+          {strings?.step3_cityLabel ?? 'City'}
         </label>
         <input
           id="city-input"
           type="text"
           value={data.city ?? ''}
           onChange={e => onChange({ city: e.target.value })}
-          placeholder="e.g. Los Angeles"
+          placeholder={strings?.step3_cityPlaceholder ?? 'e.g. Los Angeles'}
           className="w-full rounded-xl border-2 border-neutral-200 px-4 py-3 text-neutral-950 font-sans text-base focus:outline-none focus:border-primary-500 min-h-[44px] bg-white placeholder:text-neutral-400"
         />
       </div>
@@ -59,7 +61,7 @@ export function StepWhere({ data, onChange, onNext, onBack }: StepProps) {
           onClick={onBack}
           className="flex-1 min-h-[44px] rounded-xl border-2 border-neutral-200 font-sans font-semibold text-sm text-neutral-700 hover:border-neutral-300 hover:bg-neutral-50 transition-colors"
         >
-          Back
+          {strings?.back ?? 'Back'}
         </button>
         <button
           type="button"
@@ -67,7 +69,7 @@ export function StepWhere({ data, onChange, onNext, onBack }: StepProps) {
           disabled={!isValid}
           className="flex-1 min-h-[44px] rounded-xl bg-primary-600 text-white font-sans font-semibold text-sm hover:bg-primary-700 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
         >
-          Continue
+          {strings?.continue ?? 'Continue'}
         </button>
       </div>
     </div>

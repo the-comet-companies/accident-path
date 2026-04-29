@@ -1,7 +1,7 @@
 'use client'
 import type { StepProps } from '@/lib/intake'
 
-export function StepPoliceReport({ data, onChange, onNext, onBack }: StepProps) {
+export function StepPoliceReport({ data, onChange, onNext, onBack, strings }: StepProps) {
   function select(val: boolean) {
     onChange({ policeReport: val })
     onNext()
@@ -10,10 +10,10 @@ export function StepPoliceReport({ data, onChange, onNext, onBack }: StepProps) 
   return (
     <div>
       <h2 className="font-sans font-bold text-2xl text-neutral-950 mb-2">
-        Was a police report filed?
+        {strings?.step6_question ?? 'Was a police report filed?'}
       </h2>
       <p className="text-neutral-500 text-sm mb-6">
-        Police reports are an important piece of evidence in accident cases.
+        {strings?.step6_desc ?? 'Police reports are an important piece of evidence in accident cases.'}
       </p>
       <div className="flex gap-4">
         <button
@@ -25,7 +25,7 @@ export function StepPoliceReport({ data, onChange, onNext, onBack }: StepProps) 
               : 'border-neutral-200 bg-white text-neutral-700 hover:border-primary-200 hover:bg-surface-info'
           }`}
         >
-          Yes
+          {strings?.step6_yes ?? 'Yes'}
         </button>
         <button
           type="button"
@@ -36,13 +36,14 @@ export function StepPoliceReport({ data, onChange, onNext, onBack }: StepProps) 
               : 'border-neutral-200 bg-white text-neutral-700 hover:border-primary-200 hover:bg-surface-info'
           }`}
         >
-          No
+          {strings?.step6_no ?? 'No'}
         </button>
       </div>
       {data.policeReport === false && (
         <div className="mt-4 p-4 bg-amber-50 border border-amber-500 rounded-xl">
           <p className="text-amber-700 text-sm font-sans leading-relaxed">
-            <strong>Tip:</strong> You may still be able to file a report. Many police departments accept delayed reports within 24–72 hours. Check with your local department for options. This is educational information only, not legal advice.
+            <strong>{strings?.step6_tipTitle ?? 'Tip:'}</strong>{' '}
+            {strings?.step6_tipMsg ?? 'You may still be able to file a report. Many police departments accept delayed reports within 24–72 hours. Check with your local department for options. This is educational information only, not legal advice.'}
           </p>
         </div>
       )}
@@ -51,7 +52,7 @@ export function StepPoliceReport({ data, onChange, onNext, onBack }: StepProps) 
         onClick={onBack}
         className="mt-6 w-full min-h-[44px] rounded-xl border-2 border-neutral-200 font-sans font-semibold text-sm text-neutral-700 hover:border-neutral-300 hover:bg-neutral-50 transition-colors"
       >
-        Back
+        {strings?.back ?? 'Back'}
       </button>
     </div>
   )

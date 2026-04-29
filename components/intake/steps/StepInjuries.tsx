@@ -1,7 +1,7 @@
 'use client'
 import type { StepProps } from '@/lib/intake'
 
-const INJURY_OPTIONS = [
+const INJURY_VALUES = [
   'Head / Brain',
   'Neck / Back',
   'Broken Bones',
@@ -12,31 +12,34 @@ const INJURY_OPTIONS = [
   'None Visible Yet',
 ]
 
-export function StepInjuries({ data, onChange, onNext, onBack }: StepProps) {
+export function StepInjuries({ data, onChange, onNext, onBack, strings }: StepProps) {
   const selected = data.injuries ?? []
+  const labels = strings?.injuryLabels ?? INJURY_VALUES
 
-  function toggle(injury: string) {
-    if (selected.includes(injury)) {
-      onChange({ injuries: selected.filter(i => i !== injury) })
+  function toggle(value: string) {
+    if (selected.includes(value)) {
+      onChange({ injuries: selected.filter(i => i !== value) })
     } else {
-      onChange({ injuries: [...selected, injury] })
+      onChange({ injuries: [...selected, value] })
     }
   }
 
   return (
     <div>
       <h2 className="font-sans font-bold text-2xl text-neutral-950 mb-2">
-        What injuries did you sustain?
+        {strings?.step4_question ?? 'What injuries did you sustain?'}
       </h2>
-      <p className="text-neutral-500 text-sm mb-6">Select all that apply. If unsure, select your best guess.</p>
+      <p className="text-neutral-500 text-sm mb-6">
+        {strings?.step4_desc ?? 'Select all that apply. If unsure, select your best guess.'}
+      </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-        {INJURY_OPTIONS.map(injury => {
-          const isSelected = selected.includes(injury)
+        {INJURY_VALUES.map((value, i) => {
+          const isSelected = selected.includes(value)
           return (
             <button
-              key={injury}
+              key={value}
               type="button"
-              onClick={() => toggle(injury)}
+              onClick={() => toggle(value)}
               aria-pressed={isSelected}
               className={`text-left p-4 rounded-xl border-2 transition-colors min-h-[44px] font-sans text-sm font-medium flex items-center gap-3 ${
                 isSelected
@@ -56,7 +59,7 @@ export function StepInjuries({ data, onChange, onNext, onBack }: StepProps) {
                   </svg>
                 )}
               </div>
-              {injury}
+              {labels[i] ?? value}
             </button>
           )
         })}
@@ -67,7 +70,7 @@ export function StepInjuries({ data, onChange, onNext, onBack }: StepProps) {
           onClick={onBack}
           className="flex-1 min-h-[44px] rounded-xl border-2 border-neutral-200 font-sans font-semibold text-sm text-neutral-700 hover:border-neutral-300 hover:bg-neutral-50 transition-colors"
         >
-          Back
+          {strings?.back ?? 'Back'}
         </button>
         <button
           type="button"
@@ -75,7 +78,7 @@ export function StepInjuries({ data, onChange, onNext, onBack }: StepProps) {
           disabled={selected.length === 0}
           className="flex-1 min-h-[44px] rounded-xl bg-primary-600 text-white font-sans font-semibold text-sm hover:bg-primary-700 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
         >
-          Continue
+          {strings?.continue ?? 'Continue'}
         </button>
       </div>
     </div>

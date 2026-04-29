@@ -1,9 +1,10 @@
 'use client'
 
 import { useState, useEffect, useCallback } from 'react'
-import { useRouter } from 'next/navigation'
+import { useRouter, usePathname } from 'next/navigation'
 import type { IntakeForm } from '@/types/intake'
 import { INTAKE_STORAGE_KEY, computeUrgencyFactors } from '@/lib/intake'
+import type { Dictionary } from '@/i18n/dictionaries'
 import { trackEvent } from '@/lib/analytics'
 import { ProgressBar } from '@/components/intake/ProgressBar'
 import { StepAccidentType } from '@/components/intake/steps/StepAccidentType'
@@ -30,8 +31,13 @@ const STEP_NAMES: Record<number, string> = {
   9: 'contact',
 }
 
-export function IntakeWizard() {
+interface IntakeWizardProps {
+  strings?: Dictionary['intake']
+}
+
+export function IntakeWizard({ strings }: IntakeWizardProps) {
   const router = useRouter()
+  const pathname = usePathname()
   const [step, setStep] = useState(1)
   const [data, setData] = useState<Partial<IntakeForm>>(() => {
     if (typeof window === 'undefined') return {}
@@ -88,10 +94,13 @@ export function IntakeWizard() {
       accident_type: data.accidentType ?? '',
       state: data.state ?? '',
     })
-    router.push('/find-help/thank-you')
+    const thankYouPath = pathname.startsWith('/es/')
+      ? '/es/buscar-ayuda/thank-you'
+      : '/find-help/thank-you'
+    router.push(thankYouPath)
   }
 
-  const stepProps = { data, onChange, onNext: goNext, onBack: goBack }
+  const stepProps = { data, onChange, onNext: goNext, onBack: goBack, strings }
 
   return (
     <div className="max-w-2xl mx-auto px-4 sm:px-6 py-8 lg:py-12">
