@@ -20,32 +20,38 @@ import { FaCar, FaTruck, FaMotorcycle, FaHardHat } from 'react-icons/fa'
 import { FaPersonFalling } from 'react-icons/fa6'
 import { CTAButton } from '@/components/ui/CTAButton'
 import { StateSelector } from '@/components/ui/StateSelector'
-import { buildMetaTags } from '@/components/seo/MetaTags'
 import { LazyAnimations, LazyHeroVisual } from '@/components/home/LazyAnimations'
 
-export const metadata: Metadata = buildMetaTags({
-  title: 'AccidentPath — Get Clear Next Steps After an Accident',
+export const metadata: Metadata = {
+  title: 'AccidentPath | Guía de Accidentes en California',
   description:
-    'Accident guidance for California and Arizona. Learn what to do, what evidence to keep, and whether speaking with a lawyer could help. Free, no obligation.',
-  canonical: '/',
-})
+    'Orientación para accidentes en California y Arizona. Aprenda qué hacer, qué evidencia conservar y si hablar con un abogado podría ayudarle. Gratis, sin compromiso.',
+  alternates: {
+    canonical: '/es/',
+    languages: {
+      'en': '/',
+      'es': '/es/',
+      'x-default': '/',
+    },
+  },
+}
 
 // ─── Static featured data ────────────────────────────────────────────────────
 
 const FEATURED_ACCIDENTS = [
-  { slug: 'car',           title: 'Car Accidents'      },
-  { slug: 'truck',         title: 'Truck Accidents'    },
-  { slug: 'motorcycle',    title: 'Motorcycle'         },
-  { slug: 'slip-and-fall', title: 'Slip & Fall'        },
-  { slug: 'workplace',     title: 'Workplace Injuries' },
+  { slug: 'auto',        title: 'Accidentes de Auto'    },
+  { slug: 'camion',      title: 'Accidentes de Camión'  },
+  { slug: 'motocicleta', title: 'Motocicleta'            },
+  { slug: 'caida',       title: 'Caídas'                },
+  { slug: 'trabajo',     title: 'Lesiones de Trabajo'   },
 ]
 
 const ACCIDENT_ICONS: Record<string, React.ReactNode> = {
-  car:             <FaCar           className="w-5 h-5" aria-hidden="true" />,
-  truck:           <FaTruck         className="w-5 h-5" aria-hidden="true" />,
-  motorcycle:      <FaMotorcycle    className="w-5 h-5" aria-hidden="true" />,
-  'slip-and-fall': <FaPersonFalling className="w-5 h-5" aria-hidden="true" />,
-  workplace:       <FaHardHat       className="w-5 h-5" aria-hidden="true" />,
+  auto:        <FaCar           className="w-5 h-5" aria-hidden="true" />,
+  camion:      <FaTruck         className="w-5 h-5" aria-hidden="true" />,
+  motocicleta: <FaMotorcycle    className="w-5 h-5" aria-hidden="true" />,
+  caida:       <FaPersonFalling className="w-5 h-5" aria-hidden="true" />,
+  trabajo:     <FaHardHat       className="w-5 h-5" aria-hidden="true" />,
 }
 
 interface FeaturedTool {
@@ -55,11 +61,11 @@ interface FeaturedTool {
 }
 
 const FEATURED_TOOLS: FeaturedTool[] = [
-  { slug: 'statute-countdown',   title: 'Statute of Limitations Countdown',  description: 'Find the filing deadline that may apply to your accident type in California or Arizona.' },
-  { slug: 'evidence-checklist',  title: 'Evidence Collection Checklist',     description: 'Get a personalized checklist of evidence to gather based on your specific accident type.'  },
-  { slug: 'lost-wages-estimator',title: 'Lost Wages Estimator',              description: 'Estimate the income you may have lost due to your injury and time away from work.'          },
-  { slug: 'insurance-call-prep', title: 'Insurance Call Prep Tool',          description: 'Prepare for calls with insurance adjusters — know what to say and what to avoid.'          },
-  { slug: 'injury-journal',      title: 'Injury & Treatment Journal',        description: 'Document your symptoms, treatments, and daily impact. Detailed records can matter in your recovery.' },
+  { slug: 'statute-countdown',    title: 'Cuenta Regresiva del Plazo Legal',       description: 'Encuentre el plazo de presentación que puede aplicar a su tipo de accidente en California o Arizona.' },
+  { slug: 'evidence-checklist',   title: 'Lista de Verificación de Evidencias',    description: 'Obtenga una lista personalizada de evidencias según su tipo específico de accidente.'               },
+  { slug: 'lost-wages-estimator', title: 'Estimador de Salarios Perdidos',          description: 'Estime los ingresos que pudo haber perdido debido a su lesión y tiempo fuera del trabajo.'           },
+  { slug: 'insurance-call-prep',  title: 'Preparación para Llamadas de Seguro',    description: 'Prepárese para llamadas con ajustadores de seguros — sepa qué decir y qué evitar.'                   },
+  { slug: 'injury-journal',       title: 'Diario de Lesiones y Tratamiento',       description: 'Documente sus síntomas, tratamientos e impacto diario. Los registros detallados pueden importar.'    },
 ]
 
 const TOOL_ICONS: Record<string, React.ReactNode> = {
@@ -72,31 +78,31 @@ const TOOL_ICONS: Record<string, React.ReactNode> = {
 
 const FEATURED_GUIDES = [
   {
-    title: 'What to Do in the First 24 Hours After an Accident',
+    title: 'Qué Hacer en las Primeras 24 Horas Después de un Accidente',
     excerpt:
-      'The steps you take immediately after an accident can significantly impact your ability to document what happened. This guide walks you through each critical action.',
-    href: '/guides/after-car-accident',
-    readTime: '8 min read',
+      'Los pasos que tome inmediatamente después de un accidente pueden afectar significativamente su capacidad de documentar lo que ocurrió. Esta guía lo acompaña en cada acción crítica.',
+    href: '/es/guias/despues-accidente-auto',
+    readTime: '8 min',
   },
   {
-    title: 'How to Document Your Injuries After an Accident',
+    title: 'Cómo Documentar Sus Lesiones Después de un Accidente',
     excerpt:
-      'Thorough documentation supports your medical care and may be important if you decide to explore legal options. Learn what to record and how.',
-    href: '/guides/evidence-checklist',
-    readTime: '6 min read',
+      'La documentación exhaustiva respalda su atención médica y puede ser importante si decide explorar opciones legales. Aprenda qué registrar y cómo.',
+    href: '/es/guias/lista-evidencia',
+    readTime: '6 min',
   },
   {
-    title: 'Understanding When to Speak With a Personal Injury Lawyer',
+    title: 'Cuándo Hablar con un Abogado de Lesiones Personales',
     excerpt:
-      'Not every accident requires legal help, but some situations benefit from a consultation. This guide helps you understand the questions to ask.',
-    href: '/guides/should-i-talk-to-a-lawyer',
-    readTime: '7 min read',
+      'No todos los accidentes requieren ayuda legal, pero algunas situaciones se benefician de una consulta. Esta guía le ayuda a entender qué preguntas hacer.',
+    href: '/es/guias/contratar-abogado',
+    readTime: '7 min',
   },
 ]
 
 // ─── Page ────────────────────────────────────────────────────────────────────
 
-export default function Home() {
+export default function HomeEs() {
   return (
     <>
       <LazyAnimations />
@@ -112,37 +118,36 @@ export default function Home() {
                 data-animate="hero-eyebrow"
                 className="animate-hero-eyebrow text-primary-300 text-sm font-medium uppercase tracking-wider mb-4 font-sans"
               >
-                Free guidance — no obligation
+                Orientación gratuita — sin compromiso
               </p>
               <h1
                 id="hero-heading"
                 className="animate-hero-heading font-sans font-bold text-4xl sm:text-5xl lg:text-6xl leading-tight tracking-tight mb-6"
               >
-                Get Clear Next Steps After an Accident
+                Obtenga Pasos Claros Después de un Accidente
               </h1>
               <p
                 data-animate="hero-body"
                 className="animate-hero-body font-serif text-lg sm:text-xl text-primary-100 leading-relaxed mb-8"
               >
-                Learn what to do, what evidence to keep, and whether speaking with a lawyer could
-                help. Educational guidance for California and Arizona.
+                Aprenda qué hacer, qué evidencia conservar y si hablar con un abogado podría
+                ayudarle. Orientación educativa para California y Arizona.
               </p>
               <div data-animate="hero-ctas" className="animate-hero-ctas flex flex-row flex-wrap gap-3">
-                <CTAButton href="/find-help" size="md" className="whitespace-nowrap shadow-[0_4px_20px_rgba(40,145,199,0.4)]">
-                  Start Free Accident Check
+                <CTAButton href="/es/buscar-ayuda" size="md" className="whitespace-nowrap shadow-[0_4px_20px_rgba(40,145,199,0.4)]">
+                  Inicie Su Evaluación Gratis
                 </CTAButton>
                 <CTAButton
-                  href="/guides"
+                  href="/es/guias"
                   size="md"
                   variant="secondary"
                   className="whitespace-nowrap border border-white/25 text-white/80 hover:bg-white/10 hover:border-white/40"
                 >
-                  Explore Accident Guides
+                  Explorar Guías de Accidentes
                 </CTAButton>
               </div>
               <p className="mt-5 text-xs text-primary-300 font-serif italic">
-                This information is for educational purposes only and does not constitute legal
-                advice.
+                Esta información es solo para fines educativos y no constituye asesoramiento legal.
               </p>
             </div>
 
@@ -153,7 +158,7 @@ export default function Home() {
       </section>
 
       {/* ── 2. Trust Row ──────────────────────────────────────────────────── */}
-      <section className="bg-primary-900 text-white border-t border-white/[0.08]" aria-label="Trust indicators">
+      <section className="bg-primary-900 text-white border-t border-white/[0.08]" aria-label="Indicadores de confianza">
         <div className="flex flex-col lg:flex-row">
 
           {/* Left panel — brand statement */}
@@ -163,19 +168,20 @@ export default function Home() {
           >
             <div className="flex items-center gap-2 text-amber-500 text-xs font-semibold uppercase tracking-widest font-sans">
               <span className="w-5 h-px bg-amber-500 shrink-0" aria-hidden="true" />
-              Why AccidentPath
+              Por Qué AccidentPath
             </div>
             <h2 className="font-sans font-bold text-xl lg:text-2xl text-white leading-tight tracking-tight">
-              Your path to recovery starts here.
+              Su camino hacia la recuperación comienza aquí.
             </h2>
             <p className="font-serif italic text-sm text-white/45 leading-relaxed">
-              Clear guidance, smart next steps, and help finding the right lawyer if you need one.
+              Orientación clara, próximos pasos inteligentes y ayuda para encontrar el abogado
+              adecuado si lo necesita.
             </p>
             <Link
-              href="/find-help"
+              href="/es/buscar-ayuda"
               className="inline-flex items-center gap-2 text-primary-300 hover:text-white transition-colors text-sm font-semibold font-sans group w-fit"
             >
-              Start Free Accident Check
+              Inicie Su Evaluación Gratis
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
             </Link>
           </div>
@@ -183,10 +189,10 @@ export default function Home() {
           {/* Right panel — 4 trust columns */}
           <div className="flex-1 grid grid-cols-2 lg:grid-cols-4">
             {[
-              { Icon: Shield,     title: 'Attorney-Reviewed Content', sub: 'Reviewed for accuracy and compliance' },
-              { Icon: Lock,       title: 'Secure & Private',          sub: 'Your information stays with you'      },
-              { Icon: Clock,      title: 'Free — No Obligation',      sub: 'No pressure, no signup required'      },
-              { Icon: BadgeCheck, title: 'California & Arizona',      sub: 'State-specific guidance'              },
+              { Icon: Shield,     title: 'Contenido Revisado por Abogados', sub: 'Revisado para precisión y cumplimiento' },
+              { Icon: Lock,       title: 'Seguro y Privado',                sub: 'Su información permanece con usted'     },
+              { Icon: Clock,      title: 'Gratis — Sin Compromiso',         sub: 'Sin presión, sin registro requerido'     },
+              { Icon: BadgeCheck, title: 'California y Arizona',            sub: 'Orientación específica por estado'       },
             ].map(({ Icon, title, sub }, i) => (
               <div
                 key={title}
@@ -196,7 +202,6 @@ export default function Home() {
                   i < 2 ? 'border-b lg:border-b-0 border-white/[0.07]' : '',
                 ].filter(Boolean).join(' ')}
               >
-                {/* Partial-height vertical divider */}
                 {i < 3 && (
                   <span
                     aria-hidden="true"
@@ -228,48 +233,43 @@ export default function Home() {
       >
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
-          {/* Heading block */}
           <div data-animate="hiw-heading" className="text-center mb-12">
             <div className="flex items-center justify-center gap-2 text-amber-500 text-xs font-semibold uppercase tracking-widest font-sans mb-4">
               <span className="w-5 h-px bg-amber-500 shrink-0" aria-hidden="true" />
-              How It Works
+              Cómo Funciona
               <span className="w-5 h-px bg-amber-500 shrink-0" aria-hidden="true" />
             </div>
             <h2
               id="how-it-works-heading"
               className="font-sans font-bold text-3xl lg:text-4xl text-white leading-tight tracking-tight mb-3"
             >
-              From Accident to Clarity in 3 Steps
+              Del Accidente a la Claridad en 3 Pasos
             </h2>
             <p className="font-serif italic text-base text-white/45 leading-relaxed max-w-xl mx-auto">
-              Clear guidance, no pressure, no obligation.
+              Orientación clara, sin presión, sin compromiso.
             </p>
           </div>
 
-          {/* Step columns */}
           <div className="grid grid-cols-1 md:grid-cols-3">
             {[
-              { step: 1, Icon: Search,      title: 'Tell Us What Happened',       description: 'Answer a few questions about your accident type, when it happened, and where. Takes about 2 minutes.' },
-              { step: 2, Icon: CheckCircle, title: 'Get Personalized Guidance',   description: 'Receive a clear checklist of next steps, key deadlines to know about, and educational resources specific to your situation.' },
-              { step: 3, Icon: Users,       title: 'Connect With Help if Needed', description: "If you'd like to speak with a lawyer experienced in your situation, we can help connect you. No pressure, no obligation." },
+              { step: 1, Icon: Search,      title: 'Cuéntenos Lo Que Pasó',            description: 'Responda algunas preguntas sobre el tipo de accidente, cuándo ocurrió y dónde. Toma unos 2 minutos.' },
+              { step: 2, Icon: CheckCircle, title: 'Obtenga Orientación Personalizada', description: 'Reciba una lista clara de próximos pasos, plazos importantes y recursos educativos específicos para su situación.' },
+              { step: 3, Icon: Users,       title: 'Conéctese Con Ayuda si lo Necesita', description: 'Si desea hablar con un abogado con experiencia en su situación, podemos ayudarle a conectarse. Sin presión, sin compromiso.' },
             ].map(({ step, Icon, title, description }, i) => (
               <div
                 key={step}
                 data-animate="step-item"
                 className="relative flex flex-col items-center text-center px-6 py-8"
               >
-                {/* Partial-height column divider */}
                 {i < 2 && (
                   <span
                     aria-hidden="true"
                     className="absolute right-0 top-[18%] h-[64%] w-px bg-white/10 max-md:hidden"
                   />
                 )}
-                {/* Step badge */}
                 <div className="w-7 h-7 rounded-full bg-amber-500/[0.12] border border-amber-500/25 flex items-center justify-center shrink-0 mb-4">
                   <span className="text-amber-500 text-xs font-bold font-sans">{step}</span>
                 </div>
-                {/* Icon tile */}
                 <div className="w-[58px] h-[58px] rounded-[16px] bg-white/[0.08] border border-white/[0.18] flex items-center justify-center shrink-0 mb-4">
                   <Icon className="w-[22px] h-[22px] text-white/80" aria-hidden="true" />
                 </div>
@@ -283,13 +283,12 @@ export default function Home() {
             ))}
           </div>
 
-          {/* CTA */}
           <div className="mt-12 text-center pt-8 border-t border-white/10">
             <Link
-              href="/find-help"
+              href="/es/buscar-ayuda"
               className="inline-flex items-center justify-center gap-2 rounded-lg font-sans font-semibold px-8 py-4 text-lg min-h-[52px] border border-white/25 text-white/80 bg-transparent hover:bg-white/10 hover:border-white/40 transition-colors duration-150"
             >
-              Start Your Free Accident Check
+              Inicie Su Evaluación Gratuita
             </Link>
           </div>
 
@@ -304,31 +303,29 @@ export default function Home() {
       >
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
-          {/* Heading block */}
           <div className="text-center mb-10">
             <div className="flex items-center justify-center gap-2 text-amber-500 text-xs font-semibold uppercase tracking-widest font-sans mb-4">
               <span className="w-5 h-px bg-amber-500 shrink-0" aria-hidden="true" />
-              What Happened?
+              ¿Qué Pasó?
               <span className="w-5 h-px bg-amber-500 shrink-0" aria-hidden="true" />
             </div>
             <h2
               id="accident-types-heading"
               className="font-sans font-bold text-3xl lg:text-4xl text-white leading-tight tracking-tight mb-3"
             >
-              Accident Type Guides
+              Guías por Tipo de Accidente
             </h2>
             <p className="font-serif italic text-base text-white/45 leading-relaxed max-w-xl mx-auto">
-              In-depth educational resources for the most common accident types.
+              Recursos educativos detallados para los tipos de accidentes más comunes.
             </p>
           </div>
 
-          {/* Lifted white card panel */}
           <div className="bg-white rounded-2xl shadow-[0_12px_40px_rgba(0,0,0,0.13)] border border-white/60 p-6">
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2">
               {FEATURED_ACCIDENTS.map((accident) => (
                 <Link
                   key={accident.slug}
-                  href={`/accidents/${accident.slug}`}
+                  href={`/es/accidentes/${accident.slug}`}
                   data-animate="accident-card"
                   className="group flex flex-col items-center text-center gap-2 p-4 rounded-xl hover:bg-primary-50 transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500 last:col-span-2 sm:last:col-span-1"
                 >
@@ -346,13 +343,12 @@ export default function Home() {
             </div>
           </div>
 
-          {/* View all link */}
           <div className="text-center mt-6">
             <Link
-              href="/accidents"
+              href="/es/accidentes"
               className="inline-flex items-center gap-1.5 text-sm font-semibold font-sans text-primary-700 hover:text-primary-800 transition-colors min-h-[44px] sm:min-h-0"
             >
-              View all 13 accident types
+              Ver los 13 tipos de accidentes
               <ChevronRight className="w-4 h-4" aria-hidden="true" />
             </Link>
           </div>
@@ -364,39 +360,37 @@ export default function Home() {
       <section className="bg-surface-info py-16 lg:py-24" aria-labelledby="tools-heading">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
-          {/* Heading row */}
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-6">
             <div>
               <div className="flex items-center gap-2 text-amber-500 text-xs font-semibold uppercase tracking-widest font-sans mb-3">
                 <span className="w-5 h-px bg-amber-500 shrink-0" aria-hidden="true" />
-                Free Tools
+                Herramientas Gratuitas
                 <span className="w-5 h-px bg-amber-500 shrink-0" aria-hidden="true" />
               </div>
               <h2
                 id="tools-heading"
                 className="font-sans font-bold text-3xl lg:text-4xl text-neutral-950 leading-tight tracking-tight"
               >
-                Interactive Accident Tools
+                Herramientas Interactivas para Accidentes
               </h2>
               <p className="font-serif italic text-sm text-neutral-500 mt-1">
-                For informational purposes only — not legal advice.
+                Solo para fines informativos — no constituyen asesoramiento legal.
               </p>
             </div>
             <Link
-              href="/tools"
+              href="/es/herramientas"
               className="inline-flex items-center gap-1.5 text-sm font-semibold font-sans text-primary-600 hover:text-primary-700 transition-colors shrink-0 min-h-[44px] sm:min-h-0"
             >
-              View all tools
+              Ver todas las herramientas
               <ChevronRight className="w-4 h-4" aria-hidden="true" />
             </Link>
           </div>
 
-          {/* Tool rows */}
           <div className="flex flex-col gap-3">
             {FEATURED_TOOLS.map((tool) => (
               <Link
                 key={tool.slug}
-                href={`/tools/${tool.slug}`}
+                href={`/es/herramientas/${tool.slug}`}
                 data-animate="tool-card"
                 className="group flex items-center gap-4 bg-white border border-primary-100 rounded-2xl px-5 py-4 hover:border-primary-200 hover:shadow-[0_4px_16px_rgba(40,145,199,0.09)] transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500"
               >
@@ -412,7 +406,7 @@ export default function Home() {
                   </p>
                 </div>
                 <span className="inline-flex items-center gap-1 text-sm font-semibold font-sans text-primary-600 group-hover:text-primary-700 transition-colors whitespace-nowrap shrink-0">
-                  Try It Free
+                  Usar Gratis
                   <ArrowRight className="w-3.5 h-3.5" aria-hidden="true" />
                 </span>
               </Link>
@@ -426,34 +420,32 @@ export default function Home() {
       <section className="bg-surface-page py-16 lg:py-24" aria-labelledby="guides-heading">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
-          {/* Heading row */}
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8">
             <div>
               <div className="flex items-center gap-2 text-amber-500 text-xs font-semibold uppercase tracking-widest font-sans mb-3">
                 <span className="w-5 h-px bg-amber-500 shrink-0" aria-hidden="true" />
-                Educational Guides
+                Guías Educativas
                 <span className="w-5 h-px bg-amber-500 shrink-0" aria-hidden="true" />
               </div>
               <h2
                 id="guides-heading"
                 className="font-sans font-bold text-3xl lg:text-4xl text-neutral-950 leading-tight tracking-tight"
               >
-                Step-by-Step Accident Guides
+                Guías Paso a Paso para Accidentes
               </h2>
               <p className="font-serif italic text-sm text-neutral-500 mt-1">
-                Attorney-reviewed educational content — not legal advice.
+                Contenido educativo revisado por abogados — no constituye asesoramiento legal.
               </p>
             </div>
             <Link
-              href="/guides"
+              href="/es/guias"
               className="inline-flex items-center gap-1.5 text-sm font-semibold font-sans text-primary-600 hover:text-primary-700 transition-colors shrink-0 min-h-[44px] sm:min-h-0"
             >
-              View all guides
+              Ver todas las guías
               <ChevronRight className="w-4 h-4" aria-hidden="true" />
             </Link>
           </div>
 
-          {/* Guide cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {FEATURED_GUIDES.map((guide) => (
               <Link
@@ -470,7 +462,7 @@ export default function Home() {
                     </span>
                     <span className="text-xs text-neutral-500 flex items-center gap-1">
                       <span className="text-success-500" aria-hidden="true">✓</span>
-                      Attorney-reviewed
+                      Revisado por abogados
                     </span>
                   </div>
                   <h3 className="font-sans font-semibold text-base text-neutral-950 leading-snug mb-2">
@@ -481,7 +473,7 @@ export default function Home() {
                   </p>
                   <div className="pt-4 mt-4 border-t border-neutral-100">
                     <span className="text-sm font-semibold font-sans text-primary-600 group-hover:text-primary-700 transition-colors inline-flex items-center gap-1">
-                      Read guide
+                      Leer guía
                       <ArrowRight className="w-3.5 h-3.5" aria-hidden="true" />
                     </span>
                   </div>
@@ -502,22 +494,22 @@ export default function Home() {
           <div data-animate="state-section" className="max-w-lg mx-auto text-center">
             <div className="flex items-center justify-center gap-2 text-amber-500 text-xs font-semibold uppercase tracking-widest font-sans mb-3">
               <span className="w-5 h-px bg-amber-500 shrink-0" aria-hidden="true" />
-              Your State
+              Su Estado
               <span className="w-5 h-px bg-amber-500 shrink-0" aria-hidden="true" />
             </div>
             <h2
               id="state-selector-heading"
               className="font-sans font-bold text-3xl text-neutral-950 leading-tight tracking-tight mb-2"
             >
-              Find Resources in Your State
+              Encuentre Recursos en Su Estado
             </h2>
             <p className="font-serif italic text-sm text-neutral-500 mb-8">
-              State-specific laws, deadlines, and guidance for California and Arizona.
+              Leyes, plazos y orientación específica para California y Arizona.
             </p>
             <StateSelector navigateOnSelect className="max-w-md mx-auto" />
             <p className="mt-4 text-xs text-neutral-500 font-serif italic">
-              Laws vary by state. The information provided is general in nature. Consult a licensed
-              attorney in your state for specific guidance.
+              Las leyes varían según el estado. La información proporcionada es de carácter general.
+              Consulte a un abogado con licencia en su estado para orientación específica.
             </p>
           </div>
         </div>

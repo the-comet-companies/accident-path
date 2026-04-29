@@ -1,0 +1,102 @@
+{
+  "cta": {
+    "getHelpNow": "Get Help Now",
+    "startFreeCheck": "Start Free Case Check",
+    "findHelp": "Find Help",
+    "seeMyResults": "See My Results",
+    "calculating": "Calculating…",
+    "next": "Next",
+    "back": "Back",
+    "startOver": "Start Over",
+    "printSave": "Print / Save PDF",
+    "getFreGuidance": "Get Free Guidance"
+  },
+  "trust": {
+    "badge1": "State Bar Certified",
+    "badge2": "24/7 Support",
+    "badge3": "Free Service",
+    "badge4": "No Commitment",
+    "contentReview": "Content Review in Progress",
+    "infoSecure": "Your information is secure",
+    "freeConsult": "Free consultation — no obligation"
+  },
+  "emergency": {
+    "danger": "In danger? Call",
+    "seekCare": "Seek immediate medical care for injuries."
+  },
+  "phone": {
+    "callUs": "Call Us"
+  },
+  "footer": {
+    "accidentTypes": "Accident Types",
+    "resources": "Resources",
+    "company": "Company",
+    "emergency": "Emergency?",
+    "call911": "Call 911",
+    "copyright": "All rights reserved.",
+    "doNotSell": "Do Not Sell My Info",
+    "disclaimer1": "AccidentPath is not a law firm and does not provide legal advice. Information provided is for educational purposes only. By using this site, you acknowledge that no attorney-client relationship is formed. If you are in immediate danger, call 911. For medical emergencies, seek care immediately.",
+    "disclaimer2": "AccidentPath connects consumers with attorneys in our network. Attorneys in our network may pay a fee for marketing services. This does not affect the quality of service you receive. AccidentPath does not endorse or guarantee any attorney's services. Availability varies by state and case type.",
+    "disclaimer3": "Every case is different. Consult a licensed attorney for advice specific to your situation. Results may vary. Past results do not guarantee future outcomes."
+  },
+  "tools": {
+    "yourResults": "Your Results",
+    "disclaimer": "This information is for educational purposes only and does not constitute legal advice.",
+    "priority": {
+      "critical": "Critical",
+      "important": "Important",
+      "helpful": "Helpful"
+    }
+  },
+  "findHelp": {
+    "heroLabel": "Free Guidance",
+    "heroHeadline": "Let's Find Your Next Steps",
+    "heroDescription": "Answer 9 quick questions and we'll show you what to do after your accident.",
+    "heroCta": "No account required",
+    "urgency": {
+      "highLabel": "High Priority",
+      "highMessage": "Based on your answers, your situation may require immediate attention. Legal deadlines may be running.",
+      "moderateLabel": "Moderate Priority",
+      "moderateMessage": "Your situation deserves timely attention. Speak with an attorney soon to protect your rights.",
+      "standardLabel": "Standard Priority",
+      "standardMessage": "Your next steps are clear. Continue with the following recommendations at your own pace."
+    },
+    "results": {
+      "heading": "Your Personalized Results",
+      "subheading": "Here's What We Found",
+      "noResults": "No results found. Please try again.",
+      "stateInfo": "Your State-Specific Information",
+      "filingDeadline": "Personal Injury Filing Deadline",
+      "reportingDeadlines": "Important Reporting Deadlines",
+      "faultRule": "Fault Rule",
+      "lawyerType": "Type of Lawyer Who Can Help",
+      "resources": "Recommended Resources",
+      "exploreTools": "Explore Free Tools",
+      "startOver": "Start Over"
+    }
+  },
+  "intake": {
+    "step1_question": "What type of accident did you have?",
+    "step2_question": "When did the accident happen?",
+    "step3_question": "What city and state?",
+    "step4_question": "What injuries did you sustain?",
+    "step5_question": "Have you seen a doctor?",
+    "step5_yes": "Yes",
+    "step5_no": "No",
+    "step6_question": "Was a police report filed?",
+    "step6_yes": "Yes",
+    "step6_no": "No",
+    "step7_question": "Do you have insurance?",
+    "step7_yes": "Yes",
+    "step7_no": "No",
+    "step8_question": "Has this affected your work?",
+    "step8_yes": "Yes",
+    "step8_no": "No",
+    "step9_question": "How can we reach you?",
+    "tcpaConsent": "By submitting this form, I agree to receive communications by phone, text, and email regarding my inquiry. I understand this service is free and I am not obligated to hire any attorney.",
+    "disclaimer": "AccidentPath is not a law firm and does not provide legal advice. Information provided is for educational purposes only.",
+    "required": "This field is required",
+    "submit": "Submit",
+    "resultsHeading": "Your Results"
+  }
+}

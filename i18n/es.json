@@ -1,0 +1,102 @@
+{
+  "cta": {
+    "getHelpNow": "Obtenga Ayuda Ahora",
+    "startFreeCheck": "Comience Su Evaluación Gratis",
+    "findHelp": "Buscar Ayuda",
+    "seeMyResults": "Ver Mis Resultados",
+    "calculating": "Calculando…",
+    "next": "Siguiente",
+    "back": "Atrás",
+    "startOver": "Comenzar de Nuevo",
+    "printSave": "Imprimir / Guardar PDF",
+    "getFreGuidance": "Obtenga Orientación Gratuita"
+  },
+  "trust": {
+    "badge1": "Certificado por el Colegio de Abogados",
+    "badge2": "Soporte 24/7",
+    "badge3": "Servicio Gratuito",
+    "badge4": "Sin Compromiso",
+    "contentReview": "Revisión de Contenido en Progreso",
+    "infoSecure": "Su información está segura",
+    "freeConsult": "Consulta gratuita — sin compromiso"
+  },
+  "emergency": {
+    "danger": "¿En peligro? Llame al",
+    "seekCare": "Busque atención médica inmediata para lesiones."
+  },
+  "phone": {
+    "callUs": "Llámenos — Hablamos Español"
+  },
+  "footer": {
+    "accidentTypes": "Tipos de Accidentes",
+    "resources": "Recursos",
+    "company": "Empresa",
+    "emergency": "¿Emergencia?",
+    "call911": "Llame al 911",
+    "copyright": "Todos los derechos reservados.",
+    "doNotSell": "No Vender Mi Información",
+    "disclaimer1": "AccidentPath no es un bufete de abogados y no proporciona asesoramiento legal. La información proporcionada es solo para fines educativos. Al usar este sitio, usted reconoce que no se forma ninguna relación abogado-cliente. Si está en peligro inmediato, llame al 911. Para emergencias médicas, busque atención de inmediato.",
+    "disclaimer2": "AccidentPath conecta a los consumidores con abogados en nuestra red. Los abogados en nuestra red pueden pagar una tarifa por servicios de marketing. Esto no afecta la calidad del servicio que recibe. AccidentPath no respalda ni garantiza los servicios de ningún abogado. La disponibilidad varía según el estado y el tipo de caso.",
+    "disclaimer3": "Cada caso es diferente. Consulte a un abogado con licencia para obtener asesoramiento específico a su situación. Los resultados pueden variar. Los resultados anteriores no garantizan resultados futuros."
+  },
+  "tools": {
+    "yourResults": "Sus Resultados",
+    "disclaimer": "Esta información es solo para fines educativos y no constituye asesoramiento legal.",
+    "priority": {
+      "critical": "Crítico",
+      "important": "Importante",
+      "helpful": "Útil"
+    }
+  },
+  "findHelp": {
+    "heroLabel": "Orientación Gratuita",
+    "heroHeadline": "Encontremos Sus Próximos Pasos",
+    "heroDescription": "Responda 9 preguntas rápidas y le mostraremos qué hacer después de su accidente.",
+    "heroCta": "Sin cuenta requerida",
+    "urgency": {
+      "highLabel": "Alta Prioridad",
+      "highMessage": "Basado en sus respuestas, su situación puede requerir atención inmediata. Los plazos legales pueden estar corriendo.",
+      "moderateLabel": "Prioridad Moderada",
+      "moderateMessage": "Su situación merece atención oportuna. Hable con un abogado pronto para proteger sus derechos.",
+      "standardLabel": "Prioridad Estándar",
+      "standardMessage": "Sus próximos pasos son claros. Continúe con las siguientes recomendaciones a su propio ritmo."
+    },
+    "results": {
+      "heading": "Sus Resultados Personalizados",
+      "subheading": "Esto Es Lo Que Encontramos",
+      "noResults": "No se encontraron resultados. Por favor intente de nuevo.",
+      "stateInfo": "Información Específica de su Estado",
+      "filingDeadline": "Plazo para Presentar Reclamo de Lesiones Personales",
+      "reportingDeadlines": "Plazos de Reporte Importantes",
+      "faultRule": "Regla de Culpabilidad",
+      "lawyerType": "Tipo de Abogado que Puede Ayudar",
+      "resources": "Recursos Recomendados",
+      "exploreTools": "Explorar Herramientas Gratuitas",
+      "startOver": "Comenzar de Nuevo"
+    }
+  },
+  "intake": {
+    "step1_question": "¿Qué tipo de accidente tuvo?",
+    "step2_question": "¿Cuándo ocurrió el accidente?",
+    "step3_question": "¿En qué ciudad y estado?",
+    "step4_question": "¿Qué lesiones sufrió?",
+    "step5_question": "¿Ha visitado un doctor?",
+    "step5_yes": "Sí",
+    "step5_no": "No",
+    "step6_question": "¿Se hizo un reporte policial?",
+    "step6_yes": "Sí",
+    "step6_no": "No",
+    "step7_question": "¿Tiene seguro?",
+    "step7_yes": "Sí",
+    "step7_no": "No",
+    "step8_question": "¿Esto ha afectado su trabajo?",
+    "step8_yes": "Sí",
+    "step8_no": "No",
+    "step9_question": "¿Cómo podemos contactarlo?",
+    "tcpaConsent": "Al enviar este formulario, acepto recibir comunicaciones por teléfono, mensaje de texto y correo electrónico sobre mi consulta. Entiendo que este servicio es gratuito y no estoy obligado a contratar a ningún abogado.",
+    "disclaimer": "AccidentPath no es un bufete de abogados y no proporciona asesoramiento legal. La información proporcionada es solo para fines educativos.",
+    "required": "Este campo es obligatorio",
+    "submit": "Enviar",
+    "resultsHeading": "Sus Resultados"
+  }
+}
