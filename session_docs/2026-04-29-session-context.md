@@ -58,7 +58,17 @@
 - `app/(es)/es/buscar-ayuda/thank-you/page.tsx` — static Spanish thank-you page
 - **Bug fix (2779f98):** `z.string().email().optional()` rejects `""` — stripping empty contact strings to `undefined` before POST
 
-### Last commit: `2779f98`
+### Hydration mismatch fixes (post-DEV-32)
+
+Three files fixed for React hydration mismatch caused by `localStorage` reads inside `useState` initializers (server renders `{}` / `null`, client reads saved state → className / JSX branch mismatch):
+
+- `components/intake/IntakeWizard.tsx` — `useState({})` init, load from localStorage in `useEffect`, `loaded` flag guards save effect from wiping localStorage before read completes
+- `app/(en)/find-help/results/page.tsx` — `useState(null)` init, load in `useEffect`, `if (!loaded) return null` prevents server/client tree mismatch on direct URL load or refresh
+- `app/(es)/es/buscar-ayuda/results/page.tsx` — same pattern as English results
+
+Root cause: `if (typeof window === 'undefined')` check in state initializer only guards server; client still reads localStorage during hydration, diverging from server HTML.
+
+### Last commit: `2779f98` (hydration fixes not yet committed)
 
 ---
 

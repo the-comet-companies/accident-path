@@ -39,13 +39,8 @@ export function IntakeWizard({ strings }: IntakeWizardProps) {
   const router = useRouter()
   const pathname = usePathname()
   const [step, setStep] = useState(1)
-  const [data, setData] = useState<Partial<IntakeForm>>(() => {
-    if (typeof window === 'undefined') return {}
-    try {
-      const saved = localStorage.getItem(INTAKE_STORAGE_KEY)
-      return saved ? (JSON.parse(saved) as Partial<IntakeForm>) : {}
-    } catch { return {} }
-  })
+  const [data, setData] = useState<Partial<IntakeForm>>({})
+  const [loaded, setLoaded] = useState(false)
   const [submitting, setSubmitting] = useState(false)
 
   useEffect(() => {
@@ -53,8 +48,17 @@ export function IntakeWizard({ strings }: IntakeWizardProps) {
   }, [])
 
   useEffect(() => {
+    try {
+      const saved = localStorage.getItem(INTAKE_STORAGE_KEY)
+      if (saved) setData(JSON.parse(saved) as Partial<IntakeForm>)
+    } catch {}
+    setLoaded(true)
+  }, [])
+
+  useEffect(() => {
+    if (!loaded) return
     localStorage.setItem(INTAKE_STORAGE_KEY, JSON.stringify(data))
-  }, [data])
+  }, [data, loaded])
 
   const onChange = useCallback((updates: Partial<IntakeForm>) => {
     setData(prev => ({ ...prev, ...updates }))
