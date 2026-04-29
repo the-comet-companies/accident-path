@@ -68,7 +68,24 @@ Three files fixed for React hydration mismatch caused by `localStorage` reads in
 
 Root cause: `if (typeof window === 'undefined')` check in state initializer only guards server; client still reads localStorage during hydration, diverging from server HTML.
 
-### Last commit: `2779f98` (hydration fixes not yet committed)
+### DEV-33 files (commits 4ab2c15, e55b431, 6f3e654)
+
+- `lib/cms.ts` — `getAccident(slug, locale='en')` and `getAllAccidents(locale='en')` extended; backward-compatible
+- `app/(es)/es/accidentes/[slug]/page.tsx` — Spanish accident detail page; translated headings, urgency labels, state notes (CA/AZ), hreflang, `notranslate`, CTA → `/es/buscar-ayuda`; `generateStaticParams` from `SLUG_MAP_ES`
+- `app/(es)/es/accidentes/page.tsx` — Spanish accidents index; 3-column grid of all 13 types; `cms.getAllAccidents('es')`
+- `content/accidents/es/*.json` — 13 files (auto, camion, motocicleta, caida, trabajo, bicicleta, peaton, mordida-perro, construccion, propiedad, producto, muerte-injusta, uber-lyft); Mexican Spanish; all Zod-validated; `translationStatus: "needs-review"`
+- **Bug fixed post-generation:** 6 files had `metaTitle`/`metaDescription` over Zod length limits, causing Zod parse failure → `notFound()` → 404. Fixed by trimming to ≤70/≤160 chars.
+- **Important pattern:** Spanish JSON files use Spanish slugs in `likelyInjuries[].slug`, `relatedAccidents`, `relatedInjuries`, `relatedGuides`, `relatedTools` — the page renders hrefs directly without additional translation.
+
+### Hydration mismatch fixes (commits c17f992)
+
+- `components/intake/IntakeWizard.tsx` — `useState({})` init, load from localStorage in `useEffect`, `loaded` flag guards save effect
+- `app/(en)/find-help/results/page.tsx` — `useState(null)` init, load in `useEffect`, `if (!loaded) return null`
+- `app/(es)/es/buscar-ayuda/results/page.tsx` — same pattern
+
+Root cause: `if (typeof window === 'undefined')` check in state initializer only guards server; client reads localStorage during hydration, diverging from server HTML.
+
+### Last commit: `6f3e654`
 
 ---
 
@@ -105,7 +122,7 @@ For the Notion overview doc (what's being built, maintenance, implications):
 | DEV-30 | 7A | ✓ Complete — LanguageToggle + locale-aware Header, MobileNav, Footer |
 | DEV-31 | 7A | ✓ Complete — route group restructure + Spanish home page + hreflang |
 | DEV-32 | 7B | ✓ Complete — Spanish intake wizard + results + thank-you |
-| DEV-33 | 7C | Not started — Spanish accident pages (13 types) |
+| DEV-33 | 7C | ✓ Complete — Spanish accident pages (13 types) + `/es/accidentes` index |
 | DEV-34 | 7C | Not started — Spanish guide pages (14 guides) |
 | DEV-34B | 7C | Not started — Spanish injury pages (7 types) |
 | DEV-35 | 7C | Not started — Spanish tool pages |
@@ -146,7 +163,7 @@ For the Notion overview doc (what's being built, maintenance, implications):
 | Lighthouse Mobile | ✓ 82–96 |
 | Unit tests | ✓ 26/26 |
 | E2E tests | ✓ 24/24 |
-| Spanish i18n | 🔄 Tier 1 complete — DEV-29–32 done; DEV-33/34/34B/35/37/36 next |
+| Spanish i18n | 🔄 DEV-29–33 done; DEV-34/34B/35/37/36 next |
 | Attorney review of content | ✗ Pending (non-code) |
 | GA4 setup | ✗ Pending Michael |
 | Domain/DNS | ✗ Pending Michael |
