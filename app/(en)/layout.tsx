@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Merriweather } from "next/font/google";
 import Link from "next/link";
-import "./globals.css";
+import "../globals.css";
 import { Header } from "@/components/layout/Header";
 import { MobileNav } from "@/components/layout/MobileNav";
 import { Footer } from "@/components/layout/Footer";
@@ -13,8 +13,6 @@ import { getDictionary } from "@/i18n/dictionaries";
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
-  // "optional" prevents font-swap updating LCP measurement on first visit.
-  // Subsequent visits see Inter from cache. Keeps LCP at ~FCP time.
   display: "optional",
 });
 
@@ -23,8 +21,6 @@ const merriweather = Merriweather({
   subsets: ["latin"],
   weight: ["400", "700"],
   style: ["normal", "italic"],
-  // "optional" prevents font-swap LCP delay — first-visit uses system serif fallback,
-  // subsequent visits see Merriweather (cached). Keeps LCP at FCP time (~1.3s).
   display: "optional",
 });
 
@@ -32,6 +28,14 @@ export const metadata: Metadata = {
   title: "AccidentPath — Your Path to Recovery Starts Here",
   description:
     "Clear guidance after an accident, smart next steps, and help finding the right attorney. Educational resources for injured people in California and Arizona.",
+  alternates: {
+    canonical: "/",
+    languages: {
+      "en": "/",
+      "es": "/es/",
+      "x-default": "/",
+    },
+  },
 };
 
 export default async function RootLayout({

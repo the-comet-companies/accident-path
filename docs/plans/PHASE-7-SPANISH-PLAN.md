@@ -16,18 +16,20 @@
 
 **English:** `/accidents/car`, `/guides/after-car-accident`, `/find-help` — unchanged  
 **Spanish:** `/es/accidentes/auto`, `/es/guias/despues-accidente-auto`, `/es/buscar-ayuda`  
-**Routing:** `app/es/` directory tree with its own `layout.tsx` (sets `lang="es"`)  
+**Routing:** `app/(es)/es/` directory tree; `<html lang="es">` set in `app/(es)/es/layout.tsx`; all English routes live in `app/(en)/`; route groups are URL-transparent  
 **Middleware:** Detects browser language on `/` only → redirects to `/es/` for Spanish users  
 **Toggle:** Cookie-based (`NEXT_LOCALE=es|en`), shown in Header + Footer
 
 ### How locale flows through the app
 
-```
-app/layout.tsx              → <Header locale="en" /> <Footer locale="en" />
-app/es/layout.tsx           → <Header locale="es" /> <Footer locale="es" />
+Route groups `(en)` and `(es)` give each language its own root HTML shell — required so Spanish pages get `<html lang="es">` in SSR without making all 89 static pages dynamic (using `headers()` in `app/layout.tsx` would do that).
 
-app/es/buscar-ayuda/page.tsx (server) → loads ES strings → <IntakeWizard strings={esStrings} />
-app/es/herramientas/[slug]/page.tsx (server) → loads ES strings → <ToolEngine strings={esStrings} />
+```
+app/(en)/layout.tsx         → <html lang="en"> + <Header locale="en" /> <Footer locale="en" />
+app/(es)/es/layout.tsx      → <html lang="es"> + <Header locale="es" /> <Footer locale="es" />
+
+app/(es)/es/buscar-ayuda/page.tsx (server) → loads ES strings → <IntakeWizard strings={esStrings} />
+app/(es)/es/herramientas/[slug]/page.tsx (server) → loads ES strings → <ToolEngine strings={esStrings} />
 ```
 
 **Why not React context for locale:** Header is `'use client'` — it cannot consume a React server context. The simplest correct pattern is passing `locale` as a prop from the layout. Client components that need translated strings receive them as props from their parent server page component.
@@ -358,28 +360,44 @@ This task has two parts: (A) make Header and Footer locale-aware, (B) add the to
 
 ---
 
-### DEV-31: Spanish Root Layout + Home Page
+### DEV-31: Route Group Restructure + Spanish Home Page
 
 **Execution Prompt:**
-Read `app/layout.tsx` and `app/page.tsx` as reference. Read `i18n/dictionaries.ts`.
+Read `app/layout.tsx`, `app/page.tsx`, and `app/es/layout.tsx` as reference. Read `i18n/dictionaries.ts`.
 
-- `app/es/layout.tsx` — server component; calls `getDictionary('es')`; renders `<html lang="es">`; passes `locale="es"` and `dict` to `<Header>` and `<Footer>`; includes `<meta name="google" content="notranslate" />` to prevent Chrome auto-translate
-- `app/es/page.tsx` — mirrors `app/page.tsx` structure (hero, trust strip, accident type grid, tools preview, CTAs); all UI strings from `dict`; Spanish `generateMetadata` returning title `"AccidentPath | Guía de Accidentes en California"` and description `"Obtenga orientación clara después de un accidente. Conéctese con abogados calificados. Servicio gratuito, sin compromiso."`
+This task has two parts: (A) route group restructure — prerequisite for correct `<html lang>` on Spanish pages without breaking static generation; (B) Spanish home page.
 
-**hreflang on both sides:**
-- `app/es/layout.tsx` outputs: `hreflang="en" href="/"` and `hreflang="es" href="/es/"` and `hreflang="x-default" href="/"`
-- `app/layout.tsx` must also output the same hreflang pair — update it in this task
+**Part A — Route group restructure:**
+
+Problem: `app/layout.tsx` wraps ALL routes including `/es/*`, giving Spanish pages `<html lang="en">` and double nav/footer. Using `headers()` to detect locale in the root layout would make all 89 pre-rendered pages dynamic.
+
+Steps (use `git mv` to preserve history):
+1. Create `app/(en)/layout.tsx` — copy all content from `app/layout.tsx`; change `import "./globals.css"` → `import "../globals.css"`
+2. Move all English routes into `app/(en)/`: `page.tsx`, `accidents/`, `guides/`, `injuries/`, `tools/`, `find-help/`, `states/`, `about/`, `for-attorneys/`, `privacy/`, `terms/`, `disclaimers/`, `cookie-policy/`, `contact/`, `api/`
+3. Delete `app/layout.tsx`
+4. Keep at `app/` root (do not move): `globals.css`, `robots.ts`, `sitemap.ts`, `favicon.ico`
+5. Create `app/(es)/es/` directory; move `app/es/layout.tsx` → `app/(es)/es/layout.tsx`
+
+All URLs are unchanged (route groups are URL-transparent). All `@/` absolute imports throughout the codebase are unchanged.
+
+**Part B — Spanish root layout + home page:**
+
+- `app/(es)/es/layout.tsx` — replace the DEV-30 stub; full Spanish root layout: `async` server component; calls `getDictionary('es')`; renders `<html lang="es" className={...font variables...}>`; `<body>`; `<EmergencyBanner>`; `<SchemaOrg>`; Spanish `<Header locale="es">`; `<MobileNav locale="es">`; `<Footer locale="es" dict={dict}>`; `<meta name="google" content="notranslate" />`; hreflang tags: `hreflang="en" href="/"`, `hreflang="es" href="/es/"`, `hreflang="x-default" href="/"`; import path: `import "../../globals.css"` (two levels up from `app/(es)/es/`)
+- `app/(es)/es/page.tsx` — mirrors `app/(en)/page.tsx` structure (hero, trust strip, accident type grid, tools preview, CTAs); all UI strings from `dict`; Spanish `generateMetadata` returning title `"AccidentPath | Guía de Accidentes en California"` and description `"Obtenga orientación clara después de un accidente. Conéctese con abogados calificados. Servicio gratuito, sin compromiso."`
+- `app/(en)/layout.tsx` — add hreflang alternates to `generateMetadata`: `'en': '/'`, `'es': '/es/'`, `'x-default': '/'`
 
 **Manual verification:**
+- [ ] `npm run build` passes with no TypeScript errors
+- [ ] `/` still loads (English routes not broken by move to `(en)`)
 - [ ] `/es/` loads without errors
-- [ ] `<html lang="es">` in page source
-- [ ] `<meta name="google" content="notranslate">` present
+- [ ] `<html lang="es">` in `/es/` page source
+- [ ] `<meta name="google" content="notranslate">` present on `/es/`
 - [ ] Hero headline and CTA button are in Spanish
 - [ ] Nav labels are in Spanish, nav hrefs point to `/es/` paths
 - [ ] Footer disclaimer paragraphs are in Spanish
 - [ ] `<link rel="alternate" hreflang="en">` present on `/es/`
 - [ ] `<link rel="alternate" hreflang="es">` present on `/`
-- [ ] `npm run build` passes
+- [ ] All 89 previously static English pages still resolve correctly
 
 ---
 
@@ -394,9 +412,9 @@ Read `components/intake/IntakeWizard.tsx`, `app/find-help/page.tsx`, `app/find-h
 
 **Key constraint — intake values are English IDs:** Option values passed to form state must be English slugs (e.g. `"car"`, `"whiplash"`), not localized labels. Display the Spanish label in the UI but store the English ID as the value. This ensures results page logic and Supabase submissions work correctly in both languages.
 
-- `app/es/buscar-ayuda/page.tsx` — server component; loads `getDictionary('es')`; passes `strings={dict.intake}` to `<IntakeWizard>` and `strings={dict.findHelp}` for page hero text; hreflang ↔ `/find-help`
-- `app/es/buscar-ayuda/results/page.tsx` — server component; passes `strings={dict.findHelp.results}` and `strings={dict.findHelp.urgency}` to results component; URGENCY_CONFIG labels and messages come from dict, not hardcoded English
-- `app/es/buscar-ayuda/thank-you/page.tsx` — Spanish thank-you page
+- `app/(es)/es/buscar-ayuda/page.tsx` — server component; loads `getDictionary('es')`; passes `strings={dict.intake}` to `<IntakeWizard>` and `strings={dict.findHelp}` for page hero text; hreflang ↔ `/find-help`
+- `app/(es)/es/buscar-ayuda/results/page.tsx` — server component; passes `strings={dict.findHelp.results}` and `strings={dict.findHelp.urgency}` to results component; URGENCY_CONFIG labels and messages come from dict, not hardcoded English
+- `app/(es)/es/buscar-ayuda/thank-you/page.tsx` — Spanish thank-you page
 - `components/intake/IntakeWizard.tsx` — add `strings` prop typed as `Dictionary['intake']`; use `strings.*` for wrapper-level text (TCPA consent, disclaimer, error messages, CTA labels); CTA link → `/es/buscar-ayuda` when `usePathname().startsWith('/es/')`
 - `components/intake/steps/` — read every step component file before editing; each has hardcoded English question text and option arrays (e.g. `StepAccidentType.tsx` has a hardcoded `ACCIDENT_TYPES` array); add `strings` prop to each step component; option `value` attributes stay as English IDs, only the displayed `label` text changes to Spanish
 - `app/find-help/results/page.tsx` — update to accept optional `strings` prop defaulting to English values so the English page stays unchanged
@@ -433,7 +451,7 @@ AccidentPath no es un bufete de abogados y no proporciona asesoramiento legal. L
 Read `app/accidents/[slug]/page.tsx` in full and `content/accidents/car.json` for the complete JSON schema. Read `i18n/config.ts` for `SLUG_MAP_ES`.
 
 - `lib/cms.ts` — add `locale?: 'en' | 'es'` parameter to existing loader methods (e.g. `getAccident(slug, locale = 'en')`); when `locale === 'es'` read from `content/accidents/es/[slug].json`; do NOT create a separate `lib/cms-es.ts`
-- `app/es/accidentes/[slug]/page.tsx` — mirrors EN accident page; `generateStaticParams` returns all Spanish slugs (values of `SLUG_MAP_ES`); calls `cms.getAccident(SLUG_MAP_EN[slug], 'es')`; hreflang links EN↔ES; all related sidebar links point to `/es/` URLs; CTA href is `/es/buscar-ayuda`; `<meta name="google" content="notranslate" />`
+- `app/(es)/es/accidentes/[slug]/page.tsx` — mirrors EN accident page; `generateStaticParams` returns all Spanish slugs (values of `SLUG_MAP_ES`); calls `cms.getAccident(SLUG_MAP_EN[slug], 'es')`; hreflang links EN↔ES; all related sidebar links point to `/es/` URLs; CTA href is `/es/buscar-ayuda`; `<meta name="google" content="notranslate" />`
 - `content/accidents/es/` directory — 13 JSON files: `auto.json`, `camion.json`, `motocicleta.json`, `caida.json`, `trabajo.json`, `bicicleta.json`, `peaton.json`, `mordida-perro.json`, `construccion.json`, `propiedad.json`, `producto.json`, `muerte-injusta.json`, `uber-lyft.json` — same schema as English, Spanish field values, add `"translationStatus": "needs-review"` on every file
 
 **Minimum JSON schema each ES file must satisfy** (read `content/accidents/car.json` for exact field names):
@@ -466,7 +484,7 @@ Read `app/accidents/[slug]/page.tsx` in full and `content/accidents/car.json` fo
 **Execution Prompt:**
 Read `app/guides/[slug]/page.tsx` in full and `content/guides/after-car-accident.json` for schema. Read `i18n/config.ts` for `SLUG_MAP_ES`.
 
-- `app/es/guias/[slug]/page.tsx` — mirrors EN guide page; `generateStaticParams` returns Spanish guide slugs from `SLUG_MAP_ES`; loads `content/guides/es/[slug].json`; hreflang EN↔ES; CTA → `/es/buscar-ayuda`; `<meta name="google" content="notranslate" />`
+- `app/(es)/es/guias/[slug]/page.tsx` — mirrors EN guide page; `generateStaticParams` returns Spanish guide slugs from `SLUG_MAP_ES`; loads `content/guides/es/[slug].json`; hreflang EN↔ES; CTA → `/es/buscar-ayuda`; `<meta name="google" content="notranslate" />`
 - `content/guides/es/` — 14 JSON files with same schema as English, Spanish values, `"translationStatus": "needs-review"` on each: `despues-accidente-auto.json`, `despues-accidente-camion.json`, `lista-evidencia.json`, `despues-accidente-motocicleta.json`, `soy-culpable.json`, `errores-comunes.json`, `ajustadores-seguros.json`, `reporte-policial.json`, `contratar-abogado.json`, `reclamos-seguro.json`, `proteger-reclamo.json`, `acuerdo-vs-demanda.json`, `hablar-con-abogado.json`, `facturas-medicas.json`
 
 **Manual verification:**
@@ -483,7 +501,7 @@ Read `app/guides/[slug]/page.tsx` in full and `content/guides/after-car-accident
 **Execution Prompt:**
 Read `app/injuries/[slug]/page.tsx` in full and `content/injuries/whiplash.json` for schema.
 
-- `app/es/lesiones/[slug]/page.tsx` — mirrors EN injury page; `generateStaticParams` from `SLUG_MAP_ES` injury entries; loads `content/injuries/es/[slug].json`; hreflang EN↔ES; CTA → `/es/buscar-ayuda`; `<meta name="google" content="notranslate" />`
+- `app/(es)/es/lesiones/[slug]/page.tsx` — mirrors EN injury page; `generateStaticParams` from `SLUG_MAP_ES` injury entries; loads `content/injuries/es/[slug].json`; hreflang EN↔ES; CTA → `/es/buscar-ayuda`; `<meta name="google" content="notranslate" />`
 - `content/injuries/es/` — 7 JSON files: `latigazo.json`, `huesos-rotos.json`, `traumatismo-craneal.json`, `columna.json`, `tejido-blando.json`, `quemaduras.json`, `lesiones-internas.json` — Spanish values, `"translationStatus": "needs-review"` on each
 
 **Manual verification:**
@@ -502,7 +520,7 @@ Read `app/tools/[slug]/page.tsx`, `components/tools/ToolEngine.tsx`, `components
 
 **Key constraint:** `ToolEngine` and `ToolResults` are `'use client'`. The parent server page passes translated strings as a `strings` prop.
 
-- `app/es/herramientas/[slug]/page.tsx` — server component; loads `getDictionary('es')`; passes `strings={dict.tools}` and `strings={dict.cta}` to `<ToolEngine>`; Spanish meta; hreflang EN↔ES; `<meta name="google" content="notranslate" />`
+- `app/(es)/es/herramientas/[slug]/page.tsx` — server component; loads `getDictionary('es')`; passes `strings={dict.tools}` and `strings={dict.cta}` to `<ToolEngine>`; Spanish meta; hreflang EN↔ES; `<meta name="google" content="notranslate" />`
 - `components/tools/ToolEngine.tsx` — add `strings` prop typed as `Pick<Dictionary, 'cta' | 'tools'>`; use `strings.cta.next`, `strings.cta.back`, `strings.cta.seeMyResults`, `strings.cta.calculating` for buttons; `strings.tools.disclaimer` for disclaimer text; tool question content stays English for now — mark with `// TODO: Spanish tool content (DEV-35)`; CTA in results points to `/es/buscar-ayuda` when `usePathname().startsWith('/es/')`
 - `components/tools/ToolResults.tsx` — add `strings` prop; use `strings.tools.yourResults` for "Your Results" heading; `strings.cta.startOver` for "Start Over"; `strings.tools.priority.*` for priority badge labels
 
@@ -528,8 +546,8 @@ Read `app/states/[state]/page.tsx`, `app/states/[state]/[city]/page.tsx`, `conte
 **Also:** The Header mega-menu `stateGuides` array (state + city links) was not covered by DEV-29/DEV-30 because the state routes didn't exist yet. Add `NAV_STATE_GUIDES` to `i18n/config.ts` in this task, and update `Header.tsx` to use it.
 
 - `i18n/config.ts` — add `NAV_STATE_GUIDES` with `en` and `es` variants; ES hrefs use `/es/estados/california` and `/es/estados/california/los-angeles` etc.; update `Header.tsx` to use `NAV_STATE_GUIDES[locale]` instead of the hardcoded `stateGuides` constant; also update Footer `FOOTER_RESOURCE_LINKS.es` entries for California and Arizona to point to `/es/estados/california` and `/es/estados/arizona` (currently pointing to English paths)
-- `app/es/estados/[state]/page.tsx` — mirrors EN state page; `generateStaticParams` returns `['california', 'arizona']`; loads `content/states/es/[state].json`; hreflang EN↔ES; CTA → `/es/buscar-ayuda`; reviewer byline hidden when `reviewedBy === 'Pending Legal Review'` (same logic as English version); `<meta name="google" content="notranslate" />`
-- `app/es/estados/[state]/[city]/page.tsx` — mirrors EN city page; `generateStaticParams` returns all city slugs per state; loads `content/cities/es/[city].json`; hreflang EN↔ES; CTA → `/es/buscar-ayuda`; same reviewer conditional; `<meta name="google" content="notranslate" />`
+- `app/(es)/es/estados/[state]/page.tsx` — mirrors EN state page; `generateStaticParams` returns `['california', 'arizona']`; loads `content/states/es/[state].json`; hreflang EN↔ES; CTA → `/es/buscar-ayuda`; reviewer byline hidden when `reviewedBy === 'Pending Legal Review'` (same logic as English version); `<meta name="google" content="notranslate" />`
+- `app/(es)/es/estados/[state]/[city]/page.tsx` — mirrors EN city page; `generateStaticParams` returns all city slugs per state; loads `content/cities/es/[city].json`; hreflang EN↔ES; CTA → `/es/buscar-ayuda`; same reviewer conditional; `<meta name="google" content="notranslate" />`
 - `content/states/es/california.json` and `content/states/es/arizona.json` — same schema as English, Spanish field values (statute of limitations descriptions, fault rule description, reporting deadline details, insurance minimum labels), `"translationStatus": "needs-review"`
 - `content/cities/es/` — 16 JSON files: `los-angeles.json`, `san-diego.json`, `san-francisco.json`, `san-jose.json`, `sacramento.json`, `fresno.json`, `oakland.json`, `long-beach.json`, `anaheim.json`, `bakersfield.json`, `phoenix.json`, `tucson.json`, `mesa.json`, `scottsdale.json`, `chandler.json`, `gilbert.json` — same schema as English, Spanish values, `"translationStatus": "needs-review"`
 
@@ -584,13 +602,13 @@ alternates: {
 |------|-------|-----------|-----------|
 | DEV-29 | 7A | `i18n/` (5 files), `middleware.ts` | Medium |
 | DEV-30 | 7A | `LanguageToggle.tsx`, `Header.tsx`, `Footer.tsx`, both layouts | High |
-| DEV-31 | 7A | `app/es/layout.tsx`, `app/es/page.tsx` | Low |
-| DEV-32 | 7B | `app/es/buscar-ayuda/**`, `IntakeWizard.tsx` | High |
-| DEV-33 | 7C | `app/es/accidentes/[slug]/page.tsx`, 13 JSON files | Medium |
-| DEV-34 | 7C | `app/es/guias/[slug]/page.tsx`, 14 JSON files | Medium |
-| DEV-34B | 7C | `app/es/lesiones/[slug]/page.tsx`, 7 JSON files | Medium |
-| DEV-35 | 7C | `app/es/herramientas/[slug]/page.tsx`, `ToolEngine.tsx`, `ToolResults.tsx` | Medium |
-| DEV-37 | 7C | `app/es/estados/[state]/page.tsx`, `app/es/estados/[state]/[city]/page.tsx`, 18 JSON files | Medium |
+| DEV-31 | 7A | Route group restructure + `app/(es)/es/layout.tsx`, `app/(es)/es/page.tsx` | Medium |
+| DEV-32 | 7B | `app/(es)/es/buscar-ayuda/**`, `IntakeWizard.tsx` | High |
+| DEV-33 | 7C | `app/(es)/es/accidentes/[slug]/page.tsx`, 13 JSON files | Medium |
+| DEV-34 | 7C | `app/(es)/es/guias/[slug]/page.tsx`, 14 JSON files | Medium |
+| DEV-34B | 7C | `app/(es)/es/lesiones/[slug]/page.tsx`, 7 JSON files | Medium |
+| DEV-35 | 7C | `app/(es)/es/herramientas/[slug]/page.tsx`, `ToolEngine.tsx`, `ToolResults.tsx` | Medium |
+| DEV-37 | 7C | `app/(es)/es/estados/[state]/page.tsx`, `app/(es)/es/estados/[state]/[city]/page.tsx`, 18 JSON files | Medium |
 | DEV-36 | 7D | `lib/hreflang.ts`, `app/sitemap.ts`, `app/layout.tsx` | Medium |
 
 **Total: 10 tasks**  
