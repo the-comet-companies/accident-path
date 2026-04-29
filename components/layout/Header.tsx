@@ -98,14 +98,18 @@ export function Header({ locale = 'en' }: HeaderProps) {
         <div className="flex items-center justify-between h-16">
 
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 shrink-0" aria-label="AccidentPath home">
+          <Link
+            href={locale === 'es' ? '/es/' : '/'}
+            className="flex items-center gap-2 shrink-0"
+            aria-label={locale === 'es' ? 'AccidentPath inicio' : 'AccidentPath home'}
+          >
             <span className="text-xl font-bold text-primary-700 font-sans tracking-tight">
               Accident<span className="text-amber-500">Path</span>
             </span>
           </Link>
 
           {/* Desktop nav */}
-          <nav aria-label="Main navigation" className="hidden lg:flex items-center gap-1">
+          <nav aria-label="Main navigation" className="hidden lg:flex items-center gap-0.5">
 
             {/* Accident Types mega-menu trigger */}
             <button
@@ -114,11 +118,11 @@ export function Header({ locale = 'en' }: HeaderProps) {
               onClick={() => toggle('accidents')}
               onMouseEnter={() => openOnHover('accidents')}
               onMouseLeave={scheduleClose}
-              className="flex items-center gap-1 px-3 py-2 text-sm font-medium text-neutral-700 hover:text-primary-600 rounded-md hover:bg-primary-50 transition-colors"
+              className="flex items-center gap-1 px-2.5 py-2 text-sm font-medium text-neutral-700 hover:text-primary-600 rounded-md hover:bg-primary-50 transition-colors whitespace-nowrap"
             >
               {labels.accidentTypes}
               <ChevronDown
-                className={`w-4 h-4 transition-transform duration-150 ${openMenu === 'accidents' ? 'rotate-180' : ''}`}
+                className={`w-4 h-4 transition-transform duration-150 shrink-0 ${openMenu === 'accidents' ? 'rotate-180' : ''}`}
                 aria-hidden="true"
               />
             </button>
@@ -128,7 +132,7 @@ export function Header({ locale = 'en' }: HeaderProps) {
               <Link
                 key={link.href}
                 href={link.href}
-                className="px-3 py-2 text-sm font-medium text-neutral-700 hover:text-primary-600 rounded-md hover:bg-primary-50 transition-colors"
+                className="px-2.5 py-2 text-sm font-medium text-neutral-700 hover:text-primary-600 rounded-md hover:bg-primary-50 transition-colors whitespace-nowrap"
               >
                 {link.label}
               </Link>
@@ -137,7 +141,7 @@ export function Header({ locale = 'en' }: HeaderProps) {
             {/* Find Help — highlighted */}
             <Link
               href={findHelp.href}
-              className="px-3 py-2 text-sm font-medium text-amber-600 hover:text-amber-700 rounded-md hover:bg-amber-50 transition-colors"
+              className="px-2.5 py-2 text-sm font-medium text-amber-600 hover:text-amber-700 rounded-md hover:bg-amber-50 transition-colors whitespace-nowrap"
             >
               {findHelp.label}
             </Link>
@@ -149,11 +153,11 @@ export function Header({ locale = 'en' }: HeaderProps) {
               onClick={() => toggle('states')}
               onMouseEnter={() => openOnHover('states')}
               onMouseLeave={scheduleClose}
-              className="flex items-center gap-1 px-3 py-2 text-sm font-medium text-neutral-700 hover:text-primary-600 rounded-md hover:bg-primary-50 transition-colors"
+              className="flex items-center gap-1 px-2.5 py-2 text-sm font-medium text-neutral-700 hover:text-primary-600 rounded-md hover:bg-primary-50 transition-colors whitespace-nowrap"
             >
               {labels.stateGuides}
               <ChevronDown
-                className={`w-4 h-4 transition-transform duration-150 ${openMenu === 'states' ? 'rotate-180' : ''}`}
+                className={`w-4 h-4 transition-transform duration-150 shrink-0 ${openMenu === 'states' ? 'rotate-180' : ''}`}
                 aria-hidden="true"
               />
             </button>
@@ -163,7 +167,7 @@ export function Header({ locale = 'en' }: HeaderProps) {
               <Link
                 key={link.href}
                 href={link.href}
-                className="px-3 py-2 text-sm font-medium text-neutral-700 hover:text-primary-600 rounded-md hover:bg-primary-50 transition-colors"
+                className="px-2.5 py-2 text-sm font-medium text-neutral-700 hover:text-primary-600 rounded-md hover:bg-primary-50 transition-colors whitespace-nowrap"
               >
                 {link.label}
               </Link>

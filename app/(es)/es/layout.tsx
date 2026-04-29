@@ -55,7 +55,7 @@ export default async function EsLayout({
     >
       <body className="min-h-full flex flex-col font-sans bg-surface-page">
         <SchemaOrg schema={organizationSchema()} id="org-schema" />
-        <EmergencyBanner />
+        <EmergencyBanner locale="es" />
         {/* Desktop header */}
         <div className="hidden lg:block sticky top-0 z-50">
           <Header locale="es" />
