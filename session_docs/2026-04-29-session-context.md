@@ -45,7 +45,20 @@
 - `app/(es)/es/page.tsx` — Spanish home page; mirrors English page structure with all strings translated; Spanish accident/tool/guide data with `/es/*` hrefs
 - `app/(en)/page.tsx` — hreflang `alternates.languages` added (en/es/x-default)
 
-### Last commit: `1fa9109`
+### DEV-32 files created/modified
+- `i18n/en.json` + `i18n/es.json` — added full `intake` option arrays (accidentTypeLabels, injuryLabels, medicalLabels/Descriptions, insuranceLabels/Descriptions, workImpactLabels/Descriptions) + all step text keys (step descriptions, field labels, button labels)
+- `lib/intake.ts` — added `strings?: Dictionary['intake']` to `StepProps`
+- `components/intake/IntakeWizard.tsx` — `strings?: Dictionary['intake']` prop; `usePathname` locale-aware redirect to `/es/buscar-ayuda/thank-you`; strips empty optional contact fields before POST to fix Zod `z.string().email()` rejecting `""`
+- `components/intake/steps/StepAccidentType.tsx` — English values (`ACCIDENT_TYPE_VALUES`) stored, Spanish labels displayed via `strings.accidentTypeLabels`
+- `components/intake/steps/StepInjuries.tsx` — English values (`INJURY_VALUES`) stored, Spanish labels displayed
+- `components/intake/steps/StepWhen/Where/Medical/PoliceReport/Insurance/WorkImpact/Contact.tsx` — all updated with `strings` prop + English fallbacks
+- `components/intake/ConsentCheckbox.tsx` — `tcpaText?: string` prop; defaults to full English TCPA; Spanish pages pass short `strings.tcpaConsent`
+- `app/(es)/es/buscar-ayuda/page.tsx` — server component; loads ES dict; passes `dict.intake` to `<IntakeWizard>`
+- `app/(es)/es/buscar-ayuda/results/page.tsx` — client component; Spanish URGENCY_CONFIG from `es.json`; reads localStorage same as English version
+- `app/(es)/es/buscar-ayuda/thank-you/page.tsx` — static Spanish thank-you page
+- **Bug fix (2779f98):** `z.string().email().optional()` rejects `""` — stripping empty contact strings to `undefined` before POST
+
+### Last commit: `2779f98`
 
 ---
 
@@ -81,7 +94,7 @@ For the Notion overview doc (what's being built, maintenance, implications):
 | DEV-29 | 7A | ✓ Complete — i18n config, dict files, proxy (locale redirect) |
 | DEV-30 | 7A | ✓ Complete — LanguageToggle + locale-aware Header, MobileNav, Footer |
 | DEV-31 | 7A | ✓ Complete — route group restructure + Spanish home page + hreflang |
-| DEV-32 | 7B | Not started — Spanish intake wizard |
+| DEV-32 | 7B | ✓ Complete — Spanish intake wizard + results + thank-you |
 | DEV-33 | 7C | Not started — Spanish accident pages (13 types) |
 | DEV-34 | 7C | Not started — Spanish guide pages (14 guides) |
 | DEV-34B | 7C | Not started — Spanish injury pages (7 types) |
@@ -89,7 +102,7 @@ For the Notion overview doc (what's being built, maintenance, implications):
 | DEV-37 | 7C | Not started — Spanish state + city pages (2 states, 16 cities) |
 | DEV-36 | 7D | Not started — hreflang + sitemap |
 
-**Tier 1 (launch minimum):** DEV-29 + DEV-30 + DEV-31 + DEV-32
+**Tier 1 (launch minimum):** DEV-29 + DEV-30 + DEV-31 + DEV-32 — ✓ ALL COMPLETE
 **Tier 2 (full bilingual):** all 10 tasks
 
 ---
@@ -123,7 +136,7 @@ For the Notion overview doc (what's being built, maintenance, implications):
 | Lighthouse Mobile | ✓ 82–96 |
 | Unit tests | ✓ 26/26 |
 | E2E tests | ✓ 24/24 |
-| Spanish i18n | 🔄 In progress — DEV-29 + DEV-30 + DEV-31 done, DEV-32 next |
+| Spanish i18n | 🔄 Tier 1 complete — DEV-29–32 done; DEV-33/34/34B/35/37/36 next |
 | Attorney review of content | ✗ Pending (non-code) |
 | GA4 setup | ✗ Pending Michael |
 | Domain/DNS | ✗ Pending Michael |
