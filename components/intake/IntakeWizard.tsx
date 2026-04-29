@@ -80,6 +80,10 @@ export function IntakeWizard({ strings }: IntakeWizardProps) {
         body: JSON.stringify({
           ...data,
           urgencyFactors,
+          // strip empty optional strings so z.string().email().optional() doesn't reject ""
+          name: data.name?.trim() || undefined,
+          email: data.email?.trim() || undefined,
+          phone: data.phone?.trim() || undefined,
         }),
       })
       if (!response.ok) {
