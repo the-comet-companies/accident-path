@@ -85,7 +85,7 @@ export default function GraciasPage() {
           </Link>
         </div>
 
-        <DisclaimerBanner variant="intake" />
+        <DisclaimerBanner locale="es" variant="intake" />
       </div>
     </div>
   )

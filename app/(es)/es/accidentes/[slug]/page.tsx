@@ -554,7 +554,7 @@ export default async function AccidentHubPageES({
         </div>
       </div>
 
-      <DisclaimerBanner variant="default" />
+      <DisclaimerBanner locale="es" variant="default" />
     </>
   )
 }

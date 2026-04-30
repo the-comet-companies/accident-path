@@ -51,7 +51,7 @@ export default async function BuscarAyudaPage() {
           <IntakeWizard strings={dict.intake} />
         </div>
         <div className="mt-6">
-          <DisclaimerBanner variant="intake" />
+          <DisclaimerBanner locale="es" variant="intake" />
         </div>
       </div>
     </div>

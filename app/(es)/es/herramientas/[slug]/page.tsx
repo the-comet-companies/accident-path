@@ -319,7 +319,7 @@ export default async function HerramientaDetailPage({
         </div>
       </div>
 
-      <DisclaimerBanner variant="default" />
+      <DisclaimerBanner locale="es" variant="default" />
     </>
   )
 }

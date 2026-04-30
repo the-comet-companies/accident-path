@@ -283,7 +283,7 @@ export default async function GuideDetailPageES({
         </div>
       </div>
 
-      <DisclaimerBanner variant="default" />
+      <DisclaimerBanner locale="es" variant="default" />
     </>
   )
 }

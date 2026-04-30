@@ -107,7 +107,7 @@ export default function LesionesPage() {
         </div>
       </div>
 
-      <DisclaimerBanner variant="default" />
+      <DisclaimerBanner locale="es" variant="default" />
     </>
   )
 }

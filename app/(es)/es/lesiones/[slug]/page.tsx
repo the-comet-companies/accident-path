@@ -361,7 +361,7 @@ export default async function InjuryDetailPageES({
         </div>
       </div>
 
-      <DisclaimerBanner variant="default" />
+      <DisclaimerBanner locale="es" variant="default" />
     </>
   )
 }

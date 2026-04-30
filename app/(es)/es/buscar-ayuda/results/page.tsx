@@ -240,7 +240,7 @@ export default function BuscarAyudaResultsPage() {
           </Link>
         </div>
 
-        <DisclaimerBanner variant="intake" />
+        <DisclaimerBanner locale="es" variant="intake" />
       </div>
     </div>
   )
