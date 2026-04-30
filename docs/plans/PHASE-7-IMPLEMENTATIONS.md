@@ -2,18 +2,23 @@
 
 > **Purpose:** Authoritative record of what was actually built vs. what the plan specified. Use this alongside `PHASE-7-SPANISH-PLAN.md` when implementing DEV-33 through DEV-36.
 >
-> Last updated: April 29, 2026 — covers DEV-29, DEV-30, DEV-31, DEV-32
+> Last updated: April 30, 2026 — covers DEV-29 through DEV-34B
 
 ---
 
 ## Tier 1 Status: Complete
 
-DEV-29, DEV-30, DEV-31, DEV-32 are all merged to `main`. The site is fully bilingual at:
+DEV-29 through DEV-34B are all merged to `main`. The site is fully bilingual at:
 - `/` — English home
 - `/es/` — Spanish home
 - `/es/buscar-ayuda` — Spanish intake wizard (all 9 steps, results, thank-you)
+- `/es/accidentes/[slug]` — 13 Spanish accident pages + index
+- `/es/guias/[slug]` — 14 Spanish guide pages + index
+- `/es/lesiones/[slug]` — 7 Spanish injury pages + index
 
-Vercel auto-deploys from `main`. Build: **93 static pages**, TypeScript clean.
+Vercel auto-deploys from `main`. Build: **~130 static pages**, TypeScript clean.
+
+**Tier 2 progress: 7 of 10 tasks complete.** Remaining: DEV-35 (tools), DEV-37 (states/cities), DEV-36 (sitemap).
 
 ---
 
@@ -78,7 +83,7 @@ i18n/
 ```ts
 LOCALES: ['en', 'es']
 DEFAULT_LOCALE: 'en'
-SLUG_MAP_ES: Record<string, string>   // EN slug → ES slug (24 entries)
+SLUG_MAP_ES: Record<string, string>   // EN slug → ES slug (35 entries: 13 accidents, 14 guides, 1 tool, 7 injuries)
 SLUG_MAP_EN: Record<string, string>   // ES slug → EN slug (auto-reversed)
 NAV_ACCIDENT_TYPES: Record<Locale, NavItem[]>
 NAV_SIMPLE_LINKS: Record<Locale, NavItem[]>
@@ -271,18 +276,43 @@ The `globals.css` import path depends on nesting level:
 | `app/(es)/es/guias/[slug]/page.tsx` | Created | Spanish guide detail page; `generateStaticParams` from `GUIDE_EN_SLUGS` mapped through `SLUG_MAP_ES`; related links use Spanish slugs directly; hreflang; `notranslate` |
 | `app/(es)/es/guias/page.tsx` | Created | Spanish index; 3-column grid; `cms.getAllGuides('es')` |
 | `content/guides/es/*.json` | Created | 14 files — all pass Zod validation; metaTitles 48–60 chars; metaDescriptions 129–158 chars |
+| `components/content/GuidesHubClient.tsx` | Deleted | Was only used by English `/guides` page; replaced with server component |
+| `app/(en)/guides/page.tsx` | Rewritten | Was `'use client'` with category filter rail (`GuidesHubClient`); rewritten as pure server component with 3-column card grid matching Spanish `/es/guias`; removed hardcoded "Cornerstone Guide" badge |
 
-**Build result:** 122 static pages (up from 93 — +15 Spanish guide pages + 14 guide detail pages)
+**Guides UI unification (done as part of DEV-34):** The English `/guides` page used a split-panel layout with a client-side category filter sidebar. The Spanish `/es/guias` page used a simpler 3-column card grid. Rather than replicate the complexity for Spanish, the English page was rewritten to match the simpler pattern. The "Cornerstone Guide" badge (hardcoded on `am-i-at-fault` and `settlement-vs-lawsuit`) was removed since the Spanish version never had it.
+
+**Build result:** ~122 static pages (up from 93)
+
+---
+
+## DEV-34B — Spanish Injury Pages (Complete)
+
+| File | Action | Notes |
+|------|--------|-------|
+| `lib/cms.ts` | Modified | Added `locale?: 'en' \| 'es'` to `getInjury` and `getAllInjuries` — backward-compatible, reads from `content/injuries/es/` when `locale === 'es'` |
+| `app/(es)/es/lesiones/[slug]/page.tsx` | Created | Spanish injury detail page; `generateStaticParams` maps `INJURY_EN_SLUGS` through `SLUG_MAP_ES`; four sections: Síntomas, Efectos a Largo Plazo, Opciones de Tratamiento, Causas Comunes; hreflang; `notranslate` |
+| `app/(es)/es/lesiones/page.tsx` | Created | Spanish index; 3-column card grid; `cms.getAllInjuries('es')`; includes bottom CTA section matching English page |
+| `content/injuries/es/*.json` | Created | 7 files: `latigazo.json`, `huesos-rotos.json`, `traumatismo-craneal.json`, `columna.json`, `tejido-blando.json`, `quemaduras.json`, `lesiones-internas.json`; metaTitles 61–68 chars; metaDescriptions 132–158 chars |
+| `i18n/config.ts` | Modified | Added 7 injury slug mappings to `SLUG_MAP_ES`: `whiplash → latigazo`, `broken-bones → huesos-rotos`, `traumatic-brain → traumatismo-craneal`, `spinal → columna`, `soft-tissue → tejido-blando`, `burns → quemaduras`, `internal → lesiones-internas` |
+
+**Does NOT use `getInjuryRelated()`:** The English injury page uses `getInjuryRelated(slug)` to compute sidebar related content. That helper is English-slug-only. The Spanish injury page reads `relatedAccidents` and `relatedTools` directly from the injury JSON (which already contains Spanish slugs) and renders hrefs without re-mapping.
+
+**`InjuryTypeSchema` has no `translationStatus` field.** Unlike `AccidentTypeSchema` and `GuideSchema`, the injury Zod schema doesn't include `translationStatus`. Spanish injury JSON files correctly omit it — do not add it.
+
+**`relatedTools` Spanish slugs reference DEV-35 routes:** Spanish injury files use `evaluacion-caso` and `calculadora-salario` as tool slugs. These `/es/herramientas/` routes don't exist yet (created in DEV-35). The links render but 404 until DEV-35 is complete.
+
+**Zod validation:** 5 of 7 files needed `metaTitle` or `metaDescription` trimming after generation. Always validate before committing — `InjuryTypeSchema` enforces metaTitle ≤70 and metaDescription 120–160.
+
+**Build result:** ~130 static pages (up from ~122 — +7 injury detail pages + 1 index)
 
 ---
 
 ## Remaining Tasks (Tier 2)
 
-| Task | Routes to create | Content files to create |
+| Task | Routes to create | Files to change |
 |------|-----------------|------------------------|
-| DEV-34B | `app/(es)/es/lesiones/[slug]/page.tsx` | `content/injuries/es/*.json` (7 files) |
-| DEV-35 | `app/(es)/es/herramientas/[slug]/page.tsx` | Update `ToolEngine.tsx` + `ToolResults.tsx` with `strings` prop |
-| DEV-37 | `app/(es)/es/estados/[state]/[city]/page.tsx` + `[state]/page.tsx` | `content/states/es/*.json` (18 files) |
+| DEV-35 | `app/(es)/es/herramientas/[slug]/page.tsx` + `herramientas/page.tsx` | Add `strings` prop to `ToolEngine.tsx` + `ToolResults.tsx`; add tool slug mappings to `i18n/config.ts` |
+| DEV-37 | `app/(es)/es/estados/[state]/page.tsx` + `[state]/[city]/page.tsx` | `content/states/es/*.json` (2 files) + `content/cities/es/*.json` (16 files) |
 | DEV-36 | Extend `app/sitemap.ts` | Add `lib/hreflang.ts` helper |
 
 For full specs of each task, see `docs/plans/PHASE-7-SPANISH-PLAN.md`.
@@ -293,6 +323,6 @@ For full specs of each task, see `docs/plans/PHASE-7-SPANISH-PLAN.md`.
 
 - **State rules data** (`lib/state-rules.ts`) — deadlines and fault rule summaries are English-only. The Spanish results page (`/es/buscar-ayuda/results`) shows these in English for now. Full translation is out of scope for current phase.
 - **`suggestLawyerType()`** — returns English attorney type strings. The Spanish results page displays these English strings under a Spanish heading. Acceptable for MVP.
-- **`suggestResources()`** — returns English guide/tool hrefs and labels. Links work (they point to English content pages). Will auto-update when DEV-33/34 add Spanish slugs.
+- **`suggestResources()`** — returns English guide/tool hrefs and labels. The Spanish results page (`/es/buscar-ayuda/results`) shows these in English. Spanish content pages exist at `/es/accidentes/*`, `/es/guias/*`, `/es/lesiones/*` — but `suggestResources()` still generates English paths. Full localization of this helper is out of scope for current phase.
 - **Privacy/Terms pages** — `/es/privacidad` and `/es/terminos` don't exist yet. `StepContact` links to the English `/privacy` and `/terms` for now.
-- **Spanish tool content** — `ToolEngine` question text is English-only. DEV-35 will add `strings` prop for UI chrome; full question translation is a separate content task.
+- **Spanish tool content** — `ToolEngine` question text stays English-only. DEV-35 adds a `strings` prop for UI chrome (buttons, labels, priority badges) but tool question/option text is not translated.
