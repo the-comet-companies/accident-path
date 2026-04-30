@@ -1,0 +1,99 @@
+{
+  "slug": "tipo-abogado",
+  "title": "Identificador de Tipo de Abogado",
+  "metaTitle": "Identificador de Tipo de Abogado — Encuentra tu Especialidad",
+  "metaDescription": "Responde algunas preguntas para conocer qué tipo de abogado de lesiones personales suele manejar casos como el tuyo en California y Arizona, con fines educativos.",
+  "description": "No todos los abogados de lesiones personales manejan todo tipo de casos. Algunos se especializan en accidentes de vehículos de motor, otros en responsabilidad civil por las condiciones de un inmueble, compensación laboral, responsabilidad por productos defectuosos o muerte por negligencia. Esta herramienta educativa te ayuda a entender qué tipo de abogado generalmente es el más adecuado para casos como el tuyo, para que sepas qué buscar al consultar asesoría legal.",
+  "disclaimer": "Esta herramienta proporciona información educativa general para ayudarte a comprender las especializaciones de los abogados. No constituye una referencia ni recomendación legal. AccidentPath no evalúa las calificaciones de abogados específicos. Consulta a un abogado de lesiones personales con licencia para analizar tu situación particular.",
+  "steps": [
+    { "id": "accident-type", "question": "¿Qué tipo de accidente sufriste?", "type": "select", "options": [
+      { "value": "car-accident", "label": "Accidente de automóvil" },
+      { "value": "truck-accident", "label": "Accidente de camión" },
+      { "value": "motorcycle-crash", "label": "Accidente de motocicleta" },
+      { "value": "bicycle-accident", "label": "Accidente de bicicleta" },
+      { "value": "pedestrian-accident", "label": "Accidente de peatón" },
+      { "value": "slip-fall", "label": "Resbalón y caída" },
+      { "value": "dog-bite", "label": "Mordedura de perro o ataque de animal" },
+      { "value": "workplace-injury", "label": "Lesión en el lugar de trabajo" },
+      { "value": "other", "label": "Otro" }
+    ]},
+    { "id": "injuries", "question": "¿Qué tipos de lesiones sufriste? (Selecciona todas las que apliquen)", "type": "checklist", "options": [
+      { "value": "whiplash", "label": "Latigazo cervical / Lesión de cuello" },
+      { "value": "back-injury", "label": "Lesión de espalda o columna vertebral" },
+      { "value": "head-injury", "label": "Lesión en la cabeza o conmoción cerebral" },
+      { "value": "broken-bones", "label": "Huesos rotos / Fracturas" },
+      { "value": "cuts-lacerations", "label": "Cortes o laceraciones" },
+      { "value": "soft-tissue", "label": "Lesiones de tejidos blandos" },
+      { "value": "internal-injuries", "label": "Lesiones internas" },
+      { "value": "psychological", "label": "Trauma psicológico o emocional" },
+      { "value": "no-visible-injuries", "label": "Sin lesiones visibles" }
+    ]},
+    { "id": "special-circumstances", "question": "¿Existieron circunstancias especiales? (Selecciona todas las que apliquen)", "type": "multiselect", "options": [
+      { "value": "commercial-vehicle", "label": "Estuvo involucrado un vehículo comercial o de reparto" },
+      { "value": "government-property", "label": "El accidente ocurrió en propiedad gubernamental o pública" },
+      { "value": "workplace", "label": "Me lesioné mientras trabajaba o durante mi jornada laboral" },
+      { "value": "product-defect", "label": "Un producto defectuoso contribuyó al accidente" },
+      { "value": "rideshare", "label": "Estuvo involucrado un vehículo de transporte por aplicación (Uber, Lyft)" },
+      { "value": "none", "label": "Ninguna de las anteriores" }
+    ]},
+    { "id": "state", "question": "¿En qué estado ocurrió el accidente?", "type": "select", "options": [
+      { "value": "CA", "label": "California" },
+      { "value": "AZ", "label": "Arizona" }
+    ]}
+  ],
+  "supportingContent": [
+    {
+      "heading": "Abogados de accidentes de vehículos de motor",
+      "content": "Los abogados especializados en accidentes de vehículos de motor — incluyendo choques de automóviles, accidentes de camiones, colisiones de motocicletas, accidentes de bicicleta y atropellamientos de peatones — gestionan reclamaciones contra conductores culpables, transportistas comerciales y sus aseguradoras. Estos abogados tienen experiencia en reconstrucción de accidentes, interpretación de pólizas de seguros, negociación con ajustadores de reclamaciones y litigios en tribunales de lesiones personales. En casos que involucran transporte comercial de carga, pueden aplicarse regulaciones federales de la FMCSA.",
+      "tips": [
+        "Para accidentes de camiones, busca abogados con experiencia específica en litigios de transporte comercial",
+        "Los casos de accidentes con aplicaciones de transporte (Uber, Lyft) implican complejidades únicas en las capas de cobertura de seguros",
+        "Los casos de motocicletas y bicicletas frecuentemente implican lesiones de mayor gravedad y pueden requerir abogados especializados"
+      ]
+    },
+    {
+      "heading": "Abogados de responsabilidad civil por condiciones del inmueble",
+      "content": "Los casos de responsabilidad civil por condiciones del inmueble involucran lesiones que ocurren en la propiedad de otra persona debido a condiciones inseguras — resbalones y caídas, iluminación deficiente, escaleras rotas, mordeduras de perros, accidentes en albercas o seguridad negligente. Estos abogados tienen experiencia con los deberes de cuidado del propietario, requisitos de notificación y colaboración con expertos en reconstrucción de accidentes. Los casos que involucran propiedades gubernamentales pueden requerir pasos procesales especiales, como la presentación de reclamaciones administrativas contra el gobierno.",
+      "tips": [
+        "Los casos en propiedades gubernamentales frecuentemente tienen plazos de reclamación administrativa de 6 meses",
+        "Los casos de seguridad inadecuada pueden requerir investigación del historial de incidentes en la propiedad",
+        "La responsabilidad del arrendador por lesiones de inquilinos es una subespecialidad diferente dentro de la responsabilidad civil por condiciones del inmueble"
+      ]
+    },
+    {
+      "heading": "Abogados de compensación laboral y lesiones en el trabajo",
+      "content": "Si te lesionaste mientras trabajabas, tu caso puede involucrar el sistema de compensación laboral en lugar de — o además de — una reclamación de lesiones personales. La compensación laboral proporciona beneficios por lesiones relacionadas con el trabajo sin requerir que demuestres culpa, pero los beneficios son limitados. Si un tercero (que no sea tu empleador) causó tu lesión en el lugar de trabajo, también podría ser posible presentar una reclamación de lesiones personales por separado. Los abogados de compensación laboral se especializan en navegar el sistema administrativo y maximizar tus beneficios.",
+      "tips": [
+        "Las reclamaciones de compensación laboral y de lesiones personales a veces pueden tramitarse simultáneamente",
+        "Reporta las lesiones en el trabajo a tu empleador de inmediato — los retrasos pueden perjudicar tu reclamación",
+        "Una reclamación contra un tercero puede estar disponible si tu lesión involucró a un contratista, conductor o equipo defectuoso"
+      ]
+    },
+    {
+      "heading": "Abogados de responsabilidad por productos defectuosos",
+      "content": "Cuando un producto defectuoso — una pieza de vehículo defectuosa, un medicamento peligroso, un equipo defectuoso o un producto de consumo inseguro — causa una lesión, la ley de responsabilidad por productos puede hacer responsable al fabricante, distribuidor o minorista. Los casos de responsabilidad por productos son altamente técnicos y frecuentemente requieren expertos en ingeniería, pruebas de productos, investigación del historial de retiros del mercado y litigios complejos contra grandes corporaciones. Los abogados especializados en responsabilidad por productos generalmente tienen experiencia con demandas colectivas y litigios en múltiples distritos.",
+      "tips": [
+        "Conserva el producto defectuoso como evidencia — no lo deseches ni lo repares antes de consultar a un abogado",
+        "Investiga si existe un retiro oficial del mercado relacionado con el producto que te causó la lesión",
+        "Los casos de productos defectuosos pueden involucrar múltiples partes demandadas, desde el fabricante hasta el vendedor minorista"
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Necesito un abogado especialista o cualquier abogado de lesiones personales puede manejar mi caso?",
+      "answer": "Muchos abogados de lesiones personales manejan una amplia variedad de tipos de accidentes, y la experiencia general suele ser suficiente para casos sencillos. Sin embargo, los casos que involucran transporte comercial de carga, responsabilidad compleja por productos defectuosos, lesiones graves cerebrales o de columna vertebral, o entidades gubernamentales frecuentemente se benefician de abogados con experiencia específica en esas áreas. Durante tu consulta inicial, pregunta sobre la experiencia del abogado con casos similares al tuyo."
+    },
+    {
+      "question": "¿Qué debo buscar al elegir un abogado de lesiones personales?",
+      "answer": "Busca un abogado con experiencia en casos similares al tuyo, un acuerdo claro de honorarios por contingencia (generalmente entre el 33% y el 40% de cualquier recuperación), capacidad de respuesta y comunicación clara, un historial tanto de acuerdos extrajudiciales como de veredictos en juicio, y membresía vigente en el colegio de abogados del estado. Las consultas iniciales gratuitas son estándar en lesiones personales — úsalas para evaluar si el abogado es la opción adecuada para ti."
+    },
+    {
+      "question": "¿Qué son los honorarios por contingencia y cómo funcionan?",
+      "answer": "Los honorarios por contingencia significan que el abogado solo recibe un pago si recupera dinero para ti. El honorario es un porcentaje de tu acuerdo extrajudicial o veredicto — generalmente entre el 33% y el 40%, aunque esto varía según el abogado y la complejidad del caso. Si no hay recuperación, no debes honorarios de abogado, aunque puedes seguir siendo responsable de los costos del caso (cuotas de presentación, honorarios de peritos, etc.). Siempre confirma el acuerdo de honorarios por escrito antes de firmar un contrato de representación."
+    }
+  ],
+  "relatedTools": ["accident-case-quiz", "statute-countdown", "settlement-readiness"],
+  "relatedGuides": ["after-car-accident"],
+  "relatedAccidents": ["car", "truck", "motorcycle", "slip-fall", "bicycle", "dog-bite"]
+}

@@ -1,0 +1,120 @@
+{
+  "slug": "diario-lesiones",
+  "title": "Diario de Lesiones y Tratamiento",
+  "metaTitle": "Diario de Lesiones y Tratamiento — Registra tu Recuperación",
+  "metaDescription": "Registra síntomas diarios, niveles de dolor y tratamientos después de tu accidente. Un diario completo respalda tu historial médico y documenta tu recuperación.",
+  "description": "Documentar tus lesiones de forma consistente desde el día del accidente hasta tu recuperación crea un registro poderoso de cómo tu vida ha sido afectada. Esta herramienta te guía en lo que debes registrar cada día: síntomas, niveles de dolor, tratamientos, limitaciones e impacto en tus actividades diarias. Esta información puede ser valiosa para proveedores médicos, aseguradoras y abogados.",
+  "disclaimer": "Este diario es una herramienta educativa para ayudarte a organizar y documentar tu experiencia personal después de un accidente. No es un expediente médico ni sustituye la atención médica profesional. Consulta a tus proveedores de salud sobre tu tratamiento. Consulta a un abogado con licencia para orientación legal.",
+  "steps": [
+    {
+      "id": "injury-type",
+      "question": "¿Qué tipo de lesiones estás registrando?",
+      "type": "checklist",
+      "options": [
+        { "value": "whiplash-neck", "label": "Latigazo cervical / Lesión de cuello" },
+        { "value": "back-spine", "label": "Lesión de espalda o columna vertebral" },
+        { "value": "head-concussion", "label": "Lesión en la cabeza o conmoción cerebral" },
+        { "value": "broken-bones", "label": "Huesos rotos o fracturas" },
+        { "value": "soft-tissue", "label": "Lesiones de tejidos blandos" },
+        { "value": "cuts-lacerations", "label": "Cortadas o laceraciones" },
+        { "value": "psychological", "label": "Trauma psicológico o emocional" },
+        { "value": "other", "label": "Otras lesiones" }
+      ]
+    },
+    {
+      "id": "pain-level",
+      "question": "¿Cuál es tu nivel general de dolor hoy? (1 = mínimo, 10 = severo)",
+      "type": "number"
+    },
+    {
+      "id": "symptoms",
+      "question": "¿Qué síntomas estás experimentando hoy? (Selecciona todos los que apliquen)",
+      "type": "checklist",
+      "options": [
+        { "value": "headache", "label": "Dolor de cabeza" },
+        { "value": "neck-pain", "label": "Dolor o rigidez en el cuello" },
+        { "value": "back-pain", "label": "Dolor de espalda" },
+        { "value": "dizziness", "label": "Mareos o vértigo" },
+        { "value": "nausea", "label": "Náuseas" },
+        { "value": "numbness-tingling", "label": "Entumecimiento u hormigueo" },
+        { "value": "sleep-disruption", "label": "Alteraciones del sueño" },
+        { "value": "anxiety-depression", "label": "Ansiedad o depresión" },
+        { "value": "difficulty-concentrating", "label": "Dificultad para concentrarse" },
+        { "value": "fatigue", "label": "Fatiga o falta de energía" },
+        { "value": "limited-range-of-motion", "label": "Rango de movimiento limitado" },
+        { "value": "no-symptoms-today", "label": "Sin síntomas hoy" }
+      ]
+    },
+    {
+      "id": "treatments",
+      "question": "¿Qué tratamientos o citas médicas tuviste hoy?",
+      "type": "checklist",
+      "options": [
+        { "value": "doctor-visit", "label": "Visita al médico" },
+        { "value": "physical-therapy", "label": "Fisioterapia" },
+        { "value": "chiropractic", "label": "Atención quiropráctica" },
+        { "value": "medication", "label": "Medicamentos" },
+        { "value": "er-urgent-care", "label": "Sala de emergencias o urgencias" },
+        { "value": "mental-health", "label": "Terapia de salud mental" },
+        { "value": "massage", "label": "Terapia de masajes" },
+        { "value": "imaging", "label": "Estudios de imagen (Rayos X, MRI, TC)" },
+        { "value": "no-treatments-today", "label": "Sin tratamientos hoy" }
+      ]
+    }
+  ],
+  "supportingContent": [
+    {
+      "heading": "Por qué un diario de lesiones diario es importante después de un accidente",
+      "content": "Cuando una aseguradora o un abogado evalúa una reclamación por lesiones personales, una de las preguntas clave es: ¿cómo afectó este accidente la vida diaria de la persona lesionada? Un diario contemporáneo —escrito en el momento en que ocurrieron los eventos, no reconstruido de memoria meses después— proporciona evidencia convincente del dolor, sufrimiento y limitaciones funcionales sufridos. Los tribunales y los ajustadores de seguros otorgan considerable importancia a los registros detallados y consistentes llevados desde el momento del accidente hasta la recuperación. Mantener este diario actualizado puede marcar una diferencia significativa en el resultado de tu caso.",
+      "tips": [
+        "Comienza tu diario el mismo día del accidente, aunque tus anotaciones sean breves",
+        "Escribe entradas diariamente — incluso las cortas son mejor que no escribir nada",
+        "Anota actividades específicas que no pudiste realizar y que sí hacías antes del accidente"
+      ]
+    },
+    {
+      "heading": "Qué registrar cada día",
+      "content": "Cada entrada diaria debe incluir tu nivel de dolor en una escala del 1 al 10, cualquier síntoma nuevo o persistente (dolor de cabeza, mareos, rigidez en el cuello, dolor de espalda, entumecimiento, dificultad para dormir), citas médicas y nombres de los proveedores, medicamentos tomados y posibles efectos secundarios, fisioterapia u otros tratamientos, actividades que no pudiste realizar debido al dolor o las limitaciones (conducir, cocinar, hacer ejercicio, jugar con tus hijos), cómo la lesión está afectando tu trabajo, y cualquier impacto emocional o psicológico como ansiedad, depresión o alteraciones del sueño.",
+      "tips": [
+        "Usa un lenguaje consistente para describir el nivel de dolor para que tus entradas sean comparables con el tiempo",
+        "Registra los nombres y especialidades de cada proveedor de salud que te atienda",
+        "Anota cuándo tuviste que pedir ayuda a otras personas para tareas que normalmente realizas de forma independiente"
+      ]
+    },
+    {
+      "heading": "Documentar limitaciones de actividad y pérdida de disfrute de la vida",
+      "content": "En los casos de lesiones personales, los daños no se limitan a las facturas médicas y los salarios perdidos — también pueden incluir compensación por dolor y sufrimiento, pérdida del disfrute de la vida y angustia emocional. Un registro detallado de las actividades que no has podido realizar desde el accidente — pasatiempos, ejercicio, actividades familiares, compromisos sociales, actividad sexual, tareas de crianza — ayuda a documentar estas pérdidas no económicas. Los ejemplos específicos y concretos son más convincentes que las declaraciones generales. Cuanto más detallado sea tu registro, más respaldo tendrás en tu reclamación.",
+      "tips": [
+        "Enumera eventos específicos a los que tuviste que faltar — el partido de fútbol de un hijo, unas vacaciones, tu rutina de ejercicio",
+        "Anota cuándo tuviste un día particularmente difícil y qué lo hizo complicado",
+        "Fotografía regularmente las lesiones visibles como moretones, inflamación y cicatrices"
+      ]
+    },
+    {
+      "heading": "Mantener tu diario preciso y creíble",
+      "content": "Tu diario de lesiones es más valioso cuando es honesto y consistente. Evita exagerar los síntomas, ya que esto puede perjudicar tu credibilidad si una parte contraria revisa tu diario. También evita minimizar los síntomas por costumbre — muchas víctimas de accidentes suelen restar importancia a su dolor incluso en anotaciones privadas. Escribe lo que realmente experimentaste cada día. Si tuviste un buen día, dilo así — un registro que muestra altibajos es más creíble que uno uniformemente negativo, y los días buenos genuinos no disminuyen la validez de los días malos. La honestidad fortalece tu caso.",
+      "tips": [
+        "Fecha cada entrada con el día, mes y año exactos",
+        "No retrocedas a modificar entradas anteriores — añade nueva información en entradas del día actual",
+        "Guarda una copia digital del diario en un lugar seguro, además de cualquier copia física"
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Puede usarse mi diario de lesiones como evidencia en mi caso?",
+      "answer": "Sí. Un diario de lesiones contemporáneo puede usarse como evidencia para documentar la naturaleza, gravedad y duración de tu dolor y limitaciones. Puede ser revisado por ajustadores de seguros, utilizado en mediaciones o presentado como prueba en litigios. Es recomendable escribir entradas honestas, detalladas y con fecha desde el inicio de tu lesión."
+    },
+    {
+      "question": "¿Debo compartir mi diario de lesiones con mi abogado?",
+      "answer": "Sí. Compartir tu diario con tu abogado le ayuda a comprender el panorama completo de cómo el accidente te ha afectado, respalda el cálculo de daños no económicos como el dolor y sufrimiento, y puede identificar brechas de información que conviene atender. Tu abogado puede orientarte sobre cómo utilizarlo de la manera más efectiva posible."
+    },
+    {
+      "question": "¿Por cuánto tiempo debo mantener mi diario de lesiones?",
+      "answer": "Conserva tu diario de lesiones hasta que tu caso esté completamente resuelto — ya sea mediante una resolución, juicio o el vencimiento del plazo de prescripción. Incluso después de que te sientas recuperado, el diario documenta la duración y el curso de tus lesiones, lo cual es relevante para los daños. Guarda copias digitales en una ubicación de respaldo segura."
+    }
+  ],
+  "relatedTools": ["urgency-checker", "lost-wages-estimator", "settlement-readiness"],
+  "relatedGuides": ["after-car-accident"],
+  "relatedAccidents": ["car", "truck", "motorcycle", "slip-fall", "bicycle"]
+}

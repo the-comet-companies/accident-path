@@ -40,6 +40,8 @@ export const cms = {
     loadAndValidate<Guide>(locale === 'es' ? 'guides/es' : 'guides', slug, GuideSchema),
   getAllGuides: (locale: 'en' | 'es' = 'en') =>
     loadAll<Guide>(locale === 'es' ? 'guides/es' : 'guides', GuideSchema),
-  getTool: (slug: string) => loadAndValidate<ToolConfig>('tools', slug, ToolConfigSchema),
-  getAllTools: () => loadAll<ToolConfig>('tools', ToolConfigSchema),
+  getTool: (slug: string, locale: 'en' | 'es' = 'en') =>
+    loadAndValidate<ToolConfig>(locale === 'es' ? 'tools/es' : 'tools', slug, ToolConfigSchema),
+  getAllTools: (locale: 'en' | 'es' = 'en') =>
+    loadAll<ToolConfig>(locale === 'es' ? 'tools/es' : 'tools', ToolConfigSchema),
 }

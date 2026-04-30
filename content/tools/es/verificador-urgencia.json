@@ -1,0 +1,98 @@
+{
+  "slug": "verificador-urgencia",
+  "title": "¿Necesito Atención Médica Ahora?",
+  "metaTitle": "¿Necesito Atención Médica Ahora? — Verificador de Urgencia",
+  "metaDescription": "Responde preguntas sobre tu accidente y síntomas para entender si buscar atención médica pronto puede ser beneficioso para tu salud y tu reclamación legal.",
+  "description": "Después de un accidente, la adrenalina y el shock pueden enmascarar lesiones graves. Esta herramienta educativa te ayuda a analizar tus síntomas y circunstancias para que puedas tomar una decisión informada sobre buscar atención médica, y comprender por qué una evaluación oportuna es importante para tu salud y tus opciones legales.",
+  "disclaimer": "Esta herramienta es únicamente para fines educativos. No constituye consejo médico. Si estás experimentando una emergencia médica, llama al 911 de inmediato. Siempre consulta a un profesional de salud calificado ante cualquier preocupación médica tras un accidente.",
+  "steps": [
+    { "id": "accident-type", "question": "¿Qué tipo de accidente sufriste?", "type": "select", "options": [
+      { "value": "car-accident", "label": "Accidente de auto" },
+      { "value": "truck-accident", "label": "Accidente de camión" },
+      { "value": "motorcycle-crash", "label": "Choque de motocicleta" },
+      { "value": "bicycle-accident", "label": "Accidente de bicicleta" },
+      { "value": "pedestrian-accident", "label": "Accidente de peatón" },
+      { "value": "slip-fall", "label": "Resbalón y caída" },
+      { "value": "dog-bite", "label": "Mordedura de perro o ataque de animal" },
+      { "value": "workplace-injury", "label": "Lesión en el trabajo" },
+      { "value": "other", "label": "Otro" }
+    ]},
+    { "id": "symptoms", "question": "¿Estás experimentando alguno de los siguientes síntomas? (Selecciona todos los que apliquen)", "type": "checklist", "options": [
+      { "value": "loss-of-consciousness", "label": "Pérdida del conocimiento (aunque sea breve)" },
+      { "value": "severe-bleeding", "label": "Sangrado grave o incontrolable" },
+      { "value": "severe-headache", "label": "Dolor de cabeza severo o que empeora" },
+      { "value": "neck-back-pain", "label": "Dolor de cuello o espalda" },
+      { "value": "chest-pain", "label": "Dolor en el pecho o dificultad para respirar" },
+      { "value": "numbness-tingling", "label": "Entumecimiento u hormigueo en brazos o piernas" },
+      { "value": "abdominal-pain", "label": "Dolor o sensibilidad abdominal" },
+      { "value": "blurred-vision", "label": "Visión borrosa o mareos" },
+      { "value": "nausea", "label": "Náuseas o vómito" },
+      { "value": "confusion", "label": "Confusión o problemas de memoria" },
+      { "value": "no-symptoms", "label": "Sin síntomas por el momento" }
+    ]},
+    { "id": "when", "question": "¿Cuándo ocurrió el accidente?", "type": "select", "options": [
+      { "value": "today", "label": "Hoy" },
+      { "value": "1-7-days", "label": "Hace 1 a 7 días" },
+      { "value": "1-4-weeks", "label": "Hace 1 a 4 semanas" },
+      { "value": "1-6-months", "label": "Hace 1 a 6 meses" },
+      { "value": "6-12-months", "label": "Hace 6 a 12 meses" },
+      { "value": "over-1-year", "label": "Hace más de 1 año" }
+    ]},
+    { "id": "seen-doctor", "question": "¿Has visto a un médico desde el accidente?", "type": "select", "options": [
+      { "value": "yes-same-day", "label": "Sí — el mismo día del accidente" },
+      { "value": "yes-within-days", "label": "Sí — dentro de los primeros días" },
+      { "value": "not-yet", "label": "Aún no, pero planeo hacerlo" },
+      { "value": "no-feel-fine", "label": "No — me siento bien" }
+    ]}
+  ],
+  "supportingContent": [
+    {
+      "heading": "Por Qué los Síntomas Tardíos Son Comunes Después de un Accidente",
+      "content": "El cuerpo humano libera adrenalina y cortisol de manera inmediata tras un evento traumático, lo que puede enmascarar las señales de dolor durante horas o incluso días. Condiciones como el latigazo cervical, la lesión cerebral traumática, el sangrado interno y las lesiones de tejido blando frecuentemente no producen síntomas evidentes en el lugar del accidente. Para cuando el dolor o la disfunción se vuelven aparentes, la lesión puede haber empeorado — y la demora en buscar atención médica puede ser usada por las aseguradoras para argumentar que tus lesiones no fueron causadas por el accidente.",
+      "tips": [
+        "El dolor de cuello y espalda por latigazo cervical puede aparecer entre 24 y 72 horas después de una colisión",
+        "Los síntomas de conmoción cerebral, como confusión y dolor de cabeza, pueden no surgir de inmediato",
+        "Las lesiones abdominales internas pueden ser potencialmente mortales con síntomas iniciales mínimos"
+      ]
+    },
+    {
+      "heading": "Síntomas que Requieren Atención de Emergencia Inmediata",
+      "content": "Ciertos síntomas después de un accidente requieren atención médica de emergencia de inmediato — no esperes. Estos incluyen pérdida del conocimiento o confusión, dolor intenso en la cabeza o el cuello, dolor en el pecho o dificultad para respirar, entumecimiento u hormigueo en las extremidades, dolor o sensibilidad abdominal, sangrado incontrolable y deformidad ósea visible. Si tú o cualquier persona en el lugar del accidente experimenta estos síntomas, llama al 911 o dirígete directamente a una sala de urgencias sin demora.",
+      "tips": [
+        "La pérdida del conocimiento, aunque sea breve, requiere evaluación de emergencia inmediata",
+        "El dolor en el pecho tras un impacto puede indicar trauma interno — no intentes autodiagnosticarte",
+        "Nunca manejes solo hasta urgencias si tienes síntomas neurológicos"
+      ]
+    },
+    {
+      "heading": "La Importancia Médica y Legal de una Evaluación Oportuna",
+      "content": "Consultar a un médico de manera oportuna después de un accidente cumple dos propósitos: protege tu salud al identificar lesiones de forma temprana, y crea un expediente médico documentado que vincula tus lesiones con el accidente. Los ajustadores de seguros y los abogados de la defensa analizan detenidamente los lapsos en la atención médica. Una demora significativa entre el accidente y tu primera consulta médica puede presentarse como evidencia de que tus lesiones no eran graves o fueron causadas por algo diferente. Incluso si te sientes relativamente bien, generalmente se recomienda una evaluación el mismo día o al día siguiente.",
+      "tips": [
+        "Documenta cada síntoma en tu visita médica — incluso los menores",
+        "Informa al médico la fecha, hora y circunstancias exactas del accidente",
+        "Cumple con todas las citas de seguimiento recomendadas"
+      ]
+    },
+    {
+      "heading": "Qué Decirle al Médico Después de un Accidente",
+      "content": "Cuando visites a un médico tras un accidente, proporciona un relato completo de cómo ocurrió el accidente y de cada síntoma que estés experimentando — incluso los que parezcan menores. Informa al médico sobre cualquier condición preexistente para que pueda distinguir las lesiones nuevas de las anteriores. No minimices tu dolor por cortesía o preocupación por el costo. Tus registros médicos son una fuente primaria de evidencia en cualquier proceso de seguro o legal, y los registros incompletos pueden limitar tus opciones. Solicita copias de todos los registros e informes de imágenes médicas."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Debo ir a urgencias o a una clínica de atención inmediata después de un accidente de auto?",
+      "answer": "Si tienes síntomas que sugieren una lesión grave — dolor de cabeza, pérdida del conocimiento, dolor en el pecho, entumecimiento o dificultad para respirar — ve a urgencias de inmediato. Para síntomas menos urgentes, una clínica de atención inmediata o un médico de cabecera puede realizar una evaluación inicial y referirte a estudios de imagen o a un especialista si es necesario."
+    },
+    {
+      "question": "¿Qué pasa si me siento bien después del accidente?",
+      "answer": "Sentirte bien inmediatamente después de un accidente no significa que no tengas lesiones. La adrenalina puede suprimir el dolor, y muchas lesiones importantes — incluyendo el latigazo cervical, la conmoción cerebral y el daño a tejido blando — desarrollan síntomas de forma gradual en las horas o días siguientes. Generalmente se recomienda una evaluación médica dentro de las 24 a 72 horas, aunque te sientas bien."
+    },
+    {
+      "question": "¿Buscar atención médica afecta mi reclamación de seguro?",
+      "answer": "Sí — de manera positiva. La atención médica oportuna crea un registro documentado que vincula tus lesiones con el accidente. Los lapsos en la atención o las demoras en el tratamiento pueden ser utilizados por las aseguradoras para disputar la gravedad o la causa de tus lesiones. La documentación médica consistente generalmente respalda una reclamación más sólida."
+    }
+  ],
+  "relatedTools": ["injury-journal", "evidence-checklist", "accident-case-quiz"],
+  "relatedGuides": ["after-car-accident"],
+  "relatedAccidents": ["car", "truck", "motorcycle", "bicycle", "pedestrian", "slip-fall"]
+}

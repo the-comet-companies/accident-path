@@ -1,0 +1,148 @@
+{
+  "slug": "evaluacion-caso",
+  "title": "¿Qué tipo de caso de accidente tengo?",
+  "metaTitle": "¿Qué tipo de caso de accidente tengo? — Evaluación gratis",
+  "metaDescription": "Responde algunas preguntas sobre tu accidente para conocer qué tipo de caso podrías tener y cuáles son los pasos educativos que normalmente aplican a tu situación.",
+  "description": "Distintos tipos de accidentes dan lugar a diferentes tipos de reclamaciones por lesiones personales, cada una con sus propias reglas, plazos y consideraciones. Esta evaluación educativa te ayuda a entender la categoría general de tu situación y te orienta hacia la orientación más relevante — no es un sustituto del asesoramiento legal.",
+  "disclaimer": "Esta evaluación proporciona información educativa general únicamente. No constituye asesoramiento legal y no evalúa los méritos de ninguna posible reclamación legal. Los resultados son solo para fines informativos. Consulta a un abogado con licencia para entender tu situación legal específica.",
+  "steps": [
+    {
+      "id": "accident-type",
+      "question": "¿En qué tipo de accidente estuviste involucrado/a?",
+      "type": "select",
+      "options": [
+        { "value": "car-accident", "label": "Accidente de auto" },
+        { "value": "truck-accident", "label": "Accidente de camión" },
+        { "value": "motorcycle-crash", "label": "Accidente de motocicleta" },
+        { "value": "bicycle-accident", "label": "Accidente de bicicleta" },
+        { "value": "pedestrian-accident", "label": "Accidente de peatón" },
+        { "value": "slip-fall", "label": "Resbalón y caída" },
+        { "value": "dog-bite", "label": "Mordedura de perro o ataque de animal" },
+        { "value": "workplace-injury", "label": "Lesión en el lugar de trabajo" },
+        { "value": "other", "label": "Otro" }
+      ]
+    },
+    {
+      "id": "what-happened",
+      "question": "¿Cuál de las siguientes opciones describe mejor lo que ocurrió?",
+      "type": "multiselect",
+      "options": [
+        { "value": "rear-end", "label": "Colisión por alcance (por detrás)" },
+        { "value": "side-impact", "label": "Colisión lateral (en T)" },
+        { "value": "head-on", "label": "Colisión frontal" },
+        { "value": "sideswipe", "label": "Golpe de costado" },
+        { "value": "hit-run", "label": "Choque y fuga" },
+        { "value": "rollover", "label": "Volcadura" },
+        { "value": "pedestrian-struck", "label": "Peatón atropellado por un vehículo" },
+        { "value": "slip-trip-fall", "label": "Resbalón, tropiezo o caída en una propiedad" },
+        { "value": "dog-bite-incident", "label": "Mordedura de perro o ataque de animal" },
+        { "value": "workplace-incident", "label": "Accidente laboral o lesión por equipo" },
+        { "value": "other", "label": "Otro / No está en la lista" }
+      ]
+    },
+    {
+      "id": "injuries",
+      "question": "¿Qué lesiones sufriste? (Selecciona todas las que apliquen)",
+      "type": "checklist",
+      "options": [
+        { "value": "whiplash", "label": "Latigazo cervical / Lesión de cuello" },
+        { "value": "back-injury", "label": "Lesión de espalda o columna" },
+        { "value": "head-injury", "label": "Lesión en la cabeza o conmoción cerebral" },
+        { "value": "broken-bones", "label": "Huesos rotos / Fracturas" },
+        { "value": "cuts-lacerations", "label": "Cortes o laceraciones" },
+        { "value": "soft-tissue", "label": "Lesiones de tejidos blandos" },
+        { "value": "internal-injuries", "label": "Lesiones internas" },
+        { "value": "psychological", "label": "Trauma psicológico / Emocional" },
+        { "value": "no-visible-injuries", "label": "Sin lesiones visibles" }
+      ]
+    },
+    {
+      "id": "timeline",
+      "question": "¿Cuándo ocurrió el accidente?",
+      "type": "select",
+      "options": [
+        { "value": "today", "label": "Hoy" },
+        { "value": "1-7-days", "label": "Hace 1 a 7 días" },
+        { "value": "1-4-weeks", "label": "Hace 1 a 4 semanas" },
+        { "value": "1-6-months", "label": "Hace 1 a 6 meses" },
+        { "value": "6-12-months", "label": "Hace 6 a 12 meses" },
+        { "value": "over-1-year", "label": "Hace más de 1 año" }
+      ]
+    },
+    {
+      "id": "witnesses",
+      "question": "¿Hubo testigos del accidente?",
+      "type": "select",
+      "options": [
+        { "value": "yes-multiple", "label": "Sí — varios testigos" },
+        { "value": "yes-one", "label": "Sí — un testigo" },
+        { "value": "no", "label": "No hubo testigos" },
+        { "value": "unsure", "label": "No estoy seguro/a" }
+      ]
+    }
+  ],
+  "supportingContent": [
+    {
+      "heading": "Tipos de casos de lesiones personales",
+      "content": "El derecho de lesiones personales abarca una amplia gama de accidentes y situaciones. Los casos de vehículos de motor incluyen colisiones entre autos, camiones, motocicletas, bicicletas y peatones. La responsabilidad por instalaciones (premises liability) cubre caídas en negocios, hogares y espacios públicos. La responsabilidad por productos puede aplicar cuando un producto defectuoso causó la lesión. Los accidentes laborales pueden dar lugar a reclamaciones de compensación laboral o, en ciertos casos, a demandas civiles. Comprender la categoría general de tu situación te ayuda a identificar la orientación educativa más relevante y los tipos de profesionales legales que suelen manejar casos similares.",
+      "tips": [
+        "Los accidentes de vehículos de motor se encuentran entre los casos de lesiones personales más comunes",
+        "La responsabilidad por instalaciones cubre caídas en negocios, hogares y espacios públicos",
+        "La responsabilidad por productos puede aplicar si un producto defectuoso causó tu lesión"
+      ]
+    },
+    {
+      "heading": "Cómo funcionan los casos de accidentes de vehículos de motor",
+      "content": "Los casos de accidentes de auto, camión, motocicleta, bicicleta y peatón generalmente implican reclamaciones de negligencia, es decir, que otra parte actuó de manera descuidada y causó el accidente. Estos casos suelen comenzar con una reclamación al seguro y pueden derivar en negociaciones de acuerdo o, si no se llega a un acuerdo, en una demanda formal. La documentación es clave: los registros médicos, los informes policiales, las fotografías de la escena y la información del seguro del otro conductor son elementos fundamentales. Los plazos de prescripción varían según el estado, por lo que es importante actuar con prontitud para preservar tus derechos legales.",
+      "tips": [
+        "Recopila la información del seguro del otro conductor en la escena si es posible",
+        "Busca atención médica de inmediato — los retrasos pueden usarse para cuestionar la gravedad de las lesiones",
+        "Documenta todos los costos: facturas médicas, ingresos perdidos, transporte a citas médicas"
+      ]
+    },
+    {
+      "heading": "Casos de responsabilidad por instalaciones y resbalones y caídas",
+      "content": "Cuando una lesión ocurre en la propiedad de otra persona, puede aplicar la ley de responsabilidad por instalaciones (premises liability). Los propietarios de inmuebles tienen el deber legal de mantener sus propiedades en condiciones razonablemente seguras para los visitantes. Los casos de resbalón y caída, tropiezo y caída u otras lesiones en propiedades ajenas pueden basarse en si el propietario sabía o debería haber sabido sobre el peligro y no tomó medidas para corregirlo o advertir sobre él. Las pruebas, como fotografías, informes de incidentes y testimonios de testigos, son especialmente importantes en estos casos para establecer que existía una condición peligrosa.",
+      "tips": [
+        "Reporta el incidente al administrador de la propiedad y solicita un informe escrito del incidente",
+        "Fotografía el peligro, el área y tus lesiones de inmediato si estás en condiciones de hacerlo",
+        "Busca atención médica el mismo día — documenta la conexión entre la lesión y el incidente"
+      ]
+    },
+    {
+      "heading": "Mordeduras de perro y ataques de animales",
+      "content": "California aplica responsabilidad estricta en casos de mordeduras de perro, lo que significa que el dueño del animal puede ser responsable de los daños independientemente de si sabía que el perro era peligroso. Esto es diferente de la regla del 'primer mordisco' que aplica en algunos otros estados. Las lesiones por mordeduras de perro pueden incluir daños físicos, cicatrices, trauma emocional y costos médicos continuos. Es importante identificar al dueño del animal, buscar atención médica de inmediato y reportar el incidente a las autoridades locales para crear un registro oficial. La documentación temprana es esencial en estos casos.",
+      "tips": [
+        "Busca atención médica de inmediato — las mordeduras de perro conllevan riesgo de infección",
+        "Identifica al dueño del perro y solicita comprobante de vacunación contra la rabia",
+        "Presenta un reporte ante el control de animales local para crear un registro oficial"
+      ]
+    },
+    {
+      "heading": "Cuándo consultar a un abogado de lesiones personales",
+      "content": "Si bien muchos accidentes menores se resuelven directamente con las compañías de seguros, hay situaciones en las que consultar a un abogado puede ser especialmente valioso. Cuando las lesiones son graves o generan costos médicos significativos, cuando la responsabilidad no es clara, cuando la aseguradora niega o subestima la reclamación, o cuando participan múltiples partes, la orientación legal puede marcar una diferencia importante. Muchos abogados de lesiones personales ofrecen consultas gratuitas y trabajan en base a honorarios contingentes, lo que significa que solo cobran si se obtiene una compensación. Consultar a un abogado no te compromete a presentar una demanda.",
+      "tips": [
+        "Consulta a un abogado antes de dar una declaración grabada a cualquier compañía de seguros",
+        "Un abogado puede identificar partes responsables que quizás no hayas considerado",
+        "La consulta temprana ayuda a preservar evidencia que puede perderse con el tiempo"
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Cuál es la diferencia entre una reclamación por lesiones personales y una demanda?",
+      "answer": "Una reclamación por lesiones personales generalmente se refiere a una solicitud de compensación presentada directamente a una compañía de seguros, mientras que una demanda es una acción legal formal presentada ante un tribunal. La mayoría de los casos de lesiones personales se resuelven mediante reclamaciones al seguro o negociaciones de acuerdo sin llegar a juicio."
+    },
+    {
+      "question": "¿Cómo sé si tengo un caso sólido de lesiones personales?",
+      "answer": "La solidez de un caso de lesiones personales generalmente depende de si otra parte fue responsable, de la gravedad y documentación de tus lesiones, de la cobertura de seguro disponible y de qué tan bien están documentados tus daños. Un abogado puede evaluar estos factores para tu situación específica y orientarte sobre los pasos a seguir."
+    },
+    {
+      "question": "¿Puede un mismo accidente dar lugar a más de un tipo de reclamación?",
+      "answer": "Sí. Un solo accidente puede dar origen a múltiples reclamaciones. Por ejemplo, un accidente de auto causado por una pieza de frenos defectuosa podría dar lugar tanto a una reclamación de negligencia contra el conductor como a una reclamación de responsabilidad por productos contra el fabricante. Un abogado puede ayudarte a identificar todas las posibles teorías de responsabilidad en tu caso."
+    }
+  ],
+  "relatedTools": ["statute-countdown", "evidence-checklist", "lawyer-type-matcher"],
+  "relatedGuides": ["after-car-accident", "insurance-claims"],
+  "relatedAccidents": ["car", "truck", "motorcycle", "bicycle", "slip-fall", "dog-bite"]
+}

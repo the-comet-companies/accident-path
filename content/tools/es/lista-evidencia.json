@@ -1,0 +1,106 @@
+{
+  "slug": "lista-evidencia",
+  "title": "Lista de Recopilación de Evidencia",
+  "metaTitle": "Lista de Evidencia para Víctimas de Accidentes",
+  "metaDescription": "Obtén una lista de evidencia personalizada para tu tipo de accidente. Sabe qué recopilar, fotografiar y solicitar antes de que la evidencia clave desaparezca.",
+  "description": "La evidencia que recopiles —o que no logres recopilar— durante las horas y días posteriores a un accidente puede afectar significativamente tus opciones. Esta lista te ayuda a entender qué tipos de evidencia suelen ser importantes para tu situación y los prioriza para que sepas en qué enfocarte primero.",
+  "disclaimer": "Esta lista proporciona información educativa sobre los tipos comunes de evidencia en casos de lesiones personales. No constituye asesoría legal. La evidencia específica que importa en tu caso depende de tus circunstancias individuales. Consulta a un abogado para obtener orientación adaptada a tu situación.",
+  "steps": [
+    { "id": "accident-type", "question": "¿Qué tipo de accidente sufriste?", "type": "select", "options": [
+      { "value": "car-accident", "label": "Accidente de automóvil" },
+      { "value": "truck-accident", "label": "Accidente de camión" },
+      { "value": "motorcycle-crash", "label": "Accidente de motocicleta" },
+      { "value": "bicycle-accident", "label": "Accidente de bicicleta" },
+      { "value": "pedestrian-accident", "label": "Accidente de peatón" },
+      { "value": "slip-fall", "label": "Resbalón y caída" },
+      { "value": "dog-bite", "label": "Mordedura de perro o ataque de animal" },
+      { "value": "workplace-injury", "label": "Lesión en el lugar de trabajo" },
+      { "value": "other", "label": "Otro" }
+    ]},
+    { "id": "location-type", "question": "¿Dónde ocurrió el accidente?", "type": "select", "options": [
+      { "value": "public-road", "label": "Vía pública o carretera" },
+      { "value": "parking-lot", "label": "Estacionamiento" },
+      { "value": "business-premises", "label": "Negocio o propiedad comercial" },
+      { "value": "workplace", "label": "Lugar de trabajo" },
+      { "value": "private-property", "label": "Propiedad privada (casa, entrada vehicular)" },
+      { "value": "other", "label": "Otro" }
+    ]},
+    { "id": "witnesses", "question": "¿Hubo testigos en la escena?", "type": "select", "options": [
+      { "value": "yes-with-info", "label": "Sí — tengo su información de contacto" },
+      { "value": "yes-no-info", "label": "Sí — pero no tengo su información de contacto" },
+      { "value": "no-witnesses", "label": "No hubo testigos" },
+      { "value": "unknown", "label": "No estoy seguro/a" }
+    ]},
+    { "id": "police-report", "question": "¿Se presentó un reporte policial?", "type": "select", "options": [
+      { "value": "yes-filed", "label": "Sí — se presentó un reporte" },
+      { "value": "no-not-filed", "label": "No se presentó ningún reporte" },
+      { "value": "in-progress", "label": "El reporte está en proceso" },
+      { "value": "not-sure", "label": "No estoy seguro/a" }
+    ]},
+    { "id": "photos", "question": "¿Tomaste fotografías en la escena?", "type": "select", "options": [
+      { "value": "yes-extensive", "label": "Sí — muchas fotografías" },
+      { "value": "yes-some", "label": "Sí — algunas fotografías" },
+      { "value": "no-photos", "label": "Aún no he tomado fotografías" },
+      { "value": "conditions-prevented", "label": "Las condiciones impidieron tomar fotografías" }
+    ]}
+  ],
+  "supportingContent": [
+    {
+      "heading": "Por Qué la Recopilación de Evidencia Es Urgente Después de un Accidente",
+      "content": "La evidencia en casos de accidentes puede desaparecer rápidamente. Las marcas de frenada se borran, las grabaciones de vigilancia se sobreescriben, los testigos se dispersan y las condiciones físicas de la escena cambian. Los vehículos se reparan. Los negocios afirman no tener grabaciones de cámara. La ventana para recopilar la evidencia más crítica suele ser de solo 24 a 72 horas. Comprender qué buscar —y actuar con prontitud— puede marcar una diferencia significativa en tu capacidad para documentar lo ocurrido.",
+      "tips": [
+        "Fotografía la escena antes de que se mueva cualquier cosa, siempre que sea seguro hacerlo",
+        "Las grabaciones de vigilancia en negocios suelen sobreescribirse en un plazo de 24 a 48 horas",
+        "Preservar un vehículo dañado antes de repararlo es fundamental en reclamaciones por responsabilidad del producto"
+      ]
+    },
+    {
+      "heading": "Evidencia Física y de la Escena",
+      "content": "En la escena del accidente, fotografía todo lo que puedas alcanzar de manera segura: todos los vehículos involucrados (desde múltiples ángulos, incluyendo los daños, las placas y la posición en la vía), las condiciones del camino, las marcas de frenada, los semáforos, la señalización, las condiciones climáticas y cualquier peligro visible que haya contribuido al accidente. Si te lesionaste en una caída, fotografía el lugar exacto del peligro antes de que sea corregido. Más fotos siempre es mejor que pocas.",
+      "tips": [
+        "Fotografía tus propias lesiones en la escena y diariamente durante varias semanas después",
+        "Anota los nombres de las calles, las intersecciones y los puntos de referencia para documentar la ubicación exacta",
+        "Si hay un negocio cercano, pregunta si tienen cámaras exteriores que hayan captado el evento"
+      ]
+    },
+    {
+      "heading": "Documentos y Registros que Debes Solicitar",
+      "content": "Los documentos clave en un caso de accidente incluyen el reporte policial oficial (generalmente disponible entre 3 y 10 días después del incidente), registros médicos y facturas de todos los tratamientos recibidos, la información de seguro de la otra parte, tu propia póliza de seguro, cualquier reporte de incidente presentado ante un negocio o propietario, y registros laborales que documenten los días de trabajo perdidos. Solicitar los registros de manera proactiva es recomendable, ya que algunos tienen tarifas y tiempos de procesamiento.",
+      "tips": [
+        "Solicita el reporte policial directamente a la agencia que respondió al accidente",
+        "Pide a tus proveedores médicos estados de cuenta detallados por concepto, no solo resúmenes",
+        "Solicita los reportes de incidente por escrito para que quede constancia de tu solicitud"
+      ]
+    },
+    {
+      "heading": "Información y Declaraciones de Testigos",
+      "content": "Los testimonios de testigos pueden ser de los más convincentes en un caso de accidente, especialmente cuando la responsabilidad está en disputa. En la escena, pide a cualquier persona que haya visto el accidente su nombre, número de teléfono y una breve descripción de lo que observó. No presiones a los testigos, pero sí obtén su información de contacto antes de que se vayan. Los testigos también pueden incluir personas que llegaron después del accidente pero observaron la escena o tus lesiones.",
+      "tips": [
+        "Obtén nombre completo y al menos un número de teléfono de cada testigo de inmediato",
+        "Anota lo que cada testigo te dijo que vio — los detalles son más fáciles de recordar en el momento",
+        "Los testigos de tus lesiones y de su gravedad visible también son valiosos"
+      ]
+    },
+    {
+      "heading": "Evidencia Digital y Electrónica",
+      "content": "Los casos de accidentes modernos involucran cada vez más evidencia digital. Las grabaciones de dashcam de tu vehículo o de vehículos cercanos pueden ser decisivas. Los datos de aplicaciones de transporte por red registran los detalles del viaje y el comportamiento del conductor. Puede existir grabación de cámaras en semáforos. Los negocios a lo largo de la ruta pueden tener cámaras de seguridad externas. Las grabaciones de vigilancia son especialmente urgentes — envía una solicitud escrita de conservación a cualquier negocio que pueda tener grabaciones relevantes lo antes posible después del accidente."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Cómo obtengo el reporte policial oficial de mi accidente?",
+      "answer": "Por lo general, puedes solicitar una copia del reporte policial a la agencia de orden público que respondió al incidente: el departamento de policía municipal, la oficina del sheriff del condado o la Patrulla de Caminos de California (CHP). Los reportes suelen estar disponibles entre 3 y 10 días después del incidente. En California, frecuentemente puedes solicitarlos en línea a través del portal de registros de la agencia o en persona. Generalmente hay una tarifa pequeña."
+    },
+    {
+      "question": "¿Qué debo hacer si un negocio afirma no tener grabaciones de vigilancia?",
+      "answer": "Envía una solicitud escrita de conservación al negocio —por correo certificado si es posible— de inmediato después del accidente, antes de que las grabaciones sean sobreescritas. Indica la fecha, hora y lugar del incidente y solicita que se conserven todas las grabaciones de las cámaras relevantes. Si tienes un abogado, puede enviar una carta formal de conservación en tu nombre, lo que crea una obligación legal de retener la evidencia."
+    },
+    {
+      "question": "¿Es demasiado tarde para recopilar evidencia si ya han pasado algunos días desde el accidente?",
+      "answer": "Es posible que parte de la evidencia ya se haya perdido, pero aún se puede obtener mucha. Los reportes policiales, registros médicos, registros laborales, información de contacto de testigos y tus propias fotografías de las lesiones tomadas en los días posteriores al accidente siguen siendo valiosas. Un abogado puede enviar cartas formales de conservación y solicitar mediante citación los registros a los que quizás no puedas acceder por tu cuenta."
+    }
+  ],
+  "relatedTools": ["accident-case-quiz", "record-request", "insurance-call-prep"],
+  "relatedGuides": ["after-car-accident", "getting-your-police-report"],
+  "relatedAccidents": ["car", "truck", "motorcycle", "slip-fall", "bicycle", "pedestrian"]
+}

@@ -39,7 +39,7 @@ export async function generateMetadata({
 
   let tool: ToolConfig
   try {
-    tool = cms.getTool(enSlug)
+    tool = cms.getTool(slug, 'es')
   } catch {
     return {}
   }
@@ -70,7 +70,7 @@ export default async function HerramientaDetailPage({
 
   let tool: ToolConfig
   try {
-    tool = cms.getTool(enSlug)
+    tool = cms.getTool(slug, 'es')
   } catch {
     notFound()
   }
