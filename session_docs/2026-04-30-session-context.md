@@ -2,8 +2,8 @@
 
 ## Where We Left Off (read this first in a new session)
 
-**Status: DEV-35 complete. Spanish tool pages live at `/es/herramientas/` and `/es/herramientas/[slug]`.**
-**Build: ~135 static pages. TypeScript clean. `main` at `886a833`.**
+**Status: DEV-37 complete + LanguageToggle multi-segment bug fixed.**
+**Build: ~155 static pages. TypeScript clean. `main` at `1eab17d`.**
 
 ---
 
@@ -13,7 +13,7 @@
 
 **Commits:** `159ea63`, `8c41373`, `6d575ca`
 
-*(Full notes in `2026-04-30-session-context.md` original — unchanged.)*
+*(Full notes in earlier session history.)*
 
 ---
 
@@ -21,65 +21,78 @@
 
 **Commit:** `84f7954`
 
-*(Full notes in `2026-04-30-session-context.md` original — unchanged.)*
+*(Full notes in earlier session history.)*
 
 ---
 
 ### DEV-35 — Spanish Tool Pages ✓ Complete
 
-**Commits:** `ba525ef`, `0af5e75`, `c9b57a3`, `d054fc1`, `1ef4b58`, `adc1be1`, `a28d397`, `baad482`, `72cd2b3`, `886a833`
+**Commits:** `ba525ef` → `886a833`
 
-**Files changed:**
-
-- `i18n/config.ts` — Added `TOOL_META_ES` map with Spanish title + description for all 11 tools (5 live + 6 coming-soon). Added 4 tool slug mappings: `urgency-checker → verificador-urgencia`, `injury-journal → diario-lesiones`, `lawyer-type-matcher → tipo-abogado`, `lost-wages-estimator → calculadora-salario`. (`accident-case-quiz → evaluacion-caso` and `evidence-checklist → lista-evidencia` already existed.)
-
-- `lib/cms.ts` — Extended `getTool(slug, locale='en')` and `getAllTools(locale='en')` with locale param; reads from `content/tools/es/` when `locale === 'es'`. Backward-compatible.
-
-- `app/(es)/es/herramientas/page.tsx` — Spanish tool index. Featured 2-col section + 3-col grid. Uses `SLUG_MAP_ES` for hrefs, `TOOL_META_ES` for Spanish titles/descriptions. Live vs. coming-soon distinction via `LAUNCH_SLUGS`. hreflang to `/tools`.
-
-- `app/(es)/es/herramientas/[slug]/page.tsx` — Spanish tool detail page. `generateStaticParams` maps 5 live EN slugs through `SLUG_MAP_ES`. Calls `cms.getTool(slug, 'es')` (Spanish URL slug passed directly, matches JSON filename in `content/tools/es/`). Uses `enSlug` (not `tool.slug`) to detect `injury-journal` for the `InjuryJournal` component. Passes `toolStrings = { cta: dict.cta, tools: dict.tools }` to `ToolEngine`. hreflang EN↔ES. `notranslate`. CTA → `/es/buscar-ayuda`.
-
-- `content/tools/es/*.json` — 5 files: `evaluacion-caso.json`, `verificador-urgencia.json`, `lista-evidencia.json`, `diario-lesiones.json`, `tipo-abogado.json`. All pass Zod validation. Step `id` fields and option `value` fields kept in English (output generators match on them). Only `question` text and option `label` text translated. Related arrays use English slugs.
-
-- `components/tools/ToolEngine.tsx` — Added `strings` optional prop (`ToolEngineStrings` interface: cta + tools namespaces). Added `usePathname` for locale detection. Generator lookup now falls back via `SLUG_MAP_EN[tool.slug]` when `tool.slug` is a Spanish slug. On ES path: overrides `result.cta.href` to `/es/buscar-ayuda` and `result.cta.label` to `strings.cta.getFreGuidance`.
-
-- `components/tools/ToolResults.tsx` — Added `strings` optional prop with English fallbacks. `ItemCard` now accepts `priorityLabels` prop (passed from `ToolResults`) instead of module-level constant.
-
-- `lib/tools/output-generators-es.ts` — New file. Spanish output generators for 5 live tools: `accident-case-quiz`, `urgency-checker`, `evidence-checklist`, `injury-journal`, `lawyer-type-matcher`. Hub links point to `/es/accidentes/*`. `ToolEngine` uses ES generators when `pathname.startsWith('/es/')`, falling back to English for any tool without an ES variant.
-
-- `components/tools/InjuryJournal.tsx` — Added `UI_EN`/`UI_ES` string tables and `SYMPTOM_OPTIONS_EN/ES` + `TREATMENT_OPTIONS_EN/ES` arrays. Detects locale via `usePathname`. All UI strings (tabs, headings, labels, placeholders, month names, weekday headers, aria-labels, date locale) switch based on path. `formatDate` now accepts a locale param.
-
-- `components/ui/DisclaimerBanner.tsx` — Added `locale?: 'en' | 'es'` prop (default `'en'`). Spanish text defined for all 4 variants (`default`, `intake`, `tool`, `state`). All 8 ES pages now pass `locale="es"`.
+*(Full notes in `docs/plans/PHASE-7-IMPLEMENTATIONS.md` DEV-35 section.)*
 
 ---
 
-**Bugs encountered and fixed in DEV-35:**
+### DEV-37 — Spanish State + City Pages ✓ Complete
 
-1. **404 on `/es/herramientas/evaluacion-caso`** — `metaDescription` was 163 chars (Zod max 160) → Zod threw → `catch { notFound() }`. Fixed: trimmed `evaluacion-caso` (163→155) and `tipo-abogado` (162→154).
+**Commits:** `60e1cfd`
 
-2. **"Results for this tool are coming soon."** — `outputGenerators[tool.slug]` failed because `tool.slug` was `'evaluacion-caso'` (Spanish) but map keys are English. Fixed: `SLUG_MAP_EN[tool.slug]` fallback in `ToolEngine.handleFinish`.
+**Files changed:**
 
-3. **"Get Free Guidance" CTA in English** — generator output hardcodes English label. Fixed: override `result.cta.label` on ES path with `strings.cta.getFreGuidance`.
+- `lib/cms.ts` — Added `locale?: 'en' | 'es'` param to `getState`, `getAllStates`, `getCity`, `getAllCities`, `getCitiesByState`. Backward-compatible (defaults to `'en'`). Reads from `content/states/es/` or `content/cities/es/` when `locale === 'es'`.
 
-4. **InjuryJournal component not rendering on `/es/herramientas/diario-lesiones`** — page checked `tool.slug === 'injury-journal'` but `tool.slug` is `'diario-lesiones'` on ES pages. Fixed: changed guard to `enSlug === 'injury-journal'`.
+- `content/states/es/california.json` + `arizona.json` — Full Spanish translations. Same slug, same enum values (`abbreviation: 'CA'/'AZ'`, `faultRule.type: 'pure_comparative'`). Legal citations kept in English. All Zod-validated.
 
-5. **InjuryJournal UI still in English** — all strings hardcoded. Fixed: full UI translation with `usePathname` locale detection.
+- `content/cities/es/*.json` — 16 files (10 CA + 6 AZ). Hospital names/addresses/phones unchanged (proper nouns). Court names/addresses unchanged. `description`, `commonAccidentTypes`, `notableCorridors`, `localNotes` translated. 8 files needed `metaDescription` trimming after initial Zod validation run. All pass CityDataSchema.
 
-6. **DisclaimerBanner still in English on all ES pages** — hardcoded text. Fixed: `locale` prop + Spanish text + `locale="es"` on all 8 ES pages.
+- `app/(es)/es/estados/page.tsx` — Spanish states index. Uses `cms.getAllStates('es')` and `cms.getCitiesByState(slug, 'es')`. hreflang to `/states`. `DisclaimerBanner locale="es" variant="state"`.
+
+- `app/(es)/es/estados/[estado]/page.tsx` — Spanish state detail. `generateStaticParams` from `cms.getAllStates('es')`. Param name `estado` (semantic). Fault rule labels in Spanish via `FAULT_RULE_LABELS` map. All section headings, stat labels, CTA in Spanish. hreflang EN↔ES. CTA → `/es/buscar-ayuda`.
+
+- `app/(es)/es/estados/[estado]/[ciudad]/page.tsx` — Spanish city detail. `generateStaticParams` from `cms.getAllCities('es')`. Param names `estado`/`ciudad`. Hospital ER badge shows "UR" (Urgencias). Court type labels rendered as-is from JSON. hreflang EN↔ES. CTA → `/es/buscar-ayuda?city={slug}`.
+
+**Slug invariant:** State and city slugs are identical in EN and ES (`california`, `arizona`, `los-angeles`, etc.). No entries needed in `SLUG_MAP_ES/EN`. `generateStaticParams` calls `cms.getAllStates('es')` directly — no slug mapping required.
+
+---
+
+### LanguageToggle multi-segment path bug ✓ Fixed
+
+**Commit:** `1eab17d`
+
+**File:** `components/layout/LanguageToggle.tsx`
+
+**Bug:** On pages with 2+ path segments after the prefix (e.g., `/states/arizona/gilbert`), `getEquivalentUrl` extracted only the first segment (`arizona`), looked it up in `SLUG_MAP_ES` (not found), and fell back to the section index (`/es/estados`) instead of the correct page (`/es/estados/arizona/gilbert`).
+
+**Fix:** Changed from `split('/')[0]` single-segment extraction to mapping ALL segments through the slug lookup, keeping untranslatable ones as-is:
+```ts
+// Before
+const slug = pathname.slice(enPrefix.length + 1).split('/')[0]
+const esSlug = SLUG_MAP_ES[slug]
+return esSlug ? `${esPrefix}/${esSlug}` : esPrefix  // ← dropped back to index on miss
+
+// After
+const segments = pathname.slice(enPrefix.length + 1).split('/')
+const translated = segments.map(seg => SLUG_MAP_ES[seg] ?? seg)  // ← keep-as-is on miss
+return `${esPrefix}/${translated.join('/')}`
+```
+
+**Effect:** All page types now translate correctly:
+- `/states/arizona/gilbert` → `/es/estados/arizona/gilbert` ✓ (fixed)
+- `/states/arizona` → `/es/estados/arizona` ✓ (fixed)
+- `/accidents/car-accident` → `/es/accidentes/accidente-auto` ✓ (unchanged)
+- `/es/estados/arizona/gilbert` → `/states/arizona/gilbert` ✓ (fixed)
 
 ---
 
 ## Where to Start Next Session
 
-**Next task: DEV-37 — Spanish State + City Pages**
+**Next task: DEV-36 — Sitemap + hreflang**
 
-- `app/(es)/es/estados/[state]/page.tsx` — 2 states (California, Arizona)
-- `app/(es)/es/estados/[state]/[city]/page.tsx` — 16 cities
-- `content/states/es/*.json` — 2 files
-- `content/cities/es/*.json` — 16 files
-- Extend `lib/cms.ts` with locale param for `getState`/`getCity`/`getCitiesByState`
+- Extend `app/sitemap.ts` to include all ES routes (`/es/accidentes/*`, `/es/guias/*`, `/es/lesiones/*`, `/es/herramientas/*`, `/es/estados/*`, `/es/estados/*/[ciudad]`)
+- Add `lib/hreflang.ts` helper (or inline) to generate consistent alternates
+- Verify all EN routes already in sitemap
 
-**After DEV-37:** DEV-36 (extend `app/sitemap.ts` + `lib/hreflang.ts` helper)
+**After DEV-36:** Tier 2 fully complete. Launch checklist: GA4/Clarity, Domain/DNS.
 
 ---
 
@@ -95,11 +108,11 @@
 | DEV-34 | 7C | ✓ Complete — Spanish guide pages (14 guides) + `/es/guias` index |
 | DEV-34B | 7C | ✓ Complete — Spanish injury pages (7 types) + `/es/lesiones` index |
 | DEV-35 | 7C | ✓ Complete — Spanish tool pages (5 live) + `/es/herramientas` index |
-| DEV-37 | 7C | Not started — Spanish state + city pages (2 states, 16 cities) |
+| DEV-37 | 7C | ✓ Complete — Spanish state + city pages (2 states, 16 cities) |
 | DEV-36 | 7D | Not started — hreflang + sitemap |
 
 **Tier 1 (launch minimum):** DEV-29–32 — ✓ ALL COMPLETE
-**Tier 2 (full bilingual):** all 10 tasks — 8/10 complete
+**Tier 2 (full bilingual):** all 10 tasks — **9/10 complete**
 
 ---
 
@@ -108,13 +121,21 @@
 ### Adding a new Spanish content page type
 
 1. Extend `lib/cms.ts` with `locale` param on the relevant getter — reads from `content/{type}/es/` when `locale === 'es'`
-2. `generateStaticParams` — map EN slugs from `SLUG_MAP_ES`
+2. `generateStaticParams` — map EN slugs from `SLUG_MAP_ES` (or call `cms.getAll*(locale='es')` directly when slugs are the same in both languages)
 3. `generateMetadata` — hreflang `languages: { en, es, 'x-default' }` + `other: { google: 'notranslate' }`
 4. Related sidebar links — render Spanish slugs directly; use lookup table from `NAV_*` config for display labels
 5. CTA always → `/es/buscar-ayuda`
 6. Breadcrumb `variant="dark"` on `bg-primary-900` heroes
-7. JSON files — Spanish slugs in all related arrays
+7. JSON files — Spanish slugs in all related arrays (except states/cities which share EN slugs)
 8. Run Zod validation before committing (metaTitle ≤70, metaDescription 120–160)
+
+### State + city slug invariant
+
+State and city slugs are identical in EN and ES (`california`, `arizona`, `los-angeles`, etc.). Do NOT add them to `SLUG_MAP_ES/EN`. `generateStaticParams` calls `cms.getAllStates('es')` / `cms.getAllCities('es')` directly. `LanguageToggle` passes unknown segments through as-is (after the multi-segment fix).
+
+### LanguageToggle path translation
+
+`getEquivalentUrl` maps ALL path segments after the prefix through `SLUG_MAP_ES/EN`, keeping untranslatable segments unchanged. This means state/city pages translate correctly without entries in the slug map. Do NOT revert to the single-segment pattern.
 
 ### Client components + translations
 
@@ -134,7 +155,7 @@ Server component. Pass `locale="es"` from every ES page. All 4 variant texts hav
 
 ### Zod validation pitfall
 
-`catch { notFound() }` in ES detail pages fires on ANY Zod parse failure — including `metaDescription` over 160 chars. Always validate all 5 metric constraints before committing JSON: `metaTitle ≤70`, `metaDescription 120–160`, `description ≥100`, `supportingContent ≥4` (each `content ≥150`), `faq ≥3` (each `answer ≥50`).
+`catch { notFound() }` in ES detail pages fires on ANY Zod parse failure — including `metaDescription` over 160 chars. Always validate all metric constraints before committing JSON. Use the `validate-es.ts` script pattern (write a temp file, run `npx tsx validate-es.ts`, delete it).
 
 ---
 
@@ -144,8 +165,8 @@ Server component. Pass `locale="es"` from every ES page. All 4 variant texts hav
 |------|--------|
 | Next.js 14 App Router | ✓ |
 | TypeScript strict | ✓ (zero errors) |
-| Static pages | ✓ ~135 |
-| Spanish i18n | 🔄 DEV-29–35 done; DEV-37/36 remaining |
+| Static pages | ✓ ~155 |
+| Spanish i18n | 🔄 DEV-29–37 done; DEV-36 (sitemap) remaining |
 | Attorney content review | ✗ Pending |
 | GA4 / Clarity | ✗ Pending Michael |
 | Domain/DNS | ✗ Pending Michael |

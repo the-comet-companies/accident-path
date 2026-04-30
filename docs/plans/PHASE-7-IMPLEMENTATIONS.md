@@ -2,7 +2,7 @@
 
 > **Purpose:** Authoritative record of what was actually built vs. what the plan specified. Use this alongside `PHASE-7-SPANISH-PLAN.md` when implementing DEV-33 through DEV-36.
 >
-> Last updated: April 30, 2026 — covers DEV-29 through DEV-35
+> Last updated: April 30, 2026 — covers DEV-29 through DEV-37 + LanguageToggle multi-segment fix
 
 ---
 
@@ -20,7 +20,7 @@ DEV-29 through DEV-34B are all merged to `main`. The site is fully bilingual at:
 
 Vercel auto-deploys from `main`. Build: **~135 static pages**, TypeScript clean.
 
-**Tier 2 progress: 8 of 10 tasks complete.** Remaining: DEV-37 (states/cities), DEV-36 (sitemap).
+**Tier 2 progress: 9 of 10 tasks complete.** Remaining: DEV-36 (sitemap).
 
 ---
 
@@ -351,11 +351,75 @@ When `cms.getTool(slug, 'es')` is called with a Spanish URL slug, the returned `
 
 ---
 
+## DEV-37 — Spanish State + City Pages (Complete)
+
+| File | Action | Notes |
+|------|--------|-------|
+| `lib/cms.ts` | Modified | Added `locale?: 'en' \| 'es'` param to `getState`, `getAllStates`, `getCity`, `getAllCities`, `getCitiesByState`. Backward-compatible (defaults to `'en'`). Reads from `content/states/es/` or `content/cities/es/` when `locale === 'es'`. |
+| `content/states/es/california.json` | Created | Spanish state file. metaTitle 52 chars, metaDescription 155 chars. `faultRule.type: "pure_comparative"` (enum kept in English). `abbreviation: "CA"`. Legal citations kept in English. Zod-validated. |
+| `content/states/es/arizona.json` | Created | Spanish state file. metaTitle 49 chars. Same enum invariants as California. |
+| `content/cities/es/*.json` | Created | 16 files — 10 CA cities (los-angeles, san-diego, san-francisco, san-jose, fresno, long-beach, oakland, bakersfield, anaheim, sacramento) + 6 AZ cities (phoenix, mesa, chandler, scottsdale, gilbert, tucson). Hospital names/addresses/phones and court names/addresses kept unchanged (proper nouns). `description`, `commonAccidentTypes`, `notableCorridors`, `localNotes` translated. 8 files needed `metaDescription` trimming after Zod validation (161–176 chars → ≤160). All pass `CityDataSchema`. |
+| `app/(es)/es/estados/page.tsx` | Created | Spanish states index. Uses `cms.getAllStates('es')` and `cms.getCitiesByState(state.slug, 'es')`. hreflang to `/states`. `DisclaimerBanner locale="es" variant="state"`. |
+| `app/(es)/es/estados/[estado]/page.tsx` | Created | Spanish state detail. `generateStaticParams` calls `cms.getAllStates('es')` directly (slug invariant — no SLUG_MAP needed). Fault rule enum values translated via `FAULT_RULE_LABELS` map in the component. All section headings, stat labels, CTA in Spanish. hreflang EN↔ES. CTA → `/es/buscar-ayuda`. |
+| `app/(es)/es/estados/[estado]/[ciudad]/page.tsx` | Created | Spanish city detail. `generateStaticParams` calls `cms.getAllCities('es')`. Param names `estado`/`ciudad`. Hospital ER badge shows "UR" (Urgencias). hreflang EN↔ES. CTA → `/es/buscar-ayuda?city={slug}`. |
+
+**Slug invariant:** State and city slugs are identical in EN and ES (`california`, `arizona`, `los-angeles`, etc.). Do NOT add them to `SLUG_MAP_ES/EN`. `generateStaticParams` calls `cms.getAllStates/Cities('es')` directly. `LanguageToggle` passes unknown segments through as-is.
+
+**`FAULT_RULE_LABELS` pattern:** `StateDataSchema` uses `z.enum(['pure_comparative', 'modified_comparative', 'contributory', 'no_fault'])`. JSON files must use these English enum values. The `[estado]/page.tsx` component translates them with a local map:
+```ts
+const FAULT_RULE_LABELS: Record<string, string> = {
+  pure_comparative: 'Culpa Comparativa Pura',
+  modified_comparative: 'Culpa Comparativa Modificada',
+  contributory: 'Negligencia Contributiva',
+  no_fault: 'Sin Culpa',
+}
+```
+
+**8-file `metaDescription` trimming:** After generating all 16 city files, Zod validation failed on 8 (anaheim, bakersfield, chandler, gilbert, mesa, oakland, san-francisco, scottsdale) with values 161–176 chars. Fixed by removing trailing phrases to bring each to ≤160. Always run `validate-es.ts` before committing city JSON.
+
+**Build result:** ~155 static pages (up from ~135)
+
+---
+
+## LanguageToggle Multi-Segment Path Bug Fix
+
+**Commit:** `1eab17d`  
+**File:** `components/layout/LanguageToggle.tsx`
+
+**Bug:** On pages with 2+ path segments after the prefix (e.g., `/states/arizona/gilbert`), `getEquivalentUrl` extracted only the first segment (`arizona`), looked it up in `SLUG_MAP_ES` (not found — state slugs are not in the map), and fell back to the section index (`/es/estados`).
+
+**Root cause:**
+```ts
+// Before (broken)
+const slug = pathname.slice(enPrefix.length + 1).split('/')[0]
+const esSlug = SLUG_MAP_ES[slug]
+return esSlug ? `${esPrefix}/${esSlug}` : esPrefix  // ← fell back to index on miss
+```
+
+**Fix:**
+```ts
+// After (fixed)
+const segments = pathname.slice(enPrefix.length + 1).split('/')
+const translated = segments.map(seg => SLUG_MAP_ES[seg] ?? seg)  // ← keep-as-is on miss
+return `${esPrefix}/${translated.join('/')}`
+```
+
+Same pattern applied for the ES→EN direction.
+
+**Effect — all page types now translate correctly:**
+- `/states/arizona/gilbert` → `/es/estados/arizona/gilbert` ✓ (was broken)
+- `/states/arizona` → `/es/estados/arizona` ✓ (was broken)
+- `/accidents/car-accident` → `/es/accidentes/accidente-auto` ✓ (unchanged — slug in map)
+- `/es/estados/arizona/gilbert` → `/states/arizona/gilbert` ✓ (was broken)
+
+**Invariant going forward:** Do NOT revert to the single-segment pattern. The keep-as-is fallback (`?? seg`) means any segment not in the slug map passes through unchanged — this is correct behavior for state/city slugs (which are identical in both languages) and any future content type that shares slugs.
+
+---
+
 ## Remaining Tasks (Tier 2)
 
 | Task | Routes to create | Files to change |
 |------|-----------------|------------------------|
-| DEV-37 | `app/(es)/es/estados/[state]/page.tsx` + `[state]/[city]/page.tsx` | `content/states/es/*.json` (2 files) + `content/cities/es/*.json` (16 files); extend `lib/cms.ts` `getState`/`getCity`/`getCitiesByState` with `locale` param |
 | DEV-36 | Extend `app/sitemap.ts` | Add `lib/hreflang.ts` helper |
 
 For full specs of each task, see `docs/plans/PHASE-7-SPANISH-PLAN.md`.
