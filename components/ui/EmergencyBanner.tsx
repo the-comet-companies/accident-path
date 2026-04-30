@@ -23,7 +23,7 @@ export function EmergencyBanner({ locale = 'en' }: EmergencyBannerProps) {
         aria-live="polite"
         className="bg-danger-50 border-b border-danger-500 px-4 py-2"
       >
-        <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
+        <div className="max-w-7xl mx-auto relative flex items-center justify-center">
           <div className="flex items-center gap-2 text-sm text-neutral-950">
             {/* Phone icon via SVG — server component can't import lucide */}
             <svg
@@ -68,7 +68,7 @@ export function EmergencyBanner({ locale = 'en' }: EmergencyBannerProps) {
               )}
             </span>
           </div>
-          <EmergencyDismissButton />
+          <div className="absolute right-0"><EmergencyDismissButton /></div>
         </div>
       </div>
     </>

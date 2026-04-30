@@ -4,7 +4,6 @@ import { useState, useEffect, useRef, useCallback } from 'react'
 import Link from 'next/link'
 import { Menu, X, ChevronDown, ChevronRight } from 'lucide-react'
 import { CTAButton } from '@/components/ui/CTAButton'
-import { LanguageToggle } from '@/components/layout/LanguageToggle'
 import {
   NAV_ACCIDENT_TYPES,
   NAV_SIMPLE_LINKS,
@@ -241,10 +240,6 @@ export function MobileNav({ locale = 'en' }: MobileNavProps) {
             )}
           </div>
 
-          {/* Language toggle */}
-          <div className="border-t border-neutral-100 pt-3 mt-1">
-            <LanguageToggle />
-          </div>
         </nav>
 
         {/* Drawer footer CTA */}

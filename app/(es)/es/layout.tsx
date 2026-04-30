@@ -4,6 +4,7 @@ import Link from "next/link";
 import "../../globals.css";
 import { Header } from "@/components/layout/Header";
 import { MobileNav } from "@/components/layout/MobileNav";
+import { LanguageToggle } from "@/components/layout/LanguageToggle";
 import { Footer } from "@/components/layout/Footer";
 import { EmergencyBanner } from "@/components/ui/EmergencyBanner";
 import { SchemaOrg } from "@/components/seo/SchemaOrg";
@@ -68,7 +69,10 @@ export default async function EsLayout({
                 Accident<span className="text-amber-500">Path</span>
               </span>
             </Link>
-            <MobileNav locale="es" />
+            <div className="flex items-center gap-2">
+              <LanguageToggle />
+              <MobileNav locale="es" />
+            </div>
           </div>
         </div>
         <main className="flex-1 pb-20 lg:pb-0">{children}</main>
