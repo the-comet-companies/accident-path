@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 import { ArrowRight, Shield, Clock, Wrench } from 'lucide-react'
 import { cms } from '@/lib/cms'
 import { getDictionary } from '@/i18n/dictionaries'
-import { SLUG_MAP_ES, SLUG_MAP_EN } from '@/i18n/config'
+import { SLUG_MAP_ES, SLUG_MAP_EN, TOOL_META_ES } from '@/i18n/config'
 import type { ToolConfig } from '@/types/tool'
 import { Breadcrumb } from '@/components/layout/Breadcrumb'
 import { CTAButton } from '@/components/ui/CTAButton'
@@ -80,6 +80,7 @@ export default async function HerramientaDetailPage({
     cta: dict.cta,
     tools: dict.tools,
   }
+  const esMeta = TOOL_META_ES[enSlug]
 
   const isLive = TOOL_EN_SLUGS.includes(enSlug)
 
@@ -94,10 +95,10 @@ export default async function HerramientaDetailPage({
             />
             <div className="mt-4 max-w-2xl">
               <h1 className="font-sans font-bold text-3xl sm:text-4xl lg:text-5xl text-white leading-tight">
-                {tool.title}
+                {esMeta?.title ?? tool.title}
               </h1>
               <p className="mt-4 text-primary-200 text-lg leading-relaxed font-serif">
-                {tool.description}
+                {esMeta?.description ?? tool.description}
               </p>
             </div>
           </div>
@@ -146,10 +147,10 @@ export default async function HerramientaDetailPage({
           />
           <div className="mt-4 max-w-2xl">
             <h1 className="font-sans font-bold text-3xl sm:text-4xl lg:text-5xl text-white leading-tight">
-              {tool.title}
+              {esMeta?.title ?? tool.title}
             </h1>
             <p className="mt-4 text-primary-200 text-lg leading-relaxed font-serif">
-              {tool.description}
+              {esMeta?.description ?? tool.description}
             </p>
             <p className="mt-4 text-primary-400 text-xs leading-relaxed">{tool.disclaimer}</p>
           </div>

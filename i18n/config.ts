@@ -50,6 +50,31 @@ export const SLUG_MAP_EN: Record<string, string> = Object.fromEntries(
   Object.entries(SLUG_MAP_ES).map(([en, es]) => [es, en])
 )
 
+// Spanish title + description for tool cards and detail page heroes.
+// Step questions stay in English (tool content not yet translated).
+export const TOOL_META_ES: Record<string, { title: string; description: string }> = {
+  'accident-case-quiz': {
+    title: '¿Qué Tipo de Caso de Accidente Tengo?',
+    description: 'Diferentes accidentes dan lugar a distintos tipos de reclamos de lesiones personales, cada uno con sus propias reglas y plazos. Esta evaluación le ayuda a entender su tipo de caso.',
+  },
+  'urgency-checker': {
+    title: '¿Necesito Atención Médica Ahora?',
+    description: 'Después de un accidente, la adrenalina y el shock pueden ocultar lesiones serias. Esta herramienta educativa le ayuda a evaluar sus síntomas y decidir si necesita atención inmediata.',
+  },
+  'evidence-checklist': {
+    title: 'Lista de Recopilación de Evidencia',
+    description: 'La evidencia que recopila — o deja de recopilar — en las horas y días después de un accidente puede ser crucial para su caso. Esta lista le guía paso a paso.',
+  },
+  'injury-journal': {
+    title: 'Diario de Lesiones y Tratamiento',
+    description: 'Documentar sus lesiones consistentemente desde el día del accidente hasta su recuperación crea un registro que puede fortalecer su reclamo.',
+  },
+  'lawyer-type-matcher': {
+    title: 'Identificador de Tipo de Abogado',
+    description: 'No todos los abogados de lesiones personales manejan todos los tipos de casos. Algunos se especializan en vehículos de motor, otros en responsabilidad de locales. Encuentre el tipo correcto.',
+  },
+}
+
 export const NAV_ACCIDENT_TYPES = {
   en: [
     { label: 'Car Accidents', href: '/accidents/car' },

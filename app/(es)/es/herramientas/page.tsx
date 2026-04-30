@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Wrench } from 'lucide-react'
 import { cms } from '@/lib/cms'
-import { SLUG_MAP_ES } from '@/i18n/config'
+import { SLUG_MAP_ES, TOOL_META_ES } from '@/i18n/config'
 import { Breadcrumb } from '@/components/layout/Breadcrumb'
 import { SchemaOrg } from '@/components/seo/SchemaOrg'
 import { breadcrumbSchema } from '@/lib/seo'
@@ -84,6 +84,7 @@ export default function HerramientasPage() {
                 <div className="grid sm:grid-cols-2 gap-4">
                   {featuredTools.map(tool => {
                     const esSlug = SLUG_MAP_ES[tool.slug] ?? tool.slug
+                    const esMeta = TOOL_META_ES[tool.slug]
                     return (
                       <Link
                         key={tool.slug}
@@ -94,10 +95,10 @@ export default function HerramientasPage() {
                           <span aria-hidden="true">★</span> Más Útil
                         </div>
                         <h2 className="font-sans font-bold text-white text-lg leading-snug mb-2 group-hover:text-amber-100 transition-colors">
-                          {tool.title}
+                          {esMeta?.title ?? tool.title}
                         </h2>
                         <p className="text-primary-300 text-sm leading-relaxed mb-4 line-clamp-2">
-                          {tool.description}
+                          {esMeta?.description ?? tool.description}
                         </p>
                         <div className="flex items-center justify-between">
                           <span className="text-primary-400 text-xs">
@@ -126,6 +127,7 @@ export default function HerramientasPage() {
                   {gridTools.map(tool => {
                     const isLive = LAUNCH_SLUGS.includes(tool.slug)
                     const esSlug = SLUG_MAP_ES[tool.slug] ?? tool.slug
+                    const esMeta = TOOL_META_ES[tool.slug]
                     return (
                       <div
                         key={tool.slug}
@@ -147,10 +149,10 @@ export default function HerramientasPage() {
                         </div>
                         <div className="flex flex-col gap-1 flex-1">
                           <h2 className="font-sans font-semibold text-neutral-950 text-sm leading-snug">
-                            {tool.title}
+                            {esMeta?.title ?? tool.title}
                           </h2>
                           <p className="text-neutral-500 text-xs leading-relaxed line-clamp-2">
-                            {tool.description}
+                            {esMeta?.description ?? tool.description}
                           </p>
                         </div>
                         <div className="flex items-center justify-between">
