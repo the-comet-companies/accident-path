@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { usePathname } from 'next/navigation'
 import { Printer, ChevronLeft, ChevronRight, ChevronDown, ChevronUp } from 'lucide-react'
 import type { ToolConfig } from '@/types/tool'
 
@@ -21,7 +22,7 @@ interface InjuryJournalProps {
 
 const STORAGE_KEY = 'ap-injury-journal'
 
-const SYMPTOM_OPTIONS = [
+const SYMPTOM_OPTIONS_EN = [
   { value: 'headache', label: 'Headache' },
   { value: 'neck-pain', label: 'Neck pain or stiffness' },
   { value: 'back-pain', label: 'Back pain' },
@@ -35,7 +36,21 @@ const SYMPTOM_OPTIONS = [
   { value: 'limited-range-of-motion', label: 'Limited range of motion' },
 ]
 
-const TREATMENT_OPTIONS = [
+const SYMPTOM_OPTIONS_ES = [
+  { value: 'headache', label: 'Dolor de cabeza' },
+  { value: 'neck-pain', label: 'Dolor o rigidez en el cuello' },
+  { value: 'back-pain', label: 'Dolor de espalda' },
+  { value: 'dizziness', label: 'Mareos o vértigo' },
+  { value: 'nausea', label: 'Náuseas' },
+  { value: 'numbness-tingling', label: 'Entumecimiento u hormigueo' },
+  { value: 'sleep-disruption', label: 'Alteraciones del sueño' },
+  { value: 'anxiety-depression', label: 'Ansiedad o depresión' },
+  { value: 'difficulty-concentrating', label: 'Dificultad para concentrarse' },
+  { value: 'fatigue', label: 'Fatiga o poca energía' },
+  { value: 'limited-range-of-motion', label: 'Rango de movimiento limitado' },
+]
+
+const TREATMENT_OPTIONS_EN = [
   { value: 'doctor-visit', label: 'Doctor visit' },
   { value: 'physical-therapy', label: 'Physical therapy' },
   { value: 'chiropractic', label: 'Chiropractic care' },
@@ -46,6 +61,85 @@ const TREATMENT_OPTIONS = [
   { value: 'imaging', label: 'Imaging (X-ray, MRI, CT)' },
 ]
 
+const TREATMENT_OPTIONS_ES = [
+  { value: 'doctor-visit', label: 'Visita al médico' },
+  { value: 'physical-therapy', label: 'Fisioterapia' },
+  { value: 'chiropractic', label: 'Atención quiropráctica' },
+  { value: 'medication', label: 'Medicación' },
+  { value: 'er-urgent-care', label: 'Sala de emergencias o urgencias' },
+  { value: 'mental-health', label: 'Terapia de salud mental' },
+  { value: 'massage', label: 'Terapia de masaje' },
+  { value: 'imaging', label: 'Estudios de imagen (Rayos X, MRI, TC)' },
+]
+
+const UI_EN = {
+  tabs: { list: 'Log', calendar: 'Calendar', add: 'Add Entry' },
+  listHeading: 'Journal Entries',
+  print: 'Print',
+  printLabel: 'Print journal',
+  empty: 'No entries yet. Add your first entry to start tracking.',
+  addEntry: 'Add Entry',
+  pain: (n: number) => `Pain: ${n}/10`,
+  sections: { symptoms: 'Symptoms', treatments: 'Treatments', medications: 'Medications', limitations: 'Limitations', notes: 'Notes' },
+  form: {
+    heading: 'Add Journal Entry',
+    date: 'Date',
+    painLevel: 'Pain Level',
+    painLevelHint: '(select 1–10)',
+    painLevelAriaLabel: 'Pain level 1 to 10',
+    symptoms: 'Symptoms',
+    treatments: 'Treatments Today',
+    medications: 'Medications',
+    medicationsPlaceholder: 'List medications taken today',
+    limitations: 'Limitations',
+    limitationsPlaceholder: "Activities you couldn't do today",
+    notes: 'Additional Notes',
+    notesPlaceholder: 'Additional notes about today',
+    cancel: 'Cancel',
+    save: 'Save Entry',
+  },
+  months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+  weekdays: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+  prevMonth: 'Previous month',
+  nextMonth: 'Next month',
+  hasEntry: 'has entry',
+  locale: 'en-US',
+}
+
+const UI_ES = {
+  tabs: { list: 'Registro', calendar: 'Calendario', add: 'Agregar Entrada' },
+  listHeading: 'Entradas del Diario',
+  print: 'Imprimir',
+  printLabel: 'Imprimir diario',
+  empty: 'Sin entradas aún. Agregue su primera entrada para comenzar.',
+  addEntry: 'Agregar Entrada',
+  pain: (n: number) => `Dolor: ${n}/10`,
+  sections: { symptoms: 'Síntomas', treatments: 'Tratamientos', medications: 'Medicamentos', limitations: 'Limitaciones', notes: 'Notas' },
+  form: {
+    heading: 'Agregar Entrada al Diario',
+    date: 'Fecha',
+    painLevel: 'Nivel de Dolor',
+    painLevelHint: '(seleccione 1–10)',
+    painLevelAriaLabel: 'Nivel de dolor del 1 al 10',
+    symptoms: 'Síntomas',
+    treatments: 'Tratamientos de Hoy',
+    medications: 'Medicamentos',
+    medicationsPlaceholder: 'Liste los medicamentos tomados hoy',
+    limitations: 'Limitaciones',
+    limitationsPlaceholder: 'Actividades que no pudo realizar hoy',
+    notes: 'Notas Adicionales',
+    notesPlaceholder: 'Notas adicionales sobre el día de hoy',
+    cancel: 'Cancelar',
+    save: 'Guardar Entrada',
+  },
+  months: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+  weekdays: ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'],
+  prevMonth: 'Mes anterior',
+  nextMonth: 'Mes siguiente',
+  hasEntry: 'tiene entrada',
+  locale: 'es-ES',
+}
+
 function getTodayString(): string {
   const d = new Date()
   const year = d.getFullYear()
@@ -54,11 +148,10 @@ function getTodayString(): string {
   return `${year}-${month}-${day}`
 }
 
-function formatDate(dateStr: string): string {
-  // Parse as local date to avoid timezone shift
+function formatDate(dateStr: string, locale: string): string {
   const [year, month, day] = dateStr.split('-').map(Number)
   const d = new Date(year, month - 1, day)
-  return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
+  return d.toLocaleDateString(locale, { year: 'numeric', month: 'long', day: 'numeric' })
 }
 
 function getPainBadgeClass(level: number): string {
@@ -75,12 +168,12 @@ function getFirstDayOfWeek(year: number, month: number): number {
   return new Date(year, month, 1).getDay()
 }
 
-const MONTH_NAMES = [
-  'January', 'February', 'March', 'April', 'May', 'June',
-  'July', 'August', 'September', 'October', 'November', 'December',
-]
-
 export function InjuryJournal({ tool }: InjuryJournalProps) {
+  const pathname = usePathname()
+  const isEs = pathname.startsWith('/es/')
+  const ui = isEs ? UI_ES : UI_EN
+  const SYMPTOM_OPTIONS = isEs ? SYMPTOM_OPTIONS_ES : SYMPTOM_OPTIONS_EN
+  const TREATMENT_OPTIONS = isEs ? TREATMENT_OPTIONS_ES : TREATMENT_OPTIONS_EN
   const [entries, setEntries] = useState<JournalEntry[]>(() => {
     if (typeof window === 'undefined') return []
     try {
@@ -226,7 +319,7 @@ export function InjuryJournal({ tool }: InjuryJournalProps) {
                 : 'bg-neutral-100 text-neutral-600 hover:bg-neutral-200'
             }`}
           >
-            {v === 'list' ? 'Log' : v === 'calendar' ? 'Calendar' : 'Add Entry'}
+            {v === 'list' ? ui.tabs.list : v === 'calendar' ? ui.tabs.calendar : ui.tabs.add}
           </button>
         ))}
       </div>
@@ -235,29 +328,29 @@ export function InjuryJournal({ tool }: InjuryJournalProps) {
       {view === 'list' && (
         <div className="flex flex-col gap-4">
           <div className="flex items-center justify-between">
-            <h2 className="font-sans font-bold text-xl text-neutral-950">Journal Entries</h2>
+            <h2 className="font-sans font-bold text-xl text-neutral-950">{ui.listHeading}</h2>
             <button
               type="button"
               onClick={() => typeof window !== 'undefined' && window.print()}
               className="print-hide flex items-center gap-1.5 px-3 py-2 rounded-lg border border-neutral-200 bg-surface-card text-sm text-neutral-600 hover:bg-neutral-100 transition-colors"
-              aria-label="Print journal"
+              aria-label={ui.printLabel}
             >
               <Printer className="w-4 h-4" aria-hidden="true" />
-              Print
+              {ui.print}
             </button>
           </div>
 
           {sortedEntries.length === 0 ? (
             <div className="rounded-xl border border-neutral-100 bg-surface-card p-8 text-center">
               <p className="text-neutral-500 text-sm mb-4">
-                No entries yet. Add your first entry to start tracking.
+                {ui.empty}
               </p>
               <button
                 type="button"
                 onClick={() => handleAddView()}
                 className="px-5 py-2.5 rounded-xl bg-primary-600 text-white font-sans font-semibold text-sm hover:bg-primary-700 transition-colors"
               >
-                Add Entry
+                {ui.addEntry}
               </button>
             </div>
           ) : (
@@ -281,12 +374,12 @@ export function InjuryJournal({ tool }: InjuryJournalProps) {
                   >
                     <div className="flex items-center gap-3 min-w-0">
                       <span className="font-sans font-semibold text-sm text-neutral-950 shrink-0">
-                        {formatDate(entry.date)}
+                        {formatDate(entry.date, ui.locale)}
                       </span>
                       <span
                         className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold font-sans shrink-0 ${getPainBadgeClass(entry.painLevel)}`}
                       >
-                        Pain: {entry.painLevel}/10
+                        {ui.pain(entry.painLevel)}
                       </span>
                     </div>
                     {expandedIds.has(entry.id) ? (
@@ -301,7 +394,7 @@ export function InjuryJournal({ tool }: InjuryJournalProps) {
                       {entry.symptoms.length > 0 && (
                         <div>
                           <p className="text-xs font-sans font-semibold text-neutral-500 uppercase tracking-wide mb-1">
-                            Symptoms
+                            {ui.sections.symptoms}
                           </p>
                           <p className="text-sm text-neutral-700">
                             {entry.symptoms
@@ -316,7 +409,7 @@ export function InjuryJournal({ tool }: InjuryJournalProps) {
                       {entry.treatments.length > 0 && (
                         <div>
                           <p className="text-xs font-sans font-semibold text-neutral-500 uppercase tracking-wide mb-1">
-                            Treatments
+                            {ui.sections.treatments}
                           </p>
                           <p className="text-sm text-neutral-700">
                             {entry.treatments
@@ -331,7 +424,7 @@ export function InjuryJournal({ tool }: InjuryJournalProps) {
                       {entry.medications && (
                         <div>
                           <p className="text-xs font-sans font-semibold text-neutral-500 uppercase tracking-wide mb-1">
-                            Medications
+                            {ui.sections.medications}
                           </p>
                           <p className="text-sm text-neutral-700">{entry.medications}</p>
                         </div>
@@ -339,7 +432,7 @@ export function InjuryJournal({ tool }: InjuryJournalProps) {
                       {entry.limitations && (
                         <div>
                           <p className="text-xs font-sans font-semibold text-neutral-500 uppercase tracking-wide mb-1">
-                            Limitations
+                            {ui.sections.limitations}
                           </p>
                           <p className="text-sm text-neutral-700">{entry.limitations}</p>
                         </div>
@@ -347,7 +440,7 @@ export function InjuryJournal({ tool }: InjuryJournalProps) {
                       {entry.notes && (
                         <div>
                           <p className="text-xs font-sans font-semibold text-neutral-500 uppercase tracking-wide mb-1">
-                            Notes
+                            {ui.sections.notes}
                           </p>
                           <p className="text-sm text-neutral-700">{entry.notes}</p>
                         </div>
@@ -371,18 +464,18 @@ export function InjuryJournal({ tool }: InjuryJournalProps) {
                 type="button"
                 onClick={prevMonth}
                 className="p-1.5 rounded-lg hover:bg-neutral-100 transition-colors"
-                aria-label="Previous month"
+                aria-label={ui.prevMonth}
               >
                 <ChevronLeft className="w-5 h-5 text-neutral-600" aria-hidden="true" />
               </button>
               <h2 className="font-sans font-bold text-base text-neutral-950">
-                {MONTH_NAMES[calendarMonth.month]} {calendarMonth.year}
+                {ui.months[calendarMonth.month]} {calendarMonth.year}
               </h2>
               <button
                 type="button"
                 onClick={nextMonth}
                 className="p-1.5 rounded-lg hover:bg-neutral-100 transition-colors"
-                aria-label="Next month"
+                aria-label={ui.nextMonth}
               >
                 <ChevronRight className="w-5 h-5 text-neutral-600" aria-hidden="true" />
               </button>
@@ -390,7 +483,7 @@ export function InjuryJournal({ tool }: InjuryJournalProps) {
 
             {/* Day-of-week headers */}
             <div className="grid grid-cols-7 mb-2">
-              {['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].map(d => (
+              {ui.weekdays.map(d => (
                 <div
                   key={d}
                   className="text-center text-xs font-sans font-semibold text-neutral-500 py-1"
@@ -427,7 +520,7 @@ export function InjuryJournal({ tool }: InjuryJournalProps) {
                           ? 'ring-2 ring-primary-600 font-bold text-primary-700'
                           : 'text-neutral-700'
                       }`}
-                      aria-label={`${dateStr}${hasEntry ? ' — has entry' : ''}`}
+                      aria-label={`${dateStr}${hasEntry ? ` — ${ui.hasEntry}` : ''}`}
                     >
                       <span>{dayNum}</span>
                       {hasEntry && (
@@ -448,12 +541,12 @@ export function InjuryJournal({ tool }: InjuryJournalProps) {
       {/* Add Entry Form */}
       {view === 'add' && (
         <div className="rounded-xl border border-neutral-100 bg-surface-card p-6 shadow-sm flex flex-col gap-6">
-          <h2 className="font-sans font-bold text-xl text-neutral-950">Add Journal Entry</h2>
+          <h2 className="font-sans font-bold text-xl text-neutral-950">{ui.form.heading}</h2>
 
           {/* Date */}
           <div className="flex flex-col gap-1.5">
             <label htmlFor="entry-date" className="font-sans font-semibold text-sm text-neutral-700">
-              Date
+              {ui.form.date}
             </label>
             <input
               id="entry-date"
@@ -468,11 +561,11 @@ export function InjuryJournal({ tool }: InjuryJournalProps) {
           {/* Pain level */}
           <div className="flex flex-col gap-2">
             <p className="font-sans font-semibold text-sm text-neutral-700">
-              Pain Level <span className="text-neutral-400 font-normal">(select 1–10)</span>
+              {ui.form.painLevel} <span className="text-neutral-400 font-normal">{ui.form.painLevelHint}</span>
             </p>
             <div
               role="group"
-              aria-label="Pain level 1 to 10"
+              aria-label={ui.form.painLevelAriaLabel}
               className="flex flex-wrap gap-2"
             >
               {Array.from({ length: 10 }, (_, i) => i + 1).map(n => (
@@ -495,7 +588,7 @@ export function InjuryJournal({ tool }: InjuryJournalProps) {
 
           {/* Symptoms */}
           <div className="flex flex-col gap-2">
-            <p className="font-sans font-semibold text-sm text-neutral-700">Symptoms</p>
+            <p className="font-sans font-semibold text-sm text-neutral-700">{ui.form.symptoms}</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
               {SYMPTOM_OPTIONS.map(opt => (
                 <label
@@ -518,7 +611,7 @@ export function InjuryJournal({ tool }: InjuryJournalProps) {
 
           {/* Treatments */}
           <div className="flex flex-col gap-2">
-            <p className="font-sans font-semibold text-sm text-neutral-700">Treatments Today</p>
+            <p className="font-sans font-semibold text-sm text-neutral-700">{ui.form.treatments}</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
               {TREATMENT_OPTIONS.map(opt => (
                 <label
@@ -545,14 +638,14 @@ export function InjuryJournal({ tool }: InjuryJournalProps) {
               htmlFor="entry-medications"
               className="font-sans font-semibold text-sm text-neutral-700"
             >
-              Medications
+              {ui.form.medications}
             </label>
             <textarea
               id="entry-medications"
               rows={2}
               value={formMedications}
               onChange={e => setFormMedications(e.target.value)}
-              placeholder="List medications taken today"
+              placeholder={ui.form.medicationsPlaceholder}
               className="w-full rounded-lg border border-neutral-200 px-3 py-2 text-sm text-neutral-950 bg-surface-card focus:outline-none focus:ring-2 focus:ring-primary-500 resize-y"
             />
           </div>
@@ -563,14 +656,14 @@ export function InjuryJournal({ tool }: InjuryJournalProps) {
               htmlFor="entry-limitations"
               className="font-sans font-semibold text-sm text-neutral-700"
             >
-              Limitations
+              {ui.form.limitations}
             </label>
             <textarea
               id="entry-limitations"
               rows={2}
               value={formLimitations}
               onChange={e => setFormLimitations(e.target.value)}
-              placeholder="Activities you couldn't do today"
+              placeholder={ui.form.limitationsPlaceholder}
               className="w-full rounded-lg border border-neutral-200 px-3 py-2 text-sm text-neutral-950 bg-surface-card focus:outline-none focus:ring-2 focus:ring-primary-500 resize-y"
             />
           </div>
@@ -581,14 +674,14 @@ export function InjuryJournal({ tool }: InjuryJournalProps) {
               htmlFor="entry-notes"
               className="font-sans font-semibold text-sm text-neutral-700"
             >
-              Additional Notes
+              {ui.form.notes}
             </label>
             <textarea
               id="entry-notes"
               rows={3}
               value={formNotes}
               onChange={e => setFormNotes(e.target.value)}
-              placeholder="Additional notes about today"
+              placeholder={ui.form.notesPlaceholder}
               className="w-full rounded-lg border border-neutral-200 px-3 py-2 text-sm text-neutral-950 bg-surface-card focus:outline-none focus:ring-2 focus:ring-primary-500 resize-y"
             />
           </div>
@@ -600,7 +693,7 @@ export function InjuryJournal({ tool }: InjuryJournalProps) {
               onClick={() => setView('list')}
               className="px-5 py-3 rounded-xl border-2 border-neutral-200 text-neutral-700 font-sans font-semibold text-sm min-h-[44px] hover:bg-neutral-50 transition-colors"
             >
-              Cancel
+              {ui.form.cancel}
             </button>
             <button
               type="button"
@@ -608,7 +701,7 @@ export function InjuryJournal({ tool }: InjuryJournalProps) {
               disabled={!formDate || formPainLevel === 0}
               className="flex-1 px-5 py-3 rounded-xl bg-primary-600 text-white font-sans font-semibold text-sm min-h-[44px] hover:bg-primary-700 transition-colors disabled:opacity-50 disabled:pointer-events-none"
             >
-              Save Entry
+              {ui.form.save}
             </button>
           </div>
         </div>
