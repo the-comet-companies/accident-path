@@ -1,0 +1,75 @@
+{
+  "slug": "los-angeles",
+  "name": "Los Angeles",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Los Ángeles — Guía de Accidentes, Hospitales y Tribunales",
+  "metaDescription": "¿Lesionado en Los Ángeles? Encuentre hospitales de emergencia locales, tribunales y conozca sus derechos bajo la ley de lesiones personales de California.",
+  "population": "3.9 millones (ciudad); más de 10 millones (condado)",
+  "description": "Los Ángeles es la ciudad más grande de California y una de las más congestionadas en cuanto a tráfico en los Estados Unidos. Su extenso sistema de autopistas — incluyendo la I-405, I-10, US-101 y la I-710 — registra millones de viajeros diarios, convirtiéndola en una de las zonas de mayor riesgo de accidentes vehiculares en el país. Los accidentes de peatones y ciclistas también son una preocupación importante, especialmente en vecindarios densamente poblados como el Centro de LA, Hollywood, Koreatown y a lo largo de los principales bulevares. Los tribunales del Condado de Los Ángeles gestionan un alto volumen de litigios por lesiones personales, y tanto la ciudad como el condado suelen ser demandados en casos relacionados con predios y aceras. Actuar con rapidez para preservar evidencia y cumplir los plazos de reclamación gubernamental es fundamental para cualquier persona lesionada en Los Ángeles.",
+  "hospitals": [
+    {
+      "name": "Cedars-Sinai Medical Center",
+      "address": "8700 Beverly Blvd, Los Angeles, CA 90048",
+      "phone": "(310) 423-3277",
+      "erAvailable": true
+    },
+    {
+      "name": "Ronald Reagan UCLA Medical Center",
+      "address": "757 Westwood Plaza, Los Angeles, CA 90095",
+      "phone": "(310) 825-9111",
+      "erAvailable": true
+    },
+    {
+      "name": "LAC+USC Medical Center",
+      "address": "2051 Marengo St, Los Angeles, CA 90033",
+      "phone": "(323) 409-1000",
+      "erAvailable": true
+    },
+    {
+      "name": "Keck Hospital of USC",
+      "address": "1500 San Pablo St, Los Angeles, CA 90033",
+      "phone": "(323) 442-8500",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Los Angeles Superior Court — Stanley Mosk Courthouse",
+      "address": "111 N Hill St, Los Angeles, CA 90012",
+      "phone": "(213) 830-0803",
+      "type": "Civil general y lesiones personales"
+    },
+    {
+      "name": "Los Angeles Superior Court — Spring Street Courthouse",
+      "address": "312 N Spring St, Los Angeles, CA 90012",
+      "phone": "(213) 310-7000",
+      "type": "Civil (litigación compleja)"
+    },
+    {
+      "name": "Los Angeles Superior Court — Airport Courthouse",
+      "address": "11701 S La Cienega Blvd, Los Angeles, CA 90045",
+      "phone": "(310) 725-3000",
+      "type": "Civil — Área de West LA y LAX"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Accidentes de alcance y multivehículo en autopistas (I-405, I-10, I-110)",
+    "Accidentes de peatones en bulevares de alto tráfico (Sunset, Wilshire, Venice)",
+    "Accidentes de ciclistas en redes de carriles para bicicletas y corredores urbanos",
+    "Accidentes de transporte por aplicación (Uber/Lyft) — alta concentración de conductores de plataforma",
+    "Caídas en propiedades comerciales y lugares de entretenimiento",
+    "Accidentes en zonas de construcción en un entorno de desarrollo activo"
+  ],
+  "notableCorridors": [
+    "I-405 (San Diego Freeway) — una de las autopistas más congestionadas de los EE.UU.",
+    "I-10 (Santa Monica Freeway) — corredor principal este-oeste con alto volumen de accidentes",
+    "US-101 (Hollywood Freeway) — segmento urbano con intercambios complejos",
+    "I-710 (Long Beach Freeway) — alto tráfico de camiones y carga cerca de los puertos",
+    "Wilshire Boulevard — corredor de alto riesgo para peatones y ciclistas",
+    "Lincoln Boulevard (SR-1) — accidentes de peatones cerca de comunidades costeras"
+  ],
+  "localNotes": "El Condado de Los Ángeles tiene plazos estrictos de 6 meses para reclamaciones gubernamentales en accidentes que involucren propiedad, aceras o vehículos de la ciudad o el condado. Los informes de colisiones de tráfico del LAPD se pueden obtener en línea o en una unidad de tráfico. La Autoridad de Transporte Metropolitano del Condado de LA (Metro) es un demandado frecuente en casos de lesiones relacionadas con el transporte público.",
+  "reviewedBy": "Revisión Legal Pendiente",
+  "reviewDate": "2026-04-20"
+}

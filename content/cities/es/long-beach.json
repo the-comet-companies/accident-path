@@ -1,0 +1,57 @@
+{
+  "slug": "long-beach",
+  "name": "Long Beach",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Long Beach — Guía de Accidentes, Hospitales y Tribunales",
+  "metaDescription": "¿Lesionado en Long Beach? Encuentre hospitales, tribunales y derechos de lesiones personales de California para víctimas de accidentes en esta ciudad portuaria.",
+  "population": "~466,000 (séptima ciudad más grande de California; sede del Puerto de Long Beach)",
+  "description": "Long Beach es una de las ciudades más grandes de California y alberga uno de los puertos marítimos más activos del mundo. El Puerto de Long Beach, junto con el adyacente Puerto de Los Ángeles, maneja aproximadamente el 40% de todas las importaciones de contenedores de EE.UU., generando un volumen extraordinario de tráfico de camiones pesados en la I-710 (Long Beach Freeway). El corredor de la I-710 es consistentemente uno de los más peligrosos de California para accidentes con camiones involucrados y ha sido objeto de importantes estudios de infraestructura en curso. Pacific Coast Highway atraviesa los vecindarios costeros de la ciudad, creando una zona de alta exposición para peatones y ciclistas. El denso núcleo urbano de Long Beach, su activo distrito nocturno y su significativa presencia de vehículos de transporte por aplicación generan frecuentes litigios por accidentes vehiculares. Los casos de lesiones personales en Long Beach se manejan en el Tribunal Governor George Deukmejian del Condado de Los Ángeles — ubicado en Long Beach — en lugar de los tribunales del centro de LA.",
+  "hospitals": [
+    {
+      "name": "Long Beach Medical Center (MemorialCare)",
+      "address": "2801 Atlantic Ave, Long Beach, CA 90806",
+      "phone": "(562) 933-2000",
+      "erAvailable": true
+    },
+    {
+      "name": "St. Mary Medical Center (Dignity Health)",
+      "address": "1050 Linden Ave, Long Beach, CA 90813",
+      "phone": "(562) 491-9000",
+      "erAvailable": true
+    },
+    {
+      "name": "College Medical Center",
+      "address": "2776 Pacific Ave, Long Beach, CA 90806",
+      "phone": "(562) 595-1911",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Long Beach Superior Court — Governor George Deukmejian Courthouse",
+      "address": "275 Magnolia Ave, Long Beach, CA 90802",
+      "phone": "(562) 435-0505",
+      "type": "Civil y lesiones personales (Condado de LA — sede de Long Beach)"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Accidentes de camiones del puerto en la I-710 (Long Beach Freeway) — uno de los mayores volúmenes de vehículos comerciales en EE.UU.",
+    "Accidentes de peatones y ciclistas en Pacific Coast Highway (SR-1) a lo largo del frente marítimo",
+    "Accidentes en intersecciones de Anaheim Street, Atlantic Avenue y Long Beach Blvd",
+    "Lesiones laborales en el Puerto de Long Beach — accidentes marítimos y en el muelle",
+    "Accidentes de transporte por aplicación (Uber/Lyft) cerca del centro, el centro de convenciones y lugares de entretenimiento",
+    "Caídas en propiedades comerciales, muelles y lugares adyacentes a la playa"
+  ],
+  "notableCorridors": [
+    "I-710 (Long Beach Freeway) — mayor volumen de tráfico portuario de camiones en California; frecuentes colisiones multivehículo",
+    "Pacific Coast Highway (SR-1) — corredor costero de alto riesgo para peatones y ciclistas en comunidades de playa",
+    "Intercambio I-405/I-710 — importante concentración de accidentes en este gran nudo vial cerca del límite con Lakewood",
+    "Anaheim Street — arteria comercial con frecuentes accidentes en intersecciones y exposición peatonal",
+    "Atlantic Avenue — arteria urbana norte-sur principal; alta frecuencia de accidentes en zonas comerciales",
+    "Ocean Blvd — exposición peatonal en el centro y el frente marítimo; congestión de vehículos de aplicación cerca del Aquarium y el Centro de Convenciones"
+  ],
+  "localNotes": "Long Beach tiene su propia oficina del fiscal de la ciudad — los accidentes que involucren autobuses de Long Beach Transit, vehículos de la Ciudad de Long Beach o propiedades mantenidas por la ciudad requieren una reclamación gubernamental presentada dentro de 6 meses. El Puerto de Long Beach es una entidad pública distinta con su propio proceso de reclamaciones separado del de la ciudad. MemorialCare Long Beach Medical Center funciona como el principal recurso de trauma para el sur del Condado de Los Ángeles.",
+  "reviewedBy": "Revisión Legal Pendiente",
+  "reviewDate": "2026-04-23"
+}

@@ -1,0 +1,69 @@
+{
+  "slug": "phoenix",
+  "name": "Phoenix",
+  "stateSlug": "arizona",
+  "stateAbbreviation": "AZ",
+  "metaTitle": "Phoenix — Guía de Accidentes, Hospitales y Tribunales",
+  "metaDescription": "¿Lesionado en Phoenix? Encuentre hospitales de emergencia locales, tribunales y conozca sus derechos bajo la ley de lesiones personales de Arizona.",
+  "population": "1.6 millones (ciudad); más de 5 millones (área metropolitana)",
+  "description": "Phoenix es la ciudad más grande de Arizona y una de las más grandes y de mayor crecimiento en los Estados Unidos. Su extensa red de carreteras arteriales y autopistas — incluyendo la I-10, US-60, Loop 101, Loop 202 y SR-51 — soporta un enorme tráfico diario. Phoenix tiene una alta tasa de mortalidad peatonal, clasificándose consistentemente entre las ciudades más peligrosas de la nación para los peatones debido a sus amplias carreteras de alta velocidad y problemas de visibilidad relacionados con el calor extremo. El activo sector de la construcción de la ciudad también genera un volumen constante de accidentes laborales y en zonas de construcción. Las reclamaciones gubernamentales contra la Ciudad de Phoenix o el Condado de Maricopa deben presentarse dentro de 180 días conforme a la ley de Arizona (A.R.S. § 12-821.01). Phoenix también tiene una importante presencia de vehículos de transporte por aplicación y reparto que contribuye al volumen de accidentes urbanos.",
+  "hospitals": [
+    {
+      "name": "Banner University Medical Center Phoenix",
+      "address": "1111 E McDowell Rd, Phoenix, AZ 85006",
+      "phone": "(602) 839-2000",
+      "erAvailable": true
+    },
+    {
+      "name": "Valleywise Health Medical Center",
+      "address": "2601 E Roosevelt St, Phoenix, AZ 85008",
+      "phone": "(602) 344-5011",
+      "erAvailable": true
+    },
+    {
+      "name": "HonorHealth Scottsdale Osborn Medical Center",
+      "address": "7400 E Osborn Rd, Scottsdale, AZ 85251",
+      "phone": "(480) 882-4000",
+      "erAvailable": true
+    },
+    {
+      "name": "Dignity Health St. Joseph's Hospital and Medical Center",
+      "address": "350 W Thomas Rd, Phoenix, AZ 85013",
+      "phone": "(602) 406-3000",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Maricopa County Superior Court",
+      "address": "201 W Jefferson St, Phoenix, AZ 85003",
+      "phone": "(602) 506-3204",
+      "type": "Civil general y lesiones personales"
+    },
+    {
+      "name": "Maricopa County Superior Court — Southeast Facility",
+      "address": "222 E Javelina Ave, Mesa, AZ 85210",
+      "phone": "(602) 506-3204",
+      "type": "Civil — Casos del East Valley"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Accidentes de peatones en carreteras arteriales de alta velocidad (Camelback, Van Buren, Indian School)",
+    "Accidentes en autopistas en los intercambios de I-10 y Loop 101",
+    "Accidentes de alcance en semáforos de las principales carreteras en cuadrícula",
+    "Accidentes en zonas de construcción en el activo corredor de desarrollo de la ciudad",
+    "Accidentes relacionados con el alcohol al volante — Arizona tiene algunas de las leyes más estrictas de la nación contra el DUI",
+    "Accidentes de vehículos de transporte por aplicación y reparto en el núcleo urbano"
+  ],
+  "notableCorridors": [
+    "I-10 (Maricopa Freeway) — corredor principal este-oeste con alto volumen de camiones y commuters",
+    "Loop 101 (Pima Freeway / Price Freeway) — cinturón suburbano con alta frecuencia de accidentes",
+    "US-60 (Superstition Freeway) — corredor de commuters del East Valley",
+    "SR-51 (Piestewa Freeway) — autopista norte-sur urbana a través del centro de Phoenix",
+    "Van Buren Street — corredor de alto riesgo para peatones a través del centro de Phoenix",
+    "Camelback Road — arteria principal con tráfico peatonal y vehicular de alta velocidad mixto"
+  ],
+  "localNotes": "Phoenix tiene un plazo de 180 días para reclamaciones contra entidades gubernamentales conforme a la ley de Arizona. Los informes de accidentes de tráfico del Departamento de Policía de Phoenix están disponibles en el Servicio de Gestión de Registros. El sistema de tren ligero de Valley Metro es un demandado gubernamental frecuente en casos de lesiones en el tránsito. El calor extremo de Arizona crea condiciones de peligro específicas — señalización vial deteriorada por el calor, distorsión visual por el calor y aumento en las tasas de reventón de neumáticos — que pueden ser relevantes para establecer la responsabilidad en un accidente.",
+  "reviewedBy": "Revisión Legal Pendiente",
+  "reviewDate": "2026-04-20"
+}

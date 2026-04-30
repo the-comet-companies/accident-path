@@ -1,0 +1,57 @@
+{
+  "slug": "san-francisco",
+  "name": "San Francisco",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "San Francisco — Guía de Accidentes, Hospitales y Tribunales",
+  "metaDescription": "¿Lesionado en San Francisco? Encuentre centros de trauma, tribunales y datos clave sobre lesiones personales en California para víctimas de accidentes.",
+  "population": "~874,000 (ciudad y condado; cuarta ciudad más poblada de California)",
+  "description": "San Francisco es uno de los entornos urbanos de accidentes más complejos de California. La densa cuadrícula de calles de la ciudad, sus empinadas colinas y la alta actividad peatonal y ciclista se combinan con una de las mayores concentraciones de vehículos de transporte por aplicación del país. Market Street — un corredor clave de tránsito y peatones — ha sido clasificada sistemáticamente entre las calles más peligrosas de California para peatones y ciclistas, lo que genera un alto volumen de litigios por lesiones personales. Los accidentes en los autobuses MUNI, el tranvía histórico (Línea F) y el metro Muni son características habituales en los tribunales civiles de San Francisco. El acceso al Bay Bridge por la I-80 y Van Ness Avenue también presentan volúmenes significativos de colisiones. San Francisco es a la vez ciudad y condado, con su propio Tribunal Superior unificado que atiende todos los asuntos civiles de lesiones personales.",
+  "hospitals": [
+    {
+      "name": "Zuckerberg San Francisco General Hospital",
+      "address": "1001 Potrero Ave, San Francisco, CA 94110",
+      "phone": "(415) 206-8000",
+      "erAvailable": true
+    },
+    {
+      "name": "UCSF Medical Center at Parnassus",
+      "address": "505 Parnassus Ave, San Francisco, CA 94143",
+      "phone": "(415) 476-1000",
+      "erAvailable": true
+    },
+    {
+      "name": "St. Mary's Medical Center",
+      "address": "450 Stanyan St, San Francisco, CA 94117",
+      "phone": "(415) 668-1000",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "San Francisco Superior Court — Civic Center Courthouse",
+      "address": "400 McAllister St, San Francisco, CA 94102",
+      "phone": "(415) 551-3600",
+      "type": "Civil y lesiones personales"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Accidentes en autobuses MUNI, tranvía Línea F y metro Muni en rutas de tránsito urbano",
+    "Accidentes de peatones en Market Street y los principales corredores del centro y SoMa",
+    "Accidentes de ciclistas en Fell Street, Oak Street, the Wiggle y The Embarcadero",
+    "Accidentes de transporte por aplicación (Uber/Lyft) — SF tiene una de las mayores concentraciones de vehículos TNC en EE.UU.",
+    "Colisiones de alcance por congestión en el acceso a Bay Bridge (I-80 dirección oeste)",
+    "Caídas en colinas empinadas y aceras irregulares de la ciudad"
+  ],
+  "notableCorridors": [
+    "Market Street — clasificada sistemáticamente entre las calles más peligrosas de California para peatones y ciclistas; servicio de tranvía superficial MUNI",
+    "Van Ness Avenue — importante arteria norte-sur con alta exposición peatonal y ciclista",
+    "I-80 (acceso a Bay Bridge, dirección oeste) — colisiones de alcance por congestión cerca de las cabinas de peaje",
+    "US-101 (Freeway Central / South Van Ness) — autopista urbana con conflictos en las rampas de acceso",
+    "Mission Street — corredor de autobuses MUNI con documentada concentración de accidentes peatonales",
+    "Lombard Street (ruta superficial US-101) — alta actividad turística peatonal y congestión vehicular"
+  ],
+  "localNotes": "El plazo de 6 meses para reclamaciones gubernamentales en San Francisco aplica a accidentes de MUNI y todos los incidentes que involucren vehículos, tránsito o infraestructura de la Ciudad y el Condado de San Francisco. Los informes de colisiones de MUNI requieren una solicitud de registros separada ante la SFMTA (Agencia Municipal de Transporte de San Francisco). La responsabilidad por mantenimiento de aceras puede recaer en la ciudad o en el propietario del inmueble adyacente dependiendo de las circunstancias. Zuckerberg San Francisco General Hospital es el Centro de Trauma Nivel I de la ciudad.",
+  "reviewedBy": "Revisión Legal Pendiente",
+  "reviewDate": "2026-04-23"
+}

@@ -1,0 +1,68 @@
+{
+  "slug": "arizona",
+  "name": "Arizona",
+  "abbreviation": "AZ",
+  "metaTitle": "Leyes de Lesiones en Arizona — Plazos y Derechos",
+  "metaDescription": "Leyes de lesiones personales en Arizona, plazos de prescripción, reglas de culpa y mínimos de seguro. Guía educativa para víctimas de accidentes en AZ.",
+  "statuteOfLimitations": {
+    "personalInjury": "2 años desde la fecha de la lesión (A.R.S. § 12-542)",
+    "propertyDamage": "2 años desde la fecha del daño (A.R.S. § 12-542)",
+    "wrongfulDeath": "2 años desde la fecha del fallecimiento (A.R.S. § 12-542)"
+  },
+  "faultRule": {
+    "type": "pure_comparative",
+    "description": "Arizona sigue la regla de culpa comparativa pura (codificada en A.R.S. § 12-2505). Una parte lesionada puede recuperar daños independientemente de su porcentaje de culpa, pero la compensación se reduce en proporción a su propia responsabilidad. No existe un umbral de culpa que impida la recuperación."
+  },
+  "reportingDeadlines": [
+    {
+      "type": "Accidente de auto — informe policial",
+      "deadline": "De inmediato (en la escena) o dentro de 24 horas",
+      "details": "Arizona exige que los conductores involucrados en accidentes con lesiones, muertes o daños materiales reporten a las autoridades en la escena. Si la policía no responde, debe presentarse un informe escrito ante el ADOT dentro de 24 horas."
+    },
+    {
+      "type": "Reclamación contra entidad gubernamental",
+      "deadline": "Dentro de 180 días",
+      "details": "Las reclamaciones contra agencias estatales o subdivisiones políticas de Arizona deben presentarse dentro de 180 días conforme a A.R.S. § 12-821.01. Reclamaciones contra ciudades y municipios: también dentro de 180 días. Se requiere cumplimiento estricto."
+    },
+    {
+      "type": "Compensación laboral",
+      "deadline": "Dentro de 1 año desde la lesión",
+      "details": "En Arizona, una reclamación de compensación laboral debe presentarse ante la Comisión Industrial de Arizona (ICA) dentro de 1 año desde la lesión o el último pago de beneficios. Notifique a su empleador lo antes posible."
+    },
+    {
+      "type": "Reclamación por conductor sin seguro (UM/UIM)",
+      "deadline": "Según los términos de su póliza",
+      "details": "Reporte de inmediato conforme a los requisitos de su póliza. El plazo general de prescripción para lesiones personales (2 años) aplica a demandas UM/UIM."
+    }
+  ],
+  "insuranceMinimums": {
+    "bodilyInjuryPerPerson": "$25,000",
+    "bodilyInjuryPerAccident": "$50,000",
+    "propertyDamage": "$15,000",
+    "uninsuredMotorist": "Debe ofrecerse; puede renunciarse por escrito"
+  },
+  "keyLaws": [
+    {
+      "name": "Culpa Comparativa Pura (A.R.S. § 12-2505)",
+      "description": "Arizona codificó la culpa comparativa pura, eliminando el impedimento de negligencia contributiva. Los daños de la parte lesionada se reducen proporcionalmente a su culpa, pero la recuperación no se bloquea independientemente del porcentaje de responsabilidad."
+    },
+    {
+      "name": "Daños No Económicos — Sin Límite General",
+      "description": "Arizona no limita los daños no económicos (dolor y sufrimiento) en casos generales de lesiones personales, a diferencia de otros estados. Los límites en casos de negligencia médica fueron declarados inconstitucionales por el Tribunal Supremo de Arizona."
+    },
+    {
+      "name": "Responsabilidad Dram Shop (A.R.S. § 4-311)",
+      "description": "Arizona responsabiliza a los vendedores autorizados de alcohol por lesiones causadas al servir alcohol a una persona visiblemente intoxicada o menor de 21 años. Esto amplía la responsabilidad potencial en casos de accidentes causados por conductores bajo la influencia del alcohol."
+    },
+    {
+      "name": "Reclamaciones por Responsabilidad Gubernamental (A.R.S. § 12-820 et seq.)",
+      "description": "Las reclamaciones contra el estado, condados o municipios requieren aviso previo dentro de 180 días. Existen límites en los daños contra entidades gubernamentales en Arizona."
+    },
+    {
+      "name": "Compensación Laboral — Comisión Industrial de Arizona",
+      "description": "La compensación laboral en Arizona es administrada por la Comisión Industrial de Arizona. Cubre tratamiento médico y pérdida de salarios por lesiones laborales, independientemente de quién tuvo la culpa. Las reclamaciones deben presentarse dentro de 1 año."
+    }
+  ],
+  "reviewedBy": "Revisión Legal Pendiente",
+  "reviewDate": "2026-04-20"
+}

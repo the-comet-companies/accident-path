@@ -1,0 +1,69 @@
+{
+  "slug": "san-diego",
+  "name": "San Diego",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "San Diego — Guía de Accidentes, Hospitales y Tribunales",
+  "metaDescription": "¿Lesionado en San Diego? Encuentre hospitales de emergencia locales, tribunales y conozca sus derechos bajo la ley de lesiones personales de California.",
+  "population": "1.4 millones (ciudad); 3.3 millones (condado)",
+  "description": "San Diego es la segunda ciudad más grande de California y un centro importante para actividades militares, biotecnología, turismo y comercio transfronterizo. Su red de autopistas — en particular la I-5, I-8, SR-163 y SR-94 — experimenta altos volúmenes de tráfico y accidentes frecuentes. Las extensas zonas costeras de la ciudad, los activos distritos peatonales en áreas como el Gaslamp Quarter, Mission Valley y Pacific Beach, y la creciente infraestructura ciclista contribuyen a una amplia variedad de lesiones personales. San Diego también tiene una significativa presencia militar, y los accidentes que involucran vehículos del gobierno federal o personal militar conllevan reglas jurisdiccionales especiales. Las reclamaciones contra la Ciudad de San Diego o el Condado de San Diego deben presentarse dentro de 6 meses del incidente conforme a la Ley de Reclamaciones Gubernamentales de California.",
+  "hospitals": [
+    {
+      "name": "UC San Diego Health — Hillcrest",
+      "address": "200 W Arbor Dr, San Diego, CA 92103",
+      "phone": "(619) 543-6400",
+      "erAvailable": true
+    },
+    {
+      "name": "Scripps Mercy Hospital San Diego",
+      "address": "4077 5th Ave, San Diego, CA 92103",
+      "phone": "(619) 294-8111",
+      "erAvailable": true
+    },
+    {
+      "name": "Sharp Memorial Hospital",
+      "address": "7901 Frost St, San Diego, CA 92123",
+      "phone": "(858) 939-3400",
+      "erAvailable": true
+    },
+    {
+      "name": "Rady Children's Hospital — San Diego",
+      "address": "3020 Children's Way, San Diego, CA 92123",
+      "phone": "(858) 576-1700",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "San Diego Superior Court — Hall of Justice",
+      "address": "330 W Broadway, San Diego, CA 92101",
+      "phone": "(619) 450-7060",
+      "type": "Civil general y lesiones personales"
+    },
+    {
+      "name": "San Diego Superior Court — Kearny Mesa Courthouse",
+      "address": "8950 Clairemont Mesa Blvd, San Diego, CA 92123",
+      "phone": "(858) 634-1600",
+      "type": "Civil — Casos del norte del condado"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Accidentes en las autopistas I-5 y el intercambio con I-8",
+    "Accidentes de peatones en distritos turísticos y de entretenimiento",
+    "Accidentes de ciclistas en senderos costeros y Mission Bay",
+    "Accidentes de vehículos militares y en propiedades del gobierno federal (jurisdicción especial)",
+    "Caídas en restaurantes, hoteles y puntos de acceso a playas",
+    "Accidentes de camiones comerciales transfronterizos cerca del puerto de entrada EE.UU.–México"
+  ],
+  "notableCorridors": [
+    "I-5 (San Diego Freeway) — corredor norte-sur de alto volumen",
+    "I-8 — ruta principal este-oeste que conecta zonas costeras e interiores",
+    "SR-94 — autopista urbana a través de Mission Hills y City Heights",
+    "SR-163 — conecta Balboa Park con Mission Valley; concentración conocida de accidentes",
+    "Mission Boulevard — corredor peatonal y ciclista a lo largo de Mission Beach",
+    "Harbor Drive — actividad comercial y peatonal cerca del frente marítimo"
+  ],
+  "localNotes": "San Diego cuenta con una alta concentración de personal militar y vehículos del gobierno federal. Los accidentes que involucran empleados o vehículos federales pueden requerir presentación bajo la Ley Federal de Reclamaciones por Agravios (FTCA), con un plazo administrativo de 2 años. Los informes de tráfico de la Policía de San Diego están disponibles a través de la División de Registros. El sistema de transporte MTS (autobuses y tranvía) es un demandado gubernamental frecuente en casos de lesiones en el tránsito.",
+  "reviewedBy": "Revisión Legal Pendiente",
+  "reviewDate": "2026-04-20"
+}

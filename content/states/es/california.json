@@ -1,0 +1,68 @@
+{
+  "slug": "california",
+  "name": "California",
+  "abbreviation": "CA",
+  "metaTitle": "Leyes de Lesiones en California — Plazos y Derechos",
+  "metaDescription": "Leyes de lesiones personales en California, plazos de prescripción, reglas de culpa y mínimos de seguro. Guía educativa para víctimas de accidentes en CA.",
+  "statuteOfLimitations": {
+    "personalInjury": "2 años desde la fecha de la lesión (CCP § 335.1)",
+    "propertyDamage": "3 años desde la fecha del daño (CCP § 338)",
+    "wrongfulDeath": "2 años desde la fecha del fallecimiento (CCP § 335.1)"
+  },
+  "faultRule": {
+    "type": "pure_comparative",
+    "description": "California sigue la regla de culpa comparativa pura (Li v. Yellow Cab Co., 1975). Una persona lesionada puede recuperar daños incluso si tuvo el 99% de la culpa, pero su compensación se reduce en proporción a su porcentaje de responsabilidad. No existe ningún umbral de culpa que impida la recuperación."
+  },
+  "reportingDeadlines": [
+    {
+      "type": "Accidente de auto — informe policial",
+      "deadline": "Dentro de 10 días",
+      "details": "Si un accidente de auto resulta en lesiones, muerte o daños a la propiedad por más de $1,000, debe reportarse al DMV dentro de 10 días mediante el formulario SR-1."
+    },
+    {
+      "type": "Reclamación contra entidad gubernamental",
+      "deadline": "Dentro de 6 meses",
+      "details": "Las reclamaciones contra entidades gubernamentales estatales o locales de California deben presentarse mediante el Programa de Reclamaciones Gubernamentales dentro de 6 meses del incidente. El incumplimiento de este plazo es un impedimento absoluto para obtener compensación."
+    },
+    {
+      "type": "Compensación laboral",
+      "deadline": "Dentro de 30 días al empleador; 1 año para presentar",
+      "details": "Notifique a su empleador la lesión laboral dentro de 30 días. Presente una reclamación formal de compensación laboral (formulario DWC-1) dentro de 1 año desde la fecha de la lesión."
+    },
+    {
+      "type": "Reclamación por conductor sin seguro (UM/UIM)",
+      "deadline": "Según los términos de su póliza",
+      "details": "Revise su póliza. La mayoría de las reclamaciones UM/UIM deben reportarse de inmediato. Una demanda debe presentarse dentro de 2 años según la ley de California."
+    }
+  ],
+  "insuranceMinimums": {
+    "bodilyInjuryPerPerson": "$30,000",
+    "bodilyInjuryPerAccident": "$60,000",
+    "propertyDamage": "$15,000",
+    "uninsuredMotorist": "Debe ofrecerse; puede renunciarse por escrito"
+  },
+  "keyLaws": [
+    {
+      "name": "Culpa Comparativa Pura (Li v. Yellow Cab, 1975)",
+      "description": "California eliminó la negligencia contributiva en favor de la culpa comparativa pura, permitiendo la recuperación incluso cuando el demandante es principalmente responsable, con los daños reducidos proporcionalmente."
+    },
+    {
+      "name": "MICRA (Ley de Reforma de Compensación por Lesiones Médicas)",
+      "description": "California limita los daños no económicos en casos de negligencia médica a $350,000 por lesiones y $500,000 por muerte por negligencia (a partir de 2023, con aumentos anuales). No aplica a casos generales de lesiones personales."
+    },
+    {
+      "name": "Proposición 213 — Limitaciones para Conductores sin Seguro",
+      "description": "Los conductores que operaban un vehículo sin seguro al momento del accidente no pueden recuperar daños no económicos (dolor y sufrimiento) aunque el otro conductor haya tenido la culpa."
+    },
+    {
+      "name": "Ley de Reclamaciones Gubernamentales (Cód. Gov. § 810 et seq.)",
+      "description": "Antes de demandar a una entidad gubernamental de California, debe presentarse una reclamación formal dentro de 6 meses del incidente. El cumplimiento estricto es obligatorio — los tribunales tienen capacidad limitada para excusar presentaciones tardías."
+    },
+    {
+      "name": "Código Laboral de California § 3600 — Exclusividad de Compensación Laboral",
+      "description": "La compensación laboral es generalmente el único recurso contra un empleador por lesiones en el lugar de trabajo. Las reclamaciones civiles contra terceros (no empleadores) siguen disponibles."
+    }
+  ],
+  "reviewedBy": "Revisión Legal Pendiente",
+  "reviewDate": "2026-04-20"
+}

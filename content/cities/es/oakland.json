@@ -1,0 +1,57 @@
+{
+  "slug": "oakland",
+  "name": "Oakland",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Oakland — Guía de Accidentes, Hospitales y Tribunales",
+  "metaDescription": "¿Lesionado en Oakland? Encuentre hospitales de trauma, tribunales del Condado de Alameda y plazos de lesiones personales de California en el East Bay.",
+  "population": "~440,000 (sede del Condado de Alameda; ciudad más grande del East Bay)",
+  "description": "Oakland es la ciudad más grande del East Bay y un importante centro de logística, tránsito y cultura en el norte de California. La I-880 (Nimitz Freeway) recorre toda la ciudad transportando tráfico comercial pesado hacia y desde el Puerto de Oakland — el quinto puerto de contenedores más activo de los Estados Unidos — lo que convierte a los accidentes con camiones en una categoría significativa de litigios por lesiones personales. International Boulevard, que cruza el este de Oakland durante millas, tiene una de las tasas de mortalidad peatonal por milla más altas de cualquier arteria urbana en California, generando una cantidad desproporcionada de casos de lesiones y muerte por negligencia de peatones. Oakland también es un importante centro de BART (Bay Area Rapid Transit), con múltiples estaciones que generan tráfico peatonal y exposición a accidentes relacionados con el tránsito. El intercambio MacArthur Maze — donde convergen la I-880, I-580 y la I-80 — es uno de los nudos de autopistas más complejos y propensos a accidentes del norte de California.",
+  "hospitals": [
+    {
+      "name": "Highland Hospital (Alameda Health System)",
+      "address": "1411 E 31st St, Oakland, CA 94602",
+      "phone": "(510) 437-4800",
+      "erAvailable": true
+    },
+    {
+      "name": "UCSF Benioff Children's Hospital Oakland",
+      "address": "747 52nd St, Oakland, CA 94609",
+      "phone": "(510) 428-3000",
+      "erAvailable": true
+    },
+    {
+      "name": "Alta Bates Summit Medical Center — Summit Campus",
+      "address": "350 Hawthorne Ave, Oakland, CA 94609",
+      "phone": "(510) 655-4000",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Rene C. Davidson Alameda County Courthouse",
+      "address": "1225 Fallon St, Oakland, CA 94612",
+      "phone": "(510) 267-6946",
+      "type": "Civil y lesiones personales (Condado de Alameda)"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Colisiones de alta velocidad y multivehículo en I-880 (Nimitz Freeway) — elevado volumen de camiones del Puerto de Oakland",
+    "Accidentes de peatones en International Blvd — uno de los corredores peatonales más peligrosos por milla de California",
+    "Accidentes en estaciones, andenes y accesos de BART en Fruitvale, Coliseum y otras estaciones de Oakland",
+    "Lesiones marítimas y de estibadores en el Puerto de Oakland — accidentes de estiba y embarcaciones",
+    "Colisiones en el intercambio MacArthur Maze (I-880/I-580/I-80)",
+    "Accidentes de ciclistas en corredores ciclistas urbanos y rutas de acceso a estaciones de BART"
+  ],
+  "notableCorridors": [
+    "I-880 (Nimitz Freeway) — corredor principal de acceso al puerto y la carga; consistentemente alta tasa de accidentes en Oakland",
+    "International Blvd (este de Oakland) — una de las tasas de mortalidad peatonal más altas por milla de California",
+    "MacArthur Maze (intercambio I-880/I-580/I-80) — complejo nudo de autopistas con alta concentración de colisiones",
+    "I-580 (MacArthur Freeway) — ruta principal de commuters con accidentes por congestión cerca del Bay Bridge",
+    "SR-24 (acceso al Caldecott Tunnel) — corredor de commuters congestionado hacia el Condado de Contra Costa",
+    "MacArthur Blvd — larga arteria urbana con historial documentado de accidentes peatonales y en intersecciones"
+  ],
+  "localNotes": "El Condado de Alameda aplica el plazo de 6 meses de California para reclamaciones gubernamentales en accidentes que involucren BART, autobuses de AC Transit, vehículos de la ciudad de Oakland y aceras o infraestructura pública. BART es un demandado frecuente en casos de caídas en andenes, escaleras mecánicas y accidentes relacionados con trenes. Highland Hospital (Alameda Health System) es el principal Centro de Trauma Nivel II que sirve a Oakland y el este del Condado de Alameda. El Tribunal Rene C. Davidson maneja todos los litigios civiles por lesiones personales del Condado de Alameda.",
+  "reviewedBy": "Revisión Legal Pendiente",
+  "reviewDate": "2026-04-23"
+}

@@ -1,0 +1,63 @@
+{
+  "slug": "chandler",
+  "name": "Chandler",
+  "stateSlug": "arizona",
+  "stateAbbreviation": "AZ",
+  "metaTitle": "Chandler — Guía de Accidentes, Hospitales y Tribunales",
+  "metaDescription": "¿Lesionado en Chandler? Encuentre hospitales, tribunales y derechos de lesiones personales de Arizona para víctimas en esta ciudad del Condado de Maricopa.",
+  "population": "~275,000 (una de las ciudades con mayor crecimiento económico y más dinámicas de Arizona)",
+  "description": "Chandler es una de las ciudades más dinámicas económicamente de Arizona, hogar de importantes operaciones de tecnología y fabricación de semiconductores como el campus Ocotillo de Intel, la nueva instalación de TSMC en Arizona y operaciones significativas de PayPal y servicios financieros. Esta base de empleo de alta tecnología impulsa un tráfico considerable de commuters en el Loop 101 (Price Freeway) y el Loop 202 (Santan Freeway), que forman los límites oeste y sur de las autopistas de Chandler. El rápido crecimiento suburbano de Chandler ha creado un patrón continuo de desarrollo comercial que supera la infraestructura vial, generando riesgo de accidentes en zonas de construcción y accidentes en intersecciones donde los volúmenes de tráfico han aumentado más rápido de lo que la señalización y la capacidad vial pueden absorber. Chandler Blvd, Ray Road y McClintock Drive son arteriales principales con alta frecuencia documentada de accidentes. El área del Chandler Fashion Center y sus alrededores genera alta exposición peatonal. Todos los asuntos civiles por lesiones personales se manejan en el Tribunal Superior del Condado de Maricopa.",
+  "hospitals": [
+    {
+      "name": "Chandler Regional Medical Center (Dignity Health)",
+      "address": "1955 W Frye Rd, Chandler, AZ 85224",
+      "phone": "(480) 728-3000",
+      "erAvailable": true
+    },
+    {
+      "name": "Dignity Health Mercy Gilbert Medical Center",
+      "address": "3555 S Val Vista Dr, Gilbert, AZ 85297",
+      "phone": "(480) 728-8000",
+      "erAvailable": true
+    },
+    {
+      "name": "Banner Ocotillo Medical Center",
+      "address": "6750 E Elliot Rd, Chandler, AZ 85224",
+      "phone": "(480) 882-5900",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Maricopa County Superior Court — Southeast Regional Court Center",
+      "address": "222 E Javelina Ave, Mesa, AZ 85210",
+      "phone": "(480) 344-3000",
+      "type": "Civil y lesiones personales (East Valley)"
+    },
+    {
+      "name": "Chandler Municipal Court",
+      "address": "240 E Chicago St, Chandler, AZ 85225",
+      "phone": "(480) 782-4130",
+      "type": "Municipal (tráfico y civil limitado)"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Colisiones de alta velocidad en Loop 101 (Price Freeway) y Loop 202 (Santan Freeway) a lo largo de los límites de la ciudad",
+    "Accidentes de commuters del corredor tecnológico en Chandler Blvd, Price Road y Dobson Road",
+    "Accidentes en zonas de construcción en áreas activas de desarrollo comercial y residencial",
+    "Accidentes en intersecciones de Ray Road, McClintock Drive y Arizona Avenue",
+    "Accidentes por conducción distraída en corredores suburbanos residenciales y comerciales cerca del Fashion Center",
+    "Accidentes de ciclistas y peatones cerca del parque tecnológico del corredor Price y senderos adyacentes"
+  ],
+  "notableCorridors": [
+    "Loop 101 (Price Freeway, límite oeste de Chandler) — autopista de alta velocidad con tráfico de commuters del corredor tecnológico y conflictos en fusiones",
+    "Loop 202 (Santan Freeway, sur/este de Chandler) — creciente volumen de commuters y comercial con exposición a accidentes en intercambios",
+    "Chandler Blvd — arteria comercial principal este-oeste con alta frecuencia de accidentes en intersecciones",
+    "Ray Road — corredor comercial suburbano con documentada exposición a alcances y peatones",
+    "McClintock Drive — conector norte-sur con desarrollo activo de campus tecnológicos y franja comercial",
+    "Arizona Avenue — corredor comercial más antiguo con mayor actividad peatonal e infraestructura de señales más envejecida"
+  ],
+  "localNotes": "El plazo de 180 días de Arizona para reclamaciones gubernamentales (A.R.S. § 12-821.01) aplica a accidentes que involucren vehículos de la Ciudad de Chandler, carreteras públicas e instalaciones. El rápido crecimiento de Chandler ha creado brechas en el diseño vial y la temporización de señales donde la infraestructura no ha seguido el ritmo del desarrollo — estas condiciones pueden ser relevantes para establecer la responsabilidad municipal. Chandler Regional Medical Center (Dignity Health) es el principal Centro de Trauma Nivel I que sirve al sur de Chandler, sur de Gilbert y comunidades aledañas.",
+  "reviewedBy": "Revisión Legal Pendiente",
+  "reviewDate": "2026-04-23"
+}

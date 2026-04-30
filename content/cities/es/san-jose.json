@@ -1,0 +1,57 @@
+{
+  "slug": "san-jose",
+  "name": "San Jose",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "San José — Guía de Accidentes, Hospitales y Tribunales",
+  "metaDescription": "¿Lesionado en San José? Encuentre hospitales de emergencia, tribunales del condado y conozca sus derechos tras un accidente bajo la ley de California.",
+  "population": "~1.03 millones (tercera ciudad más grande de California; núcleo urbano de Silicon Valley)",
+  "description": "San José es la tercera ciudad más grande de California y el corazón de Silicon Valley, con una densa población de commuters y uno de los sistemas de autopistas más transitados del Área de la Bahía. El intercambio US-101/I-880 es una zona persistente de alta accidentalidad donde convergen diariamente trabajadores de campus tecnológicos, camiones de carga y conductores de plataformas. San José también cuenta con una extensa red de trenes ligeros operada por la Autoridad de Transporte del Valle de Santa Clara (VTA), lo que genera una exposición significativa a accidentes relacionados con el tránsito en toda la ciudad. El centro de San José, el corredor de Japantown y las arteriales principales como Story Road y Tully Road en el este de San José registran altos volúmenes de accidentes peatonales y ciclistas. Los tribunales del Condado de Santa Clara manejan un volumen sustancial de litigios civiles por lesiones personales, y el plazo estricto de 6 meses de California para reclamaciones gubernamentales aplica cuando está involucrada infraestructura de la ciudad o el condado.",
+  "hospitals": [
+    {
+      "name": "Santa Clara Valley Medical Center",
+      "address": "751 S Bascom Ave, San Jose, CA 95128",
+      "phone": "(408) 885-5000",
+      "erAvailable": true
+    },
+    {
+      "name": "Regional Medical Center of San Jose",
+      "address": "225 N Jackson Ave, San Jose, CA 95116",
+      "phone": "(408) 259-5000",
+      "erAvailable": true
+    },
+    {
+      "name": "Good Samaritan Hospital",
+      "address": "2425 Samaritan Dr, San Jose, CA 95124",
+      "phone": "(408) 559-2011",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Santa Clara County Superior Court — Downtown Courthouse",
+      "address": "191 N First St, San Jose, CA 95113",
+      "phone": "(408) 882-2100",
+      "type": "Civil y lesiones personales"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Colisiones en el intercambio US-101/I-880 y zonas de fusión de la I-280",
+    "Accidentes de tren ligero y autobús de VTA en corredores de tránsito de toda la ciudad",
+    "Accidentes de peatones en Story Road, Tully Road y Capitol Expressway en el este de San José",
+    "Accidentes de ciclistas en el centro, Japantown y corredores ciclistas designados",
+    "Accidentes de transporte por aplicación (Uber/Lyft) cerca de campus tecnológicos y centros de tránsito",
+    "Accidentes en zonas de construcción en campus tecnológicos activos y proyectos de infraestructura"
+  ],
+  "notableCorridors": [
+    "US-101 — autopista norte-sur principal con alto volumen diario a través del centro de la ciudad",
+    "I-880 (Nimitz Freeway) — alto tráfico de camiones y commuters; alta tasa de accidentes cerca del centro",
+    "I-280 — frecuentes accidentes de alcance cerca de los intercambios con la frontera de Cupertino",
+    "SR-87 (Guadalupe Pkwy) — vía rápida urbana con infraestructura peatonal limitada y exposición en fusiones",
+    "Story Road — alta frecuencia documentada de accidentes peatonales en el este de San José",
+    "Tully Road — importante volumen de accidentes en intersecciones del sureste residencial"
+  ],
+  "localNotes": "El Condado de Santa Clara aplica estrictamente el plazo de 6 meses para reclamaciones gubernamentales en accidentes que involucren vehículos de la ciudad o el condado, carreteras públicas y aceras. Los accidentes de tren ligero y autobús de VTA (Autoridad de Transporte del Valle) requieren una reclamación gubernamental separada contra la autoridad de tránsito. Los informes de colisiones de tráfico se obtienen del Departamento de Policía de San José o de la Patrulla de Caminos de California según el lugar del incidente.",
+  "reviewedBy": "Revisión Legal Pendiente",
+  "reviewDate": "2026-04-23"
+}

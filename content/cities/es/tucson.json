@@ -1,0 +1,63 @@
+{
+  "slug": "tucson",
+  "name": "Tucson",
+  "stateSlug": "arizona",
+  "stateAbbreviation": "AZ",
+  "metaTitle": "Tucson — Guía de Accidentes, Hospitales y Tribunales",
+  "metaDescription": "¿Lesionado en Tucson? Encuentre hospitales de emergencia locales, tribunales y conozca sus derechos bajo la ley de lesiones personales de Arizona.",
+  "population": "545,000 (ciudad); más de 1 millón (área metropolitana)",
+  "description": "Tucson es la segunda ciudad más grande de Arizona, sede de la Universidad de Arizona y con una significativa presencia militar y aeroespacial en la Base de la Fuerza Aérea Davis-Monthan. La red vial de la ciudad se caracteriza por amplios bulevares arteriales — Oracle Road, Speedway, Broadway y Grant Road — que soportan altos volúmenes de tráfico y crean condiciones peligrosas de cruce para peatones y ciclistas. Tucson tiene una gran población estudiantil y una de las redes ciclistas urbanas más extensas de Arizona, lo que resulta en tasas de accidentes de ciclistas más altas que el promedio. La I-10 atraviesa el corazón de la ciudad y es un sitio frecuente de accidentes vehiculares, incluidos incidentes con camiones comerciales procedentes de las rutas comerciales México–EE.UU. Las reclamaciones gubernamentales contra la Ciudad de Tucson o el Condado de Pima deben presentarse dentro de 180 días conforme a A.R.S. § 12-821.01.",
+  "hospitals": [
+    {
+      "name": "Banner — University Medical Center Tucson",
+      "address": "1501 N Campbell Ave, Tucson, AZ 85724",
+      "phone": "(520) 694-0111",
+      "erAvailable": true
+    },
+    {
+      "name": "Tucson Medical Center",
+      "address": "5301 E Grant Rd, Tucson, AZ 85712",
+      "phone": "(520) 327-5461",
+      "erAvailable": true
+    },
+    {
+      "name": "Carondelet St. Mary's Hospital",
+      "address": "1601 W St Mary's Rd, Tucson, AZ 85745",
+      "phone": "(520) 872-3000",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Pima County Superior Court",
+      "address": "110 W Congress St, Tucson, AZ 85701",
+      "phone": "(520) 724-3200",
+      "type": "Civil general y lesiones personales"
+    },
+    {
+      "name": "Pima County Justice Court — Precinct 1",
+      "address": "240 N Stone Ave, Tucson, AZ 85701",
+      "phone": "(520) 724-4000",
+      "type": "Reclamaciones menores y civil de jurisdicción limitada"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Accidentes de peatones en carreteras arteriales cerca de la Universidad de Arizona",
+    "Accidentes de ciclistas en la red ciclista urbana (corredores de 2nd Street y 4th Avenue)",
+    "Accidentes en la autopista I-10 a través del núcleo urbano y cerca del aeropuerto",
+    "Accidentes de camiones comerciales en la I-10 y la I-19 (ruta comercial México–EE.UU.)",
+    "Accidentes relacionados con el alcohol al volante — alto volumen los fines de semana cerca de distritos de entretenimiento",
+    "Caídas en instalaciones de la Universidad de Arizona y lugares del Old Town Tucson"
+  ],
+  "notableCorridors": [
+    "I-10 (sección de Tucson) — autopista urbana con alta concentración de accidentes cerca del centro",
+    "I-19 — corredor de carga comercial México–EE.UU. hacia Nogales",
+    "Oracle Road (US-89) — arteria norte-sur con acceso mixto comercial y residencial",
+    "Speedway Boulevard — arteria este-oeste con peligros de cruce peatonal",
+    "4th Avenue — corredor de entretenimiento y comercio minorista con alto tráfico peatonal",
+    "Broadway Boulevard — arteria principal que conecta el centro con el midtown"
+  ],
+  "localNotes": "La gran población estudiantil y la activa comunidad ciclista de Tucson significan que los casos de accidentes de ciclistas son frecuentes. El sistema de tranvía Sun Link opera en el centro y en el área de la Universidad de Arizona — las reclamaciones por accidentes de tránsito contra el sistema Sun Tran requieren aviso de reclamación gubernamental dentro de 180 días. Los informes de tráfico del Departamento de Policía de Tucson están disponibles en el Departamento de Registros. El corredor de la I-19 hacia la frontera con México transporta un importante tráfico de camiones comerciales, y los accidentes que involucran vehículos con placas mexicanas pueden implicar consideraciones especiales de seguro transfronterizo.",
+  "reviewedBy": "Revisión Legal Pendiente",
+  "reviewDate": "2026-04-20"
+}

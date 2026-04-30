@@ -1,0 +1,57 @@
+{
+  "slug": "bakersfield",
+  "name": "Bakersfield",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Bakersfield — Guía de Accidentes, Hospitales y Tribunales",
+  "metaDescription": "¿Lesionado en Bakersfield? Encuentre hospitales, tribunales del Condado de Kern y sus derechos de lesiones personales para accidentes en el Valle Central.",
+  "population": "~407,000 (sede del Condado de Kern; novena ciudad más grande de California)",
+  "description": "Bakersfield es la ciudad más grande del Condado de Kern y un nodo crítico en la infraestructura de carreteras, agricultura y energía de California. La Ruta Estatal 99 atraviesa la ciudad transportando tráfico comercial pesado entre Los Ángeles y el norte del Valle Central, y el segmento cercano de la I-5 por The Grapevine es notorio por accidentes relacionados con el clima causados por la niebla tule y, ocasionalmente, hielo en la empinada pendiente de la montaña. Los accidentes de maquinaria agrícola en caminos agrícolas alrededor de la ciudad son una fuente constante de graves litigios por lesiones personales. El Condado de Kern es el principal productor de petróleo de California — lo que convierte a las lesiones de trabajadores del campo petrolero en una categoría significativa y legalmente compleja de reclamaciones por accidentes laborales que frecuentemente involucran múltiples empleadores y contratistas. Los principales corredores comerciales como Rosedale Highway, Ming Avenue, White Lane y Coffee Road registran frecuentes accidentes en intersecciones y de alcance a medida que la ciudad se expande.",
+  "hospitals": [
+    {
+      "name": "Kern Medical Center",
+      "address": "1700 Mount Vernon Ave, Bakersfield, CA 93306",
+      "phone": "(661) 326-2000",
+      "erAvailable": true
+    },
+    {
+      "name": "Dignity Health Mercy Hospital Downtown Bakersfield",
+      "address": "2215 Truxtun Ave, Bakersfield, CA 93301",
+      "phone": "(661) 327-4647",
+      "erAvailable": true
+    },
+    {
+      "name": "Adventist Health Bakersfield",
+      "address": "2615 Chester Ave, Bakersfield, CA 93301",
+      "phone": "(661) 862-5000",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Kern County Superior Court — Metropolitan Division",
+      "address": "1415 Truxtun Ave, Bakersfield, CA 93301",
+      "phone": "(661) 868-5100",
+      "type": "Civil y lesiones personales"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Colisiones de alta velocidad y multivehículo en SR-99 — tráfico pesado de camiones y niebla tule crean peligro durante todo el año",
+    "Accidentes relacionados con el clima en The Grapevine de la I-5 (niebla tule, hielo ocasional, pendiente empinada al norte de la ciudad)",
+    "Accidentes de maquinaria agrícola en caminos del condado cerca de tierras de cultivo activas en los límites de la ciudad",
+    "Lesiones de trabajadores del campo petrolero (el Condado de Kern lidera la producción de petróleo en California)",
+    "Accidentes en intersecciones en Rosedale Hwy, Ming Ave, White Lane y Coffee Rd",
+    "Accidentes de camiones cerca de centros de distribución y el área del intercambio SR-99/SR-58"
+  ],
+  "notableCorridors": [
+    "SR-99 (segmento de Bakersfield) — principal corredor de carga y commuters con una de las tasas de accidentes rurales más altas de California",
+    "I-5 (The Grapevine) — pendiente montañosa empinada con peligros severos de niebla y clima; frecuentes accidentes multivehículo",
+    "SR-58 (Rosedale Highway, al oeste de Bakersfield) — arteria de alta velocidad con transición a zonas de desarrollo comercial",
+    "Ming Avenue — principal corredor comercial este-oeste suburbano con documentado volumen de accidentes en intersecciones",
+    "White Lane — conector este-oeste al sur de Bakersfield con exposición a accidentes de alcance y peatonales",
+    "Coffee Road — corredor de desarrollo activo con riesgo de accidentes en zonas de construcción e intersecciones nuevas"
+  ],
+  "localNotes": "El Condado de Kern aplica el plazo de 6 meses de California para reclamaciones gubernamentales en accidentes que involucren vehículos de la ciudad o el condado, carreteras públicas e infraestructura. La niebla tule de noviembre a febrero aumenta drásticamente el riesgo de accidentes en SR-99 y la I-5 — han ocurrido accidentes multivehículo con docenas de vehículos en condiciones de visibilidad cero. Las reclamaciones de lesiones de trabajadores del campo petrolero frecuentemente involucran múltiples empleadores y contratistas; pueden estar disponibles reclamaciones civiles contra terceros junto con la compensación laboral. Kern Medical Center es el principal centro de trauma que sirve a Bakersfield y el Condado de Kern.",
+  "reviewedBy": "Revisión Legal Pendiente",
+  "reviewDate": "2026-04-23"
+}

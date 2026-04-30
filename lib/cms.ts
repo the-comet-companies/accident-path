@@ -31,11 +31,16 @@ export const cms = {
     loadAndValidate<InjuryType>(locale === 'es' ? 'injuries/es' : 'injuries', slug, InjuryTypeSchema),
   getAllInjuries: (locale: 'en' | 'es' = 'en') =>
     loadAll<InjuryType>(locale === 'es' ? 'injuries/es' : 'injuries', InjuryTypeSchema),
-  getState: (slug: string) => loadAndValidate<StateData>('states', slug, StateDataSchema),
-  getAllStates: () => loadAll<StateData>('states', StateDataSchema),
-  getCity: (slug: string) => loadAndValidate<CityData>('cities', slug, CityDataSchema),
-  getAllCities: () => loadAll<CityData>('cities', CityDataSchema),
-  getCitiesByState: (stateSlug: string) => loadAll<CityData>('cities', CityDataSchema).filter(c => c.stateSlug === stateSlug),
+  getState: (slug: string, locale: 'en' | 'es' = 'en') =>
+    loadAndValidate<StateData>(locale === 'es' ? 'states/es' : 'states', slug, StateDataSchema),
+  getAllStates: (locale: 'en' | 'es' = 'en') =>
+    loadAll<StateData>(locale === 'es' ? 'states/es' : 'states', StateDataSchema),
+  getCity: (slug: string, locale: 'en' | 'es' = 'en') =>
+    loadAndValidate<CityData>(locale === 'es' ? 'cities/es' : 'cities', slug, CityDataSchema),
+  getAllCities: (locale: 'en' | 'es' = 'en') =>
+    loadAll<CityData>(locale === 'es' ? 'cities/es' : 'cities', CityDataSchema),
+  getCitiesByState: (stateSlug: string, locale: 'en' | 'es' = 'en') =>
+    loadAll<CityData>(locale === 'es' ? 'cities/es' : 'cities', CityDataSchema).filter(c => c.stateSlug === stateSlug),
   getGuide: (slug: string, locale: 'en' | 'es' = 'en') =>
     loadAndValidate<Guide>(locale === 'es' ? 'guides/es' : 'guides', slug, GuideSchema),
   getAllGuides: (locale: 'en' | 'es' = 'en') =>

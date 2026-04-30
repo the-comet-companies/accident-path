@@ -1,0 +1,63 @@
+{
+  "slug": "anaheim",
+  "name": "Anaheim",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Anaheim — Guía de Accidentes, Hospitales y Tribunales",
+  "metaDescription": "¿Lesionado en Anaheim? Encuentre hospitales, tribunales del Condado de Orange y sus derechos de lesiones personales en esta ciudad de alto tráfico.",
+  "population": "~346,000 (ciudad más grande del Condado de Orange; sede del Disneyland Resort y principales recintos deportivos)",
+  "description": "Anaheim es la ciudad más grande del Condado de Orange y uno de los destinos más visitados de California, anclada por el Disneyland Resort, el Angel Stadium de Anaheim, el Honda Center y el Centro de Convenciones de Anaheim. Esta combinación de alta densidad peatonal turística, grandes multitudes en eventos deportivos y de entretenimiento, y una de las mayores concentraciones de vehículos de transporte por aplicación del sur de California crea un entorno de accidentes singularmente complejo. La I-5 (Santa Ana Freeway), SR-57 (Orange Freeway) y SR-91 (Riverside Freeway) convergen cerca de Anaheim en un sistema de intercambios muy concentrado que genera una exposición constante a accidentes de alto volumen. Harbor Boulevard, Katella Avenue y Ball Road experimentan extremo conflicto entre peatones y vehículos cerca de los lugares de entretenimiento. El ARTIC (Centro Intermodal de Transporte Regional de Anaheim) es un importante centro de tránsito que añade exposición peatonal en el corredor Harbor/Katella. Los casos de lesiones personales se manejan en el Tribunal Superior del Condado de Orange — ya sea en el Centro de Justicia Central de Santa Ana o en el Centro de Justicia Norte de Fullerton.",
+  "hospitals": [
+    {
+      "name": "UCI Health — Anaheim (formerly Anaheim Regional Medical Center)",
+      "address": "1111 W La Palma Ave, Anaheim, CA 92801",
+      "phone": "(714) 774-1450",
+      "erAvailable": true
+    },
+    {
+      "name": "Kaiser Permanente Anaheim Medical Center",
+      "address": "3440 E La Palma Ave, Anaheim, CA 92806",
+      "phone": "(714) 644-2000",
+      "erAvailable": true
+    },
+    {
+      "name": "Providence St. Jude Medical Center",
+      "address": "101 E Valencia Mesa Dr, Fullerton, CA 92835",
+      "phone": "(714) 992-3000",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Orange County Superior Court — Central Justice Center",
+      "address": "700 W Civic Center Dr, Santa Ana, CA 92701",
+      "phone": "(657) 622-5300",
+      "type": "Civil y lesiones personales (tribunal civil principal del Condado de Orange)"
+    },
+    {
+      "name": "Orange County Superior Court — North Justice Center",
+      "address": "1275 N Berkeley Ave, Fullerton, CA 92832",
+      "phone": "(657) 622-6878",
+      "type": "Civil (norte del Condado de Orange, incluyendo Anaheim)"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Colisiones en el intercambio I-5/SR-57/SR-91 — uno de los nudos de autopistas más complejos del sur de California",
+    "Accidentes de turistas peatones cerca del Disneyland Resort en Harbor Blvd y Katella Ave",
+    "Accidentes de transporte por aplicación (Uber/Lyft) — extremadamente alta concentración de vehículos TNC cerca de Disneyland y recintos de eventos",
+    "Responsabilidad civil en hoteles, centros turísticos y parques de atracciones (caídas, incidentes en atracciones)",
+    "Accidentes en intersecciones de Ball Road, Lincoln Avenue y Anaheim Blvd",
+    "Accidentes peatonales en días de evento cerca del Angel Stadium y Honda Center"
+  ],
+  "notableCorridors": [
+    "Intercambio I-5/SR-57/SR-91 (división de Anaheim) — uno de los nudos de autopistas más concurridos y complejos del sur de California",
+    "Harbor Blvd (cerca del Disneyland Resort) — extremo volumen peatonal turístico; congestión por recogida/entrega de aplicaciones",
+    "Katella Ave — arteria principal este-oeste que conecta Disneyland, Honda Center y Angel Stadium",
+    "Ball Road — alto volumen de vehículos comerciales y turísticos; frecuentes accidentes en intersecciones",
+    "SR-91 (Riverside Freeway) — severa congestión en horas pico y documentada alta tasa de accidentes de alcance",
+    "Lincoln Avenue — corredor minorista y residencial con historial de accidentes en intersecciones"
+  ],
+  "localNotes": "El Condado de Orange aplica el plazo de 6 meses de California para reclamaciones gubernamentales en accidentes que involucren autobuses de OCTA (Autoridad de Transporte del Condado de Orange), vehículos de la Ciudad de Anaheim e infraestructura pública. La alta densidad de vehículos de aplicación cerca del Disneyland Resort crea problemas complejos de cobertura de seguro — los conductores pueden estar en estado 'app activa' o 'app inactiva' al momento del accidente, lo que determina qué seguro aplica. Los casos de responsabilidad civil en atracciones de parques de diversiones frecuentemente involucran equipos de defensa especializados; la preservación temprana de evidencia es fundamental.",
+  "reviewedBy": "Revisión Legal Pendiente",
+  "reviewDate": "2026-04-23"
+}

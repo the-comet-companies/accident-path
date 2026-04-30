@@ -1,0 +1,57 @@
+{
+  "slug": "fresno",
+  "name": "Fresno",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Fresno — Guía de Accidentes, Hospitales y Tribunales",
+  "metaDescription": "¿Lesionado en Fresno? Conozca los hospitales locales, los tribunales y los plazos de lesiones personales de California para accidentes en el Valle Central.",
+  "population": "~545,000 (quinta ciudad más grande de California; la más grande del interior del estado)",
+  "description": "Fresno es la ciudad más grande del Valle Central de California y un nodo clave para la agricultura, la logística y el comercio regional. La Ruta Estatal 99 — el corredor norte-sur principal del valle — atraviesa directamente Fresno y es una de las autopistas más peligrosas de California debido al alto volumen de camiones comerciales, el comportamiento de conducción rural a velocidades de autopista y la niebla tule severa que reduce la visibilidad a casi cero durante los meses de invierno. Blackstone Avenue y Shaw Avenue son las principales arteriales comerciales de la ciudad y generan frecuentes accidentes en intersecciones que involucran peatones, ciclistas y vehículos comerciales. El equipo agrícola que opera cerca de los límites de la ciudad crea un riesgo adicional, y la importante presencia de distribución y almacenamiento en el Condado de Fresno genera un tráfico de camiones considerable. Community Regional Medical Center sirve como el único Centro de Trauma Nivel I del área. El Tribunal Superior del Condado de Fresno maneja todos los litigios civiles por lesiones personales.",
+  "hospitals": [
+    {
+      "name": "Community Regional Medical Center",
+      "address": "2823 Fresno St, Fresno, CA 93721",
+      "phone": "(559) 459-6000",
+      "erAvailable": true
+    },
+    {
+      "name": "Saint Agnes Medical Center",
+      "address": "1303 E Herndon Ave, Fresno, CA 93720",
+      "phone": "(559) 450-3000",
+      "erAvailable": true
+    },
+    {
+      "name": "Clovis Community Medical Center",
+      "address": "2755 Herndon Ave, Clovis, CA 93611",
+      "phone": "(559) 324-4000",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Fresno County Superior Court — Civil Division",
+      "address": "1130 O St, Fresno, CA 93721",
+      "phone": "(559) 457-1900",
+      "type": "Civil y lesiones personales"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Colisiones de alta velocidad y multivehículo en SR-99 (peligro permanente; significativamente mayor en la niebla tule invernal)",
+    "Accidentes de maquinaria agrícola en caminos del condado y bordes de tierras de cultivo",
+    "Accidentes en intersecciones de los corredores comerciales Blackstone Avenue y Shaw Avenue",
+    "Accidentes de camiones cerca de centros de distribución y zonas de intercambio de SR-99",
+    "Accidentes de peatones en el centro de Fresno y corredores residenciales de bajos ingresos",
+    "Lesiones laborales en industrias agrícolas, de almacenamiento y procesamiento de alimentos"
+  ],
+  "notableCorridors": [
+    "SR-99 (segmento de Fresno) — mayor tasa de accidentes y fatalidades de cualquier corredor del Valle Central; grave riesgo de niebla de noviembre a febrero",
+    "Blackstone Avenue — arteria comercial principal con alta frecuencia documentada de accidentes en intersecciones",
+    "Shaw Avenue — corredor comercial este-oeste importante con considerable exposición peatonal en zonas comerciales",
+    "SR-41 (Yosemite Freeway) — conecta el centro de Fresno con el norte y el Condado de Madera",
+    "SR-180 (Kings Canyon Road) — conecta Fresno con Kings Canyon y la Sierra Nevada; volumen de camiones y commuters",
+    "Ventura Avenue — corredor industrial con cruces ferroviarios y vehículos de carga"
+  ],
+  "localNotes": "El Condado de Fresno aplica el plazo de 6 meses de California para reclamaciones gubernamentales en accidentes que involucren vehículos de la ciudad o el condado, carreteras públicas e infraestructura. La niebla tule — una niebla de radiación a nivel del suelo común en el Valle Central de noviembre a febrero — aumenta drásticamente el riesgo de accidentes en SR-99 y autopistas circundantes; los accidentes multivehículo que involucran decenas de vehículos son un evento documentado y recurrente. Community Regional Medical Center es el único Centro de Trauma Nivel I que sirve a gran parte del Valle Central.",
+  "reviewedBy": "Revisión Legal Pendiente",
+  "reviewDate": "2026-04-23"
+}

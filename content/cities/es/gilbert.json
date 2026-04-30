@@ -1,0 +1,57 @@
+{
+  "slug": "gilbert",
+  "name": "Gilbert",
+  "stateSlug": "arizona",
+  "stateAbbreviation": "AZ",
+  "metaTitle": "Gilbert — Guía de Accidentes, Hospitales y Tribunales",
+  "metaDescription": "¿Lesionado en Gilbert? Encuentre hospitales, tribunales y derechos de lesiones personales de Arizona para víctimas en esta ciudad del Condado de Maricopa.",
+  "population": "~267,000 (una de las ciudades con mayor crecimiento en los Estados Unidos durante las últimas tres décadas)",
+  "description": "Gilbert se transformó de un pequeño pueblo agrícola en una de las ciudades más grandes de Arizona en las últimas tres décadas, y esa extraordinaria trayectoria de crecimiento define su entorno de accidentes. Las nuevas subdivisiones, los corredores comerciales en expansión y las crecientes redes de carreteras arteriales están en un estado constante de construcción y recalibración de señales de tráfico — creando condiciones donde la infraestructura rutinariamente va por detrás de la demanda de tráfico. El Loop 202 (Santan Freeway) es la principal autopista que sirve a Gilbert y presenta concentraciones de accidentes en rampas de acceso e intercambios a medida que el volumen de commuters de la comunidad ha crecido. Gilbert Road, Val Vista Drive y Higley Road son las principales arteriales norte-sur con documentadas concentraciones de accidentes en intersecciones. Elliot Road y Warner Road son conectores este-oeste clave que experimentan una creciente exposición a accidentes a medida que el sur de Gilbert se desarrolla. Las tierras agrícolas aún bordean partes de la ciudad, y el equipo agrícola en caminos rurales de transición representa un riesgo de accidente continuo en áreas periféricas.",
+  "hospitals": [
+    {
+      "name": "Dignity Health Mercy Gilbert Medical Center",
+      "address": "3555 S Val Vista Dr, Gilbert, AZ 85297",
+      "phone": "(480) 728-8000",
+      "erAvailable": true
+    },
+    {
+      "name": "Banner Gateway Medical Center",
+      "address": "1900 N Higley Rd, Gilbert, AZ 85234",
+      "phone": "(480) 543-2000",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Gilbert Municipal Court",
+      "address": "55 E Civic Center Dr, Gilbert, AZ 85296",
+      "phone": "(480) 503-6700",
+      "type": "Municipal (tráfico y civil limitado)"
+    },
+    {
+      "name": "Maricopa County Superior Court — Southeast Regional Court Center",
+      "address": "222 E Javelina Ave, Mesa, AZ 85210",
+      "phone": "(480) 344-3000",
+      "type": "Civil y lesiones personales (East Valley)"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Colisiones en rampas de acceso e intercambios del Loop 202 (Santan Freeway) a medida que el volumen de commuters ha crecido rápidamente",
+    "Accidentes en intersecciones en arteriales de rápido desarrollo — Val Vista Drive, Higley Road, Gilbert Road, Elliot Road",
+    "Accidentes en zonas de construcción en el desarrollo residencial y comercial activo en toda la ciudad",
+    "Accidentes por conducción distraída en corredores residenciales suburbanos con una demografía más joven que el promedio",
+    "Accidentes de maquinaria agrícola en caminos de transición de uso agrícola a residencial en el sur de Gilbert",
+    "Accidentes de alcance en carreteras de nueva construcción donde los patrones de tráfico y la temporización de señales aún no están establecidos"
+  ],
+  "notableCorridors": [
+    "Loop 202 (Santan Freeway) — autopista principal que sirve a Gilbert; concentración de accidentes en rampas de acceso e intercambios",
+    "Gilbert Road — arteria norte-sur principal a través del núcleo comercial y residencial de la ciudad",
+    "Val Vista Drive — corredor norte-sur de rápido crecimiento con múltiples intersecciones nuevas y patrones de tráfico cambiantes",
+    "Higley Road — arteria principal adyacente al Banner Gateway Medical Center con documentada concentración de accidentes",
+    "Elliot Road — conector este-oeste a través del sur de Gilbert en rápido desarrollo",
+    "Warner Road — arteria suburbana con actividad significativa de construcción de nuevas viviendas en zonas exteriores"
+  ],
+  "localNotes": "El plazo de 180 días de Arizona para reclamaciones gubernamentales (A.R.S. § 12-821.01) aplica a accidentes que involucren vehículos del Municipio de Gilbert, carreteras públicas e instalaciones. El entorno de rápido crecimiento de Gilbert significa que las condiciones viales — incluyendo marcas de carriles, señalización y temporización de señales — pueden no reflejar los volúmenes de tráfico actuales, lo que puede ser un factor relevante para establecer la responsabilidad en accidentes en intersecciones. Banner Gateway Medical Center y Mercy Gilbert Medical Center juntos sirven como los principales recursos de emergencia y trauma para el área de Gilbert.",
+  "reviewedBy": "Revisión Legal Pendiente",
+  "reviewDate": "2026-04-23"
+}

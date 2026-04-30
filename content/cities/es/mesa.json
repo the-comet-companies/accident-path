@@ -1,0 +1,63 @@
+{
+  "slug": "mesa",
+  "name": "Mesa",
+  "stateSlug": "arizona",
+  "stateAbbreviation": "AZ",
+  "metaTitle": "Mesa — Guía de Accidentes, Hospitales y Tribunales",
+  "metaDescription": "¿Lesionado en Mesa? Encuentre hospitales, tribunales y plazos de lesiones personales de Arizona para víctimas en la tercera ciudad más grande del estado.",
+  "population": "~510,000 (tercera ciudad más grande de Arizona; más grande que varias capitales estatales de EE.UU.)",
+  "description": "Mesa es la tercera ciudad más grande de Arizona y una de las ciudades más pobladas de los Estados Unidos, extendiéndose por una gran parte del este del Condado de Maricopa. La US-60 (Superstition Freeway) y la SR-202 (Red Mountain Freeway) son los principales corredores de autopistas y registran volúmenes consistentes de accidentes originados por tráfico de commuters, comercial y recreativo — la US-60 es una de las autopistas con mayor tasa de accidentes en el área metropolitana de Phoenix. Mesa también es servida por Valley Metro Rail a lo largo de Main Street, lo que introduce exposición a lesiones relacionadas con el tránsito en todo el núcleo urbano. La extensa cuadrícula de arteriales comerciales de la ciudad — incluyendo Power Road, Dobson Road, Gilbert Road y Mesa Drive — genera un volumen significativo de accidentes en intersecciones semaforizadas que experimentan un alto conflicto entre vehículos y peatones durante las horas de mayor tráfico. Los recintos de béisbol de entrenamiento primaveral incluyendo Sloan Park (Chicago Cubs) y otras instalaciones de la Cactus League crean picos de tráfico peatonal estacionales. Todos los asuntos civiles por lesiones personales se manejan a través del Tribunal Superior del Condado de Maricopa.",
+  "hospitals": [
+    {
+      "name": "Banner Desert Medical Center",
+      "address": "1400 S Dobson Rd, Mesa, AZ 85202",
+      "phone": "(480) 412-3000",
+      "erAvailable": true
+    },
+    {
+      "name": "Mountain Vista Medical Center",
+      "address": "1301 S Crismon Rd, Mesa, AZ 85209",
+      "phone": "(480) 358-6100",
+      "erAvailable": true
+    },
+    {
+      "name": "Dignity Health Mercy Gilbert Medical Center",
+      "address": "3555 S Val Vista Dr, Gilbert, AZ 85297",
+      "phone": "(480) 728-8000",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Maricopa County Superior Court — Southeast Regional Court Center",
+      "address": "222 E Javelina Ave, Mesa, AZ 85210",
+      "phone": "(480) 344-3000",
+      "type": "Civil y lesiones personales (East Valley)"
+    },
+    {
+      "name": "Mesa Municipal Court",
+      "address": "55 N Center St, Mesa, AZ 85201",
+      "phone": "(480) 644-2255",
+      "type": "Municipal (tráfico y civil limitado)"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Colisiones de alcance y alta velocidad en US-60 (Superstition Freeway) — consistentemente una de las autopistas con mayor tasa de accidentes del área metropolitana de Phoenix",
+    "Accidentes en el intercambio SR-202 (Red Mountain Freeway) y US-60 en el nudo del extremo este",
+    "Accidentes de tren ligero de Valley Metro Rail a lo largo del corredor de Main Street y Mesa Drive",
+    "Accidentes en intersecciones en Power Road, Dobson Road, Gilbert Road y University Drive",
+    "Accidentes peatonales cerca de recintos de la Cactus League durante el entrenamiento primaveral (estacional)",
+    "Accidentes en zonas de construcción en los activos corredores de desarrollo comercial y residencial de Mesa"
+  ],
+  "notableCorridors": [
+    "US-60 (Superstition Freeway) — autopista principal este-oeste a través de Mesa; una de las autopistas con mayor volumen de accidentes del área metropolitana de Phoenix",
+    "SR-202 (Red Mountain Freeway) — conector norte-sur importante con documentada concentración de accidentes en el intercambio con US-60",
+    "Main Street / Mesa Drive — corredor del tren ligero de Valley Metro Rail; zona de accidentes de tránsito y peatones en el núcleo urbano",
+    "Power Road — arteria norte-sur de alto volumen con documentada concentración de accidentes en intersecciones",
+    "Dobson Road — arteria comercial que conecta el núcleo residencial de Mesa con el área del hospital Banner Desert",
+    "Gilbert Road — conector del lado este con creciente exposición a accidentes en intersecciones comerciales y residenciales"
+  ],
+  "localNotes": "El plazo de 180 días de Arizona para reclamaciones gubernamentales (A.R.S. § 12-821.01) aplica a accidentes que involucren vehículos de la Ciudad de Mesa, carreteras públicas e instalaciones. Los accidentes de tren ligero de Valley Metro Rail requieren una reclamación separada de 180 días contra Valley Metro, una entidad pública regional distinta. Banner Desert Medical Center es uno de los principales Centros de Trauma Nivel I del East Valley. Sloan Park y otras instalaciones de la Cactus League generan alta exposición peatonal en febrero y marzo; los accidentes cerca de estos recintos durante la temporada de entrenamiento primaveral pueden involucrar preguntas complejas de responsabilidad civil por instalaciones.",
+  "reviewedBy": "Revisión Legal Pendiente",
+  "reviewDate": "2026-04-23"
+}

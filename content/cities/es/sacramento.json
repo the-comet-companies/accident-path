@@ -1,0 +1,57 @@
+{
+  "slug": "sacramento",
+  "name": "Sacramento",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Sacramento — Guía de Accidentes, Hospitales y Tribunales",
+  "metaDescription": "¿Lesionado en Sacramento? Encuentre hospitales, tribunales y plazos clave de lesiones personales de California para accidentes en la capital del estado.",
+  "population": "~528,000 (capital del estado de California; sexta ciudad más grande del estado)",
+  "description": "Sacramento es la capital del estado de California y un importante centro regional para el gobierno, la salud y la agricultura. La ciudad se asienta en la confluencia de los corredores de autopistas I-5, I-80 y US-50, creando uno de los sistemas de intercambio más complejos del norte de California — la fusión I-5/I-80 es una zona crónica de alta accidentalidad. El Distrito de Tránsito Regional de Sacramento (RT) opera trenes ligeros y autobuses en toda el área metropolitana, lo que hace que los accidentes relacionados con el tránsito sean una categoría recurrente de litigios por lesiones personales. El centro y el Midtown de Sacramento tienen alta actividad peatonal y ciclista, y el American River Bike Trail atrae un volumen considerable de ciclistas. La Capital City Freeway (Business 80) y Stockton Boulevard son corredores de alta accidentalidad documentados. El Centro Médico UC Davis es el principal Centro de Trauma Nivel I de la región. El Tribunal Superior del Condado de Sacramento, ubicado a pocos metros del Capitolio del Estado, maneja todos los asuntos civiles por lesiones personales.",
+  "hospitals": [
+    {
+      "name": "UC Davis Medical Center",
+      "address": "2315 Stockton Blvd, Sacramento, CA 95817",
+      "phone": "(916) 734-2011",
+      "erAvailable": true
+    },
+    {
+      "name": "Dignity Health Mercy General Hospital",
+      "address": "4001 J St, Sacramento, CA 95819",
+      "phone": "(916) 453-4545",
+      "erAvailable": true
+    },
+    {
+      "name": "Kaiser Permanente Sacramento Medical Center",
+      "address": "2025 Morse Ave, Sacramento, CA 95825",
+      "phone": "(916) 973-5000",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Sacramento County Superior Court — Gordon D. Schaber Courthouse",
+      "address": "720 9th St, Sacramento, CA 95814",
+      "phone": "(916) 874-5522",
+      "type": "Civil y lesiones personales"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Colisiones en el intercambio I-5/I-80 y la Capital City Freeway (Business 80)",
+    "Accidentes de tren ligero del Tránsito Regional de Sacramento (RT) en las líneas Gold y Green del centro y suburbios",
+    "Accidentes de peatones en el centro de Sacramento y la cuadrícula del Midtown",
+    "Accidentes de ciclistas en el American River Bike Trail e infraestructura ciclista urbana",
+    "Accidentes en intersecciones de Florin Road y Stockton Blvd",
+    "Accidentes de vehículos gubernamentales — alta concentración de vehículos de agencias estatales y seguridad del Capitolio"
+  ],
+  "notableCorridors": [
+    "Intercambio I-5/I-80 (centro de Sacramento) — zona de fusión multidireccional compleja con congestión crónica",
+    "Business 80 (Capital City Freeway) — autopista urbana que conecta I-80 con I-5 norte; alta frecuencia de alcances",
+    "US-50 (dirección este hacia Rancho Cordova y El Dorado Hills) — congestión y colisiones durante horas de commute",
+    "Florin Road — arteria principal del sur de Sacramento con historial de accidentes peatonales y en intersecciones",
+    "Stockton Blvd — corredor comercial y residencial que conecta el centro con el sur de Sacramento",
+    "Freeport Blvd — corredor peatonal que conecta el Midtown con Land Park y el sur de Sacramento"
+  ],
+  "localNotes": "El plazo de 6 meses del Condado de Sacramento para reclamaciones gubernamentales aplica a accidentes que involucren vehículos de la ciudad de Sacramento, carreteras del condado, vehículos del Tránsito Regional de Sacramento (RT) y, en algunos casos, vehículos del gobierno estatal que operan en el área de la capital. El Departamento de Servicios Generales de California maneja ciertas reclamaciones que involucran vehículos estatales por separado. UC Davis Medical Center es el Centro de Trauma Nivel I de la región y atiende las lesiones de accidente más graves de todo el Valle de Sacramento.",
+  "reviewedBy": "Revisión Legal Pendiente",
+  "reviewDate": "2026-04-23"
+}

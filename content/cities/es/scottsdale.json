@@ -1,0 +1,63 @@
+{
+  "slug": "scottsdale",
+  "name": "Scottsdale",
+  "stateSlug": "arizona",
+  "stateAbbreviation": "AZ",
+  "metaTitle": "Scottsdale — Guía de Accidentes, Hospitales y Tribunales",
+  "metaDescription": "¿Lesionado en Scottsdale? Encuentre hospitales, tribunales y plazos de lesiones personales de Arizona para víctimas en esta ciudad de entretenimiento.",
+  "population": "~258,000 (se extiende desde el sur de Scottsdale hasta la Reserva McDowell Sonoran en el norte)",
+  "description": "Scottsdale es una de las ciudades más prósperas y geográficamente extensas de Arizona, que se extiende desde el denso sur urbano de Scottsdale — adyacente a Tempe y Phoenix — hasta las extensas comunidades de resorts y residencias en el norte de Scottsdale. Este amplio rango geográfico crea entornos de accidentes drásticamente diferentes dentro de los mismos límites de la ciudad. El Old Town Scottsdale es un importante centro de vida nocturna y entretenimiento donde los accidentes relacionados con el alcohol al volante y la congestión de vehículos de transporte por aplicación son algunos de los factores más significativos en los litigios por lesiones personales. El Loop 101 (Pima Freeway) transporta tráfico de commuters y comercial de alta velocidad a través de los bordes oeste y norte de Scottsdale, con documentadas concentraciones de accidentes en intercambios. Las importantes propiedades de resorts — incluyendo múltiples hoteles de cinco estrellas y spas de destino — crean una exposición continua a la responsabilidad civil por instalaciones. HonorHealth opera dos importantes campus hospitalarios dentro de la ciudad, y Mayo Clinic Hospital en el norte de Phoenix sirve como el principal recurso de Trauma Nivel I para el área del norte de Scottsdale.",
+  "hospitals": [
+    {
+      "name": "HonorHealth Scottsdale Osborn Medical Center",
+      "address": "7400 E Osborn Rd, Scottsdale, AZ 85251",
+      "phone": "(480) 882-4000",
+      "erAvailable": true
+    },
+    {
+      "name": "HonorHealth Scottsdale Shea Medical Center",
+      "address": "9003 E Shea Blvd, Scottsdale, AZ 85260",
+      "phone": "(480) 323-3000",
+      "erAvailable": true
+    },
+    {
+      "name": "Mayo Clinic Hospital",
+      "address": "5777 E Mayo Blvd, Phoenix, AZ 85054",
+      "phone": "(480) 342-2000",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Scottsdale City Court",
+      "address": "3700 N 75th St, Scottsdale, AZ 85251",
+      "phone": "(480) 312-2501",
+      "type": "Municipal (tráfico y civil limitado)"
+    },
+    {
+      "name": "Maricopa County Superior Court",
+      "address": "201 W Jefferson St, Phoenix, AZ 85003",
+      "phone": "(602) 506-3204",
+      "type": "Civil y lesiones personales"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Colisiones de alta velocidad en Loop 101 (Pima Freeway) en los bordes oeste y norte de Scottsdale",
+    "Accidentes relacionados con el alcohol al volante cerca del distrito de entretenimiento del Old Town Scottsdale (bares, clubes nocturnos, restaurantes)",
+    "Accidentes de transporte por aplicación (Uber/Lyft) en las áreas de Old Town, Fashion Square y Kierland Commons",
+    "Responsabilidad civil en resorts y hoteles — caídas, área de piscinas y accidentes de valet",
+    "Accidentes de peatones en Scottsdale Road cerca de distritos de entretenimiento y comerciales en el sur de Scottsdale",
+    "Conflictos entre carritos de golf y peatones en áreas de resorts y comunidades de jubilados"
+  ],
+  "notableCorridors": [
+    "Loop 101 (Pima Freeway) — oeste y norte de Scottsdale; autopista de alta velocidad con concentración de accidentes en fusiones e intercambios",
+    "Scottsdale Road — arteria norte-sur principal que atraviesa toda la ciudad; alta exposición peatonal en el sur y el Old Town",
+    "Shea Blvd — conector este-oeste importante en el norte de Scottsdale con historial documentado de accidentes en intersecciones",
+    "Frank Lloyd Wright Blvd — corredor de resorts y campus médico con zonas de conflicto en intersecciones",
+    "Camelback Road — alta densidad comercial en el sur de Scottsdale; frecuentes accidentes en intersecciones cerca de Scottsdale Fashion Square",
+    "Indian Bend Road — arteria suburbana con uso de suelo mixto de resorts y residencial"
+  ],
+  "localNotes": "El plazo de 180 días de Arizona para reclamaciones gubernamentales (A.R.S. § 12-821.01) aplica a accidentes que involucren vehículos de la Ciudad de Scottsdale e infraestructura pública. El distrito de entretenimiento del Old Town Scottsdale genera una proporción desproporcionada de casos de lesiones relacionadas con el alcohol al volante — la evidencia de alcoholemia y el estado de la aplicación del conductor de transporte al momento del accidente son prioridades críticas en la etapa inicial. El calor extremo del verano en Arizona puede afectar las condiciones de la superficie vial, la integridad de los neumáticos y la fatiga del conductor — todos factores potencialmente relevantes para establecer la responsabilidad.",
+  "reviewedBy": "Revisión Legal Pendiente",
+  "reviewDate": "2026-04-23"
+}
