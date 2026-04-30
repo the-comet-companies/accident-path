@@ -73,6 +73,30 @@ export const TOOL_META_ES: Record<string, { title: string; description: string }
     title: 'Identificador de Tipo de Abogado',
     description: 'No todos los abogados de lesiones personales manejan todos los tipos de casos. Algunos se especializan en vehículos de motor, otros en responsabilidad de locales. Encuentre el tipo correcto.',
   },
+  'insurance-call-prep': {
+    title: 'Preparación para Llamadas con el Seguro',
+    description: 'Las llamadas con los ajustadores de seguros después de un accidente son importantes. Lo que dice y cómo lo dice importa. Esta herramienta le ayuda a organizar lo que necesita tener a mano.',
+  },
+  'lost-wages-estimator': {
+    title: 'Calculadora de Salario Perdido',
+    description: 'Una lesión que le impide trabajar — o limita su capacidad laboral — puede tener graves consecuencias financieras. Esta herramienta educativa le ayuda a comprender los componentes de un reclamo por salarios perdidos.',
+  },
+  'record-request': {
+    title: 'Lista de Solicitud de Registros',
+    description: 'Construir un expediente documental completo después de un accidente es una de las cosas más importantes que puede hacer para proteger sus opciones legales.',
+  },
+  'settlement-readiness': {
+    title: 'Lista de Preparación para Acuerdo',
+    description: 'Aceptar un acuerdo antes de estar listo puede resultar en una compensación que no refleja sus pérdidas reales. Esta lista le ayuda a identificar si los elementos más importantes están en orden.',
+  },
+  'state-next-steps': {
+    title: 'Próximos Pasos por Estado',
+    description: 'Las reglas y plazos de lesiones personales difieren entre California y Arizona. Esta herramienta le ayuda a entender las diferencias clave: plazos, reglas de seguro y estándares de culpa.',
+  },
+  'statute-countdown': {
+    title: 'Cuenta Regresiva del Plazo Legal',
+    description: 'El plazo de prescripción establece una fecha límite estricta para reclamar compensación después de un accidente. Esta herramienta le ayuda a entender cuánto tiempo puede quedar y qué pasos debe considerar.',
+  },
 }
 
 export const NAV_ACCIDENT_TYPES = {
