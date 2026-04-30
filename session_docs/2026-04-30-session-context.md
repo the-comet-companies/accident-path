@@ -2,8 +2,8 @@
 
 ## Where We Left Off (read this first in a new session)
 
-**Status: DEV-34 complete. Spanish guide pages live at `/es/guias/[slug]`.**
-**Build: 122 static pages. TypeScript clean. Both `main` and `staging` in sync.**
+**Status: DEV-34B complete. Spanish injury pages live at `/es/lesiones/[slug]`.**
+**Build: ~130 static pages. TypeScript clean. Both `main` and `staging` in sync at `84f7954`.**
 
 ---
 
@@ -41,26 +41,48 @@ English `/guides` page had a different UI from Spanish `/es/guias` — it used `
 - **`components/content/GuidesHubClient.tsx`** — deleted (was only used by `/guides`)
 - **`app/(en)/guides/page.tsx`** — rewritten as pure server component with the same 3-column card grid as `/es/guias`. Retains "N sections · ~N min read" footer metadata. Removed "Cornerstone Guide" badge (was hardcoded on `am-i-at-fault` and `settlement-vs-lawsuit` — the Spanish version never had it).
 
-Both branches pushed: `main` and `staging` are in sync at `6d575ca`.
+---
+
+### DEV-34B — Spanish Injury Pages ✓ Complete
+
+**Commit:** `84f7954`
+
+**Files changed:**
+
+- `lib/cms.ts` — `getInjury(slug, locale='en')` and `getAllInjuries(locale='en')` extended with locale param; reads from `content/injuries/es/` when `locale === 'es'`. Backward-compatible.
+
+- `app/(es)/es/lesiones/[slug]/page.tsx` — Spanish injury detail page. `generateStaticParams` maps `INJURY_EN_SLUGS` through `SLUG_MAP_ES`. Sections: Síntomas, Efectos a Largo Plazo, Opciones de Tratamiento, Causas Comunes. Sidebar: page nav, CTA card, related accidents (ACCIDENT_LABEL_ES lookup), related tools. hreflang EN↔ES. `notranslate`. CTA → `/es/buscar-ayuda`. Does NOT use `getInjuryRelated` (English-only helper) — reads directly from injury JSON.
+
+- `app/(es)/es/lesiones/page.tsx` — Spanish injury index. 3-column card grid. `cms.getAllInjuries('es')`. Includes bottom CTA section matching English page.
+
+- `content/injuries/es/*.json` — 7 files: `latigazo.json`, `huesos-rotos.json`, `traumatismo-craneal.json`, `columna.json`, `tejido-blando.json`, `quemaduras.json`, `lesiones-internas.json`.
+
+**Zod validation:** 5 of 7 files needed metaTitle/metaDescription trimming post-generation. Final: metaTitles 61–68 chars, metaDescriptions 132–158 chars.
+
+**Note on injury JSON schema:** `InjuryTypeSchema` has no `translationStatus` field (unlike AccidentTypeSchema and GuideSchema). Injury JSON files do not include it.
+
+**Note on relatedTools slugs:** English files use `accident-case-quiz` and `lost-wages-estimator`. Spanish files use `evaluacion-caso` and `calculadora-salario`. These Spanish tool routes don't exist yet — they're created in DEV-35.
 
 ---
 
 ## Where to Start Next Session
 
-**Next task: DEV-34B — Spanish Injury Pages (`/es/lesiones/[slug]`)**
+**Next task: DEV-35 — Spanish Tool Pages (`/es/herramientas/[slug]`)**
 
 Read before starting:
 1. `docs/plans/PHASE-7-IMPLEMENTATIONS.md` — authoritative record of what was built
-2. `docs/plans/PHASE-7-SPANISH-PLAN.md` §DEV-34B
+2. `docs/plans/PHASE-7-SPANISH-PLAN.md` §DEV-35
 
-**DEV-34B quick spec:**
-- `lib/cms.ts` — add `locale` param to `getInjury` and `getAllInjuries` (same pattern as accidents/guides)
-- `app/(es)/es/lesiones/[slug]/page.tsx` — mirrors `app/(en)/injuries/[slug]/page.tsx`; `generateStaticParams` from `SLUG_MAP_ES` injury entries; hreflang; `notranslate`; CTA → `/es/buscar-ayuda`
-- `app/(es)/es/lesiones/page.tsx` — Spanish injury index (same grid pattern)
-- `content/injuries/es/` — 7 JSON files: `latigazo.json`, `huesos-rotos.json`, `traumatismo-craneal.json`, `columna.json`, `tejido-blando.json`, `quemaduras.json`, `lesiones-internas.json`
-- Injury slug mappings are already in `SLUG_MAP_ES`: `whiplash → latigazo`, `broken-bones → huesos-rotos`, `traumatic-brain → traumatismo-craneal`, `spinal → columna`, `soft-tissue → tejido-blando`, `burns → quemaduras`, `internal → lesiones-internas`
+**DEV-35 key constraint:** `ToolEngine.tsx` and `ToolResults.tsx` are `'use client'` components — they cannot call `getDictionary()`. Parent server page must load the dict and pass a `strings` prop subset. Same pattern used in DEV-32 for `IntakeWizard`.
 
-**After DEV-34B, order is:** DEV-35 (Spanish tool pages, requires `ToolEngine.tsx` strings prop) → DEV-37 (states/cities, 18 content files) → DEV-36 (sitemap hreflang)
+**DEV-35 quick spec:**
+- Add `strings` prop to `ToolEngine.tsx` and `ToolResults.tsx` for UI labels
+- `app/(es)/es/herramientas/[slug]/page.tsx` — Spanish tool detail page; parent server component loads dict subset, passes to client
+- `app/(es)/es/herramientas/page.tsx` — Spanish tool index
+- Tool slug mapping already in `SLUG_MAP_ES`: `accident-case-quiz → evaluacion-caso`
+- May need additional tool slug mappings if more tools exist
+
+**After DEV-35, order is:** DEV-37 (states/cities, 18 content files) → DEV-36 (sitemap hreflang)
 
 ---
 
@@ -74,13 +96,13 @@ Read before starting:
 | DEV-32 | 7B | ✓ Complete — Spanish intake wizard + results + thank-you |
 | DEV-33 | 7C | ✓ Complete — Spanish accident pages (13 types) + `/es/accidentes` index |
 | DEV-34 | 7C | ✓ Complete — Spanish guide pages (14 guides) + `/es/guias` index |
-| DEV-34B | 7C | Not started — Spanish injury pages (7 types) |
+| DEV-34B | 7C | ✓ Complete — Spanish injury pages (7 types) + `/es/lesiones` index |
 | DEV-35 | 7C | Not started — Spanish tool pages |
 | DEV-37 | 7C | Not started — Spanish state + city pages (2 states, 16 cities) |
 | DEV-36 | 7D | Not started — hreflang + sitemap |
 
 **Tier 1 (launch minimum):** DEV-29–32 — ✓ ALL COMPLETE
-**Tier 2 (full bilingual):** all 10 tasks — 6/10 complete
+**Tier 2 (full bilingual):** all 10 tasks — 7/10 complete
 
 ---
 
@@ -94,7 +116,7 @@ Read before starting:
 4. Related sidebar links — render Spanish slugs directly; use lookup table from `NAV_*` config for display labels
 5. CTA always → `/es/buscar-ayuda`
 6. Breadcrumb `variant="dark"` on `bg-primary-900` heroes
-7. JSON files — Spanish slugs in all related arrays; `translationStatus: "needs-review"`
+7. JSON files — Spanish slugs in all related arrays
 8. Run Zod validation before committing (metaTitle ≤70, metaDescription 120–160)
 
 ### `buildMetaTags()` + hreflang conflict
@@ -111,8 +133,8 @@ Client components (`IntakeWizard`, `ToolEngine`, `ToolResults`) cannot call `get
 |------|--------|
 | Next.js 14 App Router | ✓ |
 | TypeScript strict | ✓ (zero errors) |
-| Static pages | ✓ 122 |
-| Spanish i18n | 🔄 DEV-29–34 done; DEV-34B/35/37/36 remaining |
+| Static pages | ✓ ~130 |
+| Spanish i18n | 🔄 DEV-29–34B done; DEV-35/37/36 remaining |
 | Attorney content review | ✗ Pending |
 | GA4 / Clarity | ✗ Pending Michael |
 | Domain/DNS | ✗ Pending Michael |
