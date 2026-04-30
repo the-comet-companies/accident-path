@@ -166,7 +166,7 @@ export default async function HerramientaDetailPage({
             <div className="flex flex-col gap-10">
 
               {/* Tool engine */}
-              {tool.slug === 'injury-journal' ? (
+              {enSlug === 'injury-journal' ? (
                 <InjuryJournal tool={tool} />
               ) : (
                 <ToolEngine tool={tool} strings={toolStrings} />
