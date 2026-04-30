@@ -1,0 +1,46 @@
+{
+  "slug": "tejido-blando",
+  "title": "Lesiones de Tejido Blando",
+  "metaTitle": "Lesiones de Tejido Blando — Síntomas y Derechos | AccidentPath",
+  "metaDescription": "Las lesiones de tejido blando en accidentes incluyen esguinces, distensiones y contusiones. Conozca síntomas, tratamientos y sus derechos legales en CA y AZ.",
+  "description": "Las lesiones de tejido blando afectan músculos, tendones y ligamentos sin causar fracturas óseas visibles. Aunque frecuentemente son subestimadas por las aseguradoras, estas lesiones pueden generar dolor crónico, limitación de movimiento y dificultad para trabajar. Son comunes en accidentes de tráfico, caídas y lesiones laborales. Recibir atención médica oportuna y documentar adecuadamente los síntomas es fundamental para proteger su salud y sus derechos legales.",
+  "symptoms": [
+    "Dolor localizado en músculos, tendones o ligamentos afectados",
+    "Inflamación y edema en la zona lesionada",
+    "Hematomas o moretones que aparecen horas después del accidente",
+    "Rigidez muscular y dificultad para mover la extremidad afectada",
+    "Espasmos musculares involuntarios",
+    "Sensibilidad al tacto en el área lesionada",
+    "Debilidad muscular que dificulta actividades cotidianas",
+    "Dolor que se intensifica con el movimiento o la actividad física"
+  ],
+  "longTermEffects": [
+    "Dolor crónico persistente si la lesión no recibe tratamiento adecuado",
+    "Inestabilidad articular por daño ligamentoso que no sanó correctamente",
+    "Fibromialgia o síndrome de dolor miofascial en casos severos",
+    "Limitación permanente del rango de movimiento",
+    "Mayor susceptibilidad a lesiones recurrentes en la misma zona",
+    "Impacto psicológico incluyendo ansiedad y depresión relacionadas con el dolor crónico",
+    "Pérdida de capacidad laboral en ocupaciones que requieren esfuerzo físico"
+  ],
+  "treatmentOptions": [
+    "Aplicación de hielo y compresión durante las primeras 48-72 horas (método RICE)",
+    "Medicamentos antiinflamatorios no esteroideos (AINEs) para reducir dolor e inflamación",
+    "Fisioterapia y rehabilitación con ejercicios progresivos de fortalecimiento",
+    "Masajes terapéuticos para aliviar la tensión muscular y mejorar la circulación",
+    "Inyecciones de corticosteroides para casos de inflamación severa",
+    "Terapia de ultrasonido o estimulación eléctrica para acelerar la recuperación",
+    "Uso de ortesis o vendajes funcionales para estabilizar la articulación",
+    "Terapia ocupacional para adaptar actividades durante la recuperación"
+  ],
+  "commonCauses": [
+    "Impacto de latigazo cervical en colisiones vehiculares traseras",
+    "Caídas en superficies resbaladizas o irregulares en negocios o propiedades",
+    "Movimientos repetitivos o sobreesfuerzo en el ambiente laboral",
+    "Colisiones de bicicleta con vehículos o superficies duras",
+    "Aplastamiento o impacto directo en accidentes de camión o vehículo pesado",
+    "Torceduras abruptas al intentar evitar un accidente"
+  ],
+  "relatedAccidents": ["auto", "camion", "caida", "trabajo", "bicicleta"],
+  "relatedTools": ["evaluacion-caso"]
+}

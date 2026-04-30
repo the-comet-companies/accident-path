@@ -1,0 +1,46 @@
+{
+  "slug": "latigazo",
+  "title": "Latigazo Cervical",
+  "metaTitle": "Latigazo Cervical — Síntomas, Tratamiento y Derechos | AccidentPath",
+  "metaDescription": "El latigazo es una lesión cervical común en accidentes de auto. Conozca los síntomas, tratamientos y sus derechos legales en California y Arizona.",
+  "description": "El latigazo cervical ocurre cuando el cuello es forzado bruscamente hacia adelante y hacia atrás en una fracción de segundo, lesionando los músculos, tendones, ligamentos y discos de la columna cervical. Es una de las lesiones más frecuentes en accidentes de tráfico, especialmente en colisiones por alcance trasero. Aunque muchas personas lo consideran una lesión menor, el latigazo puede causar dolor crónico y limitaciones funcionales que afectan la calidad de vida durante meses o años. El diagnóstico y tratamiento oportuno son fundamentales para una recuperación completa.",
+  "symptoms": [
+    "Dolor y rigidez en el cuello, que generalmente empeora en las primeras 24 a 48 horas después del accidente",
+    "Dolor de cabeza que comienza en la base del cráneo y se extiende hacia la frente",
+    "Mareos o sensación de vértigo al mover la cabeza",
+    "Hormigueo, entumecimiento o debilidad que se irradia hacia los hombros, brazos o manos",
+    "Fatiga intensa y dificultad para concentrarse o recordar eventos recientes",
+    "Visión borrosa o dificultad para enfocar objetos",
+    "Dolor o sensibilidad en los hombros, la parte alta de la espalda o entre los omóplatos",
+    "Problemas para dormir debido al dolor o a la incomodidad al encontrar una posición cómoda"
+  ],
+  "longTermEffects": [
+    "Dolor cervical crónico que puede persistir durante meses o años si no recibe tratamiento adecuado",
+    "Síndrome post-latigazo: cefaleas crónicas, dificultades cognitivas y cambios en el estado de ánimo",
+    "Artrosis cervical acelerada o degeneración de los discos intervertebrales",
+    "Neuropatía cervical por compresión de raíces nerviosas, con dolor irradiado persistente",
+    "Limitación del rango de movimiento del cuello que puede afectar actividades cotidianas y laborales",
+    "Trastornos del sueño crónicos y fatiga crónica asociada al dolor constante",
+    "Impacto psicológico, incluyendo ansiedad al conducir y síntomas de estrés postraumático"
+  ],
+  "treatmentOptions": [
+    "Reposo relativo en las primeras 24 a 72 horas combinado con aplicación de hielo para reducir la inflamación aguda",
+    "Medicamentos antiinflamatorios no esteroideos (ibuprofeno, naproxeno) o relajantes musculares recetados por un médico",
+    "Fisioterapia con ejercicios de estiramiento, fortalecimiento cervical y técnicas de movilización",
+    "Terapia de manipulación quiropráctica para restaurar el rango de movimiento y aliviar la presión en los nervios",
+    "Inyecciones de corticosteroides en la zona cervical para reducir la inflamación en casos moderados a severos",
+    "Acupuntura y terapia de masaje terapéutico para aliviar la tensión muscular y mejorar la circulación",
+    "Collar cervical de uso limitado y supervisado, ya que el uso prolongado puede debilitar los músculos del cuello",
+    "Terapia cognitivo-conductual para manejar el dolor crónico y los efectos psicológicos asociados a la lesión"
+  ],
+  "commonCauses": [
+    "Colisiones por alcance trasero en vehículos, que son la causa más común de latigazo cervical",
+    "Impactos laterales o de costado en accidentes de tránsito que provocan movimientos bruscos de la cabeza",
+    "Caídas sobre la cabeza o el cuello, incluyendo caídas de altura o resbalones en superficies mojadas",
+    "Accidentes de motocicleta donde el conductor es proyectado hacia adelante o hacia un lado",
+    "Colisiones en bicicleta contra vehículos u obstáculos que generan impacto en la cabeza y el cuello",
+    "Actividades de contacto físico o deportes de alto impacto que involucran golpes en la cabeza o el cuello"
+  ],
+  "relatedAccidents": ["auto", "camion", "motocicleta", "caida"],
+  "relatedTools": ["evaluacion-caso", "calculadora-salario"]
+}

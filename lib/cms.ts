@@ -27,8 +27,10 @@ export const cms = {
     loadAndValidate<AccidentType>(locale === 'es' ? 'accidents/es' : 'accidents', slug, AccidentTypeSchema),
   getAllAccidents: (locale: 'en' | 'es' = 'en') =>
     loadAll<AccidentType>(locale === 'es' ? 'accidents/es' : 'accidents', AccidentTypeSchema),
-  getInjury: (slug: string) => loadAndValidate<InjuryType>('injuries', slug, InjuryTypeSchema),
-  getAllInjuries: () => loadAll<InjuryType>('injuries', InjuryTypeSchema),
+  getInjury: (slug: string, locale: 'en' | 'es' = 'en') =>
+    loadAndValidate<InjuryType>(locale === 'es' ? 'injuries/es' : 'injuries', slug, InjuryTypeSchema),
+  getAllInjuries: (locale: 'en' | 'es' = 'en') =>
+    loadAll<InjuryType>(locale === 'es' ? 'injuries/es' : 'injuries', InjuryTypeSchema),
   getState: (slug: string) => loadAndValidate<StateData>('states', slug, StateDataSchema),
   getAllStates: () => loadAll<StateData>('states', StateDataSchema),
   getCity: (slug: string) => loadAndValidate<CityData>('cities', slug, CityDataSchema),

@@ -1,0 +1,45 @@
+{
+  "slug": "lesiones-internas",
+  "title": "Lesiones Internas",
+  "metaTitle": "Lesiones Internas por Accidente — Síntomas y Derechos | AccidentPath",
+  "metaDescription": "Las lesiones internas como hemorragias y daño a órganos son emergencias médicas. Conozca señales, tratamientos y sus derechos en CA y AZ.",
+  "description": "Las lesiones internas incluyen hemorragias internas, daño a órganos vitales y traumatismos abdominales o torácicos que no siempre son visibles externamente. Son frecuentes en colisiones de alta velocidad, atropellamientos y accidentes de construcción. Su peligro radica en que los síntomas pueden aparecer horas o días después del accidente, cuando el daño ya es grave. Buscar atención médica inmediata tras cualquier accidente de impacto fuerte es esencial, incluso si inicialmente no siente dolor severo. Esta información es educativa y no constituye asesoría legal.",
+  "symptoms": [
+    "Dolor abdominal o torácico que aumenta gradualmente tras el accidente",
+    "Hematomas profundos o decoloración de la piel en abdomen, costados o pecho",
+    "Náuseas, vómito con sangre o heces de color negro o rojo oscuro",
+    "Mareo intenso, debilidad y sensación de desmayo por pérdida de sangre interna",
+    "Presión arterial baja y pulso acelerado como signos de shock hemorrágico",
+    "Distensión o rigidez abdominal al tacto",
+    "Dificultad para respirar o dolor al respirar profundo por lesión pulmonar o costal",
+    "Orina con sangre indicativa de lesión renal o de vejiga"
+  ],
+  "longTermEffects": [
+    "Insuficiencia orgánica crónica si el daño al hígado, riñones o bazo no se trató a tiempo",
+    "Adherencias y tejido cicatrizal interno que pueden causar obstrucción intestinal futura",
+    "Necesidad de extirpación de órgano dañado, como esplenectomía, con secuelas inmunológicas",
+    "Dolor crónico abdominal o torácico por daño nervioso o cicatricial interno",
+    "Mayor riesgo de infecciones graves por compromiso del sistema inmune o pérdida del bazo",
+    "Complicaciones cardíacas si el trauma afectó el pericardio o el músculo cardíaco",
+    "Anemia crónica por hemorragia interna no completamente resuelta"
+  ],
+  "treatmentOptions": [
+    "Evaluación de emergencia con tomografía computarizada (TC) para detectar hemorragias internas",
+    "Cirugía de urgencia para controlar hemorragias activas o reparar órganos lacerados",
+    "Transfusiones de sangre y administración de líquidos intravenosos para estabilizar al paciente",
+    "Embolización endovascular como alternativa mínimamente invasiva para detener sangrados",
+    "Monitoreo intensivo en unidad de cuidados intensivos (UCI) en los primeros días",
+    "Drenaje quirúrgico de hematomas o acumulaciones de líquido interno",
+    "Rehabilitación postoperatoria para recuperar función digestiva y movilidad",
+    "Seguimiento médico prolongado con imágenes periódicas para detectar complicaciones tardías"
+  ],
+  "commonCauses": [
+    "Impacto de alta velocidad en colisiones de automóviles con aplastamiento del abdomen contra el volante o cinturón",
+    "Colisiones de motocicleta sin protección adecuada del torso contra superficies duras",
+    "Atropellamientos de peatones con trauma por impacto directo del vehículo",
+    "Caídas desde altura en obras de construcción con aterrizaje sobre el abdomen o costado",
+    "Aplastamiento por maquinaria pesada o derrumbe de estructuras en accidentes laborales"
+  ],
+  "relatedAccidents": ["auto", "camion", "motocicleta", "peaton", "construccion"],
+  "relatedTools": ["evaluacion-caso", "calculadora-salario"]
+}

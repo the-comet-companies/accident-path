@@ -1,0 +1,45 @@
+{
+  "slug": "huesos-rotos",
+  "title": "Huesos Rotos y Fracturas",
+  "metaTitle": "Huesos Rotos en Accidentes — Tratamiento y Derechos | AccidentPath",
+  "metaDescription": "Las fracturas óseas son lesiones graves en accidentes de auto, caídas y construcción. Conozca los tipos, tratamientos y sus derechos legales en California.",
+  "description": "Las fracturas óseas son lesiones frecuentes en accidentes de tránsito, caídas, accidentes laborales y de construcción. Ocurren cuando una fuerza externa supera la resistencia natural del hueso, provocando una ruptura parcial o total. El tipo y la gravedad de la fractura dependen de la magnitud del impacto, el hueso afectado y la edad del paciente. Las fracturas van desde fisuras simples hasta fracturas conminutas con múltiples fragmentos que requieren cirugía. Un diagnóstico preciso mediante radiografías o tomografías y un tratamiento oportuno son esenciales para garantizar una recuperación funcional completa.",
+  "symptoms": [
+    "Dolor intenso e inmediato en el sitio de la fractura, que se agrava al intentar mover la extremidad afectada",
+    "Inflamación visible y hematoma (moretón) que aparece en las horas siguientes al impacto",
+    "Deformidad visible del hueso o de la extremidad, que puede aparecer angulada o acortada",
+    "Incapacidad para soportar peso o mover la parte del cuerpo afectada sin dolor severo",
+    "Sensación de crujido o chasquido al momento del accidente o al intentar mover la zona lesionada",
+    "Entumecimiento u hormigueo alrededor de la fractura, indicativo de posible daño en nervios o vasos sanguíneos",
+    "En fracturas expuestas: hueso visible a través de la piel con riesgo elevado de infección"
+  ],
+  "longTermEffects": [
+    "Artritis postraumática en la articulación afectada, especialmente cuando la fractura involucra superficies articulares",
+    "Deformidad permanente o acortamiento del hueso si la fractura no se trata o se reduce incorrectamente",
+    "Síndrome compartimental crónico con dolor y limitación funcional persistente en la extremidad afectada",
+    "Daño nervioso permanente que puede causar entumecimiento, debilidad o parálisis parcial",
+    "Osteoporosis localizada o necrosis avascular del hueso por interrupción del suministro sanguíneo",
+    "Complicaciones quirúrgicas como infección ósea (osteomielitis) o falla del material de fijación",
+    "Limitaciones funcionales a largo plazo que afectan la capacidad laboral y la calidad de vida"
+  ],
+  "treatmentOptions": [
+    "Inmovilización mediante yeso, férula o bota ortopédica para fracturas simples no desplazadas que no requieren cirugía",
+    "Reducción cerrada bajo anestesia para realinear el hueso sin cirugía, seguida de inmovilización con yeso",
+    "Fijación interna con placas, tornillos o clavos intramedulares para fracturas desplazadas o inestables",
+    "Fijación externa con dispositivos metálicos colocados fuera del cuerpo para fracturas graves o abiertas",
+    "Fisioterapia y rehabilitación intensiva para recuperar fuerza, movilidad y función tras la inmovilización",
+    "Terapia ocupacional para reaprender actividades cotidianas cuando la fractura afecta manos, muñecas o brazos",
+    "Medicamentos para el dolor y la inflamación, así como suplementos de calcio y vitamina D para apoyar la consolidación ósea",
+    "Cirugía reconstructiva o prótesis articular en casos de fracturas periarticulares severas o no consolidación ósea"
+  ],
+  "commonCauses": [
+    "Accidentes de tránsito de alto impacto, incluyendo colisiones frontales, laterales y volcaduras de vehículos",
+    "Caídas desde altura o sobre superficies duras en el lugar de trabajo, en la construcción o en espacios públicos",
+    "Accidentes de motocicleta y bicicleta en los que el conductor es proyectado y golpea el pavimento u obstáculos",
+    "Accidentes laborales en la industria de la construcción que involucran caídas de andamios, golpes con maquinaria pesada o derrumbes",
+    "Colisiones con vehículos pesados como camiones de carga, donde la magnitud del impacto es especialmente alta",
+    "Aplastamiento de extremidades en accidentes industriales o vehiculares donde partes del cuerpo quedan atrapadas"
+  ],
+  "relatedAccidents": ["auto", "camion", "motocicleta", "caida", "bicicleta", "construccion"],
+  "relatedTools": ["evaluacion-caso"]
+}

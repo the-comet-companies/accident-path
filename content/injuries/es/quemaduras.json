@@ -1,0 +1,46 @@
+{
+  "slug": "quemaduras",
+  "title": "Lesiones por Quemaduras",
+  "metaTitle": "Quemaduras en Accidentes — Síntomas y Derechos | AccidentPath",
+  "metaDescription": "Las quemaduras por accidentes vehiculares, químicos o laborales pueden ser devastadoras. Conozca síntomas, tratamientos y sus derechos legales en CA y AZ.",
+  "description": "Las quemaduras son lesiones graves que destruyen tejido cutáneo y pueden afectar músculos, nervios y huesos. En accidentes ocurren por incendios vehiculares, derrames de sustancias químicas, explosiones en construcción o contacto con maquinaria industrial. Dependiendo del grado, las quemaduras pueden requerir hospitalización prolongada, cirugías reconstructivas y rehabilitación extensa. Las víctimas frecuentemente enfrentan cicatrices permanentes, dolor crónico y consecuencias psicológicas significativas. Esta información es educativa y no constituye asesoría legal.",
+  "symptoms": [
+    "Enrojecimiento, ampollas o destrucción visible de la piel según el grado de quemadura",
+    "Dolor intenso e inmediato en quemaduras de primer y segundo grado",
+    "Ausencia de dolor en quemaduras de tercer grado por destrucción de nervios",
+    "Piel ennegrecida, carbonizada o de apariencia cérea en quemaduras severas",
+    "Inflamación y edema alrededor de la zona afectada",
+    "Fiebre e infección secundaria si la quemadura no recibe tratamiento adecuado",
+    "Dificultad para respirar si las vías aéreas fueron expuestas a humo o calor",
+    "Shock hipovolémico en quemaduras extensas por pérdida de líquidos"
+  ],
+  "longTermEffects": [
+    "Cicatrices permanentes y queloides que pueden requerir múltiples cirugías correctivas",
+    "Contracturas cicatriciales que limitan el movimiento de articulaciones afectadas",
+    "Daño neurológico con dolor neuropático crónico o pérdida de sensibilidad",
+    "Trastorno de estrés postraumático (TEPT) y depresión relacionados con el trauma",
+    "Infecciones recurrentes por daño al sistema inmunológico local de la piel",
+    "Intolerancia al calor y sensibilidad extrema en las zonas quemadas",
+    "Impacto severo en la autoestima y calidad de vida por cambios en la apariencia"
+  ],
+  "treatmentOptions": [
+    "Atención de emergencia inmediata con enfriamiento y cobertura estéril de la quemadura",
+    "Desbridamiento quirúrgico para eliminar tejido necrótico y prevenir infecciones",
+    "Injertos de piel para cubrir áreas con destrucción dérmica profunda",
+    "Terapia de compresión con prendas especiales para minimizar la formación de cicatrices",
+    "Fisioterapia intensiva para recuperar movilidad y prevenir contracturas",
+    "Manejo del dolor con analgésicos, opioides o bloqueos nerviosos según severidad",
+    "Terapia psicológica y grupos de apoyo para tratar el impacto emocional",
+    "Cirugía reconstructiva y procedimientos estéticos para mejorar la apariencia y función"
+  ],
+  "commonCauses": [
+    "Incendios y explosiones en accidentes de vehículos de motor o camiones cisterna",
+    "Exposición a sustancias químicas corrosivas en accidentes laborales o industriales",
+    "Contacto con maquinaria o superficies sobrecalentadas en obras de construcción",
+    "Defectos de fabricación en productos que causan sobrecalentamiento o ignición",
+    "Derrames de líquidos hirvientes o vapores a presión en el lugar de trabajo",
+    "Electrocución con quemaduras de entrada y salida en accidentes eléctricos"
+  ],
+  "relatedAccidents": ["auto", "camion", "construccion", "trabajo", "producto"],
+  "relatedTools": ["evaluacion-caso", "calculadora-salario"]
+}

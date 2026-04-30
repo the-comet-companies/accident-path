@@ -1,0 +1,46 @@
+{
+  "slug": "traumatismo-craneal",
+  "title": "Traumatismo Craneoencefálico",
+  "metaTitle": "Traumatismo Craneoencefálico — Síntomas y Derechos | AccidentPath",
+  "metaDescription": "El traumatismo craneal va desde conmoción leve hasta daño cerebral severo. Conozca síntomas, tratamientos y sus derechos en CA y AZ.",
+  "description": "El traumatismo craneoencefálico (TCE) ocurre cuando un golpe, sacudida brusca o impacto penetrante interrumpe el funcionamiento normal del cerebro. Las lesiones van desde una conmoción cerebral leve hasta daño cerebral severo o irreversible. Los TCE son una de las principales causas de discapacidad permanente y muerte tras accidentes de tránsito, caídas y accidentes de construcción. Incluso las lesiones catalogadas como leves pueden tener consecuencias cognitivas, emocionales y físicas duraderas. La evaluación médica inmediata es indispensable ante cualquier golpe en la cabeza, ya que algunos síntomas graves pueden aparecer horas o días después del accidente.",
+  "symptoms": [
+    "Pérdida del conocimiento, que puede durar desde unos segundos hasta varias horas dependiendo de la gravedad del TCE",
+    "Confusión, desorientación en tiempo y espacio, o incapacidad para recordar el accidente o eventos previos",
+    "Dolor de cabeza intenso y persistente que no cede con analgésicos convencionales",
+    "Náuseas o vómitos repetitivos, especialmente en las primeras horas tras el golpe",
+    "Visión borrosa o doble, sensibilidad extrema a la luz o al ruido",
+    "Problemas del habla: palabras confusas, dificultad para encontrar palabras o para comprender el lenguaje",
+    "Convulsiones o temblores involuntarios que pueden presentarse de inmediato o días después del traumatismo",
+    "Cambios de comportamiento inexplicables: irritabilidad, agitación, apatía o cambios repentinos de estado de ánimo"
+  ],
+  "longTermEffects": [
+    "Síndrome post-conmoción crónico con cefaleas, fatiga, irritabilidad y dificultades cognitivas que duran meses o años",
+    "Deterioro cognitivo permanente que afecta la memoria, la concentración, la planificación y la toma de decisiones",
+    "Epilepsia postraumática con episodios convulsivos recurrentes que requieren medicación de por vida",
+    "Trastornos del estado de ánimo, incluyendo depresión mayor, ansiedad generalizada y trastorno de estrés postraumático",
+    "Cambios de personalidad que alteran las relaciones interpersonales y la capacidad de mantener empleo",
+    "Discapacidad permanente que puede requerir cuidado supervisado a largo plazo o asistencia en actividades básicas",
+    "Mayor riesgo de enfermedades neurodegenerativas como la encefalopatía traumática crónica (CTE) en lesiones repetitivas"
+  ],
+  "treatmentOptions": [
+    "Evaluación de emergencia con tomografía computarizada (TC) o resonancia magnética (RM) para determinar el alcance de la lesión",
+    "Hospitalización y monitoreo de la presión intracraneal en TCE moderados a severos para prevenir daño cerebral secundario",
+    "Cirugía de urgencia para drenar hematomas intracerebrales, extradurales o subdurales que comprimen el tejido cerebral",
+    "Rehabilitación neurológica multidisciplinaria con fisioterapeuta, terapeuta ocupacional, fonoaudiólogo y neuropsicólogo",
+    "Medicamentos específicos para controlar convulsiones, reducir la inflamación cerebral o manejar cambios de humor",
+    "Terapia cognitiva para recuperar funciones ejecutivas, memoria de trabajo y habilidades de procesamiento de información",
+    "Terapia psicológica y grupos de apoyo para el paciente y sus familiares, que a menudo también son afectados emocionalmente",
+    "Reposo cognitivo estricto en la fase aguda: evitar pantallas, lectura intensa y actividades que demanden concentración sostenida"
+  ],
+  "commonCauses": [
+    "Accidentes de tránsito en automóvil o camión con impacto directo en la cabeza contra el volante, el tablero o las ventanas",
+    "Accidentes de motocicleta, especialmente cuando el conductor no usa casco o el casco no absorbe adecuadamente el impacto",
+    "Caídas desde escaleras, andamios o superficies elevadas en accidentes laborales o domésticos",
+    "Atropellamientos de peatones por vehículos que proyectan al individuo contra el pavimento o superficies duras",
+    "Accidentes en obras de construcción que implican objetos que caen sobre la cabeza o golpes con maquinaria",
+    "Explosiones o estallidos que generan ondas de presión capaces de lesionar el tejido cerebral sin impacto directo"
+  ],
+  "relatedAccidents": ["auto", "camion", "motocicleta", "caida", "construccion", "peaton"],
+  "relatedTools": ["evaluacion-caso", "calculadora-salario"]
+}

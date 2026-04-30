@@ -1,0 +1,46 @@
+{
+  "slug": "columna",
+  "title": "Lesión de Médula Espinal",
+  "metaTitle": "Lesiones de Médula Espinal — Síntomas y Derechos | AccidentPath",
+  "metaDescription": "Las lesiones de médula espinal pueden causar parálisis parcial o total. Conozca síntomas, tratamientos y sus derechos legales tras un accidente en California.",
+  "description": "Las lesiones de médula espinal ocurren cuando un traumatismo dañado el tejido nervioso dentro de la columna vertebral, interrumpiendo la comunicación entre el cerebro y el cuerpo. Dependiendo del nivel y la completitud de la lesión, la persona puede experimentar paresia (debilidad muscular), paraplejia (parálisis de la parte inferior del cuerpo) o tetraplejia (parálisis de las cuatro extremidades). Son las lesiones más devastadoras que se producen en accidentes graves y a menudo resultan en discapacidad permanente. El tratamiento inmediato en una unidad especializada de trauma es crítico para minimizar el daño secundario y maximizar las posibilidades de recuperación funcional.",
+  "symptoms": [
+    "Pérdida inmediata o progresiva de la sensibilidad al tacto, calor, frío o dolor por debajo del nivel de la lesión",
+    "Debilidad muscular severa o parálisis completa de extremidades, tronco o músculos respiratorios",
+    "Incapacidad para controlar la vejiga o los intestinos, con pérdida involuntaria de orina o heces",
+    "Dolor intenso, ardor o sensaciones eléctricas en los nervios por debajo del sitio de la lesión",
+    "Espasmos musculares incontrolables o rigidez (espasticidad) en las extremidades afectadas",
+    "Dificultad para respirar de forma autónoma en lesiones cervicales altas que afectan los músculos del diafragma",
+    "Presión arterial anormalmente alta o baja, sudoración excesiva y disfunción del sistema nervioso autónomo",
+    "Posición anormal del cuerpo o del cuello visible tras el accidente, con incapacidad para moverse voluntariamente"
+  ],
+  "longTermEffects": [
+    "Paraplejia o tetraplejia permanente en lesiones completas de médula, con dependencia total o parcial de silla de ruedas",
+    "Dolor neuropático crónico: sensaciones de quemadura, descarga eléctrica o presión constante por debajo de la lesión",
+    "Complicaciones respiratorias recurrentes, incluyendo neumonía y necesidad de ventilación mecánica en lesiones cervicales altas",
+    "Úlceras por presión (escaras) en zonas de inmovilidad prolongada que pueden derivar en infecciones graves",
+    "Trombosis venosa profunda y riesgo elevado de embolia pulmonar por inmovilidad prolongada de las extremidades",
+    "Disfunción sexual y reproductiva que impacta significativamente la calidad de vida y las relaciones personales",
+    "Dependencia económica total o parcial, pérdida de capacidad laboral y necesidad de cuidados especializados de por vida"
+  ],
+  "treatmentOptions": [
+    "Inmovilización inmediata de la columna en la escena del accidente para prevenir daño adicional a la médula",
+    "Hospitalización en unidad de trauma espinal con monitoreo de signos vitales y manejo de la presión arterial",
+    "Cirugía de descompresión y estabilización de la columna para eliminar fragmentos óseos o discos que compriman la médula",
+    "Corticosteroides en dosis altas administrados en las primeras horas para reducir la inflamación del tejido nervioso",
+    "Rehabilitación física intensiva con fisioterapeuta especializado en neurología para maximizar la función residual",
+    "Terapia ocupacional para adaptar las actividades cotidianas, el hogar y el entorno laboral a la nueva condición",
+    "Cateterismo urinario intermitente y programas de manejo intestinal para mantener la higiene y prevenir infecciones",
+    "Apoyo psicológico continuo y grupos de pares con personas que viven con lesión medular para adaptarse a la nueva realidad"
+  ],
+  "commonCauses": [
+    "Accidentes de tránsito graves, especialmente colisiones frontales o volcaduras de vehículos con compresión de la columna vertebral",
+    "Accidentes de motocicleta donde el conductor impacta contra el pavimento, un muro o un vehículo a alta velocidad",
+    "Caídas desde andamios, escaleras o estructuras elevadas en accidentes de construcción que impactan la columna al caer",
+    "Atropellamientos de peatones por vehículos que generan fuerzas de flexión o extensión extremas en la columna",
+    "Accidentes laborales que involucran aplastamiento, caída de objetos pesados sobre la espalda o derrumbes",
+    "Colisiones con camiones de carga o vehículos pesados donde la diferencia de masa genera traumas espinales severos"
+  ],
+  "relatedAccidents": ["auto", "camion", "motocicleta", "construccion", "peaton", "trabajo"],
+  "relatedTools": ["evaluacion-caso", "calculadora-salario"]
+}
