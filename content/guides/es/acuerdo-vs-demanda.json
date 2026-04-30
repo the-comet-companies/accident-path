@@ -1,0 +1,58 @@
+{
+  "slug": "acuerdo-vs-demanda",
+  "title": "Acuerdo Extrajudicial vs. Demanda: Diferencias y Cuándo Cada Uno Tiene Sentido",
+  "metaTitle": "Acuerdo Extrajudicial vs. Demanda: Diferencias Clave",
+  "metaDescription": "Entienda la diferencia entre llegar a un acuerdo y presentar una demanda tras un accidente: ventajas, desventajas y cuándo cada opción puede ser más adecuada.",
+  "description": "Después de un accidente con lesiones, uno de los momentos más importantes es decidir si aceptar un acuerdo extrajudicial o presentar una demanda formal. Ambas opciones tienen ventajas y desventajas que dependen de las circunstancias específicas de su caso. Esta guía ofrece información educativa para que entienda las diferencias — la decisión final siempre debe tomarse con orientación de un abogado de confianza.",
+  "sections": [
+    {
+      "heading": "Qué Es un Acuerdo Extrajudicial",
+      "content": "Un acuerdo extrajudicial ocurre cuando la parte lesionada y la aseguradora (o la parte responsable) llegan a un acuerdo sobre una cantidad de compensación sin necesidad de ir a juicio. La mayoría de los casos de lesiones personales se resuelven de esta manera. El proceso puede ocurrir en cualquier etapa: antes de presentar una demanda, después de presentarla pero antes del juicio, o incluso durante el juicio en algunos casos. Al llegar a un acuerdo, usted firma un documento llamado liberación de reclamos, que generalmente cierra definitivamente su derecho a reclamar más compensación por ese accidente en el futuro. Por eso, es fundamental entender completamente el alcance de sus lesiones antes de firmar cualquier acuerdo.",
+      "tips": [
+        "La mayoría de los casos de lesiones personales se resuelven mediante acuerdo extrajudicial, no en juicio",
+        "Un acuerdo finalizado generalmente cierra su derecho a reclamar más compensación en el futuro",
+        "No acepte un acuerdo hasta estar seguro de que sus lesiones se han estabilizado y conoce los costos futuros"
+      ]
+    },
+    {
+      "heading": "Ventajas y Desventajas del Acuerdo Extrajudicial",
+      "content": "Los acuerdos extrajudiciales ofrecen varias ventajas: resolución más rápida que un juicio, menor costo en honorarios y gastos legales, certeza sobre la compensación que recibirá, mayor privacidad y menor estrés. Sin embargo, también tienen desventajas: la compensación acordada puede ser menor que lo que podría obtenerse en juicio, existe presión para aceptar antes de conocer completamente el impacto a largo plazo de las lesiones, y una vez firmado el acuerdo, generalmente no puede reabrirse. Es posible que la oferta inicial de la aseguradora no refleje el valor total de su reclamo, y la negociación puede ser necesaria para llegar a una cantidad más justa.",
+      "tips": [
+        "Los acuerdos son más rápidos y menos costosos que un juicio, pero la compensación puede ser menor",
+        "No tiene que aceptar la primera oferta — la negociación es parte normal del proceso",
+        "Considere los costos médicos futuros antes de aceptar cualquier cantidad como acuerdo final"
+      ]
+    },
+    {
+      "heading": "Qué Es Presentar una Demanda Formal",
+      "content": "Presentar una demanda formal significa iniciar un proceso legal en un tribunal para que un juez o jurado determine la responsabilidad y la compensación. Esto no significa necesariamente que el caso llegará a juicio — la gran mayoría de las demandas se resuelven antes de llegar al juicio, muchas veces después de que el proceso de descubrimiento de evidencia revela información que lleva a las partes a negociar en serio. Presentar una demanda puede ser útil cuando la aseguradora no está negociando de buena fe, cuando la oferta está muy por debajo del valor razonable del caso, o cuando se acercan los plazos legales para presentar. El proceso puede tardar meses o años.",
+      "tips": [
+        "Presentar una demanda no significa necesariamente ir a juicio — la mayoría se resuelven antes",
+        "La demanda puede motivar a la aseguradora a negociar con mayor seriedad",
+        "En California y Arizona el plazo general para demandar es de dos años desde el accidente"
+      ]
+    },
+    {
+      "heading": "Ventajas y Desventajas de la Demanda Formal",
+      "content": "Las ventajas de presentar una demanda incluyen: acceso al proceso de descubrimiento de evidencia, que puede revelar información valiosa; mayor presión sobre la aseguradora para ofrecer una compensación más justa; posibilidad de obtener una compensación más alta si el caso se resuelve o gana en juicio. Las desventajas son significativas: el proceso es más largo y costoso; los resultados son inciertos — ningún abogado puede garantizar un resultado específico; los honorarios legales y gastos aumentan; y el proceso puede ser emocionalmente agotador para el demandante. Ninguna de estas opciones es automáticamente mejor — la decisión depende de los detalles específicos de su situación.",
+      "tips": [
+        "El descubrimiento de evidencia en una demanda puede revelar información que fortalezca su posición",
+        "Los costos legales y el tiempo del proceso aumentan significativamente en una demanda formal",
+        "Ningún abogado puede garantizar un resultado específico — evalúe las opciones con información realista"
+      ]
+    },
+    {
+      "heading": "Cómo Tomar Esta Decisión",
+      "content": "La decisión entre un acuerdo extrajudicial y una demanda formal es una de las más importantes de su caso y debe tomarse con orientación legal personalizada. Factores relevantes incluyen la gravedad de sus lesiones y el impacto a largo plazo, la claridad sobre quién fue responsable, la cantidad que la aseguradora está ofreciendo versus el valor estimado de su caso, sus preferencias personales respecto a tiempo, estrés y certeza, y los plazos legales aplicables. AccidentPath ofrece recursos educativos para ayudarle a entender sus opciones, pero la evaluación específica de su caso y la recomendación sobre qué camino seguir corresponde a un abogado con experiencia en lesiones personales.",
+      "tips": [
+        "Discuta los pros y contras de ambas opciones con su abogado antes de tomar cualquier decisión",
+        "Considere el impacto emocional y de tiempo del proceso — ambos factores importan en esta decisión",
+        "Los plazos legales no esperan — si considera demandar, no espere hasta el último momento"
+      ]
+    }
+  ],
+  "relatedAccidents": ["auto", "camion", "trabajo"],
+  "relatedTools": ["evaluacion-caso"],
+  "relatedGuides": ["contratar-abogado", "hablar-con-abogado", "reclamos-seguro"],
+  "translationStatus": "needs-review"
+}

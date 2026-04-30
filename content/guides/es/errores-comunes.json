@@ -1,0 +1,58 @@
+{
+  "slug": "errores-comunes",
+  "title": "Errores comunes que pueden dañar su reclamo después de un accidente",
+  "metaTitle": "Errores comunes que dañan su reclamo tras un accidente",
+  "metaDescription": "Conozca los errores más frecuentes después de un accidente que pueden afectar su reclamo. Guía educativa de AccidentPath para California y Arizona.",
+  "description": "Después de un accidente, es fácil cometer errores que más adelante pueden dificultar o reducir su reclamo. Esta guía educativa describe los errores más comunes que cometen las personas y cómo puede evitarlos. Esta información no constituye asesoría legal; consulte con un profesional para orientación específica.",
+  "sections": [
+    {
+      "heading": "No buscar atención médica de inmediato",
+      "content": "Uno de los errores más frecuentes y costosos es no buscar atención médica el mismo día del accidente o al día siguiente. Muchas personas sienten que están bien y esperan días o semanas antes de ver a un médico. Esto crea un vacío en el registro médico que las aseguradoras pueden usar para argumentar que sus lesiones no fueron causadas por el accidente. Además, algunas lesiones graves, como el daño en la columna o el traumatismo cerebral, pueden empeorar si no se tratan a tiempo.",
+      "tips": [
+        "Vaya a urgencias o a su médico el mismo día del accidente.",
+        "Diga al médico exactamente cómo ocurrió el accidente.",
+        "No interrumpa su tratamiento médico aunque se sienta mejor."
+      ]
+    },
+    {
+      "heading": "Dar declaraciones a la aseguradora sin preparación",
+      "content": "Hablar con la aseguradora —especialmente con el ajustador del otro conductor— sin estar preparado puede ser perjudicial para su reclamo. Los ajustadores son profesionales entrenados para hacer preguntas que pueden usarse para reducir o negar su compensación. Frases inocentes como 'me siento bien' o 'fue un pequeño error de mi parte' pueden usarse en su contra. Si la aseguradora le solicita una declaración grabada, puede beneficiarse de hablar primero con un abogado.",
+      "tips": [
+        "Nunca admita culpa, ni siquiera de forma parcial.",
+        "No dé declaraciones grabadas sin orientación legal.",
+        "Anote el nombre y número del ajustador para su registro."
+      ]
+    },
+    {
+      "heading": "Publicar sobre el accidente en redes sociales",
+      "content": "Publicar fotos, comentarios o actualizaciones en redes sociales después de un accidente es un error que puede dañar seriamente su caso. Las aseguradoras y abogados de la parte contraria revisan activamente las redes sociales en busca de información que contradiga sus lesiones o su versión de los hechos. Una foto suya haciendo ejercicio o una publicación diciendo que se siente 'mucho mejor' puede usarse como evidencia en su contra. Lo más prudente es evitar publicar cualquier cosa relacionada con el accidente.",
+      "tips": [
+        "Evite publicar fotos o comentarios sobre el accidente o sus lesiones.",
+        "Configure sus cuentas como privadas durante el proceso del reclamo.",
+        "Recuerde que publicaciones antiguas también pueden ser revisadas."
+      ]
+    },
+    {
+      "heading": "Aceptar la primera oferta de la aseguradora",
+      "content": "Las aseguradoras a menudo hacen ofertas de liquidación rápidas, especialmente poco después del accidente, con la esperanza de cerrar el caso antes de que usted entienda el alcance total de sus daños. Una vez que firma un acuerdo de liquidación, generalmente renuncia a su derecho de reclamar más compensación en el futuro, incluso si sus lesiones resultan ser más graves de lo que pensaba. Es importante esperar a que los médicos puedan evaluar completamente sus lesiones antes de considerar cualquier acuerdo.",
+      "tips": [
+        "No acepte ninguna oferta antes de que sus médicos evalúen sus lesiones completamente.",
+        "Consulte con un abogado antes de firmar cualquier documento de liquidación.",
+        "Recuerde que el dolor crónico y las cirugías futuras también pueden tener costo."
+      ]
+    },
+    {
+      "heading": "No recopilar evidencia en la escena",
+      "content": "Muchas personas, ya sea por el shock del momento o porque creen que el accidente es menor, no documentan la escena adecuadamente. Sin fotos, datos de testigos y un reporte policial, reconstruir lo que sucedió puede ser muy difícil más adelante. La evidencia del lugar del accidente —marcas en el pavimento, daños en los vehículos, posición de las señales de tránsito— desaparece rápidamente. AccidentPath ofrece una herramienta gratuita de lista de evidencia para ayudarle a saber exactamente qué recopilar.",
+      "tips": [
+        "Tome fotos inmediatamente si puede hacerlo con seguridad.",
+        "Llame al 911 para que haya un reporte oficial del accidente.",
+        "Pida los datos de contacto de todos los testigos presentes."
+      ]
+    }
+  ],
+  "relatedAccidents": ["auto", "caida", "trabajo"],
+  "relatedTools": ["lista-evidencia", "evaluacion-caso"],
+  "relatedGuides": ["despues-accidente-auto", "reclamos-seguro", "proteger-reclamo"],
+  "translationStatus": "needs-review"
+}

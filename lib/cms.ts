@@ -34,8 +34,10 @@ export const cms = {
   getCity: (slug: string) => loadAndValidate<CityData>('cities', slug, CityDataSchema),
   getAllCities: () => loadAll<CityData>('cities', CityDataSchema),
   getCitiesByState: (stateSlug: string) => loadAll<CityData>('cities', CityDataSchema).filter(c => c.stateSlug === stateSlug),
-  getGuide: (slug: string) => loadAndValidate<Guide>('guides', slug, GuideSchema),
-  getAllGuides: () => loadAll<Guide>('guides', GuideSchema),
+  getGuide: (slug: string, locale: 'en' | 'es' = 'en') =>
+    loadAndValidate<Guide>(locale === 'es' ? 'guides/es' : 'guides', slug, GuideSchema),
+  getAllGuides: (locale: 'en' | 'es' = 'en') =>
+    loadAll<Guide>(locale === 'es' ? 'guides/es' : 'guides', GuideSchema),
   getTool: (slug: string) => loadAndValidate<ToolConfig>('tools', slug, ToolConfigSchema),
   getAllTools: () => loadAll<ToolConfig>('tools', ToolConfigSchema),
 }

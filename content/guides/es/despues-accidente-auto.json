@@ -1,0 +1,67 @@
+{
+  "slug": "despues-accidente-auto",
+  "title": "Qué hacer después de un accidente de auto",
+  "metaTitle": "Qué hacer después de un accidente de auto | AccidentPath",
+  "metaDescription": "Sepa qué pasos tomar después de un accidente de auto en California o Arizona. Guía educativa para proteger su salud y su reclamo.",
+  "description": "Esta guía explica los pasos más importantes que puede seguir después de un accidente de auto. La información es educativa y no constituye asesoría legal. Cada caso es diferente; puede beneficiarse de hablar con un abogado si tiene dudas sobre su situación.",
+  "sections": [
+    {
+      "heading": "Lo primero: seguridad y llamar al 911",
+      "content": "Inmediatamente después de un accidente, lo más importante es su seguridad y la de los demás. Si es posible, mueva los vehículos fuera de la vía para evitar más accidentes. Llame al 911 aunque el choque parezca menor — un reporte policial puede ser esencial para su reclamo. No abandone la escena hasta que llegue la policía o hasta que haya intercambiado información con el otro conductor.",
+      "tips": [
+        "Encienda las luces de emergencia de su vehículo de inmediato.",
+        "Llame al 911 incluso si nadie parece estar gravemente herido.",
+        "No mueva a personas lesionadas a menos que haya peligro inmediato."
+      ]
+    },
+    {
+      "heading": "Busque atención médica aunque se sienta bien",
+      "content": "Muchas lesiones, como el latigazo cervical o las lesiones de columna, no causan dolor inmediato. Los síntomas pueden aparecer horas o días después del accidente. Es muy recomendable visitar a un médico el mismo día o al día siguiente para que quede un registro formal de sus lesiones. Sin documentación médica, puede ser difícil demostrar que sus lesiones fueron causadas por el accidente.",
+      "tips": [
+        "No diga que 'está bien' en la escena — espere la evaluación médica.",
+        "Conserve todos los registros médicos, facturas y recetas.",
+        "Si los síntomas aparecen días después, busque atención de inmediato."
+      ]
+    },
+    {
+      "heading": "Recopile evidencia en la escena",
+      "content": "Si puede hacerlo de forma segura, tome fotografías del lugar desde varios ángulos: los vehículos involucrados, los daños, la posición final de los autos, señales de tránsito y el estado de la calle. Obtenga la información del otro conductor: nombre, número de licencia, placa del vehículo, nombre de su aseguradora y número de póliza. Si hay testigos, pídale su nombre y celular. Esta evidencia puede ser fundamental para su caso.",
+      "tips": [
+        "Tome fotos de todas las placas involucradas.",
+        "Anote la hora, la fecha y las condiciones climáticas.",
+        "Pida el número de reporte a los oficiales de policía."
+      ]
+    },
+    {
+      "heading": "Notifique a su aseguradora — pero con precaución",
+      "content": "Debe reportar el accidente a su propia aseguradora según los plazos indicados en su póliza. Sin embargo, tenga cuidado con lo que dice: no admita culpa, no exagere ni minimice sus síntomas, y no firme ningún documento de liquidación antes de entender completamente sus derechos. Los ajustadores de seguros trabajan para la compañía, no para usted. Si le presionan para que haga una declaración grabada, puede beneficiarse de hablar primero con un abogado.",
+      "tips": [
+        "Nunca admita culpa en conversaciones con aseguradoras.",
+        "Anote el nombre del ajustador y el número de reclamo.",
+        "No acepte la primera oferta de liquidación sin evaluar todos sus daños."
+      ]
+    },
+    {
+      "heading": "Documente sus gastos y pérdidas",
+      "content": "Lleve un registro detallado de todos los gastos relacionados con el accidente: facturas médicas, medicamentos, transporte a consultas, días de trabajo perdidos y cualquier otro costo. Esto incluye también el impacto emocional y físico en su vida diaria. Cuanto más detallada sea su documentación, más completa podrá ser una evaluación de su situación. AccidentPath ofrece una herramienta de lista de evidencia que puede ayudarle a no olvidar ningún elemento importante.",
+      "tips": [
+        "Guarde todos los recibos relacionados con su recuperación.",
+        "Lleve un diario de sus síntomas y cómo afectan su vida diaria.",
+        "Registre los días que no pudo trabajar debido al accidente."
+      ]
+    },
+    {
+      "heading": "Considere hablar con un abogado",
+      "content": "No todos los accidentes requieren representación legal, pero hay situaciones en las que puede ser muy beneficioso consultar con un abogado especializado en lesiones personales. Por ejemplo, si sufrió lesiones significativas, si hay disputa sobre quién tuvo la culpa, o si la aseguradora le ofrece una compensación que no cubre todos sus daños. La mayoría de los abogados de lesiones personales ofrecen consultas gratuitas y trabajan en base a honorarios contingentes, lo que significa que no paga a menos que gane su caso.",
+      "tips": [
+        "Consulte con un abogado antes de firmar cualquier acuerdo.",
+        "Pregunte sobre su experiencia con casos de accidentes de auto.",
+        "Una consulta gratuita no le obliga a contratar al abogado."
+      ]
+    }
+  ],
+  "relatedAccidents": ["auto", "camion", "motocicleta"],
+  "relatedTools": ["lista-evidencia", "evaluacion-caso"],
+  "relatedGuides": ["lista-evidencia", "reclamos-seguro", "reporte-policial", "errores-comunes"],
+  "translationStatus": "needs-review"
+}

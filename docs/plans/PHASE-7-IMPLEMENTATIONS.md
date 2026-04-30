@@ -262,11 +262,24 @@ The `globals.css` import path depends on nesting level:
 
 ---
 
+## DEV-34 — Spanish Guide Pages (Complete)
+
+| File | Action | Notes |
+|------|--------|-------|
+| `i18n/config.ts` | Modified | Added 11 new guide slug mappings to SLUG_MAP_ES (after-motorcycle-crash, am-i-at-fault, common-mistakes, dealing-with-insurance-adjusters, getting-your-police-report, hiring-a-lawyer, insurance-claims, protecting-your-claim, settlement-vs-lawsuit, should-i-talk-to-a-lawyer, understanding-medical-bills) |
+| `lib/cms.ts` | Modified | Added `locale?: 'en' \| 'es'` to `getGuide` and `getAllGuides` — backward-compatible, reads from `content/guides/es/` when `locale === 'es'` |
+| `app/(es)/es/guias/[slug]/page.tsx` | Created | Spanish guide detail page; `generateStaticParams` from `GUIDE_EN_SLUGS` mapped through `SLUG_MAP_ES`; related links use Spanish slugs directly; hreflang; `notranslate` |
+| `app/(es)/es/guias/page.tsx` | Created | Spanish index; 3-column grid; `cms.getAllGuides('es')` |
+| `content/guides/es/*.json` | Created | 14 files — all pass Zod validation; metaTitles 48–60 chars; metaDescriptions 129–158 chars |
+
+**Build result:** 122 static pages (up from 93 — +15 Spanish guide pages + 14 guide detail pages)
+
+---
+
 ## Remaining Tasks (Tier 2)
 
 | Task | Routes to create | Content files to create |
 |------|-----------------|------------------------|
-| DEV-34 | `app/(es)/es/guias/[slug]/page.tsx` | `content/guides/es/*.json` (14 files) |
 | DEV-34B | `app/(es)/es/lesiones/[slug]/page.tsx` | `content/injuries/es/*.json` (7 files) |
 | DEV-35 | `app/(es)/es/herramientas/[slug]/page.tsx` | Update `ToolEngine.tsx` + `ToolResults.tsx` with `strings` prop |
 | DEV-37 | `app/(es)/es/estados/[state]/[city]/page.tsx` + `[state]/page.tsx` | `content/states/es/*.json` (18 files) |

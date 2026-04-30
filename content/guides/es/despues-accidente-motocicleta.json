@@ -1,0 +1,67 @@
+{
+  "slug": "despues-accidente-motocicleta",
+  "title": "Qué hacer después de un accidente de motocicleta",
+  "metaTitle": "Qué hacer tras un accidente de motocicleta | AccidentPath",
+  "metaDescription": "Aprenda los pasos a seguir después de un accidente de motocicleta en California o Arizona. Guía educativa para proteger su salud y su reclamo.",
+  "description": "Los accidentes de motocicleta frecuentemente resultan en lesiones más graves que los de automóvil, ya que el motociclista tiene menos protección. Esta guía educativa describe los pasos que puede considerar tomar para cuidar su salud y proteger su situación después de un accidente en motocicleta.",
+  "sections": [
+    {
+      "heading": "Seguridad inmediata después del accidente",
+      "content": "Después de un accidente de motocicleta, lo primero es alejarse del tráfico si puede moverse con seguridad. Quédese en el lugar hasta que llegue la policía — abandonar la escena puede afectar negativamente su caso. Encienda las luces de emergencia del vehículo involucrado si es posible, y colóquese en un lugar visible pero seguro. Llame al 911 de inmediato, incluso si cree que sus lesiones son menores.",
+      "tips": [
+        "No se quite el casco hasta que los paramédicos lleguen, a menos que sea absolutamente necesario.",
+        "Quédese en el lugar aunque el otro conductor quiera resolver el asunto en privado.",
+        "Si hay personas inconscientes, no las mueva — espere ayuda médica."
+      ]
+    },
+    {
+      "heading": "Busque atención médica aunque no sienta dolor",
+      "content": "Los motociclistas son especialmente vulnerables a lesiones graves como fracturas, daño en la columna, traumatismo craneoencefálico y lesiones internas. Muchas de estas lesiones no producen dolor inmediato debido a la adrenalina. Es crucial ir a urgencias o a un médico el mismo día del accidente para una evaluación completa. Sin documentación médica oportuna, puede ser más difícil demostrar que sus lesiones fueron consecuencia directa del accidente.",
+      "tips": [
+        "Mencione al médico exactamente cómo ocurrió el accidente.",
+        "No diga que 'está bien' antes de ser evaluado.",
+        "Continúe con el seguimiento médico aunque se sienta mejor."
+      ]
+    },
+    {
+      "heading": "Recopile evidencia en la escena",
+      "content": "Si puede hacerlo sin poner en riesgo su seguridad o su atención médica, tome fotos de todo: su motocicleta, el otro vehículo, los daños, las marcas en el pavimento, señales de tránsito y la posición final de los vehículos. Obtenga la información completa del otro conductor: nombre, licencia, placa, aseguradora y número de póliza. Si hay testigos, pídale sus datos de contacto. Esta documentación puede ser muy valiosa para cualquier reclamo futuro.",
+      "tips": [
+        "Tome fotos desde múltiples ángulos y distancias.",
+        "Anote si el otro conductor admitió alguna responsabilidad.",
+        "Guarde su casco y equipo dañado — pueden ser evidencia."
+      ]
+    },
+    {
+      "heading": "El prejuicio hacia los motociclistas y cómo afrontarlo",
+      "content": "Lamentablemente, existe en algunos contextos un prejuicio cultural hacia los motociclistas que puede influir en cómo se evalúan los accidentes. Es posible que la aseguradora o incluso algunos testigos asuman que el motociclista actuó de forma imprudente. Por eso es especialmente importante documentar bien la escena, obtener el reporte policial y conservar evidencia objetiva. Si siente que su versión de los hechos no está siendo tomada en serio, puede beneficiarse de la orientación de un abogado especializado.",
+      "tips": [
+        "No haga declaraciones que puedan interpretarse como una admisión de culpa.",
+        "Solicite una copia del reporte policial tan pronto como esté disponible.",
+        "Guarde el equipo de protección que usaba durante el accidente."
+      ]
+    },
+    {
+      "heading": "Entienda sus opciones para compensación",
+      "content": "Después de un accidente de motocicleta, es posible que pueda reclamar compensación por gastos médicos, pérdida de ingresos, daños a su motocicleta y sufrimiento físico y emocional. El proceso puede involucrar a la aseguradora del otro conductor, a su propia póliza si cuenta con cobertura para conductores sin seguro, o incluso a otras partes si el accidente fue causado por una condición peligrosa en la vía. AccidentPath ofrece herramientas gratuitas para ayudarle a entender mejor su situación, aunque esta información no reemplaza la asesoría de un profesional legal.",
+      "tips": [
+        "No acepte una oferta de la aseguradora sin entender el alcance total de sus daños.",
+        "Documente todos los gastos relacionados con el accidente.",
+        "Pregunte a un abogado si hay otras partes que puedan tener responsabilidad."
+      ]
+    },
+    {
+      "heading": "Cuándo considerar hablar con un abogado",
+      "content": "No todos los accidentes de motocicleta requieren representación legal, pero hay situaciones en las que puede ser muy útil. Si sufrió lesiones que requieren tratamiento prolongado, si hay disputa sobre la culpa, si la aseguradora le ofrece una compensación insuficiente, o si el otro conductor no tenía seguro, puede beneficiarse de hablar con un abogado especializado en accidentes de motocicleta. La mayoría de estos profesionales ofrecen consultas gratuitas y cobran solo si ganan su caso.",
+      "tips": [
+        "Consulte con un abogado antes de firmar cualquier acuerdo de liquidación.",
+        "Busque abogados con experiencia específica en accidentes de motocicleta.",
+        "Una consulta gratuita no le compromete a contratar al abogado."
+      ]
+    }
+  ],
+  "relatedAccidents": ["motocicleta", "auto", "bicicleta"],
+  "relatedTools": ["lista-evidencia", "evaluacion-caso"],
+  "relatedGuides": ["despues-accidente-auto", "errores-comunes", "contratar-abogado"],
+  "translationStatus": "needs-review"
+}

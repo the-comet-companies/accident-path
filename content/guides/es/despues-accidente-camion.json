@@ -1,0 +1,67 @@
+{
+  "slug": "despues-accidente-camion",
+  "title": "Qué hacer después de un accidente con camión de carga",
+  "metaTitle": "Qué hacer después de un accidente con camión | AccidentPath",
+  "metaDescription": "Guía educativa sobre los pasos a seguir después de un accidente con un camión de carga en California o Arizona. Proteja su salud y su reclamo.",
+  "description": "Los accidentes con camiones de carga son más complejos que los choques entre autos particulares. Pueden involucrar a múltiples partes responsables, regulaciones federales y estatales, y lesiones graves. Esta guía educativa explica los pasos que puede considerar seguir para proteger su situación.",
+  "sections": [
+    {
+      "heading": "Por qué los accidentes con camiones son diferentes",
+      "content": "Los accidentes con camiones de carga son más complicados legalmente que los accidentes entre autos particulares. Pueden estar involucradas varias partes: el conductor, la empresa transportista, el propietario del camión, la empresa que cargó la mercancía, o incluso el fabricante de alguna pieza defectuosa. Además, los camioneros y sus empleadores están sujetos a regulaciones federales de la Administración Federal de Seguridad de Transportistas Motorizados (FMCSA). Esta complejidad hace que sea especialmente importante actuar con rapidez para preservar evidencia.",
+      "tips": [
+        "Anote el nombre de la empresa en el costado del camión.",
+        "Tome fotos del número DOT visible en el vehículo.",
+        "No firme nada que le presenten en la escena."
+      ]
+    },
+    {
+      "heading": "Seguridad inmediata y llamada al 911",
+      "content": "Después de un accidente con un camión, aléjese del vehículo si puede hacerlo con seguridad, ya que los camiones pueden derramar combustible u otras sustancias peligrosas. Llame al 911 de inmediato — en accidentes con camiones de carga, la policía y posiblemente las autoridades estatales de transporte acudirán a la escena. Un reporte oficial es fundamental. No mueva su vehículo hasta que la policía lo autorice, ya que la posición de los vehículos puede ser evidencia clave.",
+      "tips": [
+        "Aléjese del camión en caso de derrame o humo.",
+        "Espere a las autoridades aunque el conductor del camión quiera resolver el asunto en privado.",
+        "Llame a emergencias aunque se sienta bien físicamente."
+      ]
+    },
+    {
+      "heading": "Busque atención médica de inmediato",
+      "content": "Las colisiones con camiones de carga frecuentemente producen lesiones graves debido a la diferencia de tamaño y peso entre los vehículos. Incluso si en el momento no siente dolor intenso, es esencial ir a urgencias o a un médico ese mismo día. Lesiones como fracturas, traumatismos craneoencefálicos o daños a órganos internos pueden no ser evidentes de inmediato. La documentación médica oportuna es una de las piezas más importantes de su caso.",
+      "tips": [
+        "Acepte ser examinado por los paramédicos en la escena.",
+        "Vaya a urgencias aunque crea que sus lesiones son leves.",
+        "Informe a su médico exactamente cómo ocurrió el accidente."
+      ]
+    },
+    {
+      "heading": "Recopile toda la evidencia posible",
+      "content": "En un accidente con camión, la evidencia puede desaparecer rápidamente. Las empresas transportistas envían a veces a sus propios investigadores a la escena poco después del accidente. Tome fotografías detalladas desde todos los ángulos: el camión, su vehículo, los daños, la carga si está visible, señales de tránsito y marcas en el pavimento. Si hay cámaras de tránsito o negocios cercanos, anote su ubicación. Los datos del camión —como los registros del tacógrafo o la caja negra— pueden ser fundamentales pero tienen que solicitarse formalmente.",
+      "tips": [
+        "Tome fotos de los daños antes de que muevan los vehículos.",
+        "Busque testigos y pida su información de contacto.",
+        "Anote si el conductor del camión parecía cansado, distraído o actuaba de forma extraña."
+      ]
+    },
+    {
+      "heading": "Por qué puede beneficiarse de hablar con un abogado",
+      "content": "Dada la complejidad legal de los accidentes con camiones, muchas personas que han pasado por esta situación se benefician de consultar con un abogado especializado en lesiones personales. Hay plazos legales para preservar evidencia y presentar reclamos, y las empresas transportistas suelen contar con equipos legales experimentados. Un abogado puede ayudar a identificar a todas las partes potencialmente responsables y a evaluar el alcance de sus daños. AccidentPath puede ayudarle a entender sus opciones a través de herramientas educativas gratuitas.",
+      "tips": [
+        "No hable con el abogado de la empresa transportista sin asesoría propia.",
+        "Guarde toda la correspondencia con aseguradoras.",
+        "Consulte con un abogado antes de aceptar cualquier oferta de compensación."
+      ]
+    },
+    {
+      "heading": "Entienda los plazos para actuar",
+      "content": "Tanto en California como en Arizona existen plazos legales —conocidos como estatutos de limitaciones— para presentar una demanda por lesiones personales. En muchos casos, tiene dos años desde la fecha del accidente para actuar, aunque hay excepciones que pueden acortar o alargar ese plazo. No espere demasiado para buscar orientación; entre más tiempo pase, más difícil puede ser recopilar evidencia y reconstruir los hechos. Esta información es educativa y no sustituye la asesoría de un abogado licenciado.",
+      "tips": [
+        "Anote la fecha exacta del accidente en sus registros.",
+        "Consulte con un abogado lo antes posible para entender los plazos de su caso.",
+        "No suponga que tiene mucho tiempo — actúe pronto."
+      ]
+    }
+  ],
+  "relatedAccidents": ["camion", "auto", "motocicleta"],
+  "relatedTools": ["lista-evidencia", "evaluacion-caso"],
+  "relatedGuides": ["despues-accidente-auto", "reclamos-seguro", "contratar-abogado"],
+  "translationStatus": "needs-review"
+}

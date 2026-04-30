@@ -1,0 +1,58 @@
+{
+  "slug": "reporte-policial",
+  "title": "Cómo Obtener su Reporte Policial Después de un Accidente",
+  "metaTitle": "Cómo Obtener su Reporte Policial Tras un Accidente",
+  "metaDescription": "El reporte policial es clave para su reclamo de seguro. Aprenda cómo obtenerlo en California o Arizona, qué contiene y cómo corregir errores.",
+  "description": "El reporte policial de su accidente es uno de los documentos más importantes para cualquier reclamo de seguro o demanda. Es el registro oficial creado por un tercero neutral — la policía — y contiene hechos, información de testigos y, en ocasiones, una determinación preliminar de culpa. Saber cómo obtenerlo, leerlo y corregir errores puede tener un impacto significativo en su reclamo.",
+  "sections": [
+    {
+      "heading": "Por Qué el Reporte Policial es Importante",
+      "content": "Las compañías de seguros utilizan el reporte policial como documento fundamental al evaluar los reclamos. Este establece los hechos básicos del accidente — fecha, hora, lugar, partes involucradas, vehículos y condiciones observadas — desde una fuente neutral. Una anotación de culpa por parte del oficial que atendió el accidente, aunque no es jurídicamente vinculante, tiene peso en las negociaciones del reclamo. El reporte también identifica a los testigos que estuvieron presentes pero que podrían ser difíciles de localizar más adelante. Obtener y leer su propio reporte policial antes de cualquier conversación sustancial con un ajustador de seguros puede ser fundamental para proteger su posición.",
+      "tips": [
+        "Obtenga el número de reporte en el lugar del accidente para poder solicitar el documento completo con rapidez",
+        "Los ajustadores de seguros obtendrán y revisarán el reporte — usted debe leerlo primero",
+        "Los nombres de testigos en el reporte pueden usarse para obtener declaraciones de apoyo más adelante"
+      ]
+    },
+    {
+      "heading": "Cómo Obtener su Reporte Policial en California",
+      "content": "En California, los reportes policiales son manejados por la agencia que respondió al accidente — la Patrulla de Carreteras de California (CHP), el departamento de policía local, o la oficina del sheriff del condado. Los reportes de la CHP pueden solicitarse en línea a través del sitio web de la CHP, por correo postal, o en persona en la oficina de la CHP que atendió el accidente. La mayoría de los reportes de la CHP están disponibles dentro de los 10 días posteriores al accidente. Los reportes de los departamentos de policía locales se solicitan directamente en la división de registros del departamento correspondiente. La tarifa es generalmente de $10 a $25. Lleve su número de caso o evento, la fecha del accidente e identificación oficial vigente.",
+      "tips": [
+        "Reportes de la CHP: solicítelos en sar.chp.ca.gov o en la oficina de la CHP que respondió",
+        "Accidentes en vías locales: comuníquese directamente con la división de registros del departamento de policía correspondiente",
+        "Espere entre 7 y 14 días desde la fecha del accidente antes de solicitarlo — los reportes tardan en finalizarse"
+      ]
+    },
+    {
+      "heading": "Cómo Obtener su Reporte Policial en Arizona",
+      "content": "En Arizona, los reportes de accidentes son archivados por la agencia que respondió — el Departamento de Seguridad Pública de Arizona (DPS) para accidentes en carreteras, o la policía local o el sheriff para vías urbanas y del condado. Los reportes del DPS pueden solicitarse en línea a través del Portal de Reportes de Accidentes del DPS de Arizona, por correo, o en persona. Los reportes de agencias locales se solicitan en las divisiones de registros del departamento correspondiente. Las tarifas típicas son de $5 a $15. Los reportes generalmente están disponibles entre 7 y 10 días hábiles después del accidente. La ley de Arizona exige que los conductores presenten su propio reporte si la policía no lo hizo en accidentes con lesiones o daños superiores a $1,000.",
+      "tips": [
+        "Reportes del DPS de AZ: disponibles en el portal en línea del DPS de Arizona o por correo",
+        "Si la policía no respondió, los conductores en Arizona deben presentar su propio reporte para accidentes con lesiones o daños superiores a $1,000",
+        "Los reportes generalmente tardan entre 7 y 10 días hábiles en estar disponibles"
+      ]
+    },
+    {
+      "heading": "Qué Contiene el Reporte Policial",
+      "content": "Un reporte policial estándar de accidente incluye: la fecha, hora y lugar del accidente; nombres, información de contacto, números de licencia e información de seguro de todos los conductores; descripción de los vehículos y resúmenes de daños; un diagrama de la escena del accidente; condiciones climáticas y de la vía; declaraciones de conductores y testigos; citaciones emitidas; y las observaciones del oficial junto con cualquier anotación preliminar de culpa. Lea cada sección con cuidado. Los errores en nombres, direcciones, información de seguro o la narrativa del accidente pueden afectar su reclamo y deben corregirse de inmediato. Preste especial atención a la sección narrativa del oficial, que es donde se documentan las observaciones de culpa, factores que contribuyeron y resúmenes de testigos.",
+      "tips": [
+        "Revise la sección narrativa del oficial — allí se anotan las observaciones sobre culpa",
+        "Verifique toda la información personal, los datos del seguro y las descripciones de los vehículos",
+        "Note si se emitieron citaciones a alguno de los conductores y por qué infracciones"
+      ]
+    },
+    {
+      "heading": "Cómo Corregir Errores en el Reporte Policial",
+      "content": "Los reportes policiales pueden contener errores de hecho — nombres mal escritos, descripciones incorrectas del vehículo o narrativas inexactas. Comuníquese con el oficial que elaboró el reporte o con la división de registros de la agencia para solicitar una corrección o addendum. En California y Arizona, las agencias pueden agregar un reporte suplementario o corregir errores de hecho. Generalmente no es posible cambiar las observaciones subjetivas del oficial ni la anotación de culpa, pero los errores de hecho sí son corregibles. Si considera que el reporte representa de manera significativamente incorrecta lo sucedido, un abogado puede presentar una disputa por escrito al expediente que pase a formar parte del registro oficial. Actuar con rapidez es importante — mientras más tiempo transcurra, más difícil será obtener correcciones.",
+      "tips": [
+        "Comuníquese con la división de registros de la agencia para solicitar correcciones de hechos",
+        "Las correcciones generalmente se hacen como addendums, no como cambios al documento original",
+        "Un abogado puede presentar una carta escrita para disputar inexactitudes de hecho significativas"
+      ]
+    }
+  ],
+  "relatedAccidents": ["auto", "camion", "motocicleta"],
+  "relatedTools": ["lista-evidencia"],
+  "relatedGuides": ["despues-accidente-auto", "lista-evidencia", "errores-comunes"],
+  "translationStatus": "needs-review"
+}

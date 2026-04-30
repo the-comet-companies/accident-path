@@ -1,0 +1,58 @@
+{
+  "slug": "contratar-abogado",
+  "title": "Cómo Contratar un Abogado de Lesiones Personales",
+  "metaTitle": "Cómo Contratar un Abogado de Lesiones Personales",
+  "metaDescription": "Aprenda qué buscar al contratar un abogado de lesiones personales, qué preguntar en la consulta gratuita y cómo funcionan los honorarios de contingencia.",
+  "description": "Contratar al abogado adecuado puede marcar una diferencia importante en el resultado de su reclamo por lesiones personales. Sin embargo, el proceso puede ser confuso si nunca ha necesitado representación legal. Esta guía ofrece información educativa para ayudarle a entender qué buscar, qué preguntar y cómo funciona el proceso de contratación — para que pueda tomar una decisión informada.",
+  "sections": [
+    {
+      "heading": "Cuándo Puede Ser Útil Hablar con un Abogado",
+      "content": "No todos los accidentes requieren representación legal, pero hay situaciones en las que hablar con un abogado puede ser de utilidad. Si sufrió lesiones que requirieron atención médica, si la aseguradora está disputando su reclamo o le ha ofrecido una cantidad que parece baja, si hay desacuerdo sobre quién tuvo la culpa, o si su capacidad de trabajar o realizar actividades cotidianas se vio afectada, puede beneficiarse de una consulta con un abogado especializado en lesiones personales. La mayoría de los abogados en esta área ofrecen consultas iniciales gratuitas, por lo que explorar sus opciones generalmente no tiene costo alguno.",
+      "tips": [
+        "Si sus lesiones requirieron atención médica, vale la pena consultar con un abogado antes de aceptar cualquier oferta",
+        "Una oferta inicial de la aseguradora rara vez refleja el valor total de un reclamo",
+        "La mayoría de los abogados de lesiones personales ofrecen consultas gratuitas sin obligación de contratarlos"
+      ]
+    },
+    {
+      "heading": "Qué Buscar en un Abogado de Lesiones Personales",
+      "content": "Al evaluar posibles abogados, considere su experiencia específica en casos de lesiones personales similares al suyo — accidentes de auto, camiones, o lesiones laborales, según su situación. Verifique que el abogado esté activo en el colegio de abogados del estado correspondiente (California o Arizona). Lea reseñas de clientes anteriores y consulte si ha sido objeto de medidas disciplinarias. También es importante que se sienta cómodo comunicándose con el abogado o su equipo — la claridad en la comunicación es señal de que le mantendrán informado durante el proceso. Un abogado que maneja pocos casos puede dedicarle más atención que uno con un volumen muy alto.",
+      "tips": [
+        "Verifique la licencia activa del abogado en el colegio de abogados de California (State Bar) o Arizona",
+        "Busque experiencia específica en el tipo de accidente que sufrió — no todos los abogados manejan los mismos casos",
+        "Pregunte cuántos casos similares al suyo ha manejado y cuál fue el resultado general"
+      ]
+    },
+    {
+      "heading": "Cómo Funcionan los Honorarios de Contingencia",
+      "content": "La gran mayoría de los abogados de lesiones personales trabajan con honorarios de contingencia, lo que significa que no pagan nada por adelantado. El abogado cobra un porcentaje del dinero que recupere para usted — generalmente entre el 25% y el 40%, dependiendo de si el caso se resuelve antes o después de presentar una demanda formal. Si no recupera compensación, el abogado tampoco cobra honorarios. Antes de firmar cualquier contrato, asegúrese de entender exactamente qué porcentaje se aplicará, si los gastos del caso (copias, peritajes, tarifas de tribunal) se descuentan antes o después del porcentaje del abogado, y qué sucede si decide terminar la relación antes de que el caso concluya.",
+      "tips": [
+        "Pregunte si los gastos del caso se descuentan antes o después de calcular el porcentaje del abogado",
+        "Los porcentajes típicos son del 33% si se resuelve antes de juicio, y del 40% si el caso llega a juicio",
+        "Lea el contrato de representación completo antes de firmarlo y no dude en pedir aclaraciones"
+      ]
+    },
+    {
+      "heading": "Qué Preguntar en la Consulta Gratuita",
+      "content": "La consulta inicial es su oportunidad de evaluar si el abogado es la persona adecuada para representarle. Venga preparado con documentos clave: el reporte policial, registros médicos que tenga disponibles, fotografías del accidente, información del seguro, y cualquier comunicación que haya tenido con las aseguradoras. Algunas preguntas útiles que puede hacer incluyen: ¿Ha manejado casos similares al mío? ¿Cuál es su evaluación preliminar de mi situación? ¿Cómo se comunicará conmigo durante el proceso? ¿Quién en su equipo manejará mi caso day a day? ¿Cuánto tiempo podría tomar resolver mi reclamo? Recuerde que esta consulta no lo obliga a contratar al abogado.",
+      "tips": [
+        "Traiga el reporte policial, registros médicos disponibles y fotografías del accidente a la consulta",
+        "Pregunte quién en el equipo manejará su caso en el día a día — no siempre es el abogado principal",
+        "Está bien consultar con más de un abogado antes de tomar una decisión"
+      ]
+    },
+    {
+      "heading": "El Proceso Después de Contratar a un Abogado",
+      "content": "Una vez que contrate a un abogado, firmará un contrato de representación y el abogado comenzará a recopilar evidencia, registros médicos y documentación del accidente. El abogado se comunicará con las aseguradoras en su nombre — en la mayoría de los casos, se recomienda que a partir de ese momento dirija todas las comunicaciones de la aseguradora a su abogado. Su participación principal durante este período será continuar recibiendo tratamiento médico según lo indicado, proporcionar documentos e información cuando se le solicite, y mantener comunicación regular con el equipo legal. AccidentPath ofrece recursos educativos para ayudarle a entender cada etapa del proceso, aunque la orientación específica para su caso la proporciona su abogado.",
+      "tips": [
+        "Una vez que tenga representación legal, dirija todas las comunicaciones de las aseguradoras a su abogado",
+        "Continúe recibiendo tratamiento médico según lo indicado — las brechas en el tratamiento pueden afectar su reclamo",
+        "Mantenga registros de todos los gastos relacionados con el accidente, incluidos los de transporte a citas médicas"
+      ]
+    }
+  ],
+  "relatedAccidents": ["auto", "camion", "trabajo"],
+  "relatedTools": ["evaluacion-caso"],
+  "relatedGuides": ["hablar-con-abogado", "acuerdo-vs-demanda", "reclamos-seguro"],
+  "translationStatus": "needs-review"
+}

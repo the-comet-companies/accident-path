@@ -1,0 +1,58 @@
+{
+  "slug": "reclamos-seguro",
+  "title": "Cómo Funciona el Proceso de Reclamos de Seguro Después de un Accidente",
+  "metaTitle": "El Proceso de Reclamos de Seguro Tras un Accidente",
+  "metaDescription": "Entienda cómo funciona un reclamo de seguro después de un accidente: plazos, qué esperar y tácticas comunes que usan los ajustadores. Información educativa.",
+  "description": "Presentar un reclamo de seguro después de un accidente puede parecer abrumador, especialmente si nunca ha pasado por este proceso. Entender cómo funciona el sistema, qué esperar en cada etapa y cómo interactúan las aseguradoras con los reclamantes le ayudará a navegar el proceso con mayor confianza. Esta guía ofrece información educativa — no constituye asesoría legal.",
+  "sections": [
+    {
+      "heading": "Los Dos Tipos de Reclamos de Seguro",
+      "content": "Después de un accidente, generalmente tiene dos opciones para presentar un reclamo: un reclamo de primera parte y un reclamo de tercera parte. Un reclamo de primera parte se presenta ante su propia aseguradora — por ejemplo, usando su cobertura de colisión o de protección contra conductores sin seguro. Un reclamo de tercera parte se presenta ante la aseguradora del conductor que causó el accidente. En muchos casos, es posible presentar ambos tipos de reclamo simultáneamente, dependiendo de las coberturas disponibles y de la dinámica de culpa. Entender cuál aplica a su situación es el primer paso para organizar su estrategia de reclamo.",
+      "tips": [
+        "Un reclamo de primera parte se hace ante su propia aseguradora; uno de tercera parte ante la del otro conductor",
+        "Puede tener derecho a presentar reclamos con múltiples aseguradoras dependiendo de sus coberturas",
+        "Revise sus pólizas de seguro para entender qué coberturas tiene disponibles"
+      ]
+    },
+    {
+      "heading": "Cómo Iniciar su Reclamo",
+      "content": "Para iniciar su reclamo, notifique a la aseguradora correspondiente lo antes posible después del accidente. La mayoría de las pólizas exigen notificación oportuna — esperar demasiado puede complicar el proceso. Al reportar el accidente, proporcione la información básica: fecha, hora, lugar, descripción de lo ocurrido e información de las partes involucradas. Evite dar declaraciones grabadas sin antes consultar con un abogado, ya que estas declaraciones pueden ser usadas en su contra más adelante. Pida que le confirmen el número de reclamo por escrito y anote el nombre de cada persona con quien hable en la aseguradora.",
+      "tips": [
+        "Notifique a su aseguradora dentro de los plazos establecidos en su póliza — las demoras pueden causar problemas",
+        "Anote el nombre, apellido y número de empleado de cada persona con quien hable en la aseguradora",
+        "Evite dar declaraciones grabadas antes de consultar con un abogado"
+      ]
+    },
+    {
+      "heading": "Qué Esperar Durante la Investigación del Reclamo",
+      "content": "Una vez que presente su reclamo, la aseguradora asignará un ajustador para investigarlo. El ajustador revisará el reporte policial, los daños al vehículo, los registros médicos y cualquier otra evidencia disponible. También puede contactarle para obtener más información o para solicitar una declaración. Durante este período, documente todas las comunicaciones por escrito o envíe un correo electrónico de seguimiento después de cada llamada telefónica confirmando lo que se discutió. Los plazos de investigación varían: los accidentes sin lesiones pueden resolverse en semanas, mientras que los casos con lesiones graves pueden tomar meses o incluso más tiempo.",
+      "tips": [
+        "Documente todas las comunicaciones con la aseguradora y envíe correos de seguimiento después de llamadas importantes",
+        "Los casos con lesiones graves generalmente toman más tiempo — la paciencia es parte del proceso",
+        "Solicite todo por escrito: ofertas, confirmaciones de cobertura y decisiones del reclamo"
+      ]
+    },
+    {
+      "heading": "Tácticas Comunes que Usan los Ajustadores de Seguros",
+      "content": "Es importante entender que los ajustadores de seguros trabajan para la aseguradora, no para usted. Su función incluye resolver los reclamos por la menor cantidad posible dentro de los límites de la póliza. Algunas tácticas comunes incluyen: hacer una oferta inicial rápida antes de que usted entienda el alcance completo de sus lesiones; minimizar la gravedad de las lesiones o cuestionar si son resultado del accidente; solicitar autorización para acceder a todos sus registros médicos históricos (más de lo necesario para el reclamo); usar sus propias declaraciones para limitar la responsabilidad; y generar presión para aceptar una oferta antes de que esté completamente recuperado. Reconocer estas tácticas no significa que la aseguradora actúe de mala fe, sino que usted debe estar bien informado.",
+      "tips": [
+        "Una oferta inicial rápida generalmente no refleja el valor completo de su reclamo",
+        "No firme autorizaciones amplias de registros médicos sin entender exactamente qué está autorizando",
+        "No acepte un acuerdo final hasta estar seguro de que sus lesiones se han estabilizado y entiende los costos futuros"
+      ]
+    },
+    {
+      "heading": "Plazos Importantes y Sus Derechos",
+      "content": "Los reclamos de seguro están sujetos a plazos importantes. En California, el estatuto de limitaciones para presentar una demanda por lesiones personales es generalmente de dos años desde la fecha del accidente. En Arizona, el plazo es de dos años para la mayoría de los casos de lesiones personales. Es fundamental tener en cuenta estos plazos incluso si está en proceso de negociación con la aseguradora, ya que las negociaciones no detienen el reloj legal automáticamente. Si la aseguradora niega su reclamo o usted considera que la oferta no refleja el valor de sus daños, puede beneficiarse de hablar con un abogado para explorar sus opciones. AccidentPath le ofrece recursos educativos para entender el proceso, pero la orientación sobre su situación específica la proporciona un abogado.",
+      "tips": [
+        "En California y Arizona, el plazo general para demandar por lesiones personales es de dos años desde el accidente",
+        "Las negociaciones con la aseguradora no interrumpen automáticamente el plazo legal para presentar una demanda",
+        "Si su reclamo es negado, solicite la negativa por escrito con la razón específica de la denegación"
+      ]
+    }
+  ],
+  "relatedAccidents": ["auto", "camion", "caida"],
+  "relatedTools": ["evaluacion-caso"],
+  "relatedGuides": ["ajustadores-seguros", "proteger-reclamo", "errores-comunes"],
+  "translationStatus": "needs-review"
+}

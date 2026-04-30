@@ -1,0 +1,58 @@
+{
+  "slug": "soy-culpable",
+  "title": "¿Soy culpable? Culpa compartida después de un accidente",
+  "metaTitle": "¿Soy culpable del accidente? Culpa compartida | AccidentPath",
+  "metaDescription": "Entienda qué significa la culpa compartida en California y Arizona. Aunque sea parcialmente responsable, es posible que aún tenga opciones.",
+  "description": "Sentirse parcialmente responsable de un accidente es común y puede generar mucha confusión. Esta guía educativa explica cómo funciona la culpa compartida en California y Arizona, y qué puede significar para su situación. Esta información es solo para fines educativos y no constituye asesoría legal.",
+  "sections": [
+    {
+      "heading": "No toda culpa es absoluta: culpa comparativa",
+      "content": "En muchos accidentes, la responsabilidad no recae completamente en una sola persona. Los estados de California y Arizona utilizan sistemas de 'culpa comparativa' que permiten que varias partes compartan la responsabilidad de un accidente. Esto significa que, incluso si usted contribuyó de alguna forma al accidente, es posible que aún pueda recibir cierta compensación. El porcentaje de culpa que se le atribuya puede reducir la compensación que podría recibir, pero no necesariamente la elimina por completo.",
+      "tips": [
+        "No asuma que perderá su caso solo porque cometió un error.",
+        "No admita culpa verbal ni por escrito en la escena del accidente.",
+        "La determinación de culpa es un proceso que depende de la evidencia."
+      ]
+    },
+    {
+      "heading": "Culpa comparativa pura en California",
+      "content": "California utiliza el sistema de 'culpa comparativa pura', lo que significa que puede recuperar una compensación sin importar qué porcentaje de culpa se le atribuya, incluso si fue responsable en un 99%. Sin embargo, el monto de compensación se reducirá proporcionalmente a su grado de responsabilidad. Por ejemplo, si sus daños se valoran en $100,000 pero se determina que usted fue 30% responsable, solo podría recuperar $70,000. Esta es una simplificación educativa; su situación puede ser más compleja.",
+      "tips": [
+        "En California, incluso si tuvo culpa, puede tener opciones.",
+        "No asuma el porcentaje de culpa — eso lo determina un proceso formal.",
+        "Consulte con un abogado para entender cómo aplica esto a su caso específico."
+      ]
+    },
+    {
+      "heading": "Culpa comparativa modificada en Arizona",
+      "content": "Arizona utiliza un sistema diferente llamado 'culpa comparativa modificada con umbral del 50%'. Bajo este sistema, puede recuperar compensación siempre y cuando su grado de responsabilidad sea menor al 50%. Si se determina que usted fue responsable en un 50% o más, es posible que no tenga derecho a compensación. Como en California, el monto se reduce proporcionalmente a su porcentaje de culpa. Estas son reglas generales educativas; siempre existe la posibilidad de que los hechos específicos de su caso afecten el resultado.",
+      "tips": [
+        "En Arizona, su nivel de culpa puede afectar si puede recibir compensación.",
+        "No acepte un porcentaje de culpa sin evaluarlo cuidadosamente.",
+        "Un abogado puede ayudarle a entender cómo aplica la ley a su situación."
+      ]
+    },
+    {
+      "heading": "Qué factores influyen en la determinación de culpa",
+      "content": "La culpa en un accidente se determina a través de la evidencia disponible: el reporte policial, testimonios de testigos, fotografías de la escena, registros de cámaras, informes de reconstrucción de accidentes y otros elementos. Factores como exceso de velocidad, uso del celular al conducir, ignorar señales de tránsito, o condiciones peligrosas de la vía pueden influir en cómo se distribuye la responsabilidad. La aseguradora hará su propia investigación, y es importante que usted también cuente con documentación que apoye su versión de los hechos.",
+      "tips": [
+        "Guarde toda la evidencia que pueda recopilar en la escena.",
+        "Pida el número del reporte policial y obtenga una copia.",
+        "No especule públicamente sobre quién tuvo la culpa."
+      ]
+    },
+    {
+      "heading": "Qué hacer si cree que compartió la culpa",
+      "content": "Si cree que pudo haber contribuido al accidente, lo mejor que puede hacer es no hacer declaraciones que admitan culpa, recopilar toda la evidencia disponible y considerar hablar con un abogado antes de comunicarse con las aseguradoras. Un abogado especializado puede ayudarle a evaluar su situación de forma objetiva y a entender qué opciones puede tener. AccidentPath ofrece herramientas gratuitas que pueden ayudarle a organizar la información de su caso, aunque no reemplazan la orientación de un profesional.",
+      "tips": [
+        "Consulte con un abogado antes de hacer declaraciones a las aseguradoras.",
+        "Documente todo lo que pueda recordar sobre el accidente lo antes posible.",
+        "No firme ningún acuerdo de liquidación sin entender sus implicaciones."
+      ]
+    }
+  ],
+  "relatedAccidents": ["auto", "caida", "trabajo"],
+  "relatedTools": ["evaluacion-caso"],
+  "relatedGuides": ["despues-accidente-auto", "reclamos-seguro", "hablar-con-abogado"],
+  "translationStatus": "needs-review"
+}

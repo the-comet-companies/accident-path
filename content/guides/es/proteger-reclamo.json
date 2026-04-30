@@ -1,0 +1,58 @@
+{
+  "slug": "proteger-reclamo",
+  "title": "Cómo Proteger su Reclamo Desde el Inicio",
+  "metaTitle": "Cómo Proteger su Reclamo de Lesiones Desde el Inicio",
+  "metaDescription": "Aprenda a proteger su reclamo de lesiones personales desde el primer día: documentación, redes sociales, declaraciones grabadas y pasos clave a seguir.",
+  "description": "Las decisiones que tome en los días y semanas posteriores a un accidente pueden tener un impacto directo en el resultado de su reclamo de seguro o demanda. Muchas personas cometen errores sin saberlo que complican su caso más adelante. Esta guía ofrece información educativa sobre los pasos que puede tomar para preservar su posición — no constituye asesoría legal.",
+  "sections": [
+    {
+      "heading": "Documente Todo Desde el Primer Momento",
+      "content": "La documentación inmediata es una de las herramientas más poderosas para proteger su reclamo. En la escena del accidente, tome fotografías desde múltiples ángulos: los daños a todos los vehículos, la posición de los vehículos, las condiciones de la carretera, señales de tráfico visibles, cualquier lesión visible y el área general donde ocurrió el accidente. Obtenga la información de contacto de todos los testigos presentes. Escriba su propia versión de lo ocurrido lo más pronto posible — su memoria es más precisa en las primeras horas. Guarde todos los documentos relacionados con el accidente en un solo lugar: el reporte policial, información del seguro, registros médicos y recibos de gastos relacionados.",
+      "tips": [
+        "Tome fotografías desde múltiples ángulos: los daños, la posición de los vehículos y las condiciones de la vía",
+        "Anote los nombres y números de celular de todos los testigos presentes en la escena",
+        "Escriba su versión detallada de lo ocurrido el mismo día del accidente mientras los detalles están frescos"
+      ]
+    },
+    {
+      "heading": "Cuidado con las Redes Sociales",
+      "content": "Las publicaciones en redes sociales pueden ser utilizadas por las aseguradoras y sus abogados para cuestionar la gravedad de sus lesiones o contradicir su versión de los hechos. Una fotografía suya haciendo una actividad aparentemente normal, un comentario sobre sus actividades del fin de semana, o incluso una publicación de otra persona donde aparezca usted pueden ser interpretados fuera de contexto y usados en su contra. Durante el proceso de su reclamo, es recomendable ser muy cauteloso con lo que publica en línea. Revise la configuración de privacidad de sus cuentas y evite publicar información sobre el accidente, su recuperación o sus actividades físicas. Esta precaución aplica también a sus amigos y familiares.",
+      "tips": [
+        "Evite publicar sobre el accidente, su recuperación o sus actividades físicas en cualquier red social",
+        "Revise y ajuste la configuración de privacidad de sus cuentas durante el proceso del reclamo",
+        "Pida a familiares y amigos que también sean cuidadosos con lo que publican sobre usted en línea"
+      ]
+    },
+    {
+      "heading": "Declaraciones Grabadas: Lo Que Debe Saber",
+      "content": "Es posible que la aseguradora — tanto la suya como la de la otra parte — le solicite dar una declaración grabada sobre el accidente. Aunque puede parecer una formalidad rutinaria, estas declaraciones pueden ser usadas para limitar su reclamo. Las preguntas pueden estar diseñadas para llevarle a minimizar sus lesiones, contradicirse o aceptar parte de la culpa. Antes de dar cualquier declaración grabada, es recomendable consultar con un abogado de lesiones personales, incluso si es solo para orientación inicial. Si decide dar una declaración, sea preciso, responda solo lo que se le pregunta, evite especular sobre lo que no sabe con certeza, y no exagere ni minimice sus lesiones.",
+      "tips": [
+        "No está legalmente obligado a dar una declaración grabada a la aseguradora del otro conductor",
+        "Consulte con un abogado antes de dar cualquier declaración grabada a cualquier aseguradora",
+        "Si da una declaración, sea preciso y responda solo lo que se le pregunta — evite especular"
+      ]
+    },
+    {
+      "heading": "Siga Su Tratamiento Médico de Forma Consistente",
+      "content": "Una de las formas más importantes de proteger su reclamo es seguir el tratamiento médico que le hayan indicado. Las interrupciones en el tratamiento — no asistir a citas, no seguir las recomendaciones del médico, o esperar semanas para buscar atención — pueden ser interpretadas por la aseguradora como evidencia de que sus lesiones no son tan graves como afirma. Busque atención médica lo antes posible después del accidente, incluso si inicialmente no siente dolor severo — algunas lesiones tardan días en manifestarse completamente. Siga cada recomendación médica documentada, asista a todas sus citas, y conserve todos los registros y recibos relacionados con su tratamiento.",
+      "tips": [
+        "Busque atención médica lo antes posible — algunas lesiones como el latigazo cervical tardan días en manifestarse",
+        "Asista a todas sus citas médicas y siga las recomendaciones — las ausencias pueden afectar su reclamo",
+        "Conserve todos los registros médicos, recibos de tratamiento y recetas relacionadas con el accidente"
+      ]
+    },
+    {
+      "heading": "Conserve un Registro de Su Impacto Diario",
+      "content": "Además de la documentación médica, mantener un registro diario del impacto del accidente en su vida puede ser valioso para su reclamo. Anote cómo sus lesiones afectan su capacidad de trabajar, realizar tareas del hogar, dormir, practicar actividades que antes disfrutaba, o cuidar a su familia. También documente los gastos relacionados con el accidente: medicamentos, transporte a citas médicas, servicios que tuvo que contratar porque usted no podía realizarlos, y cualquier ingreso perdido. Este registro, aunque no reemplaza el consejo de un abogado, puede ayudarle a articular con mayor precisión los daños que ha sufrido y merece documentar para las conversaciones con su abogado o la aseguradora.",
+      "tips": [
+        "Lleve un diario con anotaciones breves y regulares sobre cómo sus lesiones afectan su vida diaria",
+        "Documente los ingresos perdidos: días que no pudo trabajar, oportunidades que tuvo que rechazar",
+        "Guarde todos los recibos de gastos relacionados con el accidente, incluyendo el transporte a citas médicas"
+      ]
+    }
+  ],
+  "relatedAccidents": ["auto", "caida", "trabajo"],
+  "relatedTools": ["lista-evidencia", "evaluacion-caso"],
+  "relatedGuides": ["errores-comunes", "reclamos-seguro", "lista-evidencia"],
+  "translationStatus": "needs-review"
+}

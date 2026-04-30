@@ -1,0 +1,58 @@
+{
+  "slug": "facturas-medicas",
+  "title": "Cómo Se Manejan las Facturas Médicas Después de un Accidente",
+  "metaTitle": "Facturas Médicas Después de un Accidente: Lo Que Debe Saber",
+  "metaDescription": "Entienda cómo funcionan los gravámenes médicos, el MedPay, la subrogación y cómo se manejan las facturas médicas en un acuerdo de lesiones personales.",
+  "description": "Uno de los aspectos más confusos después de un accidente es entender cómo se manejan las facturas médicas. ¿Quién paga mientras espera la resolución de su reclamo? ¿Qué sucede con sus facturas cuando llega a un acuerdo? ¿Puede su compañía de salud recuperar lo que pagó? Esta guía ofrece información educativa para ayudarle a entender el proceso — no constituye asesoría legal.",
+  "sections": [
+    {
+      "heading": "Quién Paga Sus Facturas Médicas Mientras Espera el Reclamo",
+      "content": "Una pregunta frecuente es quién paga las facturas médicas durante el proceso del reclamo, que puede tardar meses o más. La respuesta depende de las coberturas disponibles. Si tiene seguro médico, su aseguradora de salud puede cubrir los tratamientos iniciales, aunque es posible que luego tenga derecho a recuperar esos pagos del acuerdo final. Si su póliza de auto incluye cobertura MedPay (Pagos Médicos) o PIP (Protección por Lesiones Personales), esta puede cubrir gastos médicos independientemente de quién tuvo la culpa. Algunos proveedores médicos aceptan tratar a pacientes con lesiones de accidente bajo un gravamen médico, lo que significa que cobran sus honorarios directamente del acuerdo cuando se resuelve el caso.",
+      "tips": [
+        "Revise su póliza de auto para verificar si tiene cobertura MedPay o PIP disponible",
+        "El seguro médico puede cubrir tratamientos iniciales, pero posiblemente tenga derecho a recuperar lo pagado",
+        "Algunos médicos aceptan tratar bajo gravamen médico — pregunte si esta opción está disponible"
+      ]
+    },
+    {
+      "heading": "Qué Es un Gravamen Médico",
+      "content": "Un gravamen médico (o lien médico) es un acuerdo por el cual un proveedor de salud acepta tratar a un paciente con lesiones de accidente y cobrar sus honorarios directamente del acuerdo o veredicto cuando el caso se resuelva, en lugar de exigir el pago inmediato. Este arreglo permite a personas sin seguro médico adecuado recibir tratamiento necesario mientras espera la resolución de su reclamo. Sin embargo, es importante entender que el monto del gravamen se descontará de su acuerdo final, y que los gravámenes pueden ser negociables. Su abogado, si tiene uno, generalmente maneja la negociación y el pago de los gravámenes al momento del acuerdo.",
+      "tips": [
+        "Los gravámenes médicos se descuentan del acuerdo final — considere este costo al evaluar cualquier oferta",
+        "Los gravámenes médicos a menudo son negociables, especialmente si el acuerdo total es limitado",
+        "Asegúrese de tener una lista completa de todos los proveedores que tienen gravámenes sobre su caso"
+      ]
+    },
+    {
+      "heading": "MedPay y PIP: Coberturas de Su Propia Póliza de Auto",
+      "content": "La cobertura MedPay (Medical Payments Coverage) es una cobertura opcional disponible en muchas pólizas de seguro de auto en California y Arizona. Cubre gastos médicos relacionados con un accidente de auto, independientemente de quién fue responsable, hasta el límite de la póliza. Los límites típicos van de $1,000 a $5,000, aunque algunos pagan más. PIP (Personal Injury Protection) es una cobertura similar que puede incluir también cobertura de ingresos perdidos. Estas coberturas son especialmente útiles en las etapas iniciales después del accidente, cuando el reclamo principal aún no se ha resuelto. Si tiene MedPay o PIP, es generalmente recomendable usarla — fue diseñada precisamente para estas situaciones.",
+      "tips": [
+        "MedPay cubre gastos médicos sin importar quién tuvo la culpa — revise si su póliza lo incluye",
+        "Use su MedPay si la tiene disponible — fue diseñada para cubrir gastos durante el proceso del reclamo",
+        "La aseguradora puede intentar recuperar los pagos de MedPay del acuerdo de la otra parte en algunos casos"
+      ]
+    },
+    {
+      "heading": "Subrogación: Cuando Su Seguro de Salud Quiere Recuperar Lo Que Pagó",
+      "content": "Si su seguro médico pagó sus facturas médicas relacionadas con el accidente, es posible que tenga un derecho de subrogación — es decir, el derecho legal de recuperar esos pagos de cualquier compensación que usted reciba del responsable del accidente. Esto significa que cuando llegue a un acuerdo, parte del dinero puede ir directamente a reembolsar a su aseguradora de salud. Los montos y las reglas de subrogación varían según el tipo de seguro (privado, Medicaid, Medicare, seguro de empleador) y el estado. Este es un aspecto complejo que puede afectar significativamente cuánto dinero recibe usted al final del proceso, y es una razón importante por la que muchas personas con lesiones significativas consideran trabajar con un abogado.",
+      "tips": [
+        "Si su seguro médico pagó facturas del accidente, es posible que tenga derecho de subrogación sobre su acuerdo",
+        "Las reglas de subrogación de Medicare y Medicaid son particularmente estrictas — consulte con un abogado",
+        "Los montos de subrogación a veces son negociables, especialmente si el acuerdo total es limitado"
+      ]
+    },
+    {
+      "heading": "Cómo Se Manejan las Facturas en el Acuerdo Final",
+      "content": "Cuando su caso se resuelve mediante un acuerdo, las facturas médicas pendientes, los gravámenes y los derechos de subrogación se pagan del monto total del acuerdo antes de que usted reciba su parte. Su abogado, si tiene uno, generalmente administra este proceso: negocia los gravámenes cuando es posible, se asegura de que todos los acreedores sean pagados, y le entrega el saldo restante. Por eso es fundamental entender el monto total de sus facturas e impagos antes de evaluar cualquier oferta de acuerdo. Una oferta que parece generosa puede resultar insuficiente una vez descontadas las facturas médicas, honorarios legales y otros costos. AccidentPath ofrece recursos educativos para ayudarle a entender este proceso — su abogado le orientará sobre su situación específica.",
+      "tips": [
+        "Antes de evaluar una oferta, sume todas las facturas pendientes, gravámenes y potenciales subrogaciones",
+        "Su abogado generalmente administra el pago de facturas y gravámenes del acuerdo — pídale un desglose claro",
+        "Una oferta que parece alta puede ser insuficiente una vez descontados todos los costos médicos y legales"
+      ]
+    }
+  ],
+  "relatedAccidents": ["auto", "camion", "caida"],
+  "relatedTools": ["evaluacion-caso"],
+  "relatedGuides": ["reclamos-seguro", "contratar-abogado", "acuerdo-vs-demanda"],
+  "translationStatus": "needs-review"
+}

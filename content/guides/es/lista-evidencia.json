@@ -1,0 +1,58 @@
+{
+  "slug": "lista-evidencia",
+  "title": "Lista de evidencia: qué recopilar después de un accidente",
+  "metaTitle": "Lista de evidencia después de un accidente | AccidentPath",
+  "metaDescription": "Sepa exactamente qué evidencia recopilar después de un accidente. Lista completa y guía educativa de AccidentPath para California y Arizona.",
+  "description": "Recopilar la evidencia correcta inmediatamente después de un accidente puede marcar una diferencia significativa en cómo se maneja su caso. Esta guía educativa detalla los tipos de evidencia más importantes que puede recopilar, organizados por categoría. Esta información es educativa y no reemplaza la asesoría de un profesional legal.",
+  "sections": [
+    {
+      "heading": "Evidencia fotográfica y de video en la escena",
+      "content": "Las fotos y videos tomados en la escena del accidente son una de las formas más valiosas de evidencia. Tome fotografías desde múltiples ángulos y distancias: los vehículos involucrados, los daños visibles, la posición final de los vehículos, marcas en el pavimento, señales de tránsito, semáforos, condiciones del camino y cualquier objeto relevante. Si hay cámaras de seguridad de negocios cercanos o cámaras de tránsito, anote su ubicación para que pueda solicitarse ese video más adelante. Las imágenes tomadas inmediatamente después del accidente son difíciles de refutar.",
+      "tips": [
+        "Tome fotos antes de que muevan los vehículos, si es posible.",
+        "Incluya fotos de sus lesiones visibles el mismo día y en los días siguientes.",
+        "Tome capturas de pantalla de Google Maps para documentar la ubicación exacta."
+      ]
+    },
+    {
+      "heading": "Información del otro conductor y testigos",
+      "content": "Asegúrese de obtener la información completa de todas las personas involucradas: nombre completo, número de licencia de conducir, número de placa, nombre de la compañía de seguros y número de póliza. Si hay testigos, pídale su nombre, celular y correo electrónico. Los testigos imparciales pueden ser muy valiosos para su caso. También anote el número de placa del vehículo del otro conductor en caso de que se vaya de la escena antes de que llegue la policía.",
+      "tips": [
+        "Tome una foto de la licencia de conducir y la tarjeta de seguro del otro conductor.",
+        "Anote si algún testigo vio claramente cómo ocurrió el accidente.",
+        "Incluya el número de identificación del oficial de policía que atendió el caso."
+      ]
+    },
+    {
+      "heading": "El reporte policial",
+      "content": "Cuando la policía llegue a la escena, asegúrese de obtener el número de reporte y la información de contacto del oficial. El reporte policial es un documento oficial que puede ser fundamental para su caso. Puede solicitar una copia del reporte días después a través del departamento de policía correspondiente, generalmente en línea o en persona. Revise el reporte cuidadosamente cuando lo reciba — si hay errores, puede solicitar correcciones. Si la policía no llega a la escena, puede presentar un reporte ante la DMV o la agencia correspondiente.",
+      "tips": [
+        "Anote el número de reporte en el lugar del accidente.",
+        "Revise el reporte cuando esté disponible para verificar que los hechos son correctos.",
+        "Conserve una copia del reporte en un lugar seguro."
+      ]
+    },
+    {
+      "heading": "Registros médicos y facturas",
+      "content": "Toda la documentación médica relacionada con el accidente es evidencia crucial. Esto incluye: registros de urgencias, notas de consultas médicas, resultados de estudios de imagen (rayos X, resonancias), diagnósticos, planes de tratamiento, recetas y facturas de todos los proveedores de salud. También guarde los recibos de medicamentos, aparatos ortopédicos, transporte a consultas y cualquier otro gasto de salud. Lleve un registro de los días que no pudo trabajar por sus lesiones y pida una carta de su médico o empleador si es necesario.",
+      "tips": [
+        "Pida copias de sus registros médicos después de cada visita.",
+        "Guarde todos los recibos de gastos relacionados con el accidente.",
+        "Lleve un diario de sus síntomas, dolor y cómo afectan su vida diaria."
+      ]
+    },
+    {
+      "heading": "Comunicaciones y documentos del reclamo",
+      "content": "Conserve copias de todas las comunicaciones relacionadas con su accidente y reclamo: correos electrónicos, cartas, mensajes de texto con la aseguradora, nombres y números de los ajustadores que le contacten, y cualquier oferta de liquidación que reciba. Si habla con alguien por teléfono, anote la fecha, hora, nombre de la persona y un resumen de lo que se dijo. No descarte ningún documento relacionado con el accidente aunque parezca poco importante. AccidentPath ofrece una herramienta interactiva de lista de evidencia que puede ayudarle a organizar toda esta información.",
+      "tips": [
+        "Cree una carpeta física o digital solo para los documentos del accidente.",
+        "No borre mensajes de texto ni correos electrónicos relacionados con el accidente.",
+        "Haga copias de todos los documentos antes de enviarlos a la aseguradora."
+      ]
+    }
+  ],
+  "relatedAccidents": ["auto", "camion", "caida", "trabajo"],
+  "relatedTools": ["lista-evidencia"],
+  "relatedGuides": ["despues-accidente-auto", "reporte-policial", "errores-comunes"],
+  "translationStatus": "needs-review"
+}
