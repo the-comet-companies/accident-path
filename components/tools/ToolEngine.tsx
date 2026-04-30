@@ -7,6 +7,7 @@ import { ToolProgressBar } from '@/components/tools/ToolProgressBar'
 import { ToolStep } from '@/components/tools/ToolStep'
 import { ToolResults } from '@/components/tools/ToolResults'
 import { outputGenerators } from '@/lib/tools/output-generators'
+import { SLUG_MAP_EN } from '@/i18n/config'
 import { getSupabase } from '@/lib/supabase'
 import { trackEvent } from '@/lib/analytics'
 
@@ -18,6 +19,7 @@ interface ToolEngineStrings {
     calculating: string
     startOver: string
     printSave: string
+    getFreGuidance?: string
   }
   tools: {
     yourResults: string
@@ -66,7 +68,8 @@ export function ToolEngine({ tool, strings }: Props) {
   }
 
   async function handleFinish() {
-    const generator = outputGenerators[tool.slug]
+    const resolvedSlug = outputGenerators[tool.slug] ? tool.slug : (SLUG_MAP_EN[tool.slug] ?? tool.slug)
+    const generator = outputGenerators[resolvedSlug]
     if (!generator) {
       setOutput({
         summary: 'Results for this tool are coming soon.',
@@ -83,6 +86,7 @@ export function ToolEngine({ tool, strings }: Props) {
 
     if (pathname.startsWith('/es/')) {
       result.cta.href = '/es/buscar-ayuda'
+      result.cta.label = strings?.cta.getFreGuidance ?? 'Obtenga Orientación Gratuita'
     }
 
     setOutput(result)
