@@ -9,13 +9,21 @@ const PRIORITY_STYLES = {
   helpful: 'bg-success-50 text-success-700 border-success-500',
 } as const
 
-const PRIORITY_LABELS = {
-  critical: 'Critical',
-  important: 'Important',
-  helpful: 'Helpful',
-} as const
+interface ToolResultsStrings {
+  cta: { startOver: string; printSave: string }
+  tools: {
+    yourResults: string
+    priority: { critical: string; important: string; helpful: string }
+  }
+}
 
-function ItemCard({ item }: { item: OutputItem }) {
+function ItemCard({
+  item,
+  priorityLabels,
+}: {
+  item: OutputItem
+  priorityLabels: Record<string, string>
+}) {
   return (
     <div className="flex items-start gap-3 rounded-xl border border-neutral-100 bg-surface-card p-4">
       <span
@@ -24,7 +32,7 @@ function ItemCard({ item }: { item: OutputItem }) {
           PRIORITY_STYLES[item.priority],
         ].join(' ')}
       >
-        {PRIORITY_LABELS[item.priority]}
+        {priorityLabels[item.priority]}
       </span>
       <div className="flex flex-col gap-0.5 flex-1 min-w-0">
         <p className="font-sans font-semibold text-sm text-neutral-900">{item.label}</p>
@@ -39,15 +47,22 @@ function ItemCard({ item }: { item: OutputItem }) {
 interface ToolResultsProps {
   output: ToolOutput
   onReset: () => void
+  strings?: ToolResultsStrings
 }
 
-export function ToolResults({ output, onReset }: ToolResultsProps) {
+export function ToolResults({ output, onReset, strings }: ToolResultsProps) {
+  const priorityLabels = {
+    critical: strings?.tools.priority.critical ?? 'Critical',
+    important: strings?.tools.priority.important ?? 'Important',
+    helpful: strings?.tools.priority.helpful ?? 'Helpful',
+  }
+
   return (
     <div className="flex flex-col gap-6 print:gap-4">
       {/* Summary */}
       <div className="rounded-2xl border border-primary-200 bg-primary-50 p-5">
         <p className="text-xs font-semibold font-sans text-primary-600 uppercase tracking-widest mb-2">
-          Your Results
+          {strings?.tools.yourResults ?? 'Your Results'}
         </p>
         <p className="text-neutral-800 text-sm leading-relaxed font-serif">{output.summary}</p>
       </div>
@@ -60,7 +75,7 @@ export function ToolResults({ output, onReset }: ToolResultsProps) {
           return (
             <div className="flex flex-col gap-3">
               {output.items.map((item, i) => (
-                <ItemCard key={`${i}-${item.label}`} item={item} />
+                <ItemCard key={`${i}-${item.label}`} item={item} priorityLabels={priorityLabels} />
               ))}
             </div>
           )
@@ -83,7 +98,7 @@ export function ToolResults({ output, onReset }: ToolResultsProps) {
                 </h3>
                 <div className="flex flex-col gap-2">
                   {items.map((item, i) => (
-                    <ItemCard key={`${i}-${item.label}`} item={item} />
+                    <ItemCard key={`${i}-${item.label}`} item={item} priorityLabels={priorityLabels} />
                   ))}
                 </div>
               </div>
@@ -109,7 +124,7 @@ export function ToolResults({ output, onReset }: ToolResultsProps) {
             onClick={() => { if (typeof window !== 'undefined') window.print() }}
             className="flex-1 inline-flex items-center justify-center px-5 py-3 rounded-xl border-2 border-neutral-200 text-neutral-700 font-sans font-semibold text-sm min-h-[44px] hover:bg-neutral-50 transition-colors"
           >
-            Print / Save PDF
+            {strings?.cta.printSave ?? 'Print / Save PDF'}
           </button>
         )}
         <button
@@ -117,7 +132,7 @@ export function ToolResults({ output, onReset }: ToolResultsProps) {
           onClick={onReset}
           className="flex-1 inline-flex items-center justify-center px-5 py-3 rounded-xl border-2 border-neutral-200 text-neutral-500 font-sans font-semibold text-sm min-h-[44px] hover:bg-neutral-50 transition-colors"
         >
-          Start Over
+          {strings?.cta.startOver ?? 'Start Over'}
         </button>
       </div>
     </div>

@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useCallback, useEffect } from 'react'
+import { usePathname } from 'next/navigation'
 import type { ToolConfig, ToolAnswers, ToolOutput } from '@/types/tool'
 import { ToolProgressBar } from '@/components/tools/ToolProgressBar'
 import { ToolStep } from '@/components/tools/ToolStep'
@@ -9,11 +10,28 @@ import { outputGenerators } from '@/lib/tools/output-generators'
 import { getSupabase } from '@/lib/supabase'
 import { trackEvent } from '@/lib/analytics'
 
-interface Props {
-  tool: ToolConfig
+interface ToolEngineStrings {
+  cta: {
+    next: string
+    back: string
+    seeMyResults: string
+    calculating: string
+    startOver: string
+    printSave: string
+  }
+  tools: {
+    yourResults: string
+    priority: { critical: string; important: string; helpful: string }
+  }
 }
 
-export function ToolEngine({ tool }: Props) {
+interface Props {
+  tool: ToolConfig
+  strings?: ToolEngineStrings
+}
+
+export function ToolEngine({ tool, strings }: Props) {
+  const pathname = usePathname()
   const [answers, setAnswers] = useState<ToolAnswers>({})
   const [currentStep, setCurrentStep] = useState(0)
   const [output, setOutput] = useState<ToolOutput | null>(null)
@@ -62,6 +80,11 @@ export function ToolEngine({ tool }: Props) {
 
     setSubmitting(true)
     const result = generator(answers)
+
+    if (pathname.startsWith('/es/')) {
+      result.cta.href = '/es/buscar-ayuda'
+    }
+
     setOutput(result)
     trackEvent('tool_completed', { tool_slug: tool.slug })
 
@@ -100,7 +123,7 @@ export function ToolEngine({ tool }: Props) {
         <div className="rounded-xl border border-amber-200 bg-amber-50 p-4">
           <p className="text-amber-800 text-sm leading-relaxed">{tool.disclaimer}</p>
         </div>
-        <ToolResults output={output} onReset={handleReset} />
+        <ToolResults output={output} onReset={handleReset} strings={strings} />
         <div className="rounded-xl border border-amber-200 bg-amber-50 p-4">
           <p className="text-amber-800 text-sm leading-relaxed">{tool.disclaimer}</p>
         </div>
@@ -134,7 +157,7 @@ export function ToolEngine({ tool }: Props) {
             onClick={() => setCurrentStep(s => s - 1)}
             className="px-5 py-3 rounded-xl border-2 border-neutral-200 text-neutral-700 font-sans font-semibold text-sm min-h-[44px] hover:bg-neutral-50 transition-colors"
           >
-            ← Back
+            {strings?.cta.back ?? '← Back'}
           </button>
         )}
         {isLast ? (
@@ -144,7 +167,9 @@ export function ToolEngine({ tool }: Props) {
             disabled={!canAdvance() || submitting}
             className="flex-1 px-5 py-3 rounded-xl bg-primary-600 text-white font-sans font-semibold text-sm min-h-[44px] hover:bg-primary-700 transition-colors disabled:opacity-50 disabled:pointer-events-none"
           >
-            {submitting ? 'Calculating…' : 'See My Results →'}
+            {submitting
+              ? (strings?.cta.calculating ?? 'Calculating…')
+              : (strings?.cta.seeMyResults ?? 'See My Results →')}
           </button>
         ) : (
           <button
@@ -153,7 +178,7 @@ export function ToolEngine({ tool }: Props) {
             disabled={!canAdvance()}
             className="flex-1 px-5 py-3 rounded-xl bg-primary-600 text-white font-sans font-semibold text-sm min-h-[44px] hover:bg-primary-700 transition-colors disabled:opacity-50 disabled:pointer-events-none"
           >
-            Next →
+            {strings?.cta.next ?? 'Next →'}
           </button>
         )}
       </div>
