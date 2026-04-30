@@ -1,6 +1,6 @@
 'use client'
 
-import { usePathname, useRouter } from 'next/navigation'
+import { usePathname } from 'next/navigation'
 import { SLUG_MAP_ES, SLUG_MAP_EN } from '@/i18n/config'
 
 // Maps English path prefixes to their Spanish equivalents and vice versa
@@ -51,13 +51,12 @@ interface LanguageToggleProps {
 
 export function LanguageToggle({ variant = 'light' }: LanguageToggleProps) {
   const pathname = usePathname()
-  const router = useRouter()
   const activeLocale = pathname.startsWith('/es') ? 'es' : 'en'
 
   function handleSwitch(locale: 'en' | 'es') {
     if (locale === activeLocale) return
     document.cookie = `NEXT_LOCALE=${locale}; path=/; max-age=${60 * 60 * 24 * 365}; SameSite=Lax`
-    router.push(getEquivalentUrl(pathname, locale))
+    window.location.href = getEquivalentUrl(pathname, locale)
   }
 
   const containerClass = variant === 'dark'
