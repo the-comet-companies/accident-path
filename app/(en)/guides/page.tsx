@@ -13,8 +13,6 @@ export const metadata = buildMetaTags({
   canonical: '/guides',
 })
 
-const CORNERSTONE = new Set(['am-i-at-fault', 'settlement-vs-lawsuit'])
-
 export default function GuidesPage() {
   const guides = cms.getAllGuides()
 
@@ -59,11 +57,6 @@ export default function GuidesPage() {
                 >
                   <div className="h-[2px] bg-gradient-to-r from-primary-500 to-primary-800 shrink-0" aria-hidden="true" />
                   <div className="flex flex-col flex-1 p-4">
-                    {CORNERSTONE.has(guide.slug) && (
-                      <span className="inline-block self-start text-[10px] font-bold text-amber-600 bg-amber-50 rounded-full px-2.5 py-0.5 mb-3">
-                        ★ Cornerstone Guide
-                      </span>
-                    )}
                     <h2 className="font-sans font-semibold text-sm text-neutral-950 leading-snug mb-1.5">
                       {guide.title}
                     </h2>
