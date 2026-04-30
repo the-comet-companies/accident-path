@@ -2,7 +2,7 @@
 
 > **Purpose:** Authoritative record of what was actually built vs. what the plan specified. Use this alongside `PHASE-7-SPANISH-PLAN.md` when implementing DEV-33 through DEV-36.
 >
-> Last updated: April 30, 2026 — covers DEV-29 through DEV-34B
+> Last updated: April 30, 2026 — covers DEV-29 through DEV-35
 
 ---
 
@@ -16,9 +16,11 @@ DEV-29 through DEV-34B are all merged to `main`. The site is fully bilingual at:
 - `/es/guias/[slug]` — 14 Spanish guide pages + index
 - `/es/lesiones/[slug]` — 7 Spanish injury pages + index
 
-Vercel auto-deploys from `main`. Build: **~130 static pages**, TypeScript clean.
+- `/es/herramientas/[slug]` — 5 live Spanish tool pages + index
 
-**Tier 2 progress: 7 of 10 tasks complete.** Remaining: DEV-35 (tools), DEV-37 (states/cities), DEV-36 (sitemap).
+Vercel auto-deploys from `main`. Build: **~135 static pages**, TypeScript clean.
+
+**Tier 2 progress: 8 of 10 tasks complete.** Remaining: DEV-37 (states/cities), DEV-36 (sitemap).
 
 ---
 
@@ -83,8 +85,9 @@ i18n/
 ```ts
 LOCALES: ['en', 'es']
 DEFAULT_LOCALE: 'en'
-SLUG_MAP_ES: Record<string, string>   // EN slug → ES slug (35 entries: 13 accidents, 14 guides, 1 tool, 7 injuries)
+SLUG_MAP_ES: Record<string, string>   // EN slug → ES slug (41 entries: 13 accidents, 14 guides, 7 injuries, 6 tools, 1 lost-wages)
 SLUG_MAP_EN: Record<string, string>   // ES slug → EN slug (auto-reversed)
+TOOL_META_ES: Record<string, { title: string; description: string }>  // EN slug → Spanish display strings for all 11 tools
 NAV_ACCIDENT_TYPES: Record<Locale, NavItem[]>
 NAV_SIMPLE_LINKS: Record<Locale, NavItem[]>
 NAV_FIND_HELP: Record<Locale, NavItem>
@@ -307,12 +310,52 @@ The `globals.css` import path depends on nesting level:
 
 ---
 
+## DEV-35 — Spanish Tool Pages (Complete)
+
+| File | Action | Notes |
+|------|--------|-------|
+| `i18n/config.ts` | Modified | Added `TOOL_META_ES` map (Spanish title + description for all 11 tools). Added 4 new tool slug mappings: `urgency-checker → verificador-urgencia`, `injury-journal → diario-lesiones`, `lawyer-type-matcher → tipo-abogado`, `lost-wages-estimator → calculadora-salario`. (`accident-case-quiz → evaluacion-caso` and `evidence-checklist → lista-evidencia` already existed.) |
+| `lib/cms.ts` | Modified | Extended `getTool(slug, locale='en')` and `getAllTools(locale='en')` with locale param; reads from `content/tools/es/` when `locale === 'es'`. Backward-compatible. |
+| `app/(es)/es/herramientas/page.tsx` | Created | Spanish tool index. Featured 2-col section + 3-col grid. Uses `SLUG_MAP_ES` for hrefs, `TOOL_META_ES` for Spanish titles/descriptions. Live vs. coming-soon via `LAUNCH_SLUGS`. hreflang to `/tools`. |
+| `app/(es)/es/herramientas/[slug]/page.tsx` | Created | Spanish tool detail. `generateStaticParams` maps 5 live EN slugs through `SLUG_MAP_ES`. Calls `cms.getTool(slug, 'es')` (Spanish URL slug passed directly, matches JSON filename in `content/tools/es/`). Uses `enSlug` (not `tool.slug`) to detect `injury-journal` for the `InjuryJournal` component. Passes `toolStrings = { cta: dict.cta, tools: dict.tools }` to `ToolEngine`. hreflang EN↔ES. `notranslate`. CTA → `/es/buscar-ayuda`. |
+| `content/tools/es/*.json` | Created | 5 files: `evaluacion-caso.json`, `verificador-urgencia.json`, `lista-evidencia.json`, `diario-lesiones.json`, `tipo-abogado.json`. All pass Zod validation. Step `id` fields and option `value` fields kept in English (output generators match on them). Only `question` text and option `label` text translated. |
+| `components/tools/ToolEngine.tsx` | Modified | Added `strings` optional prop (`ToolEngineStrings` interface: cta + tools namespaces). Added `usePathname` for locale detection. Generator lookup falls back via `SLUG_MAP_EN[tool.slug]` when `tool.slug` is a Spanish slug. On ES path: overrides `result.cta.href` to `/es/buscar-ayuda` and `result.cta.label` to `strings.cta.getFreGuidance`. |
+| `components/tools/ToolResults.tsx` | Modified | Added `strings` optional prop with English fallbacks. `ItemCard` now accepts `priorityLabels` prop instead of module-level constant. |
+| `lib/tools/output-generators-es.ts` | Created | Spanish output generators for all 5 live tools: `accidentCaseQuizEs`, `urgencyCheckerEs`, `evidenceChecklistEs`, `injuryJournalEs`, `lawyerTypeMatcherEs`. All hub links point to `/es/accidentes/*`. `ToolEngine` picks ES generators when `pathname.startsWith('/es/')`, falling back to English for any tool without an ES variant. |
+| `components/tools/InjuryJournal.tsx` | Modified | Added `UI_EN`/`UI_ES` string tables and `SYMPTOM_OPTIONS_EN/ES` + `TREATMENT_OPTIONS_EN/ES` arrays. Detects locale via `usePathname`. All UI strings (tabs, headings, labels, placeholders, month names, weekday headers, aria-labels, date locale) switch based on path. `formatDate` now accepts a locale param. |
+| `components/ui/DisclaimerBanner.tsx` | Modified | Added `locale?: 'en' \| 'es'` prop (default `'en'`). Spanish text for all 4 variants (`default`, `intake`, `tool`, `state`). All 8 ES pages now pass `locale="es"`. |
+
+**Bugs encountered and fixed:**
+
+1. **404 on `/es/herramientas/evaluacion-caso`** — `metaDescription` was 163 chars (Zod max 160) → Zod threw → `catch { notFound() }`. Fixed: trimmed `evaluacion-caso.json` (163→155) and `tipo-abogado.json` (162→154).
+
+2. **"Results for this tool are coming soon."** — `outputGenerators[tool.slug]` failed because `tool.slug` was `'evaluacion-caso'` (Spanish) but map keys are English. Fixed: `const resolvedSlug = outputGenerators[tool.slug] ? tool.slug : (SLUG_MAP_EN[tool.slug] ?? tool.slug)` in `ToolEngine.handleFinish`.
+
+3. **"Get Free Guidance" CTA in English** — generator output hardcodes English label. Fixed: override `result.cta.label` on ES path with `strings?.cta.getFreGuidance ?? 'Obtenga Orientación Gratuita'`.
+
+4. **InjuryJournal component not rendering** — page checked `tool.slug === 'injury-journal'` but `tool.slug` is `'diario-lesiones'` on ES pages. Fixed: changed guard to `enSlug === 'injury-journal'` (where `enSlug = SLUG_MAP_EN[slug]`).
+
+5. **InjuryJournal UI still in English** — all strings hardcoded. Fixed: full UI translation with `usePathname` locale detection inside the component.
+
+6. **DisclaimerBanner still in English on all ES pages** — hardcoded text. Fixed: `locale` prop + Spanish text + `locale="es"` on all 8 ES pages.
+
+**Critical invariant — tool JSON option values:**
+
+Step `id` fields and option `value` fields in Spanish tool JSON files **must stay in English**. Output generators match on English values. Only `question` text and option `label` text are translated. This mirrors the intake wizard invariant from DEV-32.
+
+**Pattern: `enSlug` vs `tool.slug` in ES pages:**
+
+When `cms.getTool(slug, 'es')` is called with a Spanish URL slug, the returned `tool.slug` is the Spanish slug from the JSON file's `slug` field. Any logic that needs to identify the tool by type (component selection, generator lookup) must use `enSlug = SLUG_MAP_EN[slug]`, not `tool.slug`.
+
+**Build result:** ~135 static pages (up from ~130)
+
+---
+
 ## Remaining Tasks (Tier 2)
 
 | Task | Routes to create | Files to change |
 |------|-----------------|------------------------|
-| DEV-35 | `app/(es)/es/herramientas/[slug]/page.tsx` + `herramientas/page.tsx` | Add `strings` prop to `ToolEngine.tsx` + `ToolResults.tsx`; add tool slug mappings to `i18n/config.ts` |
-| DEV-37 | `app/(es)/es/estados/[state]/page.tsx` + `[state]/[city]/page.tsx` | `content/states/es/*.json` (2 files) + `content/cities/es/*.json` (16 files) |
+| DEV-37 | `app/(es)/es/estados/[state]/page.tsx` + `[state]/[city]/page.tsx` | `content/states/es/*.json` (2 files) + `content/cities/es/*.json` (16 files); extend `lib/cms.ts` `getState`/`getCity`/`getCitiesByState` with `locale` param |
 | DEV-36 | Extend `app/sitemap.ts` | Add `lib/hreflang.ts` helper |
 
 For full specs of each task, see `docs/plans/PHASE-7-SPANISH-PLAN.md`.
@@ -325,4 +368,4 @@ For full specs of each task, see `docs/plans/PHASE-7-SPANISH-PLAN.md`.
 - **`suggestLawyerType()`** — returns English attorney type strings. The Spanish results page displays these English strings under a Spanish heading. Acceptable for MVP.
 - **`suggestResources()`** — returns English guide/tool hrefs and labels. The Spanish results page (`/es/buscar-ayuda/results`) shows these in English. Spanish content pages exist at `/es/accidentes/*`, `/es/guias/*`, `/es/lesiones/*` — but `suggestResources()` still generates English paths. Full localization of this helper is out of scope for current phase.
 - **Privacy/Terms pages** — `/es/privacidad` and `/es/terminos` don't exist yet. `StepContact` links to the English `/privacy` and `/terms` for now.
-- **Spanish tool content** — `ToolEngine` question text stays English-only. DEV-35 adds a `strings` prop for UI chrome (buttons, labels, priority badges) but tool question/option text is not translated.
+- **Tool question/option text (coming-soon tools)** — the 6 coming-soon tools (`lost-wages-estimator`, `settlement-calculator`, `med-pay-tracker`, `attorney-checklist`, `demand-letter-builder`, `deposition-prep`) have no Spanish JSON files yet. Their `/es/herramientas/[slug]` routes render a "Próximamente" holding page without loading tool content.
