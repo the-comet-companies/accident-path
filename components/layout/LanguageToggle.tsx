@@ -60,8 +60,8 @@ export function LanguageToggle({ variant = 'light' }: LanguageToggleProps) {
   }
 
   const containerClass = variant === 'dark'
-    ? 'flex items-center rounded-full border border-primary-700 overflow-hidden text-xs font-semibold tracking-wide'
-    : 'flex items-center rounded-full border border-neutral-200 overflow-hidden text-xs font-semibold tracking-wide'
+    ? 'flex items-center rounded-full border border-primary-700 overflow-hidden text-xs font-semibold tracking-wide shrink-0'
+    : 'flex items-center rounded-full border border-neutral-200 overflow-hidden text-xs font-semibold tracking-wide shrink-0'
 
   const activeClass = 'bg-primary-600 text-white px-3 py-1.5 cursor-pointer transition-colors'
 

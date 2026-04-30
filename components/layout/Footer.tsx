@@ -149,7 +149,7 @@ export function Footer({ locale = 'en', dict }: FooterProps) {
             &middot; {locale === 'es' ? 'Busque atención médica inmediata.' : 'Seek immediate medical care for injuries.'}
           </p>
           <div className="flex items-center justify-between gap-4 w-full sm:w-auto">
-            <p className="text-xs text-neutral-500">
+            <p className="text-xs text-neutral-500 min-w-0">
               &copy; {currentYear} AccidentPath. {t.copyright}{' '}
               <Link href="/privacy#do-not-sell" className="text-amber-400 hover:text-amber-300 underline">
                 {t.doNotSell}
