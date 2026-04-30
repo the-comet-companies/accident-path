@@ -2,7 +2,7 @@
 
 > **Purpose:** Authoritative record of what was actually built vs. what the plan specified. Use this alongside `PHASE-7-SPANISH-PLAN.md` when implementing DEV-33 through DEV-36.
 >
-> Last updated: April 30, 2026 — covers DEV-29 through DEV-37 + DEV-36 + LanguageToggle multi-segment fix. Tier 2 complete.
+> Last updated: April 30, 2026 — covers DEV-29 through DEV-37 + DEV-36 + all post-launch UI polish. Tier 2 complete.
 
 ---
 
@@ -440,6 +440,46 @@ function bilingual(enPath: string, esPath: string) {
 **Approach:** No separate `lib/hreflang.ts` file — the helper is inlined in `sitemap.ts`. The pattern is straightforward enough that a dedicated file adds no value.
 
 **Build result:** Sitemap renders as `○ /sitemap.xml` (static). TypeScript clean.
+
+---
+
+## Post-Launch UI Fixes
+
+### LanguageToggle: `router.push` → `window.location.href`
+
+**File:** `components/layout/LanguageToggle.tsx` — **Commit:** `2db62cd`
+
+**Problem:** Intermittent toggle failure, most reliably on the home page `/`. Next.js Router Cache serves previously-fetched routes client-side without hitting the server. When the cached payload was used, the middleware on `/` never saw the updated `NEXT_LOCALE` cookie, so the redirect didn't fire.
+
+**Fix:** `window.location.href = getEquivalentUrl(pathname, locale)` replaces `router.push(...)`. Forces a full browser navigation — cookie is always fresh in the server request, middleware always runs. Removed `useRouter` import. This is the correct semantics for language switching (full layout-tree change).
+
+**Invariant going forward:** Do NOT revert to `router.push` for language switching. The Router Cache will cause the same intermittent failure.
+
+---
+
+### Header + Layout UI Polish
+
+**Commits:** `af3aa38`, `29e1a30`, `9e431eb`, `f2a41fe`, `fb6bd0f`
+
+| File | Change |
+|------|--------|
+| `components/ui/EmergencyBanner.tsx` | Banner text centered: inner layout `justify-center`, dismiss button `absolute right-0` |
+| `app/(en)/layout.tsx` + `app/(es)/es/layout.tsx` | LanguageToggle moved from MobileNav drawer to mobile header bar (between logo and hamburger) |
+| `components/layout/MobileNav.tsx` | Removed LanguageToggle; added `breakpoint?: 'lg' \| 'xl'` prop — computes `hiddenAbove` string constant (`'xl:hidden'` or `'lg:hidden'`) used on all 4 mobile-only elements (hamburger, backdrop, drawer, bottom CTA) |
+| `components/layout/Footer.tsx` | `pb-20 lg:pb-0` on `<footer>` to clear fixed bottom CTA bar; `w-full justify-between` on bottom-bar inner div; `min-w-0` on copyright `<p>` |
+| `components/layout/LanguageToggle.tsx` | `shrink-0` added to both `containerClass` variants to prevent flex compression clipping the ES button |
+| `components/layout/Header.tsx` | LanguageToggle moved out of `<nav>` into the right-side CTA `<div>` (saves ~90px in nav); CTA group changed from `hidden lg:block` to `hidden lg:flex items-center gap-3` |
+| `i18n/config.ts` | Removed "Acerca de" (`/about`) from `NAV_SIMPLE_LINKS.es` — English-only page, inconsistent in Spanish nav, saves ~75px |
+| `app/(es)/es/layout.tsx` | Desktop header wrapper: `hidden lg:block` → `hidden xl:block`; mobile header wrapper: `lg:hidden` → `xl:hidden`; passes `breakpoint="xl"` to MobileNav |
+
+**MobileNav `breakpoint` prop pattern:**
+```tsx
+const hiddenAbove = breakpoint === 'xl' ? 'xl:hidden' : 'lg:hidden'
+// Applied to: hamburger button, backdrop, drawer, bottom CTA bar
+// Full string literals required so Tailwind includes both classes at build
+```
+
+**Spanish header breakpoint rationale:** Spanish nav labels are inherently wider than English (e.g. "Tipos de Accidentes" vs "Accident Types"). Bumping to `xl` (1280px) means screens 1024–1279px show the hamburger instead of a crowded nav. EN stays at `lg` (1024px).
 
 ---
 

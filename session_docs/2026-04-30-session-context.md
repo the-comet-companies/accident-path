@@ -2,8 +2,8 @@
 
 ## Where We Left Off (read this first in a new session)
 
-**Status: DEV-36 complete. Tier 2 fully done (10/10).**
-**Build: ~155 static pages. TypeScript clean. `main` at `91cf951`.**
+**Status: Tier 2 complete + post-launch UI polish done.**
+**Build: ~155 static pages. TypeScript clean. `main` at `fb6bd0f`.**
 
 ---
 
@@ -84,9 +84,41 @@ return `${esPrefix}/${translated.join('/')}`
 
 ---
 
+### LanguageToggle `router.push` → `window.location.href` ✓ Fixed
+
+**Commit:** `2db62cd`
+
+**Bug:** Intermittent — clicking EN/ES sometimes did nothing, most reliably reproduced on the home page (`/`). Root cause: Next.js Router Cache can serve a cached RSC payload for previously-visited routes without making a fresh server request. When the cache was used, the middleware on `/` never saw the updated `NEXT_LOCALE` cookie, so the language redirect didn't fire.
+
+**Fix:** `window.location.href = getEquivalentUrl(...)` instead of `router.push(...)`. Forces a full browser navigation so the cookie is always included in a fresh server request. Language switching is a full layout-tree change anyway — hard navigation is correct semantics. Removed `useRouter` import.
+
+---
+
+### UI Polish ✓
+
+**Commits:** `af3aa38`, `29e1a30`, `9e431eb`, `f2a41fe`, `fb6bd0f`
+
+| Change | File(s) | Detail |
+|--------|---------|--------|
+| Center emergency banner text | `components/ui/EmergencyBanner.tsx` | Changed inner layout to `justify-center`; dismiss button moved to `absolute right-0` so it doesn't pull text off-center |
+| Move LanguageToggle beside hamburger on mobile | `app/(en)/layout.tsx`, `app/(es)/es/layout.tsx`, `components/layout/MobileNav.tsx` | Toggle removed from MobileNav drawer; added to mobile header bar in both layouts between logo and hamburger |
+| Footer `pb-20` on mobile | `components/layout/Footer.tsx` | Fixed CTA bar (`py-3` + button height ≈ 72px) was overlapping footer bottom content; matches `<main pb-20>` |
+| Footer toggle no longer clipped | `components/layout/LanguageToggle.tsx`, `components/layout/Footer.tsx` | Toggle was being flex-squished by adjacent copyright `<p>` — its `overflow-hidden` then clipped the ES button. Fixed: `shrink-0` on toggle container (both variants), `min-w-0` on copyright `<p>`, `w-full justify-between` on footer bottom-bar inner div |
+| Spanish desktop header decrowded | `components/layout/Header.tsx`, `components/layout/MobileNav.tsx`, `app/(es)/es/layout.tsx`, `i18n/config.ts` | Moved LanguageToggle out of nav into right-side CTA group (frees ~90px); removed "Acerca de" from `NAV_SIMPLE_LINKS.es` (English-only page, inconsistent in Spanish nav, frees ~75px); bumped Spanish header breakpoint from `lg` (1024px) to `xl` (1280px) — MobileNav now accepts `breakpoint?: 'lg' \| 'xl'` prop |
+
+**MobileNav `breakpoint` prop pattern:**
+```tsx
+// breakpoint controls which Tailwind class hides the mobile UI above that screen size
+const hiddenAbove = breakpoint === 'xl' ? 'xl:hidden' : 'lg:hidden'
+// Used on: hamburger button, backdrop, drawer, bottom CTA bar
+```
+Full class names (`'xl:hidden'`, `'lg:hidden'`) appear as string literals in source so Tailwind includes them at build time.
+
+---
+
 ## Where to Start Next Session
 
-**Tier 2 complete.** All 10 DEV tasks done.
+**Tier 2 complete + UI polished.** All 10 DEV tasks done.
 
 **Launch checklist (pending Michael):**
 - GA4 / Microsoft Clarity
