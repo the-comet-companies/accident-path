@@ -7,6 +7,7 @@ import { ToolProgressBar } from '@/components/tools/ToolProgressBar'
 import { ToolStep } from '@/components/tools/ToolStep'
 import { ToolResults } from '@/components/tools/ToolResults'
 import { outputGenerators } from '@/lib/tools/output-generators'
+import { outputGeneratorsEs } from '@/lib/tools/output-generators-es'
 import { SLUG_MAP_EN } from '@/i18n/config'
 import { getSupabase } from '@/lib/supabase'
 import { trackEvent } from '@/lib/analytics'
@@ -68,8 +69,11 @@ export function ToolEngine({ tool, strings }: Props) {
   }
 
   async function handleFinish() {
+    const isEs = pathname.startsWith('/es/')
     const resolvedSlug = outputGenerators[tool.slug] ? tool.slug : (SLUG_MAP_EN[tool.slug] ?? tool.slug)
-    const generator = outputGenerators[resolvedSlug]
+    const generator = isEs
+      ? (outputGeneratorsEs[resolvedSlug] ?? outputGenerators[resolvedSlug])
+      : outputGenerators[resolvedSlug]
     if (!generator) {
       setOutput({
         summary: 'Results for this tool are coming soon.',
@@ -84,7 +88,7 @@ export function ToolEngine({ tool, strings }: Props) {
     setSubmitting(true)
     const result = generator(answers)
 
-    if (pathname.startsWith('/es/')) {
+    if (isEs) {
       result.cta.href = '/es/buscar-ayuda'
       result.cta.label = strings?.cta.getFreGuidance ?? 'Obtenga Orientación Gratuita'
     }
