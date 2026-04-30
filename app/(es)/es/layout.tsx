@@ -58,11 +58,11 @@ export default async function EsLayout({
         <SchemaOrg schema={organizationSchema()} id="org-schema" />
         <EmergencyBanner locale="es" />
         {/* Desktop header */}
-        <div className="hidden lg:block sticky top-0 z-50">
+        <div className="hidden xl:block sticky top-0 z-50">
           <Header locale="es" />
         </div>
         {/* Mobile header */}
-        <div className="lg:hidden sticky top-0 z-50 bg-surface-card border-b border-neutral-100 shadow-sm">
+        <div className="xl:hidden sticky top-0 z-50 bg-surface-card border-b border-neutral-100 shadow-sm">
           <div className="flex items-center justify-between h-16 px-4">
             <Link href="/es/" aria-label="AccidentPath inicio">
               <span className="text-lg font-bold text-primary-700 font-sans">
@@ -71,7 +71,7 @@ export default async function EsLayout({
             </Link>
             <div className="flex items-center gap-2">
               <LanguageToggle />
-              <MobileNav locale="es" />
+              <MobileNav locale="es" breakpoint="xl" />
             </div>
           </div>
         </div>

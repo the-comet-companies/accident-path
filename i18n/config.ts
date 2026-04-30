@@ -143,7 +143,6 @@ export const NAV_SIMPLE_LINKS = {
     { label: 'Lesiones', href: '/es/lesiones' },
     { label: 'Qué Hacer Después', href: '/es/guias' },
     { label: 'Herramientas', href: '/es/herramientas' },
-    { label: 'Acerca de', href: '/about' },
   ],
 }
 

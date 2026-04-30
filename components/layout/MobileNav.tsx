@@ -20,9 +20,11 @@ const stateGuides = [
 
 interface MobileNavProps {
   locale?: Locale
+  breakpoint?: 'lg' | 'xl'
 }
 
-export function MobileNav({ locale = 'en' }: MobileNavProps) {
+export function MobileNav({ locale = 'en', breakpoint = 'lg' }: MobileNavProps) {
+  const hiddenAbove = breakpoint === 'xl' ? 'xl:hidden' : 'lg:hidden'
   const [isOpen, setIsOpen] = useState(false)
   const [expandedSection, setExpandedSection] = useState<string | null>(null)
   const drawerRef = useRef<HTMLDivElement>(null)
@@ -102,7 +104,7 @@ export function MobileNav({ locale = 'en' }: MobileNavProps) {
         aria-label="Open navigation menu"
         aria-expanded={isOpen}
         aria-controls="mobile-nav-drawer"
-        className="lg:hidden p-2 rounded-md text-neutral-700 hover:bg-neutral-50 min-h-[44px] min-w-[44px] flex items-center justify-center"
+        className={`${hiddenAbove} p-2 rounded-md text-neutral-700 hover:bg-neutral-50 min-h-[44px] min-w-[44px] flex items-center justify-center`}
       >
         <Menu className="w-6 h-6" aria-hidden="true" />
       </button>
@@ -110,7 +112,7 @@ export function MobileNav({ locale = 'en' }: MobileNavProps) {
       {/* Backdrop */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-neutral-950/40 z-40 lg:hidden"
+          className={`fixed inset-0 bg-neutral-950/40 z-40 ${hiddenAbove}`}
           aria-hidden="true"
           onClick={close}
         />
@@ -123,7 +125,7 @@ export function MobileNav({ locale = 'en' }: MobileNavProps) {
         role="dialog"
         aria-modal="true"
         aria-label="Navigation menu"
-        className={`fixed inset-y-0 right-0 w-full max-w-sm bg-surface-card z-50 flex flex-col shadow-2xl transition-transform duration-300 ease-in-out lg:hidden ${
+        className={`fixed inset-y-0 right-0 w-full max-w-sm bg-surface-card z-50 flex flex-col shadow-2xl transition-transform duration-300 ease-in-out ${hiddenAbove} ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
@@ -251,7 +253,7 @@ export function MobileNav({ locale = 'en' }: MobileNavProps) {
       </div>
 
       {/* Bottom-fixed CTA bar — mobile only */}
-      <div className="fixed bottom-0 left-0 right-0 z-30 lg:hidden bg-surface-card border-t border-neutral-100 px-4 py-3 safe-area-pb">
+      <div className={`fixed bottom-0 left-0 right-0 z-30 ${hiddenAbove} bg-surface-card border-t border-neutral-100 px-4 py-3 safe-area-pb`}>
         <CTAButton href={findHelp.href} variant="primary-dark" fullWidth>
           {labels.getHelpNowFull}
         </CTAButton>

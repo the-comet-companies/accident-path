@@ -173,12 +173,11 @@ export function Header({ locale = 'en' }: HeaderProps) {
               </Link>
             ))}
 
-            {/* Language toggle */}
-            <LanguageToggle />
           </nav>
 
-          {/* Desktop CTA */}
-          <div className="hidden lg:block shrink-0">
+          {/* Desktop CTA + language toggle */}
+          <div className="hidden lg:flex items-center gap-3 shrink-0">
+            <LanguageToggle />
             <CTAButton href={findHelp.href} size="sm">{labels.getHelpNow}</CTAButton>
           </div>
         </div>
