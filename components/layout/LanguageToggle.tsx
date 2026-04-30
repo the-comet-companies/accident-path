@@ -23,9 +23,9 @@ function getEquivalentUrl(pathname: string, targetLocale: 'en' | 'es'): string {
     for (const [enPrefix, esPrefix] of Object.entries(EN_TO_ES_PREFIXES)) {
       if (pathname === enPrefix) return esPrefix
       if (pathname.startsWith(enPrefix + '/')) {
-        const slug = pathname.slice(enPrefix.length + 1).split('/')[0]
-        const esSlug = SLUG_MAP_ES[slug]
-        return esSlug ? `${esPrefix}/${esSlug}` : esPrefix
+        const segments = pathname.slice(enPrefix.length + 1).split('/')
+        const translated = segments.map(seg => SLUG_MAP_ES[seg] ?? seg)
+        return `${esPrefix}/${translated.join('/')}`
       }
     }
     return '/es/'
@@ -36,9 +36,9 @@ function getEquivalentUrl(pathname: string, targetLocale: 'en' | 'es'): string {
     for (const [esPrefix, enPrefix] of Object.entries(ES_TO_EN_PREFIXES)) {
       if (pathname === esPrefix) return enPrefix
       if (pathname.startsWith(esPrefix + '/')) {
-        const slug = pathname.slice(esPrefix.length + 1).split('/')[0]
-        const enSlug = SLUG_MAP_EN[slug]
-        return enSlug ? `${enPrefix}/${enSlug}` : enPrefix
+        const segments = pathname.slice(esPrefix.length + 1).split('/')
+        const translated = segments.map(seg => SLUG_MAP_EN[seg] ?? seg)
+        return `${enPrefix}/${translated.join('/')}`
       }
     }
     return '/'
