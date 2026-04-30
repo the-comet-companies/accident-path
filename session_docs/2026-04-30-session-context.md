@@ -2,8 +2,8 @@
 
 ## Where We Left Off (read this first in a new session)
 
-**Status: DEV-37 complete + LanguageToggle multi-segment bug fixed.**
-**Build: ~155 static pages. TypeScript clean. `main` at `1eab17d`.**
+**Status: DEV-36 complete. Tier 2 fully done (10/10).**
+**Build: ~155 static pages. TypeScript clean. `main` at `91cf951`.**
 
 ---
 
@@ -86,13 +86,11 @@ return `${esPrefix}/${translated.join('/')}`
 
 ## Where to Start Next Session
 
-**Next task: DEV-36 — Sitemap + hreflang**
+**Tier 2 complete.** All 10 DEV tasks done.
 
-- Extend `app/sitemap.ts` to include all ES routes (`/es/accidentes/*`, `/es/guias/*`, `/es/lesiones/*`, `/es/herramientas/*`, `/es/estados/*`, `/es/estados/*/[ciudad]`)
-- Add `lib/hreflang.ts` helper (or inline) to generate consistent alternates
-- Verify all EN routes already in sitemap
-
-**After DEV-36:** Tier 2 fully complete. Launch checklist: GA4/Clarity, Domain/DNS.
+**Launch checklist (pending Michael):**
+- GA4 / Microsoft Clarity
+- Domain / DNS
 
 ---
 
@@ -109,10 +107,10 @@ return `${esPrefix}/${translated.join('/')}`
 | DEV-34B | 7C | ✓ Complete — Spanish injury pages (7 types) + `/es/lesiones` index |
 | DEV-35 | 7C | ✓ Complete — Spanish tool pages (5 live) + `/es/herramientas` index |
 | DEV-37 | 7C | ✓ Complete — Spanish state + city pages (2 states, 16 cities) |
-| DEV-36 | 7D | Not started — hreflang + sitemap |
+| DEV-36 | 7D | ✓ Complete — bilingual sitemap with hreflang alternates |
 
 **Tier 1 (launch minimum):** DEV-29–32 — ✓ ALL COMPLETE
-**Tier 2 (full bilingual):** all 10 tasks — **9/10 complete**
+**Tier 2 (full bilingual):** all 10 tasks — ✓ ALL COMPLETE
 
 ---
 
@@ -166,7 +164,7 @@ Server component. Pass `locale="es"` from every ES page. All 4 variant texts hav
 | Next.js 14 App Router | ✓ |
 | TypeScript strict | ✓ (zero errors) |
 | Static pages | ✓ ~155 |
-| Spanish i18n | 🔄 DEV-29–37 done; DEV-36 (sitemap) remaining |
+| Spanish i18n | ✓ Complete — DEV-29–37 + DEV-36 all done |
 | Attorney content review | ✗ Pending |
 | GA4 / Clarity | ✗ Pending Michael |
 | Domain/DNS | ✗ Pending Michael |

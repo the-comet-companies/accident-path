@@ -2,7 +2,7 @@
 
 > **Purpose:** Authoritative record of what was actually built vs. what the plan specified. Use this alongside `PHASE-7-SPANISH-PLAN.md` when implementing DEV-33 through DEV-36.
 >
-> Last updated: April 30, 2026 — covers DEV-29 through DEV-37 + LanguageToggle multi-segment fix
+> Last updated: April 30, 2026 — covers DEV-29 through DEV-37 + DEV-36 + LanguageToggle multi-segment fix. Tier 2 complete.
 
 ---
 
@@ -20,7 +20,7 @@ DEV-29 through DEV-34B are all merged to `main`. The site is fully bilingual at:
 
 Vercel auto-deploys from `main`. Build: **~135 static pages**, TypeScript clean.
 
-**Tier 2 progress: 9 of 10 tasks complete.** Remaining: DEV-36 (sitemap).
+**Tier 2 complete: all 10 tasks done.** Launch pending: GA4/Clarity + Domain/DNS (Michael).
 
 ---
 
@@ -416,13 +416,39 @@ Same pattern applied for the ES→EN direction.
 
 ---
 
-## Remaining Tasks (Tier 2)
+## DEV-36 — Bilingual Sitemap + hreflang (Complete)
 
-| Task | Routes to create | Files to change |
-|------|-----------------|------------------------|
-| DEV-36 | Extend `app/sitemap.ts` | Add `lib/hreflang.ts` helper |
+| File | Action | Notes |
+|------|--------|-------|
+| `app/sitemap.ts` | Rewritten | Full bilingual sitemap. EN + ES entries for all 13 accident pairs, 7 injury pairs, 14 guide pairs, 5 live tool pairs, 2 state pairs, 16 city pairs, and all static bilingual pages. Each entry includes `alternates.languages` with `en`, `es`, and `x-default` pointing to the EN URL. EN-only pages (`/about`, `/for-attorneys`, etc.) have no alternates. |
 
-For full specs of each task, see `docs/plans/PHASE-7-SPANISH-PLAN.md`.
+**`bilingual()` helper (inline):**
+```ts
+function bilingual(enPath: string, esPath: string) {
+  return {
+    languages: {
+      en: `${BASE}${enPath}`,
+      es: `${BASE}${esPath}`,
+      'x-default': `${BASE}${enPath}`,
+    },
+  }
+}
+```
+
+**`spinal`/`traumatic-brain` guard:** These EN accident slugs also appear in `SLUG_MAP_ES` as injury mappings. Without a guard, the sitemap would generate `alternates` pointing to `/es/accidentes/columna` and `/es/accidentes/traumatismo-craneal` — which don't exist. Fixed by building `esAccidentSlugSet` from `cms.getAllAccidents('es')` and checking membership before generating alternates for any EN accident entry.
+
+**Approach:** No separate `lib/hreflang.ts` file — the helper is inlined in `sitemap.ts`. The pattern is straightforward enough that a dedicated file adds no value.
+
+**Build result:** Sitemap renders as `○ /sitemap.xml` (static). TypeScript clean.
+
+---
+
+## Remaining Tasks
+
+None. Phase 7 (Tier 2) is complete. Launch checklist:
+- Attorney content review — pending
+- GA4 / Microsoft Clarity — pending Michael
+- Domain / DNS — pending Michael
 
 ---
 
