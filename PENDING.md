@@ -15,38 +15,6 @@ The user reviews all completed work before it's marked Live. Do not update Notio
 
 ---
 
-## English — Coming Soon (20 cities)
-
-These cities are tracked in Notion but have no content files built yet. Each needs:
-- `content/cities/{slug}.json` — city data file (see existing cities for schema)
-- `content/cities/es/{slug}.json` — Spanish version
-
-| City | Notion Route |
-|------|-------------|
-| Riverside, CA | `/states/california/riverside` |
-| Irvine, CA | `/states/california/irvine` |
-| Santa Ana, CA | `/states/california/santa-ana` |
-| Santa Clarita, CA | `/states/california/santa-clarita` |
-| Chula Vista, CA | `/states/california/chula-vista` |
-| Fremont, CA | `/states/california/fremont` |
-| Stockton, CA | `/states/california/stockton` |
-| San Bernardino, CA | `/states/california/san-bernardino` |
-| Modesto, CA | `/states/california/modesto` |
-| Glendale, CA | `/states/california/glendale` |
-| Fontana, CA | `/states/california/fontana` |
-| Torrance, CA | `/states/california/torrance` |
-| Pomona, CA | `/states/california/pomona` |
-| Huntington Beach, CA | `/states/california/huntington-beach` |
-| Ontario, CA | `/states/california/ontario` |
-| Lancaster, CA | `/states/california/lancaster` |
-| Palmdale, CA | `/states/california/palmdale` |
-| Pasadena, CA | `/states/california/pasadena` |
-| Rancho Cucamonga, CA | `/states/california/rancho-cucamonga` |
-| Glendale, AZ | `/states/arizona/glendale` |
-
-When done: update English `Status` → `Live` AND `Spanish Status` → `Live` AND populate `Spanish Route` in Notion.
-
----
 
 ## Spanish — Not Started (4 pages)
 
