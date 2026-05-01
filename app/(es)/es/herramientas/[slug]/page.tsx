@@ -20,6 +20,7 @@ const TOOL_EN_SLUGS = [
   'evidence-checklist',
   'injury-journal',
   'lawyer-type-matcher',
+  'insurance-call-prep',
 ]
 
 export async function generateStaticParams() {

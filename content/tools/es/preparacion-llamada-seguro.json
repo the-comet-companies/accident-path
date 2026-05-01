@@ -1,0 +1,96 @@
+{
+  "slug": "preparacion-llamada-seguro",
+  "title": "Herramienta de Preparación para Llamadas con el Seguro",
+  "metaTitle": "Herramienta de Preparación para Llamadas con el Seguro — Guía para Víctimas de Accidentes",
+  "metaDescription": "Prepárese para su llamada al seguro con un guión personalizado, preguntas clave, información que recopilar y errores comunes que evitar antes de marcar.",
+  "description": "Las llamadas con los ajustadores de seguros después de un accidente pueden sentirse de alta importancia — porque lo son. Lo que dice y cómo lo dice importa. Esta herramienta le ayuda a organizar lo que debe tener a mano, qué preguntas hacer y qué evitar decir, para que pueda abordar la llamada con más confianza.",
+  "disclaimer": "Esta herramienta proporciona información educativa general sobre prácticas comunes en reclamaciones de seguros. No constituye asesoramiento legal. Las pólizas de seguro y los procesos de reclamaciones varían significativamente. Antes de dar cualquier declaración grabada a cualquier compañía de seguros, considere consultar a un abogado de lesiones personales con licencia.",
+  "steps": [
+    {
+      "id": "caller-type",
+      "question": "¿A quién va a llamar?",
+      "type": "select",
+      "options": [
+        { "value": "your-insurer", "label": "Su propia compañía de seguros" },
+        { "value": "other-driver-insurer", "label": "La compañía de seguros del otro conductor" },
+        { "value": "health-insurer", "label": "Su aseguradora de salud" },
+        { "value": "workers-comp", "label": "Aseguradora de compensación laboral" }
+      ]
+    },
+    {
+      "id": "call-purpose",
+      "question": "¿Cuál es el propósito de su llamada?",
+      "type": "select",
+      "options": [
+        { "value": "report-claim", "label": "Reportar una nueva reclamación" },
+        { "value": "follow-up", "label": "Dar seguimiento a una reclamación existente" },
+        { "value": "dispute-decision", "label": "Disputar una decisión de cobertura" },
+        { "value": "request-info", "label": "Solicitar información o documentos" }
+      ]
+    },
+    {
+      "id": "info-available",
+      "question": "¿Qué información tiene disponible actualmente? (Seleccione todas las que apliquen)",
+      "type": "checklist",
+      "options": [
+        { "value": "claim-number", "label": "Número de reclamación" },
+        { "value": "police-report-number", "label": "Número del informe policial" },
+        { "value": "photos-documentation", "label": "Fotos y documentación del accidente" },
+        { "value": "medical-records", "label": "Registros o facturas médicas" },
+        { "value": "witness-info", "label": "Información de contacto de testigos" },
+        { "value": "policy-number", "label": "Número de póliza de seguro" },
+        { "value": "none-of-above", "label": "Ninguna de las anteriores aún" }
+      ]
+    }
+  ],
+  "supportingContent": [
+    {
+      "heading": "Su seguro vs. el seguro de la otra parte",
+      "content": "Hay dos tipos muy diferentes de llamadas al seguro que puede necesitar hacer después de un accidente. Las llamadas a su propia compañía de seguros están regidas por sus obligaciones contractuales — generalmente debe reportar el accidente de manera oportuna y cooperar con su propio asegurador. Las llamadas a la compañía de seguros de la otra parte son un asunto diferente: usted no tiene ninguna obligación contractual con su ajustador, ellos representan los intereses de la parte contraria y no está obligado a dar una declaración grabada. Entender qué tipo de llamada está haciendo define todo sobre cómo debe abordarla.",
+      "tips": [
+        "Reporte a su propio asegurador de inmediato — su póliza requiere aviso oportuno",
+        "Por lo general, no está obligado a dar una declaración grabada a la aseguradora del otro conductor",
+        "Solicite el nombre del ajustador, su número directo y el número de reclamación al inicio de cada llamada"
+      ]
+    },
+    {
+      "heading": "Información que debe tener lista antes de llamar",
+      "content": "Antes de llamar a cualquier compañía de seguros, reúna: su número de póliza y página de declaraciones, el número oficial del informe policial (si está disponible), el nombre, placa y datos del seguro del otro conductor, los nombres e información de contacto de cualquier testigo, fotos de los daños y la escena, un resumen cronológico de los hechos (escrito con anticipación para mantenerse coherente), los nombres de sus proveedores médicos y cualquier tratamiento recibido, y una lista de los gastos en que ha incurrido. Estar organizado evita proporcionar información incompleta o hacer declaraciones inconsistentes en múltiples llamadas.",
+      "tips": [
+        "Escriba un breve resumen factual del accidente antes de la llamada y apéguese a él",
+        "No adivine detalles que no conoce — 'No lo sé' es una respuesta válida",
+        "Tome notas durante cada llamada: fecha, hora, nombre del ajustador, lo que se dijo"
+      ]
+    },
+    {
+      "heading": "Lo que no debe decir a un ajustador de seguros",
+      "content": "Los ajustadores de seguros están capacitados para recopilar información que puede usarse para minimizar o negar su reclamación. Evite estos errores comunes: no se disculpe ni diga nada que pueda interpretarse como admisión de culpa; no diga que se siente 'bien' o 'okay' — estas declaraciones se usan para disputar la gravedad de las lesiones; no acepte dar una declaración grabada sin consultar primero a un abogado, especialmente para la aseguradora del otro conductor; no acepte una oferta de acuerdo sin comprender el alcance total de sus lesiones y daños; y no especule sobre la causa del accidente ni sobre sus propias lesiones.",
+      "tips": [
+        "Nunca diga 'me siento bien' — puede usarse para disputar sus lesiones más adelante",
+        "Apéguese a los hechos que conoce con certeza; evite especular",
+        "Siempre puede decir 'necesito devolverle la llamada' si se siente sin preparación o presionado"
+      ]
+    },
+    {
+      "heading": "Cómo manejar ofertas de acuerdo bajas",
+      "content": "Las compañías de seguros frecuentemente hacen ofertas de acuerdo tempranas y bajas a personas lesionadas que aún no comprenden completamente sus lesiones, costos médicos u opciones legales. Una vez que acepta un acuerdo y firma una liberación, generalmente no puede buscar compensación adicional — incluso si sus lesiones resultan ser más graves de lo esperado. Antes de aceptar cualquier oferta de acuerdo, asegúrese de que su tratamiento médico esté completo o haya alcanzado la mejoría médica máxima, de que haya documentado todas sus pérdidas económicas, y de haber consultado con un abogado de lesiones personales que pueda evaluar si la oferta refleja el valor real de su reclamación."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Tengo que dar una declaración grabada a la compañía de seguros del otro conductor?",
+      "answer": "En la mayoría de los casos, no. Por lo general, no está obligado a dar una declaración grabada a la compañía de seguros de la parte contraria. Ellos representan los intereses del otro conductor, no los suyos. Puede declinar cortésmente e indicar que prefiere que el asunto se maneje por escrito o a través de su abogado. Su propia compañía de seguros puede requerir una declaración según las obligaciones de su póliza."
+    },
+    {
+      "question": "¿Qué debo hacer si el ajustador me presiona para llegar a un acuerdo rápidamente?",
+      "answer": "No se sienta presionado a aceptar una oferta temprana. Las ofertas de acuerdo tempranas suelen estar por debajo del valor real de una reclamación, especialmente antes de conocer el alcance total de sus lesiones. Tiene derecho a tomarse el tiempo necesario para consultar a un abogado, completar su tratamiento médico y documentar completamente sus daños antes de tomar cualquier decisión de acuerdo."
+    },
+    {
+      "question": "¿Debo contratar a un abogado antes de hablar con las compañías de seguros?",
+      "answer": "Consultar a un abogado de lesiones personales antes de dar cualquier declaración grabada — especialmente a la aseguradora de la otra parte — es generalmente recomendable en casos que involucren lesiones significativas, responsabilidad disputada o circunstancias complejas. La mayoría de los abogados de lesiones personales ofrecen consultas iniciales gratuitas, y su orientación puede proteger su reclamación de errores tempranos."
+    }
+  ],
+  "relatedTools": ["evidence-checklist", "record-request", "accident-case-quiz"],
+  "relatedGuides": ["after-car-accident", "insurance-claims"],
+  "relatedAccidents": ["car", "truck", "motorcycle", "uber-lyft", "bicycle"]
+}

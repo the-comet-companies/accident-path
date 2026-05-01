@@ -36,6 +36,7 @@ export const SLUG_MAP_ES: Record<string, string> = {
   'injury-journal': 'diario-lesiones',
   'lawyer-type-matcher': 'tipo-abogado',
   'lost-wages-estimator': 'calculadora-salario',
+  'insurance-call-prep': 'preparacion-llamada-seguro',
   'broken-bones': 'huesos-rotos',
   'whiplash': 'latigazo',
   'traumatic-brain': 'traumatismo-craneal',
