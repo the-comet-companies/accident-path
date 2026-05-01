@@ -11,11 +11,13 @@
     {
       "name": "Banner Thunderbird Medical Center",
       "address": "5555 W Thunderbird Rd, Glendale, AZ 85306",
+      "phone": "(602) 865-5555",
       "erAvailable": true
     },
     {
-      "name": "Arrowhead Hospital",
+      "name": "Abrazo Arrowhead Campus",
       "address": "18701 N 67th Ave, Glendale, AZ 85308",
+      "phone": "(623) 561-1000",
       "erAvailable": true
     }
   ],

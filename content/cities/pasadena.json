@@ -9,13 +9,15 @@
   "description": "Pasadena is a culturally rich city in the San Gabriel Valley at the foot of the San Gabriel Mountains, best known nationally for the Rose Bowl and the annual Tournament of Roses Parade. Colorado Blvd, Pasadena's main commercial thoroughfare, sees elevated pedestrian and vehicle activity year-round and becomes an especially high-risk corridor during New Year's Day parade festivities. SR-110 (Arroyo Seco Parkway), the oldest freeway in the United States, features sharp curves, narrow lanes, and limited sight distances that make it notably more hazardous than modern freeways. The I-210 (Foothill Freeway) carries substantial commuter volume across the northern edge of the city. The Metro A Line (Gold Line) provides rail transit through Pasadena, with platform and vehicle crossings creating transit injury exposure. Caltech and the City of Hope medical campus generate pedestrian traffic. Anyone injured in Pasadena should note Los Angeles County's 6-month government claim deadline and act promptly to preserve evidence.",
   "hospitals": [
     {
-      "name": "Huntington Hospital",
+      "name": "Huntington Health",
       "address": "100 W California Blvd, Pasadena, CA 91105",
+      "phone": "(626) 397-5000",
       "erAvailable": true
     },
     {
       "name": "USC Arcadia Hospital",
       "address": "300 W Huntington Dr, Arcadia, CA 91007",
+      "phone": "(626) 898-8000",
       "erAvailable": true
     }
   ],

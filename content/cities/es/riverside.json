@@ -11,11 +11,13 @@
     {
       "name": "Riverside Community Hospital",
       "address": "4445 Magnolia Ave, Riverside, CA 92501",
+      "phone": "(951) 788-3000",
       "erAvailable": true
     },
     {
       "name": "Kaiser Permanente Riverside Medical Center",
       "address": "10800 Magnolia Ave, Riverside, CA 92505",
+      "phone": "(951) 353-2000",
       "erAvailable": true
     }
   ],

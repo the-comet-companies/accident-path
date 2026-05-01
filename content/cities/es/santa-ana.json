@@ -9,13 +9,15 @@
   "description": "Santa Ana es la sede del condado de Orange y uno de los núcleos urbanos más densos del sur de California, con una densidad de población que la sitúa entre las ciudades más densamente pobladas de los Estados Unidos. Su red de autopistas — la I-5, la SR-22, la SR-55 y la SR-57 — converge cerca del centro de la ciudad, generando una congestión considerable y un elevado riesgo de accidentes. Bristol Street y First Street han sido identificadas como corredores de alto índice de lesiones por las autoridades municipales, con altas tasas de conflicto entre peatones y vehículos debido al intenso tráfico peatonal, la densidad comercial y los múltiples cruces de carriles. La Autoridad de Transporte del Condado de Orange (OCTA) opera importantes rutas de autobús a través de Santa Ana, lo que la convierte con frecuencia en demandada en casos de lesiones relacionadas con el transporte público. El Tribunal Superior del Condado de Orange — Centro de Justicia Central, ubicado en Santa Ana, es el principal tribunal para litigios de lesiones personales en todo el Condado de Orange.",
   "hospitals": [
     {
-      "name": "UCI Health — Western Medical Center Santa Ana",
+      "name": "Orange County Global Medical Center",
       "address": "1001 N Tustin Ave, Santa Ana, CA 92705",
+      "phone": "(714) 953-3500",
       "erAvailable": true
     },
     {
-      "name": "UCI Medical Center",
+      "name": "UCI Health — Orange (UCI Medical Center)",
       "address": "101 The City Dr S, Orange, CA 92868",
+      "phone": "(714) 456-7890",
       "erAvailable": true
     }
   ],

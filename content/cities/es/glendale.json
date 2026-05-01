@@ -11,11 +11,13 @@
     {
       "name": "Dignity Health — Glendale Memorial Hospital",
       "address": "1420 S Central Ave, Glendale, CA 91204",
+      "phone": "(818) 502-1900",
       "erAvailable": true
     },
     {
       "name": "USC Verdugo Hills Hospital",
       "address": "1812 Verdugo Blvd, Glendale, CA 91208",
+      "phone": "(818) 790-7100",
       "erAvailable": true
     }
   ],

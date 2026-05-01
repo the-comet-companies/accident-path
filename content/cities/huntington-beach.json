@@ -11,11 +11,13 @@
     {
       "name": "Huntington Beach Hospital",
       "address": "17772 Beach Blvd, Huntington Beach, CA 92647",
+      "phone": "(714) 843-5000",
       "erAvailable": true
     },
     {
       "name": "MemorialCare — Orange Coast Medical Center",
       "address": "18111 Brookhurst St, Fountain Valley, CA 92708",
+      "phone": "(714) 378-7000",
       "erAvailable": true
     }
   ],

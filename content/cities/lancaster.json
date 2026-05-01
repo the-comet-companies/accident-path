@@ -9,13 +9,15 @@
   "description": "Lancaster is the largest city in the Antelope Valley, located in the high desert of northern Los Angeles County. SR-14 (Antelope Valley Freeway) is the city's primary transportation artery, connecting Lancaster to the greater Los Angeles area approximately 70 miles south. High-speed multi-vehicle accidents on SR-14 are among the most common serious injury events in the region, often involving early-morning commuters traveling to aerospace and defense employers such as Edwards Air Force Base. SR-138 links Lancaster to the Palmdale area and carries both commuter and wind-energy transport vehicles. Surface streets such as Avenue K, Avenue J, and Sierra Highway handle local commercial and residential traffic with intersection collision exposure. Despite its remote setting, Lancaster falls within Los Angeles County jurisdiction, and the standard 6-month government claim deadline applies for all incidents involving public property, municipal vehicles, or county infrastructure.",
   "hospitals": [
     {
-      "name": "Antelope Valley Hospital",
+      "name": "Antelope Valley Medical Center",
       "address": "1600 W Ave J, Lancaster, CA 93534",
+      "phone": "(661) 949-5000",
       "erAvailable": true
     },
     {
       "name": "Palmdale Regional Medical Center",
       "address": "38600 Medical Center Dr, Palmdale, CA 93551",
+      "phone": "(661) 382-5000",
       "erAvailable": true
     }
   ],

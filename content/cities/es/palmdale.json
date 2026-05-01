@@ -11,11 +11,13 @@
     {
       "name": "Palmdale Regional Medical Center",
       "address": "38600 Medical Center Dr, Palmdale, CA 93551",
+      "phone": "(661) 382-5000",
       "erAvailable": true
     },
     {
-      "name": "Antelope Valley Hospital",
+      "name": "Antelope Valley Medical Center",
       "address": "1600 W Ave J, Lancaster, CA 93534",
+      "phone": "(661) 949-5000",
       "erAvailable": true
     }
   ],

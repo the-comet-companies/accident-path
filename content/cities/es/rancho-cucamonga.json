@@ -11,11 +11,13 @@
     {
       "name": "Kaiser Permanente Fontana Medical Center",
       "address": "9961 Sierra Ave, Fontana, CA 92335",
+      "phone": "(909) 427-5000",
       "erAvailable": true
     },
     {
       "name": "San Antonio Regional Hospital",
       "address": "999 San Bernardino Rd, Upland, CA 91786",
+      "phone": "(909) 985-2811",
       "erAvailable": true
     }
   ],

@@ -11,11 +11,13 @@
     {
       "name": "Henry Mayo Newhall Hospital",
       "address": "23845 McBean Pkwy, Valencia, CA 91355",
+      "phone": "(661) 200-2000",
       "erAvailable": true
     },
     {
       "name": "Providence Holy Cross Medical Center",
       "address": "15031 Rinaldi St, Mission Hills, CA 91345",
+      "phone": "(818) 365-8051",
       "erAvailable": true
     }
   ],

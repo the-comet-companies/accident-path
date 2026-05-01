@@ -11,11 +11,13 @@
     {
       "name": "Torrance Memorial Medical Center",
       "address": "3330 Lomita Blvd, Torrance, CA 90505",
+      "phone": "(310) 325-9110",
       "erAvailable": true
     },
     {
       "name": "Harbor-UCLA Medical Center",
       "address": "1000 W Carson St, Torrance, CA 90502",
+      "phone": "(424) 306-4000",
       "erAvailable": true
     }
   ],

@@ -11,11 +11,13 @@
     {
       "name": "Community Hospital of San Bernardino",
       "address": "1805 Medical Center Dr, San Bernardino, CA 92411",
+      "phone": "(909) 887-6333",
       "erAvailable": true
     },
     {
       "name": "St. Bernardine Medical Center",
       "address": "2101 N Waterman Ave, San Bernardino, CA 92404",
+      "phone": "(909) 883-8711",
       "erAvailable": true
     }
   ],

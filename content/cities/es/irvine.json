@@ -11,11 +11,13 @@
     {
       "name": "Hoag Hospital Irvine",
       "address": "16200 Sand Canyon Ave, Irvine, CA 92618",
+      "phone": "(949) 764-4624",
       "erAvailable": true
     },
     {
-      "name": "Kaiser Permanente Irvine Medical Center",
+      "name": "Kaiser Permanente Orange County — Irvine Medical Center",
       "address": "6640 Alton Pkwy, Irvine, CA 92618",
+      "phone": "(949) 932-5000",
       "erAvailable": true
     }
   ],

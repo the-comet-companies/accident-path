@@ -11,11 +11,13 @@
     {
       "name": "Memorial Medical Center — Modesto",
       "address": "1700 Coffee Rd, Modesto, CA 95355",
+      "phone": "(209) 526-4500",
       "erAvailable": true
     },
     {
       "name": "Doctors Medical Center",
       "address": "1441 Florida Ave, Modesto, CA 95350",
+      "phone": "(209) 578-1211",
       "erAvailable": true
     }
   ],

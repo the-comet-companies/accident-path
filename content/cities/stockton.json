@@ -11,11 +11,13 @@
     {
       "name": "St. Joseph's Medical Center",
       "address": "1800 N California St, Stockton, CA 95204",
+      "phone": "(209) 943-2000",
       "erAvailable": true
     },
     {
       "name": "Dameron Hospital",
       "address": "525 W Acacia St, Stockton, CA 95203",
+      "phone": "(209) 944-5550",
       "erAvailable": true
     }
   ],

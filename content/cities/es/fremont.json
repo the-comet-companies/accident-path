@@ -11,11 +11,13 @@
     {
       "name": "Washington Hospital Healthcare System",
       "address": "2000 Mowry Ave, Fremont, CA 94538",
+      "phone": "(510) 797-1111",
       "erAvailable": true
     },
     {
       "name": "Kaiser Permanente Fremont Medical Center",
       "address": "39400 Paseo Padre Pkwy, Fremont, CA 94538",
+      "phone": "(510) 248-3000",
       "erAvailable": true
     }
   ],

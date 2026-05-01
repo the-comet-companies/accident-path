@@ -11,11 +11,13 @@
     {
       "name": "Kaiser Permanente Ontario Medical Center",
       "address": "2295 S Vineyard Ave, Ontario, CA 91761",
+      "phone": "(909) 724-5000",
       "erAvailable": true
     },
     {
       "name": "San Antonio Regional Hospital",
       "address": "999 San Bernardino Rd, Upland, CA 91786",
+      "phone": "(909) 985-2811",
       "erAvailable": true
     }
   ],

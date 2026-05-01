@@ -9,13 +9,15 @@
   "description": "Lancaster es la ciudad más grande del Valle de Antelope, ubicada en el desierto alto del norte del Condado de Los Ángeles. La SR-14 (Antelope Valley Freeway) es la principal arteria de transporte de la ciudad, que conecta Lancaster con el área metropolitana de Los Ángeles aproximadamente a 70 millas al sur. Los accidentes multivehiculares a alta velocidad en la SR-14 se encuentran entre los eventos de lesiones más graves y frecuentes de la región, e involucran con frecuencia a commuters madrugadores que se dirigen a empleadores del sector aeroespacial y de defensa como la Base Aérea Edwards. La SR-138 conecta Lancaster con el área de Palmdale y transporta tanto vehículos de commuters como de transporte de energía eólica. Las calles superficiales como Avenue K, Avenue J y Sierra Highway gestionan el tráfico comercial y residencial local con exposición a colisiones en intersecciones. A pesar de su ubicación remota, Lancaster está bajo la jurisdicción del Condado de Los Ángeles, y el plazo estándar de 6 meses para reclamaciones gubernamentales aplica a todos los incidentes que involucren propiedad pública, vehículos municipales o infraestructura del condado.",
   "hospitals": [
     {
-      "name": "Antelope Valley Hospital",
+      "name": "Antelope Valley Medical Center",
       "address": "1600 W Ave J, Lancaster, CA 93534",
+      "phone": "(661) 949-5000",
       "erAvailable": true
     },
     {
       "name": "Palmdale Regional Medical Center",
       "address": "38600 Medical Center Dr, Palmdale, CA 93551",
+      "phone": "(661) 382-5000",
       "erAvailable": true
     }
   ],

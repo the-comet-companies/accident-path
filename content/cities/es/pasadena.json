@@ -9,13 +9,15 @@
   "description": "Pasadena es una ciudad de gran riqueza cultural en el Valle de San Gabriel, a los pies de las Montañas de San Gabriel, conocida a nivel nacional por el Rose Bowl y el desfile anual del Torneo de Rosas. Colorado Blvd, la principal calle comercial de Pasadena, registra una elevada actividad de peatones y vehículos durante todo el año y se convierte en un corredor de especial riesgo durante las festividades del desfile del Año Nuevo. La SR-110 (Arroyo Seco Parkway), la autopista más antigua de los Estados Unidos, presenta curvas cerradas, carriles estrechos y visibilidad limitada que la hacen considerablemente más peligrosa que las autopistas modernas. La I-210 (Foothill Freeway) transporta un voluminoso tráfico de commuters a lo largo del borde norte de la ciudad. La Línea A (Gold Line) del Metro ofrece transporte ferroviario a través de Pasadena, con andenes y cruces vehiculares que generan exposición a lesiones en el tránsito. Caltech y el campus médico del City of Hope generan tráfico peatonal. Cualquier persona lesionada en Pasadena debe tener en cuenta el plazo de 6 meses del Condado de Los Ángeles para reclamaciones gubernamentales y actuar con prontitud para preservar la evidencia.",
   "hospitals": [
     {
-      "name": "Huntington Hospital",
+      "name": "Huntington Health",
       "address": "100 W California Blvd, Pasadena, CA 91105",
+      "phone": "(626) 397-5000",
       "erAvailable": true
     },
     {
       "name": "USC Arcadia Hospital",
       "address": "300 W Huntington Dr, Arcadia, CA 91007",
+      "phone": "(626) 898-8000",
       "erAvailable": true
     }
   ],

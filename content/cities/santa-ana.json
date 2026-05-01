@@ -9,13 +9,15 @@
   "description": "Santa Ana is Orange County's county seat and one of the densest urban cores in Southern California, with a population that makes it one of the most densely populated cities in the United States. Its freeway network — the I-5, SR-22, SR-55, and SR-57 — converges near the city center, creating significant congestion and collision risk. Bristol Street and First Street are identified as high-injury corridors by the city, with elevated rates of pedestrian and vehicle conflicts due to high foot traffic, commercial density, and multiple lane crossings. The Orange County Transportation Authority (OCTA) operates major bus routes through Santa Ana, making it a frequent defendant in transit injury cases. The Orange County Superior Court — Central Justice Center, located in Santa Ana, is the primary venue for personal injury litigation throughout Orange County.",
   "hospitals": [
     {
-      "name": "UCI Health — Western Medical Center Santa Ana",
+      "name": "Orange County Global Medical Center",
       "address": "1001 N Tustin Ave, Santa Ana, CA 92705",
+      "phone": "(714) 953-3500",
       "erAvailable": true
     },
     {
-      "name": "UCI Medical Center",
+      "name": "UCI Health — Orange (UCI Medical Center)",
       "address": "101 The City Dr S, Orange, CA 92868",
+      "phone": "(714) 456-7890",
       "erAvailable": true
     }
   ],
