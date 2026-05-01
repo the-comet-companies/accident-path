@@ -2,7 +2,7 @@
 
 ## Summary
 
-Audited the Notion page tracker, fixed stale tool statuses, built all 6 Spanish tool pages, added Spanish output generators for state-next-steps and statute-countdown, resolved several UI bugs, and pushed to main. All 11 tools are now fully live in both EN and ES.
+Audited the Notion page tracker, fixed stale tool statuses, built all 6 Spanish tool pages, added Spanish output generators for state-next-steps and statute-countdown, resolved several UI bugs, and pushed to main. All 11 tools are now fully live in both EN and ES. Also completed all 20 pending city pages (EN + ES), verified and corrected all hospital data with phone numbers, and fixed the states listing UI imbalance between CA and AZ.
 
 ---
 
@@ -111,10 +111,48 @@ Audited the Notion page tracker, fixed stale tool statuses, built all 6 Spanish 
 
 ---
 
+## City Pages — All 20 Complete ✅
+
+### Approach
+- Pilot batch of 5 cities first (Riverside, Irvine, Santa Ana, Santa Clarita, Chula Vista) — user reviewed and approved quality
+- Remaining 15 cities in two parallel subagent batches (Fremont, Stockton, San Bernardino, Modesto, Glendale CA, Fontana, Torrance + Pomona, Huntington Beach, Ontario, Lancaster, Palmdale, Pasadena, Rancho Cucamonga, Glendale AZ)
+- All 20 cities × EN + ES = 40 JSON files in `content/cities/` and `content/cities/es/`
+- No route changes needed — `generateStaticParams` auto-discovers JSON files
+
+### Schema constraints (Zod)
+- `metaTitle` max 70, `metaDescription` min 120 / max 160, `description` min 200, `hospitals` min 2, `courts` min 1, `commonAccidentTypes` min 3, `localNotes` min 50
+- Two ES files exceeded 160-char metaDescription on build: `es/huntington-beach.json` (162→160) and `es/rancho-cucamonga.json` (161→159) — fixed by removing `/a` gender suffix
+- **Lesson:** Always use Node.js (`string.length`) to count chars for Zod validation, not Python's `len()` — they disagree on multi-byte characters like `¿`
+
+### Hospital data verification
+- All hospital data sourced from training knowledge — web-search verified after build
+- **5 name errors corrected:**
+  - Santa Ana: `UCI Health — Western Medical Center Santa Ana` → `Orange County Global Medical Center` (KPC Health — UCI has no affiliation)
+  - Irvine: `Kaiser Permanente Irvine Medical Center` → `Kaiser Permanente Orange County — Irvine Medical Center`
+  - Lancaster + Palmdale: `Antelope Valley Hospital` → `Antelope Valley Medical Center` (rebranded 2022)
+  - Pasadena: `Huntington Hospital` → `Huntington Health` (rebranded 2022, now Cedars-Sinai affiliate)
+  - Glendale AZ: `Arrowhead Hospital` → `Abrazo Arrowhead Campus` (rebranded)
+- **Phone numbers added** to all 40 hospitals across the 20 new city files (EN + ES)
+- **Geographic mismatches confirmed intentional:** Several cities list hospitals in neighboring cities (e.g. Arrowhead Regional in Colton for Fontana, San Antonio Regional in Upland for Pomona/Ontario/Rancho Cucamonga). Web research confirmed no in-city acute care ER exists for those cities — nearest regional hospitals are the correct choice. Addresses already show the real city so users are not misled.
+- **Rancho Cucamonga note:** Only hospital within city limits is Kindred Hospital (long-term acute care, no ER) — no general ER in the city.
+- **Valencia = Santa Clarita:** Henry Mayo Newhall Hospital address shows "Valencia, CA" but Valencia is legally within Santa Clarita city limits (one of four original communities incorporated in 1987).
+
+### UI fix: states listing page imbalance
+- Root cause: `/states` and `/es/estados` pages rendered ALL city chips, making CA card (29 cities) much taller than AZ card (7 cities)
+- Fix: capped chips at 8 per card; if `cities.length > 8`, shows "View all N cities →" link to the state page
+- Applied to both `app/(en)/states/page.tsx` and `app/(es)/es/estados/page.tsx`
+
 ## Commits This Session
 
 | Hash | Message |
 |------|---------|
+| `12e30b6` | fix(ui): cap city chips at 8 per state card with overflow link |
+| `3e19e4c` | fix(cities): correct hospital names and add verified phone numbers to all 20 city pages |
+| `21c8080` | fix(cities): trim ES Rancho Cucamonga metaDescription to 160-char Zod limit |
+| `a6293ed` | fix(cities): trim ES Huntington Beach metaDescription to 160-char Zod limit |
+| `8aec141` | docs: remove completed city pages from PENDING.md |
+| `6a7e6da` | feat(cities): add remaining 15 cities EN + ES |
+| `c38401d` | feat(cities): add pilot batch — Riverside, Irvine, Santa Ana, Santa Clarita, Chula Vista (EN + ES) |
 | `d5aae4d` | feat(es): add Spanish output generators for state-next-steps and statute-countdown |
 | `6dc9b8c` | feat(es): add Spanish tool — statute-countdown (cuenta-regresiva-plazo) |
 | `b11e29d` | docs: update session notes — tasks 4-5 complete |
@@ -143,8 +181,8 @@ Audited the Notion page tracker, fixed stale tool statuses, built all 6 Spanish 
 ### Spanish tools
 All 6 tools are now live in Spanish. ✅
 
-### City pages (20 — largest open chunk)
-All use the shared dynamic route. Each needs `content/cities/{slug}.json` + ES version.
+### City pages
+All 20 city pages complete in EN + ES. ✅
 
 ### Spanish-only pages (4)
 | Page | Needs |
