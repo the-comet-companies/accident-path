@@ -1,0 +1,93 @@
+{
+  "slug": "solicitud-registros",
+  "title": "Lista de Solicitud de Registros",
+  "metaTitle": "Lista de Solicitud de Registros — Después de un Accidente",
+  "metaDescription": "Sepa qué registros solicitar después de su accidente, a quién contactar para cada uno, y los plazos y costos típicos involucrados en recopilar su documentación.",
+  "description": "Construir un expediente documental completo después de un accidente es una de las cosas más importantes que puede hacer para proteger sus opciones. Esta lista identifica los tipos de registros comúnmente necesarios en casos de lesiones personales, quién los tiene y cómo solicitarlos antes de que venzan los plazos o se destruyan los registros.",
+  "disclaimer": "Esta lista proporciona información educativa general sobre los tipos de registros comúnmente relevantes en casos de lesiones personales. No constituye asesoramiento legal. Los registros específicos que importan en su caso dependen de sus circunstancias individuales. Un abogado puede asesorarle sobre qué registros priorizar.",
+  "steps": [
+    {
+      "id": "accident-type",
+      "question": "¿En qué tipo de accidente estuvo involucrado/a?",
+      "type": "select",
+      "options": [
+        { "value": "car-accident", "label": "Accidente de auto" },
+        { "value": "truck-accident", "label": "Accidente de camión" },
+        { "value": "motorcycle-crash", "label": "Accidente de motocicleta" },
+        { "value": "bicycle-accident", "label": "Accidente de bicicleta" },
+        { "value": "pedestrian-accident", "label": "Accidente de peatón" },
+        { "value": "slip-fall", "label": "Resbalón y caída" },
+        { "value": "dog-bite", "label": "Mordedura de perro o ataque de animal" },
+        { "value": "workplace-injury", "label": "Lesión en el lugar de trabajo" },
+        { "value": "other", "label": "Otro" }
+      ]
+    },
+    {
+      "id": "records-needed",
+      "question": "¿Qué tipos de registros desea obtener? (Seleccione todos los que apliquen)",
+      "type": "checklist",
+      "options": [
+        { "value": "police-report", "label": "Informe policial / del accidente" },
+        { "value": "hospital-records", "label": "Registros de hospital o sala de emergencias" },
+        { "value": "ongoing-medical", "label": "Registros médicos continuos / del médico" },
+        { "value": "imaging-records", "label": "Registros de imágenes (rayos X, resonancia magnética, tomografía)" },
+        { "value": "pharmacy-records", "label": "Registros de farmacia" },
+        { "value": "employment-wage", "label": "Registros de empleo e ingresos" },
+        { "value": "insurance-policy", "label": "Documentos de póliza de seguro" },
+        { "value": "property-damage", "label": "Estimados o avalúos de daños a la propiedad" },
+        { "value": "surveillance-footage", "label": "Imágenes de cámaras de vigilancia o seguridad" },
+        { "value": "rideshare-data", "label": "Datos de viaje de plataformas (Uber / Lyft)" }
+      ]
+    }
+  ],
+  "supportingContent": [
+    {
+      "heading": "Informes policiales y de accidentes",
+      "content": "El informe oficial del accidente o incidente elaborado por las autoridades es uno de los documentos más importantes en un caso de lesiones personales. Contiene las observaciones del oficial, la información de contacto y del seguro de las partes, las citaciones emitidas, la información de los testigos y la evaluación preliminar del oficial sobre lo ocurrido. En California, puede solicitar una copia a la agencia que respondió — departamento de policía de la ciudad, sheriff del condado o Patrulla de Carreteras de California — generalmente entre 3 y 10 días después del incidente. En Arizona, los informes están disponibles a través del Departamento de Seguridad Pública de Arizona o la agencia local. Por lo general, hay una tarifa, y puede solicitar el informe en persona, por correo o en línea.",
+      "tips": [
+        "Solicite el informe a la agencia específica que respondió, no a un portal genérico",
+        "Si fue víctima de un choque y fuga, solicite cualquier informe complementario presentado mientras continúa la investigación",
+        "Su abogado también puede solicitar copias certificadas directamente a las autoridades"
+      ]
+    },
+    {
+      "heading": "Registros médicos y facturas",
+      "content": "Los registros médicos completos de cada proveedor que trató sus lesiones relacionadas con el accidente son esenciales. Esto incluye registros de sala de emergencias, registros de hospitalización, informes de imágenes (rayos X, tomografías, resonancias magnéticas), notas del médico tratante, consultas con especialistas, registros de fisioterapia, registros de quiropráctica, registros de tratamiento de salud mental y todos los estados de cuenta de facturación asociados. Solicite facturas detalladas en lugar de resúmenes — las facturas detalladas muestran cada servicio prestado y su costo, lo que es más útil para documentar los daños. La mayoría de los proveedores cobran una tarifa por los registros; presente una solicitud escrita conforme a HIPAA a cada proveedor.",
+      "tips": [
+        "Solicite registros a cada proveedor, incluso a los que vio solo una vez",
+        "Pida tanto las notas clínicas narrativas como los registros de facturación",
+        "Guarde copias de todos los registros en un lugar seguro y proporcione copias a su abogado"
+      ]
+    },
+    {
+      "heading": "Registros de empleo e ingresos",
+      "content": "Para documentar los salarios perdidos, necesita registros que muestren tanto sus ingresos previos al accidente como los ingresos que perdió debido a las ausencias laborales. Los documentos clave incluyen talones de pago recientes (que cubran al menos tres meses antes del accidente), formularios W-2 o 1099 del año anterior uno o dos años, una carta de su empleador confirmando su puesto, tarifa de pago y fechas de ausencia, y documentación de cualquier bono, comisión o beneficio que no recibió. Los trabajadores independientes deben reunir declaraciones de impuestos, estados de cuenta bancarios, facturas de clientes y contratos que muestren las ganancias habituales.",
+      "tips": [
+        "Solicite una carta formal de su empleador en papel membretado confirmando su ausencia",
+        "Reúna documentación de horas extra, propinas y comisiones si eran parte de sus ingresos regulares",
+        "Dos años de declaraciones de impuestos proporcionan una base sólida para reclamaciones de ingresos por trabajo independiente"
+      ]
+    },
+    {
+      "heading": "Envío de solicitudes de preservación para evidencia sensible al tiempo",
+      "content": "Algunos registros se eliminan o sobrescriben en ciclos de retención cortos y deben preservarse formalmente antes de perderse. Las imágenes de cámaras de vigilancia y seguridad en negocios e intersecciones a menudo se sobrescriben en un plazo de 24 a 72 horas. Las imágenes de dashcam de vehículos de transporte o entrega también pueden tener un ciclo de retención corto. Las imágenes de cámaras de semáforo y tránsito generalmente están controladas por agencias de transporte municipales o estatales. Para preservar esta evidencia, envíe una carta de preservación escrita — por correo certificado o a través de un abogado — al negocio o agencia de inmediato después del accidente, describiendo claramente las imágenes que necesita, la fecha y hora, y solicitando que no sean destruidas."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Cuánto tiempo tarda en obtener mis registros médicos?",
+      "answer": "Según HIPAA, los proveedores de atención médica tienen 30 días para responder a una solicitud de registros, con opción de una prórroga de 30 días. Algunos proveedores responden más rápido; los grandes sistemas hospitalarios pueden tomarse los 30 días completos. Solicite los registros lo antes posible para dar tiempo a retrasos, especialmente si tiene un plazo en el caso o se acerca el plazo de prescripción."
+    },
+    {
+      "question": "¿Qué es un formulario de autorización HIPAA y necesito uno?",
+      "answer": "Un formulario de autorización HIPAA es un documento que otorga permiso a un proveedor de atención médica para divulgar sus registros médicos a un destinatario específico — como usted, su abogado o una compañía de seguros. La mayoría de los proveedores tienen sus propios formularios; usted firma y presenta el formulario junto con su solicitud de registros. Su abogado también le pedirá normalmente que firme una autorización HIPAA general que le permita solicitar registros en su nombre."
+    },
+    {
+      "question": "¿Puedo obtener registros de un negocio que no quiere proporcionarlos?",
+      "answer": "Si un negocio se niega a proporcionar voluntariamente registros o imágenes de vigilancia, su abogado puede emitir una citación obligando su presentación si se ha iniciado un litigio. Antes del litigio, una carta formal de preservación de un abogado puede promover el cumplimiento. Las agencias policiales a veces pueden obtener ciertos registros a través de su investigación que de otro modo no están disponibles al público."
+    }
+  ],
+  "relatedTools": ["evidence-checklist", "insurance-call-prep", "settlement-readiness"],
+  "relatedGuides": ["after-car-accident", "getting-your-police-report"],
+  "relatedAccidents": ["car", "truck", "motorcycle", "slip-fall", "bicycle", "pedestrian"]
+}
