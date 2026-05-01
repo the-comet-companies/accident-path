@@ -1,10 +1,9 @@
+'use client'
+
+import { useLayoutEffect, useRef } from 'react'
 import { EmergencyDismissButton } from './EmergencyDismissButton'
 
 const SESSION_KEY = 'ap_emergency_dismissed'
-
-// Inline script runs synchronously before first paint — hides the banner
-// for users who already dismissed it this session, with no hydration delay.
-const hideIfDismissedScript = `(function(){try{if(sessionStorage.getItem('${SESSION_KEY}')){var b=document.getElementById('emergency-banner');if(b)b.style.display='none';}}catch(e){}})();`
 
 interface EmergencyBannerProps {
   locale?: 'en' | 'es'
@@ -12,13 +11,20 @@ interface EmergencyBannerProps {
 
 export function EmergencyBanner({ locale = 'en' }: EmergencyBannerProps) {
   const isEs = locale === 'es'
+  const ref = useRef<HTMLDivElement>(null)
+
+  useLayoutEffect(() => {
+    try {
+      if (sessionStorage.getItem(SESSION_KEY) && ref.current) {
+        ref.current.style.display = 'none'
+      }
+    } catch {}
+  }, [])
 
   return (
-    <>
-      {/* Script runs before paint so dismissed users never see a flash */}
-      <script dangerouslySetInnerHTML={{ __html: hideIfDismissedScript }} />
-      <div
-        id="emergency-banner"
+    <div
+      ref={ref}
+      id="emergency-banner"
         role="alert"
         aria-live="polite"
         className="bg-danger-50 border-b border-danger-500 px-4 py-2"
@@ -70,7 +76,6 @@ export function EmergencyBanner({ locale = 'en' }: EmergencyBannerProps) {
           </div>
           <div className="absolute right-0"><EmergencyDismissButton /></div>
         </div>
-      </div>
-    </>
+    </div>
   )
 }
