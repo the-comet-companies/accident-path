@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 import { ArrowRight, Shield, Clock, Wrench } from 'lucide-react'
 import { cms } from '@/lib/cms'
 import { getDictionary } from '@/i18n/dictionaries'
-import { SLUG_MAP_ES, SLUG_MAP_EN, TOOL_META_ES } from '@/i18n/config'
+import { SLUG_MAP_ES, SLUG_MAP_EN, TOOL_META_ES, ACCIDENT_LABEL_ES, GUIDE_LABEL_ES } from '@/i18n/config'
 import type { ToolConfig } from '@/types/tool'
 import { Breadcrumb } from '@/components/layout/Breadcrumb'
 import { CTAButton } from '@/components/ui/CTAButton'
@@ -219,7 +219,7 @@ export default async function HerramientaDetailPage({
                           href={`/es/accidentes/${SLUG_MAP_ES[accSlug] ?? accSlug}`}
                           className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-neutral-200 bg-surface-card text-sm text-neutral-700 hover:border-primary-300 hover:text-primary-700 transition-colors"
                         >
-                          {accSlug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())}
+                          {ACCIDENT_LABEL_ES[accSlug] ?? accSlug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())}
                           <ArrowRight className="w-3 h-3" aria-hidden="true" />
                         </Link>
                       ))}
@@ -285,7 +285,7 @@ export default async function HerramientaDetailPage({
                           className="flex items-center gap-1.5 text-sm text-neutral-600 hover:text-primary-600 transition-colors"
                         >
                           <Wrench className="w-3 h-3 shrink-0 text-neutral-400" aria-hidden="true" />
-                          {toolSlug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())}
+                          {TOOL_META_ES[toolSlug]?.title ?? toolSlug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())}
                         </Link>
                       </li>
                     ))}
@@ -307,7 +307,7 @@ export default async function HerramientaDetailPage({
                           className="flex items-center gap-1.5 text-sm text-neutral-600 hover:text-primary-600 transition-colors"
                           >
                           <ArrowRight className="w-3 h-3 shrink-0" aria-hidden="true" />
-                          {guideSlug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())}
+                          {GUIDE_LABEL_ES[guideSlug] ?? guideSlug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())}
                         </Link>
                       </li>
                     ))}

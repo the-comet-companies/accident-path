@@ -46,6 +46,41 @@ export const SLUG_MAP_ES: Record<string, string> = {
   'internal': 'lesiones-internas',
 }
 
+// Spanish display labels for accident type slugs (used in related-accidents sidebar)
+export const ACCIDENT_LABEL_ES: Record<string, string> = {
+  'car': 'Auto',
+  'truck': 'Camión',
+  'motorcycle': 'Motocicleta',
+  'bicycle': 'Bicicleta',
+  'pedestrian': 'Peatón',
+  'slip-fall': 'Resbalón y Caída',
+  'slip-and-fall': 'Resbalón y Caída',
+  'dog-bite': 'Mordedura de Perro',
+  'construction': 'Construcción',
+  'premises': 'Responsabilidad de Propiedad',
+  'product': 'Responsabilidad de Producto',
+  'wrongful-death': 'Muerte Injusta',
+  'uber-lyft': 'Uber / Lyft',
+  'workplace': 'Lesiones en el Trabajo',
+}
+
+// Spanish display labels for guide slugs (used in related-guides sidebar)
+export const GUIDE_LABEL_ES: Record<string, string> = {
+  'after-car-accident': 'Después de un Accidente de Auto',
+  'after-truck-accident': 'Después de un Accidente de Camión',
+  'after-motorcycle-crash': 'Después de un Accidente de Motocicleta',
+  'insurance-claims': 'Reclamaciones al Seguro',
+  'getting-your-police-report': 'Cómo Obtener su Informe Policial',
+  'am-i-at-fault': '¿Soy Culpable?',
+  'common-mistakes': 'Errores Comunes',
+  'hiring-a-lawyer': 'Cómo Contratar a un Abogado',
+  'protecting-your-claim': 'Cómo Proteger su Reclamación',
+  'settlement-vs-lawsuit': 'Acuerdo vs. Demanda',
+  'should-i-talk-to-a-lawyer': '¿Debo Hablar con un Abogado?',
+  'understanding-medical-bills': 'Cómo Entender sus Facturas Médicas',
+  'dealing-with-insurance-adjusters': 'Cómo Tratar con Ajustadores de Seguros',
+}
+
 // Spanish path segment → English slug (reverse of SLUG_MAP_ES)
 export const SLUG_MAP_EN: Record<string, string> = Object.fromEntries(
   Object.entries(SLUG_MAP_ES).map(([en, es]) => [es, en])
