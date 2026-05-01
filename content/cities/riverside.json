@@ -1,0 +1,53 @@
+{
+  "slug": "riverside",
+  "name": "Riverside",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Riverside Accident Guide — Local Hospitals, Courts & Rights",
+  "metaDescription": "Injured in Riverside? Find local emergency hospitals, courts, and understand your rights under California personal injury law.",
+  "population": "~330,000",
+  "description": "Riverside is the Inland Empire's largest city and a major regional hub for commerce and freight movement. Its freeway network — particularly the I-215, SR-60, and SR-91 — carries heavy truck and commuter traffic, making vehicle accidents one of the most common personal injury concerns in the area. The SR-60 and I-215 interchange is a persistent congestion and collision zone. University Avenue and Magnolia Avenue see significant pedestrian activity near UC Riverside and local commercial corridors. Government entities such as the City of Riverside and Riverside County are frequently involved as defendants in premises liability and sidewalk cases. The Riverside County Superior Court handles a high volume of personal injury matters, and acting quickly to preserve evidence, obtain police reports, and meet government claim deadlines is essential for anyone injured in Riverside.",
+  "hospitals": [
+    {
+      "name": "Riverside Community Hospital",
+      "address": "4445 Magnolia Ave, Riverside, CA 92501",
+      "erAvailable": true
+    },
+    {
+      "name": "Kaiser Permanente Riverside Medical Center",
+      "address": "10800 Magnolia Ave, Riverside, CA 92505",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Riverside Superior Court — Historic Courthouse",
+      "address": "4050 Main St, Riverside, CA 92501",
+      "type": "General civil and personal injury"
+    },
+    {
+      "name": "Riverside Superior Court — Hall of Justice",
+      "address": "4100 Main St, Riverside, CA 92501",
+      "type": "General civil and personal injury"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Freeway rear-end and multi-vehicle collisions on I-215 and SR-60",
+    "Truck and freight vehicle accidents near major distribution corridors",
+    "Pedestrian accidents along University Avenue and Magnolia Avenue",
+    "Intersection accidents at high-volume arterial crossings",
+    "Motorcycle accidents on SR-91 and surface-street corridors",
+    "Slip and fall accidents at commercial and government properties"
+  ],
+  "notableCorridors": [
+    "I-215 — major north-south corridor with heavy freight truck volume",
+    "SR-60 (Pomona Freeway) — high-speed commuter and commercial traffic, prone to multi-vehicle crashes",
+    "SR-91 (Riverside Freeway) — heavy congestion at the 91/215 interchange",
+    "SR-74 (Hemet Highway) — surface-street arterial connecting to mountain communities",
+    "University Avenue — pedestrian-heavy corridor near UC Riverside",
+    "Magnolia Avenue — commercial corridor with high intersection conflict points"
+  ],
+  "localNotes": "Riverside County imposes a strict 6-month deadline to file a government claim for injuries involving city or county-owned property, sidewalks, or vehicles — missing this deadline can bar your claim. Traffic collision reports can be obtained through the Riverside Police Department or California Highway Patrol, depending on where the accident occurred. The Riverside Transit Agency (RTA) is a potential defendant in bus-related injury cases.",
+  "reviewedBy": "Pending Legal Review",
+  "reviewDate": "2026-05-01"
+}

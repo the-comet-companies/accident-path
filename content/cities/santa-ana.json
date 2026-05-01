@@ -1,0 +1,48 @@
+{
+  "slug": "santa-ana",
+  "name": "Santa Ana",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Santa Ana Accident Guide — Local Hospitals, Courts & Rights",
+  "metaDescription": "Injured in Santa Ana? Find local emergency hospitals, courts, and understand your rights under California personal injury law.",
+  "population": "~310,000",
+  "description": "Santa Ana is Orange County's county seat and one of the densest urban cores in Southern California, with a population that makes it one of the most densely populated cities in the United States. Its freeway network — the I-5, SR-22, SR-55, and SR-57 — converges near the city center, creating significant congestion and collision risk. Bristol Street and First Street are identified as high-injury corridors by the city, with elevated rates of pedestrian and vehicle conflicts due to high foot traffic, commercial density, and multiple lane crossings. The Orange County Transportation Authority (OCTA) operates major bus routes through Santa Ana, making it a frequent defendant in transit injury cases. The Orange County Superior Court — Central Justice Center, located in Santa Ana, is the primary venue for personal injury litigation throughout Orange County.",
+  "hospitals": [
+    {
+      "name": "UCI Health — Western Medical Center Santa Ana",
+      "address": "1001 N Tustin Ave, Santa Ana, CA 92705",
+      "erAvailable": true
+    },
+    {
+      "name": "UCI Medical Center",
+      "address": "101 The City Dr S, Orange, CA 92868",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Orange County Superior Court — Central Justice Center",
+      "address": "700 Civic Center Dr W, Santa Ana, CA 92701",
+      "type": "General civil and personal injury — primary Orange County venue"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Pedestrian accidents on high-injury corridors including Bristol Street and First Street",
+    "Freeway accidents at I-5, SR-22, and SR-55 interchange zones",
+    "OCTA bus-related accidents and transit passenger injuries",
+    "Bicycle accidents in dense urban intersections and commercial corridors",
+    "Intersection T-bone and sideswipe collisions on Main Street and Bristol Street",
+    "Slip and fall accidents at commercial storefronts and public walkways"
+  ],
+  "notableCorridors": [
+    "I-5 (Santa Ana Freeway) — high-volume north-south freeway through city center",
+    "SR-22 (Garden Grove Freeway) — east-west corridor with complex urban interchanges",
+    "SR-55 (Costa Mesa Freeway) — frequent congestion and accident zone in north Santa Ana",
+    "SR-57 (Orange Freeway) — major commuter route with heavy peak-hour volume",
+    "Bristol Street — designated high-injury corridor with high pedestrian conflict rates",
+    "First Street — dense commercial corridor with elevated collision and pedestrian accident history"
+  ],
+  "localNotes": "Orange County has a strict 6-month deadline to file a government claim for injuries involving county or city property, sidewalks, or public vehicles. Traffic collision reports can be obtained through the Santa Ana Police Department. OCTA (Orange County Transportation Authority) is a frequent defendant in personal injury cases involving bus routes that operate heavily through Santa Ana.",
+  "reviewedBy": "Pending Legal Review",
+  "reviewDate": "2026-05-01"
+}

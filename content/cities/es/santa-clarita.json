@@ -1,0 +1,48 @@
+{
+  "slug": "santa-clarita",
+  "name": "Santa Clarita",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Santa Clarita — Guía de Accidentes, Hospitales y Tribunales",
+  "metaDescription": "¿Lesionado/a en Santa Clarita? Encuentre hospitales de emergencia locales, tribunales y conozca sus derechos bajo la ley de lesiones personales de California.",
+  "population": "~230,000",
+  "description": "Santa Clarita es una de las ciudades de más rápido crecimiento del Condado de Los Ángeles, situada en la confluencia de la I-5 (Golden State Freeway) y la SR-14 (Antelope Valley Freeway) — dos arterias principales que soportan un intenso tráfico de commuters y vehículos comerciales entre el Valle de San Fernando, el desierto alto y el centro de California. Los accidentes de incorporación y divergencia son frecuentes en el intercambio I-5/SR-14, uno de los nudos de autopista más transitados de la región. McBean Parkway y Valencia Boulevard son los corredores principales de superficie en la comunidad planificada de Valencia, donde el volumen de tráfico ha crecido notablemente junto al desarrollo residencial. Bouquet Canyon Road ofrece una conexión clave con zonas de montaña y registra accidentes de motocicletas y bicicletas. Al pertenecer al Condado de Los Ángeles, Santa Clarita está sujeta a los estrictos requisitos de plazos para reclamaciones gubernamentales del condado, y los casos de lesiones personales se tramitan en el tribunal local del Condado en Valencia.",
+  "hospitals": [
+    {
+      "name": "Henry Mayo Newhall Hospital",
+      "address": "23845 McBean Pkwy, Valencia, CA 91355",
+      "erAvailable": true
+    },
+    {
+      "name": "Providence Holy Cross Medical Center",
+      "address": "15031 Rinaldi St, Mission Hills, CA 91345",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Los Angeles Superior Court — Santa Clarita Courthouse",
+      "address": "23747 W Valencia Blvd, Valencia, CA 91355",
+      "type": "Civil general y lesiones personales"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Colisiones de incorporación y divergencia en el intercambio I-5/SR-14",
+    "Accidentes traseros a alta velocidad en la I-5 (Golden State Freeway)",
+    "Accidentes de motocicletas en Bouquet Canyon Road y la SR-126",
+    "Accidentes de peatones cerca del Valencia Town Center y corredores comerciales",
+    "Accidentes de ciclistas en calles de superficie y senderos de uso compartido",
+    "Colisiones en intersecciones de McBean Parkway y Valencia Boulevard"
+  ],
+  "notableCorridors": [
+    "I-5 (Golden State Freeway) — corredor norte-sur principal con alto volumen de commuters y carga",
+    "SR-14 (Antelope Valley Freeway) — importante ruta de commuters hacia comunidades del desierto alto, propensa a colisiones de alta velocidad",
+    "SR-126 (Magic Mountain Pkwy) — conector este-oeste con tramos propensos a accidentes cerca de lugares de entretenimiento",
+    "McBean Pkwy — principal arteria norte-sur de superficie en Valencia con alta densidad de tráfico",
+    "Bouquet Canyon Rd — carretera de montaña con curvas y mayor riesgo de accidentes para motociclistas y ciclistas",
+    "Valencia Blvd — corredor comercial cercano al tribunal y zonas de comercio minorista"
+  ],
+  "localNotes": "El Condado de Los Ángeles impone un plazo estricto de 6 meses para presentar una reclamación gubernamental por lesiones relacionadas con propiedad, aceras o vehículos de la ciudad, el condado o una agencia pública — no cumplir este plazo puede impedir el ejercicio de su derecho a indemnización. Los informes de colisiones de tráfico se pueden obtener a través de la Estación de la Policía del Valle de Santa Clarita (LASD) o de la Patrulla de Caminos de California. La agencia Santa Clarita Transit puede ser demandada en casos de lesiones relacionadas con autobuses.",
+  "reviewedBy": "Revisión Legal Pendiente",
+  "reviewDate": "2026-05-01"
+}

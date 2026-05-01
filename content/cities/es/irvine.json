@@ -1,0 +1,48 @@
+{
+  "slug": "irvine",
+  "name": "Irvine",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Irvine — Guía de Accidentes, Hospitales y Tribunales",
+  "metaDescription": "¿Lesionado/a en Irvine? Encuentre hospitales de emergencia locales, tribunales y conozca sus derechos bajo la ley de lesiones personales de California.",
+  "population": "~310,000",
+  "description": "Irvine es una ciudad planificada en el Condado de Orange, conocida por sus campus tecnológicos y empresariales, que generan uno de los flujos de tráfico de commuters más densos del sur de California. El corredor de la I-405 y la I-5 que atraviesa Irvine es uno de los tramos con mayor incidencia de accidentes en el Condado de Orange, siendo el intercambio I-405/I-5 — conocido localmente como el El Toro Y — una zona de especial riesgo para colisiones de incorporación y alcance. Jamboree Road, Culver Drive y Sand Canyon Avenue funcionan como arterias principales norte-sur con volúmenes de tráfico considerables. Ciclistas y peatones comparten extensas redes de senderos y calles de superficie cerca de parques empresariales y zonas universitarias. La Autoridad de Transporte del Condado de Orange (OCTA) opera rutas de autobús en toda Irvine, lo que puede hacer de OCTA una demandada en casos de lesiones relacionadas con el transporte público. Los casos de lesiones personales en Irvine se tramitan en el Tribunal Superior del Condado de Orange, principalmente a través del Harbor Justice Center en Newport Beach.",
+  "hospitals": [
+    {
+      "name": "Hoag Hospital Irvine",
+      "address": "16200 Sand Canyon Ave, Irvine, CA 92618",
+      "erAvailable": true
+    },
+    {
+      "name": "Kaiser Permanente Irvine Medical Center",
+      "address": "6640 Alton Pkwy, Irvine, CA 92618",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Orange County Superior Court — Harbor Justice Center",
+      "address": "4601 Jamboree Rd, Newport Beach, CA 92660",
+      "type": "Civil general y lesiones personales — sur del Condado de Orange"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Colisiones de incorporación y alcance en el intercambio I-405/I-5 (El Toro Y)",
+    "Accidentes de cambio de carril a alta velocidad en la I-405",
+    "Accidentes de peatones cerca de parques empresariales y corredores universitarios",
+    "Accidentes de ciclistas en senderos compartidos y arterias de cruce de tráfico",
+    "Accidentes de transporte por aplicación (Uber/Lyft) — alta concentración cerca de campus corporativos",
+    "Accidentes en intersecciones en Jamboree Road y calles transversales principales"
+  ],
+  "notableCorridors": [
+    "I-405 (San Diego Freeway) — mayor volumen de accidentes en el sur del Condado de Orange",
+    "I-5 (Santa Ana Freeway) — tráfico comercial y de commuters intenso a través de Irvine",
+    "SR-133 (Laguna Freeway) — conecta la I-5 con comunidades costeras, congestionado con frecuencia",
+    "Jamboree Road — principal arteria norte-sur con alto tráfico empresarial y de commuters",
+    "Culver Drive — calle de alto volumen con intersecciones complejas",
+    "Sand Canyon Ave — corredor propenso a accidentes cerca del hospital y zonas comerciales"
+  ],
+  "localNotes": "El Condado de Orange impone un plazo estricto de 6 meses para presentar una reclamación gubernamental por lesiones relacionadas con propiedad, aceras o vehículos públicos del condado. Los informes de colisiones de tráfico se pueden obtener a través del Departamento de Policía de Irvine o de la Patrulla de Caminos de California. La OCTA (Autoridad de Transporte del Condado de Orange) puede ser demandada en accidentes que involucren autobuses o infraestructura de tránsito.",
+  "reviewedBy": "Revisión Legal Pendiente",
+  "reviewDate": "2026-05-01"
+}

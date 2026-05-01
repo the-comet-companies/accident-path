@@ -1,0 +1,48 @@
+{
+  "slug": "chula-vista",
+  "name": "Chula Vista",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Chula Vista — Guía de Accidentes, Hospitales y Tribunales",
+  "metaDescription": "¿Lesionado/a en Chula Vista? Encuentre hospitales de emergencia locales, tribunales y conozca sus derechos bajo la ley de lesiones personales de California.",
+  "population": "~280,000",
+  "description": "Chula Vista es la segunda ciudad más grande del Condado de San Diego y una de las de más rápido crecimiento en California. Situada al norte de la frontera entre los Estados Unidos y México, registra un importante tráfico transfronterizo de commuters en la I-5 que contribuye a la congestión y el riesgo de accidentes, especialmente cerca del puerto de entrada de Otay Mesa. El intercambio entre la I-805 y la SR-54 conecta las principales zonas internas de la ciudad, mientras que H Street y Olympic Parkway son los corredores de superficie con mayor volumen de vehículos y peatones. La SR-125 es una carretera de peaje de gestión privada que plantea cuestiones particulares de jurisdicción en materia de responsabilidad civil en caso de accidente. El Sistema de Tránsito Metropolitano (MTS) opera autobuses y el Tranvía Blue Line en la ciudad, lo que puede convertir a MTS en demandado en casos de lesiones relacionadas con el transporte público. El Tribunal Superior del Condado de San Diego tramita los casos de lesiones personales de Chula Vista a través de su Centro Regional South Bay, ubicado en la propia ciudad.",
+  "hospitals": [
+    {
+      "name": "Sharp Chula Vista Medical Center",
+      "address": "751 Medical Center Ct, Chula Vista, CA 91911",
+      "erAvailable": true
+    },
+    {
+      "name": "Scripps Mercy Hospital Chula Vista",
+      "address": "435 H St, Chula Vista, CA 91910",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "San Diego Superior Court — South Bay Regional Center",
+      "address": "500 3rd Ave, Chula Vista, CA 91910",
+      "type": "Civil general y lesiones personales"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Accidentes en la I-5 y la I-805 cerca de los corredores de cruce fronterizo",
+    "Colisiones de múltiples vehículos en el intercambio I-805/SR-54",
+    "Lesiones de pasajeros en autobuses del MTS y en el Tranvía Blue Line",
+    "Accidentes de peatones en los corredores comerciales de H Street y Third Avenue",
+    "Colisiones de camiones de carga transfronterizos cerca del puerto de entrada de Otay Mesa",
+    "Accidentes en intersecciones de Olympic Parkway y arterias principales"
+  ],
+  "notableCorridors": [
+    "I-5 — corredor principal con alto tráfico transfronterizo comercial y de commuters cerca de la frontera EE.UU.-México",
+    "I-805 — conector interior principal con alto volumen de accidentes en el intercambio con SR-54",
+    "SR-54 (Martin Luther King Jr Freeway) — conector este-oeste entre comunidades interiores y la bahía",
+    "SR-125 — carretera de peaje privada con consideraciones particulares de jurisdicción y responsabilidad en accidentes",
+    "H Street — principal corredor comercial este-oeste con actividad peatonal significativa",
+    "Olympic Pkwy — arteria de alto volumen que da servicio a zonas residenciales y comerciales en el este de Chula Vista"
+  ],
+  "localNotes": "El Condado de San Diego impone un plazo estricto de 6 meses para presentar una reclamación gubernamental por lesiones relacionadas con propiedad, aceras o vehículos de la ciudad, el condado o una agencia pública. Los informes de colisiones de tráfico se pueden obtener a través del Departamento de Policía de Chula Vista o de la Patrulla de Caminos de California. El MTS (Sistema de Tránsito Metropolitano) puede ser demandado en accidentes que involucren autobuses o el Tranvía Blue Line. La SR-125 es una instalación de peaje privada, y las preguntas de responsabilidad por accidentes en esa vía pueden implicar al operador del peaje además de los demandados habituales.",
+  "reviewedBy": "Revisión Legal Pendiente",
+  "reviewDate": "2026-05-01"
+}

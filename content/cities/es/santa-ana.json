@@ -1,0 +1,48 @@
+{
+  "slug": "santa-ana",
+  "name": "Santa Ana",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Santa Ana — Guía de Accidentes, Hospitales y Tribunales",
+  "metaDescription": "¿Lesionado/a en Santa Ana? Encuentre hospitales de emergencia locales, tribunales y conozca sus derechos bajo la ley de lesiones personales de California.",
+  "population": "~310,000",
+  "description": "Santa Ana es la sede del condado de Orange y uno de los núcleos urbanos más densos del sur de California, con una densidad de población que la sitúa entre las ciudades más densamente pobladas de los Estados Unidos. Su red de autopistas — la I-5, la SR-22, la SR-55 y la SR-57 — converge cerca del centro de la ciudad, generando una congestión considerable y un elevado riesgo de accidentes. Bristol Street y First Street han sido identificadas como corredores de alto índice de lesiones por las autoridades municipales, con altas tasas de conflicto entre peatones y vehículos debido al intenso tráfico peatonal, la densidad comercial y los múltiples cruces de carriles. La Autoridad de Transporte del Condado de Orange (OCTA) opera importantes rutas de autobús a través de Santa Ana, lo que la convierte con frecuencia en demandada en casos de lesiones relacionadas con el transporte público. El Tribunal Superior del Condado de Orange — Centro de Justicia Central, ubicado en Santa Ana, es el principal tribunal para litigios de lesiones personales en todo el Condado de Orange.",
+  "hospitals": [
+    {
+      "name": "UCI Health — Western Medical Center Santa Ana",
+      "address": "1001 N Tustin Ave, Santa Ana, CA 92705",
+      "erAvailable": true
+    },
+    {
+      "name": "UCI Medical Center",
+      "address": "101 The City Dr S, Orange, CA 92868",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Orange County Superior Court — Central Justice Center",
+      "address": "700 Civic Center Dr W, Santa Ana, CA 92701",
+      "type": "Civil general y lesiones personales — sede principal del Condado de Orange"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Accidentes de peatones en corredores de alto riesgo como Bristol Street y First Street",
+    "Accidentes en autopista en las zonas de intercambio de la I-5, SR-22 y SR-55",
+    "Lesiones en accidentes de autobuses de la OCTA y del transporte público",
+    "Accidentes de ciclistas en intersecciones urbanas densas y corredores comerciales",
+    "Colisiones laterales y de frente en Main Street y Bristol Street",
+    "Caídas en locales comerciales y aceras públicas"
+  ],
+  "notableCorridors": [
+    "I-5 (Santa Ana Freeway) — autopista norte-sur de alto volumen que atraviesa el centro de la ciudad",
+    "SR-22 (Garden Grove Freeway) — corredor este-oeste con intercambios urbanos complejos",
+    "SR-55 (Costa Mesa Freeway) — zona frecuente de congestión y accidentes en el norte de Santa Ana",
+    "SR-57 (Orange Freeway) — importante ruta de commuters con alto volumen en horas pico",
+    "Bristol Street — corredor de alto índice de lesiones con elevadas tasas de conflicto peatonal",
+    "First Street — corredor comercial denso con historial elevado de colisiones y accidentes de peatones"
+  ],
+  "localNotes": "El Condado de Orange impone un plazo estricto de 6 meses para presentar una reclamación gubernamental por lesiones relacionadas con propiedad, aceras o vehículos del condado o la ciudad. Los informes de colisiones de tráfico se pueden obtener a través del Departamento de Policía de Santa Ana. La OCTA (Autoridad de Transporte del Condado de Orange) es una demandada frecuente en casos de lesiones personales que involucran rutas de autobús con alta presencia en Santa Ana.",
+  "reviewedBy": "Revisión Legal Pendiente",
+  "reviewDate": "2026-05-01"
+}

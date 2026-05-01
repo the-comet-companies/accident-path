@@ -1,0 +1,48 @@
+{
+  "slug": "irvine",
+  "name": "Irvine",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Irvine Accident Guide — Local Hospitals, Courts & Rights",
+  "metaDescription": "Injured in Irvine? Find local emergency hospitals, courts, and understand your rights under California personal injury law.",
+  "population": "~310,000",
+  "description": "Irvine is a master-planned city in Orange County known for its technology and business campuses, generating some of Southern California's densest commuter traffic. The I-405 and I-5 corridor running through Irvine is one of the most accident-prone stretches in Orange County, with the I-405/I-5 interchange — known locally as the El Toro Y — being a particularly high-risk zone for merge and rear-end collisions. Jamboree Road, Culver Drive, and Sand Canyon Avenue serve as major north-south arterials with significant traffic volumes. Cyclists and pedestrians share extensive trail networks and surface streets near business parks and university areas. Orange County Transportation Authority (OCTA) buses operate throughout Irvine, making OCTA a potential defendant in transit-related injury cases. Orange County Superior Court handles personal injury filings for Irvine residents, primarily through the Harbor Justice Center in Newport Beach.",
+  "hospitals": [
+    {
+      "name": "Hoag Hospital Irvine",
+      "address": "16200 Sand Canyon Ave, Irvine, CA 92618",
+      "erAvailable": true
+    },
+    {
+      "name": "Kaiser Permanente Irvine Medical Center",
+      "address": "6640 Alton Pkwy, Irvine, CA 92618",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Orange County Superior Court — Harbor Justice Center",
+      "address": "4601 Jamboree Rd, Newport Beach, CA 92660",
+      "type": "General civil and personal injury — South Orange County"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Freeway merge and rear-end collisions at the I-405/I-5 El Toro Y interchange",
+    "High-speed sideswipe and lane-change accidents on I-405",
+    "Pedestrian accidents near business parks and university corridors",
+    "Bicycle accidents on shared paths and cross-traffic arterials",
+    "Rideshare (Uber/Lyft) accidents — high concentration near corporate campuses",
+    "Intersection accidents at Jamboree Road and major cross-streets"
+  ],
+  "notableCorridors": [
+    "I-405 (San Diego Freeway) — highest accident volume in south Orange County",
+    "I-5 (Santa Ana Freeway) — heavy commercial and commuter traffic through Irvine",
+    "SR-133 (Laguna Freeway) — connects I-5 to coastal communities, frequent congestion",
+    "Jamboree Road — primary north-south arterial with heavy business and commuter traffic",
+    "Culver Drive — high-volume surface street with complex intersections",
+    "Sand Canyon Ave — accident-prone corridor near hospital and retail zones"
+  ],
+  "localNotes": "Orange County has a strict 6-month deadline to file a government claim for injuries involving county property, sidewalks, or public vehicles. Traffic collision reports are available through the Irvine Police Department or the California Highway Patrol. OCTA (Orange County Transportation Authority) is a potential defendant in accidents involving buses or transit infrastructure.",
+  "reviewedBy": "Pending Legal Review",
+  "reviewDate": "2026-05-01"
+}

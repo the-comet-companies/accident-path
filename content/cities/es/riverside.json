@@ -1,0 +1,53 @@
+{
+  "slug": "riverside",
+  "name": "Riverside",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Riverside — Guía de Accidentes, Hospitales y Tribunales",
+  "metaDescription": "¿Lesionado/a en Riverside? Encuentre hospitales de emergencia locales, tribunales y conozca sus derechos bajo la ley de lesiones personales de California.",
+  "population": "~330,000",
+  "description": "Riverside es la ciudad más grande del Inland Empire y un importante centro regional de comercio y transporte de carga. Su red de autopistas — en particular la I-215, la SR-60 y la SR-91 — soporta un alto volumen de camiones y vehículos de carga, lo que convierte los accidentes vehiculares en una de las preocupaciones más frecuentes en materia de lesiones personales en la zona. El intercambio entre la SR-60 y la I-215 es una zona de congestión persistente y elevado riesgo de colisiones. University Avenue y Magnolia Avenue registran una actividad peatonal importante cerca de UC Riverside y los corredores comerciales locales. Entidades gubernamentales como la Ciudad de Riverside y el Condado de Riverside suelen aparecer como demandadas en casos de responsabilidad civil por predios y aceras. Actuar con rapidez para preservar evidencia, obtener informes policiales y cumplir los plazos de reclamación gubernamental es fundamental para cualquier persona lesionada en Riverside.",
+  "hospitals": [
+    {
+      "name": "Riverside Community Hospital",
+      "address": "4445 Magnolia Ave, Riverside, CA 92501",
+      "erAvailable": true
+    },
+    {
+      "name": "Kaiser Permanente Riverside Medical Center",
+      "address": "10800 Magnolia Ave, Riverside, CA 92505",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Riverside Superior Court — Historic Courthouse",
+      "address": "4050 Main St, Riverside, CA 92501",
+      "type": "Civil general y lesiones personales"
+    },
+    {
+      "name": "Riverside Superior Court — Hall of Justice",
+      "address": "4100 Main St, Riverside, CA 92501",
+      "type": "Civil general y lesiones personales"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Colisiones traseras y de múltiples vehículos en la I-215 y la SR-60",
+    "Accidentes de camiones y vehículos de carga en corredores de distribución importantes",
+    "Accidentes de peatones en University Avenue y Magnolia Avenue",
+    "Accidentes en intersecciones de alto volumen en arterias principales",
+    "Accidentes de motocicletas en la SR-91 y corredores de calles locales",
+    "Caídas en propiedades comerciales y gubernamentales"
+  ],
+  "notableCorridors": [
+    "I-215 — corredor norte-sur principal con alto volumen de camiones de carga",
+    "SR-60 (Pomona Freeway) — tráfico comercial y de alta velocidad, propenso a choques de múltiples vehículos",
+    "SR-91 (Riverside Freeway) — alta congestión en el intercambio 91/215",
+    "SR-74 (Hemet Highway) — arteria de superficie que conecta con comunidades de montaña",
+    "University Avenue — corredor de alto tráfico peatonal cerca de UC Riverside",
+    "Magnolia Avenue — corredor comercial con alta concentración de puntos de conflicto en intersecciones"
+  ],
+  "localNotes": "El Condado de Riverside impone un plazo estricto de 6 meses para presentar una reclamación gubernamental por lesiones relacionadas con propiedad, aceras o vehículos de la ciudad o el condado — no cumplir este plazo puede impedir su reclamación. Los informes de colisiones de tráfico se pueden obtener a través del Departamento de Policía de Riverside o de la Patrulla de Caminos de California, según el lugar del accidente. La Agencia de Tránsito de Riverside (RTA) puede ser demandada en casos de lesiones relacionadas con autobuses.",
+  "reviewedBy": "Revisión Legal Pendiente",
+  "reviewDate": "2026-05-01"
+}

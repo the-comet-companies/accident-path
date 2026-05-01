@@ -1,0 +1,48 @@
+{
+  "slug": "chula-vista",
+  "name": "Chula Vista",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Chula Vista Accident Guide — Local Hospitals, Courts & Rights",
+  "metaDescription": "Injured in Chula Vista? Find local emergency hospitals, courts, and understand your rights under California personal injury law.",
+  "population": "~280,000",
+  "description": "Chula Vista is the second-largest city in San Diego County and one of the fastest-growing cities in California. Located just north of the US-Mexico border, it experiences significant cross-border commuter traffic on I-5 that contributes to congestion and collision risk, particularly near the Otay Mesa Port of Entry. The I-805 and SR-54 interchange serve as major connectors within the city, while H Street and Olympic Parkway are primary surface-street corridors with high vehicle and pedestrian volumes. SR-125 is a privately operated toll road that raises unique accident jurisdiction questions related to liability. Metropolitan Transit System (MTS) buses and the Blue Line Trolley serve the city, making MTS a potential defendant in transit injury cases. San Diego County Superior Court handles personal injury filings for Chula Vista through its South Bay Regional Center located in the city.",
+  "hospitals": [
+    {
+      "name": "Sharp Chula Vista Medical Center",
+      "address": "751 Medical Center Ct, Chula Vista, CA 91911",
+      "erAvailable": true
+    },
+    {
+      "name": "Scripps Mercy Hospital Chula Vista",
+      "address": "435 H St, Chula Vista, CA 91910",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "San Diego Superior Court — South Bay Regional Center",
+      "address": "500 3rd Ave, Chula Vista, CA 91910",
+      "type": "General civil and personal injury"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Freeway accidents on I-5 and I-805 near border crossing corridors",
+    "Multi-vehicle collisions at the I-805/SR-54 interchange",
+    "MTS bus and Blue Line Trolley passenger injury incidents",
+    "Pedestrian accidents on H Street and Third Avenue commercial corridors",
+    "Cross-border commercial truck collisions near Otay Mesa Port of Entry",
+    "Intersection accidents on Olympic Parkway and major arterials"
+  ],
+  "notableCorridors": [
+    "I-5 — primary corridor with heavy cross-border commercial and commuter traffic near the US-Mexico border",
+    "I-805 — major inland connector with high accident volume at SR-54 interchange",
+    "SR-54 (Martin Luther King Jr Freeway) — east-west connector linking inland communities to the bay",
+    "SR-125 — private toll road with unique accident jurisdiction and liability considerations",
+    "H Street — primary east-west commercial corridor with significant pedestrian activity",
+    "Olympic Pkwy — high-volume arterial serving residential and commercial areas in eastern Chula Vista"
+  ],
+  "localNotes": "San Diego County imposes a strict 6-month deadline to file a government claim for injuries involving city, county, or public agency property or vehicles. Traffic collision reports can be obtained through the Chula Vista Police Department or the California Highway Patrol. MTS (Metropolitan Transit System) is a potential defendant in accidents involving buses or the Blue Line Trolley. SR-125 is a private toll facility, and liability questions for accidents on that road may involve the toll operator in addition to standard defendants.",
+  "reviewedBy": "Pending Legal Review",
+  "reviewDate": "2026-05-01"
+}

@@ -1,0 +1,48 @@
+{
+  "slug": "santa-clarita",
+  "name": "Santa Clarita",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Santa Clarita Accident Guide — Local Hospitals, Courts & Rights",
+  "metaDescription": "Injured in Santa Clarita? Find local emergency hospitals, courts, and understand your rights under California personal injury law.",
+  "population": "~230,000",
+  "description": "Santa Clarita is one of Los Angeles County's fastest-growing cities, situated at the convergence of the I-5 (Golden State Freeway) and SR-14 (Antelope Valley Freeway) — two major arteries that carry heavy commuter and commercial traffic between the San Fernando Valley, the high desert, and Central California. Merge and diverge accidents are common at the I-5/SR-14 interchange, which is one of the busiest freeway junctions in the region. McBean Parkway and Valencia Boulevard serve as primary surface-street corridors in the master-planned Valencia community, where traffic volume has grown significantly alongside residential development. Bouquet Canyon Road provides a key mountain connection that sees motorcycle and bicycle accidents. As part of Los Angeles County, Santa Clarita falls under strict LA County government claim filing requirements, and personal injury cases are handled at the local Superior Court courthouse in Valencia.",
+  "hospitals": [
+    {
+      "name": "Henry Mayo Newhall Hospital",
+      "address": "23845 McBean Pkwy, Valencia, CA 91355",
+      "erAvailable": true
+    },
+    {
+      "name": "Providence Holy Cross Medical Center",
+      "address": "15031 Rinaldi St, Mission Hills, CA 91345",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Los Angeles Superior Court — Santa Clarita Courthouse",
+      "address": "23747 W Valencia Blvd, Valencia, CA 91355",
+      "type": "General civil and personal injury"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Freeway merge and diverge collisions at the I-5/SR-14 interchange",
+    "High-speed rear-end accidents on I-5 (Golden State Freeway)",
+    "Motorcycle accidents on Bouquet Canyon Road and SR-126",
+    "Pedestrian accidents near Valencia Town Center and commercial corridors",
+    "Bicycle accidents on surface streets and mixed-use trails",
+    "Intersection accidents on McBean Parkway and Valencia Boulevard"
+  ],
+  "notableCorridors": [
+    "I-5 (Golden State Freeway) — primary north-south corridor with high commuter and freight volume",
+    "SR-14 (Antelope Valley Freeway) — major commuter route to high desert communities, prone to high-speed collisions",
+    "SR-126 (Magic Mountain Pkwy) — east-west connector with sections prone to accidents near entertainment venues",
+    "McBean Pkwy — main north-south surface arterial through Valencia with high traffic density",
+    "Bouquet Canyon Rd — winding mountain road with elevated motorcycle and bicycle accident risk",
+    "Valencia Blvd — commercial corridor near courthouse and retail centers"
+  ],
+  "localNotes": "Los Angeles County enforces a strict 6-month deadline to file a government claim for injuries involving city, county, or public agency property or vehicles — failing to meet this deadline can bar your right to recover. Traffic collision reports can be obtained through the Santa Clarita Valley Sheriff's Station (LASD) or the California Highway Patrol. The Santa Clarita Transit agency may be a defendant in bus-related injury cases.",
+  "reviewedBy": "Pending Legal Review",
+  "reviewDate": "2026-05-01"
+}
