@@ -64,6 +64,45 @@ All tasks are in the Notion Master Pipeline database.
 Filter by Owner = "Claude" for autonomous tasks.
 Each DEV-XX task has a full execution prompt in its Notion page body.
 
+## Pending Work
+
+See `PENDING.md` in the project root for the current list of unbuilt pages and missing Spanish translations.
+
+**Important rule:** After completing any pending task, always ask the user before marking it as Live in Notion — they want to review the work first.
+
+---
+
+## Page Status Tracker
+
+The **"Accident Path Website Pages"** Notion database (DB ID: `352917dc-7b83-8190-a9be-cecaf2b6df5d`) tracks the live/pending status of every page on the site. The database has **~96 rows**. Use it to answer questions like "what pages are still pending?" or "is the [X] page live?".
+
+**Columns:**
+| Column | What It Means |
+|--------|---------------|
+| Page Title | Human-readable page name |
+| Route | English URL (e.g. `https://accident-path.vercel.app/accidents/car-accident`) |
+| Status | `Live` (green) = built and deployed; `Coming Soon` (yellow) = planned but not built |
+| Spanish Route | The `/es/...` equivalent URL |
+| Spanish Status | `Live` / `Coming Soon` / `Not Started` for the Spanish version |
+| Category | Homepage, Static, Hub, Accident, Injury, Tool, Guide, State, City, Lead Gen |
+| Source File | The Next.js file that renders the page |
+
+**How to query ALL rows (important — do not skip pagination):**
+
+1. Call `mcp__notion__API-post-search` with:
+   - `query`: `""` (empty string — do NOT pass a search term or you'll get a partial match)
+   - `filter`: `{"property": "object", "value": "page"}`
+   - `page_size`: `100`
+2. From the results, keep only pages where `parent.database_id == "352917dc-7b83-8190-a9be-cecaf2b6df5d"` — the search returns pages from all databases in the workspace.
+3. If the response has `has_more: true`, call again with `start_cursor` set to the `next_cursor` value to get the remaining rows.
+4. Expect ~96 rows total across 1–2 pages of results. If you're seeing fewer than 50, you are missing rows — paginate or re-query.
+
+**Searching for a specific page:** Use `mcp__notion__API-post-search` with the page name as `query` (e.g. `"Riverside"`) and `filter: {property: "object", value: "page"}`. Check the returned `Route` field to confirm it's a city/page match and not a hub or state page.
+
+**Important:** The Notion database is a tracking layer — the real source of truth is the `content/` JSON files and `app/` route files. If accuracy matters, verify against the codebase after checking Notion.
+
+**Known access limitation:** The Master Pipeline tasks DB (`346917dc-7b83-81e3-be62-dea1a5250217`) has NOT been shared with the Notion integration and will return 404. Only the "Accident Path Website Pages" DB is accessible.
+
 ## Rules
 
 ### ALWAYS

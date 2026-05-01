@@ -18,6 +18,12 @@ const LAUNCH_SLUGS = [
   'evidence-checklist',
   'injury-journal',
   'lawyer-type-matcher',
+  'insurance-call-prep',
+  'lost-wages-estimator',
+  'record-request',
+  'settlement-readiness',
+  'state-next-steps',
+  'statute-countdown',
 ]
 
 export async function generateStaticParams() {
