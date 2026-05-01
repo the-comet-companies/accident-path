@@ -4,16 +4,19 @@ import { LanguageToggle } from '@/components/layout/LanguageToggle'
 import { FOOTER_ACCIDENT_LINKS, FOOTER_RESOURCE_LINKS, type Locale } from '@/i18n/config'
 import type { Dictionary } from '@/i18n/dictionaries'
 
-const companyLinks = [
-  { label: 'How It Works', href: '/about/how-it-works' },
-  { label: 'About Us', href: '/about' },
-  { label: 'For Attorneys', href: '/for-attorneys' },
-  { label: 'Privacy Policy', href: '/privacy' },
-  { label: 'Do Not Sell My Info', href: '/privacy#do-not-sell' },
-  { label: 'Terms of Service', href: '/terms' },
-  { label: 'Disclaimers', href: '/disclaimers' },
-  { label: 'Cookie Policy', href: '/cookie-policy' },
-]
+function getCompanyLinks(locale: Locale) {
+  return [
+    { label: locale === 'es' ? 'Cómo Funciona' : 'How It Works', href: '/about/how-it-works' },
+    { label: locale === 'es' ? 'Sobre Nosotros' : 'About Us', href: '/about' },
+    { label: locale === 'es' ? 'Contacto' : 'Contact Us', href: locale === 'es' ? '/es/contacto' : '/contact' },
+    { label: locale === 'es' ? 'Para Abogados' : 'For Attorneys', href: '/for-attorneys' },
+    { label: locale === 'es' ? 'Política de Privacidad' : 'Privacy Policy', href: '/privacy' },
+    { label: 'Do Not Sell My Info', href: '/privacy#do-not-sell' },
+    { label: locale === 'es' ? 'Términos de Servicio' : 'Terms of Service', href: '/terms' },
+    { label: locale === 'es' ? 'Descargos de Responsabilidad' : 'Disclaimers', href: '/disclaimers' },
+    { label: locale === 'es' ? 'Política de Cookies' : 'Cookie Policy', href: '/cookie-policy' },
+  ]
+}
 
 const currentYear = new Date().getFullYear()
 
@@ -25,6 +28,7 @@ interface FooterProps {
 export function Footer({ locale = 'en', dict }: FooterProps) {
   const accidentLinks = FOOTER_ACCIDENT_LINKS[locale]
   const resourceLinks = FOOTER_RESOURCE_LINKS[locale]
+  const companyLinks = getCompanyLinks(locale)
   const t = dict.footer
   const trust = dict.trust
 
