@@ -319,11 +319,12 @@ All 20 city pages complete in EN + ES. ✅
 - AccidentPath team activates attorneys directly in Supabase; routing starts automatically
 - No attorney dashboard or auth yet (YAGNI — no attorneys in network yet)
 
-**Slack setup status (2026-05-01):**
-- Slack App "AccidentPath Leads" created (App ID: `A0B1ZEWHAEL`) in DTLA Print workspace
-- `chat:write` scope added
-- Could not install to workspace — free plan 10-app limit reached
-- **Next step before building:** Remove one unused app from the workspace (Settings & Administration → Manage Apps) to free a slot, then install AccidentPath Leads and copy the `xoxb-...` Bot Token into Vercel env vars as `SLACK_BOT_TOKEN`
+**Slack + n8n setup status (2026-05-01):**
+- Slack App "AccidentPath Leads" created (App ID: `A0B1ZEWHAEL`) but could not install — free plan 10-app limit reached. App is no longer needed.
+- **Confirmed with Michael:** will use n8n instead. gptbot is already hooked up in n8n and connected to channel `C0ATA1QUBRD`
+- n8n instance access already confirmed (Joner has access)
+- **Revised approach:** `/api/intake` POSTs to an n8n webhook → n8n handles Slack notification (via gptbot) + user confirmation email. No custom email/Slack code needed in the Next.js codebase.
+- **Next step:** Next session — create n8n workflow (webhook trigger → Slack notification + email), update `/api/intake` to POST to the n8n webhook URL
 
 **Next step:** Run brainstorming → writing-plans → subagent-driven-development when ready to build.
 
