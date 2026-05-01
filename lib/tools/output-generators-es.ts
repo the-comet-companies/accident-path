@@ -596,6 +596,177 @@ const lawyerTypeMatcherEs: OutputGenerator = (answers) => {
   }
 }
 
+// ─── Tool 10: state-next-steps (ES) ──────────────────────────────────────────
+
+function computeSolDeadlineEs(
+  accidentDate: string,
+  solYears: number
+): { daysRemaining: number; deadlineStr: string } {
+  const [y, m, d] = accidentDate.split('-').map(Number)
+  const deadline = new Date(y + solYears, m - 1, d)
+  const today = new Date()
+  today.setHours(0, 0, 0, 0)
+  const daysRemaining = Math.floor((deadline.getTime() - today.getTime()) / (1000 * 60 * 60 * 24))
+  const deadlineStr = deadline.toLocaleDateString('es-MX', { year: 'numeric', month: 'long', day: 'numeric' })
+  return { daysRemaining, deadlineStr }
+}
+
+const stateNextStepsEs: OutputGenerator = (answers) => {
+  const state = str(answers['state'])
+  const accType = str(answers['accident-type'])
+  const accidentDate = str(answers['accident-date'])
+
+  const isCA = state === 'CA'
+  const stateName = isCA ? 'California' : 'Arizona'
+  const solYears = 2
+
+  const items: OutputItem[] = []
+
+  if (accidentDate) {
+    const { daysRemaining, deadlineStr } = computeSolDeadlineEs(accidentDate, solYears)
+    items.push({
+      label: `Plazo de prescripción en ${stateName}: ${deadlineStr}`,
+      value: daysRemaining < 0
+        ? 'El plazo general para este tipo de reclamación puede haber vencido. Pueden aplicar algunas excepciones — consulte a un abogado de inmediato.'
+        : daysRemaining < 90
+        ? `URGENTE: Solo quedan ${daysRemaining} día(s). Consulte a un abogado lo antes posible.`
+        : `Quedan ${daysRemaining} días. Actuar antes generalmente produce mejores resultados — la evidencia y los testigos están más disponibles cuanto antes.`,
+      priority: daysRemaining < 90 ? 'critical' : daysRemaining < 180 ? 'important' : 'helpful',
+    })
+  } else {
+    items.push({
+      label: `Plazo de prescripción en ${stateName}: ${solYears} años desde la fecha del accidente`,
+      value: `Para la mayoría de las reclamaciones por lesiones personales en ${stateName}, tiene ${solYears} años desde la fecha del accidente para presentar una demanda.`,
+      priority: 'important',
+    })
+  }
+
+  if (accType === 'workplace-injury') {
+    items.push({
+      label: isCA ? 'Compensación laboral: reporte dentro de 30 días' : 'Compensación laboral: presente dentro de 1 año',
+      value: isCA
+        ? 'Reporte la lesión a su empleador dentro de 30 días y presente una reclamación formal DWC-1 dentro de 1 año.'
+        : 'Reporte a su empleador lo antes posible y presente una reclamación de compensación laboral dentro de 1 año.',
+      priority: 'critical',
+    })
+  }
+
+  if (['car-accident', 'truck-accident', 'motorcycle-crash', 'bicycle-accident', 'pedestrian-accident'].includes(accType) && isCA) {
+    items.push({
+      label: 'Reporte SR-1 del DMV de CA: dentro de 10 días',
+      value: 'Requerido cuando ocurrieron lesiones, muerte o daños a la propiedad mayores a $1,000. Presente ante el DMV de California dentro de 10 días del accidente.',
+      priority: 'important',
+    })
+  }
+
+  items.push({
+    label: 'Aviso de reclamación gubernamental: 180 días',
+    value: `Si hubo una entidad gubernamental involucrada, debe presentar un aviso formal de reclamación dentro de 180 días en ${stateName} (60 días para algunas entidades municipales/del condado en AZ). No cumplir este plazo cancela su reclamación.`,
+    priority: 'important',
+  })
+
+  items.push({
+    label: `Regla de culpa en ${stateName}: culpa comparativa pura`,
+    value: `${stateName} aplica la culpa comparativa pura — puede recuperar compensación incluso si tuvo parte de la culpa, con su indemnización reducida proporcionalmente.`,
+    priority: 'helpful',
+  })
+
+  items.push({
+    label: `Requisitos mínimos de seguro en ${stateName}`,
+    value: isCA
+      ? 'Mínimo en California: $30,000 por persona / $60,000 por accidente / $15,000 daños a la propiedad (vigente desde el 1 de enero de 2025, SB 1107).'
+      : 'Mínimo en Arizona: $25,000 por persona / $50,000 por accidente / $15,000 daños a la propiedad.',
+    priority: 'helpful',
+  })
+
+  return {
+    summary: `Aquí están los plazos clave y los próximos pasos para un ${accidentLabelEs(accType)} en ${stateName}. Los plazos en casos de lesiones personales son estrictos — no cumplirlos puede cancelar permanentemente su derecho a compensación. Esta es información educativa general únicamente, no asesoramiento legal.`,
+    items,
+    cta: { label: 'Conectar con un Abogado', href: '/es/buscar-ayuda' },
+    disclaimer: `Esta información es solo para fines educativos generales. Las leyes de ${stateName} cambian — verifique todos los plazos con un abogado con licencia en ${stateName} antes de actuar.`,
+    exportable: true,
+  }
+}
+
+// ─── Tool 11: statute-countdown (ES) ─────────────────────────────────────────
+
+const statuteCountdownEs: OutputGenerator = (answers) => {
+  const accidentDate = str(answers['accident-date'])
+  const accType = str(answers['accident-type'])
+  const state = str(answers['state'])
+
+  const isCA = state === 'CA'
+  const stateName = isCA ? 'California' : 'Arizona'
+  const solYears = 2
+  const citation = isCA ? 'California CCP § 335.1' : 'A.R.S. § 12-542'
+
+  const items: OutputItem[] = []
+
+  if (accidentDate) {
+    const { daysRemaining, deadlineStr } = computeSolDeadlineEs(accidentDate, solYears)
+
+    let deadlinePriority: 'critical' | 'important' | 'helpful' = 'helpful'
+    let deadlineNote = ''
+
+    if (daysRemaining < 0) {
+      deadlinePriority = 'critical'
+      deadlineNote = 'El plazo general para este tipo de reclamación puede haber vencido. Pueden aplicar algunas excepciones. Consulte a un abogado de inmediato.'
+    } else if (daysRemaining < 90) {
+      deadlinePriority = 'critical'
+      deadlineNote = `URGENTE: Solo quedan ${daysRemaining} día(s). Considere hablar con un abogado lo antes posible.`
+    } else if (daysRemaining < 180) {
+      deadlinePriority = 'important'
+      deadlineNote = `Quedan ${daysRemaining} días. Su plazo se acerca — consulte a un abogado para confirmar su fecha límite específica.`
+    } else {
+      deadlinePriority = 'helpful'
+      deadlineNote = `Quedan ${daysRemaining} días. Tiene tiempo, pero actuar antes generalmente produce mejores resultados.`
+    }
+
+    items.push({
+      label: `Fecha límite general de presentación: ${deadlineStr}`,
+      value: deadlineNote,
+      priority: deadlinePriority,
+    })
+
+    const [accY, accM, accD] = accidentDate.split('-').map(Number)
+    const govDeadline = new Date(new Date(accY, accM - 1, accD).getTime() + 180 * 24 * 60 * 60 * 1000)
+    const govDeadlineStr = govDeadline.toLocaleDateString('es-MX', { year: 'numeric', month: 'long', day: 'numeric' })
+    items.push({
+      label: `Aviso de reclamación gubernamental: 180 días (${isCA ? '6 meses' : 'estado'} / 60 días entidades municipales/condado en AZ)`,
+      value: `Si hubo una entidad gubernamental involucrada, este es un plazo SEPARADO y MÁS CORTO que el plazo de ${solYears} años. No cumplirlo cancela su reclamación. Fecha límite desde la fecha de su accidente: ${govDeadlineStr}.`,
+      priority: 'important',
+    })
+  } else {
+    items.push({
+      label: `Plazo general en ${stateName}: ${solYears} años desde la fecha del accidente`,
+      value: `Ingrese la fecha de su accidente para ver la fecha límite calculada. (${citation})`,
+      priority: 'important',
+    })
+  }
+
+  items.push({
+    label: 'La minoría de edad puede extender su plazo',
+    value: 'Si tenía menos de 18 años al momento del accidente, el período de prescripción puede no comenzar hasta que alcance la mayoría de edad. Esto depende de los hechos — consulte a un abogado.',
+    priority: 'helpful',
+  })
+
+  items.push({
+    label: 'Excepciones de la regla del descubrimiento',
+    value: 'Para lesiones de aparición tardía, el período de prescripción puede comenzar desde la fecha del descubrimiento en lugar del accidente. Consulte a un abogado para entender cómo aplica esto a su caso.',
+    priority: 'helpful',
+  })
+
+  const accLabel = accidentLabelEs(accType)
+
+  return {
+    summary: `${accLabel.charAt(0).toUpperCase() + accLabel.slice(1)} en ${stateName} — Plazo general: ${solYears} años desde la fecha del accidente (${citation}). Los plazos de prescripción tienen muchas excepciones — su fecha límite específica puede diferir. Consulte a un abogado con licencia para confirmar su plazo exacto antes de actuar.`,
+    items,
+    cta: { label: 'Conectar con un Abogado', href: '/es/buscar-ayuda' },
+    disclaimer: 'Esta herramienta muestra plazos legales GENERALES solo con fines educativos. Su fecha límite específica depende de los hechos únicos de su caso. Siempre consulte a un abogado con licencia para confirmar su plazo — no confíe únicamente en esta herramienta.',
+    exportable: false,
+  }
+}
+
 // ─── Registry ─────────────────────────────────────────────────────────────────
 
 export const outputGeneratorsEs: Record<string, OutputGenerator> = {
@@ -604,4 +775,6 @@ export const outputGeneratorsEs: Record<string, OutputGenerator> = {
   'evidence-checklist': evidenceChecklistEs,
   'injury-journal': injuryJournalEs,
   'lawyer-type-matcher': lawyerTypeMatcherEs,
+  'state-next-steps': stateNextStepsEs,
+  'statute-countdown': statuteCountdownEs,
 }
