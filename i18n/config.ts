@@ -8,6 +8,7 @@ export const SLUG_MAP_ES: Record<string, string> = {
   'truck': 'camion',
   'motorcycle': 'motocicleta',
   'slip-and-fall': 'caida',
+  'slip-fall': 'caida',
   'workplace': 'trabajo',
   'bicycle': 'bicicleta',
   'pedestrian': 'peaton',
