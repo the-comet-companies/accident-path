@@ -296,3 +296,32 @@ All 20 city pages complete in EN + ES. ✅
 - No attorney dashboard or auth yet (YAGNI — no attorneys in network yet)
 
 **Next step:** Run brainstorming → writing-plans → subagent-driven-development when ready to build.
+
+---
+
+## TODO — Lead Magnets / Resources Section
+
+**Status:** Deferred — build after attorney matching system is live.
+
+**Concept:** Gated content pieces that capture name + email + phone from visitors who are researching but not yet ready to submit the full intake form. High-urgency headlines ("CRITICAL — do not do this before picking an attorney", "5 things you MUST know before deciding on an attorney") trigger emotional response and lower the bar to share contact info.
+
+**Proposed site structure:**
+- `/resources` — hub page (card grid of all lead magnets)
+- `/resources/[slug]` — individual resource page with teaser + gated form
+
+**Inline CTAs on high-intent pages:**
+- Bottom of accident type pages (`/accidents/[slug]`)
+- After `/find-help/results` (people who finished intake but aren't ready to call)
+- Bottom of high-traffic guides
+
+**Content examples (from product notes):**
+- "CRITICAL — do not do this before picking an attorney"
+- "5 things you MUST know before deciding on an attorney"
+- "5 questions to ask anyone before picking an attorney"
+- "Need help choosing the right attorney?"
+
+**Design reference:** mondaymerch.com/us/resources (clean resource library card layout)
+
+**Technical fit:** Same JSON CMS pattern as guides/tools — `content/resources/[slug].json` + Zod schema. Gated form requires TCPA consent checkbox (same as intake wizard).
+
+**Dependency:** Attorney matching system must be live first — no point capturing emails without a follow-up mechanism.
