@@ -4,6 +4,8 @@
 
 Audited the Notion page tracker, fixed stale tool statuses, built all 6 Spanish tool pages, added Spanish output generators for state-next-steps and statute-countdown, resolved several UI bugs, and pushed to main. All 11 tools are now fully live in both EN and ES. Also completed all 20 pending city pages (EN + ES), verified and corrected all hospital data with phone numbers, and fixed the states listing UI imbalance between CA and AZ.
 
+**Session continuation (same day):** Built Spanish Contact page (`/es/contacto`), Spanish About page (`/es/sobre-nosotros`), fixed ES desktop header crowding, fixed LanguageToggle routing for `/about` ↔ `/es/sobre-nosotros` and `/contact` ↔ `/es/contacto`, updated footer ES About link. Only 2 Spanish pages remain (Spinal + TBI accident guides).
+
 ---
 
 ## Notion Tracker Audit
@@ -184,10 +186,56 @@ All 6 tools are now live in Spanish. ✅
 ### City pages
 All 20 city pages complete in EN + ES. ✅
 
-### Spanish-only pages (4)
-| Page | Needs |
-|------|-------|
-| About AccidentPath | `app/(es)/es/sobre-nosotros/page.tsx` |
-| Contact AccidentPath | `app/(es)/es/contacto/page.tsx` |
-| Spinal Accident Guide | ES JSON + `/es/accidentes/columna` route |
-| Traumatic Brain Accident Guide | ES JSON + `/es/accidentes/traumatismo-craneal` route |
+### Spanish-only pages (4 → 2 remaining)
+| Page | Status |
+|------|--------|
+| About AccidentPath | ✅ Live — `app/(es)/es/sobre-nosotros/page.tsx` |
+| Contact AccidentPath | ✅ Live — `app/(es)/es/contacto/page.tsx` |
+| Spinal Accident Guide | ❌ Needs ES JSON + `/es/accidentes/columna` route |
+| Traumatic Brain Accident Guide | ❌ Needs ES JSON + `/es/accidentes/traumatismo-craneal` route |
+
+---
+
+## Session Continuation — Spanish Static Pages + UI Fixes
+
+### Spanish Contact Page ✅
+- Created `app/(es)/es/contacto/page.tsx` (full translation of `/contact`)
+- `CONTACT_TOPICS` and `EXPECTATIONS` fully translated in usted register
+- Metadata: `canonical: /es/contacto`, hreflang `en: /contact`, `es: /es/contacto`
+- Commit: `f517de1`
+
+### Spanish About Page ✅
+- Created `app/(es)/es/sobre-nosotros/page.tsx` (full translation of `/about`)
+- `VALUES` array fully translated; CTA links to `/about/how-it-works` and `/es/contacto`
+- Metadata: `canonical: /es/sobre-nosotros`, hreflang `en: /about`, `es: /es/sobre-nosotros`
+
+### Nav + Footer Updates ✅
+- `NAV_SIMPLE_LINKS.es` updated: `href: '/about'` → `href: '/es/sobre-nosotros'`
+- `Footer.tsx` `getCompanyLinks`: ES "Sobre Nosotros" → `/es/sobre-nosotros`
+- `i18n/config.ts`: added `{ label: 'Sobre Nosotros', href: '/es/sobre-nosotros' }` to ES nav
+
+### LanguageToggle Routing Fix ✅
+- Root cause: `/about` and `/contact` not in prefix maps → fell back to `/es/` when switching locales
+- Fix: added `STATIC_EN_TO_ES` and `STATIC_ES_TO_EN` maps in `LanguageToggle.tsx`
+  - `/about` ↔ `/es/sobre-nosotros`
+  - `/contact` ↔ `/es/contacto`
+
+### ES Desktop Header Crowding Fix ✅
+- Root cause: 7-item ES nav with longer labels overflowed at 1280px (xl breakpoint)
+- Fix in `Header.tsx`:
+  - `navItemPx`: `px-2.5` → `px-2` for ES
+  - Nav gap: `gap-0.5` → `gap-0` for ES
+- Fix in `i18n/config.ts`: `getHelpNow: 'Obtenga Ayuda Ahora'` → `'Obtenga Ayuda'` (full text stays in `getHelpNowFull` for mobile bottom bar)
+- Note: breakpoint is already `xl` (1280px) for ES via `app/(es)/es/layout.tsx`
+
+### Notion Tracker Updated ✅
+- About AccidentPath: Spanish Route → `https://accidentpath.com/es/sobre-nosotros`, Spanish Status → Live
+- Contact AccidentPath: Spanish Route → `https://accidentpath.com/es/contacto`, Spanish Status → Live
+
+### Commits This Continuation
+| Hash | Message |
+|------|---------|
+| `0f85408` | feat(es): add Sobre Nosotros to ES header nav |
+| `30c6720` | feat(ui): add Contact Us / Contacto to footer company links |
+| `f517de1` | feat(es): add Spanish contact page (/es/contacto) |
+| `3dd611e` | feat(es): add Spanish About page + fix header crowding + fix language toggle routing |
