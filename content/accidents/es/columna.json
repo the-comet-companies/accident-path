@@ -1,0 +1,122 @@
+{
+  "slug": "columna",
+  "title": "Lesiones de Columna",
+  "shortTitle": "Lesiones de Columna",
+  "description": "Las lesiones de columna vertebral se encuentran entre las consecuencias más graves de los accidentes — pueden causar parálisis parcial o completa, dolor crónico e incapacidad permanente. Ya sea que la lesión ocurra en un accidente de auto, una caída o un incidente laboral, los pasos que tome inmediatamente después pueden tener consecuencias duraderas para su salud y sus opciones legales.",
+  "metaTitle": "Lesiones de Columna — Pasos Inmediatos, Evidencia y Opciones Legales",
+  "metaDescription": "¿Sufrió una lesión de columna en un accidente? Oriente sus pasos, recopile evidencia, entienda los seguros y sepa cuándo hablar con un abogado.",
+  "icon": "zap",
+  "commonCauses": [
+    { "title": "Accidentes de Vehículos de Motor", "description": "Los accidentes de auto, camión y motocicleta causan casi la mitad de todas las lesiones de médula espinal — la fuerza violenta del impacto comprime, fractura o disloca las vértebras." },
+    { "title": "Accidentes por Caídas", "description": "Las caídas desde alturas o sobre superficies duras son una causa principal de fracturas vertebrales, especialmente en adultos mayores y trabajadores de la construcción." },
+    { "title": "Accidentes Laborales y de Construcción", "description": "Las caídas desde andamios, escaleras o tejados — y los golpes con equipos pesados — con frecuencia resultan en traumatismos espinales graves." },
+    { "title": "Accidentes de Buceo y Natación", "description": "Zambullirse en agua poco profunda o golpear el fondo de una alberca puede causar lesiones catastróficas de la columna cervical en segundos." },
+    { "title": "Lesiones Deportivas y Recreativas", "description": "Los deportes de contacto, los accidentes en cuatrimotos y las actividades recreativas de alto impacto conllevan un riesgo significativo de lesión vertebral." },
+    { "title": "Actos de Violencia", "description": "Las heridas de bala y las agresiones físicas son una causa de lesión de la médula espinal y pueden fundamentar acciones legales tanto penales como civiles." }
+  ],
+  "likelyInjuries": [
+    { "slug": "traumatismo-craneal", "title": "Traumatismo Craneoencefálico", "severity": "severe" },
+    { "slug": "huesos-rotos", "title": "Fracturas Vertebrales", "severity": "catastrophic" },
+    { "slug": "tejido-blando", "title": "Hernia de Disco", "severity": "severe" },
+    { "slug": "latigazo", "title": "Latigazo Cervical", "severity": "moderate" }
+  ],
+  "immediateSteps": [
+    { "step": 1, "title": "No mueva a la persona lesionada — llame al 911", "description": "Las lesiones espinales sospechadas requieren inmovilización inmediata. Mover a alguien con una lesión espinal antes de que lleguen los socorristas capacitados puede causar o agravar la parálisis. Llame al 911 y mantenga a la persona quieta.", "urgency": "critical" },
+    { "step": 2, "title": "No retire cascos ni sujeciones", "description": "Si la persona lleva casco o está en un vehículo, no intente retirarla sin orientación profesional. El movimiento inadecuado puede causar daño permanente a la médula.", "urgency": "critical" },
+    { "step": 3, "title": "Asegúrese de que se cree un registro médico en la escena", "description": "Permita que los paramédicos evalúen y documenten la lesión en el lugar. Su reporte vincula el incidente con la lesión y forma parte del expediente médico.", "urgency": "critical" },
+    { "step": 4, "title": "Documente la escena si está físicamente en condiciones de hacerlo", "description": "Si usted u otra persona puede hacerlo de forma segura, fotografíe el lugar del accidente, los peligros que contribuyeron, los vehículos y cualquier condición que causó la lesión.", "urgency": "important" },
+    { "step": 5, "title": "Recopile información de los testigos", "description": "Los testigos que presenciaron el incidente pueden proporcionar relatos independientes de cómo ocurrió la lesión. Obtenga nombres e información de contacto antes de que alguien se retire del lugar.", "urgency": "important" },
+    { "step": 6, "title": "Solicite copias de todos los registros médicos de emergencia", "description": "Los registros de urgencias, los reportes de paramédicos y los resultados de imágenes del día del incidente son documentos fundamentales en cualquier reclamación por lesión espinal.", "urgency": "critical" },
+    { "step": 7, "title": "Consulte a un especialista de columna de inmediato", "description": "La atención de urgencias estabiliza la lesión. Necesitará evaluación por un neurocirujano o cirujano ortopédico de columna para valorar completamente la extensión del daño.", "urgency": "critical" },
+    { "step": 8, "title": "Comience a documentar las limitaciones funcionales", "description": "Lleve un registro diario de los niveles de dolor, las limitaciones de movilidad, las tareas que no puede realizar y la asistencia que requiere. Esto respalda futuras reclamaciones por salarios perdidos, costos de atención y calidad de vida.", "urgency": "helpful" }
+  ],
+  "evidenceChecklist": [
+    {
+      "category": "Registros Médicos de Emergencia y Agudos",
+      "priority": "critical",
+      "items": [
+        "Reportes de paramédicos y ambulancia del día del incidente",
+        "Registros de urgencias y notas del médico",
+        "Informes de resonancia magnética y tomografía de columna y estructuras adyacentes",
+        "Resultados de rayos X que muestren alineación vertebral o fracturas",
+        "Hallazgos de evaluación neurológica",
+        "Registros quirúrgicos si se realizó cirugía de columna"
+      ]
+    },
+    {
+      "category": "En la Escena del Accidente",
+      "priority": "critical",
+      "items": [
+        "Fotos del lugar del accidente y de los peligros que contribuyeron",
+        "Fotos del vehículo, equipo o superficie involucrados",
+        "Número del reporte policial o de incidente",
+        "Nombres e información de contacto de todos los testigos",
+        "Imágenes de cámaras de vigilancia o de tablero, si están disponibles"
+      ]
+    },
+    {
+      "category": "Documentación Médica Continua",
+      "priority": "critical",
+      "items": [
+        "Todas las notas del especialista de columna, neurocirujano y cirujano ortopédico",
+        "Registros de fisioterapia y terapia ocupacional",
+        "Registros del especialista en manejo del dolor",
+        "Registros del centro de rehabilitación",
+        "Recetas y costos de equipos de adaptación",
+        "Plan de atención a largo plazo de los médicos tratantes"
+      ]
+    },
+    {
+      "category": "Impacto Funcional y Financiero",
+      "priority": "important",
+      "items": [
+        "Documentación del empleador sobre trabajo perdido e incapacidad para regresar",
+        "Talones de pago y registros de ingresos para el cálculo de salarios perdidos",
+        "Costos de atención domiciliaria y facturas del cuidador",
+        "Costos de modificaciones al hogar (rampas, acceso para silla de ruedas)",
+        "Costos de modificaciones al vehículo",
+        "Documentación de la pérdida de capacidad de ingresos futura"
+      ]
+    },
+    {
+      "category": "Seguros y Aspectos Legales",
+      "priority": "important",
+      "items": [
+        "Todas las pólizas de seguro (salud, auto, compensación laboral, discapacidad)",
+        "Toda la correspondencia escrita con los ajustadores de seguros",
+        "Cualquier oferta de acuerdo recibida por escrito",
+        "Documentación de la reclamación de compensación laboral si está relacionada con el trabajo"
+      ]
+    }
+  ],
+  "timelineRisks": [
+    { "period": "De inmediato", "risk": "El movimiento inadecuado causa daño permanente", "action": "No mueva a una persona lesionada. Llame al 911 y manténgala quieta hasta que lleguen los socorristas capacitados. Esto es una cuestión de seguridad vital, no solo legal." },
+    { "period": "Dentro de 24-72 horas", "risk": "Lesión secundaria y diagnóstico incompleto", "action": "Las lesiones de médula espinal pueden empeorar en las horas posteriores al trauma conforme aumenta la inflamación. Asegúrese de que la persona lesionada reciba seguimiento en un centro médico con experiencia en lesiones espinales." },
+    { "period": "Dentro de 30 días", "risk": "Se cierran los plazos de reporte de seguros", "action": "Notifique a todas las aseguradoras pertinentes de manera oportuna. Para lesiones laborales, los plazos de reporte de compensación laboral pueden ser de tan solo 30 días." },
+    { "period": "Dentro de 6 meses", "risk": "La evidencia y los testigos se vuelven inaccesibles", "action": "Asegure fotografías de la escena, imágenes de cámaras de vigilancia y declaraciones de testigos. La evidencia física en la escena será alterada o retirada rápidamente." },
+    { "period": "1 año (Entidades gubernamentales)", "risk": "Requisito de aviso de reclamación gubernamental", "action": "Si estuvo involucrada una agencia, vehículo o propiedad gubernamental, California exige que se presente un aviso de reclamación dentro de 6 meses. No cumplir con este plazo generalmente impide la reclamación." },
+    { "period": "2 años (California y Arizona)", "risk": "Prescripción para lesiones personales", "action": "Ambos estados tienen un plazo de prescripción de 2 años para la mayoría de las reclamaciones de lesiones personales. Los casos de lesiones espinales requieren una preparación exhaustiva — no espere para consultar a un abogado." }
+  ],
+  "insuranceIssues": [
+    { "issue": "Presión para acordar en casos de lesiones catastróficas", "explanation": "Las aseguradoras pueden ofrecer un acuerdo global importante pero insuficiente al inicio de la reclamación, antes de que se comprenda el costo total de vida de una lesión espinal. Aceptar prematuramente cierra todas las reclamaciones futuras." },
+    { "issue": "Causalidad disputada", "explanation": "Las aseguradoras pueden argumentar que una lesión espinal era preexistente, degenerativa o causada por un incidente previo. Las imágenes previas a la lesión y el testimonio médico experto con frecuencia son necesarios para rebatir estos argumentos." },
+    { "issue": "Exámenes médicos independientes (EMI)", "explanation": "Las aseguradoras pueden requerir una evaluación por un médico de su elección. Los médicos de EMI en casos de lesiones catastróficas frecuentemente minimizan la extensión y la permanencia de la lesión." },
+    { "issue": "Subestimación de costos de por vida", "explanation": "El costo a largo plazo de una lesión de médula espinal — incluyendo atención, equipo, modificaciones al hogar y pérdida de ingresos — puede superar varios millones de dólares. Las aseguradoras típicamente subestiman estas cifras de manera significativa." },
+    { "issue": "Compensación laboral vs. reclamaciones contra terceros", "explanation": "Si la lesión ocurrió en el trabajo, la compensación laboral puede no ser la única opción. Si un tercero (contratista, fabricante de equipos, propietario de la propiedad) contribuyó a la lesión, también puede estar disponible una reclamación civil separada." }
+  ],
+  "whenToGetLawyer": [
+    "Usted o un familiar sufrió cualquier lesión de médula espinal, fractura vertebral o hernia de disco en un accidente",
+    "Existe alguna posibilidad de parálisis parcial o completa",
+    "La lesión resultó en cirugía, hospitalización o rehabilitación a largo plazo",
+    "No puede regresar a su ocupación anterior ni a ningún empleo remunerado",
+    "Una aseguradora está disputando la gravedad o la causa de la lesión espinal",
+    "Recibió una oferta de acuerdo anticipada antes de completar su tratamiento médico",
+    "La lesión ocurrió en un lugar de trabajo, en la propiedad de otra persona o involucró un vehículo comercial",
+    "Se anticipan costos de atención a largo plazo o de por vida"
+  ],
+  "relatedAccidents": ["auto", "camion", "caida", "construccion", "trabajo"],
+  "relatedInjuries": ["traumatismo-craneal", "huesos-rotos", "tejido-blando"],
+  "relatedGuides": ["lista-evidencia", "despues-accidente-auto", "contratar-abogado"],
+  "relatedTools": ["evaluacion-caso", "lista-evidencia", "calculadora-salario"],
+  "translationStatus": "needs-review"
+}

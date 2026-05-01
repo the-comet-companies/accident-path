@@ -15,7 +15,7 @@ import { SLUG_MAP_EN, SLUG_MAP_ES, NAV_ACCIDENT_TYPES } from '@/i18n/config'
 const ACCIDENT_EN_SLUGS = [
   'car', 'truck', 'motorcycle', 'slip-and-fall', 'workplace', 'bicycle',
   'pedestrian', 'dog-bite', 'construction', 'premises', 'product',
-  'wrongful-death', 'uber-lyft',
+  'wrongful-death', 'uber-lyft', 'spinal', 'traumatic-brain',
 ]
 
 export async function generateStaticParams() {

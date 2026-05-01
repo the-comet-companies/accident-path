@@ -16,16 +16,9 @@ The user reviews all completed work before it's marked Live. Do not update Notio
 ---
 
 
-## Spanish — Not Started (4 pages)
+## Spanish — Not Started
 
-These English pages exist but have no Spanish version yet.
-
-| Page | English Route | Notes |
-|------|--------------|-------|
-| Spinal Accident Guide | `/accidents/spinal` | Needs `content/accidents/es/` JSON + `/es/accidentes/[slug]` page |
-| Traumatic Brain Accident Guide | `/accidents/traumatic-brain` | Needs `content/accidents/es/` JSON + `/es/accidentes/[slug]` page |
-
-When done: update `Spanish Status` → `Live` and set `Spanish Route` in Notion.
+All Spanish pages are now complete. No pending items.
 
 ---
 

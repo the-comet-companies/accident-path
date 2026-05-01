@@ -1,0 +1,120 @@
+{
+  "slug": "traumatismo-craneal",
+  "title": "Traumatismo Craneoencefálico",
+  "shortTitle": "Traumatismo Craneal",
+  "description": "Los traumatismos craneoencefálicos pueden resultar de accidentes de auto, caídas, incidentes laborales o cualquier evento que implique un golpe en la cabeza. Los síntomas de un TCE pueden ser tardíos, mal diagnosticados o empeorar con el tiempo — lo que hace que la evaluación médica temprana y la documentación exhaustiva sean esenciales para proteger su salud y su reclamación.",
+  "metaTitle": "Guía de Traumatismo Craneal — Pasos, Evidencia y Opciones Legales",
+  "metaDescription": "¿Sufrió un traumatismo craneal en un accidente? Orientación sobre pasos inmediatos, evidencia a recopilar y cuándo hablar con un abogado de lesiones.",
+  "icon": "brain",
+  "commonCauses": [
+    { "title": "Accidentes de Vehículos de Motor", "description": "Los accidentes de auto, camión y motocicleta son la principal causa de TCE — la fuerza repentina del impacto hace que el cerebro se mueva dentro del cráneo." },
+    { "title": "Accidentes por Caídas", "description": "Las caídas son la segunda causa principal de TCE, especialmente en superficies duras o desde alturas elevadas." },
+    { "title": "Accidentes Laborales", "description": "Los sitios de construcción, bodegas e instalaciones industriales conllevan un alto riesgo de traumatismo craneal por objetos que caen o golpes con equipos." },
+    { "title": "Golpe por un Objeto", "description": "Ser golpeado por un objeto que cae, es lanzado o se mueve — común en la construcción y los deportes — puede causar un traumatismo cerebral significativo." },
+    { "title": "Agresión o Riña", "description": "Los golpes intencionales en la cabeza pueden resultar en TCE y pueden fundamentar tanto reclamaciones penales como civiles." },
+    { "title": "Actividades Deportivas y Recreativas", "description": "Los deportes de contacto, el ciclismo sin casco y las actividades de alto impacto conllevan riesgo de TCE, aunque estos casos difieren en responsabilidad legal." }
+  ],
+  "likelyInjuries": [
+    { "slug": "concussion", "title": "Conmoción Cerebral", "severity": "moderate" },
+    { "slug": "columna", "title": "Lesiones de Columna", "severity": "catastrophic" },
+    { "slug": "huesos-rotos", "title": "Fractura de Cráneo", "severity": "severe" },
+    { "slug": "tejido-blando", "title": "Lesiones Cervicales de Tejido Blando", "severity": "moderate" }
+  ],
+  "immediateSteps": [
+    { "step": 1, "title": "Llame al 911 o acuda a urgencias de inmediato", "description": "Cualquier sospecha de lesión en la cabeza debe ser evaluada por profesionales médicos de emergencia. No espere a que los síntomas empeoren — algunos TCE no son evidentes en la escena.", "urgency": "critical" },
+    { "step": 2, "title": "No abandone la escena sin documentación médica", "description": "Si acuden paramédicos, permítales evaluarle. Su reporte forma parte de su expediente médico y vincula el incidente con la lesión.", "urgency": "critical" },
+    { "step": 3, "title": "Documente la escena del incidente", "description": "Si es seguro hacerlo, fotografíe el lugar, los peligros presentes, los vehículos involucrados y cualquier cosa que causó o contribuyó al impacto en la cabeza.", "urgency": "important" },
+    { "step": 4, "title": "Comience un diario de síntomas de inmediato", "description": "Los síntomas de TCE — dolores de cabeza, lagunas de memoria, confusión, cambios de humor, alteraciones del sueño — pueden aparecer o empeorar en días. Registre cada síntoma con fecha y gravedad.", "urgency": "critical" },
+    { "step": 5, "title": "Consulte a un neurólogo o especialista", "description": "Una visita a urgencias puede no capturar la extensión total de un TCE. Solicite una remisión para evaluación neurológica, resonancia magnética o pruebas cognitivas.", "urgency": "critical" },
+    { "step": 6, "title": "Notifique a su compañía aseguradora", "description": "Reporte el incidente a su aseguradora de manera oportuna. Limítese a los hechos — no minimice los síntomas ni especule sobre la gravedad.", "urgency": "important" },
+    { "step": 7, "title": "Evite dar declaraciones grabadas sin orientación legal", "description": "Las reclamaciones por TCE con frecuencia implican disputas de causalidad. Antes de hablar con cualquier aseguradora contraria, considere consultar a un abogado de lesiones personales.", "urgency": "important" },
+    { "step": 8, "title": "Preserve evidencia de pérdida de funciones", "description": "Documente el trabajo perdido, las tareas que ya no puede realizar y la asistencia que requiere. Esto respalda futuras reclamaciones por pérdida de salario y calidad de vida.", "urgency": "helpful" }
+  ],
+  "evidenceChecklist": [
+    {
+      "category": "Documentación Médica",
+      "priority": "critical",
+      "items": [
+        "Registros de urgencias o atención inmediata del día del incidente",
+        "Todas las notas de evaluación del neurólogo y especialistas",
+        "Informes de resonancia magnética, tomografía y EEG",
+        "Resultados de pruebas neuropsicológicas",
+        "Registros de fisioterapia y terapia ocupacional",
+        "Registros de prescripción de medicamentos relacionados con el TCE",
+        "Diario de síntomas continuo (fechas, síntomas, gravedad)"
+      ]
+    },
+    {
+      "category": "En la Escena o Lugar del Incidente",
+      "priority": "critical",
+      "items": [
+        "Fotos del lugar donde ocurrió la lesión craneal",
+        "Fotos de cualquier objeto, vehículo o peligro que causó el impacto",
+        "Número del reporte policial o de incidente",
+        "Nombres e información de contacto de los testigos",
+        "Imágenes de cámaras de vigilancia o de tablero, si están disponibles"
+      ]
+    },
+    {
+      "category": "Registros de Impacto Funcional",
+      "priority": "important",
+      "items": [
+        "Documentación del empleador sobre los días de trabajo perdidos",
+        "Talones de pago y registros de ingresos para calcular el salario perdido",
+        "Registros de las tareas que ya no puede realizar",
+        "Declaraciones de familiares sobre cambios en el comportamiento o funcionamiento",
+        "Documentación de cualquier atención domiciliaria o asistencia requerida"
+      ]
+    },
+    {
+      "category": "Seguros y Aspectos Legales",
+      "priority": "important",
+      "items": [
+        "Sus pólizas de seguro de salud y auto",
+        "Toda la correspondencia con los ajustadores de seguros",
+        "Cualquier oferta de acuerdo recibida por escrito",
+        "Copia de cualquier reporte policial, laboral o de incidente"
+      ]
+    },
+    {
+      "category": "Evidencia a Largo Plazo",
+      "priority": "helpful",
+      "items": [
+        "Registros de dificultades cognitivas o de memoria continuas",
+        "Impacto documentado en las relaciones personales",
+        "Estimaciones de costos médicos futuros de los médicos tratantes",
+        "Plan de atención vital si se anticipa atención a largo plazo"
+      ]
+    }
+  ],
+  "timelineRisks": [
+    { "period": "Dentro de 24-72 horas", "risk": "Los síntomas tardíos de TCE pueden quedar sin diagnóstico", "action": "Busque evaluación neurológica aunque los hallazgos iniciales de urgencias parezcan leves. Las conmociones cerebrales y las lesiones axonales difusas con frecuencia no se detectan en las imágenes tempranas." },
+    { "period": "Dentro de 1-2 semanas", "risk": "Los síntomas cognitivos pueden atribuirse al estrés en lugar de a la lesión", "action": "Comience su diario de síntomas. Consulte con un especialista y solicite pruebas neuropsicológicas si los síntomas persisten." },
+    { "period": "Dentro de 30 días", "risk": "Se cierran los plazos de reporte de seguros", "action": "Notifique a todas las aseguradoras pertinentes de manera oportuna. Los retrasos pueden generar disputas de cobertura." },
+    { "period": "Dentro de 6 meses", "risk": "Los recuerdos de los testigos se desvanecen y la evidencia de la escena desaparece", "action": "Asegure declaraciones de los testigos y recopile cualquier imagen de cámaras de vigilancia disponible antes de que sea sobreescrita o eliminada." },
+    { "period": "2 años (California)", "risk": "Prescripción para lesiones personales", "action": "California generalmente exige que se presente una demanda por lesiones personales dentro de los 2 años de la fecha de la lesión. Los casos de TCE que involucran entidades gubernamentales pueden tener plazos mucho más cortos." },
+    { "period": "2 años (Arizona)", "risk": "Prescripción para lesiones personales", "action": "Arizona tiene un plazo de prescripción de 2 años para reclamaciones de lesiones personales. No espere — los casos de TCE requieren una preparación y documentación médica exhaustivas." }
+  ],
+  "insuranceIssues": [
+    { "issue": "Disputas de causalidad", "explanation": "Las aseguradoras frecuentemente argumentan que un TCE era preexistente, causado por un evento diferente o menos grave de lo reclamado. Una documentación médica exhaustiva y oportuna es esencial para rebatir estos argumentos." },
+    { "issue": "Presión para acordar rápidamente", "explanation": "Los casos de TCE con frecuencia tienen consecuencias a largo plazo que no son evidentes en las primeras semanas. Aceptar un acuerdo antes de comprender la extensión total de su lesión puede cerrar permanentemente su reclamación." },
+    { "issue": "Exámenes médicos independientes (EMI)", "explanation": "Las aseguradoras pueden requerirle que sea evaluado por un médico de su elección. Estos médicos de EMI son pagados por la aseguradora y sus hallazgos con frecuencia favorecen una resolución rápida." },
+    { "issue": "Disputas sobre pérdida de salario e ingresos futuros", "explanation": "Las aseguradoras pueden cuestionar la cantidad de ingresos perdidos debido a su lesión. Con frecuencia se necesitan expertos vocacionales y planificadores de atención vital para documentar el impacto económico a largo plazo." },
+    { "issue": "Limitaciones en daños no económicos", "explanation": "Los casos de TCE con frecuencia implican dolor significativo, sufrimiento y pérdida del disfrute de la vida. Estos daños no económicos pueden ser sustanciales pero están sujetos a negociación y, en algunos contextos, a límites legales." }
+  ],
+  "whenToGetLawyer": [
+    "Le diagnosticaron cualquier grado de conmoción cerebral, hemorragia cerebral o traumatismo craneoencefálico",
+    "Los síntomas persistieron más de 2 semanas o empeoraron con el tiempo",
+    "Perdió trabajo significativo o no puede regresar a su ocupación anterior",
+    "Una aseguradora está disputando si la lesión fue causada por el accidente",
+    "Recibió una oferta de acuerdo anticipada antes de completar su tratamiento médico",
+    "Se le requiere asistir a un examen médico independiente organizado por la aseguradora",
+    "Su lesión ha afectado su función cognitiva, memoria, personalidad o relaciones",
+    "El incidente involucró un vehículo comercial, empleador o propietario de propiedad"
+  ],
+  "relatedAccidents": ["auto", "camion", "caida", "construccion", "trabajo"],
+  "relatedInjuries": ["columna", "concussion", "tejido-blando"],
+  "relatedGuides": ["lista-evidencia", "despues-accidente-auto", "contratar-abogado"],
+  "relatedTools": ["evaluacion-caso", "lista-evidencia"],
+  "translationStatus": "needs-review"
+}
