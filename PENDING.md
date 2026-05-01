@@ -63,23 +63,6 @@ When done: update `Spanish Status` → `Live` and set `Spanish Route` in Notion.
 
 ---
 
-## Spanish — Coming Soon (6 tools)
-
-5 of 11 tools are live in Spanish. These 6 still need Spanish versions.
-
-| Tool | English Route |
-|------|--------------|
-| Lost Wages Estimator | `/tools/lost-wages-estimator` |
-| Statute Countdown | `/tools/statute-countdown` |
-| Insurance Call Prep | `/tools/insurance-call-prep` |
-| Settlement Readiness | `/tools/settlement-readiness` |
-| Record Request | `/tools/record-request` |
-| State Next Steps | `/tools/state-next-steps` |
-
-When done: update `Spanish Status` → `Live` and set `Spanish Route` in Notion.
-
----
-
 ## Not planned for Spanish (intentional)
 
 These pages show as "Spanish Not Started" in Notion but have no Spanish translation planned. Do not treat as pending work.

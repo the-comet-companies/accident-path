@@ -2,7 +2,7 @@
 
 ## Summary
 
-Audited the Notion page tracker, fixed stale tool statuses, built 5 of 6 Spanish tool pages (insurance-call-prep, lost-wages-estimator, record-request, settlement-readiness, state-next-steps), resolved several UI bugs, and pushed to main.
+Audited the Notion page tracker, fixed stale tool statuses, built all 6 Spanish tool pages, added Spanish output generators for state-next-steps and statute-countdown, resolved several UI bugs, and pushed to main. All 11 tools are now fully live in both EN and ES.
 
 ---
 
@@ -68,6 +68,21 @@ Audited the Notion page tracker, fixed stale tool statuses, built 5 of 6 Spanish
 - Implementer trimmed metaDescription from 172 → 158 chars to pass Zod max(160)
 - Notion updated: Spanish Status → Live, Spanish Route set
 
+## Task 6 Complete: statute-countdown ✅
+
+- Created `content/tools/es/cuenta-regresiva-plazo.json` (full translation)
+- Added `'statute-countdown': 'cuenta-regresiva-plazo'` to `SLUG_MAP_ES`
+- Added `'statute-countdown'` to `TOOL_EN_SLUGS` (now 11 items — all tools live)
+- Implementer trimmed metaDescription from 185 → 160 chars to pass Zod max(160)
+- Notion updated: Spanish Status → Live, Spanish Route set
+
+## Spanish Output Generators (state-next-steps + statute-countdown)
+
+- Root cause: result cards for these two tools were rendering in English on the ES pages
+- `lib/tools/output-generators-es.ts` only had 5 generators; `state-next-steps` and `statute-countdown` fell back to the EN generator
+- Fix: added `stateNextStepsEs` and `statuteCountdownEs` functions to `output-generators-es.ts`; registered both in `outputGeneratorsEs`
+- ES results now use Spanish strings, `es-MX` date formatting, and `/es/buscar-ayuda` CTA links
+
 ## Bug Fixes
 
 ### Coming Soon badges still showing on listing pages
@@ -100,9 +115,13 @@ Audited the Notion page tracker, fixed stale tool statuses, built 5 of 6 Spanish
 
 | Hash | Message |
 |------|---------|
-| (pending) | feat(es): add Spanish tool — state-next-steps (proximos-pasos-estado) |
+| `d5aae4d` | feat(es): add Spanish output generators for state-next-steps and statute-countdown |
+| `6dc9b8c` | feat(es): add Spanish tool — statute-countdown (cuenta-regresiva-plazo) |
+| `b11e29d` | docs: update session notes — tasks 4-5 complete |
+| `6fb666d` | feat(es): add Spanish tool — state-next-steps (proximos-pasos-estado) |
 | `f54ba32` | feat(es): add Spanish tool — settlement-readiness (preparacion-acuerdo) |
 | `46c4438` | docs: move session notes to session_docs/ and update with tasks 2-3 + bug fixes |
+| `4a15080` | docs: update session notes — tasks 2 & 3 complete, bug fixes documented |
 | `2fde8b0` | fix(ui): replace inline script in EmergencyBanner with useLayoutEffect to fix React 19 warning |
 | `8273286` | fix(es): add slip-fall alias to SLUG_MAP_ES to fix broken related-accident links |
 | `047fa92` | feat(es): add Spanish tool — record-request (solicitud-registros) |
@@ -121,10 +140,8 @@ Audited the Notion page tracker, fixed stale tool statuses, built 5 of 6 Spanish
 
 ## Remaining To-Do (from PENDING.md)
 
-### Spanish tools (1 remaining, plan written)
-| Tool | ES Slug |
-|------|---------|
-| statute-countdown | `cuenta-regresiva-plazo` |
+### Spanish tools
+All 6 tools are now live in Spanish. ✅
 
 ### City pages (20 — largest open chunk)
 All use the shared dynamic route. Each needs `content/cities/{slug}.json` + ES version.
