@@ -74,7 +74,7 @@ export default function StatesPage() {
                           Cities
                         </p>
                         <ul className="flex flex-wrap gap-2">
-                          {cities.map(city => (
+                          {cities.slice(0, 8).map(city => (
                             <li key={city.slug}>
                               <Link
                                 href={`/states/${state.slug}/${city.slug}`}
@@ -86,6 +86,14 @@ export default function StatesPage() {
                             </li>
                           ))}
                         </ul>
+                        {cities.length > 8 && (
+                          <Link
+                            href={`/states/${state.slug}`}
+                            className="inline-flex items-center gap-1 mt-3 text-xs text-primary-600 hover:text-primary-800 font-medium transition-colors"
+                          >
+                            View all {cities.length} cities <ArrowRight className="w-3 h-3" aria-hidden="true" />
+                          </Link>
+                        )}
                       </div>
                     )}
                   </div>
