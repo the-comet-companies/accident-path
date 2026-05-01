@@ -1,0 +1,103 @@
+{
+  "slug": "cuenta-regresiva-plazo",
+  "title": "Cuenta Regresiva del Plazo de Prescripción",
+  "metaTitle": "Cuenta Regresiva del Plazo de Prescripción — CA y AZ",
+  "metaDescription": "Estime cuánto tiempo le queda para presentar su reclamación por lesiones en California o Arizona. Ingrese la fecha del accidente y vea su fecha límite estimada.",
+  "description": "El plazo de prescripción establece una fecha límite legal estricta sobre su derecho a buscar compensación después de un accidente. Esta herramienta le ayuda a entender cuánto tiempo puede quedar y qué pasos debería considerar antes de que se acerque su fecha límite.",
+  "disclaimer": "Esta herramienta proporciona información de fechas límite estimadas únicamente con fines educativos. No constituye asesoramiento legal. Los plazos varían según sus circunstancias específicas, incluyendo quién fue responsable y si hay entidades gubernamentales involucradas. Consulte a un abogado para entender su fecha límite real de presentación.",
+  "steps": [
+    {
+      "id": "accident-date",
+      "question": "¿Cuándo ocurrió su accidente?",
+      "type": "date"
+    },
+    {
+      "id": "accident-type",
+      "question": "¿Qué tipo de accidente fue?",
+      "type": "select",
+      "options": [
+        { "value": "car-accident", "label": "Accidente de auto" },
+        { "value": "truck-accident", "label": "Accidente de camión" },
+        { "value": "motorcycle-crash", "label": "Accidente de motocicleta" },
+        { "value": "bicycle-accident", "label": "Accidente de bicicleta" },
+        { "value": "pedestrian-accident", "label": "Accidente de peatón" },
+        { "value": "slip-fall", "label": "Resbalón y caída" },
+        { "value": "dog-bite", "label": "Mordedura de perro o ataque de animal" },
+        { "value": "workplace-injury", "label": "Lesión en el lugar de trabajo" },
+        { "value": "other", "label": "Otro" }
+      ]
+    },
+    {
+      "id": "state",
+      "question": "¿En qué estado ocurrió el accidente?",
+      "type": "select",
+      "options": [
+        { "value": "CA", "label": "California" },
+        { "value": "AZ", "label": "Arizona" }
+      ]
+    }
+  ],
+  "supportingContent": [
+    {
+      "heading": "¿Qué es el plazo de prescripción?",
+      "content": "El plazo de prescripción es una fecha límite legal que limita cuánto tiempo tiene para presentar una demanda después de una lesión. Una vez que vence este plazo, los tribunales generalmente se negarán a escuchar su caso, independientemente de lo sólida que sea su evidencia o la gravedad de sus lesiones. Esta regla existe para garantizar que los casos se resuelvan mientras la evidencia y la memoria de los testigos aún son recientes y confiables.",
+      "tips": [
+        "El reloj generalmente comienza en la fecha del accidente — no cuando nota los síntomas por primera vez",
+        "Perder el plazo generalmente significa perder permanentemente su derecho a compensación",
+        "Ciertas circunstancias pueden pausar o extender el plazo — consulte a un abogado para estar seguro"
+      ]
+    },
+    {
+      "heading": "Plazo de prescripción en California para reclamaciones por lesiones",
+      "content": "En California, la mayoría de las reclamaciones por lesiones personales — incluidos accidentes de auto, resbalones y caídas, y mordeduras de perro — tienen un plazo de prescripción de dos años a partir de la fecha de la lesión. Sin embargo, las reclamaciones contra entidades gubernamentales en California tienen una ventana mucho más corta: debe presentar una reclamación de daños gubernamentales dentro de seis meses del incidente antes de poder demandar. Los menores de edad y las víctimas que no fueron conscientes de inmediato de sus lesiones pueden tener plazos diferentes bajo la regla del descubrimiento.",
+      "tips": [
+        "Lesiones personales estándar: 2 años a partir de la fecha de la lesión",
+        "Reclamaciones contra entidades gubernamentales: plazo administrativo de 6 meses",
+        "Descubrimiento tardío: el reloj puede comenzar cuando se descubrió la lesión o debería haberse descubierto"
+      ]
+    },
+    {
+      "heading": "Plazo de prescripción en Arizona para reclamaciones por lesiones",
+      "content": "Arizona también establece un plazo de prescripción de dos años para la mayoría de las reclamaciones por lesiones personales derivadas de accidentes. Al igual que California, las reclamaciones que involucran entidades gubernamentales requieren aviso oportuno — generalmente dentro de 180 días para agencias estatales y 60 días para entidades de ciudades o condados. Si la parte lesionada era menor de edad en el momento del accidente, el reloj puede no comenzar a correr hasta que alcance la mayoría de edad.",
+      "tips": [
+        "Lesiones personales estándar: 2 años a partir de la fecha de la lesión",
+        "Reclamaciones contra ciudades y condados: puede requerirse aviso dentro de 60 días",
+        "Menores de edad: el período de prescripción puede comenzar a los 18 años"
+      ]
+    },
+    {
+      "heading": "¿Qué ocurre si se vence el plazo de presentación?",
+      "content": "Si intenta presentar una demanda después de que haya vencido el plazo de prescripción, el demandado casi con certeza presentará una moción de desestimación, y el tribunal la concederá. Esto significa que pierde su derecho a buscar compensación a través de los tribunales permanentemente — incluso si la otra parte claramente tuvo la culpa y sus lesiones fueron graves. Las compañías de seguros rastrean estos plazos cuidadosamente, y perder el plazo elimina gran parte de su poder de negociación incluso en las discusiones de acuerdo.",
+      "tips": [
+        "Perder el plazo generalmente impide su caso en el tribunal sin excepciones",
+        "Incluso las negociaciones de seguros previas al litigio se ven afectadas por un plazo vencido",
+        "No espere hasta cerca del plazo para consultar a un abogado"
+      ]
+    },
+    {
+      "heading": "Excepciones que pueden extender su plazo",
+      "content": "Ciertas circunstancias pueden suspender — o pausar — el plazo de prescripción en California y Arizona. Los ejemplos comunes incluyen casos en que la parte lesionada era menor de edad en el momento del accidente, en que el demandado abandonó el estado y no estaba disponible para ser notificado, o en que la lesión no se descubrió hasta más tarde (la 'regla del descubrimiento'). El fraude del demandado también puede suspender el reloj. Estas excepciones son limitadas y requieren un análisis legal específico a su situación — no asuma que aplica una extensión sin consultar a un abogado."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Cuánto tiempo tengo para presentar una reclamación por lesiones personales en California?",
+      "answer": "En California, el plazo de prescripción general para reclamaciones por lesiones personales es de dos años a partir de la fecha de la lesión. Las reclamaciones contra entidades gubernamentales tienen un plazo mucho más corto — generalmente seis meses para presentar una reclamación administrativa de daños."
+    },
+    {
+      "question": "¿Cuánto tiempo tengo para presentar una reclamación por lesiones personales en Arizona?",
+      "answer": "El plazo de prescripción general de lesiones personales en Arizona es de dos años a partir de la fecha del accidente o lesión. Para reclamaciones contra entidades gubernamentales, los requisitos de aviso suelen ser de 60 a 180 días dependiendo de la entidad involucrada."
+    },
+    {
+      "question": "¿Qué es la regla del descubrimiento y cómo afecta mi plazo?",
+      "answer": "La regla del descubrimiento establece que el plazo de prescripción comienza cuando usted descubrió — o razonablemente debería haber descubierto — su lesión, en lugar de en la fecha del accidente. Esto puede aplicar cuando lesiones como daños internos o lesiones cerebrales traumáticas no son inmediatamente aparentes."
+    },
+    {
+      "question": "¿Se pausa el plazo de prescripción si fui lesionado/a siendo menor de edad?",
+      "answer": "Tanto en California como en Arizona, el plazo de prescripción para reclamaciones por lesiones personales generalmente se suspende — o pausa — cuando la persona lesionada era menor de edad en el momento del accidente, y puede no comenzar a correr hasta que alcance la mayoría de edad."
+    }
+  ],
+  "relatedTools": ["accident-case-quiz", "evidence-checklist", "lawyer-type-matcher"],
+  "relatedGuides": ["after-car-accident", "insurance-claims"],
+  "relatedAccidents": ["car", "truck", "motorcycle", "bicycle", "pedestrian"]
+}

@@ -41,6 +41,7 @@ export const SLUG_MAP_ES: Record<string, string> = {
   'record-request': 'solicitud-registros',
   'settlement-readiness': 'preparacion-acuerdo',
   'state-next-steps': 'proximos-pasos-estado',
+  'statute-countdown': 'cuenta-regresiva-plazo',
   'broken-bones': 'huesos-rotos',
   'whiplash': 'latigazo',
   'traumatic-brain': 'traumatismo-craneal',

@@ -25,6 +25,7 @@ const TOOL_EN_SLUGS = [
   'record-request',
   'settlement-readiness',
   'state-next-steps',
+  'statute-countdown',
 ]
 
 export async function generateStaticParams() {
