@@ -40,6 +40,7 @@ export const SLUG_MAP_ES: Record<string, string> = {
   'insurance-call-prep': 'preparacion-llamada-seguro',
   'record-request': 'solicitud-registros',
   'settlement-readiness': 'preparacion-acuerdo',
+  'state-next-steps': 'proximos-pasos-estado',
   'broken-bones': 'huesos-rotos',
   'whiplash': 'latigazo',
   'traumatic-brain': 'traumatismo-craneal',

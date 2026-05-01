@@ -24,6 +24,7 @@ const TOOL_EN_SLUGS = [
   'lost-wages-estimator',
   'record-request',
   'settlement-readiness',
+  'state-next-steps',
 ]
 
 export async function generateStaticParams() {

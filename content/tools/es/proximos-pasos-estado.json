@@ -1,0 +1,90 @@
+{
+  "slug": "proximos-pasos-estado",
+  "title": "Próximos Pasos por Estado",
+  "metaTitle": "Próximos Pasos por Estado — Guía de Accidentes en CA y AZ",
+  "metaDescription": "Orientación específica por estado sobre plazos, próximos pasos y reglas clave para víctimas de accidentes en California y Arizona. Solo información educativa.",
+  "description": "Las reglas y plazos de lesiones personales difieren entre California y Arizona. Esta herramienta le ayuda a comprender las diferencias clave — plazos de presentación, reglas de seguro, estándares de culpa comparativa y requisitos de reclamaciones gubernamentales — para que sepa qué factores específicos del estado pueden ser relevantes para su situación.",
+  "disclaimer": "Esta herramienta proporciona información educativa general sobre las reglas de lesiones personales en California y Arizona. No constituye asesoramiento legal. Las leyes cambian y su aplicación depende de sus hechos y circunstancias específicas. Consulte a un abogado de lesiones personales con licencia en el estado correspondiente para obtener orientación sobre su situación individual.",
+  "steps": [
+    {
+      "id": "state",
+      "question": "¿En qué estado ocurrió el accidente?",
+      "type": "select",
+      "options": [
+        { "value": "CA", "label": "California" },
+        { "value": "AZ", "label": "Arizona" }
+      ]
+    },
+    {
+      "id": "accident-type",
+      "question": "¿En qué tipo de accidente estuvo involucrado/a?",
+      "type": "select",
+      "options": [
+        { "value": "car-accident", "label": "Accidente de auto" },
+        { "value": "truck-accident", "label": "Accidente de camión" },
+        { "value": "motorcycle-crash", "label": "Accidente de motocicleta" },
+        { "value": "bicycle-accident", "label": "Accidente de bicicleta" },
+        { "value": "pedestrian-accident", "label": "Accidente de peatón" },
+        { "value": "slip-fall", "label": "Resbalón y caída" },
+        { "value": "dog-bite", "label": "Mordedura de perro o ataque de animal" },
+        { "value": "workplace-injury", "label": "Lesión en el lugar de trabajo" },
+        { "value": "other", "label": "Otro" }
+      ]
+    },
+    {
+      "id": "accident-date",
+      "question": "¿Cuándo ocurrió el accidente?",
+      "type": "date"
+    }
+  ],
+  "supportingContent": [
+    {
+      "heading": "California: Reglas clave para víctimas de accidentes",
+      "content": "California es un estado de seguro basado en la culpa (de tipo tort), lo que significa que el seguro de la parte responsable es responsable de los daños. California sigue la regla de culpa comparativa pura — puede recuperar compensación incluso si usted tuvo parte de la culpa, pero su recuperación se reduce por su porcentaje de culpa. El plazo de prescripción para reclamaciones por lesiones personales es generalmente de dos años a partir de la fecha de la lesión. Las reclamaciones contra entidades gubernamentales requieren una reclamación formal de daños gubernamentales dentro de seis meses. California exige que todos los conductores tengan un seguro de responsabilidad mínimo de $15,000 por persona y $30,000 por incidente.",
+      "tips": [
+        "La culpa comparativa pura significa que incluso las partes con 99% de culpa pueden buscar alguna recuperación",
+        "Las reclamaciones gubernamentales tienen un plazo estricto de 6 meses — no confunda con el plazo de 2 años para demandas",
+        "La cobertura de motorista no asegurado (UM) de California le protege de conductores sin seguro"
+      ]
+    },
+    {
+      "heading": "Arizona: Reglas clave para víctimas de accidentes",
+      "content": "Arizona también es un estado de seguro basado en la culpa. Al igual que California, Arizona sigue la culpa comparativa pura — la culpa parcial de su parte reduce su recuperación proporcionalmente pero no le impide demandar. El plazo general de prescripción por lesiones personales en Arizona también es de dos años a partir de la fecha de la lesión. Las reclamaciones contra ciudades y condados generalmente requieren aviso dentro de 60 días; las reclamaciones contra agencias estatales requieren aviso dentro de 180 días. La cobertura mínima de responsabilidad de auto requerida en Arizona es de $25,000 por persona y $50,000 por incidente.",
+      "tips": [
+        "Los plazos de reclamaciones gubernamentales en Arizona son más estrictos que en California — 60 días para ciudades y condados",
+        "Arizona no requiere protección por lesiones personales (PIP), a diferencia de algunos estados sin culpa",
+        "La cobertura de motorista no asegurado es importante en Arizona dado el alto índice de conductores sin seguro"
+      ]
+    },
+    {
+      "heading": "Reclamaciones contra entidades gubernamentales: plazos críticos",
+      "content": "Cuando su accidente involucra un vehículo gubernamental, un empleado del gobierno o un peligro en propiedad gubernamental (un bache, un semáforo roto, una acera peligrosa), se aplican procedimientos especiales de reclamación antes de poder demandar. En California, debe presentar una reclamación de daños gubernamentales ante la agencia correspondiente dentro de seis meses de la fecha de la lesión. En Arizona, el plazo es de 180 días para agencias estatales y 60 días para ciudades y condados. Perder estos plazos administrativos puede impedir completamente su demanda — son independientes y más cortos que el plazo general de prescripción de dos años.",
+      "tips": [
+        "Presente de inmediato si hay un vehículo o propiedad gubernamental involucrado — no espere",
+        "La respuesta de la entidad gubernamental (o la falta de respuesta) activa plazos adicionales",
+        "Se recomienda encarecidamente un abogado con experiencia en reclamaciones gubernamentales para estos casos"
+      ]
+    },
+    {
+      "heading": "Cómo la culpa comparativa afecta su reclamación",
+      "content": "Tanto California como Arizona siguen la regla de 'culpa comparativa pura', lo que significa que su compensación se reduce por su parte de culpa en el accidente — pero no se le impide completamente recuperar algo, incluso si tuvo una culpa significativa. Por ejemplo, si se determina que usted tiene un 30% de culpa y sus daños son $100,000, recuperaría $70,000. Los ajustadores de seguros pueden intentar asignarle un porcentaje más alto de culpa para reducir lo que deben. Contar con evidencia sólida — incluido un informe policial, testimonios de testigos y fotos — es importante para contrarrestar los intentos de asignarle injustamente la culpa."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Importa en qué estado ocurrió el accidente si vivo en un estado diferente?",
+      "answer": "Sí. Las reclamaciones por lesiones personales generalmente se rigen por la ley del estado donde ocurrió el accidente, no donde usted vive. Esto incluye qué plazo de prescripción aplica, las reglas de culpa y los requisitos de reclamaciones gubernamentales. Si fue lesionado en California o Arizona pero vive en otro lugar, los plazos y procedimientos aplicables son los del estado donde ocurrió el accidente."
+    },
+    {
+      "question": "¿Cuál es la diferencia entre un estado de culpa y un estado sin culpa para el seguro?",
+      "answer": "En estados de culpa como California y Arizona, el seguro del conductor responsable es responsable de compensar a las víctimas. En estados sin culpa, el seguro propio de cada conductor cubre sus lesiones independientemente de la culpa. California y Arizona son ambos estados de culpa — lo que significa que puede presentar una reclamación contra la parte responsable y su aseguradora, en lugar de estar limitado a su propia cobertura."
+    },
+    {
+      "question": "¿Qué es la culpa comparativa y cómo afecta cuánto puedo recuperar?",
+      "answer": "La culpa comparativa significa que si usted comparte alguna responsabilidad por el accidente, su recuperación se reduce por su porcentaje de culpa. Bajo el sistema de culpa comparativa pura de California y Arizona, puede recuperar compensación incluso si tuvo más del 50% de la culpa — su indemnización simplemente se reduce proporcionalmente. Por ejemplo, un 25% de culpa de su parte reduce una recuperación de $100,000 a $75,000."
+    }
+  ],
+  "relatedTools": ["statute-countdown", "accident-case-quiz", "lawyer-type-matcher"],
+  "relatedGuides": ["after-car-accident", "insurance-claims"],
+  "relatedAccidents": ["car", "truck", "motorcycle", "bicycle", "pedestrian", "slip-fall"]
+}
