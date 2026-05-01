@@ -1,0 +1,48 @@
+{
+  "slug": "lancaster",
+  "name": "Lancaster",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Lancaster CA Accident Guide — Local Hospitals, Courts & Rights",
+  "metaDescription": "Injured in Lancaster, CA? Find local emergency hospitals, courts, and understand your rights under California personal injury law.",
+  "population": "~160,000",
+  "description": "Lancaster is the largest city in the Antelope Valley, located in the high desert of northern Los Angeles County. SR-14 (Antelope Valley Freeway) is the city's primary transportation artery, connecting Lancaster to the greater Los Angeles area approximately 70 miles south. High-speed multi-vehicle accidents on SR-14 are among the most common serious injury events in the region, often involving early-morning commuters traveling to aerospace and defense employers such as Edwards Air Force Base. SR-138 links Lancaster to the Palmdale area and carries both commuter and wind-energy transport vehicles. Surface streets such as Avenue K, Avenue J, and Sierra Highway handle local commercial and residential traffic with intersection collision exposure. Despite its remote setting, Lancaster falls within Los Angeles County jurisdiction, and the standard 6-month government claim deadline applies for all incidents involving public property, municipal vehicles, or county infrastructure.",
+  "hospitals": [
+    {
+      "name": "Antelope Valley Hospital",
+      "address": "1600 W Ave J, Lancaster, CA 93534",
+      "erAvailable": true
+    },
+    {
+      "name": "Palmdale Regional Medical Center",
+      "address": "38600 Medical Center Dr, Palmdale, CA 93551",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Los Angeles Superior Court — Michael D. Antonovich Antelope Valley Courthouse",
+      "address": "42011 4th St W, Lancaster, CA 93534",
+      "type": "General civil and personal injury"
+    }
+  ],
+  "commonAccidentTypes": [
+    "High-speed multi-vehicle accidents on SR-14 (Antelope Valley Freeway)",
+    "Head-on collisions on rural two-lane sections of SR-138",
+    "Commuter accidents during peak AM/PM hours on SR-14 approaches",
+    "Commercial truck accidents transporting wind turbine components on SR-138",
+    "Intersection collisions on Avenue K and Avenue J",
+    "Pedestrian accidents along Sierra Highway commercial corridor"
+  ],
+  "notableCorridors": [
+    "SR-14 (Antelope Valley Freeway) — primary commuter artery with high-speed accident history",
+    "SR-138 — cross-desert connector with wind energy transport and rural collision risk",
+    "Avenue K — major east-west surface artery through central Lancaster",
+    "Avenue J — commercial and residential corridor with intersection exposure",
+    "Sierra Highway — historic north-south route with pedestrian and vehicle activity",
+    "10th St W — local connector with school zone and residential traffic"
+  ],
+  "localNotes": "Los Angeles County's 6-month government claim deadline applies to all incidents in Lancaster involving public property, county vehicles, or city infrastructure. Traffic collision reports are available through the Los Angeles County Sheriff's Department (Lancaster Station), which provides law enforcement for Lancaster. SR-14 accident victims should preserve evidence promptly — Caltrans may be a defendant in cases involving road design or maintenance defects. Aerospace industry commuters should document any employer-related travel circumstances that may affect liability analysis.",
+  "reviewedBy": "Pending Legal Review",
+  "reviewDate": "2026-05-01"
+}

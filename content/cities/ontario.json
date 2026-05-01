@@ -1,0 +1,48 @@
+{
+  "slug": "ontario",
+  "name": "Ontario",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Ontario CA Accident Guide — Local Hospitals, Courts & Rights",
+  "metaDescription": "Injured in Ontario, CA? Find local emergency hospitals, courts, and understand your rights under California personal injury law.",
+  "population": "~180,000",
+  "description": "Ontario is a major commercial and transportation hub in San Bernardino County, anchored by Ontario International Airport and an extensive network of warehousing and distribution facilities along the I-10 and I-15 corridors. The I-10/I-15 interchange is one of the highest-volume freight junctions in the Inland Empire, and heavy commercial truck traffic on both freeways significantly elevates accident severity risks. Ontario International Airport generates substantial rental car, rideshare, and commercial vehicle activity, particularly along Airport Drive and Vineyard Ave. The SR-60 adds another layer of freight movement through the city. Ontario Mills — one of the largest retail centers in California — creates dense pedestrian and vehicle traffic on Milliken Ave and Haven Ave. Injured parties in Ontario should be aware of San Bernardino County's 6-month government claim deadline for incidents involving public property, transit, or county vehicles.",
+  "hospitals": [
+    {
+      "name": "Kaiser Permanente Ontario Medical Center",
+      "address": "2295 S Vineyard Ave, Ontario, CA 91761",
+      "erAvailable": true
+    },
+    {
+      "name": "San Antonio Regional Hospital",
+      "address": "999 San Bernardino Rd, Upland, CA 91786",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "San Bernardino Superior Court — Rancho Cucamonga District",
+      "address": "8303 Haven Ave, Rancho Cucamonga, CA 91730",
+      "type": "General civil and personal injury"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Commercial truck accidents on I-10 and I-15 freight corridors",
+    "Airport-area accidents involving rental cars, rideshare vehicles, and taxis on Airport Dr",
+    "Freeway interchange collisions at the I-10/I-15 junction",
+    "Retail parking lot and pedestrian accidents near Ontario Mills on Milliken Ave",
+    "Warehouse district vehicle and forklift accidents on Haven Ave and Holt Blvd",
+    "Rear-end and lane-change accidents on SR-60"
+  ],
+  "notableCorridors": [
+    "I-10 (San Bernardino Freeway) — primary east-west freight artery",
+    "I-15 (Devore Freeway) — north-south corridor with high truck volume",
+    "SR-60 (Pomona Freeway) — secondary freight route with accident history",
+    "Milliken Ave — retail traffic concentration near Ontario Mills",
+    "Haven Ave — warehouse district and commercial corridor",
+    "Airport Dr — airport-adjacent high-turnover vehicle corridor"
+  ],
+  "localNotes": "San Bernardino County requires government claims to be filed within 6 months of an incident involving public property or vehicles. Traffic collision reports for Ontario city streets are available through the Ontario Police Department. Ontario International Airport-related incidents may involve private airline contractors, rental car companies, or airport authority, each requiring separate legal analysis. Truck accident cases often involve federal Hours of Service regulations and require early preservation of electronic logging device (ELD) data.",
+  "reviewedBy": "Pending Legal Review",
+  "reviewDate": "2026-05-01"
+}

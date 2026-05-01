@@ -1,0 +1,48 @@
+{
+  "slug": "pomona",
+  "name": "Pomona",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Pomona — Guía de Accidentes, Hospitales y Tribunales",
+  "metaDescription": "¿Lesionado/a en Pomona? Encuentre hospitales de emergencia locales, tribunales y conozca sus derechos bajo la ley de lesiones personales de California.",
+  "population": "~150,000",
+  "description": "Pomona es una ciudad importante en el este del Condado de Los Ángeles, que sirve como puerta de entrada entre el área metropolitana de Los Ángeles y el Inland Empire. Su infraestructura de autopistas — en particular la I-10, la SR-57 y la SR-60 — soporta un intenso tráfico diario de commuters y carga, lo que crea condiciones para colisiones traseras y multivehiculares de alta frecuencia. El intercambio I-10/SR-57 es uno de los cruces viales más congestionados y con mayor historial de accidentes en el este del Valle de San Gabriel. Cal Poly Pomona genera un tráfico significativo de peatones y ciclistas durante todo el año, mientras que el Fairplex (Recinto Ferial del Condado de Los Ángeles) atrae grandes multitudes durante la temporada de ferias, lo que amplifica el riesgo de accidentes en calles como Garey Ave y Holt Ave. Las actividades de transporte por aplicación y entregas a domicilio son elevadas en toda la ciudad. Cualquier persona lesionada en Pomona debe actuar con prontitud para preservar la evidencia y cumplir el plazo de 6 meses del Condado de Los Ángeles para reclamaciones gubernamentales.",
+  "hospitals": [
+    {
+      "name": "Pomona Valley Hospital Medical Center",
+      "address": "1798 N Garey Ave, Pomona, CA 91767",
+      "erAvailable": true
+    },
+    {
+      "name": "San Antonio Regional Hospital",
+      "address": "999 San Bernardino Rd, Upland, CA 91786",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Los Angeles Superior Court — Pomona Courthouse South",
+      "address": "400 Civic Center Plaza, Pomona, CA 91766",
+      "type": "Civil general y lesiones personales"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Accidentes de alcance y multivehículo en el intercambio I-10/SR-57",
+    "Accidentes de peatones cerca del campus de Cal Poly Pomona y en Holt Ave",
+    "Accidentes de ciclistas en Garey Ave y Mission Blvd",
+    "Accidentes de camiones comerciales en los corredores de carga I-10 y SR-60",
+    "Accidentes de vehículos de transporte por aplicación y entregas en zonas residenciales y comerciales",
+    "Accidentes de tráfico relacionados con eventos del Fairplex en Towne Ave y White Ave"
+  ],
+  "notableCorridors": [
+    "I-10 (San Bernardino Freeway) — principal corredor este-oeste de carga y commuters",
+    "SR-57 (Orange Freeway) — conector norte-sur con alto volumen de accidentes en intercambios",
+    "SR-60 (Pomona Freeway) — tráfico elevado de camiones comerciales",
+    "Garey Ave — calle de alta actividad cerca del hospital y corredor comercial",
+    "Holt Ave — corredor con historial documentado de accidentes en el centro de Pomona",
+    "Mission Blvd — exposición peatonal y de ciclistas en secciones urbanas"
+  ],
+  "localNotes": "El Condado de Los Ángeles impone un plazo de 6 meses para presentar reclamaciones gubernamentales, incluyendo accidentes que involucren vehículos de la ciudad de Pomona, aceras o propiedades del condado. Los informes de accidentes de tráfico dentro de los límites de Pomona son gestionados por el Departamento de Policía de Pomona y pueden solicitarse en línea o en persona. El Fairplex puede ser un demandado relevante durante la celebración de grandes eventos. Las víctimas deben asegurar rápidamente la evidencia disponible, incluidas las imágenes de cámaras de vigilancia de las instalaciones y negocios cercanos.",
+  "reviewedBy": "Revisión Legal Pendiente",
+  "reviewDate": "2026-05-01"
+}

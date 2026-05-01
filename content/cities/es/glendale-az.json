@@ -1,0 +1,48 @@
+{
+  "slug": "glendale-az",
+  "name": "Glendale",
+  "stateSlug": "arizona",
+  "stateAbbreviation": "AZ",
+  "metaTitle": "Glendale AZ — Guía de Accidentes, Hospitales y Tribunales",
+  "metaDescription": "¿Lesionado/a en Glendale, AZ? Encuentre hospitales de emergencia locales, tribunales y conozca sus derechos bajo la ley de lesiones personales de Arizona.",
+  "population": "~250,000",
+  "description": "Glendale es la cuarta ciudad más grande de Arizona, ubicada en el Condado de Maricopa en la zona oeste del área metropolitana de Phoenix. Su red de autopistas — incluyendo la I-17 y el Loop 101 (Agua Fria Freeway) — soporta un alto volumen de commuters y carga, con tasas de accidentes entre las más altas del área metropolitana. Grand Ave (US-60), una arteria diagonal que atraviesa la ciudad, tiene un notable historial de accidentes de vehículos comerciales debido a su ángulo inusual respecto al sistema de calles en cuadrícula. Bell Rd y Northern Ave son arterias este-oeste de alto volumen con frecuentes colisiones en intersecciones. Glendale también es un centro de entretenimiento: el State Farm Stadium alberga los partidos de los Arizona Cardinals y eventos a gran escala que generan un significativo tráfico de peatones y vehículos alrededor de 67th Ave en días de partido. Bajo la ley de Arizona, las personas lesionadas generalmente tienen dos años desde la fecha de la lesión para presentar una demanda por lesiones personales (A.R.S. § 12-542). Arizona sigue la regla de negligencia comparativa pura, lo que significa que cualquier porcentaje de culpa atribuido a la parte lesionada reduce su recuperación de forma proporcional. Las reclamaciones contra la Ciudad de Glendale o el Condado de Maricopa deben presentarse dentro de los 180 días.",
+  "hospitals": [
+    {
+      "name": "Banner Thunderbird Medical Center",
+      "address": "5555 W Thunderbird Rd, Glendale, AZ 85306",
+      "erAvailable": true
+    },
+    {
+      "name": "Arrowhead Hospital",
+      "address": "18701 N 67th Ave, Glendale, AZ 85308",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Maricopa County Superior Court",
+      "address": "201 W Jefferson St, Phoenix, AZ 85003",
+      "type": "Civil general y lesiones personales — gestiona los casos de Glendale"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Accidentes en autopista en la I-17 y el Loop 101 (Agua Fria Freeway)",
+    "Accidentes de vehículos comerciales en Grand Ave (US-60), arteria diagonal",
+    "Colisiones en intersecciones en Bell Rd y Northern Ave",
+    "Accidentes de peatones y vehículos cerca del State Farm Stadium en días de partido",
+    "Colisiones traseras en 67th Ave durante el intenso tráfico de días de partido de los Cardinals",
+    "Accidentes de transporte por aplicación y en estacionamientos cerca de recintos deportivos y de entretenimiento"
+  ],
+  "notableCorridors": [
+    "I-17 (Black Canyon Freeway) — principal autopista norte-sur a través de Glendale",
+    "Loop 101 (Agua Fria Freeway) — circunvalación este-oeste con alto volumen de commuters",
+    "Grand Ave (US-60) — arteria diagonal con elevada tasa de accidentes de vehículos comerciales",
+    "Bell Rd — arteria este-oeste de alto volumen con frecuentes accidentes en intersecciones",
+    "Northern Ave — corredor comercial con exposición en intersecciones semaforizadas y comercio minorista",
+    "67th Ave — corredor del área del estadio con oleadas de tráfico peatonal y vehicular en días de partido"
+  ],
+  "localNotes": "El plazo de prescripción de Arizona para casos de lesiones personales es generalmente de dos años a partir de la fecha de la lesión, conforme a A.R.S. § 12-542. Arizona aplica la negligencia comparativa pura — cualquier porcentaje de culpa atribuido a la persona lesionada reduce su recuperación en esa proporción. Las reclamaciones contra la Ciudad de Glendale o el Condado de Maricopa deben presentarse dentro de los 180 días del incidente. Los informes de accidentes en Glendale pueden obtenerse del Departamento de Policía de Glendale o, para incidentes en autopistas, del Departamento de Transporte de Arizona (ADOT). Los eventos en el State Farm Stadium pueden involucrar a múltiples entidades, incluyendo la organización de los Arizona Cardinals y los operadores del recinto.",
+  "reviewedBy": "Revisión Legal Pendiente",
+  "reviewDate": "2026-05-01"
+}

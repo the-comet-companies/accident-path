@@ -1,0 +1,48 @@
+{
+  "slug": "huntington-beach",
+  "name": "Huntington Beach",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Huntington Beach Accident Guide — Hospitals, Courts & Rights",
+  "metaDescription": "Injured in Huntington Beach? Find local emergency hospitals, courts, and understand your rights under California personal injury law.",
+  "population": "~200,000",
+  "description": "Huntington Beach, known as Surf City USA, is a coastal Orange County city whose unique mix of beachfront tourism, suburban neighborhoods, and busy arterials creates a distinctive accident landscape. SR-1 (Pacific Coast Highway) is the primary coastal corridor and sees frequent pedestrian, cyclist, and vehicle collisions, particularly near the pier, downtown district, and beach access points. Seasonal tourism significantly amplifies pedestrian exposure from late spring through summer. Beach Blvd (SR-39) is one of Orange County's most documented high-accident corridors, running through commercial zones with heavy signal-intersection traffic. The I-405 serves as the primary regional freeway connection, generating commuter rear-end and lane-change accidents. The Orange County Transportation Authority (OCTA) operates bus services in the city, making transit agencies potential defendants in injury cases. Orange County's 6-month government claim deadline applies for accidents involving public property or transit vehicles.",
+  "hospitals": [
+    {
+      "name": "Huntington Beach Hospital",
+      "address": "17772 Beach Blvd, Huntington Beach, CA 92647",
+      "erAvailable": true
+    },
+    {
+      "name": "MemorialCare — Orange Coast Medical Center",
+      "address": "18111 Brookhurst St, Fountain Valley, CA 92708",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Orange County Superior Court — Harbor Justice Center",
+      "address": "4601 Jamboree Rd, Newport Beach, CA 92660",
+      "type": "General civil and personal injury"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Pedestrian accidents on Pacific Coast Highway (SR-1) near the pier and beach access",
+    "Bicycle accidents along PCH bike paths and Beach Blvd",
+    "Rear-end and intersection accidents on Beach Blvd (SR-39) commercial corridor",
+    "Freeway accidents on I-405 — commuter rear-end and lane-change collisions",
+    "Rideshare and tourist vehicle accidents near downtown during peak season",
+    "OCTA bus-related transit injury incidents"
+  ],
+  "notableCorridors": [
+    "SR-1 (Pacific Coast Highway) — coastal pedestrian and vehicle collision hotspot",
+    "Beach Blvd (SR-39) — documented high-accident commercial arterial",
+    "I-405 (San Diego Freeway) — primary regional freeway with commuter accident volume",
+    "SR-22 (Garden Grove Freeway) — northern city boundary freeway connector",
+    "Magnolia Ave — north-south arterial with intersection accident exposure",
+    "Bolsa Ave — high-traffic corridor near residential and commercial zones"
+  ],
+  "localNotes": "Orange County imposes a 6-month deadline for filing claims against public entities, including the City of Huntington Beach, OCTA, and county-maintained roads. Traffic collision reports can be requested from the Huntington Beach Police Department. Seasonal tourist events near the pier and downtown may involve both city and private event organizers as defendants. Evidence from beachside business cameras and city surveillance should be secured promptly.",
+  "reviewedBy": "Pending Legal Review",
+  "reviewDate": "2026-05-01"
+}

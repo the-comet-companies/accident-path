@@ -1,0 +1,48 @@
+{
+  "slug": "torrance",
+  "name": "Torrance",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Torrance — Guía de Accidentes, Hospitales y Tribunales",
+  "metaDescription": "¿Lesionado/a en Torrance? Encuentre hospitales de emergencia locales, tribunales y conozca sus derechos bajo la ley de lesiones personales de California.",
+  "population": "~145,000",
+  "description": "Torrance es una ciudad del sur de la Bahía en el Condado de Los Ángeles con una economía industrial y aeroespacial sólida, limitando con Redondo Beach, Hermosa Beach, Lawndale y Carson. La I-405 (San Diego Freeway) atraviesa la parte este de la ciudad y es una de las autopistas más congestionadas del sur de California, generando frecuentes colisiones traseras y de múltiples vehículos durante las horas pico. La SR-1 (Pacific Coast Highway) recorre el borde costero de la ciudad, donde el tráfico de visitantes a la playa, ciclistas y peatones crea una exposición significativa a accidentes cerca de los límites con Redondo Beach y Hermosa Beach. La I-110 (Harbor Freeway) forma el borde este de la ciudad y conecta Torrance con el centro de Los Ángeles. Hawthorne Boulevard es la arteria comercial norte-sur principal con alta conflictividad en las intersecciones de las calles transversales más importantes. Carson Street y Sepulveda Boulevard soportan cargas significativas de commuters y tráfico comercial en dirección este-oeste. El Harbor-UCLA Medical Center, ubicado dentro de Torrance, es un centro de trauma de Nivel I y un destino frecuente para víctimas de accidentes graves de todo el sur de la Bahía. El sistema Torrance Transit y las rutas de autobús de LA Metro operan en la ciudad.",
+  "hospitals": [
+    {
+      "name": "Torrance Memorial Medical Center",
+      "address": "3330 Lomita Blvd, Torrance, CA 90505",
+      "erAvailable": true
+    },
+    {
+      "name": "Harbor-UCLA Medical Center",
+      "address": "1000 W Carson St, Torrance, CA 90502",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Los Angeles Superior Court — Torrance Courthouse",
+      "address": "825 Maple Ave, Torrance, CA 90503",
+      "type": "Civil general y lesiones personales"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Colisiones traseras y de múltiples vehículos en la I-405 a través del corredor del sur de la Bahía",
+    "Accidentes de peatones y ciclistas en la SR-1 (Pacific Coast Highway) cerca de los accesos a la playa",
+    "Colisiones en intersecciones en Hawthorne Blvd en los cruces este-oeste principales",
+    "Accidentes en zonas industriales y de almacenamiento cerca de instalaciones aeroespaciales y manufactureras",
+    "Colisiones laterales en los corredores comerciales de Carson St y Sepulveda Blvd",
+    "Lesiones relacionadas con el tránsito en rutas de Torrance Transit y autobuses de LA Metro"
+  ],
+  "notableCorridors": [
+    "I-405 (San Diego Freeway) — autopista altamente congestionada con frecuentes colisiones traseras",
+    "SR-1 (Pacific Coast Highway) — ruta costera con tráfico de peatones, ciclistas y turistas",
+    "I-110 (Harbor Freeway) — autopista en el borde este de la ciudad que conecta con el centro de LA",
+    "Hawthorne Blvd — arteria comercial norte-sur principal con intersecciones semaforizadas concurridas",
+    "Carson St — corredor este-oeste que enlaza Torrance con las ciudades vecinas del sur de la Bahía",
+    "Sepulveda Blvd — calle comercial e industrial de superficie con tipos de tráfico mixtos"
+  ],
+  "localNotes": "Torrance se encuentra en el Condado de Los Ángeles. Los accidentes que involucren propiedad, aceras o vehículos de la ciudad o el condado requieren presentar una reclamación gubernamental dentro de los 6 meses posteriores a la fecha de la lesión. Los informes de colisiones de tráfico del Departamento de Policía de Torrance pueden solicitarse a través de los Registros del TPD. El Harbor-UCLA Medical Center es un centro de trauma de Nivel I operado por el Condado de LA y atiende con frecuencia a víctimas de accidentes graves de todo el sur de la Bahía. LA Metro y Torrance Transit son posibles demandados en casos de lesiones relacionadas con el tránsito.",
+  "reviewedBy": "Revisión Legal Pendiente",
+  "reviewDate": "2026-05-01"
+}

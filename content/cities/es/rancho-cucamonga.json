@@ -1,0 +1,48 @@
+{
+  "slug": "rancho-cucamonga",
+  "name": "Rancho Cucamonga",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Rancho Cucamonga — Guía de Accidentes, Hospitales y Tribunales",
+  "metaDescription": "¿Lesionado/a en Rancho Cucamonga? Encuentre hospitales de emergencia locales, tribunales y conozca sus derechos bajo la ley de lesiones personales de California.",
+  "population": "~180,000",
+  "description": "Rancho Cucamonga es una de las ciudades de más rápido crecimiento en el Inland Empire, situada en el Condado de San Bernardino a los pies de las Montañas de San Gabriel. Su ubicación estratégica en la convergencia de la I-10, la I-15 y la SR-210 la convierte en un importante cruce de carga y commuters. El intercambio I-15/SR-210 es una zona documentada de alta colisionalidad, con el flujo diario de commuters entre el Inland Empire y Los Ángeles generando accidentes traseros y de cambio de carril en volumen significativo. Ontario Mills — uno de los mayores centros comerciales de tipo outlet del país — genera un denso tráfico minorista en Milliken Ave y Haven Ave, con frecuentes incidentes en estacionamientos e intersecciones. Un sector de almacenes y distribución grande y en crecimiento genera un intenso tráfico de camiones comerciales en toda la ciudad, especialmente en Base Line Rd y Vineyard Ave. La estación de Metrolink en Rancho Cucamonga crea exposición a lesiones en andenes y cruces a nivel. El plazo de 6 meses del Condado de San Bernardino para reclamaciones gubernamentales aplica a todos los incidentes con entidades públicas.",
+  "hospitals": [
+    {
+      "name": "Kaiser Permanente Fontana Medical Center",
+      "address": "9961 Sierra Ave, Fontana, CA 92335",
+      "erAvailable": true
+    },
+    {
+      "name": "San Antonio Regional Hospital",
+      "address": "999 San Bernardino Rd, Upland, CA 91786",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "San Bernardino Superior Court — Rancho Cucamonga District",
+      "address": "8303 Haven Ave, Rancho Cucamonga, CA 91730",
+      "type": "Civil general y lesiones personales"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Accidentes en el intercambio de autopistas I-15/SR-210",
+    "Accidentes de camiones comerciales en la I-10, I-15 y Base Line Rd",
+    "Accidentes de peatones y en estacionamientos cerca de Ontario Mills en Milliken Ave",
+    "Colisiones traseras entre commuters en la SR-210 (Foothill Freeway) durante horas pico",
+    "Accidentes en el tránsito de Metrolink en la Estación de Rancho Cucamonga",
+    "Accidentes de ciclistas y peatones en Foothill Blvd y Haven Ave"
+  ],
+  "notableCorridors": [
+    "I-15 (Devore Freeway) — principal autopista norte-sur con alto volumen de carga",
+    "SR-210 (Foothill Freeway) — conector de commuters con historial de accidentes en intercambios",
+    "I-10 (San Bernardino Freeway) — arteria este-oeste de carga",
+    "Milliken Ave — corredor minorista con concentración de tráfico de Ontario Mills",
+    "Haven Ave — arteria comercial y de almacenes norte-sur",
+    "Foothill Blvd — corredor histórico de la Ruta 66 con actividad mixta peatonal y vehicular"
+  ],
+  "localNotes": "El Condado de San Bernardino exige que las reclamaciones gubernamentales se presenten dentro de los 6 meses posteriores a un incidente que involucre propiedad pública, vehículos del condado o infraestructura municipal. Los informes de colisiones de tráfico en Rancho Cucamonga son gestionados por el Departamento de Policía de Rancho Cucamonga. Metrolink es un demandado frecuente en casos de lesiones en el tránsito y tiene su propio proceso de reclamaciones. Los accidentes de camiones comerciales en la I-15 y la I-10 pueden involucrar a múltiples partes responsables, incluyendo empresas de transporte, intermediarios de carga y fabricantes de vehículos — la preservación temprana de datos de la caja negra y del dispositivo de registro electrónico (ELD) es fundamental.",
+  "reviewedBy": "Revisión Legal Pendiente",
+  "reviewDate": "2026-05-01"
+}

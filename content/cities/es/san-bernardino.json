@@ -1,0 +1,48 @@
+{
+  "slug": "san-bernardino",
+  "name": "San Bernardino",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "San Bernardino — Guía de Accidentes, Hospitales y Tribunales",
+  "metaDescription": "¿Lesionado/a en San Bernardino? Encuentre hospitales de emergencia locales, tribunales y conozca sus derechos bajo la ley de lesiones personales de California.",
+  "population": "~230,000",
+  "description": "San Bernardino es la sede del Condado de San Bernardino — el condado más grande de los Estados Unidos contiguos por superficie — y actúa como puerta de entrada al este del Inland Empire. La I-10 atraviesa la ciudad transportando un volumen masivo de carga entre los puertos de Los Ángeles y Long Beach y la red ferroviaria nacional, convirtiéndola en uno de los corredores de camiones comerciales más transitados del oeste de los Estados Unidos. La I-215 intersecta la ciudad de norte a sur, conectando San Bernardino con Riverside. La SR-30 enlaza la ciudad con los vecinos de Highland y Redlands. La SR-18, conocida localmente como la Rim of the World Highway, asciende hacia las montañas de San Bernardino y es frecuente escenario de accidentes de motocicletas, vehículos recreativos y automóviles en sus curvas pronunciadas. Baseline Street y Highland Avenue son arterias urbanas de alto tráfico con significativa exposición peatonal cerca de distritos comerciales y paradas de transporte público. La red de autobuses Omnitrans opera ampliamente en la ciudad.",
+  "hospitals": [
+    {
+      "name": "Community Hospital of San Bernardino",
+      "address": "1805 Medical Center Dr, San Bernardino, CA 92411",
+      "erAvailable": true
+    },
+    {
+      "name": "St. Bernardine Medical Center",
+      "address": "2101 N Waterman Ave, San Bernardino, CA 92404",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "San Bernardino Superior Court — San Bernardino Justice Center",
+      "address": "247 W 3rd St, San Bernardino, CA 92415",
+      "type": "Civil general y lesiones personales"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Accidentes de camiones de carga en la I-10 entre los centros de distribución del Inland Empire y los puertos",
+    "Colisiones de alta velocidad en la I-215 en zonas de incorporación",
+    "Accidentes en carretera de montaña en la SR-18 (Rim of the World Hwy) con motocicletas y vehículos recreativos",
+    "Accidentes de peatones en Baseline St y Highland Ave cerca de paradas de autobús",
+    "Colisiones en intersecciones en los corredores comerciales de Waterman Ave y E St",
+    "Accidentes de ciclistas en arterias urbanas cerca de la Universidad Estatal de California en San Bernardino"
+  ],
+  "notableCorridors": [
+    "I-10 — corredor nacional de carga primario con volumen extremadamente elevado de camiones comerciales",
+    "I-215 — autopista norte-sur que conecta San Bernardino con Riverside",
+    "SR-30 (Highland Freeway) — conector este hacia Highland y Redlands",
+    "SR-18 (Rim of the World Hwy) — carretera de montaña con curvas pronunciadas y tráfico de vehículos recreativos",
+    "Baseline St — arteria urbana este-oeste con alta exposición peatonal y comercial",
+    "Waterman Ave — corredor comercial norte-sur principal propenso a conflictos en intersecciones"
+  ],
+  "localNotes": "San Bernardino se encuentra en el Condado de San Bernardino. Los accidentes que involucren propiedad, aceras o vehículos de la ciudad o el condado requieren presentar una reclamación gubernamental dentro de los 6 meses posteriores a la fecha de la lesión. Los informes de colisiones de tráfico del Departamento de Policía de San Bernardino pueden solicitarse a través de los Registros del SBPD. El servicio de autobuses Omnitrans es un posible demandado en casos de lesiones relacionadas con el tránsito en toda la ciudad.",
+  "reviewedBy": "Revisión Legal Pendiente",
+  "reviewDate": "2026-05-01"
+}

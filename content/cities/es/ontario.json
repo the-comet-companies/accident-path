@@ -1,0 +1,48 @@
+{
+  "slug": "ontario",
+  "name": "Ontario",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Ontario CA — Guía de Accidentes, Hospitales y Tribunales",
+  "metaDescription": "¿Lesionado/a en Ontario, CA? Encuentre hospitales de emergencia locales, tribunales y conozca sus derechos bajo la ley de lesiones personales de California.",
+  "population": "~180,000",
+  "description": "Ontario es un importante centro comercial y de transporte en el Condado de San Bernardino, con el Aeropuerto Internacional de Ontario y una extensa red de almacenes y centros de distribución a lo largo de los corredores de la I-10 y la I-15. El intercambio I-10/I-15 es uno de los cruces de mayor volumen de carga en el Inland Empire, y el intenso tráfico de camiones comerciales en ambas autopistas eleva significativamente la gravedad de los accidentes. El Aeropuerto Internacional de Ontario genera un considerable tráfico de vehículos de alquiler, transporte por aplicación y vehículos comerciales, especialmente en Airport Drive y Vineyard Ave. La SR-60 agrega otro flujo de transporte de carga a través de la ciudad. Ontario Mills — uno de los centros comerciales más grandes de California — concentra un denso tráfico peatonal y vehicular en Milliken Ave y Haven Ave. Las personas lesionadas en Ontario deben tener en cuenta el plazo de 6 meses del Condado de San Bernardino para reclamaciones gubernamentales en incidentes que involucren propiedad pública, tránsito o vehículos del condado.",
+  "hospitals": [
+    {
+      "name": "Kaiser Permanente Ontario Medical Center",
+      "address": "2295 S Vineyard Ave, Ontario, CA 91761",
+      "erAvailable": true
+    },
+    {
+      "name": "San Antonio Regional Hospital",
+      "address": "999 San Bernardino Rd, Upland, CA 91786",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "San Bernardino Superior Court — Rancho Cucamonga District",
+      "address": "8303 Haven Ave, Rancho Cucamonga, CA 91730",
+      "type": "Civil general y lesiones personales"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Accidentes de camiones comerciales en los corredores de carga I-10 e I-15",
+    "Accidentes en el área del aeropuerto que involucran vehículos de alquiler, transporte por aplicación y taxis en Airport Dr",
+    "Colisiones en el intercambio vial I-10/I-15",
+    "Accidentes de peatones y en estacionamientos cerca de Ontario Mills en Milliken Ave",
+    "Accidentes de vehículos y montacargas en el distrito de almacenes en Haven Ave y Holt Blvd",
+    "Colisiones traseras y de cambio de carril en la SR-60"
+  ],
+  "notableCorridors": [
+    "I-10 (San Bernardino Freeway) — principal arteria este-oeste de carga",
+    "I-15 (Devore Freeway) — corredor norte-sur con alto volumen de camiones",
+    "SR-60 (Pomona Freeway) — ruta secundaria de carga con historial de accidentes",
+    "Milliken Ave — concentración de tráfico minorista cerca de Ontario Mills",
+    "Haven Ave — corredor de distrito de almacenes y comercio",
+    "Airport Dr — corredor de alta rotación vehicular adyacente al aeropuerto"
+  ],
+  "localNotes": "El Condado de San Bernardino exige que las reclamaciones gubernamentales se presenten dentro de los 6 meses posteriores a un incidente que involucre propiedad pública o vehículos municipales. Los informes de colisiones de tráfico para las calles de Ontario están disponibles a través del Departamento de Policía de Ontario. Los incidentes relacionados con el Aeropuerto Internacional de Ontario pueden involucrar a contratistas privados de aerolíneas, empresas de alquiler de vehículos o la autoridad aeroportuaria, cada uno requiriendo un análisis legal independiente. Los casos de accidentes de camiones a menudo involucran regulaciones federales de Horas de Servicio y requieren la preservación temprana de los datos del dispositivo de registro electrónico (ELD).",
+  "reviewedBy": "Revisión Legal Pendiente",
+  "reviewDate": "2026-05-01"
+}

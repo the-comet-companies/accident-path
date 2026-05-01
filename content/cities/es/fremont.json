@@ -1,0 +1,48 @@
+{
+  "slug": "fremont",
+  "name": "Fremont",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Fremont — Guía de Accidentes, Hospitales y Tribunales",
+  "metaDescription": "¿Lesionado/a en Fremont? Encuentre hospitales de emergencia locales, tribunales y conozca sus derechos bajo la ley de lesiones personales de California.",
+  "population": "~240,000",
+  "description": "Fremont es una ciudad importante del sur de la Bahía de San Francisco, ubicada en el Condado de Alameda y reconocida por su industria manufacturera y tecnológica. El corredor de la I-880 atraviesa el corazón de la ciudad y soporta un alto volumen de camiones de carga comercial con destino al Puerto de Oakland, lo que incrementa el riesgo de colisiones traseras y laterales. La I-680 conecta Fremont con el área de Tri-Valley y genera conflictos de incorporación a alta velocidad. La Ruta Estatal 84 enlaza la ciudad hacia el oeste a través del Puente Dumbarton. Mission Boulevard y Fremont Boulevard son arterias urbanas principales con alta exposición peatonal cerca de centros comerciales y estaciones del BART. La avenida Mowry es un corredor comercial de alto tráfico que conecta el BART con el interior de la ciudad. La proximidad a las estaciones del BART genera riesgo de lesiones peatonales y relacionadas con el tránsito. Los ciclistas en la zona del Washington Hospital y los senderos de Quarry Lakes también enfrentan conflictos con el tráfico de commuters.",
+  "hospitals": [
+    {
+      "name": "Washington Hospital Healthcare System",
+      "address": "2000 Mowry Ave, Fremont, CA 94538",
+      "erAvailable": true
+    },
+    {
+      "name": "Kaiser Permanente Fremont Medical Center",
+      "address": "39400 Paseo Padre Pkwy, Fremont, CA 94538",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Alameda County Superior Court — Fremont Hall of Justice",
+      "address": "39439 Paseo Padre Pkwy, Fremont, CA 94538",
+      "type": "Civil general y lesiones personales"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Colisiones traseras y de cambio de carril en la I-880 cerca de rutas de carga",
+    "Accidentes de incorporación a alta velocidad en la I-680 y los accesos a SR-84",
+    "Accidentes de peatones cerca de las entradas al BART y cruces en Mowry Ave",
+    "Colisiones en intersecciones en Mission Blvd y Fremont Blvd",
+    "Accidentes de ciclistas en corredores urbanos cerca del Washington Hospital",
+    "Accidentes de camiones comerciales en la I-880 con destino al Puerto de Oakland"
+  ],
+  "notableCorridors": [
+    "I-880 — corredor primario de carga con alto volumen de camiones hacia el Puerto de Oakland",
+    "I-680 — autopista norte-sur de alta velocidad para commuters con zonas complejas de incorporación",
+    "SR-84 (Dumbarton Expressway) — ruta de tránsito intercondado con congestión en horas pico",
+    "Mission Blvd — arteria urbana con alta conflictividad en intersecciones y exposición peatonal",
+    "Fremont Blvd — corredor comercial con frecuentes conflictos de giro cerca de centros comerciales",
+    "Mowry Ave — arteria adyacente al BART con actividad peatonal y ciclista elevada"
+  ],
+  "localNotes": "Fremont se encuentra en el Condado de Alameda. Los accidentes que involucren propiedad, vehículos o aceras de la ciudad o el condado requieren presentar una reclamación gubernamental dentro de los 6 meses posteriores a la fecha de la lesión. Los informes de colisiones de tráfico del Departamento de Policía de Fremont pueden solicitarse a través de la División de Registros de la FPD. El BART es un posible demandado en casos de lesiones relacionadas con el tránsito en las estaciones de Fremont, Warm Springs y Centerville.",
+  "reviewedBy": "Revisión Legal Pendiente",
+  "reviewDate": "2026-05-01"
+}

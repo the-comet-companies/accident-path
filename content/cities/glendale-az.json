@@ -1,0 +1,48 @@
+{
+  "slug": "glendale-az",
+  "name": "Glendale",
+  "stateSlug": "arizona",
+  "stateAbbreviation": "AZ",
+  "metaTitle": "Glendale AZ Accident Guide — Local Hospitals, Courts & Rights",
+  "metaDescription": "Injured in Glendale, AZ? Find local emergency hospitals, courts, and understand your rights under Arizona personal injury law.",
+  "population": "~250,000",
+  "description": "Glendale is the fourth-largest city in Arizona, located in Maricopa County in the western Phoenix metropolitan area. Its freeway network — including I-17 and Loop 101 (Agua Fria Freeway) — carries high commuter and freight volume, with accident rates among the highest in the metro area. Grand Ave (US-60), a diagonal arterial bisecting the city, has a notable history of commercial vehicle accidents due to its unusual angle relative to the grid street system. Bell Rd and Northern Ave are high-volume east-west arterials with frequent intersection-related collisions. Glendale is also an entertainment hub: State Farm Stadium hosts Arizona Cardinals games and large-scale events that generate significant pedestrian and vehicle traffic around 67th Ave on game days. Under Arizona law, injured parties generally have two years from the date of injury to file a personal injury lawsuit (A.R.S. § 12-542). Arizona follows a pure comparative negligence rule, meaning any percentage of fault attributed to an injured party reduces their recovery proportionally. Claims against the City of Glendale or Maricopa County must be filed within 180 days.",
+  "hospitals": [
+    {
+      "name": "Banner Thunderbird Medical Center",
+      "address": "5555 W Thunderbird Rd, Glendale, AZ 85306",
+      "erAvailable": true
+    },
+    {
+      "name": "Arrowhead Hospital",
+      "address": "18701 N 67th Ave, Glendale, AZ 85308",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Maricopa County Superior Court",
+      "address": "201 W Jefferson St, Phoenix, AZ 85003",
+      "type": "General civil and personal injury — handles Glendale cases"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Freeway accidents on I-17 and Loop 101 (Agua Fria Freeway)",
+    "Commercial vehicle accidents on Grand Ave (US-60) diagonal arterial",
+    "Intersection collisions on Bell Rd and Northern Ave",
+    "Pedestrian and vehicle accidents near State Farm Stadium on event days",
+    "Rear-end accidents on 67th Ave during Cardinals game day traffic surges",
+    "Rideshare and parking lot accidents near sports and entertainment venues"
+  ],
+  "notableCorridors": [
+    "I-17 (Black Canyon Freeway) — primary north-south freeway through Glendale",
+    "Loop 101 (Agua Fria Freeway) — east-west bypass with high commuter volume",
+    "Grand Ave (US-60) — diagonal arterial with elevated commercial vehicle accident rate",
+    "Bell Rd — high-volume east-west arterial with frequent intersection accidents",
+    "Northern Ave — commercial corridor with retail and signal-intersection exposure",
+    "67th Ave — stadium-area corridor with game-day pedestrian and vehicle surges"
+  ],
+  "localNotes": "Arizona's statute of limitations for personal injury cases is generally two years from the date of injury under A.R.S. § 12-542. Arizona follows pure comparative negligence — any percentage of fault attributed to an injured party reduces their recovery by that proportion. Claims against the City of Glendale or Maricopa County must be filed within 180 days of the incident. Police reports for Glendale accidents can be obtained from the Glendale Police Department or, for freeway incidents, the Arizona Department of Transportation (ADOT). State Farm Stadium events may involve multiple entities including the Arizona Cardinals organization and venue operators.",
+  "reviewedBy": "Pending Legal Review",
+  "reviewDate": "2026-05-01"
+}

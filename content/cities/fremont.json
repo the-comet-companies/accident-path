@@ -1,0 +1,48 @@
+{
+  "slug": "fremont",
+  "name": "Fremont",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Fremont Accident Guide — Local Hospitals, Courts & Rights",
+  "metaDescription": "Injured in Fremont? Find local emergency hospitals, courts, and understand your rights under California personal injury law.",
+  "population": "~240,000",
+  "description": "Fremont is a major South Bay city in Alameda County, anchored by manufacturing and technology industries that draw significant daily commuter and freight traffic. The I-880 corridor runs through the heart of the city and carries heavy commercial truck loads heading toward the Port of Oakland, creating elevated rear-end and sideswipe collision risk. I-680 bisects Fremont from north to south, connecting it to the broader Tri-Valley area and generating high-speed merge conflicts. State Route 84 links the city westward across the Dumbarton Bridge, adding cross-bay commute volume. Mission Boulevard and Fremont Boulevard serve as primary urban arterials, both prone to intersection conflicts and pedestrian exposure near shopping centers and BART stations. Mowry Avenue is a high-traffic commercial corridor connecting BART to the city interior. BART station proximity creates pedestrian and transit-related injury exposure at key station access points. Cyclists using the Washington Hospital area and Quarry Lakes trails also face road-sharing conflicts with commuter traffic.",
+  "hospitals": [
+    {
+      "name": "Washington Hospital Healthcare System",
+      "address": "2000 Mowry Ave, Fremont, CA 94538",
+      "erAvailable": true
+    },
+    {
+      "name": "Kaiser Permanente Fremont Medical Center",
+      "address": "39400 Paseo Padre Pkwy, Fremont, CA 94538",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Alameda County Superior Court — Fremont Hall of Justice",
+      "address": "39439 Paseo Padre Pkwy, Fremont, CA 94538",
+      "type": "General civil and personal injury"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Freeway rear-end and lane-change collisions on I-880 near freight routes",
+    "High-speed merge accidents on I-680 and SR-84 on-ramps",
+    "Pedestrian accidents near BART station entrances and Mowry Ave crossings",
+    "Intersection T-bone collisions on Mission Blvd and Fremont Blvd",
+    "Bicycle accidents along urban corridors near Washington Hospital",
+    "Commercial truck accidents on I-880 heading toward Port of Oakland"
+  ],
+  "notableCorridors": [
+    "I-880 — primary freight corridor with heavy truck volume toward Port of Oakland",
+    "I-680 — high-speed north-south commuter freeway with complex merge zones",
+    "SR-84 (Dumbarton Expressway) — cross-bay commute route with peak-hour congestion",
+    "Mission Blvd — urban arterial with high intersection conflict and pedestrian exposure",
+    "Fremont Blvd — commercial corridor with frequent turning conflict near shopping centers",
+    "Mowry Ave — BART-adjacent arterial with elevated pedestrian and cyclist activity"
+  ],
+  "localNotes": "Fremont is in Alameda County. Accidents involving city or county property, vehicles, or sidewalks require a government claim filed within 6 months of the injury date. Fremont Police Department traffic collision reports can be requested through the FPD Records Division. BART is a potential defendant in transit-related injury cases at Fremont, Warm Springs, and Centerville stations.",
+  "reviewedBy": "Pending Legal Review",
+  "reviewDate": "2026-05-01"
+}

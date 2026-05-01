@@ -1,0 +1,48 @@
+{
+  "slug": "palmdale",
+  "name": "Palmdale",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Palmdale — Guía de Accidentes, Hospitales y Tribunales",
+  "metaDescription": "¿Lesionado/a en Palmdale? Encuentre hospitales de emergencia locales, tribunales y conozca sus derechos bajo la ley de lesiones personales de California.",
+  "population": "~165,000",
+  "description": "Palmdale es una comunidad del desierto alto en el norte del Condado de Los Ángeles que experimenta un rápido crecimiento, ubicada a lo largo del corredor de la SR-14 (Antelope Valley Freeway) adyacente a Lancaster. El crecimiento de la ciudad la ha convertido en una de las comunidades de más rápida expansión en el sur de California, incrementando el volumen de tráfico diario en sus autopistas y calles superficiales. La SR-14 es la principal ruta de commuters, y los accidentes a lo largo de este corredor — especialmente durante las horas pico de la mañana y la tarde — se encuentran entre los más frecuentes y graves en el Valle de Antelope. El Centro Regional de Palmdale y el Centro de Transporte de Palmdale, que presta servicio a Metrolink y al transporte público regional por autobús, son infraestructuras clave de la ciudad. Los empleadores del sector aeroespacial y de defensa cercanos a la Base Aérea Edwards y las instalaciones Skunk Works de Lockheed Martin generan un importante tráfico de commuters en las primeras horas de la mañana. El plazo de 6 meses del Condado de Los Ángeles para reclamaciones gubernamentales aplica a todos los incidentes con entidades públicas en Palmdale.",
+  "hospitals": [
+    {
+      "name": "Palmdale Regional Medical Center",
+      "address": "38600 Medical Center Dr, Palmdale, CA 93551",
+      "erAvailable": true
+    },
+    {
+      "name": "Antelope Valley Hospital",
+      "address": "1600 W Ave J, Lancaster, CA 93534",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Los Angeles Superior Court — Michael D. Antonovich Antelope Valley Courthouse",
+      "address": "42011 4th St W, Lancaster, CA 93534",
+      "type": "Civil general y lesiones personales"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Colisiones traseras a alta velocidad y accidentes multivehiculares en la SR-14 durante horas pico",
+    "Colisiones en intersecciones en Avenue S y Avenue P",
+    "Accidentes de peatones cerca del Centro de Transporte de Palmdale y la estación de Metrolink",
+    "Accidentes de camiones comerciales en la SR-14 y la SR-138",
+    "Accidentes de transporte por aplicación y tránsito a lo largo de Palmdale Blvd",
+    "Accidentes relacionados con el clima durante eventos de vientos fuertes o tormentas de polvo en la SR-14"
+  ],
+  "notableCorridors": [
+    "SR-14 (Antelope Valley Freeway) — principal corredor de commuters a alta velocidad",
+    "SR-138 — ruta desértica este-oeste con exposición a colisiones rurales",
+    "Palmdale Blvd — principal calle comercial superficial en el centro de Palmdale",
+    "Avenue S — corredor transversal residencial y comercial con riesgo en intersecciones",
+    "Avenue P — conector al norte de Palmdale",
+    "47th St E — corredor residencial y comercial ligero en crecimiento"
+  ],
+  "localNotes": "El plazo de 6 meses del Condado de Los Ángeles para reclamaciones gubernamentales aplica a incidentes en Palmdale que involucren propiedad pública, vehículos de la ciudad o infraestructura del condado. Los informes de colisiones de tráfico se obtienen a través del Departamento del Sheriff del Condado de Los Ángeles (Estación de Palmdale). Metrolink y la Autoridad de Transporte Metropolitano del Condado de LA (Metro) pueden ser posibles demandados en lesiones relacionadas con el tránsito en el Centro de Transporte de Palmdale. Los casos de accidentes en la SR-14 pueden involucrar a Caltrans como demandado si el diseño o mantenimiento de la vía es un factor contribuyente.",
+  "reviewedBy": "Revisión Legal Pendiente",
+  "reviewDate": "2026-05-01"
+}

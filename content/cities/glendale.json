@@ -1,0 +1,48 @@
+{
+  "slug": "glendale",
+  "name": "Glendale",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Glendale Accident Guide — Local Hospitals, Courts & Rights",
+  "metaDescription": "Injured in Glendale? Find local emergency hospitals, courts, and understand your rights under California personal injury law.",
+  "population": "~200,000",
+  "description": "Glendale is a densely populated city in Los Angeles County, situated between downtown Los Angeles, Burbank, and Pasadena. Its urban core along Brand Boulevard and Glendale Avenue sees heavy pedestrian foot traffic, particularly near the Americana at Brand and Glendale Galleria shopping districts, creating significant risk of pedestrian and bicycle accidents. The I-5 and SR-134 interchange is a complex, high-speed freeway junction that generates frequent merge and weave collisions. SR-2 descends from the Angeles National Forest through Glendale's hillside communities, and its curves and grade changes contribute to single-vehicle and head-on accident risk. I-210 skirts the city's northern border, connecting it to Pasadena and San Bernardino County. Colorado Street and San Fernando Road are busy surface streets with mixed commercial and commuter traffic. The Glendale Beeline municipal bus system and LADOT Commuter Express routes serve the city, making transit agencies potential defendants in injury cases. Glendale's hillside residential streets present additional risk of vehicle rollovers and property damage from inadequate signage.",
+  "hospitals": [
+    {
+      "name": "Dignity Health — Glendale Memorial Hospital",
+      "address": "1420 S Central Ave, Glendale, CA 91204",
+      "erAvailable": true
+    },
+    {
+      "name": "USC Verdugo Hills Hospital",
+      "address": "1812 Verdugo Blvd, Glendale, CA 91208",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Los Angeles Superior Court — Glendale Courthouse",
+      "address": "600 E Broadway, Glendale, CA 91206",
+      "type": "General civil and personal injury"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Freeway interchange collisions at the I-5 and SR-134 junction",
+    "Pedestrian accidents on Brand Blvd near Americana at Brand and Glendale Galleria",
+    "Hillside road accidents on SR-2 and Verdugo Blvd with grade-change hazards",
+    "Intersection collisions on Colorado St and San Fernando Rd commercial corridors",
+    "Bicycle accidents on Glendale Ave and downtown surface streets",
+    "Transit-related injuries involving Glendale Beeline and LADOT bus routes"
+  ],
+  "notableCorridors": [
+    "I-5 (Golden State Freeway) — primary north-south freeway with high commuter volume",
+    "SR-134 (Ventura Freeway) — east-west connector through Glendale to Pasadena",
+    "SR-2 (Glendale Freeway) — mountain descent route with grade and curve hazards",
+    "I-210 (Foothill Freeway) — high-speed corridor along the northern city edge",
+    "Brand Blvd — primary pedestrian shopping corridor with high foot traffic",
+    "San Fernando Rd — industrial and commercial surface street with truck traffic"
+  ],
+  "localNotes": "Glendale is in Los Angeles County. Accidents involving city or county property, sidewalks, or government vehicles require a government claim filed within 6 months of the injury date. Glendale Police Department traffic collision reports can be requested through GPD Records. The Glendale Beeline bus system and LA Metro are potential defendants in transit-related injury cases within the city.",
+  "reviewedBy": "Pending Legal Review",
+  "reviewDate": "2026-05-01"
+}

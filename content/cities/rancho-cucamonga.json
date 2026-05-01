@@ -1,0 +1,48 @@
+{
+  "slug": "rancho-cucamonga",
+  "name": "Rancho Cucamonga",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Rancho Cucamonga Accident Guide — Hospitals, Courts & Rights",
+  "metaDescription": "Injured in Rancho Cucamonga? Find local emergency hospitals, courts, and understand your rights under California personal injury law.",
+  "population": "~180,000",
+  "description": "Rancho Cucamonga is one of the fastest-growing cities in the Inland Empire, situated in San Bernardino County at the base of the San Gabriel Mountains. Its strategic location at the convergence of I-10, I-15, and SR-210 makes it a major freight and commuter junction. The I-15/SR-210 interchange is a documented high-collision zone, with daily commuter flow between the Inland Empire and Los Angeles generating rear-end and lane-change accidents at significant volume. Ontario Mills — one of the nation's largest outlet centers — drives dense retail traffic on Milliken Ave and Haven Ave, creating frequent parking lot and intersection incidents. A large and growing warehouse and distribution sector generates heavy commercial truck traffic throughout the city, particularly on Base Line Rd and Vineyard Ave. The Metrolink commuter rail station at Rancho Cucamonga creates platform and grade-crossing injury exposure. San Bernardino County's 6-month government claim deadline applies for all public entity incidents.",
+  "hospitals": [
+    {
+      "name": "Kaiser Permanente Fontana Medical Center",
+      "address": "9961 Sierra Ave, Fontana, CA 92335",
+      "erAvailable": true
+    },
+    {
+      "name": "San Antonio Regional Hospital",
+      "address": "999 San Bernardino Rd, Upland, CA 91786",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "San Bernardino Superior Court — Rancho Cucamonga District",
+      "address": "8303 Haven Ave, Rancho Cucamonga, CA 91730",
+      "type": "General civil and personal injury"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Freeway interchange accidents at the I-15/SR-210 junction",
+    "Commercial truck accidents on I-10, I-15, and Base Line Rd",
+    "Retail parking lot and pedestrian accidents near Ontario Mills on Milliken Ave",
+    "Rear-end commuter accidents on SR-210 (Foothill Freeway) during peak hours",
+    "Metrolink transit accidents at the Rancho Cucamonga Station",
+    "Bicycle and pedestrian accidents on Foothill Blvd and Haven Ave"
+  ],
+  "notableCorridors": [
+    "I-15 (Devore Freeway) — primary north-south freeway with high freight volume",
+    "SR-210 (Foothill Freeway) — commuter connector with interchange collision history",
+    "I-10 (San Bernardino Freeway) — east-west freight artery",
+    "Milliken Ave — retail corridor with Ontario Mills traffic concentration",
+    "Haven Ave — north-south commercial and warehouse arterial",
+    "Foothill Blvd — historic Route 66 corridor with mixed pedestrian and vehicle activity"
+  ],
+  "localNotes": "San Bernardino County requires government claims to be filed within 6 months of an incident involving public property, county vehicles, or municipal infrastructure. Traffic collision reports in Rancho Cucamonga are handled by the Rancho Cucamonga Police Department. Metrolink is a frequent defendant in transit injury cases and has its own claims process. Commercial truck accidents on I-15 and I-10 may involve multiple liable parties including trucking companies, freight brokers, and vehicle manufacturers — early preservation of black box and ELD data is critical.",
+  "reviewedBy": "Pending Legal Review",
+  "reviewDate": "2026-05-01"
+}

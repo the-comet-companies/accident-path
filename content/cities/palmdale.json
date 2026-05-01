@@ -1,0 +1,48 @@
+{
+  "slug": "palmdale",
+  "name": "Palmdale",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Palmdale Accident Guide — Local Hospitals, Courts & Rights",
+  "metaDescription": "Injured in Palmdale? Find local emergency hospitals, courts, and understand your rights under California personal injury law.",
+  "population": "~165,000",
+  "description": "Palmdale is a rapidly growing high desert city in northern Los Angeles County, situated along the SR-14 (Antelope Valley Freeway) corridor adjacent to Lancaster. The city's growth has made it one of the fastest-expanding communities in Southern California, increasing daily traffic volume on its freeways and surface streets. SR-14 is the primary commuter route, and accidents along this corridor — particularly during peak morning and evening hours — are among the most frequent and severe in the Antelope Valley. Palmdale Regional Medical Center and the Palmdale Transportation Center, which serves Metrolink commuter rail and regional bus transit, are key infrastructure anchors. Aerospace and defense industry employers near Edwards Air Force Base and Lockheed Martin's Skunk Works facility drive substantial early-morning commuter traffic. Avenue S, Avenue P, and Palmdale Blvd are key surface-street corridors. Los Angeles County's 6-month government claim deadline applies to all public entity incidents in Palmdale.",
+  "hospitals": [
+    {
+      "name": "Palmdale Regional Medical Center",
+      "address": "38600 Medical Center Dr, Palmdale, CA 93551",
+      "erAvailable": true
+    },
+    {
+      "name": "Antelope Valley Hospital",
+      "address": "1600 W Ave J, Lancaster, CA 93534",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Los Angeles Superior Court — Michael D. Antonovich Antelope Valley Courthouse",
+      "address": "42011 4th St W, Lancaster, CA 93534",
+      "type": "General civil and personal injury"
+    }
+  ],
+  "commonAccidentTypes": [
+    "High-speed rear-end and multi-vehicle accidents on SR-14 during commute hours",
+    "Intersection collisions on Avenue S and Avenue P",
+    "Pedestrian accidents near Palmdale Transportation Center and Metrolink station",
+    "Commercial truck accidents on SR-14 and SR-138",
+    "Rideshare and transit-related accidents along Palmdale Blvd",
+    "Weather-related accidents during high-wind or dust storm events on SR-14"
+  ],
+  "notableCorridors": [
+    "SR-14 (Antelope Valley Freeway) — primary high-speed commuter corridor",
+    "SR-138 — east-west desert route with rural collision exposure",
+    "Palmdale Blvd — main commercial surface street through central Palmdale",
+    "Avenue S — residential and commercial cross-corridor with intersection risk",
+    "Avenue P — north Palmdale connector",
+    "47th St E — growing residential and light-commercial corridor"
+  ],
+  "localNotes": "Los Angeles County's 6-month government claim deadline applies to incidents in Palmdale involving public property, city vehicles, or county infrastructure. Traffic collision reports are obtained through the Los Angeles County Sheriff's Department (Palmdale Station). Metrolink and the Los Angeles County Metropolitan Transportation Authority (Metro) may be potential defendants in transit-related injuries at the Palmdale Transportation Center. SR-14 accident cases may involve Caltrans as a defendant if road design or maintenance is a contributing factor.",
+  "reviewedBy": "Pending Legal Review",
+  "reviewDate": "2026-05-01"
+}

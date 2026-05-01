@@ -1,0 +1,48 @@
+{
+  "slug": "pasadena",
+  "name": "Pasadena",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Pasadena Accident Guide — Local Hospitals, Courts & Rights",
+  "metaDescription": "Injured in Pasadena? Find local emergency hospitals, courts, and understand your rights under California personal injury law.",
+  "population": "~140,000",
+  "description": "Pasadena is a culturally rich city in the San Gabriel Valley at the foot of the San Gabriel Mountains, best known nationally for the Rose Bowl and the annual Tournament of Roses Parade. Colorado Blvd, Pasadena's main commercial thoroughfare, sees elevated pedestrian and vehicle activity year-round and becomes an especially high-risk corridor during New Year's Day parade festivities. SR-110 (Arroyo Seco Parkway), the oldest freeway in the United States, features sharp curves, narrow lanes, and limited sight distances that make it notably more hazardous than modern freeways. The I-210 (Foothill Freeway) carries substantial commuter volume across the northern edge of the city. The Metro A Line (Gold Line) provides rail transit through Pasadena, with platform and vehicle crossings creating transit injury exposure. Caltech and the City of Hope medical campus generate pedestrian traffic. Anyone injured in Pasadena should note Los Angeles County's 6-month government claim deadline and act promptly to preserve evidence.",
+  "hospitals": [
+    {
+      "name": "Huntington Hospital",
+      "address": "100 W California Blvd, Pasadena, CA 91105",
+      "erAvailable": true
+    },
+    {
+      "name": "USC Arcadia Hospital",
+      "address": "300 W Huntington Dr, Arcadia, CA 91007",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Los Angeles Superior Court — Pasadena Courthouse",
+      "address": "300 E Walnut St, Pasadena, CA 91101",
+      "type": "General civil and personal injury"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Freeway accidents on SR-110 (Arroyo Seco Pkwy) due to narrow lanes and tight curves",
+    "Rear-end and merge collisions on I-210 (Foothill Freeway) commuter segments",
+    "Pedestrian accidents on Colorado Blvd during Rose Parade and event seasons",
+    "Metro A Line transit accidents — platform injuries and vehicle crossings",
+    "Bicycle accidents on Lake Ave and Fair Oaks Ave",
+    "Slip and fall and premises liability at the Rose Bowl stadium and adjacent facilities"
+  ],
+  "notableCorridors": [
+    "SR-110 (Arroyo Seco Pkwy) — oldest US freeway, narrow lanes, elevated accident rate",
+    "I-210 (Foothill Freeway) — main commuter freeway with high daily volume",
+    "SR-134 (Ventura Freeway) — western connector with interchange collision exposure",
+    "Colorado Blvd — primary commercial street with heavy pedestrian traffic",
+    "Lake Ave — north-south arterial with retail and hospital proximity",
+    "Fair Oaks Ave — mixed-use corridor with cyclist and pedestrian activity"
+  ],
+  "localNotes": "Los Angeles County's 6-month government claim deadline applies to incidents in Pasadena involving public property, city vehicles, or transit authority vehicles. Traffic collision reports are available through the Pasadena Police Department. The Metro A Line (Gold Line) is operated by LA Metro, a frequent defendant in transit injury cases. The Tournament of Roses Association and the City of Pasadena may both carry liability exposure for parade-related incidents on Colorado Blvd. Evidence from City of Pasadena cameras and private venue surveillance should be secured quickly.",
+  "reviewedBy": "Pending Legal Review",
+  "reviewDate": "2026-05-01"
+}

@@ -1,0 +1,48 @@
+{
+  "slug": "modesto",
+  "name": "Modesto",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Modesto Accident Guide — Local Hospitals, Courts & Rights",
+  "metaDescription": "Injured in Modesto? Find local emergency hospitals, courts, and understand your rights under California personal injury law.",
+  "population": "~220,000",
+  "description": "Modesto is the county seat of Stanislaus County and a major Central Valley agricultural and commercial hub. SR-99 is the primary north-south accident corridor through the city, carrying a mix of long-haul commercial trucks, agricultural transport vehicles, and high-speed commuter traffic. The rural-to-urban transition along SR-99 creates hazardous conditions where agricultural equipment moves between field access roads and the freeway system, particularly during planting and harvest seasons. McHenry Avenue is Modesto's principal commercial arterial, extending from downtown northward through dense retail corridors, and sees frequent intersection conflicts at signalized and unsignalized crossings. Briggsmore Avenue and Pelandale Avenue serve as major east-west connectors with high shopping center traffic. Coffee Road connects the downtown core to the northern residential growth areas and sees consistent commuter volume. SR-132 and SR-108 are important regional connectors linking Modesto to the Sierra foothills and to Interstate 5. The Modesto Area Express (MAX) and Stanislaus Regional Transit are public transit operators whose vehicles may be defendants in transit-related injuries.",
+  "hospitals": [
+    {
+      "name": "Memorial Medical Center — Modesto",
+      "address": "1700 Coffee Rd, Modesto, CA 95355",
+      "erAvailable": true
+    },
+    {
+      "name": "Doctors Medical Center",
+      "address": "1441 Florida Ave, Modesto, CA 95350",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Stanislaus County Superior Court — Modesto Courthouse",
+      "address": "800 11th St, Modesto, CA 95354",
+      "type": "General civil and personal injury"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Freeway rear-end and lane-change collisions on SR-99 through the Modesto corridor",
+    "Agricultural equipment accidents on rural-to-urban transition roads near SR-99",
+    "Intersection collisions on McHenry Ave at major cross-street shopping intersections",
+    "Pedestrian accidents near downtown Modesto and Coffee Rd transit stops",
+    "Side-impact collisions on Briggsmore Ave and Pelandale Ave near retail centers",
+    "Wrong-way and DUI accidents on SR-108 and SR-132 during evening hours"
+  ],
+  "notableCorridors": [
+    "SR-99 — Central Valley's primary north-south accident corridor through Modesto",
+    "SR-132 (Yosemite Ave) — east-west connector to I-5 and Merced County",
+    "SR-108 (Sonora Rd) — Sierra foothill connector with rural driving conditions",
+    "McHenry Ave — main commercial arterial with high intersection conflict frequency",
+    "Briggsmore Ave — busy east-west corridor with retail-area congestion",
+    "Coffee Rd — north-south commuter link between downtown and suburban growth areas"
+  ],
+  "localNotes": "Modesto is in Stanislaus County. Accidents involving city or county property, sidewalks, or government vehicles require a government claim filed within 6 months of the injury date. Modesto Police Department traffic collision reports can be requested through MPD Records. Stanislaus Regional Transit (StaRT) is a potential defendant in bus-related injury cases.",
+  "reviewedBy": "Pending Legal Review",
+  "reviewDate": "2026-05-01"
+}

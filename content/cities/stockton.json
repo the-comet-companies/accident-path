@@ -1,0 +1,48 @@
+{
+  "slug": "stockton",
+  "name": "Stockton",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Stockton Accident Guide — Local Hospitals, Courts & Rights",
+  "metaDescription": "Injured in Stockton? Find local emergency hospitals, courts, and understand your rights under California personal injury law.",
+  "population": "~320,000",
+  "description": "Stockton is the county seat of San Joaquin County and one of the largest cities in California's Central Valley. Its location at the junction of I-5 and SR-99 — two of the state's most heavily traveled north-south freeways — makes the city a critical freight and agricultural transport hub. The I-5/SR-99 interchange experiences high-volume mixing of long-haul trucking and local commuter traffic, creating significant collision risk. Stockton's deep-water port generates consistent heavy commercial truck traffic on Charter Way and surrounding arterials throughout the day and night. Agricultural transport vehicles using SR-99 during harvest seasons add an additional hazard on rural-to-urban transition corridors. March Lane, Pacific Ave, and Hammer Lane are primary commercial arterials with frequent intersection accidents near retail centers. The city has a high rate of pedestrian and cyclist incidents in its lower-income urban neighborhoods, particularly along Pacific Avenue. Government entities including the City of Stockton and San Joaquin County are frequent defendants in premises-liability and sidewalk cases.",
+  "hospitals": [
+    {
+      "name": "St. Joseph's Medical Center",
+      "address": "1800 N California St, Stockton, CA 95204",
+      "erAvailable": true
+    },
+    {
+      "name": "Dameron Hospital",
+      "address": "525 W Acacia St, Stockton, CA 95203",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "San Joaquin County Superior Court — Stockton Courthouse",
+      "address": "180 E Weber Ave, Stockton, CA 95202",
+      "type": "General civil and personal injury"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Freeway interchange collisions at the I-5 and SR-99 split",
+    "Commercial truck accidents on Charter Way and port access routes",
+    "Pedestrian accidents on Pacific Ave and downtown Stockton corridors",
+    "Intersection collisions on March Lane, Hammer Lane, and Pershing Ave",
+    "Agricultural equipment accidents on SR-99 during harvest season",
+    "Rear-end collisions in heavy commuter traffic on SR-4 westbound"
+  ],
+  "notableCorridors": [
+    "I-5 — major north-south freeway carrying long-haul freight through Stockton",
+    "SR-99 — Central Valley corridor with agricultural and commuter traffic",
+    "SR-4 — east-west connector to the Bay Area with high commuter volume",
+    "March Lane — high-volume commercial arterial with frequent intersection accidents",
+    "Pacific Ave — urban corridor with elevated pedestrian accident exposure",
+    "Charter Way — port-area truck route with heavy commercial vehicle presence"
+  ],
+  "localNotes": "Stockton is the county seat of San Joaquin County. Accidents involving city or county property, vehicles, or public infrastructure require a government claim filed within 6 months of the injury date. Stockton Police Department traffic collision reports can be requested through SPD Records. The Port of Stockton and San Joaquin RTD transit are potential defendants in freight- and transit-related injury cases.",
+  "reviewedBy": "Pending Legal Review",
+  "reviewDate": "2026-05-01"
+}

@@ -1,0 +1,48 @@
+{
+  "slug": "modesto",
+  "name": "Modesto",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Modesto — Guía de Accidentes, Hospitales y Tribunales",
+  "metaDescription": "¿Lesionado/a en Modesto? Encuentre hospitales de emergencia locales, tribunales y conozca sus derechos bajo la ley de lesiones personales de California.",
+  "population": "~220,000",
+  "description": "Modesto es la sede del Condado de Stanislaus y un importante centro agrícola y comercial del Valle Central de California. La SR-99 es el corredor norte-sur principal de accidentes a través de la ciudad, con una mezcla de camiones comerciales de larga distancia, vehículos de transporte agrícola y tráfico de commuters a alta velocidad. La transición rural-urbana a lo largo de la SR-99 crea condiciones peligrosas donde la maquinaria agrícola se desplaza entre los caminos de acceso a los campos y el sistema de autopistas, especialmente durante las temporadas de siembra y cosecha. La avenida McHenry es la principal arteria comercial de Modesto, que se extiende desde el centro hacia el norte a través de densos corredores comerciales, con frecuentes conflictos en las intersecciones. Briggsmore Avenue y Pelandale Avenue son conectores este-oeste importantes con alto tráfico de centros comerciales. Coffee Road une el núcleo del centro con las zonas residenciales del norte. La SR-132 y la SR-108 son conectores regionales que enlazan Modesto con las estribaciones de la Sierra Nevada y con la Interestatal 5. El Modesto Area Express (MAX) y Stanislaus Regional Transit son operadores de transporte público cuyos vehículos pueden ser demandados en casos de lesiones.",
+  "hospitals": [
+    {
+      "name": "Memorial Medical Center — Modesto",
+      "address": "1700 Coffee Rd, Modesto, CA 95355",
+      "erAvailable": true
+    },
+    {
+      "name": "Doctors Medical Center",
+      "address": "1441 Florida Ave, Modesto, CA 95350",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Stanislaus County Superior Court — Modesto Courthouse",
+      "address": "800 11th St, Modesto, CA 95354",
+      "type": "Civil general y lesiones personales"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Colisiones traseras y de cambio de carril en la SR-99 a través del corredor de Modesto",
+    "Accidentes con maquinaria agrícola en carreteras de transición rural-urbana cerca de la SR-99",
+    "Colisiones en intersecciones en McHenry Ave en los cruces de las principales calles comerciales",
+    "Accidentes de peatones cerca del centro de Modesto y las paradas de tránsito en Coffee Rd",
+    "Colisiones laterales en Briggsmore Ave y Pelandale Ave cerca de centros comerciales",
+    "Accidentes de sentido contrario y bajo la influencia del alcohol en la SR-108 y SR-132 en horas nocturnas"
+  ],
+  "notableCorridors": [
+    "SR-99 — corredor norte-sur principal de accidentes en el Valle Central que atraviesa Modesto",
+    "SR-132 (Yosemite Ave) — conector este-oeste hacia la I-5 y el Condado de Merced",
+    "SR-108 (Sonora Rd) — conector hacia las estribaciones de la Sierra con condiciones de conducción rural",
+    "McHenry Ave — arteria comercial principal con alta frecuencia de conflictos en intersecciones",
+    "Briggsmore Ave — corredor este-oeste con congestión en zonas de centros comerciales",
+    "Coffee Rd — enlace norte-sur para commuters entre el centro y las áreas suburbanas en crecimiento"
+  ],
+  "localNotes": "Modesto se encuentra en el Condado de Stanislaus. Los accidentes que involucren propiedad, aceras o vehículos de la ciudad o el condado requieren presentar una reclamación gubernamental dentro de los 6 meses posteriores a la fecha de la lesión. Los informes de colisiones de tráfico del Departamento de Policía de Modesto pueden solicitarse a través de los Registros del MPD. Stanislaus Regional Transit (StaRT) es un posible demandado en casos de lesiones relacionadas con el servicio de autobús.",
+  "reviewedBy": "Revisión Legal Pendiente",
+  "reviewDate": "2026-05-01"
+}

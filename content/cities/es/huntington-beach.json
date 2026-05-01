@@ -1,0 +1,48 @@
+{
+  "slug": "huntington-beach",
+  "name": "Huntington Beach",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Huntington Beach — Guía de Accidentes, Hospitales y Tribunales",
+  "metaDescription": "¿Lesionado/a en Huntington Beach? Encuentre hospitales de emergencia locales, tribunales y conozca sus derechos bajo la ley de lesiones personales de California.",
+  "population": "~200,000",
+  "description": "Huntington Beach, conocida como Surf City USA, es una ciudad costera del Condado de Orange cuya combinación de turismo costero, vecindarios residenciales y arterias viales transitadas crea un entorno de accidentes único. La SR-1 (Pacific Coast Highway) es el principal corredor costero y registra frecuentes colisiones que involucran a peatones, ciclistas y vehículos, especialmente cerca del muelle, el distrito centro y los accesos a la playa. El turismo estacional amplifica considerablemente la exposición peatonal entre finales de primavera y el verano. Beach Blvd (SR-39) es uno de los corredores con mayor historial de accidentes en el Condado de Orange, con intenso tráfico comercial en intersecciones semaforizadas. La I-405 es la conexión regional principal, con accidentes traseros y de cambio de carril frecuentes entre commuters. La Autoridad de Transporte del Condado de Orange (OCTA) opera servicios de autobús en la ciudad, lo que convierte a las agencias de tránsito en posibles demandadas en casos de lesiones. El plazo de 6 meses del Condado de Orange para reclamaciones gubernamentales se aplica a accidentes en propiedad pública o que involucren vehículos de tránsito.",
+  "hospitals": [
+    {
+      "name": "Huntington Beach Hospital",
+      "address": "17772 Beach Blvd, Huntington Beach, CA 92647",
+      "erAvailable": true
+    },
+    {
+      "name": "MemorialCare — Orange Coast Medical Center",
+      "address": "18111 Brookhurst St, Fountain Valley, CA 92708",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Orange County Superior Court — Harbor Justice Center",
+      "address": "4601 Jamboree Rd, Newport Beach, CA 92660",
+      "type": "Civil general y lesiones personales"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Accidentes de peatones en Pacific Coast Highway (SR-1) cerca del muelle y accesos a la playa",
+    "Accidentes de ciclistas en los carriles para bicicletas de PCH y Beach Blvd",
+    "Colisiones traseras y en intersecciones en el corredor comercial de Beach Blvd (SR-39)",
+    "Accidentes en autopista en la I-405 — colisiones traseras y de cambio de carril entre commuters",
+    "Accidentes de transporte por aplicación y turistas cerca del centro en temporada alta",
+    "Incidentes de lesiones en el tránsito de autobuses de OCTA"
+  ],
+  "notableCorridors": [
+    "SR-1 (Pacific Coast Highway) — punto crítico de colisiones costeras entre peatones y vehículos",
+    "Beach Blvd (SR-39) — arteria comercial con historial documentado de accidentes",
+    "I-405 (San Diego Freeway) — autopista regional principal con alto volumen de accidentes entre commuters",
+    "SR-22 (Garden Grove Freeway) — conector de autopista en el límite norte de la ciudad",
+    "Magnolia Ave — arteria norte-sur con exposición en intersecciones",
+    "Bolsa Ave — corredor de alto tráfico cerca de zonas residenciales y comerciales"
+  ],
+  "localNotes": "El Condado de Orange impone un plazo de 6 meses para presentar reclamaciones contra entidades públicas, incluyendo la Ciudad de Huntington Beach, OCTA y carreteras de mantenimiento del condado. Los informes de colisiones de tráfico pueden solicitarse al Departamento de Policía de Huntington Beach. Los eventos turísticos de temporada cerca del muelle y el centro pueden involucrar tanto a la ciudad como a organizadores privados como posibles demandados. La evidencia de cámaras de seguridad de negocios costeros y vigilancia municipal debe asegurarse con prontitud.",
+  "reviewedBy": "Revisión Legal Pendiente",
+  "reviewDate": "2026-05-01"
+}

@@ -1,0 +1,48 @@
+{
+  "slug": "lancaster",
+  "name": "Lancaster",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Lancaster CA — Guía de Accidentes, Hospitales y Tribunales",
+  "metaDescription": "¿Lesionado/a en Lancaster, CA? Encuentre hospitales de emergencia locales, tribunales y conozca sus derechos bajo la ley de lesiones personales de California.",
+  "population": "~160,000",
+  "description": "Lancaster es la ciudad más grande del Valle de Antelope, ubicada en el desierto alto del norte del Condado de Los Ángeles. La SR-14 (Antelope Valley Freeway) es la principal arteria de transporte de la ciudad, que conecta Lancaster con el área metropolitana de Los Ángeles aproximadamente a 70 millas al sur. Los accidentes multivehiculares a alta velocidad en la SR-14 se encuentran entre los eventos de lesiones más graves y frecuentes de la región, e involucran con frecuencia a commuters madrugadores que se dirigen a empleadores del sector aeroespacial y de defensa como la Base Aérea Edwards. La SR-138 conecta Lancaster con el área de Palmdale y transporta tanto vehículos de commuters como de transporte de energía eólica. Las calles superficiales como Avenue K, Avenue J y Sierra Highway gestionan el tráfico comercial y residencial local con exposición a colisiones en intersecciones. A pesar de su ubicación remota, Lancaster está bajo la jurisdicción del Condado de Los Ángeles, y el plazo estándar de 6 meses para reclamaciones gubernamentales aplica a todos los incidentes que involucren propiedad pública, vehículos municipales o infraestructura del condado.",
+  "hospitals": [
+    {
+      "name": "Antelope Valley Hospital",
+      "address": "1600 W Ave J, Lancaster, CA 93534",
+      "erAvailable": true
+    },
+    {
+      "name": "Palmdale Regional Medical Center",
+      "address": "38600 Medical Center Dr, Palmdale, CA 93551",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Los Angeles Superior Court — Michael D. Antonovich Antelope Valley Courthouse",
+      "address": "42011 4th St W, Lancaster, CA 93534",
+      "type": "Civil general y lesiones personales"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Accidentes multivehiculares a alta velocidad en la SR-14 (Antelope Valley Freeway)",
+    "Colisiones frontales en secciones rurales de dos carriles de la SR-138",
+    "Accidentes de commuters durante las horas pico de la mañana y la tarde en los accesos a la SR-14",
+    "Accidentes de camiones comerciales que transportan componentes de turbinas eólicas en la SR-138",
+    "Colisiones en intersecciones en Avenue K y Avenue J",
+    "Accidentes de peatones en el corredor comercial de Sierra Highway"
+  ],
+  "notableCorridors": [
+    "SR-14 (Antelope Valley Freeway) — principal arteria de commuters con historial de accidentes a alta velocidad",
+    "SR-138 — conector a través del desierto con riesgo de colisiones rurales y transporte de energía eólica",
+    "Avenue K — principal arteria este-oeste a través del centro de Lancaster",
+    "Avenue J — corredor comercial y residencial con exposición en intersecciones",
+    "Sierra Highway — ruta histórica norte-sur con actividad peatonal y vehicular",
+    "10th St W — conector local con tráfico en zonas escolares y residenciales"
+  ],
+  "localNotes": "El plazo de 6 meses del Condado de Los Ángeles para reclamaciones gubernamentales se aplica a todos los incidentes en Lancaster que involucren propiedad pública, vehículos del condado o infraestructura municipal. Los informes de colisiones de tráfico están disponibles a través del Departamento del Sheriff del Condado de Los Ángeles (Estación de Lancaster), que provee servicios policiales a Lancaster. Las víctimas de accidentes en la SR-14 deben preservar la evidencia con prontitud — Caltrans puede ser un demandado en casos que involucren defectos de diseño vial o mantenimiento. Los commuters del sector aeroespacial deben documentar cualquier circunstancia relacionada con el desplazamiento laboral que pueda afectar el análisis de responsabilidad.",
+  "reviewedBy": "Revisión Legal Pendiente",
+  "reviewDate": "2026-05-01"
+}

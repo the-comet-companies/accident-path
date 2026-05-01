@@ -1,0 +1,48 @@
+{
+  "slug": "torrance",
+  "name": "Torrance",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Torrance Accident Guide — Local Hospitals, Courts & Rights",
+  "metaDescription": "Injured in Torrance? Find local emergency hospitals, courts, and understand your rights under California personal injury law.",
+  "population": "~145,000",
+  "description": "Torrance is a South Bay city in Los Angeles County with a strong aerospace and industrial economy, bordered by Redondo Beach, Hermosa Beach, Lawndale, and Carson. The I-405 (San Diego Freeway) runs through the eastern portion of the city and is one of Southern California's most congested freeways, generating frequent rear-end and multi-vehicle collisions during peak commute hours. SR-1 (Pacific Coast Highway) travels through the city's coastal border, where beachgoer traffic, cyclists, and pedestrians create significant accident exposure near Redondo and Hermosa Beach boundaries. The I-110 (Harbor Freeway) forms the eastern city edge and links Torrance to Downtown Los Angeles. Hawthorne Boulevard is the primary north-south commercial arterial with high intersection conflict at major cross-streets. Carson Street and Sepulveda Boulevard carry significant east-west commuter and commercial loads. Harbor-UCLA Medical Center, located within Torrance, is a Level I trauma center and a frequent destination for serious injury victims from across the South Bay. The Torrance Transit system and LA Metro bus routes operate through the city, and transit agencies may be defendants in bus-related injury cases.",
+  "hospitals": [
+    {
+      "name": "Torrance Memorial Medical Center",
+      "address": "3330 Lomita Blvd, Torrance, CA 90505",
+      "erAvailable": true
+    },
+    {
+      "name": "Harbor-UCLA Medical Center",
+      "address": "1000 W Carson St, Torrance, CA 90502",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Los Angeles Superior Court — Torrance Courthouse",
+      "address": "825 Maple Ave, Torrance, CA 90503",
+      "type": "General civil and personal injury"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Rear-end and multi-vehicle freeway collisions on I-405 through the South Bay corridor",
+    "Pedestrian and cyclist accidents on SR-1 (Pacific Coast Highway) near beach access points",
+    "Intersection collisions on Hawthorne Blvd at major east-west cross-streets",
+    "Industrial and warehouse area accidents near aerospace and manufacturing facilities",
+    "Side-impact collisions on Carson St and Sepulveda Blvd commercial corridors",
+    "Transit-related injuries on Torrance Transit and LA Metro bus routes"
+  ],
+  "notableCorridors": [
+    "I-405 (San Diego Freeway) — highly congested freeway with frequent rear-end collisions",
+    "SR-1 (Pacific Coast Highway) — coastal route with pedestrian, cyclist, and tourist traffic",
+    "I-110 (Harbor Freeway) — eastern city edge freeway connecting to Downtown LA",
+    "Hawthorne Blvd — primary north-south commercial arterial with busy signalized intersections",
+    "Carson St — east-west corridor linking Torrance to adjacent South Bay cities",
+    "Sepulveda Blvd — commercial and industrial surface street with mixed traffic types"
+  ],
+  "localNotes": "Torrance is in Los Angeles County. Accidents involving city or county property, sidewalks, or government vehicles require a government claim filed within 6 months of the injury date. Torrance Police Department traffic collision reports can be requested through TPD Records. Harbor-UCLA Medical Center is a Level I trauma center operated by LA County and frequently serves serious accident victims from across the South Bay. LA Metro and Torrance Transit are potential defendants in transit-related injury cases.",
+  "reviewedBy": "Pending Legal Review",
+  "reviewDate": "2026-05-01"
+}

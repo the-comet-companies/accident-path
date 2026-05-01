@@ -1,0 +1,48 @@
+{
+  "slug": "pomona",
+  "name": "Pomona",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Pomona Accident Guide — Local Hospitals, Courts & Rights",
+  "metaDescription": "Injured in Pomona? Find local emergency hospitals, courts, and understand your rights under California personal injury law.",
+  "population": "~150,000",
+  "description": "Pomona is a major city in eastern Los Angeles County, serving as a gateway between the Greater Los Angeles area and the Inland Empire. Its freeway infrastructure — particularly the I-10, SR-57, and SR-60 — carries substantial daily commuter and freight traffic, creating conditions for high-frequency rear-end and multi-vehicle collisions. The I-10/SR-57 interchange is one of the most congested and collision-prone junctions in the eastern San Gabriel Valley. Cal Poly Pomona generates significant pedestrian and cyclist traffic year-round, while the Fairplex (Los Angeles County Fairgrounds) draws large crowds during fair season, amplifying accident risk on surface streets including Garey Ave and Holt Ave. Rideshare and delivery vehicle activity is elevated throughout the city. Anyone injured in Pomona should act promptly to preserve evidence and meet Los Angeles County's strict 6-month government claim deadline for accidents involving city or county property.",
+  "hospitals": [
+    {
+      "name": "Pomona Valley Hospital Medical Center",
+      "address": "1798 N Garey Ave, Pomona, CA 91767",
+      "erAvailable": true
+    },
+    {
+      "name": "San Antonio Regional Hospital",
+      "address": "999 San Bernardino Rd, Upland, CA 91786",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Los Angeles Superior Court — Pomona Courthouse South",
+      "address": "400 Civic Center Plaza, Pomona, CA 91766",
+      "type": "General civil and personal injury"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Freeway rear-end and multi-vehicle accidents at the I-10/SR-57 interchange",
+    "Pedestrian accidents near Cal Poly Pomona campus and along Holt Ave",
+    "Bicycle accidents on Garey Ave and Mission Blvd",
+    "Commercial truck accidents on I-10 and SR-60 freight corridors",
+    "Rideshare and delivery vehicle accidents in residential and commercial zones",
+    "Fairgrounds event-related traffic accidents on Towne Ave and White Ave"
+  ],
+  "notableCorridors": [
+    "I-10 (San Bernardino Freeway) — major east-west freight and commuter corridor",
+    "SR-57 (Orange Freeway) — north-south connector with high interchange accident volume",
+    "SR-60 (Pomona Freeway) — elevated commercial truck traffic",
+    "Garey Ave — high-activity surface street near hospital and commercial corridor",
+    "Holt Ave — documented accident corridor through central Pomona",
+    "Mission Blvd — pedestrian and cyclist exposure in urban sections"
+  ],
+  "localNotes": "Los Angeles County imposes a 6-month deadline for filing government claims, including accidents involving city of Pomona vehicles, sidewalks, or county property. Police reports for accidents within Pomona city limits are handled by the Pomona Police Department and can be requested online or in person. The LA County Fairgrounds' Fairplex is a notable defendant source during large events. Victims should document evidence immediately — surveillance footage from the fairgrounds and nearby businesses is often available only for a limited time.",
+  "reviewedBy": "Pending Legal Review",
+  "reviewDate": "2026-05-01"
+}

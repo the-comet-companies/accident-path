@@ -1,0 +1,48 @@
+{
+  "slug": "stockton",
+  "name": "Stockton",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Stockton — Guía de Accidentes, Hospitales y Tribunales",
+  "metaDescription": "¿Lesionado/a en Stockton? Encuentre hospitales de emergencia locales, tribunales y conozca sus derechos bajo la ley de lesiones personales de California.",
+  "population": "~320,000",
+  "description": "Stockton es la sede del condado de San Joaquin y una de las ciudades más grandes del Valle Central de California. Su ubicación en la intersección de la I-5 y la SR-99 — dos de las autopistas norte-sur más transitadas del estado — convierte a la ciudad en un nudo vital para el transporte de carga y productos agrícolas. El intercambio I-5/SR-99 experimenta una mezcla de alto volumen de camiones de larga distancia y tráfico local de commuters, lo que genera un riesgo significativo de colisiones. El puerto de aguas profundas de Stockton genera tráfico constante de camiones comerciales en Charter Way y las arterias circundantes a toda hora del día y la noche. Los vehículos de transporte agrícola que usan la SR-99 durante las temporadas de cosecha representan un peligro adicional en los corredores de transición rural-urbana. March Lane, Pacific Ave y Hammer Lane son arterias comerciales principales con frecuentes accidentes en intersecciones cerca de centros comerciales. La ciudad registra una alta tasa de accidentes de peatones y ciclistas en sus vecindarios urbanos, especialmente a lo largo de Pacific Avenue.",
+  "hospitals": [
+    {
+      "name": "St. Joseph's Medical Center",
+      "address": "1800 N California St, Stockton, CA 95204",
+      "erAvailable": true
+    },
+    {
+      "name": "Dameron Hospital",
+      "address": "525 W Acacia St, Stockton, CA 95203",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "San Joaquin County Superior Court — Stockton Courthouse",
+      "address": "180 E Weber Ave, Stockton, CA 95202",
+      "type": "Civil general y lesiones personales"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Colisiones en el intercambio de la I-5 y la SR-99",
+    "Accidentes de camiones comerciales en Charter Way y rutas de acceso al puerto",
+    "Accidentes de peatones en Pacific Ave y el centro de Stockton",
+    "Colisiones en intersecciones en March Lane, Hammer Lane y Pershing Ave",
+    "Accidentes con maquinaria agrícola en la SR-99 durante la temporada de cosecha",
+    "Colisiones traseras en tráfico pesado de commuters en la SR-4 dirección oeste"
+  ],
+  "notableCorridors": [
+    "I-5 — autopista norte-sur principal con carga de larga distancia que atraviesa Stockton",
+    "SR-99 — corredor del Valle Central con tráfico agrícola y de commuters",
+    "SR-4 — conector este-oeste hacia el Área de la Bahía con alto volumen de commuters",
+    "March Lane — arteria comercial de alto volumen con frecuentes accidentes en intersecciones",
+    "Pacific Ave — corredor urbano con alta exposición a accidentes de peatones",
+    "Charter Way — ruta de camiones del área portuaria con presencia elevada de vehículos comerciales"
+  ],
+  "localNotes": "Stockton es la sede del Condado de San Joaquin. Los accidentes que involucren propiedad, vehículos o infraestructura pública de la ciudad o el condado requieren presentar una reclamación gubernamental dentro de los 6 meses posteriores a la fecha de la lesión. Los informes de colisiones de tráfico del Departamento de Policía de Stockton pueden solicitarse a través de los Registros del SPD. El Puerto de Stockton y el transporte público San Joaquin RTD son posibles demandados en casos de lesiones relacionadas con el flete y el tránsito.",
+  "reviewedBy": "Revisión Legal Pendiente",
+  "reviewDate": "2026-05-01"
+}

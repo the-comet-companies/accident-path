@@ -1,0 +1,48 @@
+{
+  "slug": "san-bernardino",
+  "name": "San Bernardino",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "San Bernardino Accident Guide — Hospitals, Courts & Rights",
+  "metaDescription": "Injured in San Bernardino? Find local emergency hospitals, courts, and understand your rights under California personal injury law.",
+  "population": "~230,000",
+  "description": "San Bernardino is the county seat of San Bernardino County — the largest county in the contiguous United States by area — and serves as the eastern gateway to the Inland Empire. I-10 runs through the city carrying massive freight volume between the Ports of Los Angeles and Long Beach and the national rail network, making it one of the busiest commercial truck corridors in the Western United States. I-215 intersects the city from north to south, connecting San Bernardino to Riverside and beyond. SR-30 links the city to neighboring Highland and Redlands. SR-18, known locally as the Rim of the World Highway, climbs into the San Bernardino Mountains and is frequently the site of motorcycle, RV, and passenger vehicle accidents on its steep curves. Baseline Street and Highland Avenue are high-traffic urban arterials with significant pedestrian exposure near commercial districts and public transit stops. The Omnitrans bus network operates extensively through the city and may be a defendant in transit-related injury cases. Government claim deadlines apply strictly given the city's many public roads and sidewalks.",
+  "hospitals": [
+    {
+      "name": "Community Hospital of San Bernardino",
+      "address": "1805 Medical Center Dr, San Bernardino, CA 92411",
+      "erAvailable": true
+    },
+    {
+      "name": "St. Bernardine Medical Center",
+      "address": "2101 N Waterman Ave, San Bernardino, CA 92404",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "San Bernardino Superior Court — San Bernardino Justice Center",
+      "address": "247 W 3rd St, San Bernardino, CA 92415",
+      "type": "General civil and personal injury"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Freight truck accidents on I-10 between Inland Empire distribution centers and the ports",
+    "High-speed freeway collisions on I-215 at interchange merge zones",
+    "Mountain road accidents on SR-18 (Rim of the World Hwy) involving motorcycles and RVs",
+    "Pedestrian accidents on Baseline St and Highland Ave near bus stops",
+    "Intersection collisions on Waterman Ave and E St commercial corridors",
+    "Bicycle accidents on urban arterials near California State University San Bernardino"
+  ],
+  "notableCorridors": [
+    "I-10 — primary national freight corridor with extremely heavy commercial truck volume",
+    "I-215 — north-south freeway connecting San Bernardino to Riverside",
+    "SR-30 (Highland Freeway) — east connector to Highland and Redlands",
+    "SR-18 (Rim of the World Hwy) — mountain highway with steep curves and recreational vehicle traffic",
+    "Baseline St — urban east-west arterial with high pedestrian and commercial exposure",
+    "Waterman Ave — major north-south commercial corridor prone to intersection conflicts"
+  ],
+  "localNotes": "San Bernardino is in San Bernardino County. Accidents involving city or county property, sidewalks, or government vehicles require a government claim filed within 6 months of the injury date. San Bernardino Police Department traffic collision reports can be requested through SBPD Records. Omnitrans bus service is a potential defendant in transit-related injury cases throughout the city.",
+  "reviewedBy": "Pending Legal Review",
+  "reviewDate": "2026-05-01"
+}

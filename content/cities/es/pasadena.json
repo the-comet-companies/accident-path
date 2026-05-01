@@ -1,0 +1,48 @@
+{
+  "slug": "pasadena",
+  "name": "Pasadena",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Pasadena — Guía de Accidentes, Hospitales y Tribunales",
+  "metaDescription": "¿Lesionado/a en Pasadena? Encuentre hospitales de emergencia locales, tribunales y conozca sus derechos bajo la ley de lesiones personales de California.",
+  "population": "~140,000",
+  "description": "Pasadena es una ciudad de gran riqueza cultural en el Valle de San Gabriel, a los pies de las Montañas de San Gabriel, conocida a nivel nacional por el Rose Bowl y el desfile anual del Torneo de Rosas. Colorado Blvd, la principal calle comercial de Pasadena, registra una elevada actividad de peatones y vehículos durante todo el año y se convierte en un corredor de especial riesgo durante las festividades del desfile del Año Nuevo. La SR-110 (Arroyo Seco Parkway), la autopista más antigua de los Estados Unidos, presenta curvas cerradas, carriles estrechos y visibilidad limitada que la hacen considerablemente más peligrosa que las autopistas modernas. La I-210 (Foothill Freeway) transporta un voluminoso tráfico de commuters a lo largo del borde norte de la ciudad. La Línea A (Gold Line) del Metro ofrece transporte ferroviario a través de Pasadena, con andenes y cruces vehiculares que generan exposición a lesiones en el tránsito. Caltech y el campus médico del City of Hope generan tráfico peatonal. Cualquier persona lesionada en Pasadena debe tener en cuenta el plazo de 6 meses del Condado de Los Ángeles para reclamaciones gubernamentales y actuar con prontitud para preservar la evidencia.",
+  "hospitals": [
+    {
+      "name": "Huntington Hospital",
+      "address": "100 W California Blvd, Pasadena, CA 91105",
+      "erAvailable": true
+    },
+    {
+      "name": "USC Arcadia Hospital",
+      "address": "300 W Huntington Dr, Arcadia, CA 91007",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Los Angeles Superior Court — Pasadena Courthouse",
+      "address": "300 E Walnut St, Pasadena, CA 91101",
+      "type": "Civil general y lesiones personales"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Accidentes en autopista en la SR-110 (Arroyo Seco Pkwy) por carriles estrechos y curvas cerradas",
+    "Colisiones traseras y de incorporación en los segmentos de commuters de la I-210 (Foothill Freeway)",
+    "Accidentes de peatones en Colorado Blvd durante el desfile del Torneo de Rosas y temporadas de eventos",
+    "Accidentes en el tránsito de la Línea A del Metro — lesiones en andenes y crusos vehiculares",
+    "Accidentes de ciclistas en Lake Ave y Fair Oaks Ave",
+    "Caídas y responsabilidad civil en las instalaciones del Rose Bowl y recintos adyacentes"
+  ],
+  "notableCorridors": [
+    "SR-110 (Arroyo Seco Pkwy) — autopista más antigua de EE.UU., carriles estrechos y tasa de accidentes elevada",
+    "I-210 (Foothill Freeway) — principal autopista de commuters con alto volumen diario",
+    "SR-134 (Ventura Freeway) — conector al oeste con exposición en intercambios",
+    "Colorado Blvd — calle comercial principal con intenso tráfico peatonal",
+    "Lake Ave — arteria norte-sur con proximidad a zona comercial y hospitalaria",
+    "Fair Oaks Ave — corredor de uso mixto con actividad de ciclistas y peatones"
+  ],
+  "localNotes": "El plazo de 6 meses del Condado de Los Ángeles para reclamaciones gubernamentales aplica a incidentes en Pasadena que involucren propiedad pública, vehículos de la ciudad o vehículos de la autoridad de tránsito. Los informes de colisiones de tráfico están disponibles a través del Departamento de Policía de Pasadena. La Línea A del Metro (Gold Line) es operada por LA Metro, un demandado frecuente en casos de lesiones en el tránsito. La Asociación del Torneo de Rosas y la Ciudad de Pasadena pueden tener responsabilidad compartida en incidentes relacionados con el desfile en Colorado Blvd. La evidencia de cámaras de la Ciudad de Pasadena y de vigilancia privada de recintos debe asegurarse con rapidez.",
+  "reviewedBy": "Revisión Legal Pendiente",
+  "reviewDate": "2026-05-01"
+}

@@ -1,0 +1,48 @@
+{
+  "slug": "glendale",
+  "name": "Glendale",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Glendale — Guía de Accidentes, Hospitales y Tribunales",
+  "metaDescription": "¿Lesionado/a en Glendale? Encuentre hospitales de emergencia locales, tribunales y conozca sus derechos bajo la ley de lesiones personales de California.",
+  "population": "~200,000",
+  "description": "Glendale es una ciudad densamente poblada del Condado de Los Ángeles, ubicada entre el centro de Los Ángeles, Burbank y Pasadena. Su núcleo urbano a lo largo de Brand Boulevard y Glendale Avenue registra un alto flujo peatonal, especialmente cerca de los centros comerciales Americana at Brand y Glendale Galleria, lo que crea un riesgo significativo de accidentes de peatones y ciclistas. El intercambio de la I-5 y la SR-134 es una confluencia compleja de autopistas de alta velocidad que genera frecuentes colisiones en las incorporaciones y carriles de aceleración. La SR-2 desciende desde el Bosque Nacional de los Ángeles a través de las comunidades de ladera de Glendale, y sus curvas y cambios de pendiente contribuyen al riesgo de accidentes de un solo vehículo y colisiones frontales. La I-210 bordea el norte de la ciudad conectándola con Pasadena y el Condado de San Bernardino. Colorado Street y San Fernando Road son calles de superficie transitadas con tráfico comercial y de commuters combinado. El sistema de autobuses Glendale Beeline y las rutas Commuter Express de LADOT sirven a la ciudad, lo que convierte a las agencias de tránsito en posibles demandados en casos de lesiones. Las calles residenciales en las laderas de Glendale presentan riesgo adicional de vuelcos y accidentes por señalización insuficiente.",
+  "hospitals": [
+    {
+      "name": "Dignity Health — Glendale Memorial Hospital",
+      "address": "1420 S Central Ave, Glendale, CA 91204",
+      "erAvailable": true
+    },
+    {
+      "name": "USC Verdugo Hills Hospital",
+      "address": "1812 Verdugo Blvd, Glendale, CA 91208",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "Los Angeles Superior Court — Glendale Courthouse",
+      "address": "600 E Broadway, Glendale, CA 91206",
+      "type": "Civil general y lesiones personales"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Colisiones en el intercambio de autopistas en la I-5 y la SR-134",
+    "Accidentes de peatones en Brand Blvd cerca del Americana at Brand y Glendale Galleria",
+    "Accidentes en carreteras de ladera en la SR-2 y Verdugo Blvd con peligros por cambios de pendiente",
+    "Colisiones en intersecciones en los corredores comerciales de Colorado St y San Fernando Rd",
+    "Accidentes de ciclistas en Glendale Ave y calles de superficie del centro",
+    "Lesiones relacionadas con el tránsito en rutas de Glendale Beeline y autobuses de LADOT"
+  ],
+  "notableCorridors": [
+    "I-5 (Golden State Freeway) — autopista norte-sur principal con alto volumen de commuters",
+    "SR-134 (Ventura Freeway) — conector este-oeste a través de Glendale hacia Pasadena",
+    "SR-2 (Glendale Freeway) — ruta de descenso montañoso con peligros de pendiente y curvas",
+    "I-210 (Foothill Freeway) — corredor de alta velocidad a lo largo del borde norte de la ciudad",
+    "Brand Blvd — corredor peatonal comercial principal con alto flujo de personas",
+    "San Fernando Rd — calle industrial y comercial de superficie con tráfico de camiones"
+  ],
+  "localNotes": "Glendale se encuentra en el Condado de Los Ángeles. Los accidentes que involucren propiedad, aceras o vehículos de la ciudad o el condado requieren presentar una reclamación gubernamental dentro de los 6 meses posteriores a la fecha de la lesión. Los informes de colisiones de tráfico del Departamento de Policía de Glendale pueden solicitarse a través de los Registros del GPD. El sistema de autobuses Glendale Beeline y LA Metro son posibles demandados en casos de lesiones relacionadas con el tránsito en la ciudad.",
+  "reviewedBy": "Revisión Legal Pendiente",
+  "reviewDate": "2026-05-01"
+}

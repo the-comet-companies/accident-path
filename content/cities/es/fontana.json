@@ -1,0 +1,48 @@
+{
+  "slug": "fontana",
+  "name": "Fontana",
+  "stateSlug": "california",
+  "stateAbbreviation": "CA",
+  "metaTitle": "Fontana — Guía de Accidentes, Hospitales y Tribunales",
+  "metaDescription": "¿Lesionado/a en Fontana? Encuentre hospitales de emergencia locales, tribunales y conozca sus derechos bajo la ley de lesiones personales de California.",
+  "population": "~215,000",
+  "description": "Fontana es una ciudad importante del Inland Empire en el Condado de San Bernardino que se ha convertido en uno de los centros logísticos y de almacenamiento más significativos del sur de California. Las autopistas I-10 y I-15 se cruzan cerca del núcleo de Fontana, y el intercambio resultante es una de las zonas de colisión de camiones comerciales con mayor volumen de la región. Cientos de centros de distribución y almacenes de cumplimiento operan cerca de estos corredores, generando tráfico incesante de vehículos pesados en Sierra Ave, Foothill Blvd y Arrow Blvd durante todas las horas del día. La SR-210 corre a lo largo del borde norte de la ciudad, proporcionando conectividad para los commuters hacia San Bernardino y Pasadena. Baseline Road conecta Fontana con las ciudades vecinas de Rancho Cucamonga y Ontario. La concentración de empleadores logísticos también significa una proporción superior al promedio de conductores de vehículos comerciales que trabajan bajo presión de tiempo, lo que aumenta el riesgo de accidentes por fatiga o distracción. Las rutas de autobús de Omnitrans sirven extensamente a la ciudad, y las lesiones relacionadas con el tránsito pueden nombrar a Omnitrans como demandado.",
+  "hospitals": [
+    {
+      "name": "Kaiser Permanente Fontana Medical Center",
+      "address": "9961 Sierra Ave, Fontana, CA 92335",
+      "erAvailable": true
+    },
+    {
+      "name": "Arrowhead Regional Medical Center",
+      "address": "400 N Pepper Ave, Colton, CA 92324",
+      "erAvailable": true
+    }
+  ],
+  "courts": [
+    {
+      "name": "San Bernardino Superior Court — Fontana District",
+      "address": "17780 Arrow Blvd, Fontana, CA 92335",
+      "type": "Civil general y lesiones personales"
+    }
+  ],
+  "commonAccidentTypes": [
+    "Accidentes de camiones comerciales en la I-10 cerca de las rutas de acceso a los centros de distribución del Inland Empire",
+    "Colisiones de alta velocidad en el intercambio de la I-10 y la I-15",
+    "Accidentes de cambio de carril y traseros en la SR-210 durante las horas pico de commuters",
+    "Accidentes de peatones y ciclistas en Sierra Ave y Foothill Blvd cerca de campus logísticos",
+    "Colisiones en intersecciones en Arrow Blvd cerca de entradas de zonas de almacenamiento",
+    "Accidentes de conductores fatigados y distraídos en Baseline Rd por trabajadores de turno en logística"
+  ],
+  "notableCorridors": [
+    "I-10 (San Bernardino Freeway) — corredor de carga principal con volumen constante de camiones comerciales",
+    "I-15 (Devore Freeway) — autopista norte-sur que conecta con el corredor hacia Las Vegas y San Diego",
+    "SR-210 (Foothill Freeway) — autopista para commuters a lo largo del borde norte de la ciudad",
+    "Sierra Ave — arteria norte-sur principal adyacente a los distritos de almacenes y distribución",
+    "Foothill Blvd — corredor histórico de la Ruta 66 con tráfico comercial y residencial mixto",
+    "Arrow Blvd — vía de acceso al distrito logístico con alta conflictividad en entradas y giros de camiones"
+  ],
+  "localNotes": "Fontana se encuentra en el Condado de San Bernardino. Los accidentes que involucren propiedad, aceras o vehículos de la ciudad o el condado requieren presentar una reclamación gubernamental dentro de los 6 meses posteriores a la fecha de la lesión. Los informes de colisiones de tráfico del Departamento de Policía de Fontana pueden solicitarse a través de los Registros del FPD. El servicio de autobuses Omnitrans es un posible demandado en casos de lesiones relacionadas con el tránsito. Las grandes empresas de logística que operan en Fontana también pueden ser demandadas si sus conductores causaron el accidente.",
+  "reviewedBy": "Revisión Legal Pendiente",
+  "reviewDate": "2026-05-01"
+}
