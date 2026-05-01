@@ -186,13 +186,13 @@ All 6 tools are now live in Spanish. ✅
 ### City pages
 All 20 city pages complete in EN + ES. ✅
 
-### Spanish-only pages (4 → 2 remaining)
+### Spanish-only pages (all complete ✅)
 | Page | Status |
 |------|--------|
 | About AccidentPath | ✅ Live — `app/(es)/es/sobre-nosotros/page.tsx` |
 | Contact AccidentPath | ✅ Live — `app/(es)/es/contacto/page.tsx` |
-| Spinal Accident Guide | ❌ Needs ES JSON + `/es/accidentes/columna` route |
-| Traumatic Brain Accident Guide | ❌ Needs ES JSON + `/es/accidentes/traumatismo-craneal` route |
+| Spinal Accident Guide | ✅ Live — `content/accidents/es/columna.json` |
+| Traumatic Brain Accident Guide | ✅ Live — `content/accidents/es/traumatismo-craneal.json` |
 
 ---
 
@@ -239,3 +239,35 @@ All 20 city pages complete in EN + ES. ✅
 | `30c6720` | feat(ui): add Contact Us / Contacto to footer company links |
 | `f517de1` | feat(es): add Spanish contact page (/es/contacto) |
 | `3dd611e` | feat(es): add Spanish About page + fix header crowding + fix language toggle routing |
+
+---
+
+## Session Continuation — Spanish Accident Guides (Spinal + TBI)
+
+### Spinal Accident Guide ES ✅
+- Created `content/accidents/es/columna.json` (full translation of `/accidents/spinal`)
+- Added `'spinal'` to `ACCIDENT_EN_SLUGS` in `app/(es)/es/accidentes/[slug]/page.tsx`
+- Route: `/es/accidentes/columna`
+- metaDescription: 143 chars (Zod max 160)
+- Notion updated: Spanish Route → `https://accidentpath.com/es/accidentes/columna`, Spanish Status → Live
+
+### Traumatic Brain Accident Guide ES ✅
+- Created `content/accidents/es/traumatismo-craneal.json` (full translation of `/accidents/traumatic-brain`)
+- Added `'traumatic-brain'` to `ACCIDENT_EN_SLUGS` in `app/(es)/es/accidentes/[slug]/page.tsx`
+- Route: `/es/accidentes/traumatismo-craneal`
+- metaDescription: 149 chars (Zod max 160)
+- Notion updated: Spanish Route → `https://accidentpath.com/es/accidentes/traumatismo-craneal`, Spanish Status → Live
+
+### PENDING.md Cleared ✅
+- All pending work is now complete — `PENDING.md` reflects no remaining items
+- Site is fully bilingual: all accident types, injury guides, tools, city pages, state pages, and static pages have Spanish versions
+
+### Notion Tracker Sync (this continuation)
+- Spinal Accident Guide: Spanish Route + Spanish Status → Live
+- Traumatic Brain Accident Guide: Spanish Route + Spanish Status → Live
+- (Previous continuation also fixed: 20 city pages EN Status → Live, all 20 city pages Spanish Route populated, all 20 cities Spanish Status → Live, Insurance Call Prep Spanish Route populated)
+
+### Commits This Continuation
+| Hash | Message |
+|------|---------|
+| `76c3516` | feat(es): add Spanish Spinal and TBI accident guides |
