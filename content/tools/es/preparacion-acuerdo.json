@@ -1,0 +1,108 @@
+{
+  "slug": "preparacion-acuerdo",
+  "title": "Lista de Preparación para Acuerdo",
+  "metaTitle": "Lista de Preparación para Acuerdo — ¿Está Listo/a?",
+  "metaDescription": "Evalúe si puede estar listo/a para hablar de un acuerdo. Identifique qué documentación debe tener en orden antes de iniciar cualquier conversación de acuerdo.",
+  "description": "Llegar a un acuerdo en una reclamación de lesiones personales antes de estar listo/a puede resultar en una compensación que no refleja sus pérdidas reales. Esta lista educativa le ayuda a identificar si los elementos más importantes suelen estar en orden antes de que comiencen las negociaciones — y qué puede faltar aún.",
+  "disclaimer": "Esta lista proporciona información educativa general sobre la preparación para acuerdos y no constituye asesoramiento legal. El momento adecuado para llegar a un acuerdo depende de su situación médica individual, los hechos del caso y las circunstancias legales. Consulte a un abogado de lesiones personales con licencia antes de aceptar cualquier oferta de acuerdo.",
+  "steps": [
+    {
+      "id": "medical-status",
+      "question": "¿Cuál es el estado actual de su tratamiento médico?",
+      "type": "select",
+      "options": [
+        { "value": "yes-complete", "label": "Sí — el tratamiento está completo" },
+        { "value": "yes-mmi", "label": "Sí — alcancé la mejoría médica máxima (MMI)" },
+        { "value": "no-still-treating", "label": "No — todavía recibo tratamiento" },
+        { "value": "uncertain", "label": "Incierto" }
+      ]
+    },
+    {
+      "id": "records-gathered",
+      "question": "¿Cuál de los siguientes registros tiene actualmente? (Seleccione todos los que apliquen)",
+      "type": "checklist",
+      "options": [
+        { "value": "medical-records", "label": "Registros y facturas médicas" },
+        { "value": "police-report", "label": "Informe policial o del accidente" },
+        { "value": "wage-loss-docs", "label": "Documentación de pérdida de salario" },
+        { "value": "property-damage", "label": "Estimados o avalúos de daños a la propiedad" },
+        { "value": "photos-evidence", "label": "Fotos y evidencia de la escena del accidente" },
+        { "value": "witness-statements", "label": "Declaraciones de testigos o información de contacto" },
+        { "value": "insurance-correspondence", "label": "Correspondencia de seguros y registros de reclamaciones" },
+        { "value": "none-yet", "label": "Ninguno recopilado aún" }
+      ]
+    },
+    {
+      "id": "wages-documented",
+      "question": "¿Ha documentado sus salarios perdidos y otras pérdidas económicas?",
+      "type": "select",
+      "options": [
+        { "value": "yes", "label": "Sí — completamente documentado" },
+        { "value": "partially", "label": "Parcialmente documentado" },
+        { "value": "no", "label": "No — aún no documentado" },
+        { "value": "not-applicable", "label": "No aplica — sin pérdida de ingresos" }
+      ]
+    },
+    {
+      "id": "attorney-consulted",
+      "question": "¿Ha consultado con un abogado de lesiones personales?",
+      "type": "select",
+      "options": [
+        { "value": "yes-retained", "label": "Sí — contraté a un abogado" },
+        { "value": "yes-consulted", "label": "Sí — tuve una consulta pero no lo contraté" },
+        { "value": "not-yet", "label": "Todavía no" },
+        { "value": "no-plan-to-self-represent", "label": "No — planeo manejarlo yo mismo/a" }
+      ]
+    }
+  ],
+  "supportingContent": [
+    {
+      "heading": "Por qué llegar a un acuerdo demasiado pronto puede perjudicar su reclamación",
+      "content": "Las compañías de seguros frecuentemente presentan ofertas de acuerdo tempranas que parecen razonables pero no tienen en cuenta el alcance total de sus lesiones, necesidades médicas a largo plazo o ingresos futuros perdidos. Una vez que firma una liberación de acuerdo, generalmente renuncia a su derecho a buscar compensación adicional — incluso si sus lesiones resultan ser más graves de lo que inicialmente parecía. Llegar a un acuerdo antes de haber alcanzado la mejoría médica máxima y documentado todas sus pérdidas significa que puede estar renunciando a derechos que no puede recuperar. La mayoría de los abogados de lesiones personales aconsejan a sus clientes no llegar a un acuerdo hasta que el tratamiento médico esté completo o el pronóstico esté claramente establecido.",
+      "tips": [
+        "No acepte una oferta hasta que su tratamiento médico esté completo o haya alcanzado la mejoría máxima",
+        "Firmar una liberación es permanente — no puede reabrir una reclamación después de llegar a un acuerdo",
+        "Una oferta de acuerdo rápida a menudo indica que la aseguradora cree que su reclamación vale más"
+      ]
+    },
+    {
+      "heading": "¿Qué significa 'mejoría médica máxima'?",
+      "content": "La mejoría médica máxima (MMI, por sus siglas en inglés) es el punto en que sus médicos tratantes determinan que su condición se ha estabilizado y es poco probable que mejore significativamente, incluso con tratamiento continuo. Alcanzar la MMI no significa que se haya recuperado completamente — significa que su condición ha llegado a una meseta. Llegar a un acuerdo antes de la MMI conlleva un riesgo significativo porque el costo total de sus necesidades médicas futuras, las limitaciones continuas y el impacto a largo plazo en su vida pueden no ser conocidos aún. Un abogado puede asesorarle sobre cómo aplica la MMI a sus lesiones y pronóstico específicos.",
+      "tips": [
+        "Pregúntele directamente a su médico tratante si ha alcanzado la mejoría médica máxima",
+        "Obtenga por escrito cualquier recomendación de atención a largo plazo de su médico",
+        "Las calificaciones de discapacidad o deterioro permanente pueden ser parte de su evaluación de MMI"
+      ]
+    },
+    {
+      "heading": "El panorama completo: daños económicos y no económicos",
+      "content": "Un acuerdo completo debe tener en cuenta todas las categorías de daños recuperables: facturas médicas (pasadas y futuras), salarios perdidos (capacidad de ganancias pasada y futura), daños a la propiedad, gastos de bolsillo, dolor y sufrimiento, pérdida de disfrute de la vida, angustia emocional y — en casos de conducta indebida grave — potencialmente daños punitivos. Muchas víctimas de accidentes se enfocan solo en sus facturas médicas y omiten otros componentes significativos. Un abogado de lesiones personales puede ayudarle a identificar y documentar todos los daños aplicables antes de que entre en negociaciones de acuerdo.",
+      "tips": [
+        "Los daños no económicos como el dolor y sufrimiento pueden superar las facturas médicas en casos graves",
+        "Los costos médicos futuros requieren la estimación de un experto médico, no su propia proyección",
+        "Documente cada gasto de bolsillo: transporte, equipos, modificaciones del hogar"
+      ]
+    },
+    {
+      "heading": "¿Debe contratar a un abogado antes de llegar a un acuerdo?",
+      "content": "Los estudios y la experiencia de la industria muestran consistentemente que los demandantes de lesiones personales representados por abogados generalmente recuperan más — incluso después de los honorarios legales — que quienes negocian por su cuenta. Un abogado puede identificar daños que pudo haber pasado por alto, negociar desde una posición de conocimiento legal, prevenir errores comunes en el proceso de acuerdo y asesorarle sobre las implicaciones fiscales de los diferentes componentes de un acuerdo. La mayoría de los abogados de lesiones personales trabajan en base a honorarios contingentes, lo que significa que no hay tarifas anticipadas — se les paga solo si recuperan dinero para usted."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Cómo sé si una oferta de acuerdo es justa?",
+      "answer": "Evaluar una oferta de acuerdo requiere conocer el valor total de su reclamación — que incluye todos los costos médicos pasados y futuros, ingresos perdidos, dolor y sufrimiento y otros daños. Los ajustadores de seguros calculan los acuerdos basándose en sus propias fórmulas; un abogado de lesiones personales experimentado puede evaluar independientemente la oferta frente al valor real de su reclamación y asesorarle sobre si aceptar, contraofertar o continuar negociando."
+    },
+    {
+      "question": "¿Qué ocurre después de que firmo un acuerdo?",
+      "answer": "Después de firmar una liberación de acuerdo, recibe el pago acordado y su reclamación se cierra. Renuncia permanentemente a su derecho a buscar compensación adicional de las partes que liquidaron por ese incidente — incluso si sus lesiones empeoran, descubre daños adicionales o incurre en gastos médicos futuros relacionados con el mismo accidente. Por eso es tan importante estar seguro de que sus daños están completamente documentados antes de firmar."
+    },
+    {
+      "question": "¿Puedo negociar un monto de acuerdo más alto?",
+      "answer": "Sí. Las ofertas iniciales de las compañías de seguros generalmente son negociables. Usted o su abogado pueden contraofertar con una carta de demanda que documente sus daños y explique por qué se justifica un monto mayor. Son comunes múltiples rondas de negociación. Contar con documentación sólida — registros médicos, evidencia de pérdida de salario y un relato detallado de cómo la lesión ha afectado su vida — fortalece significativamente su posición negociadora."
+    }
+  ],
+  "relatedTools": ["lost-wages-estimator", "injury-journal", "record-request"],
+  "relatedGuides": ["after-car-accident", "insurance-claims"],
+  "relatedAccidents": ["car", "truck", "motorcycle", "slip-fall", "bicycle"]
+}

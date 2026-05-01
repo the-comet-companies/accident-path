@@ -23,6 +23,7 @@ const TOOL_EN_SLUGS = [
   'insurance-call-prep',
   'lost-wages-estimator',
   'record-request',
+  'settlement-readiness',
 ]
 
 export async function generateStaticParams() {

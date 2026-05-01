@@ -39,6 +39,7 @@ export const SLUG_MAP_ES: Record<string, string> = {
   'lost-wages-estimator': 'calculadora-salario',
   'insurance-call-prep': 'preparacion-llamada-seguro',
   'record-request': 'solicitud-registros',
+  'settlement-readiness': 'preparacion-acuerdo',
   'broken-bones': 'huesos-rotos',
   'whiplash': 'latigazo',
   'traumatic-brain': 'traumatismo-craneal',
