@@ -286,11 +286,32 @@ All 20 city pages complete in EN + ES. ✅
 - No email service configured — thank-you page says "you'll receive a copy shortly" but nothing sends
 - No `attorneys` table, no matching logic, no attorney notifications
 
-**Agreed approach:** Option A — full infrastructure, email-based, no auth
-- Resend for transactional email (user confirmation + internal team notification + attorney lead notification)
+**Agreed approach:** Option A — full infrastructure, email + Slack, no auth
+
+**Email — Nodemailer + Google SMTP**
+- Use `sales@dtlaprint.com` (Google Workspace) + app password via Nodemailer
+- SMTP: `smtp.gmail.com:587`, credentials stored as Vercel env vars
+- Sends: user confirmation email (if email provided) + attorney notification email when routed
+- Google Workspace limit: 2,000 emails/day — sufficient for early growth
+
+**Slack — Incoming Webhook**
+- Create a Slack incoming webhook for a dedicated `#leads` channel (workspace already exists — `C0ATA1QUBRD` in CLAUDE.md)
+- POST to webhook URL from `/api/intake` on every submission
+- Message format:
+  ```
+  🔔 New Lead — High Urgency
+  Accident: Car | State: CA | City: Los Angeles
+  Medical: Surgery | Work Impact: Can't work
+  Name: John D. | Phone: provided | Email: provided
+  Submitted: 2:34 PM
+  ```
+- Urgency level drives emoji/label (🔴 High / 🟡 Medium / 🟢 Low)
+- Webhook URL stored as Vercel env var (`SLACK_LEADS_WEBHOOK_URL`)
+
+**Attorney database + routing**
 - `attorneys` table in Supabase (name, email, firm, practice_areas[], states[], cities[], status, tier)
 - Matching logic in `/api/intake`: query active attorneys by state + accident type → email matched attorney(s)
-- If no match → notify AccidentPath team only; mark lead `routing_status = unrouted`
+- If no match → Slack notification to team only; mark lead `routing_status = unrouted`
 - Attorney onboarding form on `/for-attorneys` → saves to `attorneys` table with status = pending
 - AccidentPath team activates attorneys directly in Supabase; routing starts automatically
 - No attorney dashboard or auth yet (YAGNI — no attorneys in network yet)
