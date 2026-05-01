@@ -271,3 +271,28 @@ All 20 city pages complete in EN + ES. ✅
 | Hash | Message |
 |------|---------|
 | `76c3516` | feat(es): add Spanish Spinal and TBI accident guides |
+
+---
+
+## TODO — Attorney Matching System
+
+**Status:** Design deferred — to be built next session.
+
+**Context:**
+- Intake wizard is fully wired: 9-step form → Supabase `intake_sessions` → thank-you page (EN + ES)
+- `/api/intake` route exists and inserts into Supabase
+- Webhook stub at `/api/webhook` returns 200 and logs but does nothing
+- `/for-attorneys` page exists (pitch only, CTA is email address)
+- No email service configured — thank-you page says "you'll receive a copy shortly" but nothing sends
+- No `attorneys` table, no matching logic, no attorney notifications
+
+**Agreed approach:** Option A — full infrastructure, email-based, no auth
+- Resend for transactional email (user confirmation + internal team notification + attorney lead notification)
+- `attorneys` table in Supabase (name, email, firm, practice_areas[], states[], cities[], status, tier)
+- Matching logic in `/api/intake`: query active attorneys by state + accident type → email matched attorney(s)
+- If no match → notify AccidentPath team only; mark lead `routing_status = unrouted`
+- Attorney onboarding form on `/for-attorneys` → saves to `attorneys` table with status = pending
+- AccidentPath team activates attorneys directly in Supabase; routing starts automatically
+- No attorney dashboard or auth yet (YAGNI — no attorneys in network yet)
+
+**Next step:** Run brainstorming → writing-plans → subagent-driven-development when ready to build.
