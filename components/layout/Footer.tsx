@@ -7,7 +7,7 @@ import type { Dictionary } from '@/i18n/dictionaries'
 function getCompanyLinks(locale: Locale) {
   return [
     { label: locale === 'es' ? 'Cómo Funciona' : 'How It Works', href: '/about/how-it-works' },
-    { label: locale === 'es' ? 'Sobre Nosotros' : 'About Us', href: '/about' },
+    { label: locale === 'es' ? 'Sobre Nosotros' : 'About Us', href: locale === 'es' ? '/es/sobre-nosotros' : '/about' },
     { label: locale === 'es' ? 'Contacto' : 'Contact Us', href: locale === 'es' ? '/es/contacto' : '/contact' },
     { label: locale === 'es' ? 'Para Abogados' : 'For Attorneys', href: '/for-attorneys' },
     { label: locale === 'es' ? 'Política de Privacidad' : 'Privacy Policy', href: '/privacy' },

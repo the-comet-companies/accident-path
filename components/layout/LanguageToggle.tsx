@@ -15,10 +15,21 @@ const ES_TO_EN_PREFIXES: Record<string, string> = Object.fromEntries(
   Object.entries(EN_TO_ES_PREFIXES).map(([en, es]) => [es, en])
 )
 
+// Static pages with known EN ↔ ES equivalents
+const STATIC_EN_TO_ES: Record<string, string> = {
+  '/contact': '/es/contacto',
+  '/about': '/es/sobre-nosotros',
+}
+const STATIC_ES_TO_EN: Record<string, string> = {
+  '/es/contacto': '/contact',
+  '/es/sobre-nosotros': '/about',
+}
+
 function getEquivalentUrl(pathname: string, targetLocale: 'en' | 'es'): string {
   if (targetLocale === 'es') {
     if (pathname === '/') return '/es/'
     if (pathname.startsWith('/find-help')) return '/es/buscar-ayuda'
+    if (STATIC_EN_TO_ES[pathname]) return STATIC_EN_TO_ES[pathname]
 
     for (const [enPrefix, esPrefix] of Object.entries(EN_TO_ES_PREFIXES)) {
       if (pathname === enPrefix) return esPrefix
@@ -32,6 +43,7 @@ function getEquivalentUrl(pathname: string, targetLocale: 'en' | 'es'): string {
   } else {
     if (pathname === '/es/' || pathname === '/es') return '/'
     if (pathname.startsWith('/es/buscar-ayuda')) return '/find-help'
+    if (STATIC_ES_TO_EN[pathname]) return STATIC_ES_TO_EN[pathname]
 
     for (const [esPrefix, enPrefix] of Object.entries(ES_TO_EN_PREFIXES)) {
       if (pathname === esPrefix) return enPrefix

@@ -56,6 +56,7 @@ export function Header({ locale = 'en' }: HeaderProps) {
   const simpleLinks = NAV_SIMPLE_LINKS[locale]
   const findHelp = NAV_FIND_HELP[locale]
   const labels = NAV_LABELS[locale]
+  const navItemPx = locale === 'es' ? 'px-2' : 'px-2.5'
 
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
@@ -109,7 +110,7 @@ export function Header({ locale = 'en' }: HeaderProps) {
           </Link>
 
           {/* Desktop nav */}
-          <nav aria-label="Main navigation" className="hidden lg:flex items-center gap-0.5">
+          <nav aria-label="Main navigation" className={`hidden lg:flex items-center ${locale === 'es' ? 'gap-0' : 'gap-0.5'}`}>
 
             {/* Accident Types mega-menu trigger */}
             <button
@@ -118,7 +119,7 @@ export function Header({ locale = 'en' }: HeaderProps) {
               onClick={() => toggle('accidents')}
               onMouseEnter={() => openOnHover('accidents')}
               onMouseLeave={scheduleClose}
-              className="flex items-center gap-1 px-2.5 py-2 text-sm font-medium text-neutral-700 hover:text-primary-600 rounded-md hover:bg-primary-50 transition-colors whitespace-nowrap"
+              className={`flex items-center gap-1 ${navItemPx} py-2 text-sm font-medium text-neutral-700 hover:text-primary-600 rounded-md hover:bg-primary-50 transition-colors whitespace-nowrap`}
             >
               {labels.accidentTypes}
               <ChevronDown
@@ -132,7 +133,7 @@ export function Header({ locale = 'en' }: HeaderProps) {
               <Link
                 key={link.href}
                 href={link.href}
-                className="px-2.5 py-2 text-sm font-medium text-neutral-700 hover:text-primary-600 rounded-md hover:bg-primary-50 transition-colors whitespace-nowrap"
+                className={`${navItemPx} py-2 text-sm font-medium text-neutral-700 hover:text-primary-600 rounded-md hover:bg-primary-50 transition-colors whitespace-nowrap`}
               >
                 {link.label}
               </Link>
@@ -141,7 +142,7 @@ export function Header({ locale = 'en' }: HeaderProps) {
             {/* Find Help — highlighted */}
             <Link
               href={findHelp.href}
-              className="px-2.5 py-2 text-sm font-medium text-amber-600 hover:text-amber-700 rounded-md hover:bg-amber-50 transition-colors whitespace-nowrap"
+              className={`${navItemPx} py-2 text-sm font-medium text-amber-600 hover:text-amber-700 rounded-md hover:bg-amber-50 transition-colors whitespace-nowrap`}
             >
               {findHelp.label}
             </Link>
@@ -153,7 +154,7 @@ export function Header({ locale = 'en' }: HeaderProps) {
               onClick={() => toggle('states')}
               onMouseEnter={() => openOnHover('states')}
               onMouseLeave={scheduleClose}
-              className="flex items-center gap-1 px-2.5 py-2 text-sm font-medium text-neutral-700 hover:text-primary-600 rounded-md hover:bg-primary-50 transition-colors whitespace-nowrap"
+              className={`flex items-center gap-1 ${navItemPx} py-2 text-sm font-medium text-neutral-700 hover:text-primary-600 rounded-md hover:bg-primary-50 transition-colors whitespace-nowrap`}
             >
               {labels.stateGuides}
               <ChevronDown
@@ -167,7 +168,7 @@ export function Header({ locale = 'en' }: HeaderProps) {
               <Link
                 key={link.href}
                 href={link.href}
-                className="px-2.5 py-2 text-sm font-medium text-neutral-700 hover:text-primary-600 rounded-md hover:bg-primary-50 transition-colors whitespace-nowrap"
+                className={`${navItemPx} py-2 text-sm font-medium text-neutral-700 hover:text-primary-600 rounded-md hover:bg-primary-50 transition-colors whitespace-nowrap`}
               >
                 {link.label}
               </Link>

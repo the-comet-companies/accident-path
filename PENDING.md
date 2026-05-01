@@ -24,8 +24,6 @@ These English pages exist but have no Spanish version yet.
 |------|--------------|-------|
 | Spinal Accident Guide | `/accidents/spinal` | Needs `content/accidents/es/` JSON + `/es/accidentes/[slug]` page |
 | Traumatic Brain Accident Guide | `/accidents/traumatic-brain` | Needs `content/accidents/es/` JSON + `/es/accidentes/[slug]` page |
-| About AccidentPath | `/about` | Needs `app/(es)/es/sobre-nosotros/page.tsx` (or similar slug) |
-| Contact AccidentPath | `/contact` | Needs `app/(es)/es/contacto/page.tsx` (or similar slug) |
 
 When done: update `Spanish Status` → `Live` and set `Spanish Route` in Notion.
 

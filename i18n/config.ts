@@ -184,7 +184,7 @@ export const NAV_SIMPLE_LINKS = {
     { label: 'Lesiones', href: '/es/lesiones' },
     { label: 'Qué Hacer Después', href: '/es/guias' },
     { label: 'Herramientas', href: '/es/herramientas' },
-    { label: 'Sobre Nosotros', href: '/about' },
+    { label: 'Sobre Nosotros', href: '/es/sobre-nosotros' },
   ],
 }
 
@@ -229,7 +229,7 @@ export const NAV_LABELS = {
     viewAllAccidents: 'Ver todos los tipos →',
     stateGuides: 'Guías por Estado',
     viewAllStates: 'Ver todos los estados →',
-    getHelpNow: 'Obtenga Ayuda Ahora',
+    getHelpNow: 'Obtenga Ayuda',
     getHelpNowFull: 'Obtenga Ayuda Ahora — Gratis, Sin Compromiso',
   },
 }
