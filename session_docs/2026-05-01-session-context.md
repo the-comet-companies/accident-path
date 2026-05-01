@@ -2,7 +2,7 @@
 
 ## Summary
 
-Audited the Notion page tracker, fixed stale tool statuses, built 3 of 6 Spanish tool pages (insurance-call-prep, lost-wages-estimator, record-request), resolved several UI bugs, and pushed to main.
+Audited the Notion page tracker, fixed stale tool statuses, built 5 of 6 Spanish tool pages (insurance-call-prep, lost-wages-estimator, record-request, settlement-readiness, state-next-steps), resolved several UI bugs, and pushed to main.
 
 ---
 
@@ -52,6 +52,22 @@ Audited the Notion page tracker, fixed stale tool statuses, built 3 of 6 Spanish
 - Code quality review surfaced pre-existing `slip-fall` alias bug (see Bug Fixes below)
 - Notion updated: Spanish Status → Live, Spanish Route set
 
+## Task 4 Complete: settlement-readiness ✅
+
+- Created `content/tools/es/preparacion-acuerdo.json` (full translation)
+- Added `'settlement-readiness': 'preparacion-acuerdo'` to `SLUG_MAP_ES`
+- Added `'settlement-readiness'` to `TOOL_EN_SLUGS`
+- metaTitle 50 chars, metaDescription 158 chars — both within Zod limits
+- Notion updated: Spanish Status → Live, Spanish Route set
+
+## Task 5 Complete: state-next-steps ✅
+
+- Created `content/tools/es/proximos-pasos-estado.json` (full translation)
+- Added `'state-next-steps': 'proximos-pasos-estado'` to `SLUG_MAP_ES`
+- Added `'state-next-steps'` to `TOOL_EN_SLUGS`
+- Implementer trimmed metaDescription from 172 → 158 chars to pass Zod max(160)
+- Notion updated: Spanish Status → Live, Spanish Route set
+
 ## Bug Fixes
 
 ### Coming Soon badges still showing on listing pages
@@ -84,6 +100,9 @@ Audited the Notion page tracker, fixed stale tool statuses, built 3 of 6 Spanish
 
 | Hash | Message |
 |------|---------|
+| (pending) | feat(es): add Spanish tool — state-next-steps (proximos-pasos-estado) |
+| `f54ba32` | feat(es): add Spanish tool — settlement-readiness (preparacion-acuerdo) |
+| `46c4438` | docs: move session notes to session_docs/ and update with tasks 2-3 + bug fixes |
 | `2fde8b0` | fix(ui): replace inline script in EmergencyBanner with useLayoutEffect to fix React 19 warning |
 | `8273286` | fix(es): add slip-fall alias to SLUG_MAP_ES to fix broken related-accident links |
 | `047fa92` | feat(es): add Spanish tool — record-request (solicitud-registros) |
@@ -102,11 +121,9 @@ Audited the Notion page tracker, fixed stale tool statuses, built 3 of 6 Spanish
 
 ## Remaining To-Do (from PENDING.md)
 
-### Spanish tools (3 remaining, plan written)
+### Spanish tools (1 remaining, plan written)
 | Tool | ES Slug |
 |------|---------|
-| settlement-readiness | `preparacion-acuerdo` |
-| state-next-steps | `proximos-pasos-estado` |
 | statute-countdown | `cuenta-regresiva-plazo` |
 
 ### City pages (20 — largest open chunk)
