@@ -159,6 +159,22 @@ export default async function GuideDetailPage({
                 toolContext={{ guideTitle: guide.title, guideSlug: guide.slug }}
               />
 
+              {/* Resource CTA */}
+              <div className="rounded-xl border border-neutral-200 bg-neutral-50 p-5">
+                <p className="text-[10px] font-bold uppercase tracking-widest text-amber-700 mb-2">
+                  Must Read
+                </p>
+                <p className="text-sm font-semibold text-neutral-800 leading-snug mb-3">
+                  5 Things You MUST Know Before Deciding on an Attorney
+                </p>
+                <a
+                  href="/resources/5-things-before-deciding-on-attorney"
+                  className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary-600 hover:text-primary-700 transition-colors"
+                >
+                  Read the free resource <ArrowRight className="w-3.5 h-3.5" aria-hidden="true" />
+                </a>
+              </div>
+
               <CTAButton href="/find-help" size="md">
                 Get Free Guidance
               </CTAButton>

@@ -274,6 +274,22 @@ export default async function AccidentHubPage({
                 toolContext={{ accidentType: accident.title, accidentSlug: accident.slug }}
               />
 
+              {/* Resource CTA */}
+              <div className="rounded-xl border border-neutral-200 bg-neutral-50 p-5">
+                <p className="text-[10px] font-bold uppercase tracking-widest text-red-600 mb-2">
+                  Critical
+                </p>
+                <p className="text-sm font-semibold text-neutral-800 leading-snug mb-3">
+                  Do Not Do This Before Picking an Attorney
+                </p>
+                <a
+                  href="/resources/before-picking-an-attorney"
+                  className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary-600 hover:text-primary-700 transition-colors"
+                >
+                  Read the free guide <ArrowRight className="w-3.5 h-3.5" aria-hidden="true" />
+                </a>
+              </div>
+
               {/* Evidence Checklist */}
               <section id="evidence-checklist" aria-labelledby="checklist-heading">
                 <h2
