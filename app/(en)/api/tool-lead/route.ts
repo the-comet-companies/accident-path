@@ -17,6 +17,11 @@ export async function POST(request: Request) {
 
   const data = parsed.data
 
+  const pageUrl = request.headers.get('referer') ?? undefined
+  const enrichedContext = pageUrl
+    ? { ...data.toolContext, pageUrl }
+    : data.toolContext
+
   const { error } = await getSupabaseAdmin()
     .from('tool_leads')
     .insert({
@@ -26,7 +31,7 @@ export async function POST(request: Request) {
       phone: data.phone ?? null,
       city: data.city ?? null,
       state: data.toolContext?.state ?? null,
-      tool_context: data.toolContext,
+      tool_context: enrichedContext,
       consent: data.consent,
     })
 
@@ -40,7 +45,7 @@ export async function POST(request: Request) {
     fetch(webhookUrl, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(data),
+      body: JSON.stringify({ ...data, toolContext: enrichedContext }),
     }).catch((err) => console.error('[tool-lead] n8n webhook error:', err))
   }
 
