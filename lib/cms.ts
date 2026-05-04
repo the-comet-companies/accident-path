@@ -3,7 +3,7 @@ import path from 'path'
 import { AccidentTypeSchema, type AccidentType } from '@/types/accident'
 import { InjuryTypeSchema, type InjuryType } from '@/types/injury'
 import { StateDataSchema, CityDataSchema, type StateData, type CityData } from '@/types/state'
-import { GuideSchema, type Guide } from '@/types/content'
+import { GuideSchema, ResourceSchema, type Guide, type Resource } from '@/types/content'
 import { ToolConfigSchema, type ToolConfig } from '@/types/tool'
 
 const CONTENT_DIR = path.join(process.cwd(), 'content')
@@ -49,4 +49,8 @@ export const cms = {
     loadAndValidate<ToolConfig>(locale === 'es' ? 'tools/es' : 'tools', slug, ToolConfigSchema),
   getAllTools: (locale: 'en' | 'es' = 'en') =>
     loadAll<ToolConfig>(locale === 'es' ? 'tools/es' : 'tools', ToolConfigSchema),
+  getResource: (slug: string) =>
+    loadAndValidate<Resource>('resources', slug, ResourceSchema),
+  getAllResources: () =>
+    loadAll<Resource>('resources', ResourceSchema),
 }
