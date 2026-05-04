@@ -2,7 +2,7 @@ import { z } from 'zod'
 
 export const ToolLeadSchema = z.object({
   toolSlug: z.string(),
-  pattern: z.enum(['A', 'C']),
+  pattern: z.enum(['A', 'C', 'R']),
   email: z.string().email().optional(),
   phone: z.string().min(7).optional(),
   city: z.string().optional(),
