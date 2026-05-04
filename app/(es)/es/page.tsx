@@ -19,7 +19,7 @@ import {
 import { FaCar, FaTruck, FaMotorcycle, FaHardHat } from 'react-icons/fa'
 import { FaPersonFalling } from 'react-icons/fa6'
 import { CTAButton } from '@/components/ui/CTAButton'
-import { PageLeadCapture } from '@/components/ui/PageLeadCapture'
+import { PageLeadCaptureModal } from '@/components/ui/PageLeadCaptureModal'
 import { StateSelector } from '@/components/ui/StateSelector'
 import { LazyAnimations, LazyHeroVisual } from '@/components/home/LazyAnimations'
 
@@ -344,7 +344,7 @@ export default function HomeEs() {
             </div>
           </div>
 
-          <div className="text-center mt-6">
+          <div className="flex flex-wrap items-center justify-center gap-4 mt-6">
             <Link
               href="/es/accidentes"
               className="inline-flex items-center gap-1.5 text-sm font-semibold font-sans text-primary-700 hover:text-primary-800 transition-colors min-h-[44px] sm:min-h-0"
@@ -352,10 +352,8 @@ export default function HomeEs() {
               Ver los 13 tipos de accidentes
               <ChevronRight className="w-4 h-4" aria-hidden="true" />
             </Link>
-          </div>
-
-          <div className="mt-10 max-w-2xl mx-auto">
-            <PageLeadCapture
+            <PageLeadCaptureModal
+              triggerLabel="Obtener Guía Gratuita"
               headline="Recibe nuestra guía gratuita de recuperación"
               subtext="Aprende qué hacer, qué documentar y cuándo actuar."
               buttonLabel="Envíame la Guía"

@@ -10,6 +10,7 @@ interface Props {
   buttonLabel: string
   toolSlug: string
   toolContext?: Record<string, string>
+  bare?: boolean
 }
 
 const INPUT_CLASS =
@@ -21,6 +22,7 @@ export function PageLeadCapture({
   buttonLabel,
   toolSlug,
   toolContext = {},
+  bare = false,
 }: Props) {
   const [email, setEmail] = useState('')
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
@@ -56,9 +58,9 @@ export function PageLeadCapture({
     )
   }
 
-  return (
-    <div className="rounded-xl border border-primary-100 bg-primary-50 p-6">
-      <p className="font-sans font-semibold text-primary-900 text-base mb-1">{headline}</p>
+  const content = (
+    <>
+      {headline && <p className="font-sans font-semibold text-primary-900 text-base mb-1">{headline}</p>}
       <p className="text-sm text-neutral-500 leading-relaxed mb-4">{subtext}</p>
       <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">
         <label className="sr-only" htmlFor={`plc-email-${toolSlug}`}>
@@ -92,6 +94,14 @@ export function PageLeadCapture({
       {status === 'error' && (
         <p aria-live="polite" className="mt-2 text-xs text-red-600">Something went wrong. Please try again.</p>
       )}
+    </>
+  )
+
+  if (bare) return content
+
+  return (
+    <div className="rounded-xl border border-primary-100 bg-primary-50 p-6">
+      {content}
     </div>
   )
 }

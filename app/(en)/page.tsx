@@ -22,7 +22,7 @@ import { CTAButton } from '@/components/ui/CTAButton'
 import { StateSelector } from '@/components/ui/StateSelector'
 import { buildMetaTags } from '@/components/seo/MetaTags'
 import { LazyAnimations, LazyHeroVisual } from '@/components/home/LazyAnimations'
-import { PageLeadCapture } from '@/components/ui/PageLeadCapture'
+import { PageLeadCaptureModal } from '@/components/ui/PageLeadCaptureModal'
 
 export const metadata: Metadata = {
   ...buildMetaTags({
@@ -357,8 +357,8 @@ export default function Home() {
             </div>
           </div>
 
-          {/* View all link */}
-          <div className="text-center mt-6">
+          {/* View all link + guide CTA */}
+          <div className="flex flex-wrap items-center justify-center gap-4 mt-6">
             <Link
               href="/accidents"
               className="inline-flex items-center gap-1.5 text-sm font-semibold font-sans text-primary-700 hover:text-primary-800 transition-colors min-h-[44px] sm:min-h-0"
@@ -366,10 +366,8 @@ export default function Home() {
               View all 13 accident types
               <ChevronRight className="w-4 h-4" aria-hidden="true" />
             </Link>
-          </div>
-
-          <div className="mt-10 max-w-2xl mx-auto">
-            <PageLeadCapture
+            <PageLeadCaptureModal
+              triggerLabel="Get Free Accident Guide"
               headline="Get our free accident recovery guide"
               subtext="Know what to do, what to document, and when to act."
               buttonLabel="Send Me the Guide"
