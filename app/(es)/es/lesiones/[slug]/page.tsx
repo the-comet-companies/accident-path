@@ -6,6 +6,7 @@ import type { InjuryType } from '@/types/injury'
 import { Breadcrumb } from '@/components/layout/Breadcrumb'
 import { CTAButton } from '@/components/ui/CTAButton'
 import { DisclaimerBanner } from '@/components/ui/DisclaimerBanner'
+import { PageLeadCapture } from '@/components/ui/PageLeadCapture'
 import { SchemaOrg } from '@/components/seo/SchemaOrg'
 import { articleSchema, breadcrumbSchema } from '@/lib/seo'
 import { SLUG_MAP_ES, SLUG_MAP_EN, NAV_ACCIDENT_TYPES } from '@/i18n/config'
@@ -160,6 +161,14 @@ export default async function InjuryDetailPageES({
                   ))}
                 </ul>
               </section>
+
+              <PageLeadCapture
+                headline={`Recibe una guía de síntomas y documentación de ${injury.title}`}
+                subtext="Qué rastrear, cuándo ver a un médico y qué buscan las aseguradoras."
+                buttonLabel="Envíame la Guía"
+                toolSlug="page-injury-es"
+                toolContext={{ injuryType: injury.title }}
+              />
 
               {/* Long-term effects */}
               <section aria-labelledby="effects-heading">

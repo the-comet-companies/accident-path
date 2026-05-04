@@ -6,6 +6,7 @@ import type { InjuryType } from '@/types/injury'
 import { Breadcrumb } from '@/components/layout/Breadcrumb'
 import { CTAButton } from '@/components/ui/CTAButton'
 import { DisclaimerBanner } from '@/components/ui/DisclaimerBanner'
+import { PageLeadCapture } from '@/components/ui/PageLeadCapture'
 import { SchemaOrg } from '@/components/seo/SchemaOrg'
 import { buildMetaTags } from '@/components/seo/MetaTags'
 import { articleSchema, breadcrumbSchema } from '@/lib/seo'
@@ -128,6 +129,14 @@ export default async function InjuryDetailPage({
                   ))}
                 </ul>
               </section>
+
+              <PageLeadCapture
+                headline={`Get a ${injury.title} symptom & documentation guide`}
+                subtext="Know what to track, when to see a doctor, and what insurers look for."
+                buttonLabel="Email Me the Guide"
+                toolSlug="page-injury"
+                toolContext={{ injuryType: injury.title }}
+              />
 
               {/* Long-term effects */}
               <section aria-labelledby="effects-heading">
