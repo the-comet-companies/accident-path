@@ -6,6 +6,7 @@ import type { AccidentType } from '@/types/accident'
 import { Breadcrumb } from '@/components/layout/Breadcrumb'
 import { CTAButton } from '@/components/ui/CTAButton'
 import { DisclaimerBanner } from '@/components/ui/DisclaimerBanner'
+import { PageLeadCapture } from '@/components/ui/PageLeadCapture'
 import { SchemaOrg } from '@/components/seo/SchemaOrg'
 import { ChecklistBlock } from '@/components/content/ChecklistBlock'
 import { TimelineBlock } from '@/components/content/TimelineBlock'
@@ -264,6 +265,14 @@ export default async function AccidentHubPage({
                   })}
                 </ol>
               </section>
+
+              <PageLeadCapture
+                headline={`Get the ${accident.title} checklist emailed to you`}
+                subtext="A quick reference for what to document, report, and do next."
+                buttonLabel="Email Me the Checklist"
+                toolSlug="page-accident"
+                toolContext={{ accidentType: accident.title }}
+              />
 
               {/* Evidence Checklist */}
               <section id="evidence-checklist" aria-labelledby="checklist-heading">
