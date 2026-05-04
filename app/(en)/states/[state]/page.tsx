@@ -12,6 +12,8 @@ import {
 } from 'lucide-react'
 import { cms } from '@/lib/cms'
 import type { StateData } from '@/types/state'
+import { STATE_RULES } from '@/lib/state-rules'
+import { SolLeadCapture } from '@/components/ui/SolLeadCapture'
 import { Breadcrumb } from '@/components/layout/Breadcrumb'
 import { CTAButton } from '@/components/ui/CTAButton'
 import { DisclaimerBanner } from '@/components/ui/DisclaimerBanner'
@@ -56,6 +58,9 @@ export default async function StateDetailPage({
   }
 
   const cities = cms.getCitiesByState(state)
+
+  const stateAbbr = stateData.abbreviation as 'CA' | 'AZ'
+  const stateRules = STATE_RULES[stateAbbr] ?? null
 
   const faultRuleLabel = {
     pure_comparative: 'Pure Comparative Fault',
@@ -188,6 +193,14 @@ export default async function StateDetailPage({
                   </div>
                 </div>
               </section>
+
+              {stateRules && (
+                <SolLeadCapture
+                  stateAbbr={stateAbbr}
+                  stateName={stateData.name}
+                  solMonths={stateRules.sol.personalInjury}
+                />
+              )}
 
               {/* Fault rule */}
               <section aria-labelledby="fault-heading">

@@ -13,6 +13,8 @@ import {
 } from 'lucide-react'
 import { cms } from '@/lib/cms'
 import type { StateData } from '@/types/state'
+import { STATE_RULES } from '@/lib/state-rules'
+import { SolLeadCapture } from '@/components/ui/SolLeadCapture'
 import { Breadcrumb } from '@/components/layout/Breadcrumb'
 import { CTAButton } from '@/components/ui/CTAButton'
 import { DisclaimerBanner } from '@/components/ui/DisclaimerBanner'
@@ -72,6 +74,9 @@ export default async function EstadoDetailPage({
 
   const cities = cms.getCitiesByState(estado, 'es')
   const faultRuleLabel = FAULT_RULE_LABELS[stateData.faultRule.type] ?? stateData.faultRule.type
+
+  const stateAbbr = stateData.abbreviation as 'CA' | 'AZ'
+  const stateRules = STATE_RULES[stateAbbr] ?? null
 
   return (
     <>
@@ -192,6 +197,14 @@ export default async function EstadoDetailPage({
                   </div>
                 </div>
               </section>
+
+              {stateRules && (
+                <SolLeadCapture
+                  stateAbbr={stateAbbr}
+                  stateName={stateData.name}
+                  solMonths={stateRules.sol.personalInjury}
+                />
+              )}
 
               {/* Fault rule */}
               <section aria-labelledby="fault-heading">
