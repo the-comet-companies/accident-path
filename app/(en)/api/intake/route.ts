@@ -44,5 +44,14 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: 'Submission failed' }, { status: 500 })
   }
 
+  const webhookUrl = process.env.N8N_WEBHOOK_URL
+  if (webhookUrl) {
+    fetch(webhookUrl, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    }).catch((err) => console.error('[intake] n8n webhook error:', err))
+  }
+
   return NextResponse.json({ success: true })
 }
