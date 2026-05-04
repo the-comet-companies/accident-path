@@ -4,6 +4,18 @@ function s(v: ToolAnswers[string] | undefined): string {
   return typeof v === 'string' ? v : ''
 }
 
+// Converts a slug to a readable label without breaking numeric ranges.
+// "1-7-days" → "1-7 days", "dog-bite" → "dog bite", "6-12-months" → "6-12 months"
+function label(v: ToolAnswers[string] | undefined): string {
+  return s(v).replace(/(?<!\d)-(?!\d)/g, ' ')
+}
+
+function labelArray(v: ToolAnswers[string] | undefined): string {
+  return Array.isArray(v)
+    ? (v as string[]).map(i => label(i)).join(', ')
+    : label(v)
+}
+
 export interface LeadCaptureConfig {
   hook: string
   buttonLabel: string
@@ -16,6 +28,18 @@ export interface LeadCaptureConfig {
 // Tool configs are added one per task (Tasks 8–18).
 // ToolEngine renders ToolLeadCapture only when a slug has an entry here.
 export const TOOL_LEAD_CONFIGS: Partial<Record<string, LeadCaptureConfig>> = {
+  'accident-case-quiz': {
+    hook: "Get personalized next steps — enter your email or phone and we'll follow up.",
+    buttonLabel: 'Get My Personalized Steps',
+    successMessage: "Got it — we'll be in touch with next steps tailored to your situation.",
+    fields: ['email', 'phone'],
+    requiresTcpa: true,
+    getContext: (answers) => ({
+      accidentType: label(answers['accident-type']),
+      timeline: label(answers['timeline']),
+      injuries: labelArray(answers['injuries']),
+    }),
+  },
   'record-request': {
     hook: 'Email me this checklist so I have it when I start making calls.',
     buttonLabel: 'Email Me the Checklist',
@@ -23,10 +47,8 @@ export const TOOL_LEAD_CONFIGS: Partial<Record<string, LeadCaptureConfig>> = {
     fields: ['email'],
     requiresTcpa: false,
     getContext: (answers) => ({
-      accidentType: s(answers['accident-type']).replace(/-/g, ' '),
-      recordsNeeded: Array.isArray(answers['records-needed'])
-        ? (answers['records-needed'] as string[]).map(r => r.replace(/-/g, ' ')).join(', ')
-        : '',
+      accidentType: label(answers['accident-type']),
+      recordsNeeded: labelArray(answers['records-needed']),
     }),
   },
   'lost-wages-estimator': {
@@ -36,9 +58,9 @@ export const TOOL_LEAD_CONFIGS: Partial<Record<string, LeadCaptureConfig>> = {
     fields: ['email'],
     requiresTcpa: false,
     getContext: (answers) => ({
-      employmentType: s(answers['employment-type']).replace(/-/g, ' '),
+      employmentType: label(answers['employment-type']),
       daysMissed: String(answers['days-missed'] ?? ''),
-      ongoingLoss: s(answers['ongoing']).replace(/-/g, ' '),
+      ongoingLoss: label(answers['ongoing']),
     }),
   },
   'state-next-steps': {
@@ -49,7 +71,7 @@ export const TOOL_LEAD_CONFIGS: Partial<Record<string, LeadCaptureConfig>> = {
     requiresTcpa: false,
     getContext: (answers) => ({
       state: s(answers['state']),
-      accidentType: s(answers['accident-type']).replace(/-/g, ' '),
+      accidentType: label(answers['accident-type']),
       accidentDate: s(answers['accident-date']),
     }),
   },
@@ -60,8 +82,8 @@ export const TOOL_LEAD_CONFIGS: Partial<Record<string, LeadCaptureConfig>> = {
     fields: ['email'],
     requiresTcpa: false,
     getContext: (answers) => ({
-      accidentType: s(answers['accident-type']).replace(/-/g, ' '),
-      locationType: s(answers['location-type']).replace(/-/g, ' '),
+      accidentType: label(answers['accident-type']),
+      locationType: label(answers['location-type']),
     }),
   },
   'statute-countdown': {
@@ -72,11 +94,10 @@ export const TOOL_LEAD_CONFIGS: Partial<Record<string, LeadCaptureConfig>> = {
     requiresTcpa: false,
     getContext: (answers) => ({
       state: s(answers['state']),
-      accidentType: s(answers['accident-type']).replace(/-/g, ' '),
+      accidentType: label(answers['accident-type']),
       accidentDate: s(answers['accident-date']),
     }),
   },
 }
 
-// s() is used by per-tool config entries added below
 export { s }
