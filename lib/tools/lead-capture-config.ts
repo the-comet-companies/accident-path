@@ -28,6 +28,17 @@ export interface LeadCaptureConfig {
 // Tool configs are added one per task (Tasks 8–18).
 // ToolEngine renders ToolLeadCapture only when a slug has an entry here.
 export const TOOL_LEAD_CONFIGS: Partial<Record<string, LeadCaptureConfig>> = {
+  'insurance-call-prep': {
+    hook: 'Send me this script so I have it during the call.',
+    buttonLabel: 'Send Me the Script',
+    successMessage: 'Script sent — check your inbox before the call.',
+    fields: ['email', 'phone'],
+    requiresTcpa: true,
+    getContext: (answers) => ({
+      callerType: label(answers['caller-type']),
+      callPurpose: label(answers['call-purpose']),
+    }),
+  },
   'accident-case-quiz': {
     hook: "Get personalized next steps — enter your email or phone and we'll follow up.",
     buttonLabel: 'Get My Personalized Steps',
