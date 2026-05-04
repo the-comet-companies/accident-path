@@ -9,6 +9,7 @@ import { DisclaimerBanner } from '@/components/ui/DisclaimerBanner'
 import { SchemaOrg } from '@/components/seo/SchemaOrg'
 import { ChecklistBlock } from '@/components/content/ChecklistBlock'
 import { TimelineBlock } from '@/components/content/TimelineBlock'
+import { PageLeadCapture } from '@/components/ui/PageLeadCapture'
 import { articleSchema, breadcrumbSchema } from '@/lib/seo'
 import { SLUG_MAP_EN, SLUG_MAP_ES, NAV_ACCIDENT_TYPES } from '@/i18n/config'
 
@@ -278,6 +279,14 @@ export default async function AccidentHubPageES({
                   })}
                 </ol>
               </section>
+
+              <PageLeadCapture
+                headline={`Recibe la lista de verificación de ${accident.title} por correo`}
+                subtext="Una guía rápida sobre qué documentar, reportar y hacer a continuación."
+                buttonLabel="Envíame la Lista"
+                toolSlug="page-accident-es"
+                toolContext={{ accidentType: accident.title }}
+              />
 
               {/* Evidence Checklist */}
               <section id="evidence-checklist" aria-labelledby="checklist-heading">
