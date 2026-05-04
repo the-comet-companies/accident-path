@@ -871,7 +871,13 @@ const lawyerTypeMatcher: OutputGenerator = (answers) => {
   return {
     summary: `Based on your answers, cases like this are typically handled by a ${lawyerType}. This is general information — every situation is unique, and attorney selection should be based on your specific circumstances and comfort level.`,
     items,
-    cta: { label: 'Connect with an Attorney', href: '/contact' },
+    cta: {
+      label: 'Find an Attorney for My Case',
+      href: `/find-help?${new URLSearchParams({
+        ...(accType ? { accidentType: accType } : {}),
+        ...(state ? { state } : {}),
+      }).toString()}`,
+    },
     disclaimer: 'This tool provides general educational information only. It does not constitute a legal referral or recommendation of any specific attorney. Consult with a licensed attorney to evaluate your specific situation.',
     exportable: false,
   }
