@@ -93,3 +93,67 @@ A dedicated **"tasks" view** filters by Category = Task — teammates can see al
 - Root cause of initial failure: webhook node was created via API without a `webhookId` top-level property — n8n couldn't match incoming requests to the registered webhook
 - Fix: added `webhookId: "accidentpath-intake"` to the node via `n8n_update_partial_workflow`
 - Verified: execution `1160974` succeeded (280ms), Slack message confirmed received in `#ap-lrs`
+
+---
+
+## Page Lead Capture — 2026-05-04 (continued session)
+
+### Goal
+Add email capture touchpoints across all content page types (home, accidents, injuries, states, guides) feeding the existing `/api/tool-lead` → Supabase → Slack pipeline. No new API routes, no schema changes.
+
+### Components Built
+- **`components/ui/PageLeadCapture.tsx`** — email-only capture card. `bare` prop strips wrapper for use inside modal. POSTs to `/api/tool-lead` with `pattern: 'A'`, fires `trackEvent('tool_lead_submitted')`.
+- **`components/ui/PageLeadCaptureModal.tsx`** — native `<dialog>` modal. Trigger button (amber), backdrop click closes, X button, no backdrop blur. Wraps `PageLeadCapture` with `bare`.
+
+### Home Page (Checkpoint 1 ✅)
+- Trust row refactored: 4 trust columns on left, brand statement + CTA on right
+- Replaced inline email block with `PageLeadCaptureModal` next to "View all 13 accident types" link
+  - `toolSlug: 'page-home'`, `toolContext: { source: 'home' }`
+  - Copy: "Get Free Accident Guide" → modal → "Send Me the Guide"
+- Same modal added to ES home (`app/(es)/es/page.tsx`) with Spanish copy
+  - `toolSlug: 'page-home-es'`, `toolContext: { source: 'home-es' }`
+
+### n8n Workflow Updated
+- `accidentpath - tool lead notification` (ID: `3mjn5gjskMVgWefV`) — added page slug labels to `toolLabels` map:
+  - `page-home` → "Home Page", `page-home-es` → "Home Page (ES)", `page-accident` → "Accident Page", `page-injury` → "Injury Page", `page-state` → "State Page", `page-guide` → "Guide Page"
+- Slack message format: `📋 *Tool Lead — Home Page* | Email: ... | Source: home | Submitted: ...`
+
+### Notion Task Added
+- `⏳ TASK: Accident Recovery Guide — Content + Email Delivery`
+- Note: This is a **guide page** (`/guides/accident-recovery-guide`), not a tool. Email links to the page. Falls under Checkpoint 5 (guide pages).
+
+### Hydration Error (browser extension — not a code bug)
+- `fdprocessedid` attributes injected by "Fake Data" Chrome extension into buttons/selects before React hydrates
+- Causes a React hydration mismatch warning in dev. Safe to ignore; disappears in Incognito without extensions.
+
+### Checkpoints Status
+| # | Pages | Status |
+|---|-------|--------|
+| 1 | Home (EN + ES) | ✅ Done |
+| 2 | Accident pages (EN + ES) | ✅ Done |
+| 3 | Injury pages (EN + ES) | ✅ Done |
+| 4 | State pages — SolLeadCapture (EN + ES) | ✅ Done |
+| 5 | Guide pages (EN + ES) | ✅ Done |
+
+### Supabase Security Fix ✅
+- Enabled RLS on `tool_leads` table
+- `/api/tool-lead` route now uses `getSupabaseAdmin()` (service role key) instead of anon key
+- `SUPABASE_SERVICE_ROLE_KEY` added to Vercel + `.env.local`
+- Anon insert policy dropped — no public access to table at all
+- `lib/supabase.ts` exports both `getSupabase()` (anon) and `getSupabaseAdmin()` (service role, server-side only)
+
+### n8n Workflow Labels Updated ✅
+- `accidentpath - tool lead notification` (ID: `3mjn5gjskMVgWefV`) now maps all page slugs:
+  - EN: `page-home`, `page-accident`, `page-injury`, `page-state`, `page-guide`
+  - ES: `page-home-es`, `page-accident-es`, `page-injury-es`, `page-state-es`, `page-guide-es`
+
+### SMTP / Email Delivery
+- Pending SMTP credentials for accidentpath.com (user to request from PM)
+- Once ready: configure in n8n, wire email delivery node to `accidentpath - tool lead notification` workflow
+- Notion task: `⏳ TASK: Page Lead Email Delivery (SMTP)` covers all page slug types
+
+### TODO Still Needed
+- [ ] Add `N8N_TOOL_LEAD_WEBHOOK_URL` to Vercel env vars
+  - Value: `https://n8n-dtla-c914de1950b9.herokuapp.com/webhook/accidentpath-tool-lead`
+- [ ] Request SMTP credentials for accidentpath.com from PM (e.g. hello@accidentpath.com)
+- [ ] Configure SMTP in n8n then wire email delivery for page leads
