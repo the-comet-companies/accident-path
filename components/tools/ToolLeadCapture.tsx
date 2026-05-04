@@ -53,34 +53,43 @@ export function ToolLeadCapture({ toolSlug, config, toolContext }: Props) {
       <p className="mb-3 text-sm font-semibold text-primary-900">{config.hook}</p>
       <form onSubmit={handleSubmit} className="flex flex-col gap-3">
         {config.fields.includes('email') && (
-          <input
-            type="email"
-            required
-            placeholder="Your email address"
-            value={email}
-            onChange={e => setEmail(e.target.value)}
-            className="rounded-lg border border-neutral-300 px-3 py-2 text-sm focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500"
-          />
+          <label className="flex flex-col gap-1">
+            <span className="text-xs font-semibold text-neutral-700">Email address</span>
+            <input
+              type="email"
+              required
+              placeholder="you@example.com"
+              value={email}
+              onChange={e => setEmail(e.target.value)}
+              className="rounded-lg border border-neutral-300 px-3 py-2 text-sm focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500"
+            />
+          </label>
         )}
         {config.fields.includes('phone') && (
-          <input
-            type="tel"
-            required
-            placeholder="Your phone number"
-            value={phone}
-            onChange={e => setPhone(e.target.value)}
-            className="rounded-lg border border-neutral-300 px-3 py-2 text-sm focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500"
-          />
+          <label className="flex flex-col gap-1">
+            <span className="text-xs font-semibold text-neutral-700">Phone number</span>
+            <input
+              type="tel"
+              required
+              placeholder="(555) 555-5555"
+              value={phone}
+              onChange={e => setPhone(e.target.value)}
+              className="rounded-lg border border-neutral-300 px-3 py-2 text-sm focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500"
+            />
+          </label>
         )}
         {config.fields.includes('city') && (
-          <input
-            type="text"
-            required
-            placeholder="Your city (e.g. Los Angeles)"
-            value={city}
-            onChange={e => setCity(e.target.value)}
-            className="rounded-lg border border-neutral-300 px-3 py-2 text-sm focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500"
-          />
+          <label className="flex flex-col gap-1">
+            <span className="text-xs font-semibold text-neutral-700">Your city</span>
+            <input
+              type="text"
+              required
+              placeholder="e.g. Los Angeles"
+              value={city}
+              onChange={e => setCity(e.target.value)}
+              className="rounded-lg border border-neutral-300 px-3 py-2 text-sm focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500"
+            />
+          </label>
         )}
         {config.requiresTcpa && (
           <label className="flex cursor-pointer items-start gap-2">

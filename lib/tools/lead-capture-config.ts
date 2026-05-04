@@ -15,7 +15,20 @@ export interface LeadCaptureConfig {
 
 // Tool configs are added one per task (Tasks 8–18).
 // ToolEngine renders ToolLeadCapture only when a slug has an entry here.
-export const TOOL_LEAD_CONFIGS: Partial<Record<string, LeadCaptureConfig>> = {}
+export const TOOL_LEAD_CONFIGS: Partial<Record<string, LeadCaptureConfig>> = {
+  'statute-countdown': {
+    hook: 'Email me a reminder before my deadline expires.',
+    buttonLabel: 'Email Me a Reminder',
+    successMessage: "Got it — we'll email you 30 days before your filing deadline.",
+    fields: ['email'],
+    requiresTcpa: false,
+    getContext: (answers) => ({
+      state: s(answers['state']),
+      accidentType: s(answers['accident-type']).replace(/-/g, ' '),
+      accidentDate: s(answers['accident-date']),
+    }),
+  },
+}
 
 // s() is used by per-tool config entries added below
 export { s }
