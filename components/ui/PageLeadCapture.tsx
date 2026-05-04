@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import { trackEvent } from '@/lib/analytics'
 
 interface Props {
   headline: string
@@ -35,12 +36,13 @@ export function PageLeadCapture({
           toolSlug,
           pattern: 'A',
           email,
-          consent: true,
+          consent: true, // disclosed via Privacy Policy link below
           toolContext,
         }),
       })
       if (!res.ok) throw new Error()
       setStatus('success')
+      trackEvent('tool_lead_submitted', { toolSlug })
     } catch {
       setStatus('error')
     }
@@ -74,6 +76,7 @@ export function PageLeadCapture({
         <button
           type="submit"
           disabled={status === 'loading'}
+          aria-busy={status === 'loading'}
           className="rounded-lg bg-primary-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-primary-700 transition-colors disabled:pointer-events-none disabled:opacity-50 whitespace-nowrap"
         >
           {status === 'loading' ? 'Sending…' : buttonLabel}
@@ -87,7 +90,7 @@ export function PageLeadCapture({
         .
       </p>
       {status === 'error' && (
-        <p className="mt-2 text-xs text-red-600">Something went wrong. Please try again.</p>
+        <p aria-live="polite" className="mt-2 text-xs text-red-600">Something went wrong. Please try again.</p>
       )}
     </div>
   )
