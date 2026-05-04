@@ -783,7 +783,7 @@ const settlementReadiness: OutputGenerator = (answers) => {
   return {
     summary: `Your settlement readiness: ${completedCount} of 4 key factors addressed. ${completedCount < 2 ? 'Several important factors are outstanding — settling now may undervalue your claim.' : completedCount < 4 ? 'You are making progress, but some gaps remain before discussing settlement.' : 'Most factors are in place — consider consulting an attorney to evaluate your options.'} This is general educational information only, not legal advice.`,
     items,
-    cta: { label: 'Connect with an Attorney', href: '/contact' },
+    cta: { label: 'Start My Free Case Review', href: '/find-help' },
     disclaimer: 'This checklist is for general educational purposes only. Settlement decisions involve many factors specific to your situation. Always consult a licensed attorney before accepting any settlement offer.',
     exportable: true,
   }

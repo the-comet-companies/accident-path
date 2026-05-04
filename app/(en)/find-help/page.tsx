@@ -11,16 +11,17 @@ export const metadata = buildMetaTags({
   canonical: '/find-help',
 })
 
-export default function FindHelpPage({
+export default async function FindHelpPage({
   searchParams,
 }: {
-  searchParams: { accidentType?: string; state?: string }
+  searchParams: Promise<{ accidentType?: string; state?: string }>
 }) {
+  const { accidentType, state } = await searchParams
   return (
     <div className="min-h-screen bg-surface-page">
       <IntakeInitializer
-        accidentType={searchParams.accidentType}
-        state={searchParams.state}
+        accidentType={accidentType}
+        state={state}
       />
       {/* Hero */}
       <div className="bg-primary-900 py-12 lg:py-16">
