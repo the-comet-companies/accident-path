@@ -178,6 +178,7 @@ export const NAV_SIMPLE_LINKS = {
     { label: 'Injuries', href: '/injuries' },
     { label: 'What To Do Next', href: '/guides' },
     { label: 'Tools', href: '/tools' },
+    { label: 'Resources', href: '/resources' },
     { label: 'About', href: '/about' },
   ],
   es: [
@@ -239,6 +240,7 @@ export const FOOTER_RESOURCE_LINKS = {
     { label: 'Accident Guides', href: '/guides' },
     { label: 'Injury Types', href: '/injuries' },
     { label: 'Free Tools', href: '/tools' },
+    { label: 'Free Resources', href: '/resources' },
     { label: 'California Guide', href: '/states/california' },
     { label: 'Arizona Guide', href: '/states/arizona' },
     { label: 'Find an Attorney', href: '/find-help' },
