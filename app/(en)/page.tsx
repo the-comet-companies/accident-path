@@ -368,19 +368,16 @@ export default function Home() {
             </Link>
           </div>
 
-        </div>
-      </section>
+          <div className="mt-10 max-w-2xl mx-auto">
+            <PageLeadCapture
+              headline="Get our free accident recovery guide"
+              subtext="Know what to do, what to document, and when to act."
+              buttonLabel="Send Me the Guide"
+              toolSlug="page-home"
+              toolContext={{ source: 'home' }}
+            />
+          </div>
 
-      {/* ── 4.5. Email Capture Strip ─────────────────────────────────────── */}
-      <section className="bg-surface-page py-12 border-t border-neutral-100" aria-label="Email signup">
-        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
-          <PageLeadCapture
-            headline="Get our free accident recovery guide"
-            subtext="Know what to do, what to document, and when to act."
-            buttonLabel="Send Me the Guide"
-            toolSlug="page-home"
-            toolContext={{ source: 'home' }}
-          />
         </div>
       </section>
 

@@ -19,6 +19,7 @@ import {
 import { FaCar, FaTruck, FaMotorcycle, FaHardHat } from 'react-icons/fa'
 import { FaPersonFalling } from 'react-icons/fa6'
 import { CTAButton } from '@/components/ui/CTAButton'
+import { PageLeadCapture } from '@/components/ui/PageLeadCapture'
 import { StateSelector } from '@/components/ui/StateSelector'
 import { LazyAnimations, LazyHeroVisual } from '@/components/home/LazyAnimations'
 
@@ -351,6 +352,16 @@ export default function HomeEs() {
               Ver los 13 tipos de accidentes
               <ChevronRight className="w-4 h-4" aria-hidden="true" />
             </Link>
+          </div>
+
+          <div className="mt-10 max-w-2xl mx-auto">
+            <PageLeadCapture
+              headline="Recibe nuestra guía gratuita de recuperación"
+              subtext="Aprende qué hacer, qué documentar y cuándo actuar."
+              buttonLabel="Envíame la Guía"
+              toolSlug="page-home-es"
+              toolContext={{ source: 'home-es' }}
+            />
           </div>
 
         </div>
