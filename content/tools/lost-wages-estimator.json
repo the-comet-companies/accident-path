@@ -21,8 +21,19 @@
     },
     {
       "id": "income",
-      "question": "What is your income amount? (hourly rate or annual salary)",
-      "type": "number"
+      "question": "What is your income amount?",
+      "type": "number",
+      "dynamicQuestion": {
+        "basedOn": "employment-type",
+        "map": {
+          "full-time": "What is your annual salary?",
+          "full-time-hourly": "What is your hourly rate?",
+          "part-time": "What is your hourly rate?",
+          "self-employed": "What is your annual income (from all sources)?",
+          "gig-worker": "What is your hourly rate?",
+          "not-employed": "What is your income amount?"
+        }
+      }
     },
     {
       "id": "days-missed",

@@ -166,7 +166,9 @@ export function ToolEngine({ tool, strings }: Props) {
       {/* Step question */}
       <div key={currentStep} className="flex flex-col gap-4 animate-step-in">
         <p className="font-sans font-semibold text-lg text-neutral-950 leading-snug">
-          {step.question}
+          {step.dynamicQuestion
+            ? (step.dynamicQuestion.map[answers[step.dynamicQuestion.basedOn] as string] ?? step.question)
+            : step.question}
         </p>
         <ToolStep step={step} value={currentAnswer} onChange={handleChange} />
       </div>

@@ -10,6 +10,10 @@ export const ToolStepSchema = z.object({
   question: z.string(),
   type: z.enum(['select', 'multiselect', 'checklist', 'number', 'text', 'date']),
   options: z.array(ToolOptionSchema).optional(),
+  dynamicQuestion: z.object({
+    basedOn: z.string(),
+    map: z.record(z.string(), z.string()),
+  }).optional(),
 })
 
 export const ToolConfigSchema = z.object({
