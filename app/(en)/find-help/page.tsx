@@ -1,6 +1,7 @@
 import { Breadcrumb } from '@/components/layout/Breadcrumb'
 import { DisclaimerBanner } from '@/components/ui/DisclaimerBanner'
 import { IntakeWizard } from '@/components/intake/IntakeWizard'
+import { IntakeInitializer } from '@/components/intake/IntakeInitializer'
 import { buildMetaTags } from '@/components/seo/MetaTags'
 
 export const metadata = buildMetaTags({
@@ -10,9 +11,17 @@ export const metadata = buildMetaTags({
   canonical: '/find-help',
 })
 
-export default function FindHelpPage() {
+export default function FindHelpPage({
+  searchParams,
+}: {
+  searchParams: { accidentType?: string; state?: string }
+}) {
   return (
     <div className="min-h-screen bg-surface-page">
+      <IntakeInitializer
+        accidentType={searchParams.accidentType}
+        state={searchParams.state}
+      />
       {/* Hero */}
       <div className="bg-primary-900 py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
