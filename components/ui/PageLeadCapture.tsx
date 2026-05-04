@@ -79,7 +79,7 @@ export function PageLeadCapture({
           type="submit"
           disabled={status === 'loading'}
           aria-busy={status === 'loading'}
-          className="rounded-lg bg-primary-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-primary-700 transition-colors disabled:pointer-events-none disabled:opacity-50 whitespace-nowrap"
+          className="rounded-lg bg-primary-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-primary-700 transition-colors disabled:pointer-events-none disabled:opacity-50 whitespace-nowrap cursor-pointer"
         >
           {status === 'loading' ? 'Sending…' : buttonLabel}
         </button>
