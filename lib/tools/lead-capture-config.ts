@@ -16,6 +16,18 @@ export interface LeadCaptureConfig {
 // Tool configs are added one per task (Tasks 8–18).
 // ToolEngine renders ToolLeadCapture only when a slug has an entry here.
 export const TOOL_LEAD_CONFIGS: Partial<Record<string, LeadCaptureConfig>> = {
+  'lost-wages-estimator': {
+    hook: 'Email me this estimate and the documentation checklist.',
+    buttonLabel: 'Email Me My Estimate',
+    successMessage: 'Check your inbox — your wage loss estimate and documentation checklist are on the way.',
+    fields: ['email'],
+    requiresTcpa: false,
+    getContext: (answers) => ({
+      employmentType: s(answers['employment-type']).replace(/-/g, ' '),
+      daysMissed: String(answers['days-missed'] ?? ''),
+      ongoingLoss: s(answers['ongoing']).replace(/-/g, ' '),
+    }),
+  },
   'state-next-steps': {
     hook: 'Email me these deadlines so I have them for reference.',
     buttonLabel: 'Email Me My Deadlines',
