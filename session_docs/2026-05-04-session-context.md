@@ -2,7 +2,7 @@
 
 ## Summary
 
-_In progress._
+Session complete. Two major Notion data quality tasks finished: Meta Description column fully populated across all ~96 pages, and Spanish Route column fixed — 67 rows were missing the `https://accident-path.vercel.app` domain prefix and are now corrected. InjuryJournal lead capture + hydration fix also shipped earlier in this session.
 
 ---
 
@@ -56,6 +56,38 @@ Next phase: **Attorney Matching System** — n8n-driven intake routing.
 - [x] Add `N8N_WEBHOOK_URL` to **Vercel env vars** (handled by user during session)
 - [ ] Configure SMTP credential in n8n ("AccidentPath SMTP") then enable the confirmation email node
   - SMTP: `smtp.gmail.com:587`, from: `sales@dtlaprint.com`, Google Workspace app password
+- [ ] Add `N8N_TOOL_LEAD_WEBHOOK_URL` to **Vercel env vars**
+  - Value: `https://n8n-dtla-c914de1950b9.herokuapp.com/webhook/accidentpath-tool-lead`
+
+### Tool Lead Capture — SMTP Email Delivery (Phase 2)
+Pattern A tools (Evidence Checklist, Lost Wages Estimator, etc.) show copy like "Email Me the Checklist."
+Currently: contact is captured → Supabase → Slack `#ap-lrs` notification only. No email goes to the user yet.
+**Pending:** Once SMTP is configured in n8n, add an email node to the `accidentpath - tool lead notification` workflow that sends the actual content (checklist, estimate, etc.) to the captured email address. One email template per tool slug.
+
+### Notion Pending Tasks (visible to teammates)
+Tracked in the "Accident Path Website Pages" DB using Category = "Task" + Status = "Pending".
+A dedicated **"tasks" view** filters by Category = Task — teammates can see all pending work there.
+- `⏳ Tool Lead Email Delivery (SMTP)` — Pattern A email delivery once SMTP configured
+- `⏳ TASK: Intake Confirmation Email (SMTP)` — enable disabled node in intake workflow + add N8N_TOOL_LEAD_WEBHOOK_URL to Vercel
+- `⏳ TASK: Attorney Matching System` — deferred; Supabase attorneys table + matching logic + /for-attorneys form
+
+**Convention for future tasks:** Category = "Task", Status = "Pending", title prefix `⏳ TASK:`
+
+### Notion — Meta Description Column ✅
+- Populated `Meta Description` field for all ~96 rows in "Accident Path Website Pages" DB
+- Values sourced from `metaDescription` field in each page's content JSON (`content/accidents/*.json`, `content/injuries/*.json`, `content/guides/*.json`, `content/cities/*.json`, etc.) — exact strings Next.js renders in `<meta name="description">`
+- Script used: `scripts/extract-meta.js` (walks `content/` dir, reads `metaDescription` + builds route)
+- City pages use `/states/{state}/{city}` routes in Notion, not `/cities/{slug}` — matched manually via subagent
+
+### Notion — Spanish Route Column Fixed ✅
+- Found 67 rows where Spanish Route was stored as a relative path (`/es/...`) instead of a full URL
+- Patched all 67 to `https://accident-path.vercel.app/es/...`
+- Affected categories: all — cities, accidents, injuries, guides, tools, states, hubs, lead gen pages
+
+### InjuryJournal Lead Capture + Hydration Fix ✅
+- Added `ToolLeadCapture` to `components/tools/InjuryJournal.tsx` — shown in List view after ≥1 entry logged (EN only)
+- Tool context passed: `painLevel` + `injuries` (symptom labels) from the latest entry
+- Fixed SSR hydration mismatch: moved localStorage read from `useState` lazy init to `useEffect` post-mount
 
 ### Debugging Notes
 - Root cause of initial failure: webhook node was created via API without a `webhookId` top-level property — n8n couldn't match incoming requests to the registered webhook
