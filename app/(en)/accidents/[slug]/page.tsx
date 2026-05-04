@@ -282,12 +282,12 @@ export default async function AccidentHubPage({
                 <p className="text-sm font-semibold text-neutral-800 leading-snug mb-3">
                   Do Not Do This Before Picking an Attorney
                 </p>
-                <a
+                <Link
                   href="/resources/before-picking-an-attorney"
                   className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary-600 hover:text-primary-700 transition-colors"
                 >
                   Read the free guide <ArrowRight className="w-3.5 h-3.5" aria-hidden="true" />
-                </a>
+                </Link>
               </div>
 
               {/* Evidence Checklist */}

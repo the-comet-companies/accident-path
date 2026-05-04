@@ -167,12 +167,12 @@ export default async function GuideDetailPage({
                 <p className="text-sm font-semibold text-neutral-800 leading-snug mb-3">
                   5 Things You MUST Know Before Deciding on an Attorney
                 </p>
-                <a
+                <Link
                   href="/resources/5-things-before-deciding-on-attorney"
                   className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary-600 hover:text-primary-700 transition-colors"
                 >
                   Read the free resource <ArrowRight className="w-3.5 h-3.5" aria-hidden="true" />
-                </a>
+                </Link>
               </div>
 
               <CTAButton href="/find-help" size="md">
