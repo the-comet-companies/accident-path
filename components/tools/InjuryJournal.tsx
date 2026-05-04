@@ -1,9 +1,11 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 import { Printer, ChevronLeft, ChevronRight, ChevronDown, ChevronUp } from 'lucide-react'
 import type { ToolConfig } from '@/types/tool'
+import { TOOL_LEAD_CONFIGS } from '@/lib/tools/lead-capture-config'
+import { ToolLeadCapture } from '@/components/tools/ToolLeadCapture'
 
 interface JournalEntry {
   id: string
@@ -174,17 +176,17 @@ export function InjuryJournal({ tool }: InjuryJournalProps) {
   const ui = isEs ? UI_ES : UI_EN
   const SYMPTOM_OPTIONS = isEs ? SYMPTOM_OPTIONS_ES : SYMPTOM_OPTIONS_EN
   const TREATMENT_OPTIONS = isEs ? TREATMENT_OPTIONS_ES : TREATMENT_OPTIONS_EN
-  const [entries, setEntries] = useState<JournalEntry[]>(() => {
-    if (typeof window === 'undefined') return []
+  const [entries, setEntries] = useState<JournalEntry[]>([])
+
+  useEffect(() => {
     try {
       const raw = localStorage.getItem(STORAGE_KEY)
       if (raw) {
         const parsed = JSON.parse(raw)
-        if (Array.isArray(parsed)) return parsed as JournalEntry[]
+        if (Array.isArray(parsed)) setEntries(parsed as JournalEntry[])
       }
     } catch { /* ignore parse errors */ }
-    return []
-  })
+  }, [])
   const [view, setView] = useState<'list' | 'add' | 'calendar'>('list')
   const [expandedIds, setExpandedIds] = useState<Set<string>>(new Set())
   const today = new Date()
@@ -354,6 +356,7 @@ export function InjuryJournal({ tool }: InjuryJournalProps) {
               </button>
             </div>
           ) : (
+            <>
             <div className="flex flex-col gap-3">
               {sortedEntries.map(entry => (
                 <div
@@ -450,6 +453,25 @@ export function InjuryJournal({ tool }: InjuryJournalProps) {
                 </div>
               ))}
             </div>
+            {!isEs && (() => {
+              const captureConfig = TOOL_LEAD_CONFIGS['injury-journal']
+              if (!captureConfig) return null
+              const latest = sortedEntries[0]
+              const toolContext: Record<string, string> = {
+                painLevel: String(latest.painLevel),
+                injuries: latest.symptoms
+                  .map(s => SYMPTOM_OPTIONS_EN.find(o => o.value === s)?.label ?? s)
+                  .join(', '),
+              }
+              return (
+                <ToolLeadCapture
+                  toolSlug="injury-journal"
+                  config={captureConfig}
+                  toolContext={toolContext}
+                />
+              )
+            })()}
+            </>
           )}
         </div>
       )}

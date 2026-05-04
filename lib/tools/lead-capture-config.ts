@@ -28,6 +28,17 @@ export interface LeadCaptureConfig {
 // Tool configs are added one per task (Tasks 8–18).
 // ToolEngine renders ToolLeadCapture only when a slug has an entry here.
 export const TOOL_LEAD_CONFIGS: Partial<Record<string, LeadCaptureConfig>> = {
+  'injury-journal': {
+    hook: "Email me today's entry to keep a record.",
+    buttonLabel: 'Email Me This Entry',
+    successMessage: "Today's journal entry has been emailed to you.",
+    fields: ['email'],
+    requiresTcpa: false,
+    getContext: (answers) => ({
+      painLevel: String(answers['pain-level'] ?? ''),
+      injuries: labelArray(answers['injury-type']),
+    }),
+  },
   'insurance-call-prep': {
     hook: 'Send me this script so I have it during the call.',
     buttonLabel: 'Send Me the Script',
