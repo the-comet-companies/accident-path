@@ -147,13 +147,21 @@ Add email capture touchpoints across all content page types (home, accidents, in
   - EN: `page-home`, `page-accident`, `page-injury`, `page-state`, `page-guide`
   - ES: `page-home-es`, `page-accident-es`, `page-injury-es`, `page-state-es`, `page-guide-es`
 
-### SMTP / Email Delivery
-- Pending SMTP credentials for accidentpath.com (user to request from PM)
-- Once ready: configure in n8n, wire email delivery node to `accidentpath - tool lead notification` workflow
-- Notion task: `⏳ TASK: Page Lead Email Delivery (SMTP)` covers all page slug types
+### SMTP / Email Delivery — Templates Built ✅
+- n8n workflow `accidentpath - tool lead notification` (ID: `3mjn5gjskMVgWefV`) now has 6 nodes:
+  - Webhook → Format Message → Notify Slack → Has Email? (IF) → Prepare Email (code) → Send Email (disabled)
+- **Has Email?** — IF node, skips email branch if no email captured
+- **Prepare Email** — code node with branded HTML templates for 4 slugs:
+  - `page-state` / `page-state-es` — SOL deadline reminder with deadline box, warning box, link to state guide
+  - `page-guide` / `page-guide-es` — guide link email with AccidentPath branding; uses `guideSlug` from toolContext
+  - All other slugs return `[]` (stop cleanly)
+- **Send Email** — `disabled: true`, placeholder from address. To activate: add SMTP credential + set `fromEmail` to real address + `disabled: false`
+- Email color scheme: header `#1e3a5f`, CTA button `#2563eb`, deadline card `#eff6ff`, warning card `#fffbeb`
+- `guideSlug` added to toolContext on EN + ES guide pages so email can build correct guide URL
+- Plan: `docs/superpowers/plans/2026-05-04-email-templates.md`
 
 ### TODO Still Needed
 - [ ] Add `N8N_TOOL_LEAD_WEBHOOK_URL` to Vercel env vars
   - Value: `https://n8n-dtla-c914de1950b9.herokuapp.com/webhook/accidentpath-tool-lead`
 - [ ] Request SMTP credentials for accidentpath.com from PM (e.g. hello@accidentpath.com)
-- [ ] Configure SMTP in n8n then wire email delivery for page leads
+- [ ] Once SMTP ready: add credential to n8n, update `fromEmail`, set Send Email node `disabled: false`
