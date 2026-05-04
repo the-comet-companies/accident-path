@@ -135,7 +135,7 @@ export default async function InjuryDetailPage({
                 subtext="Know what to track, when to see a doctor, and what insurers look for."
                 buttonLabel="Email Me the Guide"
                 toolSlug="page-injury"
-                toolContext={{ injuryType: injury.title }}
+                toolContext={{ injuryType: injury.title, injurySlug: injury.slug }}
               />
 
               {/* Long-term effects */}

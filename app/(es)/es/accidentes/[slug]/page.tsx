@@ -285,7 +285,7 @@ export default async function AccidentHubPageES({
                 subtext="Una guía rápida sobre qué documentar, reportar y hacer a continuación."
                 buttonLabel="Envíame la Lista"
                 toolSlug="page-accident-es"
-                toolContext={{ accidentType: accident.title }}
+                toolContext={{ accidentType: accident.title, accidentSlug: accident.slug }}
               />
 
               {/* Evidence Checklist */}

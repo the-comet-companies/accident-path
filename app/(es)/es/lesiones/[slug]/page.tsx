@@ -167,7 +167,7 @@ export default async function InjuryDetailPageES({
                 subtext="Qué rastrear, cuándo ver a un médico y qué buscan las aseguradoras."
                 buttonLabel="Envíame la Guía"
                 toolSlug="page-injury-es"
-                toolContext={{ injuryType: injury.title }}
+                toolContext={{ injuryType: injury.title, injurySlug: injury.slug }}
               />
 
               {/* Long-term effects */}

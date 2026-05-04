@@ -271,7 +271,7 @@ export default async function AccidentHubPage({
                 subtext="A quick reference for what to document, report, and do next."
                 buttonLabel="Email Me the Checklist"
                 toolSlug="page-accident"
-                toolContext={{ accidentType: accident.title }}
+                toolContext={{ accidentType: accident.title, accidentSlug: accident.slug }}
               />
 
               {/* Evidence Checklist */}
