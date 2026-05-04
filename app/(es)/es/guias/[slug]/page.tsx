@@ -195,7 +195,7 @@ export default async function GuideDetailPageES({
                 subtext="Guárdala como referencia — especialmente útil en los días después de un accidente."
                 buttonLabel="Envíame Esta Guía"
                 toolSlug="page-guide-es"
-                toolContext={{ guideTitle: guide.title }}
+                toolContext={{ guideTitle: guide.title, guideSlug: guide.slug }}
               />
 
               <CTAButton href="/es/buscar-ayuda" size="md">

@@ -156,7 +156,7 @@ export default async function GuideDetailPage({
                 subtext="Save it for reference — especially useful in the days after an accident."
                 buttonLabel="Email Me This Guide"
                 toolSlug="page-guide"
-                toolContext={{ guideTitle: guide.title }}
+                toolContext={{ guideTitle: guide.title, guideSlug: guide.slug }}
               />
 
               <CTAButton href="/find-help" size="md">
