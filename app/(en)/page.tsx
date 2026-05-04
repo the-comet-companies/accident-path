@@ -22,6 +22,7 @@ import { CTAButton } from '@/components/ui/CTAButton'
 import { StateSelector } from '@/components/ui/StateSelector'
 import { buildMetaTags } from '@/components/seo/MetaTags'
 import { LazyAnimations, LazyHeroVisual } from '@/components/home/LazyAnimations'
+import { PageLeadCapture } from '@/components/ui/PageLeadCapture'
 
 export const metadata: Metadata = {
   ...buildMetaTags({
@@ -166,31 +167,7 @@ export default function Home() {
       <section className="bg-primary-900 text-white border-t border-white/[0.08]" aria-label="Trust indicators">
         <div className="flex flex-col lg:flex-row">
 
-          {/* Left panel — brand statement */}
-          <div
-            data-animate="trust-left"
-            className="lg:w-[28%] shrink-0 flex flex-col justify-center gap-4 px-8 lg:px-10 py-12 lg:py-16 border-b lg:border-b-0 lg:border-r border-white/[0.08]"
-          >
-            <div className="flex items-center gap-2 text-amber-500 text-xs font-semibold uppercase tracking-widest font-sans">
-              <span className="w-5 h-px bg-amber-500 shrink-0" aria-hidden="true" />
-              Why AccidentPath
-            </div>
-            <h2 className="font-sans font-bold text-xl lg:text-2xl text-white leading-tight tracking-tight">
-              Your path to recovery starts here.
-            </h2>
-            <p className="font-serif italic text-sm text-white/45 leading-relaxed">
-              Clear guidance, smart next steps, and help finding the right lawyer if you need one.
-            </p>
-            <Link
-              href="/find-help"
-              className="inline-flex items-center gap-2 text-primary-300 hover:text-white transition-colors text-sm font-semibold font-sans group w-fit"
-            >
-              Start Free Accident Check
-              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
-            </Link>
-          </div>
-
-          {/* Right panel — 4 trust columns */}
+          {/* Left panel — 4 trust columns */}
           <div className="flex-1 grid grid-cols-2 lg:grid-cols-4">
             {[
               { Icon: Shield,     title: 'Attorney-Reviewed Content', sub: 'Reviewed for accuracy and compliance' },
@@ -225,6 +202,30 @@ export default function Home() {
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Right panel — brand statement */}
+          <div
+            data-animate="trust-left"
+            className="lg:w-[28%] shrink-0 flex flex-col justify-center gap-4 px-8 lg:px-10 py-12 lg:py-16 border-t lg:border-t-0 lg:border-l border-white/[0.08]"
+          >
+            <div className="flex items-center gap-2 text-amber-500 text-xs font-semibold uppercase tracking-widest font-sans">
+              <span className="w-5 h-px bg-amber-500 shrink-0" aria-hidden="true" />
+              Why AccidentPath
+            </div>
+            <h2 className="font-sans font-bold text-xl lg:text-2xl text-white leading-tight tracking-tight">
+              Your path to recovery starts here.
+            </h2>
+            <p className="font-serif italic text-sm text-white/45 leading-relaxed">
+              Clear guidance, smart next steps, and help finding the right lawyer if you need one.
+            </p>
+            <Link
+              href="/find-help"
+              className="inline-flex items-center gap-2 text-primary-300 hover:text-white transition-colors text-sm font-semibold font-sans group w-fit"
+            >
+              Start Free Accident Check
+              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+            </Link>
           </div>
 
         </div>
@@ -367,6 +368,19 @@ export default function Home() {
             </Link>
           </div>
 
+        </div>
+      </section>
+
+      {/* ── 4.5. Email Capture Strip ─────────────────────────────────────── */}
+      <section className="bg-surface-page py-12 border-t border-neutral-100" aria-label="Email signup">
+        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+          <PageLeadCapture
+            headline="Get our free accident recovery guide"
+            subtext="Know what to do, what to document, and when to act."
+            buttonLabel="Send Me the Guide"
+            toolSlug="page-home"
+            toolContext={{ source: 'home' }}
+          />
         </div>
       </section>
 
