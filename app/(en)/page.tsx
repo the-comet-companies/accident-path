@@ -23,6 +23,7 @@ import { StateSelector } from '@/components/ui/StateSelector'
 import { buildMetaTags } from '@/components/seo/MetaTags'
 import { LazyAnimations, LazyHeroVisual } from '@/components/home/LazyAnimations'
 import { PageLeadCaptureModal } from '@/components/ui/PageLeadCaptureModal'
+import { cms } from '@/lib/cms'
 
 export const metadata: Metadata = {
   ...buildMetaTags({
@@ -108,6 +109,8 @@ const FEATURED_GUIDES = [
 // ─── Page ────────────────────────────────────────────────────────────────────
 
 export default function Home() {
+  const liveResources = cms.getAllResources().filter(r => !r.comingSoon)
+
   return (
     <>
       <LazyAnimations />
@@ -512,7 +515,79 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── 7. State Selector ─────────────────────────────────────────────── */}
+      {/* ── 7. Free Resources ─────────────────────────────────────────────── */}
+      {liveResources.length > 0 && (
+        <section className="bg-primary-900 py-16 lg:py-20" aria-labelledby="resources-home-heading">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            {/* Heading row */}
+            <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8">
+              <div>
+                <div className="flex items-center gap-2 text-amber-500 text-xs font-semibold uppercase tracking-widest font-sans mb-3">
+                  <span className="w-5 h-px bg-amber-500 shrink-0" aria-hidden="true" />
+                  Free Resources
+                  <span className="w-5 h-px bg-amber-500 shrink-0" aria-hidden="true" />
+                </div>
+                <h2
+                  id="resources-home-heading"
+                  className="font-sans font-bold text-3xl lg:text-4xl text-white leading-tight tracking-tight"
+                >
+                  What Your Attorney Won&apos;t Tell You
+                </h2>
+                <p className="font-serif italic text-sm text-primary-200/60 mt-1">
+                  Critical information for anyone navigating a personal injury claim. Free, no obligation.
+                </p>
+              </div>
+              <Link
+                href="/resources"
+                className="inline-flex items-center gap-1.5 text-sm font-semibold font-sans text-primary-300 hover:text-white transition-colors shrink-0 min-h-[44px] sm:min-h-0"
+              >
+                View all resources
+                <ChevronRight className="w-4 h-4" aria-hidden="true" />
+              </Link>
+            </div>
+
+            {/* Resource cards */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+              {liveResources.map(resource => (
+                <Link
+                  key={resource.slug}
+                  href={`/resources/${resource.slug}`}
+                  className="group flex flex-col bg-white/[0.06] border border-white/[0.12] rounded-xl overflow-hidden hover:bg-white/[0.10] hover:border-white/[0.20] transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-400"
+                >
+                  <div
+                    className={`h-[2px] shrink-0 ${resource.label === 'Critical' ? 'bg-red-500' : 'bg-amber-500'}`}
+                    aria-hidden="true"
+                  />
+                  <div className="flex flex-col flex-1 p-5">
+                    <span className={`text-[10px] font-bold uppercase tracking-widest mb-2 ${resource.label === 'Critical' ? 'text-red-400' : 'text-amber-400'}`}>
+                      {resource.label}
+                    </span>
+                    <h3 className="font-sans font-semibold text-base text-white leading-snug mb-2">
+                      {resource.headline}
+                    </h3>
+                    <p className="font-serif italic text-sm text-white/50 leading-relaxed flex-1">
+                      {resource.teaser}
+                    </p>
+                    <div className="flex items-center justify-between mt-4 pt-3 border-t border-white/10">
+                      <div className="flex items-center gap-1.5 text-xs text-white/30">
+                        <Lock className="w-3 h-3" aria-hidden="true" />
+                        <span>Free access</span>
+                      </div>
+                      <span className="inline-flex items-center gap-1 text-xs font-semibold font-sans text-primary-300 group-hover:text-white transition-colors">
+                        Unlock free <ArrowRight className="w-3 h-3" aria-hidden="true" />
+                      </span>
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+
+          </div>
+        </section>
+      )}
+
+      {/* ── 8. State Selector ─────────────────────────────────────────────── */}
       <section
         className="bg-surface-page py-16 lg:py-20"
         aria-labelledby="state-selector-heading"
