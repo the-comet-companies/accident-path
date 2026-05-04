@@ -5,6 +5,7 @@ import { cms } from '@/lib/cms'
 import type { Guide } from '@/types/content'
 import { Breadcrumb } from '@/components/layout/Breadcrumb'
 import { CTAButton } from '@/components/ui/CTAButton'
+import { PageLeadCapture } from '@/components/ui/PageLeadCapture'
 import { DisclaimerBanner } from '@/components/ui/DisclaimerBanner'
 import { SchemaOrg } from '@/components/seo/SchemaOrg'
 import { buildMetaTags } from '@/components/seo/MetaTags'
@@ -149,6 +150,14 @@ export default async function GuideDetailPage({
                   </div>
                 </section>
               )}
+
+              <PageLeadCapture
+                headline="Want this guide emailed to you?"
+                subtext="Save it for reference — especially useful in the days after an accident."
+                buttonLabel="Email Me This Guide"
+                toolSlug="page-guide"
+                toolContext={{ guideTitle: guide.title }}
+              />
 
               <CTAButton href="/find-help" size="md">
                 Get Free Guidance

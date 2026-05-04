@@ -5,6 +5,7 @@ import { cms } from '@/lib/cms'
 import type { Guide } from '@/types/content'
 import { Breadcrumb } from '@/components/layout/Breadcrumb'
 import { CTAButton } from '@/components/ui/CTAButton'
+import { PageLeadCapture } from '@/components/ui/PageLeadCapture'
 import { DisclaimerBanner } from '@/components/ui/DisclaimerBanner'
 import { SchemaOrg } from '@/components/seo/SchemaOrg'
 import { articleSchema, breadcrumbSchema } from '@/lib/seo'
@@ -188,6 +189,14 @@ export default async function GuideDetailPageES({
                   </div>
                 </section>
               )}
+
+              <PageLeadCapture
+                headline="¿Quieres recibir esta guía por correo?"
+                subtext="Guárdala como referencia — especialmente útil en los días después de un accidente."
+                buttonLabel="Envíame Esta Guía"
+                toolSlug="page-guide-es"
+                toolContext={{ guideTitle: guide.title }}
+              />
 
               <CTAButton href="/es/buscar-ayuda" size="md">
                 Obtener Orientación Gratuita
