@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server'
 import { ToolLeadSchema } from '@/types/tool-lead'
-import { getSupabase } from '@/lib/supabase'
+import { getSupabaseAdmin } from '@/lib/supabase'
 
 export async function POST(request: Request) {
   let body: unknown
@@ -17,7 +17,7 @@ export async function POST(request: Request) {
 
   const data = parsed.data
 
-  const { error } = await getSupabase()
+  const { error } = await getSupabaseAdmin()
     .from('tool_leads')
     .insert({
       tool_slug: data.toolSlug,
