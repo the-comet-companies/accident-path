@@ -11,6 +11,8 @@ import { outputGeneratorsEs } from '@/lib/tools/output-generators-es'
 import { SLUG_MAP_EN } from '@/i18n/config'
 import { getSupabase } from '@/lib/supabase'
 import { trackEvent } from '@/lib/analytics'
+import { TOOL_LEAD_CONFIGS } from '@/lib/tools/lead-capture-config'
+import { ToolLeadCapture } from '@/components/tools/ToolLeadCapture'
 
 interface ToolEngineStrings {
   cta: {
@@ -117,6 +119,11 @@ export function ToolEngine({ tool, strings }: Props) {
   }
 
   if (output) {
+    const captureConfig =
+      !pathname.startsWith('/es/') && !output.emergency
+        ? TOOL_LEAD_CONFIGS[tool.slug]
+        : undefined
+
     return (
       <div className="flex flex-col gap-6">
         {output.emergency && (
@@ -132,6 +139,13 @@ export function ToolEngine({ tool, strings }: Props) {
           <p className="text-amber-800 text-sm leading-relaxed">{tool.disclaimer}</p>
         </div>
         <ToolResults output={output} onReset={handleReset} strings={strings} />
+        {captureConfig && (
+          <ToolLeadCapture
+            toolSlug={tool.slug}
+            config={captureConfig}
+            toolContext={captureConfig.getContext(answers)}
+          />
+        )}
         <div className="rounded-xl border border-amber-200 bg-amber-50 p-4">
           <p className="text-amber-800 text-sm leading-relaxed">{tool.disclaimer}</p>
         </div>
